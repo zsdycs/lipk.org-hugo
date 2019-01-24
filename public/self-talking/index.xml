@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>碎碎念 on 执手对影成双</title>
+    <link>https://zsdycs.cn/self-talking/</link>
+    <description>Recent content in 碎碎念 on 执手对影成双</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 23 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zsdycs.cn/self-talking/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>第三篇博客</title>
+      <link>https://zsdycs.cn/self-talking/2019/01/24/%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Thu, 24 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zsdycs.cn/self-talking/2019/01/24/%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid>
+      <description>这是第三篇文章</description>
+    </item>
+    
+    <item>
+      <title>第二篇博客</title>
+      <link>https://zsdycs.cn/self-talking/2019/01/24/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Thu, 24 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zsdycs.cn/self-talking/2019/01/24/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid>
+      <description>这是第二篇文章</description>
+    </item>
+    
+    <item>
+      <title>第一篇博客</title>
+      <link>https://zsdycs.cn/self-talking/2019/01/23/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://zsdycs.cn/self-talking/2019/01/23/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid>
+      <description>这是第一篇文章</description>
+    </item>
+    
+  </channel>
+</rss>

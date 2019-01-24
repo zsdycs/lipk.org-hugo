@@ -1,0 +1,27 @@
+{{ if .PrevInSection  }}
+<div class="container">
+    <main>
+      <div class="wildfire_thread"></div>
+      <script type="text/javascript">
+        var wildfireConfig = () => ({
+          databaseProvider: 'wilddog',
+          databaseConfig: {
+            apiKey: "AIzaSyAXyakr0urjPACEAkHx5kokcK166h6d4lY",
+            authDomain: "wildfire-zsdycs.firebaseapp.com",
+            databaseURL: "https://wildfire-zsdycs.firebaseio.com",
+            projectId: "wildfire-zsdycs",
+            storageBucket: "wildfire-zsdycs.appspot.com",
+            messagingSenderId: "544748712205"
+          },
+          pageURL: 'http://chengkang.me/wildfire',
+          pageTitle: 'Wildfire Demo',
+          // theme: 'light',
+          theme: 'dark',
+          // locale: 'en'
+          locale: 'zh-CN'
+        })
+      </script>
+      <script src="https://unpkg.com/wildfire@0.3.8/dist/wildfire.auto.js"></script>
+    </main>
+  </div>
+  {{ end }}
