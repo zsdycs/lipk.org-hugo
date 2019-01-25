@@ -37,7 +37,8 @@
     <link rel="icon" type="image/x-icon" href="/zsdycs_favicon.ico">
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
-    
+    <script async src="/js/load-typekit.js"></script>
+
 <link rel="stylesheet" href="/css/custom.css" />
   </head>
 
@@ -110,10 +111,11 @@ document.addEventListener('keyup', function(e) {
 
 <div class="container">
     <main>
-      <div class="wildfire_thread"></div>
+      <span class="wf-discussion-count-unit">
+      </span>
       <script type="text/javascript">
         var wildfireConfig = () => ({
-          databaseProvider: 'wilddog',
+          databaseProvider: 'firebase',
           databaseConfig: {
             apiKey: "AIzaSyAXyakr0urjPACEAkHx5kokcK166h6d4lY",
             authDomain: "wildfire-zsdycs.firebaseapp.com",
@@ -122,14 +124,14 @@ document.addEventListener('keyup', function(e) {
             storageBucket: "wildfire-zsdycs.appspot.com",
             messagingSenderId: "544748712205"
           },
-          pageURL: 'http://chengkang.me/wildfire',
-          pageTitle: 'Wildfire Demo',
+          pageTitle: 'window.location.href',
+          theme: 'light',
           
-          theme: 'dark',
           
           locale: 'zh-CN'
         })
       </script>
+      <script src="https://unpkg.com/wildfire/dist/wildfire.count.js"></script>
       <script src="https://unpkg.com/wildfire@0.3.8/dist/wildfire.auto.js"></script>
     </main>
   </div>

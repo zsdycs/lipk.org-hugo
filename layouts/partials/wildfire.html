@@ -1,11 +1,7 @@
 {{ if .PrevInSection  }}
 <div class="container">
     <main>
-      <span
-      class="wf-discussion-count-unit"
-      wf-page-url="http://chengkang.me/wildfire">
-      加载中...
-      </span>
+      <div class="wildfire_thread"></div>
       <script type="text/javascript">
         var wildfireConfig = () => ({
           databaseProvider: 'firebase',
@@ -24,8 +20,7 @@
           locale: 'zh-CN'
         })
       </script>
-      <script src="https://unpkg.com/wildfire/dist/wildfire.count.js"></script>
-      <script src="https://unpkg.com/wildfire@0.3.8/dist/wildfire.auto.js"></script>
+      <script src="/js/wildfire.auto.js"></script>
     </main>
   </div>
   {{ end }}
