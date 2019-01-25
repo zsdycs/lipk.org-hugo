@@ -67,7 +67,7 @@
 			let t = [];
 			window.Vue || t.push("https://cdn.jsdelivr.net/npm/vue"), t.push("firebase" === o ?
 					"https://www.gstatic.com/firebasejs/4.6.2/firebase.js" : "https://cdn.wilddog.com/sdk/js/2.5.17/wilddog.js"), t
-				.push(`https://unpkg.com/wildfire/dist/${o}/wildfire.min.js`), i(t, () => {
+				.push(`/js/wildfire.min.js`), i(t, () => {
 					window.wildfire.default.install(window.Vue, {
 						databaseProvider: o,
 						databaseConfig: l,
