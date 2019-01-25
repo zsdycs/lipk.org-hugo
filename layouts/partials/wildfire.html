@@ -1,4 +1,4 @@
-{{ if .PrevInSection  }}
+{{ if  (or (.PrevInSection) (.NextInSection))  }}
 <div class="container">
     <main>
       <div class="wildfire_thread"></div>
