@@ -1,10 +1,14 @@
 {{ if .PrevInSection  }}
 <div class="container">
     <main>
-      <div class="wildfire_thread"></div>
+      <span
+      class="wf-discussion-count-unit"
+      wf-page-url="http://chengkang.me/wildfire">
+      加载中...
+      </span>
       <script type="text/javascript">
         var wildfireConfig = () => ({
-          databaseProvider: 'wilddog',
+          databaseProvider: 'firebase',
           databaseConfig: {
             apiKey: "AIzaSyAXyakr0urjPACEAkHx5kokcK166h6d4lY",
             authDomain: "wildfire-zsdycs.firebaseapp.com",
@@ -13,14 +17,14 @@
             storageBucket: "wildfire-zsdycs.appspot.com",
             messagingSenderId: "544748712205"
           },
-          pageURL: 'http://chengkang.me/wildfire',
-          pageTitle: 'Wildfire Demo',
-          // theme: 'light',
-          theme: 'dark',
+          pageTitle: 'window.location.href',
+          theme: 'light',
+          // theme: 'dark',
           // locale: 'en'
           locale: 'zh-CN'
         })
       </script>
+      <script src="https://unpkg.com/wildfire/dist/wildfire.count.js"></script>
       <script src="https://unpkg.com/wildfire@0.3.8/dist/wildfire.auto.js"></script>
     </main>
   </div>
