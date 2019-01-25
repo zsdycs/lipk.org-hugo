@@ -71,7 +71,15 @@ img[src$="#border"] {
 .home blockquote, .cn blockquote:not(:hover) {
   border-left-color: transparent;
 }
-
+#icp{
+  font-size: 12px;
+  cursor: alias;
+}
+#slogan{
+  display: block;
+  font-size: 5px;
+  font-family: cursive;
+}
 @media screen and (max-width: 960px) {
   body {
     padding: 10px 0;
@@ -116,6 +124,10 @@ img[src$="#border"] {
   }
   .masthead .menu .menu-extra {
     display: none;
+  }
+  #icp{
+    display: block;
+    font-size: 15px;
   }
 }
 

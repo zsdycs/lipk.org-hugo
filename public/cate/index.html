@@ -119,14 +119,44 @@
 
 
   
-
-  
   <hr>
-  <div class="copyright">&copy; <a href="https://zsdycs.cn">执手对影成双</a> 2018 - 2019</div>
+  <div class="copyright" id="add-icp">
+    <span id="slogan">执手相看，对影成双</span>
+    &copy; <a href="/">执手对影成双</a> 2018 - 2019
+  </div>
   
   </footer>
   </article>
   
+  <script>
+    
+    function GetUrlRelativePath()
+　　{
+　　　　var url = document.location.toString();
+　　　　var arrUrl = url.split("//");
+
+　　　　var start = arrUrl[1].indexOf("/");
+　　　　var relUrl = arrUrl[1].substring(start);
+
+　　　　if(relUrl.indexOf("?") != -1){
+　　　　　　relUrl = relUrl.split("?")[0];
+　　　　}
+　　　　return relUrl;
+　　}
+  window.onload=function(){
+    var url = GetUrlRelativePath();
+    if(url == "/"){
+      var pobj=document.getElementById("add-icp");
+      var strongobj=document.createElement("span");	
+      strongobj.id="icp"
+      strongobj.onclick=function(){window.open("http://www.miitbeian.gov.cn")}
+      var str = "粤ICP备19003986号"		   
+      var textobj=document.createTextNode(str);	
+      strongobj.appendChild(textobj)	   		
+		  pobj.appendChild(strongobj);
+    }
+  }
+  </script>
   </body>
 </html>
 
