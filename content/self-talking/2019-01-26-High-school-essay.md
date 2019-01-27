@@ -45,4 +45,4 @@ slug: 'High-school-essay'
 一之，人，不能因为残酷的现实而泯失掉拿云的心，忘了初心，却道天凉好个秋有何用？谁念幽寒坐鸣呃！生而为凡人，就应该将非凡洇向平淡，在平凡的世界里带着不认命的精神活着。  
 
 
-[![版权声明](/images/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+#### [![版权声明](/images/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)

@@ -21,6 +21,32 @@ footnotereturnlinkcontents = "↩"
     url = "/about/"
     weight = 2
 
+[[menu.about]]
+    name = "封面"
+    url = "/"
+    weight = 1
+[[menu.about]]
+    name = "关于"
+    url = "/about/"
+    weight = 2
+[[menu.about]]
+    name = "简历"
+    url = "/vitae/"
+    weight = 3
+
+[[menu.vitae]]
+    name = "封面"
+    url = "/"
+    weight = 1
+[[menu.vitae]]
+    name = "关于"
+    url = "/about/"
+    weight = 2
+[[menu.vitae]]
+    name = "简历"
+    url = "/vitae/"
+    weight = 3
+
 [[menu.self-talking]]
     name = "封面"
     url = "/"

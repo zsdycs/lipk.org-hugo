@@ -4,7 +4,7 @@ date: '2019-01-26'
 slug: 'glad-you-came'
 ---
 
-这是第一篇`碎碎念`，我很高兴你能找到这里。前天在建站改[Ivy](https://github.com/dmulholland/ivy)样式的时候，一直在想第一篇文章要起个什么标题。 
+这是第一篇`碎碎念`，我很高兴你能找到这里。前天在建站改 [Ivy](https://github.com/dmulholland/ivy) 样式的时候，一直在想第一篇文章要起个什么标题。 
 
 如果我十年后还在写`碎碎`的话，我想，这一篇应该是个起点，而如果你是十年后想要在这里翻个底朝天，要找第一篇写的是什么东西的话，那`敬启`这个名字应该就非常合适，有一种收礼物的仪式感，这种感觉会给人带来快乐。  
 
@@ -17,4 +17,4 @@ slug: 'glad-you-came'
 大三上学期结束已有近十天，偌大的校园空空荡荡，留在这里的只剩十来人了，很冷清。
 
 
-[![版权声明](/images/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+#### [![版权声明](/images/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
