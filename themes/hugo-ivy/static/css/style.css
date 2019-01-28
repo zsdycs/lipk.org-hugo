@@ -24,7 +24,7 @@ button, input, select, textarea, label {
 }
 
 img {
-  max-width: 25%;
+  max-width: 100%;
   border-radius: 0px;
   
 }
