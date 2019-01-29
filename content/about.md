@@ -20,7 +20,7 @@ slug: /about
 
 ## 软件
 
-- [Xshell](https://www.netsarang.com/zh/xshell/)：远程连接linux
-- [Git](https://git-scm.com/)：本地文件分布式版本控制系统
-- [Hugo](http://gohugo.io)：静态网站生成器
-- [visualstudio code](https://code.visualstudio.com/):目前为止使用最多的IDE
+- [Xshell](https://www.netsarang.com/zh/xshell/)：目前认为最好用的远程连接linux工具
+- [Git](https://git-scm.com/)：世界上最先进的本地文件分布式版本控制系统
+- [Hugo](http://gohugo.io)：世界上最快的网站构建框架
+- [visualstudio code](https://code.visualstudio.com/):使用最多的IDE
