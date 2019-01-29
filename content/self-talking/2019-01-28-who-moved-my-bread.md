@@ -70,8 +70,11 @@ slug: 'who-moved-my-bread'
 **全体**：（单手曲于胸前，作取向状）让我们来努力实现吧~  
 ## ~ ~鞠躬·谢幕~ ~   
 ----
+![成员合照](/images/2019-01-28-who-moved-my-bread-2.png)  
+
+----
 ## 后记
-这个剧本是改编自[这里](https://v.youku.com/v_show/id_XMTU1OTMwMjYyNA==.html?spm=a2h0k.11417342.soresults.dtitle)，主要是为了切合“防诈骗”主题的表演所以才改成这样的。
+这个剧本是改编自[这里](https://v.youku.com/v_show/id_XMTU1OTMwMjYyNA==.html?spm=a2h0k.11417342.soresults.dtitle)，高三时学校艺术节学弟学妹的一个节目，印象深刻。主要是为了切合“防诈骗”主题的表演所以才改成这样的。
 #### [![版权声明](/images/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 
