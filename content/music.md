@@ -1,5 +1,5 @@
 ---
-title: 音乐单
+title: '音乐单'
 date: '2019-01-24'
 slug: /music
 ---
