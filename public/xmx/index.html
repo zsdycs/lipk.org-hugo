@@ -257,7 +257,7 @@
                             } else {
                                 S.Shape.switchShape(S.ShapeBuilder.letter(index), true);
                             }
-                        }, 1000, value, true);
+                        }, 2000, value, true);
                         break;
 
                     case 'rectangle':
@@ -435,8 +435,8 @@
         var gap = 13,
             shapeCanvas = document.createElement('canvas'),
             shapeContext = shapeCanvas.getContext('2d'),
-            fontSize = 500,
-            fontFamily = 'Avenir, Helvetica Neue, Helvetica, Arial, sans-serif';
+            fontSize = 400,
+            fontFamily = 'Palatino Linotype, Palatino LT STD, Georgia, source-han-serif-sc, Source Han Serif SC, Source Han Serif CN, Source Han Serif TC, Source Han Serif TW, Source Han Serif, Songti SC, Microsoft YaHei';
 
         function fit() {
             shapeCanvas.width = Math.floor(window.innerWidth / gap) * gap;
@@ -665,8 +665,8 @@
     S.init();
 </script>
 <!-- 音乐可改 -->
-<audio autoplay="autoplay" loop="loop">
+<!-- <audio autoplay="autoplay" loop="loop">
     <source src="http://m10.music.126.net/20180509183512/5ae461e9a42675d782840bf139b05c60/ymusic/e492/ea7a/6a27/8799d19e52d9bbe3ae15febb03d7efdb.mp3" type="audio/mpeg">
-</audio>
+</audio> -->
 </body>
 </html>
