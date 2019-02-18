@@ -4,7 +4,6 @@ date: '2019-01-27'
 slug: /vitae
 ---
 
-![大头照](/images/vitae.png)
 # 李鹏坤  
 ## 2016级在校大学生  
 Email：zsdycs@gmail.com（@zsdycs.cn还没时间做，做好了更新）  

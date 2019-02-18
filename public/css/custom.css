@@ -61,8 +61,8 @@ pre .nohighlight {
   margin: 2em auto 1em;
 }
 .masthead img {
-  max-width: 60px;
-  border-radius: 60px;
+  max-width: 166px;
+  /* border-radius: 60px; */
 }
 img[src$="#border"] {
   border: 1px solid #ddd;
