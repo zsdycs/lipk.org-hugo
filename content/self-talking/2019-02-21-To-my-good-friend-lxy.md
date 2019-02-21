@@ -42,7 +42,7 @@ slug: 'To-my-good-friend-dxy'
 但打从心底赞叹，我愿意相信那时的你，是最真实的你，相对于平时大大咧咧的你。
 
 ---
-![新婚快乐](/images/2019-02-21-To-my-good-friend-lxy.jpg)
+![新婚快乐](/images/2019-02-21-To-my-good-friend-dxy.jpg)
 
 ---
 ## 尾巴
