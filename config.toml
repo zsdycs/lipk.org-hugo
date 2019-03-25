@@ -13,7 +13,7 @@ footnotereturnlinkcontents = "↩"
   self-talking = "/self-talking/:year/:month/:day/:slug/"
 
 [[menu.main]]
-    name = "碎碎"
+    name = "博客"
     url = "/self-talking/"
     weight = 1
 [[menu.main]]
@@ -52,7 +52,7 @@ footnotereturnlinkcontents = "↩"
     url = "/"
     weight = 1
 [[menu.self-talking]]
-    name = "碎碎"
+    name = "博客"
     url = "/self-talking/"
     weight = 2
 [[menu.self-talking]]
@@ -69,7 +69,7 @@ footnotereturnlinkcontents = "↩"
     url = "/"
     weight = 1
 [[menu.cate]]
-    name = "碎碎"
+    name = "博客"
     url = "/self-talking/"
     weight = 2
 [[menu.cate]]
@@ -86,7 +86,7 @@ footnotereturnlinkcontents = "↩"
     url = "/"
     weight = 1
 [[menu.music]]
-    name = "碎碎"
+    name = "博客"
     url = "/self-talking/"
     weight = 2
 [[menu.music]]
