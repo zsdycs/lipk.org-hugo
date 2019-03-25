@@ -22,7 +22,7 @@ footnotereturnlinkcontents = "↩"
     weight = 2
 
 [[menu.about]]
-    name = "封面"
+    name = "主页"
     url = "/"
     weight = 1
 [[menu.about]]
@@ -35,7 +35,7 @@ footnotereturnlinkcontents = "↩"
     weight = 3
 
 [[menu.vitae]]
-    name = "封面"
+    name = "主页"
     url = "/"
     weight = 1
 [[menu.vitae]]
@@ -48,7 +48,7 @@ footnotereturnlinkcontents = "↩"
     weight = 3
 
 [[menu.self-talking]]
-    name = "封面"
+    name = "主页"
     url = "/"
     weight = 1
 [[menu.self-talking]]
@@ -65,7 +65,7 @@ footnotereturnlinkcontents = "↩"
     weight = 4
 
 [[menu.cate]]
-    name = "封面"
+    name = "主页"
     url = "/"
     weight = 1
 [[menu.cate]]
@@ -82,7 +82,7 @@ footnotereturnlinkcontents = "↩"
     weight = 4
 
 [[menu.music]]
-    name = "封面"
+    name = "主页"
     url = "/"
     weight = 1
 [[menu.music]]
