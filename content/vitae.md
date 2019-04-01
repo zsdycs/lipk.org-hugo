@@ -42,7 +42,7 @@ JAVA程序设计、软件系统分析与设计、软件项目管理、计算机�
 - 框架：Express、Vue、Semantic UI、React、ant、钉耙等
 - 编程语言：HTML、JS、JQ、CSS、~~C#（抛弃了）、JAVA（没在用）、PHP（可以说我学过）、C（只学到指针）~~
 - 应用程序：常见数据库如：MySQL、SQL Server、Oracle、MongoDB等，nodejs、Git、微软三件套、PS（图片规格等基础）、AE(套模板)、AU(去音频水印)、PR(视频输出等基础)
-- 操作系统：Windows（日常用）、MacOS（知道怎么用）、CenterOS（上课用的红帽子）
+- 操作系统：Windows、MacOS、CenterOS
 
 ## 荣誉奖励
 
