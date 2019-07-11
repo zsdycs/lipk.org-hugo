@@ -65,8 +65,8 @@
 		function n() {
 			// e(`https://unpkg.com/wildfire/dist/${o}/static/wildfire.css`);
 			let t = [];
-			window.Vue || t.push("https://cdn.jsdelivr.net/npm/vue"), t.push("firebase" === o ?
-					"https://www.gstatic.com/firebasejs/4.6.2/firebase.js" : "https://cdn.wilddog.com/sdk/js/2.5.17/wilddog.js"), t
+			window.Vue || t.push("https://zsdycs.cn/js/vue.js"), t.push("firebase" === o ?
+					"https://zsdycs.cn/js/firebase.js" : "https://zsdycs.cn/js/wilddog.js"), t
 				.push(`/js/wildfire.min.js`), i(t, () => {
 					window.wildfire.default.install(window.Vue, {
 						databaseProvider: o,
@@ -96,7 +96,7 @@
 			pageURL: d = window.location.href,
 			locale: s = "en",
 			theme: f = "light",
-			defaultAvatarURL: c = "https://cdn.rawgit.com/cheng-kang/wildfire/088cf3de/resources/wildfire-avatar.svg"
+			defaultAvatarURL: c = "https://zsdycs.cn/images/sun.svg"
 		} = window.wildfireConfig();
 		window._i18n = new function(e = {}, i = null, n = "en") {
 				return this.translation = e, this.locale = n, this.fallback = i, this.t = (e => {
