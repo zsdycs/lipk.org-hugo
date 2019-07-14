@@ -1,9 +1,9 @@
 @media screen and (min-width: 960px) {
   html {
-    background: #fafafa;
+    background: #eeeeee;
   }
   body {
-    background: #fff;
+    background: #ffffff;
   }
   .masthead {
     position: sticky;
