@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ if eq .URL "/" }}
+    <title>{{ .Site.Title }}</title>
+    
+    {{ else }}
+    <title>执手对影成双 - {{ .Title }}</title>
+    <!-- <title>{{ .Title }}{{ with .Params.subtitle }} - {{ . }} {{ end }} - {{ .Site.Title }}</title> -->
+    <!-- <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}"> -->
+    
+    {{ end }}
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?ece5386bc6d527430f1046b0b9ddd791";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+    <meta property="og:title" content="{{ .Site.Title }}">
+    <meta property="og:type" content="website">
+    <meta name="keywords" content="个人网站,博客">
+    <meta name="description" content="这里是执手对影成双的个人网站,很高兴你找到了这里。">
+    <meta name="google-site-verification" content="UsPxPVvzprD87vWI_hZsbZU_LywFbKqEBAdsWx1dKjw">
+    <meta name="baidu-site-verification" content="DjOoDNzsC0">
+    <script>console.log("自主、跨界、终身学习")</script>
+    {{ with .Description }}
+      {{ $.Scratch.Set "summary" (markdownify .) }}
+    {{ else }}
+      {{ $.Scratch.Set "summary" ((delimit (findRE "(<p.*?>(.|\n)*?</p>\\s*)+" .Content) "[&hellip;] ") | plainify | truncate (default 200 .Site.Params.summary_length) (default " &hellip;" .Site.Params.text.truncated)) }}
+    {{ end }}
+
+    {{ if eq .URL "/" }}
+    <meta property="description" content="{{ .Site.Params.description }}">
+    {{ else }}
+      {{ with ($.Scratch.Get "summary") }}
+      <meta property="description" content="{{ . }}">
+      <meta property="og:description" content="{{ . }}">
+      {{ end }}
+    {{ end }}
+
+    {{ range (findRE "<img src=\"https?://[^\"]+" .Content 1) }}
+    {{ $.Scratch.Set "autoImage" true }}
+    <meta name="twitter:image" content="{{ replaceRE "<img src=\"" "" . }}">
+    {{ end }}
+    {{ with .Site.Params.twitterImage }}
+    {{ if not ($.Scratch.Get "autoImage") }}
+    <meta name="twitter:image" content="{{ absURL . }}">
+    {{ end }}
+    {{ end }}
+
+    {{ if .Keywords }}
+    <meta property="keywords" content ="{{ delimit .Keywords ", " }}">
+    {{ end }}
+    {{ partial "head_highlightjs" . }}
+    <link rel="icon" type="image/x-icon" href="/zsdycs_favicon.ico">
+    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
+    <link rel="stylesheet" href="{{ "/css/fonts.css" | relURL }}" />
+    <link rel="stylesheet" href="{{ "/css/wildfire.css" | relURL }}" />
+    {{ partial "head_custom.html" . }}
+  </head>
+
+  {{ $.Scratch.Set "section" (replaceRE "^/([^/]+)/.*" "$1" .URL) }}
+  <body class="{{ if .IsHome }}home{{ else }}{{ $.Scratch.Get "section" }}{{ end }}">
+    <header class="masthead">
+      {{ partial "tagline.html" . }}
+      {{ partial "menu.html" . }}
+    </header>
+
+    <article class="main">
+      <header class="title">
+      {{ partial "meta.html" . }}
+      </header>
