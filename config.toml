@@ -99,7 +99,7 @@ footnotereturnlinkcontents = "↩"
     weight = 4
 
 [params]
-    description = "Personal website of Pengkun Lee; 李鹏坤的个人网站"
+    description = "zsdycs; 执手对影成双; Personal website of Pengkun Lee; 李鹏坤的个人网站"
     disqusURL = "http://zsdycs.cn"
     footer = "&copy; [执手对影成双](/) 2018 - 2019"
     customJS = ["js/fix-toc.js",

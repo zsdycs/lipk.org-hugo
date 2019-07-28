@@ -7,7 +7,7 @@ slug: /music
 > 以下歌曲是自2015年01月17日开始点红心以来所收藏的，完整的歌单可以在[我网易云音乐主页](https://music.163.com/user/home?id=50487381) - “执手对影成双喜欢的音乐”查看，因为时间跨度大，歌曲类别多，故先不做排序分类，只作简单的罗列。
 
 ----
-[いつも何度でも - 伊藤サチコ](https://music.163.com/song?id=584155)  
+<!-- [いつも何度でも - 伊藤サチコ](https://music.163.com/song?id=584155)  
 [ありがとう - 大橋卓弥](https://music.163.com/song?id=492053)  
 [旭丘分校校歌 - 小岩井ことり / 村川梨衣 / 佐倉綾音 / 阿澄佳奈](https://music.163.com/song?id=34999023)  
 [In Love - July](https://music.163.com/song?id=26127161)  
@@ -512,4 +512,4 @@ slug: /music
 [Curiosity - Carly Rae Jepsen](https://music.163.com/song?id=2313952)  
 [Valder Fields - Tamas Wells](https://music.163.com/song?id=2001294)  
 
-
+ -->

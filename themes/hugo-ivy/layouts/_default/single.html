@@ -2,5 +2,7 @@
 
 {{ if .Params.show_toc }} {{ .TableOfContents }} {{ end }}
 {{ .Content }}
-
+{{ if eq .URL "/music/" }}
+{{ partial "music.html" }}
+{{ end }}
 {{ partial "footer.html" . }}
