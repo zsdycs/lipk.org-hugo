@@ -16,7 +16,7 @@ var list =["(失明前)我想记得的四十七件事 - 陈绮贞.mp3","(给我)
 
 var wave = new Array()
 
-createAudio("/music/(失明前)我想记得的四十七件事 - 陈绮贞.mp3")
+createAudio("/music/いつも何度でも - 伊藤サチコ.mp3")
 
 createA(list)
 
