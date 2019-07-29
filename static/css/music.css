@@ -234,7 +234,7 @@ button, input, optgroup, select, textarea {
     width: 100%;
 }
 .music_name{
-    max-width: 150px;
+    max-width: 100px;
     white-space: nowrap; 
     overflow: hidden; 
     text-overflow: ellipsis;
@@ -276,7 +276,7 @@ button, input, optgroup, select, textarea {
 .music_author {
     -webkit-font-smoothing: subpixel-antialiased;
     text-decoration: none;
-    max-width: 100px;
+    max-width: 65px;
     white-space: nowrap; 
     overflow: hidden; 
     text-overflow: ellipsis;
