@@ -29,8 +29,8 @@ function createA(list) {
         a.textContent = list[i]
         a.setAttribute("data-value",list[i]) 
         br.innerHTML="<br/>"
-        document.body.appendChild(a);
-        document.body.appendChild(br);
+        document.getElementById("rows_a").appendChild(a);
+        document.getElementById("rows_a").appendChild(br);
     }
 }
 function clickA(event){
