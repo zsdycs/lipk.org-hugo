@@ -212,6 +212,8 @@ button, input, optgroup, select, textarea {
     overflow: hidden;
 }
 .h3_m_name{
+    margin: 0px;
+    font-size: 10px;
     max-height: 40px;
     white-space: nowrap;
     overflow: hidden;
@@ -284,7 +286,7 @@ button, input, optgroup, select, textarea {
     color: #999;
 }
 .text-align-r {
-    text-align: right;
+    display: flex;
 }
 .down-icon {
     position: relative;
@@ -380,10 +382,10 @@ button, input, optgroup, select, textarea {
         
     } */
     .row_div{
-    margin: 16px 16px 0px;
+    margin: 16px 16px 16px;
     -ms-flex-direction: row;
     flex-direction: row;
-    height: 111px;
+    height: 141px;
     padding: 15px 30px;
     }
     .row-R {
