@@ -34,6 +34,8 @@ function createA(list) {
     }
 }
 function clickA(event){
+    $("audio_image").style.display = "none";
+    $("loading").style.display = "block";
     var f = document.getElementById("audio0")
     f.innerHTML = ''
     $("#audio0").parent().prev().prev().empty()
