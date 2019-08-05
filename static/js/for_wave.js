@@ -34,15 +34,15 @@ function createA(list) {
     }
 }
 function clickA(event){
-    $("audio_image").style.display = "none";
-    $("loading").style.display = "block";
-    var f = document.getElementById("audio0")
-    f.innerHTML = ''
-    $("#audio0").parent().prev().prev().empty()
-    $("#audio0").parent().prev().prev().append(play_svg_str)
-    $(".btnPause").addClass("btnPlay")
-    $(".btnPause").removeClass("btnPause")
-    createAudio(event)
+    $("#audio_image").css("display","none");
+    $("#loading").css("display","block");
+    var f = document.getElementById("audio0");
+    f.innerHTML = '';
+    $("#audio0").parent().prev().prev().empty();
+    $("#audio0").parent().prev().prev().append(play_svg_str);
+    $(".btnPause").addClass("btnPlay");
+    $(".btnPause").removeClass("btnPause");
+    createAudio(event);
 }
 function createAudio(url){
     loadAudio(url)
