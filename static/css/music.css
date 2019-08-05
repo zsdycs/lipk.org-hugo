@@ -234,7 +234,7 @@ button, input, optgroup, select, textarea {
     width: 100%;
 }
 .music_name{
-    max-width: 100px;
+    max-width: 280px;
     white-space: nowrap; 
     overflow: hidden; 
     text-overflow: ellipsis;
@@ -276,7 +276,7 @@ button, input, optgroup, select, textarea {
 .music_author {
     -webkit-font-smoothing: subpixel-antialiased;
     text-decoration: none;
-    max-width: 65px;
+    max-width: 150px;
     white-space: nowrap; 
     overflow: hidden; 
     text-overflow: ellipsis;
@@ -366,13 +366,28 @@ button, input, optgroup, select, textarea {
     /* body {
       background-color: rgb(117, 14, 36);
     } */
+    .audio_image {
+        display: none;
+    }
+    .music_name {
+        max-width: 240px;
+    }
+    .music_author {
+        max-width: 100px;
+    }
     .row_div{
         -ms-flex-direction: column;
         flex-direction: column;
     }
     .row_div, .row_one {
         padding: 16px;
-        margin: 0px 16px 0px 0px;
+    }
+    .text-align-r {
+        justify-content: flex-end;
+    }
+    .row_L_bottom {
+        align-items: unset;
+        flex-direction: column;
     }
 }
 
