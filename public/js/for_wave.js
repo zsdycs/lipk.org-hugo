@@ -35,7 +35,7 @@ function createA(list) {
 }
 function clickA(event){
     $("#audio_image").css("display","none");
-    $("#loading").css("display","block");
+    $("#loading").css("display","flex");
     var f = document.getElementById("audio0");
     f.innerHTML = '';
     $("#audio0").parent().prev().prev().empty();
