@@ -270,6 +270,7 @@ button, input, optgroup, select, textarea {
     width: 100%;
 }
 .audio_image {
+    display: none;
     margin-right: 10px;
     border-radius: 3px;
 }

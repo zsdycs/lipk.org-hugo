@@ -73,6 +73,8 @@ function loadAudio(url, callback, reader) {
                         base64String += String.fromCharCode(image.data[i]);
                     }
                     $("audio_image").src = "data:" + image.format + ";base64," + window.btoa(base64String);
+                    $("loading").style.display = "none";
+                    $("audio_image").style.display = "block";
                 } else {
                     // $("audio_image").parentNode.removeChild($("audio_image"))
                 }
