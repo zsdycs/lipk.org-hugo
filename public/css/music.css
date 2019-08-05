@@ -367,8 +367,11 @@ button, input, optgroup, select, textarea {
     /* body {
       background-color: rgb(117, 14, 36);
     } */
-    .audio_image {
-        display: none;
+    .main {
+        padding: 0px;
+    }
+    #rows_a {
+        padding: 1em 40px;
     }
     .music_name {
         max-width: 240px;
