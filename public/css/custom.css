@@ -62,7 +62,10 @@ pre .nohighlight {
 }
 .masthead img {
   max-width: 166px;
-  /* border-radius: 60px; */
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
 }
 img[src$="#border"] {
   border: 1px solid #ddd;

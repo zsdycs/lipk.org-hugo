@@ -1,9 +1,29 @@
 {{ if  (or (.PrevInSection) (.NextInSection))  }}
-<script src="https://utteranc.es/client.js"
-    repo="zsdycs/zsdycs-blog"
-    issue-term="pathname"
-    theme="github-light"
-    crossorigin="anonymous"
-    async>
+<script>
+  if (window.localStorage.getItem('darkmode') === 'true') {
+    var script = document.createElement('script');
+    var utterances = document.getElementById("utterances");
+    script.src = "https://utteranc.es/client.js";
+    script.setAttribute("repo", "zsdycs/zsdycs-blog");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("repo", "zsdycs/zsdycs-blog");
+    script.setAttribute("theme", "github-dark");
+    script.setAttribute("crossorigin", "anonymous");
+    script.setAttribute("repo", "zsdycs/zsdycs-blog");
+    script.async = true;
+    utterances.appendChild(script);
+  } else {
+    var script = document.createElement('script');
+    var utterances = document.getElementById("utterances");
+    script.src = "https://utteranc.es/client.js";
+    script.setAttribute("repo", "zsdycs/zsdycs-blog");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("repo", "zsdycs/zsdycs-blog");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("crossorigin", "anonymous");
+    script.setAttribute("repo", "zsdycs/zsdycs-blog");
+    script.async = true;
+    utterances.appendChild(script);
+  }
 </script>
 {{ end }}

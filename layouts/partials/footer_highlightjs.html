@@ -7,6 +7,6 @@
 {{ range .Params.highlightjsLang }}{{ $.Scratch.Add "highLangs" . }}{{ end }}
 {{ range ($.Scratch.Get "highLangs") }}
 <script src="{{ $highCDN }}/highlight.js/{{ $highVer }}/languages/{{ . }}.min.js"></script>{{ end }}
-<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+<script>hljs.configure({ languages: [] }); hljs.initHighlightingOnLoad();</script>
 {{ end }}
 {{ end }}

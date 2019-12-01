@@ -1,0 +1,14 @@
+<footer>
+  {{ partial "foot_custom.html" . }}
+  {{ with .Site.Params.footer }}
+  <hr>
+  <div class="copyright" id="add-icp">
+    <span id="slogan">执手相看，对影成双</span>
+    {{ . | markdownify }}
+  </div>
+  {{ end }}
+</footer>
+</article>
+</body>
+
+</html>

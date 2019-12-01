@@ -1,13 +1,12 @@
 baseurl = "https://zsdycs.cn"
 languageCode = "zh-cn"
 title = "执手对影成双 | pengkun Lee"
-theme = "hugo-ivy"
-googleAnalytics = ""
-disqusShortname = "zsdycs"
+googleAnalytics = "UsPxPVvzprD87vWI_hZsbZU_LywFbKqEBAdsWx1dKjw"
 ignoreFiles = []
 preserveTaxonomyNames = true
 enableEmoji = true
 footnotereturnlinkcontents = "↩"
+disableRSS = true
 
 [permalinks]
   self-talking = "/self-talking/:year/:month/:day/:slug/"
@@ -100,7 +99,6 @@ footnotereturnlinkcontents = "↩"
 
 [params]
     description = "zsdycs; 执手对影成双; Personal website of Pengkun Lee; 李鹏坤的个人网站"
-    disqusURL = "http://zsdycs.cn"
     footer = "&copy; [执手对影成双](/) 2018 - 2019"
     customJS = ["js/fix-toc.js",
                 "js/math-code.js",
