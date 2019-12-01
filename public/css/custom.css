@@ -6,7 +6,7 @@
     background: #ffffff;
   }
   .masthead {
-    position: sticky;
+    /* position: sticky; */
     top: 0;
   }
 }
