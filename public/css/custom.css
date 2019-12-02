@@ -92,9 +92,13 @@ img[src$="#border"] {
 code {
 	font-family: Consolas, Courier, "Courier New", STKaiti, KaiTi, SimKai, monospace
 }
-
 code,pre {
 	font-size: .95em
+}
+#utterancesMsg {
+  border: 1px dashed;
+  padding: 0.5em;
+  background: lightyellow;
 }
 @media screen and (max-width: 960px) {
   body {
@@ -145,7 +149,6 @@ code,pre {
     display: block;
     font-size: 15px;
   }
-  
 }
 
 @media print {

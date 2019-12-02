@@ -118,29 +118,29 @@
 <link rel="stylesheet" href="/css/music.css">
 <script src="/js/id3-minimized.js"></script>
 <script src="/js/jquery-3.3.1.min.js"></script>
-    <script src="/js/jquery-migrate-1.1.1.js"></script>
+<script src="/js/jquery-migrate-1.1.1.js"></script>
 <div>
-    <div id="audioList" class="ui active centered inline loader">
-      <ul class="audioLis_ul">
-        <li class="audioLidLis_li">
-          <div class="row_one">
-            <div class="row_div display_3qnOD">
+  <div id="audioList" class="ui active centered inline loader">
+    <ul class="audioLis_ul">
+      <li class="audioLidLis_li">
+        <div class="row_one">
+          <div class="row_div display_3qnOD">
+            
+            <div class="row_L">
               
-              <div class="row_L">
-                
-                <div class="row_L_top">
-                  <div id="row_L_top_div" class="row_L_top_div">
-                    <div id="loading">
-                      <div class="container animation-2">
-                        <div class="shape shape1"></div>
-                        <div class="shape shape2"></div>
-                        <div class="shape shape3"></div>
-                        <div class="shape shape4"></div>
-                      </div>
+              <div class="row_L_top">
+                <div id="row_L_top_div" class="row_L_top_div">
+                  <div id="loading">
+                    <div class="container animation-2">
+                      <div class="shape shape1"></div>
+                      <div class="shape shape2"></div>
+                      <div class="shape shape3"></div>
+                      <div class="shape shape4"></div>
                     </div>
-                    <img id="audio_image" class="audio_image"  src="" title="This is a title" height="75px">
-                    <div class="row_L_top_content">
-                      <button class="play_and_pause_button btnPlay">
+                  </div>
+                  <img id="audio_image" class="audio_image" src="" title="This is a title" height="75px">
+                  <div class="row_L_top_content">
+                    <button class="play_and_pause_button btnPlay">
                       <svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em"
                         viewBox="0 0 30 30" class="play_svg" style="vertical-align:middle">
                         <title>Play</title>
@@ -152,120 +152,79 @@
                           </g>
                         </g>
                       </svg>
-                      </button>
-                      <span class="audio-time CurrentTime">00:00</span>
-                      <div class="wave_div">
-                        <div id="audio0" class="waveform"></div>
-                      </div>
-                      <span class="audio-time current-time">00:00</span>
+                    </button>
+                    <span class="audio-time CurrentTime">00:00</span>
+                    <div class="wave_div">
+                      <div id="audio0" class="waveform"></div>
                     </div>
+                    <span class="audio-time current-time">00:00</span>
                   </div>
                 </div>
-                
-                <div class="row_L_bottom">
-                  <span class="row_L_B_L">
-                    <div class="music_info">
-                      <h3 class="h3_m_name">
-                        <div id="music_name" class="music_name">title</div>
-                      </h3>
-                      <div class="music_by_div">
-                        <i>by</i>
-                        <div id="music_author" class="music_author">author</div> 
-                      </div>
+              </div>
+              
+              <div class="row_L_bottom">
+                <span class="row_L_B_L">
+                  <div class="music_info">
+                    <h3 class="h3_m_name">
+                      <div id="music_name" class="music_name">title</div>
+                    </h3>
+                    <div class="music_by_div">
+                      <i>by</i>
+                      <div id="music_author" class="music_author">author</div>
                     </div>
-                  </span>
-                  <span>
-                    <div class="text-align-r">
-                      <div class="down-icon">
-                        <a id="download_a" role="button" style="border-bottom:0px;">
-                          <svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em"
-                            viewBox="0 0 16 16" class="down-svg" style="vertical-align: middle;">
-                            <title>Download</title>
-                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                              <path fill="#999999"
-                                d="M7.11007775,2.12374214 L8.88938839,2.12374214 L8.88938839,7.67667237 L10.431426,6.22573283 L11.6768722,7.3976026 L7.99973307,10.8586259 L4.3225939,7.3976026 L5.56804017,6.22573283 L7.11007775,7.67667237 L7.11007775,2.12374214 Z M15,12.4493235 L15,14.1237421 L1,14.1237421 L1,12.4493235 L15,12.4493235 Z">
-                              </path>
-                            </g>
-                          </svg>
-                        </a>
-                      <div class="_3qnOD"></div>
-                      </div>
-                      <div role="button" class="like-a" rel="nofollow">
-                        <svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 512 512" class="add-f-svg"
-                          style="vertical-align: middle;">
-                          <g>
-                            <path
-                              d="M256 475.8c-4.9 0-9.1-1.7-12.5-5.1l-176.7-170.5c-1.9-1.5-4.5-4-7.8-7.4-3.3-3.4-8.5-9.6-15.7-18.6-7.2-9-13.6-18.2-19.3-27.6-5.7-9.4-10.7-20.9-15.2-34.3-4.3-13.3-6.5-26.3-6.5-38.9 0-41.5 12-74 36-97.4 24-23.4 57.1-35.1 99.4-35.1 11.7 0 23.6 2 35.8 6.1 12.2 4.1 23.5 9.5 34 16.4 10.5 6.9 19.5 13.4 27 19.4 7.5 6 14.7 12.5 21.5 19.3 6.8-6.8 14-13.2 21.5-19.3 7.5-6 16.6-12.5 27-19.4 10.5-6.9 21.8-12.4 34-16.4 12.2-4.1 24.1-6.1 35.8-6.1 42.3 0 75.4 11.7 99.4 35.1 24 23.4 36 55.9 36 97.4 0 41.7-21.6 84.2-64.9 127.4l-176.3 169.9c-3.4 3.4-7.6 5.1-12.5 5.1z">
+                  </div>
+                </span>
+                <span>
+                  <div class="text-align-r">
+                    <div class="down-icon">
+                      <a id="download_a" role="button" style="border-bottom:0px;">
+                        <svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em"
+                          viewBox="0 0 16 16" class="down-svg" style="vertical-align: middle;">
+                          <title>Download</title>
+                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path fill="#999999"
+                              d="M7.11007775,2.12374214 L8.88938839,2.12374214 L8.88938839,7.67667237 L10.431426,6.22573283 L11.6768722,7.3976026 L7.99973307,10.8586259 L4.3225939,7.3976026 L5.56804017,6.22573283 L7.11007775,7.67667237 L7.11007775,2.12374214 Z M15,12.4493235 L15,14.1237421 L1,14.1237421 L1,12.4493235 L15,12.4493235 Z">
                             </path>
                           </g>
                         </svg>
-                      </div>
+                      </a>
+                      <div class="_3qnOD"></div>
                     </div>
-                  </span>
-                </div>
+                    <div role="button" class="like-a" rel="nofollow">
+                      <svg fill="currentColor" preserveAspectRatio="xMidYMid meet" height="1em" width="1em"
+                        viewBox="0 0 512 512" class="add-f-svg" style="vertical-align: middle;">
+                        <g>
+                          <path
+                            d="M256 475.8c-4.9 0-9.1-1.7-12.5-5.1l-176.7-170.5c-1.9-1.5-4.5-4-7.8-7.4-3.3-3.4-8.5-9.6-15.7-18.6-7.2-9-13.6-18.2-19.3-27.6-5.7-9.4-10.7-20.9-15.2-34.3-4.3-13.3-6.5-26.3-6.5-38.9 0-41.5 12-74 36-97.4 24-23.4 57.1-35.1 99.4-35.1 11.7 0 23.6 2 35.8 6.1 12.2 4.1 23.5 9.5 34 16.4 10.5 6.9 19.5 13.4 27 19.4 7.5 6 14.7 12.5 21.5 19.3 6.8-6.8 14-13.2 21.5-19.3 7.5-6 16.6-12.5 27-19.4 10.5-6.9 21.8-12.4 34-16.4 12.2-4.1 24.1-6.1 35.8-6.1 42.3 0 75.4 11.7 99.4 35.1 24 23.4 36 55.9 36 97.4 0 41.7-21.6 84.2-64.9 127.4l-176.3 169.9c-3.4 3.4-7.6 5.1-12.5 5.1z">
+                          </path>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </span>
               </div>
             </div>
           </div>
-        </li>
-      </ul>
-    </div>
+        </div>
+      </li>
+    </ul>
   </div>
-  <div style="display: block; height: 500px; overflow-y: scroll;">
-    <div id="rows_a"></div>
-  </div>
-  <script src="/js/wavesurfer.js"></script>
-  <script src="/js/wavesurfer.cursor.js"></script>
-  <script src="/js/for_wave.js"></script>
+</div>
+<div style="display: block; height: 500px; overflow-y: scroll;">
+  <div id="rows_a"></div>
+</div>
+<script src="/js/wavesurfer.js"></script>
+<script src="/js/wavesurfer.cursor.js"></script>
+<script src="/js/for_wave.js"></script>
 
 <footer>
   
 
 
 
-<div id="utterances"></div>
-
-<script>
-  if (window.localStorage.getItem('darkmode') === 'true') {
-    var script = document.createElement('script');
-    var utterances = document.getElementById("utterances");
-    script.src = "https://utteranc.es/client.js";
-    script.setAttribute("repo", "zsdycs/zsdycs-blog");
-    script.setAttribute("issue-term", "pathname");
-    script.setAttribute("repo", "zsdycs/zsdycs-blog");
-    script.setAttribute("theme", "github-dark");
-    script.setAttribute("crossorigin", "anonymous");
-    script.setAttribute("repo", "zsdycs/zsdycs-blog");
-    script.async = true;
-    utterances.appendChild(script);
-  } else {
-    var script = document.createElement('script');
-    var utterances = document.getElementById("utterances");
-    script.src = "https://utteranc.es/client.js";
-    script.setAttribute("repo", "zsdycs/zsdycs-blog");
-    script.setAttribute("issue-term", "pathname");
-    script.setAttribute("repo", "zsdycs/zsdycs-blog");
-    script.setAttribute("theme", "github-light");
-    script.setAttribute("crossorigin", "anonymous");
-    script.setAttribute("repo", "zsdycs/zsdycs-blog");
-    script.async = true;
-    utterances.appendChild(script);
-  }
-</script>
+<section id="utterances" class="comments"></section>
 
 
-<script>
-  var article = document.getElementsByTagName("article")[0];
-  var emojiReg = /[\uD83C|\uD83D|\uD83E][\uDC00-\uDFFF][\u200D|\uFE0F]|[\uD83C|\uD83D|\uD83E][\uDC00-\uDFFF]|[0-9|*|#]\uFE0F\u20E3|[0-9|#]\u20E3|[\u203C-\u3299]\uFE0F\u200D|[\u203C-\u3299]\uFE0F|[\u2122-\u2B55]|\u303D|[\A9|\AE]\u3030|\uA9|\uAE|\u3030/g; 
-  for(var i = 0; i < article.children.length; i++) {
-    var str = article.children[i].innerHTML;
-    article.children[i].innerHTML =  str.replace(emojiReg, function(emoji){
-      return "<span class=\"darkmode-ignore\">" + emoji + "</span>";
-    });
-    if (article.children[i].nodeName === "HR") {
-      break;
-    }
-  }
-</script>
 
 
 <script async src="/js/fix-toc.js"></script>
@@ -285,27 +244,8 @@
 <script async src="/js/alt-title.js"></script>
 
 
-
 <script src="/js/darkmode-js.min.js"></script>
-<script>
-  var nightAndDaySvg = "<svg height=\"35px\" viewBox=\"0 0 512 512\" width=\"512pt\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m512 256c0 141.386719-114.613281 256-256 256s-256-114.613281-256-256 114.613281-256 256-256 256 114.613281 256 256zm0 0\" fill=\"#4a7aff\"/><g fill=\"#2864f0\"><path d=\"m147.460938 168.671875 278.628906 278.632813c7.476562-6.652344 14.5625-13.738282 21.214844-21.214844l-278.632813-278.628906zm0 0\"/><path d=\"m297.613281 508.613281c23.507813-3.84375 45.9375-10.886719 66.828125-20.671875l-246.941406-246.941406-57.5 30zm0 0\"/><path d=\"m271 60-30 57.5 246.941406 246.941406c9.785156-20.890625 16.828125-43.320312 20.671875-66.828125zm0 0\"/></g><path d=\"m256 135.128906c-66.753906 0-120.871094 54.117188-120.871094 120.871094 0 33.578125 13.695313 63.957031 35.804688 85.859375l170.925781-170.925781c-21.902344-22.109375-52.28125-35.804688-85.859375-35.804688zm0 0\" fill=\"#fdba12\"/><path d=\"m341.859375 170.933594c-21.902344-22.109375-52.28125-35.804688-85.859375-35.804688-33.527344 0-63.867188 13.65625-85.761719 35.703125l85.859375 85.863281zm0 0\" fill=\"#ffa300\"/><path d=\"m256 175.332031c-44.550781 0-80.667969 36.117188-80.667969 80.667969 0 22.476562 9.203125 42.800781 24.035157 57.425781l114.058593-114.058593c-14.625-14.832032-34.949219-24.035157-57.425781-24.035157zm0 0\" fill=\"#fcda15\"/><path d=\"m313.425781 199.367188c-14.625-14.832032-34.949219-24.035157-57.425781-24.035157-22.425781 0-42.710938 9.160157-57.328125 23.933594l57.425781 57.425781zm0 0\" fill=\"#ffd400\"/><path d=\"m241 60h30v57.5h-30zm0 0\" fill=\"#ffa300\"/><path d=\"m60 241h57.5v30h-57.5zm0 0\" fill=\"#fdba12\"/><path d=\"m343.324219 147.460938 40.660156-40.660157 11.003906 11.003907-40.660156 40.660156zm0 0\" fill=\"#ffa300\"/><path d=\"m106.796875 383.984375 40.660156-40.660156 11 11.003906-40.65625 40.660156zm0 0\" fill=\"#fdba12\"/><path d=\"m106.796875 128.015625 21.214844-21.214844 40.65625 40.660157-21.210938 21.210937zm0 0\" fill=\"#fdba12\"/><path d=\"m117.109375 117.707031 10.902344-10.90625 40.660156 40.660157-10.90625 10.902343zm0 0\" fill=\"#ffa300\"/><path d=\"m72.722656 434.703125c.753906.773437 1.492188 1.550781 2.257813 2.316406 99.972656 99.972657 262.0625 99.972657 362.039062 0 99.972657-99.972656 99.972657-262.066406 0-362.039062-.765625-.765625-1.542969-1.503907-2.316406-2.257813zm0 0\" fill=\"#414952\"/><path d=\"m437.019531 74.980469c-.765625-.765625-1.542969-1.503907-2.316406-2.257813l-181.289063 181.289063 183.304688 183.300781c.097656-.097656.203125-.195312.300781-.292969 99.972657-99.972656 99.972657-262.066406 0-362.039062zm0 0\" fill=\"#333940\"/><path d=\"m362.242188 279.308594c0 42.292968-34.28125 76.578125-76.574219 76.578125-21.414063 0-40.773438-8.796875-54.671875-22.964844 9.347656 39.722656 45.015625 69.296875 87.59375 69.296875 49.699218 0 89.988281-40.289062 89.984375-89.988281 0-42.578125-29.570313-78.246094-69.296875-87.59375 14.171875 13.894531 22.964844 33.253906 22.964844 54.671875zm0 0\" fill=\"#fff\"/><path d=\"m408.578125 312.230469c0-42.578125-29.574219-78.246094-69.300781-87.59375 14.171875 13.898437 22.96875 33.257812 22.96875 54.671875 0 22.917968-10.082032 43.464844-26.03125 57.5l42.429687 42.429687c18.371094-16.472656 29.933594-40.390625 29.933594-67.007812zm0 0\" fill=\"#e9edf5\"/></svg>"
-  var options = {
-    bottom: '64px', 
-    right: '32px', 
-    left: 'unset', 
-    time: '0.5s', 
-    mixColor: '#fff', 
-    backgroundColor: '#fff',  
-    buttonColorDark: '#000',  
-    buttonColorLight: '#fff', 
-    saveInCookies: true, 
-    label: nightAndDaySvg, 
-    autoMatchOsTheme: true 
-  }
-  const darkmode = new Darkmode(options);
-  darkmode.showWidget();
-</script>
-
+<script src="/js/darkmode.js"></script>
 
 
 
