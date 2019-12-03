@@ -25,12 +25,12 @@ document.addEventListener('keyup', function(e) {
 <!-- 加载utterances评论 -->
 <section id="utterances" class="comments"></section>
 
-<script src="/js/darkmode-js.min.js"></script>
-<script src="/js/darkmode.js"></script>
-
 {{ if  (or (.PrevInSection) (.NextInSection))  }}
   <script src="/js/utteranc.js"></script>
 {{ end }}
+
+<script src="/js/darkmode-js.min.js"></script>
+<script src="/js/darkmode.js"></script>
 
 {{ range .Site.Params.customJS }}
 <script async src="{{ . | relURL }}"></script>

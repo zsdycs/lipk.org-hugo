@@ -14,3 +14,59 @@ var options = {
 }
 const darkmode = new Darkmode(options);
 darkmode.showWidget();
+
+var darkmodeLS = window.localStorage.getItem('darkmode');
+var darkButton = document.getElementsByClassName("darkmode-toggle")[0];
+var utterances = document.getElementById("utterances");
+
+function GetUrlRelativePath() {
+  var url = document.location.toString();
+  var arrUrl = url.split("//");
+
+  var start = arrUrl[1].indexOf("/");
+  var relUrl = arrUrl[1].substring(start);
+
+  if (relUrl.indexOf("?") != -1) {
+    relUrl = relUrl.split("?")[0];
+  }
+  return relUrl;
+}
+
+var url = GetUrlRelativePath();
+if (url.length > "/self-talking/".length && url.substring(0, "/self-talking/".length) === "/self-talking/") {
+  // 过滤emoji
+  var article = document.getElementsByTagName("article")[0];
+  var emojiReg = /[\uD83C|\uD83D|\uD83E][\uDC00-\uDFFF][\u200D|\uFE0F]|[\uD83C|\uD83D|\uD83E][\uDC00-\uDFFF]|[0-9|*|#]\uFE0F\u20E3|[0-9|#]\u20E3|[\u203C-\u3299]\uFE0F\u200D|[\u203C-\u3299]\uFE0F|[\u2122-\u2B55]|\u303D|[\A9|\AE]\u3030|\uA9|\uAE|\u3030/g;
+  for (var i = 0; i < article.children.length; i++) {
+    var str = article.children[i].innerHTML;
+    article.children[i].innerHTML = str.replace(emojiReg, function (emoji) {
+      return "<span class=\"darkmode-ignore\">" + emoji + "</span>";
+    });
+    if (article.children[i].nodeName === "HR") {
+      break;
+    }
+  }
+  
+  darkButton.addEventListener("click", () => {
+    var isMsg = document.getElementById("utterancesMsg");
+    if (isMsg) {
+      isMsg.remove();
+    }
+    var utterancesMsg = document.createElement('div')
+    utterancesMsg.setAttribute("id", "utterancesMsg");
+    utterancesMsg.classList.add("darkmode-ignore");
+    if (darkmodeLS && darkmodeLS === "true" && darkmodeLS !== window.localStorage.getItem('darkmode')) {
+      utterancesMsg.innerText =
+        "If you need to read in day mode," +
+        " the comments will switch to day mode after refreshing the page." +
+        "刷新页面评论切换为白天模式。";
+      utterances.insertBefore(utterancesMsg, utterances.children[0]);
+    } else if (darkmodeLS && darkmodeLS === "false" && darkmodeLS !== window.localStorage.getItem('darkmode')) {
+      utterancesMsg.innerText =
+        "If you need to read in night mode," +
+        " the comments will switch to night mode after refreshing the page." +
+        "刷新页面评论切换为黑夜模式。";
+      utterances.insertBefore(utterancesMsg, utterances.children[0]);
+    }
+  });  
+}
