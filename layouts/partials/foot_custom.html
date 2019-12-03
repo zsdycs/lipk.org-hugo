@@ -36,7 +36,7 @@ document.addEventListener('keyup', function(e) {
 <script async src="{{ . | relURL }}"></script>
 {{ end }}
 
-{{ if eq .URL "/" }}
+{{ if eq .RelPermalink "/" }}
 <script src="/js/recordInformation.js"></script>
 {{ end }}
 
