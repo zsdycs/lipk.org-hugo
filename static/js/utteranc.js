@@ -26,3 +26,30 @@ for (var i = 0; i < article.children.length; i++) {
     break;
   }
 }
+
+var darkmodeLS = window.localStorage.getItem('darkmode');
+var darkButton = document.getElementsByClassName("darkmode-toggle")[0];
+console.log(darkButton)
+var utterances = document.getElementById("utterances");
+darkButton.addEventListener("click", () => {
+  var isMsg = document.getElementById("utterancesMsg");
+  if (isMsg) {
+    isMsg.remove();
+  }
+  var utterancesMsg = document.createElement('div')
+  utterancesMsg.setAttribute("id", "utterancesMsg");
+  utterancesMsg.classList.add("darkmode-ignore");
+  if (darkmodeLS && darkmodeLS === "true" && darkmodeLS !== window.localStorage.getItem('darkmode')) {
+    utterancesMsg.innerText =
+      "If you need to read in day mode," +
+      " the comments will switch to day mode after refreshing the page." +
+      "刷新页面评论切换为白天模式。";
+    utterances.insertBefore(utterancesMsg, utterances.children[0]);
+  } else if (darkmodeLS && darkmodeLS === "false" && darkmodeLS !== window.localStorage.getItem('darkmode')) {
+    utterancesMsg.innerText =
+      "If you need to read in night mode," +
+      " the comments will switch to night mode after refreshing the page." +
+      "刷新页面评论切换为黑夜模式。";
+    utterances.insertBefore(utterancesMsg, utterances.children[0]);
+  }
+});
