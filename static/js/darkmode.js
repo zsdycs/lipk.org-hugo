@@ -22,10 +22,8 @@ var utterances = document.getElementById("utterances");
 function GetUrlRelativePath() {
   var url = document.location.toString();
   var arrUrl = url.split("//");
-
   var start = arrUrl[1].indexOf("/");
   var relUrl = arrUrl[1].substring(start);
-
   if (relUrl.indexOf("?") != -1) {
     relUrl = relUrl.split("?")[0];
   }
@@ -56,27 +54,30 @@ if (directoryName === "/self-talking/" || directoryName === "/cate/" || director
       return "<span class=\"darkmode-ignore\">" + emoji + "</span>";
     });
   }
-  
-  darkButton.addEventListener("click", () => {
-    var isMsg = document.getElementById("utterancesMsg");
-    if (isMsg) {
-      isMsg.remove();
-    }
-    var utterancesMsg = document.createElement('div')
-    utterancesMsg.setAttribute("id", "utterancesMsg");
-    utterancesMsg.classList.add("darkmode-ignore");
-    if (darkmodeLS && darkmodeLS === "true" && darkmodeLS !== window.localStorage.getItem('darkmode')) {
-      utterancesMsg.innerText =
-        "If you need to read in day mode," +
-        " the comments will switch to day mode after refreshing the page." +
-        "刷新页面评论切换为白天模式。";
-      utterances.insertBefore(utterancesMsg, utterances.children[0]);
-    } else if (darkmodeLS && darkmodeLS === "false" && darkmodeLS !== window.localStorage.getItem('darkmode')) {
-      utterancesMsg.innerText =
-        "If you need to read in night mode," +
-        " the comments will switch to night mode after refreshing the page." +
-        "刷新页面评论切换为黑夜模式。";
-      utterances.insertBefore(utterancesMsg, utterances.children[0]);
-    }
-  });  
+
+  // 切换模式时，评论头出现提示
+  if (directoryName === "/self-talking/") {
+    darkButton.addEventListener("click", () => {
+      var isMsg = document.getElementById("utterancesMsg");
+      if (isMsg) {
+        isMsg.remove();
+      }
+      var utterancesMsg = document.createElement('div')
+      utterancesMsg.setAttribute("id", "utterancesMsg");
+      utterancesMsg.classList.add("darkmode-ignore");
+      if (darkmodeLS && darkmodeLS === "true" && darkmodeLS !== window.localStorage.getItem('darkmode')) {
+        utterancesMsg.innerText =
+          "If you need to read in day mode," +
+          " the comments will switch to day mode after refreshing the page." +
+          "刷新页面评论切换为白天模式。";
+        utterances.insertBefore(utterancesMsg, utterances.children[0]);
+      } else if (darkmodeLS && darkmodeLS === "false" && darkmodeLS !== window.localStorage.getItem('darkmode')) {
+        utterancesMsg.innerText =
+          "If you need to read in night mode," +
+          " the comments will switch to night mode after refreshing the page." +
+          "刷新页面评论切换为黑夜模式。";
+        utterances.insertBefore(utterancesMsg, utterances.children[0]);
+      }
+    });  
+  }
 }
