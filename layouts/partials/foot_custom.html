@@ -19,13 +19,10 @@ document.addEventListener('keyup', function(e) {
   if (url) window.location = url;
 });
 </script>
-{{ end }}
 <!-- 不加载wildfire评论 -->
 <!-- {{ partial "wildfire.html" . }} -->
 <!-- 加载utterances评论 -->
 <section id="utterances" class="comments"></section>
-
-{{ if  (or (.PrevInSection) (.NextInSection))  }}
   <script src="/js/utteranc.js"></script>
 {{ end }}
 
@@ -49,8 +46,4 @@ document.addEventListener('keyup', function(e) {
 
 {{ if eq .RelPermalink "/" }}
 <script src="/js/recordInformation.js"></script>
-{{ end }}
-
-{{ if and (not .Params.disable_mathjax) (or (in (string .Content) "\\") (in (string .Content) "$")) }}
-<!-- <script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
 {{ end }}
