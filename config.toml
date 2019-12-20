@@ -58,10 +58,10 @@ disableRSS = true
     name = "食物"
     url = "/cate/"
     weight = 3
-[[menu.self-talking]]
-    name = "音乐"
-    url = "/music/"
-    weight = 4
+# [[menu.self-talking]]
+#     name = "音乐"
+#     url = "/music/"
+#     weight = 4
 
 [[menu.cate]]
     name = "主页"
@@ -75,10 +75,10 @@ disableRSS = true
     name = "食物"
     url = "/cate/"
     weight = 3
-[[menu.cate]]
-    name = "音乐"
-    url = "/music/"
-    weight = 4
+# [[menu.cate]]
+#     name = "音乐"
+#     url = "/music/"
+#     weight = 4
 
 [[menu.music]]
     name = "主页"
@@ -92,10 +92,10 @@ disableRSS = true
     name = "食物"
     url = "/cate/"
     weight = 3
-[[menu.music]]
-    name = "音乐"
-    url = "/music/"
-    weight = 4
+# [[menu.music]]
+#     name = "音乐"
+#     url = "/music/"
+#     weight = 4
 
 [params]
     description = "zsdycs; 执手对影成双; Personal website of Pengkun Lee; 李鹏坤的个人网站"

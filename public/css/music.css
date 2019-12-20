@@ -145,7 +145,6 @@ button, input, optgroup, select, textarea {
     color: #999;
     border-radius: 4px;
     box-shadow: 0 0 16px #ccc;
-    background-color: #fff;
     position: relative;
     display: -ms-flexbox;
     display: flex;

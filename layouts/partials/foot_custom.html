@@ -32,6 +32,17 @@ document.addEventListener('keyup', function(e) {
 <script src="/js/darkmode-js.min.js"></script>
 <script src="/js/darkmode.js"></script>
 
+{{ if eq .RelPermalink "/music/" }}
+<link rel="stylesheet" href="/css/loading-muisc.css">
+<link rel="stylesheet" href="/css/music.css">
+<script src="/js/id3-minimized.js"></script>
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script src="/js/jquery-migrate-1.1.1.js"></script>
+<script src="/js/wavesurfer.js"></script>
+<script src="/js/wavesurfer.cursor.js"></script>
+<script src="/js/for_wave.js"></script>
+{{ end }}
+
 {{ range .Site.Params.customJS }}
 <script async src="{{ . | relURL }}"></script>
 {{ end }}
