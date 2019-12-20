@@ -33,18 +33,28 @@ function GetUrlRelativePath() {
 }
 
 var url = GetUrlRelativePath();
+var directoryName = '';
 if (url.length > "/self-talking/".length && url.substring(0, "/self-talking/".length) === "/self-talking/") {
+  directoryName = url.substring(0, "/self-talking/".length);
+}
+if (url.length > "/cate/".length && url.substring(0, "/cate/".length) === "/cate/") {
+  directoryName = url.substring(0, "/cate/".length);
+}
+if (url.length > "/music/".length && url.substring(0, "/music/".length) === "/music/") {
+  directoryName = url.substring(0, "/music/".length);
+}
+if (directoryName === "/self-talking/" || directoryName === "/cate/" || directoryName === "/music/") {
   // 过滤emoji
   var article = document.getElementsByTagName("article")[0];
   var emojiReg = /[\uD83C|\uD83D|\uD83E][\uDC00-\uDFFF][\u200D|\uFE0F]|[\uD83C|\uD83D|\uD83E][\uDC00-\uDFFF]|[0-9|*|#]\uFE0F\u20E3|[0-9|#]\u20E3|[\u203C-\u3299]\uFE0F\u200D|[\u203C-\u3299]\uFE0F|[\u2122-\u2B55]|\u303D|[\A9|\AE]\u3030|\uA9|\uAE|\u3030/g;
   for (var i = 0; i < article.children.length; i++) {
+    if (article.children[i].nodeName === "FOOTER") {
+      break;
+    }
     var str = article.children[i].innerHTML;
     article.children[i].innerHTML = str.replace(emojiReg, function (emoji) {
       return "<span class=\"darkmode-ignore\">" + emoji + "</span>";
     });
-    if (article.children[i].nodeName === "HR") {
-      break;
-    }
   }
   
   darkButton.addEventListener("click", () => {
