@@ -7,6 +7,7 @@ preserveTaxonomyNames = true
 enableEmoji = true
 footnotereturnlinkcontents = "↩"
 disableRSS = true
+publishDir = "docs"
 
 [permalinks]
   self-talking = "/self-talking/:year/:month/:day/:slug/"
