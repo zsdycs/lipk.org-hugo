@@ -16,11 +16,11 @@ if (url.length > "/self-talking/".length && url.substring(0, "/self-talking/".le
   var script = document.createElement('script');
   var utterances = document.getElementById("utterances");
   script.src = "https://utteranc.es/client.js";
-  script.setAttribute("repo", "zsdycs/zsdycs-blog");
+  script.setAttribute("repo", "zsdycs/zsdycs.cn");
   script.setAttribute("issue-term", "pathname");
-  script.setAttribute("repo", "zsdycs/zsdycs-blog");
+  script.setAttribute("repo", "zsdycs/zsdycs.cn");
   script.setAttribute("crossorigin", "anonymous");
-  script.setAttribute("repo", "zsdycs/zsdycs-blog");
+  script.setAttribute("repo", "zsdycs/zsdycs.cn");
   if (window.localStorage.getItem('darkmode') === 'true') {
     script.setAttribute("theme", "github-dark");
   } else {
