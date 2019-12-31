@@ -1,7 +1,7 @@
 {{ if .Section }}
 <nav class="post-nav">
-  <span class="nav-prev" title="You can use the corresponding keys on the keyboard">{{ with .PrevInSection }}<a href="{{ .RelPermalink }}">&larr; {{ .Title }}</a>{{ end }}</span>
-  <span class="nav-next" title="You can use the corresponding keys on the keyboard">{{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }} &rarr;</a>{{ end }}</span>
+  <span class="nav-prev">{{ with .PrevInSection }}&larr; <a href="{{ .RelPermalink }}" title="You can use the keyboard">{{ .Title }}</a>{{ end }}</span>
+  <span class="nav-next">{{ with .NextInSection }}<a href="{{ .RelPermalink }}" title="You can use the keyboard">{{ .Title }}</a> &rarr;{{ end }}</span>
 </nav>
 <script type="text/javascript">
 document.addEventListener('keyup', function(e) {
