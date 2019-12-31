@@ -1,12 +1,12 @@
 ---
 title: 简历
-date: '2019-01-27'
+date: '2019-12-31'
 slug: /vitae
 ---
 
 # 李鹏坤  
 ## 2019应届毕业生  
-Email：zsdycs@gmail.com（@zsdycs.cn还没时间做，做好了更新）  
+Email：lipk@zsdycs.cn 
 所在地：江苏 · 苏州  
 籍贯：广东 · 中山
 ## 教育背景
