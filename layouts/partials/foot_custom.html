@@ -1,7 +1,7 @@
 {{ if .Section }}
 <nav class="post-nav">
-  <span class="nav-prev" title="You can use the corresponding keys on the keyboard">{{ with .PrevInSection }}&larr; <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}</span>
-  <span class="nav-next" title="You can use the corresponding keys on the keyboard">{{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>&rarr; {{ end }}</span>
+  <span class="nav-prev" title="You can use the corresponding keys on the keyboard">{{ with .PrevInSection }}<a href="{{ .RelPermalink }}">&larr; {{ .Title }}</a>{{ end }}</span>
+  <span class="nav-next" title="You can use the corresponding keys on the keyboard">{{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }} &rarr;</a>{{ end }}</span>
 </nav>
 <script type="text/javascript">
 document.addEventListener('keyup', function(e) {
@@ -32,7 +32,7 @@ document.addEventListener('keyup', function(e) {
 <script src="/js/darkmode-js.min.js"></script>
 <script src="/js/darkmode.js"></script>
 
-{{ if eq .RelPermalink "/music/" }}
+{{/*  {{ if eq .RelPermalink "/music/" }}
 <link rel="stylesheet" href="/css/loading-muisc.css">
 <link rel="stylesheet" href="/css/music.css">
 <script src="/js/id3-minimized.js"></script>
@@ -41,7 +41,7 @@ document.addEventListener('keyup', function(e) {
 <script src="/js/wavesurfer.js"></script>
 <script src="/js/wavesurfer.cursor.js"></script>
 <script src="/js/for_wave.js"></script>
-{{ end }}
+{{ end }}  */}}
 
 {{ range .Site.Params.customJS }}
 <script async src="{{ . | relURL }}"></script>
