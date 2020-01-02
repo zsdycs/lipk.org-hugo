@@ -60,7 +60,7 @@ if (directoryName === "/self-talking/" || directoryName === "/cate/" || director
   }
 
   // 切换模式时，评论头出现提示
-  if (directoryName === "/self-talking/") {
+  if (directoryName === "/self-talking/" && url.length > "/self-talking/".length) {
     darkButton.addEventListener("click", () => {
       var isMsg = document.getElementById("utterancesMsg");
       if (isMsg) {
