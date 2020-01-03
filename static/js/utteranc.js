@@ -12,12 +12,13 @@ function GetUrlRelativePath() {
 }
 
 var url = GetUrlRelativePath();
-if (url.length > "/self-talking/".length && url.substring(0, "/self-talking/".length) === "/self-talking/") {
+if (url.length > "/self-talking/".length && url.substring(0, "/self-talking/".length) === "/self-talking/" ||
+document.title === "执手对影成双 - 404 Page not found") {
   var script = document.createElement('script');
   var utterances = document.getElementById("utterances");
   script.src = "https://utteranc.es/client.js";
   script.setAttribute("repo", "zsdycs/zsdycs.cn");
-  script.setAttribute("issue-term", "pathname");
+  script.setAttribute("issue-term", "title");
   script.setAttribute("crossorigin", "anonymous");
   if (window.localStorage.getItem('darkmode') === 'true') {
     script.setAttribute("theme", "github-dark");
