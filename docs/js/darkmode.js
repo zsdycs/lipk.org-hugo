@@ -55,43 +55,42 @@ if (url.length >= "/about/".length && url.substring(0, "/about/".length) === "/a
   directoryName = url.substring(0, "/about/".length);
 }
 
-if (directoryName === "/self-talking/" || directoryName === "/cate/" || directoryName === "/music/" || directoryName === "/about/") {
-  // 过滤emoji
-  var article = document.getElementsByTagName("article")[0];
-  var emojiReg = /[\uD83C|\uD83D|\uD83E][\uDC00-\uDFFF][\u200D|\uFE0F]|[\uD83C|\uD83D|\uD83E][\uDC00-\uDFFF]|[0-9|*|#]\uFE0F\u20E3|[0-9|#]\u20E3|[\u203C-\u3299]\uFE0F\u200D|[\u203C-\u3299]\uFE0F|[\u2122-\u2B55]|\u303D|[\A9|\AE]\u3030|\uA9|\uAE|\u3030/g;
-  for (var i = 0; i < article.children.length; i++) {
-    if (article.children[i].nodeName === "FOOTER") {
-      break;
-    }
-    var str = article.children[i].innerHTML;
-    article.children[i].innerHTML = str.replace(emojiReg, function (emoji) {
-      return "<span class=\"darkmode-ignore\">" + emoji + "</span>";
-    });
+// 过滤emoji
+var article = document.getElementsByTagName("article")[0];
+var emojiReg = /[\uD83C|\uD83D|\uD83E][\uDC00-\uDFFF][\u200D|\uFE0F]|[\uD83C|\uD83D|\uD83E][\uDC00-\uDFFF]|[0-9|*|#]\uFE0F\u20E3|[0-9|#]\u20E3|[\u203C-\u3299]\uFE0F\u200D|[\u203C-\u3299]\uFE0F|[\u2122-\u2B55]|\u303D|[\A9|\AE]\u3030|\uA9|\uAE|\u3030/g;
+for (var i = 0; i < article.children.length; i++) {
+  if (article.children[i].nodeName === "FOOTER") {
+    break;
   }
+  var str = article.children[i].innerHTML;
+  article.children[i].innerHTML = str.replace(emojiReg, function (emoji) {
+    return "<span class=\"darkmode-ignore\">" + emoji + "</span>";
+  });
+}
 
-  // 切换模式时，评论头出现提示
-  if (directoryName === "/self-talking/" && url.length > "/self-talking/".length) {
-    darkButton.addEventListener("click", () => {
-      var isMsg = document.getElementById("utterancesMsg");
-      if (isMsg) {
-        isMsg.remove();
-      }
-      var utterancesMsg = document.createElement('div')
-      utterancesMsg.setAttribute("id", "utterancesMsg");
-      utterancesMsg.classList.add("darkmode-ignore");
-      if (darkmodeLS && darkmodeLS === "true" && darkmodeLS !== window.localStorage.getItem('darkmode')) {
-        utterancesMsg.innerText =
-          "If you need to read in day mode," +
-          " the comments will switch to day mode after refreshing the page." +
-          "刷新页面评论切换为白天模式。";
-        utterances.insertBefore(utterancesMsg, utterances.children[0]);
-      } else if (darkmodeLS && darkmodeLS === "false" && darkmodeLS !== window.localStorage.getItem('darkmode')) {
-        utterancesMsg.innerText =
-          "If you need to read in night mode," +
-          " the comments will switch to night mode after refreshing the page." +
-          "刷新页面评论切换为黑夜模式。";
-        utterances.insertBefore(utterancesMsg, utterances.children[0]);
-      }
-    });  
-  }
+// 切换模式时，评论头出现提示
+if (url.length > "/self-talking/".length && url.substring(0, "/self-talking/".length) === "/self-talking/" ||
+document.title === "执手对影成双 - 404 Page not found") {
+  darkButton.addEventListener("click", () => {
+    var isMsg = document.getElementById("utterancesMsg");
+    if (isMsg) {
+      isMsg.remove();
+    }
+    var utterancesMsg = document.createElement('div')
+    utterancesMsg.setAttribute("id", "utterancesMsg");
+    utterancesMsg.classList.add("darkmode-ignore");
+    if (darkmodeLS && darkmodeLS === "true" && darkmodeLS !== window.localStorage.getItem('darkmode')) {
+      utterancesMsg.innerText =
+        "If you need to read in day mode," +
+        " the comments will switch to day mode after refreshing the page." +
+        "刷新页面评论切换为白天模式。";
+      utterances.insertBefore(utterancesMsg, utterances.children[0]);
+    } else if (darkmodeLS && darkmodeLS === "false" && darkmodeLS !== window.localStorage.getItem('darkmode')) {
+      utterancesMsg.innerText =
+        "If you need to read in night mode," +
+        " the comments will switch to night mode after refreshing the page." +
+        "刷新页面评论切换为黑夜模式。";
+      utterances.insertBefore(utterancesMsg, utterances.children[0]);
+    }
+  });  
 }

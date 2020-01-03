@@ -104,11 +104,22 @@
 
     </header>
     
-<p><b>404，</b><ins>这是个错误。</ins></p>
-<p>请求地址 <code></code>在服务器中没有找到对应的资源。 <br><ins>我们知道的就这些。</ins></p>
-<p><a href="/"><img id="svg-404" src="/images/Watchdog.webp" alt="返回首页" /></a></p>
+<p>
+  <b>404，</b>
+  <ins>这是个错误。</ins>
+</p>
+<p>请求地址 <code></code>在服务器中没有找到对应的资源。 
+  <br>
+  <ins>我们知道的就这些。</ins>
+</p>
+<p style="text-align: center;">
+  <a href="/">
+    <img src="/images/Watchdog.gif" alt="返回首页" />
+  </a>
+</p>
 <script>
-  document.querySelector("code").innerHTML = window.location.pathname;
+  document.querySelectorAll("code")[0].innerHTML = window.location.pathname;
+  document.querySelectorAll("code")[1].innerHTML = window.location.pathname;
 </script>
 <footer>
   
