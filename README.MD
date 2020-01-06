@@ -1,5 +1,48 @@
-### This is the source for zsdycs.cn.   
+### 这是[zsdycs.cn](https://zsdycs.cn)的源代码。
 
-If you find an error, please submit the merge branch request.   
+- 构建：[hugo](http://gohugo.io)。  
+- 主题：[hugo-ivy](https://github.com/yihui/hugo-ivy)。
 
-Thank you very much.
+- 目录结构：
+```
+zsdycs-blog
+├─ CNAME // github-pages域别名声明
+├─ LICENSE.MD // 版权声明
+├─ README.MD // 源代码说明
+├─ config.toml // 网站配置
+├─ content // MD资源文件夹
+│    ├─ _index.md // 首页
+│    ├─ about.md // 关于
+│    ├─ cate.md // 博客 - 食物
+│    ├─ music.md // 博客 - 音乐（抛弃 && 保留）
+│    ├─ self-talking // 博客MD文件夹
+│    │    ├─ ...... // 博客 - 文章
+│    │    └─ _index.md // 博客入口
+│    └─ vitae.md // 简历
+├─ docs // 站点文件夹（hugo生成）
+├─ layouts // 页面模板文件夹
+│    ├─ 404.html // 404页面
+│    ├─ _default // 默认结构
+│    │    ├─ ......
+│    └─ partials // 模板结构块
+│           ├─ ......
+└─ static // 站点资源
+       ├─ css
+       │    ├─ ......
+       ├─ images
+       │    ├─ ......
+       ├─ js
+       │    ├─ ......
+       └─ zsdycs_favicon.ico // 站点图标
+```
+目录结构生成来自[Dir Tree Noter](http://dir.yardtea.cc/)📁。
+
+### 鸣谢
+1. [Github](http://github.com)🏆。
+2. [yihui xie](http://github.com/yihui)❤。
+3. [Darkmode.js](http://github.com/sandoche/Darkmode.js)🌗。
+4. [utterances](http://github.com/utterance/utterances)🔮。
+5. [wildfire](http://wildfire.js.org)🔥。
+
+以上项目的组织及所有者，为本项目的实现提供了支持。  
+**感谢开源世界，感谢世界开源**。
