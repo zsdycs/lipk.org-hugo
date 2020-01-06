@@ -39,7 +39,7 @@ zsdycs-blog
 
 ### 鸣谢
 1. [Github](http://github.com)🏆。
-2. [yihui xie](http://github.com/yihui)❤。
+2. [Yihui Xie](http://github.com/yihui)❤。
 3. [Darkmode.js](http://github.com/sandoche/Darkmode.js)🌗。
 4. [utterances](http://github.com/utterance/utterances)🔮。
 5. [wildfire](http://wildfire.js.org)🔥。
