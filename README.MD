@@ -9,6 +9,7 @@ zsdycs.cn
 ├─ LICENSE.MD // 版权声明
 ├─ README.MD // 源代码说明
 ├─ config.toml // 网站配置
+├─ docs // 站点文件夹（hugo生成）
 ├─ content // MD资源文件夹
 │  ├─ _index.md // 首页
 │  ├─ about.md // 关于
@@ -16,9 +17,8 @@ zsdycs.cn
 │  ├─ cate.md // 博客 - 食物
 │  ├─ music.md // 博客 - 音乐（抛弃 && 保留）
 │  └─ self-talking // 博客MD文件夹
-│     ├─ ......
-│     └─ _index.md // 博客入口
-├─ docs // 站点文件夹（hugo生成）
+│     ├─ _index.md // 博客入口
+│     └─ ......
 ├─ layouts // 页面模板文件夹
 │  ├─ _default // 默认结构
 │  │  └─ ......
