@@ -1,7 +1,7 @@
 ---
 title: '我的一个朋友'
 date: '2019-02-08'
-slug: 'A-friend-of-mine'
+slug: 'a-friend-of-mine'
 ---
 
 “一下子就过去了七天”

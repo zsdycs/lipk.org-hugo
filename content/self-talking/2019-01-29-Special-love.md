@@ -1,7 +1,7 @@
 ---
 title: '特殊的爱'
 date: '2019-01-29'
-slug: 'Special-love'
+slug: 'special-love'
 ---
 
 > 这一篇是为“大学生心理节”，心理剧表演进行改编的，是同一个[框架](https://zsdycs.cn/self-talking/2019/01/28/who-moved-my-bread/)，加入了同学们日常会遇到的问题，营造的是一个刚刚分手的学生在宿舍的奇遇。乐在与同学一起排练，在台上表演的过程。

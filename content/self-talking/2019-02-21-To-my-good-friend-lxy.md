@@ -1,7 +1,7 @@
 ---
 title: '给世界上最幸福的人'
 date: '2019-02-21'
-slug: 'To-my-good-friend-dxy'
+slug: 'to-my-good-friend-dxy'
 ---
 
 展信佳
