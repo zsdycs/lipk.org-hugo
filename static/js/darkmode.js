@@ -16,8 +16,8 @@ var options = {
   time: '0.5s', // default: '0.3s'
   mixColor: 'white', // default: '#fff'
   backgroundColor: '#efefef',  // default: '#fff'
-  buttonColorDark: '#000',  // default: '#100f2c'
-  buttonColorLight: '#fff', // default: '#fff'
+  buttonColorDark: '#666666',  // default: '#100f2c'
+  buttonColorLight: '#efefef', // default: '#fff'
   saveInCookies: true, // default: true,
   label: nightAndDaySvg, // default: ''
   autoMatchOsTheme: true // default: true
