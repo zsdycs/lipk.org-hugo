@@ -3,9 +3,9 @@ vagrant是一个工具，用于创建和部署虚拟化开发环境的。
 
 拿VirtualBox举例，VirtualBox会开放一个创建虚拟机的接口，Vagrant会利用这个接口创建虚拟机，并且通过Vagrant来管理，配置和自动安装虚拟机。
 
-Vagrant命令 | 	解释
+Vagrant命令 | 解释
 ---|---
-vagrant box add | 	查看目前已有的box
+vagrant box add | 查看目前已有的box
 vagrant box list | 新增加一个box
 vagrant box remove | 删除指定box
 vagrant init | 初始化配置vagrantfile
