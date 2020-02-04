@@ -5,8 +5,8 @@ vagrant是一个工具，用于创建和部署虚拟化开发环境的。
 
 Vagrant命令 | 解释
 ---|---
-vagrant box add | 查看目前已有的box
-vagrant box list | 新增加一个box
+vagrant box add | 新增加一个box
+vagrant box list | 查看目前已有的box
 vagrant box remove | 删除指定box
 vagrant init | 初始化配置vagrantfile
 vagrant up | 启动虚拟机
