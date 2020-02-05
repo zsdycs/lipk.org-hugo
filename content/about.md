@@ -24,7 +24,11 @@ slug: /about
 
 ## 本站
 
+<<<<<<< HEAD
 [CMS](https://baike.baidu.com/item/CMS/315935?fr=aladdin)用的是[hugo](https://gohugo.io/)，服务源于[Github Pages](https://pages.github.com/)，源代码托管[GitHub](https://github.com/zsdycs/zsdycs-blog)。  
+=======
+[CMS](https://baike.baidu.com/item/CMS/315935?fr=aladdin)用的是[hugo](https://gohugo.io/)，服务源于[Github Pages](https://pages.github.com/)，源代码托管[GitHub](https://github.com/zsdycs/zsdycs.cn)。  
+>>>>>>> zsdycs-blog -> zsdycs.cn
 评论来自 [utteranc.es](https://utteranc.es/)，基于GitHub issues，甚是方便。  
 曾经使用过[wildfire](https://wildfire.js.org)🔥，UI很不错，但是要用[Firebase](https://firebase.google.com)，在国内很不稳定。  
 CDN来自[cloudflare](https://www.cloudflare.com/)。
