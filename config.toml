@@ -109,11 +109,7 @@ publishDir = "docs"
                 "js/external-link.js",
                 "js/alt-title.js"]
     author = '李鹏坤'
-<<<<<<< HEAD
-    githubContentURL = "http://github.com/zsdycs/zsdycs-blog/edit/master/content/"
-=======
     githubContentURL = "http://github.com/zsdycs/zsdycs.cn/edit/master/content/"
->>>>>>> zsdycs-blog -> zsdycs.cn
     edit = "编辑"
     license = "版权"
  [author]

@@ -1,1 +1,0 @@
-git commit --no-verify -m "commit"

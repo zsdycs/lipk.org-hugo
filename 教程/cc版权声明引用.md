@@ -1,1 +1,0 @@
-[![cc](https://static.segmentfault.com/v-5c498373/global/img/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
