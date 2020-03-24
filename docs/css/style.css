@@ -7,6 +7,30 @@ html {
   box-sizing: border-box;
 }
 
+/* -webkit-scrollbar style */
+html::-webkit-scrollbar-track
+{
+	border-radius: 5px;
+	background-color: rgb(212, 212, 212);
+}
+
+html::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: rgb(212, 212, 212);
+}
+
+html::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	background-color: rgb(131, 131, 131)
+}
+
+html::-webkit-scrollbar-thumb:hover
+{
+	background-color: #494949;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
