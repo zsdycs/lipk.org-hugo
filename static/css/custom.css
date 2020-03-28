@@ -14,7 +14,7 @@
   border-bottom: none;
 }
 .main {
-  hyphens: auto;
+  hyphens: manual;
   border-left-color: #ddd;
 }
 .main, .masthead {
