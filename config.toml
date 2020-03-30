@@ -113,4 +113,9 @@ publishDir = "docs"
     edit = "编辑"
     license = "版权"
  [author]
-   self-talking= '李鹏坤'
+    self-talking= '李鹏坤'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      table = true
