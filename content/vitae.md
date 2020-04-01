@@ -47,7 +47,7 @@ JAVA程序设计、软件系统分析与设计、软件项目管理、计算机�
 - 开发工具：DW、VS、VS Code、Axure、Eclipse。
 - 框架：Express、Vue、Semantic UI、React、ant、钉耙等。
 - 编程语言：HTML、JS、JQ、CSS、~~C#、JAVA、PHP、C~~。
-- 应用程序：常见数据库如：MySQL、SQL Server、Oracle、MongoDB等，nodejs、Git、微软三件套、PS、AE、AU、PR。
+- 应用程序：常见数据库如：MySQL、SQL Server、Oracle、MongoDB等，NodeJs、Git、微软三件套、PS、AE、AU、PR。
 - 操作系统：Windows、MacOS、CenterOS。
 
 ## 荣誉奖励

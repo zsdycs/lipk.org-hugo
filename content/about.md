@@ -34,4 +34,4 @@ CDN来自[cloudflare](https://www.cloudflare.com/)。
 - [Xshell](https://www.netsarang.com/zh/xshell/)：目前认为最好用的远程连接linux工具
 - [Git](https://git-scm.com/)：世界上最先进的本地文件分布式版本控制系统
 - [Hugo](http://gohugo.io)：世界上最快的网站构建框架
-- [visualstudio code](https://code.visualstudio.com/):使用最多的IDE
+- [VS Code](https://code.visualstudio.com/):使用最多的IDE

@@ -157,14 +157,14 @@ Markdown(MD)是**非常简单的**文本标记语言。
 
 - 可以用什么来写MD呢？
 
-  我使用的是[VS Code](https://code.visualstudio.com/)，一般做笔记用的可以用[有道云笔记](http://note.youdao.com/)。
-  也可用[Mark Text](https://www.electronjs.org/apps/marktext),是一个GitHub开源的软件。
+  我使用的是[VS Code](https://code.visualstudio.com/)，做笔记的话可以用[有道云笔记](http://note.youdao.com/)。
+  也可用[Mark Text](https://www.electronjs.org/apps/marktext)，是一个GitHub开源的软件。
 
 ### 最后两句
 
 其实这里介绍的语法只是最常用的几个，还有很多特殊的语法需要自己去看文档。
 
-不管用什么方法做笔记，只要笔记会回过头来看，就是有用的。
+不管用什么方法做笔记，笔记反复看才有效。
 
 本文也是用MD写的，[原文传送门](https://github.com/zsdycs/zsdycs.cn/blob/master/content/self-talking/2020-03-30-Learn-to-record.md)。
 
