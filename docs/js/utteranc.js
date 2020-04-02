@@ -1,3 +1,5 @@
+const loading = document.getElementById('loading')
+let utterancesLoadingEnd = false;
 /**
  * 获取页面的相对路径
  * 例如：http://localhost:1313/cate/ 
@@ -19,7 +21,6 @@ getUrlRelativePath = () => {
 /**
  * 通过MutationObserver来监听#utterances
  */
-let end = false;
 utterancesEnd = () => {
   const targetNode = document.getElementById('utterances');
   const options = { attributes: true, childList: true, subtree: true};
@@ -27,17 +28,15 @@ utterancesEnd = () => {
     mutationsList.forEach(element => {
       if (element.type === 'attributes' && element.target.className === 'utterances') {
         // 加载结束！
-        end = true
-        const loading = document.getElementById('loading')
+        utterancesLoadingEnd = true
         loading.style.display = 'none';
         window.localStorage.setItem('utterances', 'true');
       }
     });
   }
   setTimeout(() => {
-    if (!end) {
+    if (!utterancesLoadingEnd) {
       // 隐藏加载
-      const loading = document.getElementById('loading')
       loading.style.display = 'none';
 
       // 显示提示
@@ -46,7 +45,7 @@ utterancesEnd = () => {
       utterancesMsg.setAttribute('id', 'utterancesMsg');
       utterancesMsg.classList.add('darkmode-ignore');
       utterancesMsg.innerText =
-        '评论加载失败了。\n我们只知道“api.github.com/search/issues”返回了一个“ERR_CONNECTION_RESET”的错误。';
+        '评论加载失败了。\n“api.github.com/search/issues”返回了一个“ERR_CONNECTION_RESET”的错误。';
       utterances.insertBefore(utterancesMsg, utterances.children[0]);
     }
   }, 8000);
@@ -58,6 +57,8 @@ utterancesEnd = () => {
  * 在#utterances处，append评论的script
  */
 addUtteranc = () => {
+  // 显示加载状态
+  loading.style.display = 'flex';
   const script = document.createElement('script');
   const utterances = document.getElementById('utterances');
   script.src = 'https://utteranc.es/client.js';
@@ -65,10 +66,10 @@ addUtteranc = () => {
   script.setAttribute('issue-term', 'title');
   script.setAttribute('crossorigin', 'anonymous');
   console.log('darkmode', window.localStorage.getItem('darkmode'));
-  if (window.localStorage.getItem('darkmode') === 'true') {
-    script.setAttribute('theme', 'github-dark');
-  } else {
+  if (window.localStorage.getItem('darkmode') === 'false') {
     script.setAttribute('theme', 'github-light');
+  } else {
+    script.setAttribute('theme', 'github-dark');
   }
   script.async = true;
   utterances.appendChild(script);
@@ -77,15 +78,15 @@ addUtteranc = () => {
   utterancesEnd();
 }
 
-// 在“文章”加载评论
-if (getUrlRelativePath().length > '/self-talking/'.length && getUrlRelativePath().substring(0, '/self-talking/'.length) === '/self-talking/') {
-  console.log('/self-talking/!')
-  addUtteranc()
-}
-
 // 在“食物表”加载评论
 if (getUrlRelativePath().length = '/cate/'.length && getUrlRelativePath().substring(0, '/cate/'.length) === '/cate/') {
   console.log('/cate/!')
+  addUtteranc()
+}
+
+// 在“文章”加载评论
+if (getUrlRelativePath().length > '/self-talking/'.length && getUrlRelativePath().substring(0, '/self-talking/'.length) === '/self-talking/') {
+  console.log('/self-talking/!')
   addUtteranc()
 }
 

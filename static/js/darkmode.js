@@ -79,12 +79,12 @@ darkButton.addEventListener("click", () => {
     var utterancesMsg = document.createElement('div')
     utterancesMsg.setAttribute("id", "utterancesMsg");
     utterancesMsg.classList.add("darkmode-ignore");
-    if (darkmodeLS && darkmodeLS === "true" && darkmodeLS !== window.localStorage.getItem('darkmode')) {
+    if ((darkmodeLS === null || darkmodeLS === "true") && window.localStorage.getItem('darkmode') === "false") {
       utterancesMsg.innerText =
         "如果你需要在白天模式下阅读，" +
         "刷新页面后，评论将会切换为白天模式。";
       utterances.insertBefore(utterancesMsg, utterances.children[0]);
-    } else if (darkmodeLS && darkmodeLS === "false" && darkmodeLS !== window.localStorage.getItem('darkmode')) {
+    } else if (darkmodeLS === "false" && window.localStorage.getItem('darkmode') === "true") {
       utterancesMsg.innerText =
         "如果你需要在黑夜模式下阅读，" +
         "刷新页面后，评论将会切换为黑夜模式。";
