@@ -33,6 +33,7 @@ function createA(list) {
     document.getElementById("rows_a").appendChild(br);
   }
 }
+
 function clickA(event) {
   $("#audio_image").css("display", "none");
   $("#loading").css("display", "flex");
@@ -44,6 +45,7 @@ function clickA(event) {
   $(".btnPause").removeClass("btnPause");
   createAudio(event);
 }
+
 function createAudio(url) {
   loadAudio(url)
   wave[0] = new_wave("#audio0", url)
@@ -61,7 +63,9 @@ function createAudio(url) {
 
 function loadAudio(url, callback, reader) {
   ID3.loadTags(url, function () {
-    var $ = function (e) { return document.getElementById(e); };
+    var $ = function (e) {
+      return document.getElementById(e);
+    };
     var tags = ID3.getAllTags(url);
     $("download_a").download = tags.title + " — " + tags.artist;
     $("download_a").href = url
@@ -83,9 +87,10 @@ function loadAudio(url, callback, reader) {
     if (callback) {
       callback();
     };
-  },
-    { tags: ["artist", "title", "album", "picture"], dataReader: reader }
-  );
+  }, {
+    tags: ["artist", "title", "album", "picture"],
+    dataReader: reader
+  });
 
 
 }
@@ -249,4 +254,3 @@ function getTime() {
 
     }, 15);
 }
-

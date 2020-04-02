@@ -1,5 +1,6 @@
-(function() {
-  var quotes = document.getElementsByTagName('blockquote'), i, quote;
+(function () {
+  var quotes = document.getElementsByTagName('blockquote'),
+    i, quote;
   for (i = 0; i < quotes.length; i++) {
     quote = quotes[i];
     var n = quote.children.length;

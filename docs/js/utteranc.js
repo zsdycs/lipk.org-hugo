@@ -23,7 +23,11 @@ getUrlRelativePath = () => {
  */
 utterancesEnd = () => {
   const targetNode = document.getElementById('utterances');
-  const options = { attributes: true, childList: true, subtree: true};
+  const options = {
+    attributes: true,
+    childList: true,
+    subtree: true
+  };
   callback = (mutationsList) => {
     mutationsList.forEach(element => {
       if (element.type === 'attributes' && element.target.className === 'utterances') {

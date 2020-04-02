@@ -1,4 +1,4 @@
-(function() {
+(function () {
   var i, cls, code, codes = document.getElementsByTagName('pre');
   for (i = 0; i < codes.length; i++) {
     code = codes[i];

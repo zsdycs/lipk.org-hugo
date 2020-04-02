@@ -1,4 +1,4 @@
-(function() {
+(function () {
   var i, text, code, codes = document.getElementsByTagName('code');
   for (i = 0; i < codes.length;) {
     code = codes[i];
@@ -9,9 +9,9 @@
         code.textContent = text;
       }
       if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
-          /^\$(.|\s)+\$$/.test(text) ||
-          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
-        code.outerHTML = code.innerHTML;  // remove <code></code>
+        /^\$(.|\s)+\$$/.test(text) ||
+        /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML; // remove <code></code>
         continue;
       }
     }

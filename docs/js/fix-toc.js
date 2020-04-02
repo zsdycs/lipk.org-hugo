@@ -1,4 +1,4 @@
-(function() {
+(function () {
   var toc = document.getElementById('TableOfContents');
   if (!toc) return;
   var li, ul = toc.querySelector('ul');

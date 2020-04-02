@@ -1,6 +1,7 @@
-(function() {
+(function () {
   function center_el(tagName) {
-    var tags = document.getElementsByTagName(tagName), i, tag;
+    var tags = document.getElementsByTagName(tagName),
+      i, tag;
     for (i = 0; i < tags.length; i++) {
       tag = tags[i];
       var parent = tag.parentElement;
