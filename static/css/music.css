@@ -5,6 +5,7 @@ h1 {
 h2 a {
     color: #000;
 }
+
 /*
 h2 a:visited {
     color: #888;
@@ -13,12 +14,15 @@ h2 a:visited {
 dt {
     font-weight: bold;
 }
+
 dt:after {
     content: ":";
 }
+
 #songs li {
     line-height: 20px;
 }
+
 #songs li img {
     display: none;
     position: relative;
@@ -26,12 +30,15 @@ dt:after {
     width: 15px;
     height: 15px;
 }
+
 a.reference {
     font-size: small;
 }
+
 span.param {
     font-style: italic;
 }
+
 ul.params {
     list-style-type: none;
     margin-top: 5px;
@@ -49,7 +56,7 @@ ol.files {
     padding: 5px;
 }
 
-ol.files > li:before {
+ol.files>li:before {
     content: counter(li, lower-latin) ") ";
     counter-increment: li;
 }
@@ -59,60 +66,85 @@ ol.files > li:before {
 }
 
 /* start */
-*, :after, :before {
+*,
+:after,
+:before {
     box-sizing: inherit;
 }
+
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 a {
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
 }
-article, aside, footer, header, nav, section {
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
     display: block;
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
 }
-button, select {
+
+button,
+select {
     text-transform: none;
 }
-button, input, optgroup, select, textarea {
+
+button,
+input,
+optgroup,
+select,
+textarea {
     font-size: 100%;
     line-height: 1.15;
     margin: 0;
 }
+
 [v-cloak] {
     display: none;
 }
-#isloading{
+
+#isloading {
     padding-top: 10px;
     width: 1100px;
     height: 50px;
     margin: 0 auto;
 }
+
 .waveform {
     height: 75px;
-    margin: auto;    
+    margin: auto;
 }
+
 #waveform {
     height: 36px;
     position: relative;
 }
+
 #waveform1 {
     height: 50px;
     position: relative;
 }
-.play_and_pause_button{
+
+.play_and_pause_button {
     outline: none;
     border: 0;
     padding: 0;
     background-color: transparent;
 }
+
 .play_svg {
     width: 45px;
     height: 45px;
@@ -120,7 +152,8 @@ button, input, optgroup, select, textarea {
     cursor: pointer;
     display: block;
 }
-.row_one{
+
+.row_one {
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -129,18 +162,20 @@ button, input, optgroup, select, textarea {
     -ms-flex-direction: column;
     flex-direction: column;
 }
-.audio_ul{
+
+.audio_ul {
     display: block;
     margin: 0 auto;
     max-width: 1104px;
 }
-.audioLidLis_li{
+
+.audioLidLis_li {
     -ms-flex: 1 0 320px;
     flex: 1 0 320px;
     min-width: 0;
 }
 
-.row_div{
+.row_div {
     font-size: 12px;
     color: #999;
     border-radius: 4px;
@@ -149,14 +184,16 @@ button, input, optgroup, select, textarea {
     display: -ms-flexbox;
     display: flex;
 }
-.row_L{
+
+.row_L {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
 }
-.row_L_top{
+
+.row_L_top {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -164,14 +201,16 @@ button, input, optgroup, select, textarea {
     -ms-flex-align: center;
     align-items: center;
 }
-.row_L_top_div{
+
+.row_L_top_div {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
     width: 100%;
 }
-.row_L_top_content{
+
+.row_L_top_content {
     width: 100%;
     display: -ms-flexbox;
     display: flex;
@@ -180,14 +219,16 @@ button, input, optgroup, select, textarea {
     -ms-flex-align: center;
     align-items: center;
 }
-.wave_div{
+
+.wave_div {
     width: 100%;
     height: 75px;
     position: relative;
     cursor: -webkit-grab;
     cursor: grab;
 }
-.row_L_bottom{
+
+.row_L_bottom {
     -ms-flex-align: end;
     align-items: flex-end;
     -ms-flex-pack: justify;
@@ -196,21 +237,24 @@ button, input, optgroup, select, textarea {
     display: -ms-flexbox;
     display: flex;
 }
-.row_L_B_L{
+
+.row_L_B_L {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
     align-items: center;
     margin-top: 8px;
 }
-.music_info{
+
+.music_info {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: baseline;
     align-items: baseline;
     overflow: hidden;
 }
-.h3_m_name{
+
+.h3_m_name {
     margin: 0px;
     font-size: 10px;
     max-height: 40px;
@@ -218,7 +262,8 @@ button, input, optgroup, select, textarea {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.music_name:after{
+
+.music_name:after {
     background-color: #4d4d4d;
     content: "";
     height: 1px;
@@ -228,14 +273,15 @@ button, input, optgroup, select, textarea {
     position: absolute;
     top: 100%;
     transform: translateY(1px);
-    transition: all .15s cubic-bezier(.39,.575,.565,1);
-    transition-property: opacity,transform;
+    transition: all .15s cubic-bezier(.39, .575, .565, 1);
+    transition-property: opacity, transform;
     width: 100%;
 }
-.music_name{
+
+.music_name {
     max-width: 280px;
-    white-space: nowrap; 
-    overflow: hidden; 
+    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
     text-decoration: none;
     -webkit-font-smoothing: subpixel-antialiased;
@@ -244,7 +290,8 @@ button, input, optgroup, select, textarea {
     color: #4d4d4d;
     font-size: 14px;
 }
-.music_by_div{
+
+.music_by_div {
     margin-left: 4px;
     color: #999;
     height: 24px;
@@ -254,6 +301,7 @@ button, input, optgroup, select, textarea {
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+
 .music_author:after {
     background-color: #999;
     content: "";
@@ -264,34 +312,39 @@ button, input, optgroup, select, textarea {
     position: absolute;
     top: 100%;
     transform: translateY(1px);
-    transition: all .15s cubic-bezier(.39,.575,.565,1);
-    transition-property: opacity,transform;
+    transition: all .15s cubic-bezier(.39, .575, .565, 1);
+    transition-property: opacity, transform;
     width: 100%;
 }
+
 .audio_image {
     display: none;
     margin-right: 10px;
     border-radius: 3px;
 }
+
 .music_author {
     -webkit-font-smoothing: subpixel-antialiased;
     text-decoration: none;
     max-width: 150px;
-    white-space: nowrap; 
-    overflow: hidden; 
+    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
     position: relative;
     display: inline-block;
     vertical-align: middle;
     color: #999;
 }
+
 .text-align-r {
     display: flex;
 }
+
 .down-icon {
     position: relative;
     display: inline-block;
 }
+
 .down-svg {
     display: inline-block;
     fill: #999;
@@ -302,14 +355,16 @@ button, input, optgroup, select, textarea {
     border-right: 1px solid #e6e6e6;
     border-left: 1px solid transparent;
 }
-.audio-time{
+
+.audio-time {
     color: #333;
     font-weight: 700;
     margin: 0 10px 0 10px;
     min-width: 40px;
     text-align: center;
 }
-.add-f-svg{
+
+.add-f-svg {
     display: inline-block;
     fill: #999;
     padding: 8px;
@@ -317,77 +372,109 @@ button, input, optgroup, select, textarea {
     width: 20px;
     height: 20px;
 }
-.row-r-s{
+
+.row-r-s {
     position: relative;
     height: 100%;
 }
-.row-r-ss{
+
+.row-r-ss {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
     height: 100%;
 }
-.price-span{
+
+.price-span {
     display: inline-block;
     margin: 8px 0 8px;
 }
-.price-div{
+
+.price-div {
     line-height: 28px;
     color: #4d4d4d;
     font-size: 18px;
     font-weight: 700;
 }
-.sales-div{
+
+.sales-div {
     line-height: 20px;
     color: #999;
     font-size: 12px;
 }
-.add-like{
+
+.add-like {
     animation-name: _3HUDA;
 }
-#audioList{
+
+#audioList {
     margin-bottom: 24px;
 }
-@keyframes _3HUDA
-{20%{transform:scale(.8)}50%{transform:scale(1.2)}
+
+@keyframes _3HUDA {
+    20% {
+        transform: scale(.8)
+    }
+
+    50% {
+        transform: scale(1.2)
+    }
 }
-@keyframes XzVf_{50%{transform:scale(1.1);opacity:1}}
-.add-like,.add-like .add-f-svg {
+
+@keyframes XzVf_ {
+    50% {
+        transform: scale(1.1);
+        opacity: 1
+    }
+}
+
+.add-like,
+.add-like .add-f-svg {
     animation-duration: .8s;
-    animation-timing-function: cubic-bezier(.17,.89,.32,1.49);
+    animation-timing-function: cubic-bezier(.17, .89, .32, 1.49);
 }
-.add-like .add-f-svg{
+
+.add-like .add-f-svg {
     fill: #ff6966;
     animation-name: XzVf_;
 }
 
 @media(max-width: 639px) {
+
     /* body {
       background-color: rgb(117, 14, 36);
     } */
     .main {
         padding: 0px;
     }
+
     #rows_a {
         padding: 1em 40px;
     }
+
     .music_name {
         max-width: 240px;
     }
+
     .music_author {
         max-width: 100px;
     }
-    .row_div{
+
+    .row_div {
         -ms-flex-direction: column;
         flex-direction: column;
     }
-    .row_div, .row_one {
+
+    .row_div,
+    .row_one {
         padding: 16px;
     }
+
     .text-align-r {
         justify-content: flex-end;
     }
+
     .row_L_bottom {
         align-items: unset;
         flex-direction: column;
@@ -395,17 +482,19 @@ button, input, optgroup, select, textarea {
 }
 
 @media(min-width: 640px) {
+
     /* body {
     background-color: aquamarine;
         
     } */
-    .row_div{
-    margin: 16px 16px 16px;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    height: 141px;
-    padding: 15px 30px;
+    .row_div {
+        margin: 16px 16px 16px;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        height: 141px;
+        padding: 15px 30px;
     }
+
     .row-R {
         width: 170px;
         min-width: 127px;
@@ -419,9 +508,11 @@ button, input, optgroup, select, textarea {
     }
 
 }
-.display_3qnOD ._3qnOD{
+
+.display_3qnOD ._3qnOD {
     display: none;
 }
+
 ._3qnOD {
     width: 8px;
     height: 8px;
@@ -431,6 +522,7 @@ button, input, optgroup, select, textarea {
     left: 25px;
     top: 5px;
 }
+
 ._3qnOD:after {
     content: "";
     height: 100%;
@@ -445,14 +537,21 @@ button, input, optgroup, select, textarea {
     animation-direction: reverse;
     opacity: .5;
 }
-@keyframes _3UIIa{0%{opacity:0;transform:scale(3)}}
+
+@keyframes _3UIIa {
+    0% {
+        opacity: 0;
+        transform: scale(3)
+    }
+}
+
 /* @media(min-width: 1000px) {
 body {
     background-color: rgb(255, 255, 255);
 }
 } */
-@media (max-width: 1408px) and (min-width: 1152px){
-.music_info {
-    max-width: 500px;
-}
+@media (max-width: 1408px) and (min-width: 1152px) {
+    .music_info {
+        max-width: 500px;
+    }
 }

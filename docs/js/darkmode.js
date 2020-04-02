@@ -69,9 +69,9 @@ for (var i = 0; i < article.children.length; i++) {
 }
 
 // 切换模式时，评论头出现提示
-if (url.length > "/self-talking/".length && url.substring(0, "/self-talking/".length) === "/self-talking/" ||
-document.title === "执手对影成双 - 404 Page not found") {
-  darkButton.addEventListener("click", () => {
+darkButton.addEventListener("click", () => {
+  console.log('utterances: ', window.localStorage.getItem('utterances'))
+  if (window.localStorage.getItem('utterances') === "true") {
     var isMsg = document.getElementById("utterancesMsg");
     if (isMsg) {
       isMsg.remove();
@@ -81,16 +81,14 @@ document.title === "执手对影成双 - 404 Page not found") {
     utterancesMsg.classList.add("darkmode-ignore");
     if (darkmodeLS && darkmodeLS === "true" && darkmodeLS !== window.localStorage.getItem('darkmode')) {
       utterancesMsg.innerText =
-        "If you need to read in day mode," +
-        " the comments will switch to day mode after refreshing the page." +
-        "刷新页面评论切换为白天模式。";
+        "如果你需要在白天模式下阅读，" +
+        "刷新页面后，评论将会切换为白天模式。";
       utterances.insertBefore(utterancesMsg, utterances.children[0]);
     } else if (darkmodeLS && darkmodeLS === "false" && darkmodeLS !== window.localStorage.getItem('darkmode')) {
       utterancesMsg.innerText =
-        "If you need to read in night mode," +
-        " the comments will switch to night mode after refreshing the page." +
-        "刷新页面评论切换为黑夜模式。";
+        "如果你需要在黑夜模式下阅读，" +
+        "刷新页面后，评论将会切换为黑夜模式。";
       utterances.insertBefore(utterancesMsg, utterances.children[0]);
     }
-  });  
-}
+  }
+});

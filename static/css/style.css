@@ -8,30 +8,28 @@ html {
 }
 
 /* -webkit-scrollbar style */
-html::-webkit-scrollbar-track
-{
-	border-radius: 5px;
-	background-color: rgb(212, 212, 212);
+html::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: rgb(212, 212, 212);
 }
 
-html::-webkit-scrollbar
-{
-	width: 8px;
-	background-color: rgb(212, 212, 212);
+html::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgb(212, 212, 212);
 }
 
-html::-webkit-scrollbar-thumb
-{
-	border-radius: 5px;
-	background-color: rgb(131, 131, 131)
+html::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgb(131, 131, 131)
 }
 
-html::-webkit-scrollbar-thumb:hover
-{
-	background-color: #494949;
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #494949;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -40,7 +38,11 @@ body {
   padding: 0;
 }
 
-button, input, select, textarea, label {
+button,
+input,
+select,
+textarea,
+label {
   margin: 0;
   padding: 0;
   font-family: inherit;
@@ -50,7 +52,7 @@ button, input, select, textarea, label {
 img {
   max-width: 100%;
   border-radius: 0px;
-  
+
 }
 
 /* Typography */
@@ -59,7 +61,12 @@ body {
   line-height: 1.75;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   padding: 0;
   margin: 60px 0 30px;
   line-height: 1.25;
@@ -76,7 +83,10 @@ h2 {
   font-weight: bold;
 }
 
-h3, h4, h5, h6 {
+h3,
+h4,
+h5,
+h6 {
   font-size: 19px;
   font-weight: bold;
   text-align: left;
@@ -87,13 +97,15 @@ blockquote {
   padding: 0 2em;
   border-left: 3px solid rgba(255, 255, 255, 0);
 }
-blockquote:hover{
+
+blockquote:hover {
   border-left: 3px solid #ddd;
 }
 
 /* Code */
 
-pre, code {
+pre,
+code {
   font-size: .9em;
 }
 
@@ -116,7 +128,8 @@ pre code {
 
 /* Lists */
 
-ul, ol {
+ul,
+ol {
   padding: 0 0 0 20px;
 }
 
@@ -277,11 +290,14 @@ table thead th {
   border-bottom: 1px solid #666;
 }
 
-th, td {
+th,
+td {
   padding: 5px;
 }
 
-thead, tfoot, tr:nth-child(even) {
+thead,
+tfoot,
+tr:nth-child(even) {
   background: #f8f8f8;
 }
 
@@ -330,7 +346,7 @@ thead, tfoot, tr:nth-child(even) {
   .masthead {
     width: auto;
     float: none;
-    padding: 20px 0 16px!important;
+    padding: 20px 0 16px !important;
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
@@ -413,7 +429,8 @@ thead, tfoot, tr:nth-child(even) {
     margin-top: 10px;
   }
 
-  #menu-label:hover, #menu-label:focus {
+  #menu-label:hover,
+  #menu-label:focus {
     border: 1px solid #888;
   }
 
@@ -422,27 +439,27 @@ thead, tfoot, tr:nth-child(even) {
     width: 30px;
   }
 
-  #menu-check ~ label .close-icon {
+  #menu-check~label .close-icon {
     display: none;
   }
 
-  #menu-check ~ label .open-icon {
+  #menu-check~label .open-icon {
     display: inline-block;
   }
 
-  #menu-check:checked ~ label .close-icon {
+  #menu-check:checked~label .close-icon {
     display: inline-block;
   }
 
-  #menu-check:checked ~ label .open-icon {
+  #menu-check:checked~label .open-icon {
     display: none;
   }
 
-  #menu-check ~ ul {
+  #menu-check~ul {
     display: none;
   }
 
-  #menu-check:checked ~ ul {
+  #menu-check:checked~ul {
     display: block;
     margin-top: 50px;
     margin-bottom: 0;
@@ -451,8 +468,7 @@ thead, tfoot, tr:nth-child(even) {
 
 /* Landscape phone screens and smaller */
 
-@media screen and (max-width: 720px) {
-}
+@media screen and (max-width: 720px) {}
 
 /* Portrait phone screens */
 
@@ -470,11 +486,15 @@ thead, tfoot, tr:nth-child(even) {
     font-size: 18px;
   }
 
-  h3, h4, h5, h6 {
+  h3,
+  h4,
+  h5,
+  h6 {
     font-size: 16px;
   }
 
-  pre, code {
+  pre,
+  code {
     font-size: 12px;
   }
 

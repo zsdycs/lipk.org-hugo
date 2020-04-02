@@ -23,7 +23,17 @@ document.addEventListener('keyup', function(e) {
 <!-- 不加载wildfire评论 -->
 <!-- {{ partial "wildfire.html" . }} -->
 <!-- 加载utterances评论 -->
-<section id="utterances" class="comments"></section>
+<link rel="stylesheet" href="/css/loading.css">
+<section id="utterances" class="comments">
+  <div id="loading">
+    <div class="container animation-2">
+      <div class="shape shape1"></div>
+      <div class="shape shape2"></div>
+      <div class="shape shape3"></div>
+      <div class="shape shape4"></div>
+    </div>
+  </div>
+</section>
 
 <script src="/js/utteranc.js"></script>
 {{/*  {{ if  (or (.PrevInSection) (.NextInSection))  }}
@@ -33,7 +43,6 @@ document.addEventListener('keyup', function(e) {
 <script src="/js/darkmode.js"></script>
 
 {{/*  {{ if eq .RelPermalink "/music/" }}
-<link rel="stylesheet" href="/css/loading-muisc.css">
 <link rel="stylesheet" href="/css/music.css">
 <script src="/js/id3-minimized.js"></script>
 <script src="/js/jquery-3.3.1.min.js"></script>
