@@ -13,7 +13,7 @@ slug: 'learn-to-record'
 
 ## 一定要学会Markdown！
 
-- 为何我会去做笔记？
+### - 为何我会去做笔记？
 
 Markdown(MD)是**非常简单的**文本标记语言。  
 可以让我们很容易，就写出具有排版格式的文本。
@@ -27,7 +27,7 @@ Markdown(MD)是**非常简单的**文本标记语言。
 标题、列表、加粗、斜体、删除样式、块、引用、超链接。  
 共8项。
 
-- MD难吗？
+### - MD难吗？
 
 下面我介绍以上8种语法。
 
@@ -155,7 +155,7 @@ Markdown(MD)是**非常简单的**文本标记语言。
    效果：  
    [哔哩哔哩传送门](http://bilibili.com)
 
-- 可以用什么来写MD呢？
+### - 可以用什么来写MD呢？
 
   我使用的是[VS Code](https://code.visualstudio.com/)，做笔记的话可以用[有道云笔记](http://note.youdao.com/)。
   也可用[Mark Text](https://www.electronjs.org/apps/marktext)，是一个GitHub开源的软件。
