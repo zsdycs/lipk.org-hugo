@@ -1,5 +1,6 @@
 const loading = document.getElementById('loading')
 let utterancesLoadingEnd = false;
+window.localStorage.setItem('utterances', 'false');
 /**
  * 获取页面的相对路径
  * 例如：http://localhost:1313/cate/ 
@@ -49,7 +50,7 @@ utterancesEnd = () => {
       utterancesMsg.setAttribute('id', 'utterancesMsg');
       utterancesMsg.classList.add('darkmode-ignore');
       utterancesMsg.innerText =
-        '评论加载失败了。\n“api.github.com/search/issues”返回了一个“ERR_CONNECTION_RESET”的错误。';
+        '噢！评论加载失败了。\n稍等片刻后刷新页面，就可解决此问题。\n详情可在Console中查看，应该是Utterances在加载评论过程中出现了某些故障。';
       utterances.insertBefore(utterancesMsg, utterances.children[0]);
     }
   }, 8000);
@@ -69,7 +70,6 @@ addUtteranc = () => {
   script.setAttribute('repo', 'zsdycs/zsdycs.cn');
   script.setAttribute('issue-term', 'title');
   script.setAttribute('crossorigin', 'anonymous');
-  console.log('darkmode', window.localStorage.getItem('darkmode'));
   if (window.localStorage.getItem('darkmode') === 'false') {
     script.setAttribute('theme', 'github-light');
   } else {
@@ -77,20 +77,19 @@ addUtteranc = () => {
   }
   script.async = true;
   utterances.appendChild(script);
-  window.localStorage.setItem('utterances', 'false');
   // 处理评论是否加载完成
   utterancesEnd();
 }
 
 // 在“食物表”加载评论
-if (getUrlRelativePath().length = '/cate/'.length && getUrlRelativePath().substring(0, '/cate/'.length) === '/cate/') {
-  console.log('/cate/!')
+if (getUrlRelativePath().length = '/cate/'.length &&
+  getUrlRelativePath().substring(0, '/cate/'.length) === '/cate/') {
   addUtteranc()
 }
 
 // 在“文章”加载评论
-if (getUrlRelativePath().length > '/self-talking/'.length && getUrlRelativePath().substring(0, '/self-talking/'.length) === '/self-talking/') {
-  console.log('/self-talking/!')
+if (getUrlRelativePath().length > '/self-talking/'.length &&
+  getUrlRelativePath().substring(0, '/self-talking/'.length) === '/self-talking/') {
   addUtteranc()
 }
 

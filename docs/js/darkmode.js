@@ -70,7 +70,6 @@ for (var i = 0; i < article.children.length; i++) {
 
 // 切换模式时，评论头出现提示
 darkButton.addEventListener("click", () => {
-  console.log('utterances: ', window.localStorage.getItem('utterances'))
   if (window.localStorage.getItem('utterances') === "true") {
     var isMsg = document.getElementById("utterancesMsg");
     if (isMsg) {

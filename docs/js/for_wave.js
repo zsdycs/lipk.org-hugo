@@ -150,7 +150,6 @@ $(document).on('click', '.btnPlay', function () {
     $(playing_id).parent().prev().prev().addClass("btnPlay")
     for (var i = 0; i < 10; i++) {
       if (id == "audio" + i) {
-        // console.log(i)
         // 开始播放
         wave[i].play();
         // 修改图标->移除内容->增加内容
@@ -163,7 +162,6 @@ $(document).on('click', '.btnPlay', function () {
   } else {
     for (var i = 0; i < wave.length; i++) {
       if (id == "audio" + i) {
-        // console.log(i)
         // 开始播放
         wave[i].play();
         // 修改图标->移除内容->增加内容
@@ -210,8 +208,6 @@ function wave_audioprocess() {
       for (var i = 0; i < wave.length; i++) {
         wave[i].getDuration()
         var id = "#audio" + i
-        // console.log(id)
-        // console.info(secondToDate(wave[i].getCurrentTime()))
         $(id).parent().prev().text(secondToDate(wave[i].getCurrentTime()))
       }
     })
