@@ -34,4 +34,4 @@ slug: 'first-time-on-a-train'
 
 2019年1月30，写于Z99。
 
-#### [![版权声明](/images/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+#### [![版权声明](https://zsdycs.cn/images/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)

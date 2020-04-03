@@ -168,4 +168,4 @@ Markdown(MD)是**非常简单的**文本标记语言。
 
 本文也是用MD写的，[原文传送门](https://github.com/zsdycs/zsdycs.cn/blob/master/content/self-talking/2020-03-30-Learn-to-record.md)。
 
-#### [![版权声明](/images/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+#### [![版权声明](https://zsdycs.cn/images/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)

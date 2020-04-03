@@ -6,6 +6,8 @@ slug: /vitae
 
 # 李鹏坤
 
+![It's me](https://zsdycs.cn/images/vitae.png)
+
 ## 基本信息
 
 籍贯：广东 · 中山。  

@@ -22,4 +22,4 @@ slug: 'go-to-the-light-future'
 
 愿今夜有个美梦，梦回懵懂少年时。
 
-#### [![版权声明](/images/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+#### [![版权声明](https://zsdycs.cn/images/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)

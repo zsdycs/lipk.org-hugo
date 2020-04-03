@@ -97,4 +97,4 @@ slug: 'special-love'
 
 明天坐火车回家，挺期待的，天气辣么冷，早点上床休息吧。哦对了，这两篇都在比赛获了第二名，这一篇心理剧还额外获了个“最佳剧本”，虽然吧，是用的人家的框架结构，可是要是有自己的创意，还是会有不一样的效果。想做就去做吧 ~  
 
-#### [![版权声明](/images/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+#### [![版权声明](https://zsdycs.cn/images/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)

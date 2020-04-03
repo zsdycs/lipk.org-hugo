@@ -43,7 +43,7 @@ slug: 'to-my-good-friend-dxy'
 
 ---
 
-![新婚快乐](/images/2019-02-21-To-my-good-friend-dxy.jpg)
+![新婚快乐](https://zsdycs.cn/images/2019-02-21-To-my-good-friend-dxy.jpg)
 
 ---
 
@@ -52,4 +52,4 @@ slug: 'to-my-good-friend-dxy'
 就写这么多啦，要忙。😋  
 由衷祝福你，要幸福鸭，到时候回来中山，要介绍你老公给我认识，告诉一些你的黑历史给他。
 
-#### [![版权声明](/images/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+#### [![版权声明](https://zsdycs.cn/images/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
