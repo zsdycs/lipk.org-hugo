@@ -15,9 +15,9 @@ var options = {
   left: 'unset', // default: 'unset'
   time: '0.5s', // default: '0.3s'
   mixColor: 'white', // default: '#fff'
-  backgroundColor: '#efefef', // default: '#fff'
-  buttonColorDark: '#666666', // default: '#100f2c'
-  buttonColorLight: '#efefef', // default: '#fff'
+  backgroundColor: '#dedede', // default: '#fff'
+  buttonColorDark: '#212121', // default: '#100f2c'
+  buttonColorLight: '#dedede', // default: '#fff'
   saveInCookies: true, // default: true,
   label: nightAndDaySvg, // default: ''
   autoMatchOsTheme: true // default: true
@@ -29,7 +29,8 @@ var darkmodeLS = window.localStorage.getItem('darkmode');
 var darkButton = document.getElementsByClassName("darkmode-toggle")[0];
 var utterances = document.getElementById("utterances");
 
-function GetUrlRelativePath() {
+// 获取路由地址
+getUrlRelativePath = () => {
   var url = document.location.toString();
   var arrUrl = url.split("//");
   var start = arrUrl[1].indexOf("/");
@@ -40,7 +41,41 @@ function GetUrlRelativePath() {
   return relUrl;
 }
 
-var url = GetUrlRelativePath();
+// 修改页面的文字透明度
+modifyTextTransparency = (newMode, loadMode = 'true') => {
+  var dayColor = '#000000', nightColor = '#595959';
+  var a = document.querySelectorAll('a');
+  if (newMode) {
+    if (newMode == 'day') {
+      for (var i = 0; i < a.length; i++) {
+        a[i].style.color = dayColor;
+      }
+      document.body.style.color = dayColor;
+    } else if (newMode == 'night') {
+      for (var i = 0; i < a.length; i++) {
+        a[i].style.color = nightColor;
+      }
+      document.body.style.color = nightColor;
+    }
+  } else {
+    if (loadMode == null || loadMode == 'true') {
+      for (var i = 0; i < a.length; i++) {
+        a[i].style.color = nightColor;
+      }
+      document.body.style.color = nightColor;
+    } else {
+      for (var i = 0; i < a.length; i++) {
+        a[i].style.color = dayColor;
+      }
+      document.body.style.color = dayColor;
+    }
+  }
+}
+
+// 画面加载时，设置文字透明度
+modifyTextTransparency(undefined, darkmodeLS);
+
+var url = getUrlRelativePath();
 var directoryName = '';
 if (url.length >= "/self-talking/".length && url.substring(0, "/self-talking/".length) === "/self-talking/") {
   directoryName = url.substring(0, "/self-talking/".length);
@@ -70,6 +105,13 @@ for (var i = 0; i < article.children.length; i++) {
 
 // 切换模式时，评论头出现提示
 darkButton.addEventListener("click", () => {
+  var newDarkmode = window.localStorage.getItem('darkmode');
+  if (newDarkmode === null || newDarkmode === "true") {
+    // 文字透明度切换为黑夜
+    modifyTextTransparency('night');
+  } else {
+    modifyTextTransparency('day');
+  }
   if (window.localStorage.getItem('utterances') === "true") {
     var isMsg = document.getElementById("utterancesMsg");
     if (isMsg) {
@@ -78,12 +120,12 @@ darkButton.addEventListener("click", () => {
     var utterancesMsg = document.createElement('div')
     utterancesMsg.setAttribute("id", "utterancesMsg");
     utterancesMsg.classList.add("darkmode-ignore");
-    if ((darkmodeLS === null || darkmodeLS === "true") && window.localStorage.getItem('darkmode') === "false") {
+    if ((darkmodeLS === null || darkmodeLS === "true") && newDarkmode === "false") {
       utterancesMsg.innerText =
         "如果你需要在白天模式下阅读，" +
         "刷新页面后，评论将会切换为白天模式。";
       utterances.insertBefore(utterancesMsg, utterances.children[0]);
-    } else if (darkmodeLS === "false" && window.localStorage.getItem('darkmode') === "true") {
+    } else if (darkmodeLS === "false" && newDarkmode === "true") {
       utterancesMsg.innerText =
         "如果你需要在黑夜模式下阅读，" +
         "刷新页面后，评论将会切换为黑夜模式。";

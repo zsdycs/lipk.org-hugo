@@ -54,7 +54,7 @@ utterancesEnd = () => {
       utterances.insertBefore(utterancesMsg, utterances.children[0]);
     }
     window.clearTimeout(utterancesTimeout);
-  }, 13000);
+  }, 60000);
   const mutationObserver = new MutationObserver(callback);
   mutationObserver.observe(targetNode, options);
 }
