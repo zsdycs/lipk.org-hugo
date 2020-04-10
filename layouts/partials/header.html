@@ -65,6 +65,7 @@
 {{ $.Scratch.Set "section" (replaceRE "^/([^/]+)/.*" "$1" .URL) }}
 
 <body class="{{ if .IsHome }}home{{ else }}{{ $.Scratch.Get "section" }}{{ end }}">
+  <div class="paramount">
   <header class="masthead">
     {{ partial "tagline.html" . }}
     {{ partial "menu.html" . }}

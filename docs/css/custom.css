@@ -1,10 +1,15 @@
+html {
+  background-color: #444;
+}
+
+body {
+  background: url(/images/geometry.png) repeat;
+}
+
 @media screen and (min-width: 960px) {
-  body {
-    background: #dedede;
-  }
 
   .masthead {
-    /* position: sticky; */
+    position: sticky;
     top: 0;
   }
 }
@@ -136,9 +141,6 @@ pre {
 }
 
 @media screen and (max-width: 960px) {
-  body {
-    padding: 10px 0;
-  }
 
   h1,
   h2,
@@ -177,8 +179,6 @@ pre {
   .masthead .menu a {
     display: inline-block;
     padding: 5px 10px;
-    background: #444;
-    color: #fff;
     border-radius: 5px;
   }
 
@@ -213,7 +213,7 @@ pre {
     display: none;
   }
 
-  body {
+  .paramount {
     max-width: 700px;
   }
 

@@ -2,12 +2,12 @@
 {{ with $.Site.Params.githubContentURL }}
 {{ $.Scratch.Set "filePath" $.File.Path }}
 {{ $.Scratch.Set "filePath" (replace ($.Scratch.Get "filePath") "\\" "/") }}
-<br>
-<li><a href="{{ or $.Params.githubEditURL  (print .  ($.Scratch.Get "filePath")) }}" title="Edit this page"
+<!-- <br> -->
+<li><a href="{{ or $.Params.githubEditURL  (print .  ($.Scratch.Get "filePath")) }}" title="编辑本页"
     target="_blank">
     {{$.Site.Params.edit}}
   </a></li>
-<li><a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">
+<li><a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" title="版权声明" target="_blank">
     {{$.Site.Params.license}}
   </a></li>
 {{ end }}

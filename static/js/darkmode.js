@@ -43,7 +43,8 @@ getUrlRelativePath = () => {
 
 // 修改页面的文字透明度
 modifyTextTransparency = (newMode, loadMode = 'true') => {
-  var dayColor = '#000000', nightColor = '#595959';
+  var dayColor = '#000000',
+    nightColor = '#595959';
   var a = document.querySelectorAll('a');
   if (newMode) {
     if (newMode == 'day') {
@@ -53,14 +54,14 @@ modifyTextTransparency = (newMode, loadMode = 'true') => {
       document.body.style.color = dayColor;
     } else if (newMode == 'night') {
       for (var i = 0; i < a.length; i++) {
-        a[i].style.color = nightColor;
+        a[i].style.color = '#808080';
       }
       document.body.style.color = nightColor;
     }
   } else {
     if (loadMode == null || loadMode == 'true') {
       for (var i = 0; i < a.length; i++) {
-        a[i].style.color = nightColor;
+        a[i].style.color = '#808080';
       }
       document.body.style.color = nightColor;
     } else {
