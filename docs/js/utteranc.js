@@ -39,7 +39,7 @@ utterancesEnd = () => {
       }
     });
   }
-  setTimeout(() => {
+  var utterancesTimeout = setTimeout(() => {
     if (!utterancesLoadingEnd) {
       // 隐藏加载
       loading.style.display = 'none';
@@ -53,7 +53,8 @@ utterancesEnd = () => {
         '噢！评论加载失败了。\n稍等片刻后刷新页面，就可解决此问题。\n详情可在Console中查看，应该是Utterances在加载评论过程中出现了某些故障。';
       utterances.insertBefore(utterancesMsg, utterances.children[0]);
     }
-  }, 8000);
+    window.clearTimeout(utterancesTimeout);
+  }, 13000);
   const mutationObserver = new MutationObserver(callback);
   mutationObserver.observe(targetNode, options);
 }
