@@ -22,6 +22,7 @@ var options = {
   label: nightAndDaySvg, // default: ''
   autoMatchOsTheme: true // default: true
 }
+window.localStorage.setItem('darkmode', 'true');
 const darkmode = new Darkmode(options);
 darkmode.showWidget();
 
