@@ -22,7 +22,11 @@ var options = {
   label: nightAndDaySvg, // default: ''
   autoMatchOsTheme: true // default: true
 }
-window.localStorage.setItem('darkmode', 'true');
+
+// 设置darkmode默认值
+if (window.localStorage.getItem('darkmode') == null) {
+  window.localStorage.setItem('darkmode', 'true');
+}
 const darkmode = new Darkmode(options);
 darkmode.showWidget();
 
