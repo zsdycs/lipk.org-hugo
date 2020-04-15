@@ -56,9 +56,9 @@ document.addEventListener('keyup', function(e) {
 <script async src="{{ . | relURL }}"></script>
 {{ end }}
 
-{{ if eq .RelPermalink "/" }}
+<!-- {{ if eq .RelPermalink "/" }}
 <script src="/js/recordInformation.js"></script>
-{{ end }}
+{{ end }} -->
 
 {{ if and (not .Params.disable_mathjax) (or (in (string .Content) "\\") (in (string .Content) "$")) }}
 <!-- <script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->

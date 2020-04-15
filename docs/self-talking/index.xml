@@ -12,6 +12,23 @@
     
     
     <item>
+      <title>再见 19003986</title>
+      <link>https://zsdycs.cn/self-talking/2020/04/15/goodbye-19003986/</link>
+      <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zsdycs.cn/self-talking/2020/04/15/goodbye-19003986/</guid>
+      <description>今天收到了阿里云的短信，内容如下：
+ 【阿里云】尊敬的用户：经检查您的备案号粤ICP备19003986号-1下有网站未指向阿里云国内节点（不含香港）服务器且无访问记录 ，请您在3个工作日内进行修改，若规定时间后修改不合格，我们将删除网站备案接入信息。您的备案号可能会被注销，网站访问可能受到影响。详情请您查收邮件！
+ 前年（18年）在阿里云弄了个轻量应用服务器，用来学习站点部署，还买下了zsdycs.cn这个域名。
+国情原因，域名做了备案。
+现在服务器到期已经释放了，域名备案也要到期了。
+而这个网站已经托管到GitHub，DNS都转到Cloudflare了。
+这个过程令人唏嘘哇~
+仅以此篇感谢阿里云曾带给我骄傲！
+// 域名首页添加ICP备案信息function GetUrlRelativePath() {var url = document.location.toString();var arrUrl = url.split(&amp;#34;//&amp;#34;);var start = arrUrl[1].indexOf(&amp;#34;/&amp;#34;);var relUrl = arrUrl[1].substring(start);if (relUrl.indexOf(&amp;#34;?&amp;#34;) != -1) {relUrl = relUrl.split(&amp;#34;?&amp;#34;)[0];}return relUrl;}window.onload = function () {var url = GetUrlRelativePath();if (url == &amp;#34;/&amp;#34;) {var pObj = document.getElementById(&amp;#34;add-icp&amp;#34;);var strongObj = document.createElement(&amp;#34;span&amp;#34;);strongObj.id = &amp;#34;icp&amp;#34;strongObj.onclick = function () {window.</description>
+    </item>
+    
+    <item>
       <title>学会记录</title>
       <link>https://zsdycs.cn/self-talking/2020/03/30/learn-to-record/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>

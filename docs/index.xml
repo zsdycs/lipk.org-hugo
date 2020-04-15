@@ -12,6 +12,23 @@
     
     
     <item>
+      <title>再见 19003986</title>
+      <link>https://zsdycs.cn/self-talking/2020/04/15/goodbye-19003986/</link>
+      <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zsdycs.cn/self-talking/2020/04/15/goodbye-19003986/</guid>
+      <description>今天收到了阿里云的短信，内容如下：
+ 【阿里云】尊敬的用户：经检查您的备案号粤ICP备19003986号-1下有网站未指向阿里云国内节点（不含香港）服务器且无访问记录 ，请您在3个工作日内进行修改，若规定时间后修改不合格，我们将删除网站备案接入信息。您的备案号可能会被注销，网站访问可能受到影响。详情请您查收邮件！
+ 前年（18年）在阿里云弄了个轻量应用服务器，用来学习站点部署，还买下了zsdycs.cn这个域名。
+国情原因，域名做了备案。
+现在服务器到期已经释放了，域名备案也要到期了。
+而这个网站已经托管到GitHub，DNS都转到Cloudflare了。
+这个过程令人唏嘘哇~
+仅以此篇感谢阿里云曾带给我骄傲！
+// 域名首页添加ICP备案信息function GetUrlRelativePath() {var url = document.location.toString();var arrUrl = url.split(&amp;#34;//&amp;#34;);var start = arrUrl[1].indexOf(&amp;#34;/&amp;#34;);var relUrl = arrUrl[1].substring(start);if (relUrl.indexOf(&amp;#34;?&amp;#34;) != -1) {relUrl = relUrl.split(&amp;#34;?&amp;#34;)[0];}return relUrl;}window.onload = function () {var url = GetUrlRelativePath();if (url == &amp;#34;/&amp;#34;) {var pObj = document.getElementById(&amp;#34;add-icp&amp;#34;);var strongObj = document.createElement(&amp;#34;span&amp;#34;);strongObj.id = &amp;#34;icp&amp;#34;strongObj.onclick = function () {window.</description>
+    </item>
+    
+    <item>
       <title>学会记录</title>
       <link>https://zsdycs.cn/self-talking/2020/03/30/learn-to-record/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
@@ -553,11 +570,11 @@ Q 戚风 鸡蛋 5，牛奶 80，糖 60，低筋粉 110，油 若干，柠檬汁 
 会在下雨天睡觉，也会在起雾的玻璃上画心；
 会把地瓜放在灰烬里烤熟，也会将所有好友都打上姓名备注；
 会看《当世界年纪还小的时候》，也会······
-内容  本网站的所有内容均使用此版本的CC协议，转载请遵守“署名-非商业性使用-禁止演绎”的准则。 反对抄袭与简单的复制粘贴，若发现本站有此现象，欢迎邮件。 若发现本站页面内容有误，或是超链失效，希望你可以留言告诉我，或者在该页面的侧边栏，点击编辑，提交合并分支的请求。  本站 CMS用的是hugo，服务源于Github Pages，源代码托管GitHub。
+内容  本网站的所有内容均使用此版本的CC协议，转载请遵守“署名-非商业性使用-禁止演绎”的准则。 反对抄袭与简单的复制粘贴，若发现本站有此现象，欢迎邮件。 若发现本站页面内容有误，或是超链失效，希望你可以留言告诉我，或者在该页面的侧边栏，点击编辑，提交合并分支的请求。  本站 CMS用的是Hugo，服务源于Github Pages，源代码托管GitHub。
 评论来自 utteranc.es，基于GitHub issues，甚是方便。
-曾经使用过wildfire🔥，UI很不错，但是要用Firebase，在国内很不稳定。
-CDN来自cloudflare。
-软件  Xshell：目前认为最好用的远程连接linux工具 Git：世界上最先进的本地文件分布式版本控制系统 Hugo：世界上最快的网站构建框架 VS Code:使用最多的IDE  </description>
+曾经使用过Wildfire🔥，UI很不错，但是要用Firebase，在国内很不稳定。
+CDN来自Cloudflare。
+软件  Xshell：目前认为最好用的远程连接linux工具 Git：世界上最先进的本地文件分布式版本控制系统 Hugo：世界上最快的网站构建框架 VS Code: 使用最多的IDE  </description>
     </item>
     
   </channel>
