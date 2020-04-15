@@ -111,19 +111,17 @@ code {
 
 pre code {
   display: block;
-  border: 1px solid #ddd;
-  box-shadow: 5px 5px 5px #eee;
   padding: 1em;
   overflow-x: auto;
   line-height: 1.75;
 }
 
 code {
-  background: #f9f9f9;
+  background-color: #1d1e22;
 }
 
 pre code {
-  background: none;
+  isolation: isolate;
 }
 
 /* Lists */
