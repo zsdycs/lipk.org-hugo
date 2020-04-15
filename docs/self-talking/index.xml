@@ -25,7 +25,7 @@
 而这个网站已经托管到GitHub，DNS都转到Cloudflare了。
 这个过程令人唏嘘哇~
 仅以此篇感谢阿里云曾带给我骄傲！
-// 域名首页添加ICP备案信息function GetUrlRelativePath() {var url = document.location.toString();var arrUrl = url.split(&amp;#34;//&amp;#34;);var start = arrUrl[1].indexOf(&amp;#34;/&amp;#34;);var relUrl = arrUrl[1].substring(start);if (relUrl.indexOf(&amp;#34;?&amp;#34;) != -1) {relUrl = relUrl.split(&amp;#34;?&amp;#34;)[0];}return relUrl;}window.onload = function () {var url = GetUrlRelativePath();if (url == &amp;#34;/&amp;#34;) {var pObj = document.getElementById(&amp;#34;add-icp&amp;#34;);var strongObj = document.createElement(&amp;#34;span&amp;#34;);strongObj.id = &amp;#34;icp&amp;#34;strongObj.onclick = function () {window.</description>
+// 域名首页添加ICP备案信息function GetUrlRelativePath() {var url = document.location.toString();var arrUrl = url.split(&amp;#34;//&amp;#34;);var start = arrUrl[1].indexOf(&amp;#34;/&amp;#34;);var relUrl = arrUrl[1].substring(start);if (relUrl.indexOf(&amp;#34;?&amp;#34;) != -1) {relUrl = relUrl.split(&amp;#34;?&amp;#34;)[0];}return relUrl;}window.onload = function () {var url = GetUrlRelativePath();if (url == &amp;#34;/&amp;#34;) {var pObj = document.getElementById(&amp;#34;add-icp&amp;#34;);var spanObj = document.createElement(&amp;#34;span&amp;#34;);spanObj.id = &amp;#34;icp&amp;#34;spanObj.onclick = function () {window.</description>
     </item>
     
     <item>

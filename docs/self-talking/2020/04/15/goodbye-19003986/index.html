@@ -146,15 +146,15 @@ window.<span style="color:#a6e22e">onload</span> <span style="color:#f92672">=</
   <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">GetUrlRelativePath</span>();
   <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">url</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;/&#34;</span>) {
     <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">pObj</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;add-icp&#34;</span>);
-    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">strongObj</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;span&#34;</span>);
-    <span style="color:#a6e22e">strongObj</span>.<span style="color:#a6e22e">id</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;icp&#34;</span>
-    <span style="color:#a6e22e">strongObj</span>.<span style="color:#a6e22e">onclick</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> () {
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">spanObj</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;span&#34;</span>);
+    <span style="color:#a6e22e">spanObj</span>.<span style="color:#a6e22e">id</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;icp&#34;</span>
+    <span style="color:#a6e22e">spanObj</span>.<span style="color:#a6e22e">onclick</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> () {
       window.<span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;http:/www.beian.miit.gov.cn/&#34;</span>)
     }
     <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;粤ICP备19003986号&#34;</span>
     <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">textObj</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createTextNode</span>(<span style="color:#a6e22e">str</span>);
-    <span style="color:#a6e22e">strongObj</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">textObj</span>)
-    <span style="color:#a6e22e">pObj</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">strongObj</span>);
+    <span style="color:#a6e22e">spanObj</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">textObj</span>)
+    <span style="color:#a6e22e">pObj</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">spanObj</span>);
   }
 }
 </code></pre></div><h4 id="版权声明httpszsdycscnimagescreativecommons-ccsvghttpscreativecommonsorglicensesby-nc-nd40"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img src="https://zsdycs.cn/images/creativecommons-cc.svg" alt="版权声明"></a></h4>
