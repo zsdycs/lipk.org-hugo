@@ -2,10 +2,6 @@ html {
   background-color: #444;
 }
 
-body {
-  background: url(/images/geometry.png) repeat;
-}
-
 @media screen and (min-width: 960px) {
 
   .masthead {
