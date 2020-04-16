@@ -1,4 +1,6 @@
 <script async src="/js/load-typekit.js"></script>
+<script async src="/js/darkmode-js.min.js"></script>
+<script async src="/js/darkmode.js"></script>
 {{ if lt (.Date.Year) 2017 }}
 <script>
 (function(u, c) {
@@ -13,3 +15,4 @@
 
 {{ end }}
 <link rel="stylesheet" href="{{ "/css/custom.css" | relURL }}" />
+<link rel="stylesheet" href="{{ "/css/loading.css" | relURL }}" />

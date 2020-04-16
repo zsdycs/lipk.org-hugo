@@ -107,7 +107,10 @@ publishDir = "docs"
                 "js/no-highlight.js",
                 "js/fix-footnote.js",
                 "js/external-link.js",
-                "js/alt-title.js"]
+                "js/alt-title.js",
+                "js/utteranc.js",
+                "js/darkmode-js.min.js",
+                "js/darkmode.js"]
     author = '李鹏坤'
     githubContentURL = "http://github.com/zsdycs/zsdycs.cn/edit/master/content/"
     edit = "编辑"

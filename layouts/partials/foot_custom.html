@@ -20,10 +20,11 @@ document.addEventListener('keyup', function(e) {
 });
 </script>
 {{ end }}
-<!-- 不加载wildfire评论 -->
+
+<!-- wildfire评论 -->
 <!-- {{ partial "wildfire.html" . }} -->
-<!-- 加载utterances评论 -->
-<link rel="stylesheet" href="/css/loading.css">
+
+<!-- utterances评论 -->
 <section id="utterances" class="comments">
   <div id="loading">
     <div class="container animation-2">
@@ -35,12 +36,9 @@ document.addEventListener('keyup', function(e) {
   </div>
 </section>
 
-<script src="/js/utteranc.js"></script>
+<!-- <script src="/js/utteranc.js"></script> -->
 {{/*  {{ if  (or (.PrevInSection) (.NextInSection))  }}
 {{ end }}  */}}
-
-<script src="/js/darkmode-js.min.js"></script>
-<script src="/js/darkmode.js"></script>
 
 {{/*  {{ if eq .RelPermalink "/music/" }}
 <link rel="stylesheet" href="/css/music.css">
@@ -56,6 +54,7 @@ document.addEventListener('keyup', function(e) {
 <script async src="{{ . | relURL }}"></script>
 {{ end }}
 
+<!-- 网站备案 -->
 <!-- {{ if eq .RelPermalink "/" }}
 <script src="/js/recordInformation.js"></script>
 {{ end }} -->
