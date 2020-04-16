@@ -15,14 +15,14 @@ window.onload = function () {
   var url = GetUrlRelativePath();
   if (url == "/") {
     var pObj = document.getElementById("add-icp");
-    var strongObj = document.createElement("span");
-    strongObj.id = "icp"
-    strongObj.onclick = function () {
+    var spanObj = document.createElement("span");
+    spanObj.id = "icp"
+    spanObj.onclick = function () {
       window.open("http:/www.beian.miit.gov.cn/")
     }
     var str = "粤ICP备19003986号"
     var textObj = document.createTextNode(str);
-    strongObj.appendChild(textObj)
-    pObj.appendChild(strongObj);
+    spanObj.appendChild(textObj)
+    pObj.appendChild(spanObj);
   }
 }

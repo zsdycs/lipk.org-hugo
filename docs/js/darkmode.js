@@ -81,6 +81,12 @@ modifyTextTransparency = (newMode, loadMode = 'true') => {
 // 画面加载时，设置文字透明度
 modifyTextTransparency(undefined, darkmodeLS);
 
+// body背景 延迟载入
+window.onload = function () {
+  document.body.style.background = 'url(/images/geometry.png)';
+  document.body.style.backgroundRepeat = 'repeat';
+}
+
 var url = getUrlRelativePath();
 var directoryName = '';
 if (url.length >= "/self-talking/".length && url.substring(0, "/self-talking/".length) === "/self-talking/") {
