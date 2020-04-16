@@ -30,6 +30,10 @@ if (window.localStorage.getItem('darkmode') == null) {
 const darkmode = new Darkmode(options);
 darkmode.showWidget();
 
+// body背景 延迟载入
+document.body.style.background = 'url(/images/geometry.png)';
+document.body.style.backgroundRepeat = 'repeat';
+
 var darkmodeLS = window.localStorage.getItem('darkmode');
 var darkButton = document.getElementsByClassName("darkmode-toggle")[0];
 var utterances = document.getElementById("utterances");
@@ -80,12 +84,6 @@ modifyTextTransparency = (newMode, loadMode = 'true') => {
 
 // 画面加载时，设置文字透明度
 modifyTextTransparency(undefined, darkmodeLS);
-
-// body背景 延迟载入
-window.onload = function () {
-  document.body.style.background = 'url(/images/geometry.png)';
-  document.body.style.backgroundRepeat = 'repeat';
-}
 
 var url = getUrlRelativePath();
 var directoryName = '';
