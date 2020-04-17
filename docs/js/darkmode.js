@@ -27,7 +27,7 @@ var options = {
 if (window.localStorage.getItem('darkmode') == null) {
   window.localStorage.setItem('darkmode', 'true');
 }
-const darkmode = new Darkmode(options);
+var darkmode = new Darkmode(options);
 darkmode.showWidget();
 
 // body背景 延迟载入
