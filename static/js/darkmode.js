@@ -27,8 +27,8 @@ var options = {
 if (window.localStorage.getItem('darkmode') == null) {
   window.localStorage.setItem('darkmode', 'true');
 }
-var darkmode = new Darkmode(options);
-darkmode.showWidget();
+
+const darkmode = new Darkmode(options).showWidget();
 
 // body背景 延迟载入
 document.body.style.background = 'url(/images/geometry.png)';
@@ -51,7 +51,7 @@ getUrlRelativePath = () => {
 }
 
 // 修改页面的文字透明度
-modifyTextTransparency = (newMode, loadMode = 'true') => {
+modifyTextTransparency = (newMode, loadMode) => {
   var dayColor = '#000000',
     nightColor = '#595959';
   var a = document.querySelectorAll('a');
@@ -68,7 +68,7 @@ modifyTextTransparency = (newMode, loadMode = 'true') => {
       document.body.style.color = nightColor;
     }
   } else {
-    if (loadMode == null || loadMode == 'true') {
+    if (loadMode == undefined || loadMode == 'true') {
       for (var i = 0; i < a.length; i++) {
         a[i].style.color = '#808080';
       }
