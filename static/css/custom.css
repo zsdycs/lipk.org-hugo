@@ -121,6 +121,7 @@ ins {
 }
 
 code {
+  padding: 0px 5px;
   isolation: isolate;
   display: inline-block;
   font-family: Consolas, Courier, "Courier New", STKaiti, KaiTi, SimKai, monospace

@@ -90,7 +90,6 @@ publishDir = "docs"
     customJS = [
                 "js/get-url-relative-path.js",
                 "js/darkmode-js.min.js",
-                "js/darkmode.js",
                 "js/fix-toc.js",
                 "js/math-code.js",
                 "js/center-img.js",
@@ -99,6 +98,7 @@ publishDir = "docs"
                 "js/fix-footnote.js",
                 "js/external-link.js",
                 "js/alt-title.js",
+                "js/darkmode.js",
                 "js/utteranc.js"
                 ]
     author = '李鹏坤'
