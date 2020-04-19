@@ -1,5 +1,5 @@
 ---
-title: 'body，你的背景图片怎么淡入哇？'
+title: 'Body，你的背景图片怎么淡入哇？'
 date: '2020-04-16'
 slug: 'body-background-image-fade-in'
 ---
