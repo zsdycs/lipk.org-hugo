@@ -1,7 +1,6 @@
 baseurl = "https://zsdycs.cn"
 languageCode = "zh-cn"
 title = "执手对影成双 | pengkun Lee"
-ignoreFiles = []
 preserveTaxonomyNames = true
 enableEmoji = true
 footnotereturnlinkcontents = "↩"
@@ -55,30 +54,22 @@ publishDir = "docs"
     url = "/self-talking/"
     weight = 2
 [[menu.self-talking]]
-    name = "食物"
-    url = "/cate/"
+    name = "美食"
+    url = "/food/"
     weight = 3
-# [[menu.self-talking]]
-#     name = "音乐"
-#     url = "/music/"
-#     weight = 4
 
-[[menu.cate]]
+[[menu.food]]
     name = "返回"
     url = "/"
     weight = 1
-[[menu.cate]]
+[[menu.food]]
     name = "博客"
     url = "/self-talking/"
     weight = 2
-[[menu.cate]]
-    name = "食物"
-    url = "/cate/"
+[[menu.food]]
+    name = "美食"
+    url = "/food/"
     weight = 3
-# [[menu.cate]]
-#     name = "音乐"
-#     url = "/music/"
-#     weight = 4
 
 [[menu.music]]
     name = "返回"
@@ -89,18 +80,18 @@ publishDir = "docs"
     url = "/self-talking/"
     weight = 2
 [[menu.music]]
-    name = "食物"
-    url = "/cate/"
+    name = "美食"
+    url = "/food/"
     weight = 3
-# [[menu.music]]
-#     name = "音乐"
-#     url = "/music/"
-#     weight = 4
 
 [params]
     description = "zsdycs; 执手对影成双; Personal website of Pengkun Lee; 李鹏坤的个人网站"
     footer = "&copy; [执手对影成双](/) 2018 - 2020"
-    customJS = ["js/fix-toc.js",
+    customJS = [
+                "js/get-url-relative-path.js",
+                "js/darkmode-js.min.js",
+                "js/darkmode.js",
+                "js/fix-toc.js",
                 "js/math-code.js",
                 "js/center-img.js",
                 "js/right-quote.js",
@@ -108,17 +99,11 @@ publishDir = "docs"
                 "js/fix-footnote.js",
                 "js/external-link.js",
                 "js/alt-title.js",
-                "js/utteranc.js",
-                "js/darkmode-js.min.js",
-                "js/darkmode.js"]
+                "js/utteranc.js"
+                ]
     author = '李鹏坤'
     githubContentURL = "http://github.com/zsdycs/zsdycs.cn/edit/master/content/"
     edit = "编辑"
     license = "版权"
  [author]
     self-talking= '李鹏坤'
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.extensions]
-      table = true

@@ -27,8 +27,8 @@ var options = {
 if (window.localStorage.getItem('darkmode') == null) {
   window.localStorage.setItem('darkmode', 'true');
 }
-const darkmode = new Darkmode(options);
-darkmode.showWidget();
+
+new window.Darkmode(options).showWidget()
 
 // body背景 延迟载入
 document.body.style.background = 'url(/images/geometry.png)';
@@ -38,44 +38,32 @@ var darkmodeLS = window.localStorage.getItem('darkmode');
 var darkButton = document.getElementsByClassName("darkmode-toggle")[0];
 var utterances = document.getElementById("utterances");
 
-// 获取路由地址
-getUrlRelativePath = () => {
-  var url = document.location.toString();
-  var arrUrl = url.split("//");
-  var start = arrUrl[1].indexOf("/");
-  var relUrl = arrUrl[1].substring(start);
-  if (relUrl.indexOf("?") != -1) {
-    relUrl = relUrl.split("?")[0];
-  }
-  return relUrl;
-}
-
 // 修改页面的文字透明度
 modifyTextTransparency = (newMode, loadMode = 'true') => {
   var dayColor = '#000000',
     nightColor = '#595959';
-  var a = document.querySelectorAll('a');
+  var aTags = document.getElementsByTagName('a');
   if (newMode) {
     if (newMode == 'day') {
-      for (var i = 0; i < a.length; i++) {
-        a[i].style.color = dayColor;
+      for (var i = 0; i < aTags.length; i++) {
+        aTags[i].style.color = dayColor;
       }
       document.body.style.color = dayColor;
     } else if (newMode == 'night') {
-      for (var i = 0; i < a.length; i++) {
-        a[i].style.color = '#808080';
+      for (var i = 0; i < aTags.length; i++) {
+        aTags[i].style.color = '#808080';
       }
       document.body.style.color = nightColor;
     }
   } else {
     if (loadMode == null || loadMode == 'true') {
-      for (var i = 0; i < a.length; i++) {
-        a[i].style.color = '#808080';
+      for (var i = 0; i < aTags.length; i++) {
+        aTags[i].style.color = '#808080';
       }
       document.body.style.color = nightColor;
     } else {
-      for (var i = 0; i < a.length; i++) {
-        a[i].style.color = dayColor;
+      for (var i = 0; i < aTags.length; i++) {
+        aTags[i].style.color = dayColor;
       }
       document.body.style.color = dayColor;
     }
@@ -90,8 +78,8 @@ var directoryName = '';
 if (url.length >= "/self-talking/".length && url.substring(0, "/self-talking/".length) === "/self-talking/") {
   directoryName = url.substring(0, "/self-talking/".length);
 }
-if (url.length >= "/cate/".length && url.substring(0, "/cate/".length) === "/cate/") {
-  directoryName = url.substring(0, "/cate/".length);
+if (url.length >= "/food/".length && url.substring(0, "/food/".length) === "/food/") {
+  directoryName = url.substring(0, "/food/".length);
 }
 if (url.length >= "/music/".length && url.substring(0, "/music/".length) === "/music/") {
   directoryName = url.substring(0, "/music/".length);

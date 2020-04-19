@@ -1,23 +1,6 @@
 const loading = document.getElementById('loading')
 let utterancesLoadingEnd = false;
 window.localStorage.setItem('utterances', 'false');
-/**
- * 获取页面的相对路径
- * 例如：http://localhost:1313/cate/ 
- * return '/cate/'
- */
-getUrlRelativePath = () => {
-  const url = document.location.toString();
-  const arrUrl = url.split('//');
-
-  const start = arrUrl[1].indexOf('/');
-  let relUrl = arrUrl[1].substring(start);
-
-  if (relUrl.indexOf('?') != -1) {
-    relUrl = relUrl.split('?')[0];
-  }
-  return relUrl;
-}
 
 /**
  * 通过MutationObserver来监听#utterances
@@ -82,15 +65,21 @@ addUtteranc = () => {
   utterancesEnd();
 }
 
-// 在“食物表”加载评论
-if (getUrlRelativePath().length = '/cate/'.length &&
-  getUrlRelativePath().substring(0, '/cate/'.length) === '/cate/') {
+// 在“美食”加载评论
+if (getUrlRelativePath().length = '/food/'.length &&
+  getUrlRelativePath().substring(0, '/food/'.length) === '/food/') {
   addUtteranc()
 }
 
-// 在“文章”加载评论
+// 在“博客”加载评论
 if (getUrlRelativePath().length > '/self-talking/'.length &&
   getUrlRelativePath().substring(0, '/self-talking/'.length) === '/self-talking/') {
+  addUtteranc()
+}
+
+// 在“关于”加载评论
+if (getUrlRelativePath().length = '/about/'.length &&
+  getUrlRelativePath().substring(0, '/about/'.length) === '/about/') {
   addUtteranc()
 }
 

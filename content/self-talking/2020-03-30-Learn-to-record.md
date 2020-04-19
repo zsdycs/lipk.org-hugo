@@ -11,25 +11,25 @@ slug: 'learn-to-record'
 
 在实习时，我在总结会上感慨的说到。
 
-## 一定要学会Markdown！
+## 一定要学会 Markdown！
 
 ### - 为何我会去做笔记？
 
-Markdown(MD)是**非常简单的**文本标记语言。  
+Markdown(MD) 是 **非常简单的** 文本标记语言。  
 可以让我们很容易，就写出具有排版格式的文本。
 
-写时~~很容易~~行云流水，看时~~很好看~~赏心悦目！
+写时~~ 很容易~~ 行云流水，看时~~ 很好看~~ 赏心悦目！
 
-- 下面介绍Markdown的语法
+- 下面介绍 Markdown 的语法
 
 常用的语法，也可以说是需要掌握的，如下：
 
 标题、列表、加粗、斜体、删除样式、块、引用、超链接。  
-共8项。
+共 8 项。
 
-### - MD难吗？
+### - MD 难吗？
 
-下面我介绍以上8种语法。
+下面我介绍以上 8 种语法。
 
 1. **标题**  
    标题是这样写的：
@@ -48,10 +48,10 @@ Markdown(MD)是**非常简单的**文本标记语言。
 
 ### 三级标题
 
-   简单吧~你可以根据需要，增加标题级别。  
-   要注意的是，因为Markdown是没有唯一的查看软件的。  
+   简单吧~ 你可以根据需要，增加标题级别。  
+   要注意的是，因为 Markdown 是没有唯一的查看软件的。  
    所以渲染出来的效果也是不唯一的。  
-   MD编辑器我会在文章结尾给出。
+   MD 编辑器我会在文章结尾给出。
 
 2. **列表**  
    列表有两种，有序和无序，分别是这样写的：
@@ -108,7 +108,7 @@ Markdown(MD)是**非常简单的**文本标记语言。
    ```
 
    效果：  
-   *这是倾斜的*  
+  *这是倾斜的*  
    _这也是倾斜的_
 
 5. **删除样式**  
@@ -127,12 +127,12 @@ Markdown(MD)是**非常简单的**文本标记语言。
 
    ```Markdown
    <!-- 行内的块 -->
-   文字文字`这就是块`文字文字
+   文字文字 ` 这就是块 ` 文字文字
    ```
 
    效果：  
    <!-- 行内的块 -->
-   文字文字`这就是块`文字文字
+   文字文字 `这就是块` 文字文字
 
 7. **引用**  
    这个符号很好记：
@@ -155,10 +155,10 @@ Markdown(MD)是**非常简单的**文本标记语言。
    效果：  
    [哔哩哔哩传送门](http://bilibili.com)
 
-### - 可以用什么来写MD呢？
+### - 可以用什么来写 MD 呢？
 
-  我使用的是[VS Code](https://code.visualstudio.com/)，做笔记的话可以用[有道云笔记](http://note.youdao.com/)。
-  也可用[Mark Text](https://www.electronjs.org/apps/marktext)，是一个GitHub开源的软件。
+  我使用的是 [VS Code](https://code.visualstudio.com/)，做笔记的话可以用 [有道云笔记](http://note.youdao.com/)。  
+  也可用 [Mark Text](https://www.electronjs.org/apps/marktext)，是一个 GitHub 开源的软件。
 
 ### 最后两句
 
@@ -166,6 +166,6 @@ Markdown(MD)是**非常简单的**文本标记语言。
 
 不管用什么方法做笔记，笔记反复看才有效。
 
-本文也是用MD写的，[原文传送门](https://github.com/zsdycs/zsdycs.cn/blob/master/content/self-talking/2020-03-30-Learn-to-record.md)。
+本文也是用 MD 写的，[原文传送门](https://github.com/zsdycs/zsdycs.cn/blob/master/content/self-talking/2020-03-30-Learn-to-record.md)。
 
 #### [![版权声明](https://zsdycs.cn/images/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
