@@ -13,10 +13,10 @@
     
     <item>
       <title>Body，你的背景图片怎么淡入哇？</title>
-      <link>https://zsdycs.cn/self-talking/2020/04/16/body-background-image-fade-in/</link>
+      <link>https://zsdycs.cn/blog/2020/04/16/body-background-image-fade-in/</link>
       <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zsdycs.cn/self-talking/2020/04/16/body-background-image-fade-in/</guid>
+      <guid>https://zsdycs.cn/blog/2020/04/16/body-background-image-fade-in/</guid>
       <description>缘由 今天偶然看到本站在加载页面时的一个问题。
 由于本站默认是夜间模式，夜间模式是通过 CSS 的 mix-blend-mode: difference 实现的，模式切换通过异步载入的 js 控制。
 这就导致背景图片（白色）加载完成后切换到夜间模式会发生闪烁，这违背了黑夜模式的初衷。
@@ -27,10 +27,10 @@
     
     <item>
       <title>再见 19003986</title>
-      <link>https://zsdycs.cn/self-talking/2020/04/15/goodbye-19003986/</link>
+      <link>https://zsdycs.cn/blog/2020/04/15/goodbye-19003986/</link>
       <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zsdycs.cn/self-talking/2020/04/15/goodbye-19003986/</guid>
+      <guid>https://zsdycs.cn/blog/2020/04/15/goodbye-19003986/</guid>
       <description>今天收到了阿里云的短信，内容如下：
  【阿里云】尊敬的用户：经检查您的备案号粤 ICP 备 19003986 号 - 1 下有网站未指向阿里云国内节点（不含香港）服务器且无访问记录 ，请您在 3 个工作日内进行修改，若规定时间后修改不合格，我们将删除网站备案接入信息。您的备案号可能会被注销，网站访问可能受到影响。详情请您查收邮件！
  前年（18 年）在阿里云弄了个轻量应用服务器，用来学习站点部署，还买下了 zsdycs.cn 这个域名。 国情原因，域名做了备案。
@@ -42,10 +42,10 @@
     
     <item>
       <title>学会记录</title>
-      <link>https://zsdycs.cn/self-talking/2020/03/30/learn-to-record/</link>
+      <link>https://zsdycs.cn/blog/2020/03/30/learn-to-record/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zsdycs.cn/self-talking/2020/03/30/learn-to-record/</guid>
+      <guid>https://zsdycs.cn/blog/2020/03/30/learn-to-record/</guid>
       <description>老师总是会提醒我们，要做笔记。
 后来，我提醒自己，这个要记下来。
  学会做笔记，我认为这会产生深远的影响。
@@ -71,10 +71,10 @@ MD 编辑器我会在文章结尾给出。
     
     <item>
       <title>碎片の遇见</title>
-      <link>https://zsdycs.cn/self-talking/2020/01/06/pieces-the-meet/</link>
+      <link>https://zsdycs.cn/blog/2020/01/06/pieces-the-meet/</link>
       <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zsdycs.cn/self-talking/2020/01/06/pieces-the-meet/</guid>
+      <guid>https://zsdycs.cn/blog/2020/01/06/pieces-the-meet/</guid>
       <description>引子 过去一年，仅写了十来篇，虽然觉得很少，但也是个好的开始。
 有很多时候，不是不想写下一点东西。
 是没有那么大的意愿去写。
@@ -138,10 +138,10 @@ MD 编辑器我会在文章结尾给出。
     
     <item>
       <title>🌈 2020 要来了</title>
-      <link>https://zsdycs.cn/self-talking/2019/12/30/2020-is-coming/</link>
+      <link>https://zsdycs.cn/blog/2019/12/30/2020-is-coming/</link>
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zsdycs.cn/self-talking/2019/12/30/2020-is-coming/</guid>
+      <guid>https://zsdycs.cn/blog/2019/12/30/2020-is-coming/</guid>
       <description>时间过得太快了。
 温暖的阳光穿过绿油油的叶子🍃，绵柔的风吹过。
 那个金色的夏天，漫步在校园，心情愉悦。
@@ -159,10 +159,10 @@ MD 编辑器我会在文章结尾给出。
     
     <item>
       <title>前程锦绣</title>
-      <link>https://zsdycs.cn/self-talking/2019/06/19/go-to-the-light-future/</link>
+      <link>https://zsdycs.cn/blog/2019/06/19/go-to-the-light-future/</link>
       <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zsdycs.cn/self-talking/2019/06/19/go-to-the-light-future/</guid>
+      <guid>https://zsdycs.cn/blog/2019/06/19/go-to-the-light-future/</guid>
       <description> 高考结束的第 12 天，高考过后的第 1107 天，我在苏州市职业大学参加了毕业典礼，领取了属于我的毕业证书。
  上一篇博客是 5 月 1 号，都快两个月没写了，估计都有因为好奇打开网站的看官以为这个站不更新了。前些时候更新得少是因为毕业设计和论文需要大量的时间，这次我大概给自己找到了两大理由。
 一是我这段时间很大一部分时候都投身于不接触电脑的生活中了，冰与火之歌开了个百分之七十的头，去了一趟东北感受北国风光。
@@ -177,10 +177,10 @@ MD 编辑器我会在文章结尾给出。
     
     <item>
       <title>漫威宇宙的第十一年</title>
-      <link>https://zsdycs.cn/self-talking/2019/05/01/the-11th-year-of-the-marvel-universe/</link>
+      <link>https://zsdycs.cn/blog/2019/05/01/the-11th-year-of-the-marvel-universe/</link>
       <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zsdycs.cn/self-talking/2019/05/01/the-11th-year-of-the-marvel-universe/</guid>
+      <guid>https://zsdycs.cn/blog/2019/05/01/the-11th-year-of-the-marvel-universe/</guid>
       <description> 漫威宇宙的第十一年。复仇者联盟打败了灭霸，完成了最后的集结，用 182 分钟向全球观众作最后的告别。
  劳动节快乐 🦆 。近一个月没有在博客现身了，哈哈哈哈。毕业设计和论文终于完成了，修改和准备答辩并没有那么让人困扰，可以说是解决了一件大事。
 回到校园的这段时间，每天都开开心心的。但其实吧，随着毕业的日子渐渐到来，漫步校园还是有些心情复杂。恰逢复联4终局之战上映，看了一下发现 5 天后的五月一号有家影院 IMAX 票价 55 ，果断出手。
@@ -195,10 +195,10 @@ MD 编辑器我会在文章结尾给出。
     
     <item>
       <title>那个年少时喜欢的人</title>
-      <link>https://zsdycs.cn/self-talking/2019/04/07/the-one-i-used-to-like/</link>
+      <link>https://zsdycs.cn/blog/2019/04/07/the-one-i-used-to-like/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zsdycs.cn/self-talking/2019/04/07/the-one-i-used-to-like/</guid>
+      <guid>https://zsdycs.cn/blog/2019/04/07/the-one-i-used-to-like/</guid>
       <description>今天刷抖音，刷到很喜欢的“一禅小和尚”。
 是这样的一段话：
  一禅：师傅，为什么年少时喜欢的人，都不能陪自己到最后呢？ 慧远老和尚：世间所有珍惜，都要靠失去懂得。那个人现在的成熟，是用无数次争吵和眼泪教会的，他靠伤害你长大，却把温柔体贴给了比你来得晚的人。 一禅：那不是很亏吗？ 慧远老和尚：但人这一生，只有一次会奋不顾身，把一个人喜欢到极致，年少的满腔孤勇，以后再也不会重来了。所以没有谁辜负谁，爱对了是一生，爱错了，是青春。
@@ -208,10 +208,10 @@ MD 编辑器我会在文章结尾给出。
     
     <item>
       <title>大世界</title>
-      <link>https://zsdycs.cn/self-talking/2019/03/11/big-world/</link>
+      <link>https://zsdycs.cn/blog/2019/03/11/big-world/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zsdycs.cn/self-talking/2019/03/11/big-world/</guid>
+      <guid>https://zsdycs.cn/blog/2019/03/11/big-world/</guid>
       <description>引子 很喜欢“那些年我们一起追的女孩”，看了不下10遍。
 里面有一段话。
 “你相信有平行时空吗？
@@ -235,10 +235,10 @@ MD 编辑器我会在文章结尾给出。
     
     <item>
       <title>你不用那么着急</title>
-      <link>https://zsdycs.cn/self-talking/2019/02/28/do-not-worry/</link>
+      <link>https://zsdycs.cn/blog/2019/02/28/do-not-worry/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zsdycs.cn/self-talking/2019/02/28/do-not-worry/</guid>
+      <guid>https://zsdycs.cn/blog/2019/02/28/do-not-worry/</guid>
       <description>夜已经深了，我关了灯，躺在床上，继续听着电话。
 米霞略微有点着急了，连说了两遍。
 “你不要着急，你不要着急，你会找到的。”
@@ -269,10 +269,10 @@ MD 编辑器我会在文章结尾给出。
     
     <item>
       <title>给世界上最幸福的人</title>
-      <link>https://zsdycs.cn/self-talking/2019/02/21/to-my-good-friend-dxy/</link>
+      <link>https://zsdycs.cn/blog/2019/02/21/to-my-good-friend-dxy/</link>
       <pubDate>Thu, 21 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zsdycs.cn/self-talking/2019/02/21/to-my-good-friend-dxy/</guid>
+      <guid>https://zsdycs.cn/blog/2019/02/21/to-my-good-friend-dxy/</guid>
       <description>展信佳
 今天是你的大喜日子，恭喜你， DXY 。
 写完上面这句话后我考虑了很久，在这个时候我想说一些祝福的话，然后表达我，对于你早于我们这些好朋友找到终身伴侣的羡慕妒忌。
@@ -294,10 +294,10 @@ MD 编辑器我会在文章结尾给出。
     
     <item>
       <title>我的一个朋友</title>
-      <link>https://zsdycs.cn/self-talking/2019/02/08/a-friend-of-mine/</link>
+      <link>https://zsdycs.cn/blog/2019/02/08/a-friend-of-mine/</link>
       <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zsdycs.cn/self-talking/2019/02/08/a-friend-of-mine/</guid>
+      <guid>https://zsdycs.cn/blog/2019/02/08/a-friend-of-mine/</guid>
       <description>“一下子就过去了七天”
 “那你怎么现在想起来了”
 “其实很多次我都想过来说说话的，可是又觉得说那些东西有点太矫情了”
@@ -335,10 +335,10 @@ MD 编辑器我会在文章结尾给出。
     
     <item>
       <title>扑克</title>
-      <link>https://zsdycs.cn/self-talking/2019/02/01/poker/</link>
+      <link>https://zsdycs.cn/blog/2019/02/01/poker/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zsdycs.cn/self-talking/2019/02/01/poker/</guid>
+      <guid>https://zsdycs.cn/blog/2019/02/01/poker/</guid>
       <description>高中毕业快三年了，也是就是与今天见面的同学快有三年没见了。
 在接到奇风短信后我有一点意外。一是没想到还能见到这两个老同学，其二是，居然如此突然，以至于我没有一点心理准备（主要是我今天没洗头）。于是我略微怀着“惴惴不安”的心情（会不会影响我在他们心目中的颜值呢）去找他们去了。
 见了面后我非常的平静，但是说实话，我是有一些开心啦，因为经过仔细观察，矮的没有长高，高的那一个也没有变化，虽然没有长胖的迹象，他们还是原来的模样，三年时间在他们脸上的印记，只是嘴上胡须变粗了，稍近一点可以清晰看出来已有大人（或社会人吧）模样，而这，是一件好事。
@@ -353,20 +353,20 @@ MD 编辑器我会在文章结尾给出。
     
     <item>
       <title>到家</title>
-      <link>https://zsdycs.cn/self-talking/2019/01/31/back-to-home/</link>
+      <link>https://zsdycs.cn/blog/2019/01/31/back-to-home/</link>
       <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zsdycs.cn/self-talking/2019/01/31/back-to-home/</guid>
+      <guid>https://zsdycs.cn/blog/2019/01/31/back-to-home/</guid>
       <description>今天上午 11 点左右，经过近 22 个小时的“长途跋涉”，我终于进入了中山市区域范围内。在到家前最后的一段路上，我查看了“ TP-LINK ”的设置，确保我到家后，手机可以顺滑地连接上家里的 WiFi 。在已连接设备的一栏我看到了老妈的手机在线，甚是喜悦，这两天下来还未下肚一粒米，看来这米饭是有着落了。
  </description>
     </item>
     
     <item>
       <title>记第一次坐火车</title>
-      <link>https://zsdycs.cn/self-talking/2019/01/30/first-time-on-a-train/</link>
+      <link>https://zsdycs.cn/blog/2019/01/30/first-time-on-a-train/</link>
       <pubDate>Wed, 30 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zsdycs.cn/self-talking/2019/01/30/first-time-on-a-train/</guid>
+      <guid>https://zsdycs.cn/blog/2019/01/30/first-time-on-a-train/</guid>
       <description>忍不住笑了，我居然写这样的标题。每次来回跑苏州都是坐的飞机，这次因为实习的缘故，只能临近过年才回家。我认为吧，过年机票涨价，航空公司收割春运红利无可厚非。在这里给大家传输一个事实，机票价格和动车/高铁的价格相比，事实上前者的实际价格会比后者低。
 为什么这么说呢？如果稍作研究，就会知道机票的价格浮动很大，以我经常飞的上海/无锡——广州/珠海为例，最低我买过 199 （不含机建/燃油）的，一般在 450 左右，而最高价格（一般为明日票）会到 1.5k+ ，浮动之大可想而知。且每个航空公司都会有特价机票的售卖机制，作为促进机票售卖的手段。
 而这个时候是航空公司亏本大甩卖，买机票千载难逢的机会吗？不是的，这是每个月都可以买到的，只是启程时间会在两三个月之后，也就是说，你要是能预见未来两到三个月的后的出行计划，你就完全可以买到价格比高铁/动车低的机票（广州到上海高铁 G96 次二等座为 793 ，一等 1302.5 ，商务 2492.5 ）。
@@ -386,10 +386,10 @@ MD 编辑器我会在文章结尾给出。
     
     <item>
       <title>特殊的爱</title>
-      <link>https://zsdycs.cn/self-talking/2019/01/29/special-love/</link>
+      <link>https://zsdycs.cn/blog/2019/01/29/special-love/</link>
       <pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zsdycs.cn/self-talking/2019/01/29/special-love/</guid>
+      <guid>https://zsdycs.cn/blog/2019/01/29/special-love/</guid>
       <description>这一篇是为“大学生心理节”，心理剧表演进行改编的，是同一个框架，加入了同学们日常会遇到的问题，营造的是一个刚刚分手的学生在宿舍的奇遇。乐在与同学一起排练，在台上表演的过程。
   《特殊的爱》剧本  角色一：贾率 角色二：悲观 角色三：自卑 角色四：萎靡 角色五：希望 道具：杯面 *1，桌子 *1 PS：每个人胸前贴角色名，粗体为唱的形式  贾率：（面对观众）观众朋友们，大家好！先自我介绍一下，（介绍状）我叫贾率，本来我的生活是饭来张口，衣来伸手，悲伤/有人安慰，高兴/有人陪同，而如今饭堂一人走，自习独自忧愁；上学自己走，天冷只能受冻。为什么？和女朋友分了呗~唉~就说今天，看着饭堂成双结对（笔画结对），而我在宿舍看着小电影吃这碗杯面。（说完台词的同时拿起杯面）没人爱没人疼的日子真心苦啊！
 （悲观上场，边走边说台词） 悲观：唉！慢着慢着，你怎么就没人爱没人疼了呀？你不还有我吗？
@@ -440,10 +440,10 @@ MD 编辑器我会在文章结尾给出。
     
     <item>
       <title>谁动了我的面包</title>
-      <link>https://zsdycs.cn/self-talking/2019/01/28/who-moved-my-bread/</link>
+      <link>https://zsdycs.cn/blog/2019/01/28/who-moved-my-bread/</link>
       <pubDate>Mon, 28 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zsdycs.cn/self-talking/2019/01/28/who-moved-my-bread/</guid>
+      <guid>https://zsdycs.cn/blog/2019/01/28/who-moved-my-bread/</guid>
       <description>今天公司年会（去年 9 月 17 号入职用友苏分实习），一天都没碰电脑，回到宿舍都快 11 点了，填了昨天 img 样式的坑，增加了一些内容后也就凌晨了，主要是也没啥想写的。今明两天都放之前自己改编的小品剧本上来吧，让这有点好玩的。
   《谁动了我的面包》剧本  角色一：郝纯（李鹏坤） 角色二：正义（杨城丹） 角色三：网络 角色四：电话 角色五：街头 道具：面包 *1，桌子 *1，椅子 *1 PS：每个人胸前贴角色名，粗体为唱的形式  场地布局 郝纯：（面对观众）观众朋友们，大家好！先自我介绍一下，（摸胸）我叫郝纯，单名一个纯 字，所以也有人叫我单纯。今天带着我的面包第一天上大学，讲真，心里真的是满满 的小激动呀！（滴滴滴~手机铃声）喂？（接电话的同时把面包放到位置上）
 （电话上场，边走边说台词，到后排位置上坐） 电话：哎哟，老哥总算联系到你了！
@@ -480,10 +480,10 @@ MD 编辑器我会在文章结尾给出。
     
     <item>
       <title>一篇高中的作文</title>
-      <link>https://zsdycs.cn/self-talking/2019/01/27/high-school-essay/</link>
+      <link>https://zsdycs.cn/blog/2019/01/27/high-school-essay/</link>
       <pubDate>Sun, 27 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zsdycs.cn/self-talking/2019/01/27/high-school-essay/</guid>
+      <guid>https://zsdycs.cn/blog/2019/01/27/high-school-essay/</guid>
       <description>当时市里有个创新作文大赛，召集了两个班写了一个主题为“最美的句子”的作文，那时不知道是不是因为看了余秋雨的文化苦旅，文风深得语文老师（帅巍巍）喜爱，她挑选出了包括我在内的 6 个同学。
 让我们修改自己那天写的文章，然后交到市里，虽然最后没有拿奖，但是改文章的过程也让我与这篇文章产生了感情，一直放在电脑里，今天拿出来放到这里晾一晾。
  学校：中山市第二中学
@@ -510,10 +510,10 @@ MD 编辑器我会在文章结尾给出。
     
     <item>
       <title>敬启</title>
-      <link>https://zsdycs.cn/self-talking/2019/01/26/glad-you-came/</link>
+      <link>https://zsdycs.cn/blog/2019/01/26/glad-you-came/</link>
       <pubDate>Sat, 26 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://zsdycs.cn/self-talking/2019/01/26/glad-you-came/</guid>
+      <guid>https://zsdycs.cn/blog/2019/01/26/glad-you-came/</guid>
       <description>这是第一篇“博客”，我很高兴你能找到这里。前天在建站的时候，一直在想第一篇文章要起个什么标题。
 如果我十年后还在写“博客”的话，我想，这一篇应该是个起点，而如果你是十年后想要在这里翻个底朝天，要找第一篇写的是什么东西的话，那“敬启”这个名字应该就非常合适，有一种收礼物的仪式感，这种感觉会给人带来快乐。
 真的是好久没有写东西了，算起来到今年，这样纠结词句的时候已经有三年了。也就是高三那会儿，一个星期要写两三篇议论文，开头怎么写吸引人要想；列举什么样的论据要想；主体写到哪里该要个什么形式的结尾要想······课外书一本一本的看（在作业能交差的情况下）古诗词，文言文一字一句地研究、理解，在这样的情况下，当时的我认为作文是语文考试整个过程中最轻松自在的，当然了，你要是个小说顶级读者，阅读选的是小说就另当别论了。

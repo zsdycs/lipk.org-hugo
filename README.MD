@@ -16,7 +16,7 @@ zsdycs.cn
 │  ├─ vitae.md // 关于 - 简历
 │  ├─ cate.md // 博客 - 食物
 │  ├─ music.md // 博客 - 音乐（抛弃 && 保留）
-│  └─ self-talking // 博客MD文件夹
+│  └─ blog // 博客MD文件夹
 │     ├─ _index.md // 博客入口
 │     └─ ......
 ├─ layouts // 页面模板文件夹

@@ -72,8 +72,8 @@ if (getUrlRelativePath().length = '/food/'.length &&
 }
 
 // 在“博客”加载评论
-if (getUrlRelativePath().length > '/self-talking/'.length &&
-  getUrlRelativePath().substring(0, '/self-talking/'.length) === '/self-talking/') {
+if (getUrlRelativePath().length > '/blog/'.length &&
+  getUrlRelativePath().substring(0, '/blog/'.length) === '/blog/') {
   addUtteranc()
 }
 
