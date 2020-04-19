@@ -39,7 +39,7 @@ var darkButton = document.getElementsByClassName("darkmode-toggle")[0];
 var utterances = document.getElementById("utterances");
 
 // 修改页面的文字透明度
-modifyTextTransparency = (newMode, loadMode = 'true') => {
+modifyTextTransparency = (newMode, loadMode) => {
   var dayColor = '#000000',
     nightColor = '#595959';
   var aTags = document.getElementsByTagName('a');
@@ -56,9 +56,15 @@ modifyTextTransparency = (newMode, loadMode = 'true') => {
       document.body.style.color = nightColor;
     }
   } else {
+<<<<<<< HEAD
     if (loadMode == null || loadMode == 'true') {
       for (var i = 0; i < aTags.length; i++) {
         aTags[i].style.color = '#808080';
+=======
+    if (loadMode == undefined || loadMode == 'true') {
+      for (var i = 0; i < a.length; i++) {
+        a[i].style.color = '#808080';
+>>>>>>> c9b405bd70fc9e17c7ab894dd5a9f402f9ac3293
       }
       document.body.style.color = nightColor;
     } else {

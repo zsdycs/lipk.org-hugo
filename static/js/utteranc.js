@@ -1,5 +1,5 @@
-const loading = document.getElementById('loading')
-let utterancesLoadingEnd = false;
+var loading = document.getElementById('loading')
+var utterancesLoadingEnd = false;
 window.localStorage.setItem('utterances', 'false');
 
 /**
