@@ -56,15 +56,9 @@ modifyTextTransparency = (newMode, loadMode) => {
       document.body.style.color = nightColor;
     }
   } else {
-<<<<<<< HEAD
     if (loadMode == null || loadMode == 'true') {
       for (var i = 0; i < aTags.length; i++) {
         aTags[i].style.color = '#808080';
-=======
-    if (loadMode == undefined || loadMode == 'true') {
-      for (var i = 0; i < a.length; i++) {
-        a[i].style.color = '#808080';
->>>>>>> c9b405bd70fc9e17c7ab894dd5a9f402f9ac3293
       }
       document.body.style.color = nightColor;
     } else {
