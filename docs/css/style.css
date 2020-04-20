@@ -99,7 +99,7 @@ blockquote {
 }
 
 blockquote:hover {
-  border-left: 3px solid #ddd;
+  border-left: 3px solid rgb(145, 145, 145);
 }
 
 /* Code */
