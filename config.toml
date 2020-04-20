@@ -89,7 +89,6 @@ publishDir = "docs"
     footer = "&copy; [执手对影成双](/) 2018 - 2020"
     customJS = [
                 "js/get-url-relative-path.js",
-                "js/darkmode-js.min.js",
                 "js/fix-toc.js",
                 "js/math-code.js",
                 "js/center-img.js",
@@ -106,4 +105,4 @@ publishDir = "docs"
     edit = "编辑"
     license = "版权"
  [author]
-    blog= '李鹏坤'
+    blog = '李鹏坤'
