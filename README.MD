@@ -3,7 +3,8 @@
 - 构建：[hugo](http://gohugo.io)。  
 - 主题：[hugo-ivy](https://github.com/yihui/hugo-ivy)。  
 - 目录结构：
-```
+
+```markdown
 zsdycs.cn
 ├─ CNAME // github-pages域别名声明
 ├─ LICENSE.MD // 版权声明
@@ -34,9 +35,11 @@ zsdycs.cn
    └─ js
       └─ ......
 ```
+
 目录结构生成来自[Dir Tree Noter](http://dir.yardtea.cc/)📁。
 
 ### 鸣谢
+
 1. [Github](http://github.com)🏆。
 2. [Yihui Xie](http://github.com/yihui)❤。
 3. [Darkmode.js](http://github.com/sandoche/Darkmode.js)🌗。
