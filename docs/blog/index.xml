@@ -12,6 +12,28 @@
     
     
     <item>
+      <title>JS啊，JS</title>
+      <link>https://zsdycs.cn/blog/2020/04/21/js-js/</link>
+      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zsdycs.cn/blog/2020/04/21/js-js/</guid>
+      <description>关于评论和黑夜白天模式切换的 JS ，我修改了好多次。
+但是一直都会在修改几天后，自己再使用时发现可以优化的地方。就在昨天晚上，我发现了一个问题——评论模式切换的提示无法显示了。
+由于评论是异步 JS 加载的，而且 iframe 跨域，所以在评论加载完毕后，切换页面的阅读模式后，在评论区上方有个“切换评论阅读模式”的提示。
+经过调试，我没有发现 darkmode.js 中有任何错误。
+我然后认为是加载顺序的问题，这个跟是否 async 没有关系。
+我打印了 insertBefore 后的元素，发现 DOM 操作是执行了的，可是其并没有反应到页面上！
+为什么？
+思前想后，我认为是我代码写得不规范。
+首先，我在那一大段正则后加上了 ; ，然后把获取的 DOM 元素变量，都放到离 DOM 操作最接近的地方，以免该变量被修改，或过早获取。 最后，我把 const 和 let 都改为了 var。
+结果这个问题解决了。 代码履历
+ 这个事情引起了我的反思。
+做前端开发快一年了，一直都在 Angular 和 Vue 的温室下。写的是 typeScript ，浏览器最后执行的代码是 webpack 编译后的 JS ， 生命周期，处理顺序都被安排得明明白白的，基本上不需要思考。
+基础太关键了。
+ </description>
+    </item>
+    
+    <item>
       <title>Body，你的背景图片怎么淡入哇？</title>
       <link>https://zsdycs.cn/blog/2020/04/16/body-background-image-fade-in/</link>
       <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
@@ -22,7 +44,7 @@
 这就导致背景图片（白色）加载完成后切换到夜间模式会发生闪烁，这违背了黑夜模式的初衷。
 过程 对于背景图片的淡入，网上有很多种解决方法。 有说用 animation + opacity 的。像这样写:
 #background-div {/* 加载自定义的 bgFadeIn 动画 */animation: bgFadeIn 3s ease-in;}@-webkit-keyframes fadeIn {0% {/* opacity 属性初始值 */opacity: 0;}100% {/* 动画完成后 opacity 的值 */opacity: 1;}}也有说用使用 transition + opacity 实现的。也就是这样写:
-#background-div {/* opacity 属性初始值 */opacity: 0;/* transition 控制 opacity 属性 */transition: opacity 3s ease-in;}#background-div:hover {opacity: 1;}我用了都没有用。为什么呢？我发现这些都是在控制元素本身，并不能控制元素的 background，也就是元素的属性。 这种情况下，唯有 JS。 于是，我决定放弃搜索。思考了一下，只要在页面加载时，黑夜白天模式~~ 切换~~ 加载完成后，对背景进行设置其实就可以解决问题。</description>
+#background-div {/* opacity 属性初始值 */opacity: 0;/* transition 控制 opacity 属性 */transition: opacity 3s ease-in;}#background-div:hover {opacity: 1;}我用了都没有用。为什么呢？我发现这些都是在控制元素本身，并不能控制元素的 background，也就是元素的属性。 这种情况下，唯有 JS。 于是，我决定放弃搜索。思考了一下，只要在页面加载时，黑夜白天模式切换加载完成后，对背景进行设置其实就可以解决问题。</description>
     </item>
     
     <item>

@@ -151,7 +151,7 @@
 }
 </code></pre></div><p>我用了都没有用。为什么呢？我发现这些都是在控制元素本身，并不能控制元素的 <code>background</code>，也就是元素的属性。
 这种情况下，唯有 JS。
-于是，我决定放弃搜索。思考了一下，只要在页面加载时，黑夜白天模式~~ 切换~~ 加载完成后，对背景进行设置其实就可以解决问题。</p>
+于是，我决定放弃搜索。思考了一下，只要在页面加载时，黑夜白天模式<del>切换</del>加载完成后，对背景进行设置其实就可以解决问题。</p>
 <h2 id="解决">解决</h2>
 <p>也就是这样:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// 黑夜白天模式载入
@@ -162,7 +162,7 @@
 </span><span style="color:#75715e"></span>document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">background</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;url(/images/your-background-image.png)&#39;</span>;
 document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">backgroundRepeat</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;repeat&#39;</span>;
 </code></pre></div><p>这个故事告诉我们，很多时候，解决问题的方法不是我们刚开始想象的那样。
-也就是可能一开始~~ 的方向可能就是错的~~ 问题都没弄清。要变通，虽然一条路是可以走到黑，但是换个角度思考问题，一定是解决问题的正确方法。</p>
+也就是可能一开始<del>的方向可能就是错的</del>问题都没弄清。要变通，虽然一条路是可以走到黑，但是换个角度思考问题，一定是解决问题的正确方法。</p>
 <h4 id="版权声明httpszsdycscnimagescreativecommons-ccsvghttpscreativecommonsorglicensesby-nc-nd40"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img src="https://zsdycs.cn/images/creativecommons-cc.svg" alt="版权声明"></a></h4>
 
 
@@ -170,7 +170,7 @@ document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">sty
   
 <nav class="post-nav">
   <span class="nav-prev">&larr; <a href="/blog/2020/04/15/goodbye-19003986/" title="你可以使用方向键">再见 19003986</a></span>
-  <span class="nav-next"></span>
+  <span class="nav-next"><a href="/blog/2020/04/21/js-js/" title="你可以使用方向键">JS啊，JS</a> &rarr;</span>
 </nav>
 <script type="text/javascript">
 document.addEventListener('keyup', function(e) {
@@ -181,6 +181,8 @@ document.addEventListener('keyup', function(e) {
     url = '\/blog\/2020\/04\/15\/goodbye-19003986\/';
     
   } else if (e.which == 39) {  
+    
+    url = '\/blog\/2020\/04\/21\/js-js\/';
     
   }
   if (url) window.location = url;
