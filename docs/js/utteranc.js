@@ -1,4 +1,3 @@
-var loading = document.getElementById('loading')
 var utterancesLoadingEnd = false;
 window.localStorage.setItem('utterances', 'false');
 
@@ -6,8 +5,8 @@ window.localStorage.setItem('utterances', 'false');
  * 通过MutationObserver来监听#utterances
  */
 utterancesEnd = () => {
-  const targetNode = document.getElementById('utterances');
-  const options = {
+  var targetNode = document.getElementById('utterances');
+  var options = {
     attributes: true,
     childList: true,
     subtree: true
@@ -17,6 +16,7 @@ utterancesEnd = () => {
       if (element.type === 'attributes' && element.target.className === 'utterances') {
         // 加载结束！
         utterancesLoadingEnd = true
+        var loading = document.getElementById('loading');
         loading.style.display = 'none';
         window.localStorage.setItem('utterances', 'true');
       }
@@ -25,7 +25,8 @@ utterancesEnd = () => {
   var utterancesTimeout = setTimeout(() => {
     if (!utterancesLoadingEnd) {
       // 隐藏加载
-      loading.style.display = 'none';
+      var loading = document.getElementById('loading');
+      loading.style.display = "none";
 
       // 显示提示
       var utterances = document.getElementById('utterances');
@@ -38,7 +39,7 @@ utterancesEnd = () => {
     }
     window.clearTimeout(utterancesTimeout);
   }, 60000);
-  const mutationObserver = new MutationObserver(callback);
+  var mutationObserver = new MutationObserver(callback);
   mutationObserver.observe(targetNode, options);
 }
 
@@ -47,9 +48,10 @@ utterancesEnd = () => {
  */
 addUtteranc = () => {
   // 显示加载状态
+  var loading = document.getElementById('loading');
   loading.style.display = 'flex';
-  const script = document.createElement('script');
-  const utterances = document.getElementById('utterances');
+  var script = document.createElement('script');
+  var utterances = document.getElementById('utterances');
   script.src = 'https://utteranc.es/client.js';
   script.setAttribute('repo', 'zsdycs/zsdycs.cn');
   script.setAttribute('issue-term', 'title');

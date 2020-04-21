@@ -88,6 +88,8 @@ publishDir = "docs"
     description = "zsdycs; 执手对影成双; Personal website of Pengkun Lee; 李鹏坤的个人网站"
     footer = "&copy; [执手对影成双](/) 2018 - 2020"
     customJS = [
+                "js/darkmode.js",
+                "js/utteranc.js",
                 "js/fix-toc.js",
                 "js/math-code.js",
                 "js/center-img.js",
