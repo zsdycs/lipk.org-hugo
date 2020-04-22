@@ -21,9 +21,6 @@ document.addEventListener('keyup', function(e) {
 </script>
 {{ end }}
 
-<!-- wildfire评论 -->
-<!-- {{ partial "wildfire.html" . }} -->
-
 <!-- utterances评论 -->
 <section id="utterances" class="comments">
   <div id="loading">
@@ -36,28 +33,9 @@ document.addEventListener('keyup', function(e) {
   </div>
 </section>
 
-<!-- <script src="/js/utteranc.js"></script> -->
-{{/*  {{ if  (or (.PrevInSection) (.NextInSection))  }}
-{{ end }}  */}}
-
-{{/*  {{ if eq .RelPermalink "/music/" }}
-<link rel="stylesheet" href="/css/music.css">
-<script src="/js/id3-minimized.js"></script>
-<script src="/js/jquery-3.3.1.min.js"></script>
-<script src="/js/jquery-migrate-1.1.1.js"></script>
-<script src="/js/wavesurfer.js"></script>
-<script src="/js/wavesurfer.cursor.js"></script>
-<script src="/js/for_wave.js"></script>
-{{ end }}  */}}
-
 {{ range .Site.Params.customJS }}
 <script async src="{{ . | relURL }}"></script>
 {{ end }}
-
-<!-- 网站备案 -->
-<!-- {{ if eq .RelPermalink "/" }}
-<script src="/js/recordInformation.js"></script>
-{{ end }} -->
 
 {{ if and (not .Params.disable_mathjax) (or (in (string .Content) "\\") (in (string .Content) "$")) }}
 <!-- <script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->

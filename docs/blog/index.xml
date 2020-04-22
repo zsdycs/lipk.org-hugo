@@ -59,7 +59,7 @@
 现在服务器到期已经释放了，域名备案也要到期了。 而这个网站已经托管到 GitHub，DNS 都转到 Cloudflare 了。
 这个过程令人唏嘘哇~
 仅以此篇感谢阿里云曾带给我骄傲！
-// 域名首页添加 ICP 备案信息function GetUrlRelativePath() {var url = document.location.toString();var arrUrl = url.split(&amp;#34;//&amp;#34;);var start = arrUrl[1].indexOf(&amp;#34;/&amp;#34;);var relUrl = arrUrl[1].substring(start);if (relUrl.indexOf(&amp;#34;?&amp;#34;) != -1) {relUrl = relUrl.split(&amp;#34;?&amp;#34;)[0];}return relUrl;}window.onload = function () {var url = GetUrlRelativePath();if (url == &amp;#34;/&amp;#34;) {var pObj = document.</description>
+// 域名首页添加 ICP 备案信息 function GetUrlRelativePath() { var url = document.location.toString(); var arrUrl = url.split(&amp;#34;//&amp;#34;); var start = arrUrl[1].indexOf(&amp;#34;/&amp;#34;); var relUrl = arrUrl[1].substring(start); if (relUrl.indexOf(&amp;#34;?&amp;#34;) != -1) { relUrl = relUrl.split(&amp;#34;?&amp;#34;)[0]; } return relUrl; } window.onload = function () { var url = GetUrlRelativePath(); if (url == &amp;#34;/&amp;#34;) { var pObj = document.</description>
     </item>
     
     <item>
@@ -81,14 +81,14 @@
 - MD 难吗？ 下面我介绍以上 8 种语法。
   标题
 标题是这样写的：
-# 一级标题## 二级标题### 三级标题效果是这样的：
+# 一级标题 ## 二级标题 ### 三级标题 效果是这样的：
   一级标题 二级标题 三级标题 简单吧~ 你可以根据需要，增加标题级别。
 要注意的是，因为 Markdown 是没有唯一的查看软件的。
 所以渲染出来的效果也是不唯一的。
 MD 编辑器我会在文章结尾给出。
  列表
 列表有两种，有序和无序，分别是这样写的：
-&amp;lt;!-- 有序列表 --&amp;gt;1. 有序，第一项2. 有序，第二项1. 有序，第二项的子项一2. 有序，第二项的子项二3.</description>
+&amp;lt;!-- 有序列表 --&amp;gt; 1. 有序，第一项 2. 有序，第二项 1. 有序，第二项的子项一 2. 有序，第二项的子项二 3.</description>
     </item>
     
     <item>
@@ -211,7 +211,10 @@ MD 编辑器我会在文章结尾给出。
       <guid>https://zsdycs.cn/blog/2019/04/07/the-one-i-used-to-like/</guid>
       <description>今天刷抖音，刷到很喜欢的“一禅小和尚”。
 是这样的一段话：
- 一禅：师傅，为什么年少时喜欢的人，都不能陪自己到最后呢？ 慧远老和尚：世间所有珍惜，都要靠失去懂得。那个人现在的成熟，是用无数次争吵和眼泪教会的，他靠伤害你长大，却把温柔体贴给了比你来得晚的人。 一禅：那不是很亏吗？ 慧远老和尚：但人这一生，只有一次会奋不顾身，把一个人喜欢到极致，年少的满腔孤勇，以后再也不会重来了。所以没有谁辜负谁，爱对了是一生，爱错了，是青春。
+ 一禅：师傅，为什么年少时喜欢的人，都不能陪自己到最后呢？
+慧远老和尚：世间所有珍惜，都要靠失去懂得。那个人现在的成熟，是用无数次争吵和眼泪教会的，他靠伤害你长大，却把温柔体贴给了比你来得晚的人。
+一禅：那不是很亏吗？
+慧远老和尚：但人这一生，只有一次会奋不顾身，把一个人喜欢到极致，年少的满腔孤勇，以后再也不会重来了。所以没有谁辜负谁，爱对了是一生，爱错了，是青春。
  我也觉得很亏，但确实没有办法重来。
  </description>
     </item>
