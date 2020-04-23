@@ -31,7 +31,7 @@ if (window.localStorage.getItem('darkmode') == null) {
 new window.Darkmode(options).showWidget()
 
 // body背景 延迟载入
-document.body.style.background = 'url(/images/geometry.png)';
+document.body.style.background = 'url(https://zsdycs.sirv.com/zsdycs.cn/geometry.png)';
 document.body.style.backgroundRepeat = 'repeat';
 
 var darkmodeLS = window.localStorage.getItem('darkmode');

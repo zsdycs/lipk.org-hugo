@@ -22,4 +22,4 @@ slug: 'the-11th-year-of-the-marvel-universe'
 
 一定还会有这样的电影世界，而漫威是第一个成功的。每代人都有他们 ❤️ 目中的英雄，有一代人，他们的英雄，在漫威的宇宙里。
 
-#### [![版权声明](https://zsdycs.cn/images/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+#### [![版权声明](https://zsdycs.sirv.com/zsdycs.cn/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)

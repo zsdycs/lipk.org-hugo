@@ -14,4 +14,4 @@ slug: 'the-one-I-used-to-like'
 
 我也觉得很亏，但确实没有办法重来。
 
-#### [![版权声明](https://zsdycs.cn/images/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+#### [![版权声明](https://zsdycs.sirv.com/zsdycs.cn/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)

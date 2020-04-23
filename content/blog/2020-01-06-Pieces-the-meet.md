@@ -73,4 +73,4 @@ slug: 'pieces-the-meet'
 他站在路边，被雨水冲刷得干干净净的柏油路，油黑油黑的。  
 呼吸着清新的空气，分不清是梦境还是现实。
 
-#### [![版权声明](https://zsdycs.cn/images/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+#### [![版权声明](https://zsdycs.sirv.com/zsdycs.cn/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
