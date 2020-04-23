@@ -2,7 +2,7 @@ html {
   background-color: #1E1E1E;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1220px) {
 
   .masthead {
     position: sticky;
@@ -139,7 +139,7 @@ pre {
   background: lightyellow;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1220px) {
 
   h1,
   h2,

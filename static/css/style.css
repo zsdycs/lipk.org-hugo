@@ -335,7 +335,7 @@ tr:nth-child(even) {
 
 /* Tablet screens and smaller */
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1220px) {
 
   .paramount {
     width: auto;
