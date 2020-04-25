@@ -14,6 +14,7 @@ html {
 a:hover,
 .copyright a {
   border-bottom: none;
+  font-weight: bold;
 }
 
 .main {
