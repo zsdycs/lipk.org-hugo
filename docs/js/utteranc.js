@@ -53,7 +53,7 @@ addUtteranc = () => {
   var script = document.createElement('script');
   var utterances = document.getElementById('utterances');
   script.src = 'https://utteranc.es/client.js';
-  script.setAttribute('repo', 'zsdycs/zsdycs.cn');
+  script.setAttribute('repo', 'zsdycs/lipk.org');
   script.setAttribute('issue-term', 'title');
   script.setAttribute('crossorigin', 'anonymous');
   if (window.localStorage.getItem('darkmode') === 'false') {

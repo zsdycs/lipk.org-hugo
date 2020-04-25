@@ -5,7 +5,7 @@
 - 目录结构：
 
 ```markdown
-zsdycs.cn
+lipk.org
 ├─ CNAME // github-pages 域别名声明
 ├─ LICENSE.MD // 版权声明
 ├─ README.MD // 源代码说明

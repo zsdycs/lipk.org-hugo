@@ -1,4 +1,4 @@
-baseurl = "https://zsdycs.cn"
+baseurl = "https://lipk.org"
 languageCode = "zh-cn"
 title = "执手对影成双 | pengkun Lee"
 preserveTaxonomyNames = true
@@ -87,7 +87,7 @@ publishDir = "docs"
                 "js/alt-title.js",
                 ]
     author = '李鹏坤'
-    githubContentURL = "http://github.com/zsdycs/zsdycs.cn/edit/master/content/"
+    githubContentURL = "http://github.com/zsdycs/lipk.org/edit/master/content/"
     edit = "编辑"
     license = "版权"
     # options for highlight.js (version, additional languages, and theme)

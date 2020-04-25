@@ -85,7 +85,7 @@
 
 
 <li>
-  <a href="http://github.com/zsdycs/zsdycs.cn/edit/master/content/blog/2020-04-21-JS-JS.md" title="编辑本页"
+  <a href="http://github.com/zsdycs/lipk.org/edit/master/content/blog/2020-04-21-JS-JS.md" title="编辑本页"
     target="_blank">
     编辑
   </a>
@@ -122,20 +122,20 @@
 <p>关于评论和黑夜白天模式切换的 JS ，我修改了好多次。</p>
 <p>但是一直都会在修改几天后，自己再使用时发现可以优化的地方。就在昨天晚上，我发现了一个问题——评论模式切换的提示无法显示了。</p>
 <p>由于评论是异步 JS 加载的，而且 iframe 跨域，所以在评论加载完毕后，切换页面的阅读模式后，在评论区上方有个“切换评论阅读模式”的提示。</p>
-<p>经过调试，我没有发现 <a href="https://github.com/zsdycs/zsdycs.cn/blob/master/static/js/darkmode.js">darkmode.js</a> 中有任何错误。</p>
+<p>经过调试，我没有发现 <a href="https://github.com/zsdycs/lipk.org/blob/master/static/js/darkmode.js">darkmode.js</a> 中有任何错误。</p>
 <p>我然后认为是加载顺序的问题，这个跟是否 <code>async</code> 没有关系。<br>
 我打印了 <code>insertBefore</code> 后的元素，发现 DOM 操作是执行了的，可是其并没有反应到页面上！</p>
 <p>为什么？</p>
 <p>思前想后，我认为是我代码写得不规范。</p>
 <p>首先，我在那一大段正则后加上了 <code>;</code> ，然后把获取的 <code>DOM</code> 元素变量，都放到离 <code>DOM</code> 操作最接近的地方，以免该变量被修改，或过早获取。
 最后，我把 <code>const</code> 和 <code>let</code> 都改为了 <code>var</code>。</p>
-<p>结果这个问题解决了。 <a href="https://github.com/zsdycs/zsdycs.cn/commit/4313cd83a4fc87e7cbd7dc77e523507493b77e24">代码履历</a></p>
+<p>结果这个问题解决了。 <a href="https://github.com/zsdycs/lipk.org/commit/4313cd83a4fc87e7cbd7dc77e523507493b77e24">代码履历</a></p>
 <hr>
 <p>这个事情引起了我的反思。</p>
 <p>做前端开发快一年了，一直都在 Angular 和 Vue 的温室下。写的是 typeScript ，浏览器最后执行的代码是 webpack 编译后的 JS ，
 生命周期，处理顺序都被安排得明明白白的，基本上不需要思考。</p>
 <p>路还很长。</p>
-<h4 id="版权声明httpszsdycssirvcomzsdycscncreativecommons-ccsvghttpscreativecommonsorglicensesby-nc-nd40"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img src="https://zsdycs.sirv.com/zsdycs.cn/creativecommons-cc.svg" alt="版权声明"></a></h4>
+<h4 id="版权声明httpszsdycssirvcomzsdycscncreativecommons-ccsvghttpscreativecommonsorglicensesby-nc-nd40"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img src="https://zsdycs.sirv.com/lipk.org/creativecommons-cc.svg" alt="版权声明"></a></h4>
 
 <footer>
   

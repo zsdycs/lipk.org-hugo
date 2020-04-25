@@ -166,6 +166,6 @@ Markdown(MD) 是 **非常简单的** 文本标记语言。
 
 不管用什么方法做笔记，笔记反复看才有效。
 
-本文也是用 MD 写的，[原文传送门](https://github.com/zsdycs/zsdycs.cn/blob/master/content/blog/2020-03-30-Learn-to-record.md)。
+本文也是用 MD 写的，[原文传送门](https://github.com/zsdycs/lipk.org/blob/master/content/blog/2020-03-30-Learn-to-record.md)。
 
-#### [![版权声明](https://zsdycs.sirv.com/zsdycs.cn/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+#### [![版权声明](https://zsdycs.sirv.com/lipk.org/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)

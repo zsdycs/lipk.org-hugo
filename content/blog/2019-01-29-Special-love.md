@@ -4,7 +4,7 @@ date: '2019-01-29'
 slug: 'special-love'
 ---
 
-> 这一篇是为“大学生心理节”，心理剧表演进行改编的，是同一个[框架](https://zsdycs.cn/blog/2019/01/28/who-moved-my-bread/)，加入了同学们日常会遇到的问题，营造的是一个刚刚分手的学生在宿舍的奇遇。乐在与同学一起排练，在台上表演的过程。
+> 这一篇是为“大学生心理节”，心理剧表演进行改编的，是同一个[框架](https://lipk.org/blog/2019/01/28/who-moved-my-bread/)，加入了同学们日常会遇到的问题，营造的是一个刚刚分手的学生在宿舍的奇遇。乐在与同学一起排练，在台上表演的过程。
 
 ----
 
@@ -97,4 +97,4 @@ slug: 'special-love'
 
 明天坐火车回家，挺期待的，天气辣么冷，早点上床休息吧。哦对了，这两篇都在比赛获了第二名，这一篇心理剧还额外获了个“最佳剧本”，虽然吧，是用的人家的框架结构，可是要是有自己的创意，还是会有不一样的效果。想做就去做吧 ~  
 
-#### [![版权声明](https://zsdycs.sirv.com/zsdycs.cn/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+#### [![版权声明](https://zsdycs.sirv.com/lipk.org/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)

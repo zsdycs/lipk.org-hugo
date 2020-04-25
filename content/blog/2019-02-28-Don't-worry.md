@@ -71,4 +71,4 @@ slug: 'do-not-worry'
 
 真的没有着急，我其实也在好好感受这个过程呢~😉
 
-#### [![版权声明](https://zsdycs.sirv.com/zsdycs.cn/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+#### [![版权声明](https://zsdycs.sirv.com/lipk.org/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)

@@ -11,7 +11,7 @@ slug: 'why-reading'
 
 如今我还记得 3 年前世界读书日，我在路过教学楼时，被教学楼前的银杏树惊艳。
 
-![这就是我当时看到的银杏树](https://zsdycs.sirv.com/zsdycs.cn/2020-04-23-why-reading.jpg)
+![这就是我当时看到的银杏树](https://zsdycs.sirv.com/lipk.org/2020-04-23-why-reading.jpg)
 
 生机盎然，静静的，看着令人对生活充满希望。
 
@@ -38,4 +38,4 @@ slug: 'why-reading'
 越阅读，越感渺小。书籍丰富你的内心，抵御世间的浮华与虚荣。  
 就如，防止乱花钱的有效方式，是心中默念我是穷比。
 
-#### [![版权声明](https://zsdycs.sirv.com/zsdycs.cn/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+#### [![版权声明](https://zsdycs.sirv.com/lipk.org/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)

@@ -71,4 +71,4 @@ document.body.style.backgroundRepeat = 'repeat';
 这个故事告诉我们，很多时候，解决问题的方法不是我们刚开始想象的那样。
 也就是可能一开始~~的方向可能就是错的~~问题都没弄清。要变通，虽然一条路是可以走到黑，但是换个角度思考问题，一定是解决问题的正确方法。
 
-#### [![版权声明](https://zsdycs.sirv.com/zsdycs.cn/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+#### [![版权声明](https://zsdycs.sirv.com/lipk.org/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
