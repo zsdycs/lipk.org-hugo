@@ -90,5 +90,10 @@ publishDir = "docs"
     githubContentURL = "http://github.com/zsdycs/zsdycs.cn/edit/master/content/"
     edit = "编辑"
     license = "版权"
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "10.0.0"
+    highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    highlightjsLang = ["JavaScript", "HTML", "Markdown", "SCSS", "CSS", "TypeScript", "Ruby", "Bash"]
+    highlightjsTheme = "Vs 2015"
  [author]
     blog = '李鹏坤'

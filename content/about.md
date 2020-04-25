@@ -1,6 +1,7 @@
 ---
 title: 关于
 slug: /about
+disable_highlight: true
 ---
 
 ## 我
