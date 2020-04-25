@@ -94,6 +94,6 @@ publishDir = "docs"
     highlightjsVersion = "10.0.0"
     highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
     highlightjsLang = ["JavaScript", "HTML", "Markdown", "SCSS", "CSS", "TypeScript", "Ruby", "Bash"]
-    highlightjsTheme = "Vs 2015"
+    highlightjsTheme = "vs2015"
  [author]
     blog = '李鹏坤'

@@ -39,29 +39,45 @@ var darkmodeLS = window.localStorage.getItem('darkmode');
 // 修改页面的文字透明度
 modifyTextTransparency = (newMode, loadMode) => {
   var dayColor = '#000000',
-    nightColor = '#595959';
+    nightColor = '#595959',
+    nightFor_A_Tag = '#808080',
+    nightImgFilter = 'brightness(80%)',
+    dayImgFilter = 'unset';
   var aTags = document.getElementsByTagName('a');
+  var imgTags = document.getElementsByTagName('img');
   if (newMode) {
     if (newMode == 'day') {
       for (var i = 0; i < aTags.length; i++) {
         aTags[i].style.color = dayColor;
       }
+      for (var j = 0; j < imgTags.length; j++) {
+        imgTags[j].style.filter = dayImgFilter;
+      }
       document.body.style.color = dayColor;
     } else if (newMode == 'night') {
       for (var i = 0; i < aTags.length; i++) {
-        aTags[i].style.color = '#808080';
+        aTags[i].style.color = nightFor_A_Tag;
+      }
+      for (var j = 0; j < imgTags.length; j++) {
+        imgTags[j].style.filter = nightImgFilter;
       }
       document.body.style.color = nightColor;
     }
   } else {
     if (loadMode == null || loadMode == 'true') {
       for (var i = 0; i < aTags.length; i++) {
-        aTags[i].style.color = '#808080';
+        aTags[i].style.color = nightFor_A_Tag;
+      }
+      for (var j = 0; j < imgTags.length; j++) {
+        imgTags[j].style.filter = nightImgFilter;
       }
       document.body.style.color = nightColor;
     } else {
       for (var i = 0; i < aTags.length; i++) {
         aTags[i].style.color = dayColor;
+      }
+      for (var j = 0; j < imgTags.length; j++) {
+        imgTags[j].style.filter = dayImgFilter;
       }
       document.body.style.color = dayColor;
     }
