@@ -13,16 +13,16 @@ disable_highlight: true
 
 籍贯：广东 · 中山。  
 所在地：江苏 · 苏州。  
-邮箱：lipk@lipk.org。
+邮箱：mail@lipk.org。
 
 ## 教育背景
 
 - 2017 . 09 ~ 2019 . 07 **苏州大学**，软件工程学士。  
   - 必修课：
-JAVA程序设计、软件系统分析与设计、软件项目管理、计算机网络、软件质量保证、计算机安全技术、信息系统与企业管理、Linux系统及应用、CASE等。
+JAVA程序设计、软件系统分析与设计、软件项目管理、计算机网络、软件质量保证、计算机安全技术、信息系统与企业管理、Linux 系统及应用、CASE 等。
 - 2016 . 09 ~ 2019 . 07 **苏州市职业大学**，软件技术专科生。  
   - 必修课：
-程序逻辑设计与编程规范（ C ）、C# 应用程序设计（ winfrom ）、 SQL Server 数据库应用、数据结构、 APP 产品交互设计、 ASP.net 商务网站设计、 Web 系统 UI 设计、iOS 开发技术、计算机网络基础、面向对象程序设计（ JAVA ）、实用软件工程与 UML、Web 前端开发等。  
+程序逻辑设计与编程规范 (C) 、C# 应用程序设计 (winfrom) 、 SQL Server 数据库应用、数据结构、 APP 产品交互设计、 ASP.net 商务网站设计、 Web 系统 UI 设计、iOS 开发技术、计算机网络基础、面向对象程序设计 (JAVA) 、实用软件工程与 UML、Web 前端开发等。  
 
 ## 校内活动
 
@@ -47,10 +47,10 @@ JAVA程序设计、软件系统分析与设计、软件项目管理、计算机�
 
 ## 计算机水平
 
-- 开发工具：DW 、 VS 、 VS Code 、 Axure 、 Eclipse 。
-- 框架：Express 、 Vue 、 Semantic UI 、 React 、 ant 、钉耙等。
-- 编程语言：HTML 、 JS 、 JQ 、 CSS 、 ~~C# 、JAVA 、 PHP 、 C~~ 。
-- 应用程序：常见数据库如：MySQL 、 SQL Server 、 Oracle 、 MongoDB 等， NodeJs 、 Git 、微软三件套、 PS 、 AE 、 AU 、 PR 。
+- 开发工具：DW 、VS 、VS Code 、Axure 、Eclipse 。
+- 框架：Express 、Vue 、Semantic UI 、React 、ant 、钉耙等。
+- 编程语言：HTML 、 JavaScript 、TypeScript 、JQ 、CSS 、~~C# 、JAVA 、 PHP 、 C~~ 。
+- 应用程序：常见数据库如：MySQL 、SQL Server 、Oracle 、MongoDB 等，NodeJs 、Git 、微软三件套、PS 、AE 、AU 、PR 。
 - 操作系统：Windows、MacOS、CenterOS。
 
 ## 荣誉奖励
