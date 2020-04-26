@@ -146,7 +146,8 @@ a {
 }
 
 sup a {
-  border-bottom: none;
+  padding: 0;
+  letter-spacing: initial;
 }
 
 /* Miscellanea */

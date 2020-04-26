@@ -2,6 +2,10 @@ html {
   background-color: #1E1E1E;
 }
 
+del {
+  color: #808080;
+}
+
 @media screen and (min-width: 1220px) {
 
   .masthead {
@@ -15,7 +19,6 @@ html {
 a:hover,
 .copyright a {
   letter-spacing: 2px;
-  outline: none;
   border-bottom: none;
   font-weight: bold;
 }
@@ -40,10 +43,6 @@ a:hover,
   padding: .1em .1em 0 0;
   float: left;
   line-height: 1em;
-}
-
-code {
-  hyphens: none;
 }
 
 iframe,
@@ -124,16 +123,26 @@ ins {
 }
 
 code {
+  hyphens: none;
+  color: black;
+  margin: 0 3px;
+  background: #b0b0b0;
+  font-size: 13px;
+  border-radius: 100px;
   padding: 0px 5px;
   isolation: isolate;
   display: inline-block;
   font-family: Consolas, Courier, "Courier New", STKaiti, KaiTi, SimKai, monospace
 }
 
-code,
 pre {
   color: rgb(188, 188, 188);
   font-size: .95em;
+}
+
+pre code {
+  margin: 0px;
+  border-radius: 0px;
 }
 
 #utterancesMsg {
@@ -184,6 +193,13 @@ pre {
     padding: 5px 10px;
     border-radius: 5px;
   }
+
+  .masthead .menu button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    line-height: 28.5px;
+  }
+
 
   .masthead .menu .active a {
     background: none;
