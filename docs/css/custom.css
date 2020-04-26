@@ -11,6 +11,7 @@ html {
 }
 
 .menu li:not([class]) a,
+.menu li button,
 a:hover,
 .copyright a {
   border-bottom: none;

@@ -1,25 +1,17 @@
-var nightAndDaySvg = "<svg height=\"35px\" viewBox=\"0 0 512 512\" width=\"512pt\" xmlns=\"http://www.w3.org/2000/svg\">" +
-  "<path d=\"m512 256c0 141.386719-114.613281 256-256 256s-256-114.613281-256-256 114.613281-256 256-256 256 114.613281 256 256zm0 0\" fill=\"#7DCEED\"></path>" +
-  "<path d=\"m256 135.128906c-66.753906 0-120.871094 54.117188-120.871094 120.871094 0 33.578125 13.695313 63.957031 35.804688 85.859375l170.925781-170.925781c-21.902344-22.109375-52.28125-35.804688-85.859375-35.804688zm0 0\" fill=\"#fdba12\"></path>" +
-  "<path d=\"m241 60h30v57.5h-30zm0 0\" fill=\"#fdba12\"></path>" +
-  "<path d=\"m60 241h57.5v30h-57.5zm0 0\" fill=\"#fdba12\"></path>" +
-  "<path d=\"m343.324219 147.460938 40.660156-40.660157 11.003906 11.003907-40.660156 40.660156zm0 0\" fill=\"#fdba12\"></path>" +
-  "<path d=\"m106.796875 383.984375 40.660156-40.660156 11 11.003906-40.65625 40.660156zm0 0\" fill=\"#fdba12\"></path>" +
-  "<path d=\"m106.796875 128.015625 21.214844-21.214844 40.65625 40.660157-21.210938 21.210937zm0 0\" fill=\"#fdba12\"></path>" +
-  "<path d=\"m72.722656 434.703125c.753906.773437 1.492188 1.550781 2.257813 2.316406 99.972656 99.972657 262.0625 99.972657 362.039062 0 99.972657-99.972656 99.972657-262.066406 0-362.039062-.765625-.765625-1.542969-1.503907-2.316406-2.257813zm0 0\" fill=\"#000000\"></path>" +
-  "<path d=\"m362.242188 279.308594c0 42.292968-34.28125 76.578125-76.574219 76.578125-21.414063 0-40.773438-8.796875-54.671875-22.964844 9.347656 39.722656 45.015625 69.296875 87.59375 69.296875 49.699218 0 89.988281-40.289062 89.984375-89.988281 0-42.578125-29.570313-78.246094-69.296875-87.59375 14.171875 13.894531 22.964844 33.253906 22.964844 54.671875zm0 0\" fill=\"#fff\"></path>" +
-  "</svg>"
 var options = {
-  bottom: '64px', // default: '32px'
-  right: '32px', // default: '32px'
-  left: 'unset', // default: 'unset'
   time: '0.5s', // default: '0.3s'
   mixColor: 'white', // default: '#fff'
   backgroundColor: '#dedede', // default: '#fff'
-  buttonColorDark: '#212121', // default: '#100f2c'
-  buttonColorLight: '#dedede', // default: '#fff'
+  buttonColorDark: 'none', // default: '#100f2c'
+  buttonColorLight: 'none', // default: '#fff'
+  darkmodeTag: 'darkmodeTag',
+  width: '55px',
+  height: '38px',
   saveInCookies: true, // default: true,
-  label: nightAndDaySvg, // default: ''
+  label: {
+    day: '白天',
+    night: '黑夜'
+  }, // default: ''
   autoMatchOsTheme: true // default: true
 }
 
@@ -44,6 +36,7 @@ modifyTextTransparency = (newMode, loadMode) => {
     nightImgFilter = 'brightness(80%)',
     dayImgFilter = 'unset';
   var aTags = document.getElementsByTagName('a');
+  var darkmodeTag = document.querySelector('#darkmodeTag button');
   var imgTags = document.getElementsByTagName('img');
   if (newMode) {
     if (newMode == 'day') {
@@ -54,10 +47,12 @@ modifyTextTransparency = (newMode, loadMode) => {
         imgTags[j].style.filter = dayImgFilter;
       }
       document.body.style.color = dayColor;
+      darkmodeTag.style.color = dayColor;
     } else if (newMode == 'night') {
       for (var i = 0; i < aTags.length; i++) {
         aTags[i].style.color = nightFor_A_Tag;
       }
+      darkmodeTag.style.color = nightFor_A_Tag;
       for (var j = 0; j < imgTags.length; j++) {
         imgTags[j].style.filter = nightImgFilter;
       }
@@ -68,6 +63,7 @@ modifyTextTransparency = (newMode, loadMode) => {
       for (var i = 0; i < aTags.length; i++) {
         aTags[i].style.color = nightFor_A_Tag;
       }
+      darkmodeTag.style.color = nightFor_A_Tag;
       for (var j = 0; j < imgTags.length; j++) {
         imgTags[j].style.filter = nightImgFilter;
       }
@@ -80,6 +76,7 @@ modifyTextTransparency = (newMode, loadMode) => {
         imgTags[j].style.filter = dayImgFilter;
       }
       document.body.style.color = dayColor;
+      darkmodeTag.style.color = dayColor;
     }
   }
 }
