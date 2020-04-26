@@ -5,8 +5,8 @@ var options = {
   buttonColorDark: 'none', // default: '#100f2c'
   buttonColorLight: 'none', // default: '#fff'
   darkmodeTag: 'darkmodeTag',
-  width: '55px',
-  height: '38px',
+  buttonWidth: 'auto',
+  buttonHeight: 'auto',
   saveInCookies: true, // default: true,
   label: {
     day: '白天',
