@@ -350,6 +350,8 @@ tr:nth-child(even) {
     left: 0;
     width: 100%;
     /* background => day: #dedede, night: #1E1E1E */
+    padding: 5px 0px 10px 0px !important;
+    z-index: 1000;
     margin: 0;
     float: none;
     text-align: center;
