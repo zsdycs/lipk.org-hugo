@@ -35,11 +35,16 @@ modifyTextTransparency = (newMode, loadMode) => {
     nightFor_A_Tag = '#808080',
     nightImgFilter = 'brightness(80%)',
     dayImgFilter = 'unset';
+    dayBackgroundColor = '#dedede';
+    nightBackgroundColor = '#212121'
   var aTags = document.getElementsByTagName('a');
   var darkmodeTag = document.querySelector('#darkmodeTag button');
   var imgTags = document.getElementsByTagName('img');
+  var mastheadTag = document.querySelector('.masthead');
   if (newMode) {
+    // 切换模式时
     if (newMode == 'day') {
+      // 切换后为白天时
       for (var i = 0; i < aTags.length; i++) {
         aTags[i].style.color = dayColor;
       }
@@ -48,27 +53,34 @@ modifyTextTransparency = (newMode, loadMode) => {
       }
       document.body.style.color = dayColor;
       darkmodeTag.style.color = dayColor;
+      mastheadTag.style.backgroundColor = dayBackgroundColor;
     } else if (newMode == 'night') {
+      // 切换后为黑夜时
       for (var i = 0; i < aTags.length; i++) {
         aTags[i].style.color = nightFor_A_Tag;
       }
-      darkmodeTag.style.color = nightFor_A_Tag;
       for (var j = 0; j < imgTags.length; j++) {
         imgTags[j].style.filter = nightImgFilter;
       }
+      darkmodeTag.style.color = nightFor_A_Tag;
       document.body.style.color = nightColor;
+      mastheadTag.style.backgroundColor = nightBackgroundColor;
     }
   } else {
+    // 加载后
     if (loadMode == null || loadMode == 'true') {
+      // 加载后为默认(黑夜),或黑夜时
       for (var i = 0; i < aTags.length; i++) {
         aTags[i].style.color = nightFor_A_Tag;
       }
-      darkmodeTag.style.color = nightFor_A_Tag;
       for (var j = 0; j < imgTags.length; j++) {
         imgTags[j].style.filter = nightImgFilter;
       }
+      darkmodeTag.style.color = nightFor_A_Tag;
       document.body.style.color = nightColor;
+      mastheadTag.style.backgroundColor = nightBackgroundColor;
     } else {
+      // 加载后白天时
       for (var i = 0; i < aTags.length; i++) {
         aTags[i].style.color = dayColor;
       }
@@ -77,6 +89,7 @@ modifyTextTransparency = (newMode, loadMode) => {
       }
       document.body.style.color = dayColor;
       darkmodeTag.style.color = dayColor;
+      mastheadTag.style.backgroundColor = dayBackgroundColor;
     }
   }
 }

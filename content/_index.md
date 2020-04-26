@@ -5,7 +5,7 @@ disable_mathjax: true
 disable_highlight: true
 ---
 
-#### 你好，我是 <ruby>李<rt>li</rt></ruby> <ruby>鹏<rt>peng</rt></ruby> <ruby>坤<rt>kun</rt></ruby>。
+#### 你好，我是<ruby>李<rt>lǐ</rt></ruby><ruby>鹏<rt>péng</rt></ruby><ruby>坤<rt>kūn</rt></ruby>。
 
 “执手对影成双”，我是在互联网广泛使用的名称。  
 你可以在搜索引擎，通过键入它找到所有关于我的踪迹。

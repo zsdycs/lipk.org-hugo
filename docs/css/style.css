@@ -339,18 +339,22 @@ tr:nth-child(even) {
 @media screen and (max-width: 1220px) {
 
   .paramount {
+    padding-top: 78px;
     width: auto;
     max-width: 700px;
   }
 
   .masthead {
-    width: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* background => day: #dedede, night: #1E1E1E */
+    margin: 0;
     float: none;
-    padding: 20px 0 16px !important;
     text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
     border-bottom: 1px solid #989898;
+    transition: all 0.5s ease;
   }
 
   .main {
