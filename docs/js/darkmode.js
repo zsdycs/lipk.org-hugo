@@ -1,18 +1,18 @@
 var options = {
-  time: '0.5s', // default: '0.3s'
-  mixColor: 'white', // default: '#fff'
-  backgroundColor: '#dedede', // default: '#fff'
-  buttonColorDark: 'none', // default: '#100f2c'
-  buttonColorLight: 'none', // default: '#fff'
+  time: '0s',
+  mixColor: 'white',
+  backgroundColor: '#dedede',
+  buttonColorDark: 'none',
+  buttonColorLight: 'none',
   darkmodeTag: 'darkmodeTag',
   buttonWidth: 'auto',
   buttonHeight: 'auto',
-  saveInCookies: true, // default: true,
+  saveInCookies: true,
   label: {
     day: '白天',
     night: '黑夜'
-  }, // default: ''
-  autoMatchOsTheme: true // default: true
+  },
+  autoMatchOsTheme: true
 }
 
 // 设置darkmode默认值
