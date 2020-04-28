@@ -1,9 +1,18 @@
-html {
-  background-color: #1E1E1E;
-}
-
 del {
   color: #808080;
+}
+
+a {
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+
+.menu {
+  transition: all 0.5s ease;
+}
+
+#darkmodeTag {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1220px) {
@@ -15,12 +24,23 @@ del {
 }
 
 .menu li:not([class]) a,
-.menu li button,
 a:hover,
 .copyright a {
-  letter-spacing: 2px;
   border-bottom: none;
-  font-weight: bold;
+}
+
+.menu a {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
 }
 
 .main {
@@ -31,6 +51,10 @@ a:hover,
 .masthead {
   padding: 1em 40px;
 }
+/* 
+.masthead {
+  background-color: #fff;
+} */
 
 .en .main header~p:first-of-type::first-line {
   font-variant: small-caps;
@@ -130,7 +154,6 @@ code {
   font-size: 13px;
   border-radius: 100px;
   padding: 0px 5px;
-  isolation: isolate;
   display: inline-block;
   font-family: Consolas, Courier, "Courier New", STKaiti, KaiTi, SimKai, monospace
 }
@@ -204,7 +227,6 @@ pre code {
   .masthead .menu .active a {
     background: none;
     border: 1px solid #444;
-    color: #000;
   }
 
   .masthead .menu li,

@@ -1,0 +1,21 @@
+html {
+    background-color: #212121;
+}
+
+body {
+    background-color: #212121;
+    color: #737373;
+}
+
+a {
+    color: #737373;
+    border-bottom: 1px solid #6c6c6c;
+}
+
+img {
+    filter: brightness(80%);
+}
+
+.masthead .menu .active a {
+    color: #a0a0a0;
+}

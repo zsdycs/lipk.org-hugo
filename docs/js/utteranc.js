@@ -1,6 +1,5 @@
 var utterancesLoadingEnd = false;
 window.localStorage.setItem('utterances', 'false');
-
 /**
  * 通过MutationObserver来监听#utterances
  */
@@ -56,7 +55,7 @@ addUtteranc = () => {
   script.setAttribute('repo', 'zsdycs/lipk.org');
   script.setAttribute('issue-term', 'title');
   script.setAttribute('crossorigin', 'anonymous');
-  if (window.localStorage.getItem('darkmode') === 'false') {
+  if (window.localStorage.getItem('darkmode') === 'day') {
     script.setAttribute('theme', 'github-light');
   } else {
     script.setAttribute('theme', 'github-dark');

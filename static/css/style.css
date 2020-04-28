@@ -120,10 +120,6 @@ code {
   background-color: #1d1e22;
 }
 
-pre code {
-  isolation: isolate;
-}
-
 /* Lists */
 
 ul,
@@ -142,7 +138,7 @@ a {
   color: black;
   text-decoration: none;
   padding-bottom: 2px;
-  border-bottom: 1px solid #989898;
+  border-bottom: 1px solid #565656;
 }
 
 sup a {
