@@ -1,10 +1,8 @@
 ---
-title: '美的事物'
+title: '网站升级'
 date: '2020-04-29'
-slug: 'beautiful-things'
+slug: 'website-upgrade'
 ---
-
-## 起
 
 最近几天网站我做了很多修改。  
 域名从 zsdycs.cn 转到了 lipk.org，前者这几年仍将继续使用，.cn 来自阿里云，后者 .org 我票的是 Google domain。
