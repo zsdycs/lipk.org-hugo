@@ -50,7 +50,6 @@ darkmodeTag.addEventListener("click", () => {
     }
     var utterancesMsg = document.createElement('div')
     utterancesMsg.setAttribute("id", "utterancesMsg");
-    utterancesMsg.classList.add("darkmode-ignore");
     if (darkmodeLS === "night" && newDarkmode === "day") {
       utterancesMsg.innerText =
         "如果你需要在白天模式下阅读，" +

@@ -18,6 +18,21 @@ utterancesEnd = () => {
         var loading = document.getElementById('loading');
         loading.style.display = 'none';
         window.localStorage.setItem('utterances', 'true');
+        var utterancesMsg = document.createElement('div')
+        utterancesMsg.setAttribute("id", "utterancesMsg");
+        var darkmodeNow = window.localStorage.getItem('darkmode')
+        var utterancTheme = window.localStorage.getItem('utteranc-theme')
+        if (utterancTheme === "github-dark" && darkmodeNow === "day") {
+          utterancesMsg.innerText =
+            "如果你需要在白天模式下阅读，" +
+            "刷新页面后，评论将会切换为白天模式。";
+          utterances.insertBefore(utterancesMsg, utterances.firstChild);
+        } else if (utterancTheme === "github-light" && darkmodeNow === "night") {
+          utterancesMsg.innerText =
+            "如果你需要在黑夜模式下阅读，" +
+            "刷新页面后，评论将会切换为黑夜模式。";
+          utterances.insertBefore(utterancesMsg, utterances.firstChild);
+        }
       }
     });
   }
@@ -31,7 +46,6 @@ utterancesEnd = () => {
       var utterances = document.getElementById('utterances');
       var utterancesMsg = document.createElement('div')
       utterancesMsg.setAttribute('id', 'utterancesMsg');
-      utterancesMsg.classList.add('darkmode-ignore');
       utterancesMsg.innerText =
         '噢！评论加载失败了。\n稍等片刻后刷新页面，就可解决此问题。\n详情可在Console中查看，应该是Utterances在加载评论过程中出现了某些故障。';
       utterances.insertBefore(utterancesMsg, utterances.children[0]);
@@ -57,8 +71,10 @@ addUtteranc = () => {
   script.setAttribute('crossorigin', 'anonymous');
   if (window.localStorage.getItem('darkmode') === 'day') {
     script.setAttribute('theme', 'github-light');
+    window.localStorage.setItem('utteranc-theme', 'github-light');
   } else {
     script.setAttribute('theme', 'github-dark');
+    window.localStorage.setItem('utteranc-theme', 'github-dark');
   }
   script.async = true;
   utterances.appendChild(script);
