@@ -1,9 +1,9 @@
 baseurl = "https://lipk.org"
 languageCode = "zh-cn"
-title = "执手对影成双 | pengkun Lee"
+title = "Lipk • 李鹏坤"
 preserveTaxonomyNames = true
 enableEmoji = true
-disableRSS = true
+disableRSS = false
 publishDir = "docs"
 
 [permalinks]
@@ -71,7 +71,7 @@ publishDir = "docs"
     weight = 3
 
 [params]
-    description = "zsdycs; 执手对影成双; Personal website of Pengkun Lee; 李鹏坤的个人网站"
+    description = "zsdycs; 执手对影成双; Personal website of Pengkun Lee; 李鹏坤的个人网站; lipk"
     footer = "&copy; [执手对影成双](/) 2018 - 2020"
     customJS = [
                 "js/darkmode.js",
