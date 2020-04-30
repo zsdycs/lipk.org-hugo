@@ -149,7 +149,7 @@ article.index {
 
 footer.index {
   position: fixed;
-  bottom: 1em;
+  bottom: 0.5em;
   width: 600px;
 }
 

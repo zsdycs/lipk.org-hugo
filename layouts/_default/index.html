@@ -29,9 +29,7 @@
         {{ end }}
         {{ with .Site.Params.footer }}
         <div class="copyright">
-            <span class="slogan">{{ $.Site.Params.slogan }}</span>
             {{ . | markdownify }}
-            <br/>
             <a href="https://travellings.now.sh/" target="blank" title="开往-友链接力">
                 <img src="/images/travellings.svg" alt="开往-友链接力" height="23" style="vertical-align: text-top;">
             </a>
