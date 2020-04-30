@@ -1,7 +1,3 @@
-body {
-  background-color: #ddd;
-}
-
 del {
   color: #808080;
 }
@@ -61,8 +57,15 @@ img[src$="#border"] {
 }
 
 /* index start */
+.home .wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #ddd;
+}
+
 main.index {
-  max-width: 600px;
+  max-width: 610px;
   margin: 5em auto;
   overflow: hidden;
   padding: 2em;
@@ -115,28 +118,7 @@ aside.index #info li {
 }
 
 aside.index #info i {
-  width: 13px;
-  height: 13px;
   margin-right: 3px;
-  vertical-align: middle;
-  display: inline-block;
-}
-
-aside.index #info .i-user {
-  background: url(/images/i-user.svg) no-repeat;
-}
-
-aside.index #info .i-email {
-  background: url(/images/i-email.svg) no-repeat;
-}
-
-aside.index #info .i-local {
-  background: url(/images/i-local.svg) no-repeat;
-}
-
-aside.index #info .i-home {
-  background: url(/images/i-home.svg) no-repeat;
-
 }
 
 article.index {
@@ -146,6 +128,32 @@ article.index {
   border-top: 2px solid #989898;
   border-bottom: 2px solid #989898;
 }
+
+article.index a {
+  color: #d59500;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+article.index ruby.link {
+  color: #d59500;
+}
+
+article.index rt {
+  font-weight: bolder;
+}
+
+
+article.index ruby.link:hover a,
+article.index ruby.link:hover rt {
+  color: #333;
+}
+
+article.index ruby.link:hover {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #333;
+}
+
 
 footer.index {
   position: fixed;

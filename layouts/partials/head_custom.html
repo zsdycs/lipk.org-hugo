@@ -3,3 +3,6 @@
 <link rel="stylesheet" href="{{ "/css/custom.css" | relURL }}" />
 <link rel="stylesheet" href="{{ "/css/loading.css" | relURL }}" />
 <link rel="stylesheet" id="darkmodeCSS" href="{{ "/css/darkmode.css" | relURL }}" />
+{{ if .IsHome }}
+<link rel="preload" href="/font-awesome-4.7.0/css/font-awesome.min.css" as="style" onload="this.rel='stylesheet'">
+{{ end }}
