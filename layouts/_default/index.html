@@ -1,0 +1,43 @@
+{{ partial "header.html" . }}
+<main class="index">
+    <aside class="index">
+      <div id="logo">
+        <img src="/images/logo.png" alt="logo">
+        <div id="name">李鹏坤</div>
+      </div>
+      <ul id="info">
+        <li>
+            <i class="i-user"></i>执手对影成双
+        </li>
+        <li>
+            <i class="i-email"></i>mail@lipk.org
+        </li>
+        <li>
+            <i class="i-local"></i>江苏 · 苏州
+        </li>
+        <li>
+            <i class="i-home"></i>广东 · 中山
+        </li>
+      </ul>
+    </aside>
+    <article class="index">
+        {{ .Content }}
+    </article>
+    <footer class="index">
+        {{ range .Site.Params.customJS }}
+        <script async src="{{ . | relURL }}"></script>
+        {{ end }}
+        {{ with .Site.Params.footer }}
+        <div class="copyright">
+            <span class="slogan">{{ $.Site.Params.slogan }}</span>
+            {{ . | markdownify }}
+            <br/>
+            <a href="https://travellings.now.sh/" target="blank" title="开往-友链接力">
+                <img src="/images/travellings.svg" alt="开往-友链接力" height="23" style="vertical-align: text-top;">
+            </a>
+        </div>
+        {{ end }}
+    </footer>
+</main>
+</body>
+</html>

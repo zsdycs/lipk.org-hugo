@@ -24,7 +24,7 @@
   <meta name="keywords" content="个人网站,博客">
   <meta name="baidu-site-verification" content="DjOoDNzsC0">
   <script>
-      console.info("\n%c 🎉 Hi~ 想看源代码？ %c by lipk %c \nGitHub仓库: https://github.com/zsdycs/lipk.org \n%c自主%c、%c跨界%c、%c终身学习%c。",
+      console.info("\n%c 🎉 Hi~ 想看源代码？ %c by zsdycs %c \nGitHub仓库: https://github.com/zsdycs/lipk.org \n%c自主%c、%c跨界%c、%c终身学习%c。",
       "color: #fff; padding: 5px 0; background: #29c75f; margin: 1em 0;",
       "padding: 5px 0; background: #666666; margin: 1em 0;",
       "display: block;margin-left: 0.5em; margin: 1em 0;",
@@ -63,13 +63,16 @@
 {{ $.Scratch.Set "section" (replaceRE "^/([^/]+)/.*" "$1" .URL) }}
 
 <body class="{{ if .IsHome }}home{{ else }}{{ $.Scratch.Get "section" }}{{ end }}">
-  <div class="paramount">
-  <header class="masthead">
-    {{ partial "menu.html" . }}
-  </header>
-
-  <article class="main">
-    <header class="title">
-      {{ partial "meta.html" . }}
+{{ if not .IsHome }}
+  <main class="paramount">
+    <!-- 菜单栏 -->
+    <header class="masthead">
+      {{ partial "menu.html" . }}
     </header>
+    <article class="main">
+      <!-- 文章标题 -->
+      <header class="title">
+        {{ partial "meta.html" . }}
+      </header>
+{{ end }}
     

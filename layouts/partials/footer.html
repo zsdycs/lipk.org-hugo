@@ -1,19 +1,20 @@
-<footer>
-  {{ partial "foot_custom.html" . }}
-  {{ with .Site.Params.footer }}
-  <hr>
-  <div class="copyright" id="add-icp">
-    <span id="slogan">执手相看，对影成双</span>
-    {{ . | markdownify }}
-    <br/>
-    <a href="https://travellings.now.sh/" target="blank" title="开往-友链接力">
-      <img src="/images/travellings.svg" alt="开往-友链接力" height="23" style="vertical-align: text-top;">
-    </a>
-  </div>
+      <footer>
+      {{ partial "foot_custom.html" . }}
+      {{ with .Site.Params.footer }}
+      <hr>
+      <div class="copyright">
+        <span class="slogan">{{ $.Site.Params.slogan }}</span>
+        {{ . | markdownify }}
+        <br/>
+        <a href="https://travellings.now.sh/" target="blank" title="开往-友链接力">
+          <img src="/images/travellings.svg" alt="开往-友链接力" height="23" style="vertical-align: text-top;">
+        </a>
+      </div>
+      {{ end }}
+      </footer>
+  {{ if not .IsHome }}
+    </article>
+  </main>
   {{ end }}
-</footer>
-</article>
-</div>
 </body>
-
 </html>

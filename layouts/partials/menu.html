@@ -3,8 +3,8 @@
     {{ $currentPage := . }}
     {{ range (default .Site.Menus.main (index .Site.Menus ($.Scratch.Get "section"))) }}
     <li{{ if eq .URL $currentPage.URL }} class="active" {{ end }}><a href="{{ .URL }}">{{ .Name }}</a></li>
-    {{ end }}
-    <li><a id="darkmodeTag"></a></li>
-    {{ partial "menu_extra.html" . }}
+      {{ end }}
+      <li><a id="darkmodeTag"></a></li>
+      {{ partial "menu_extra.html" . }}
   </ul>
 </nav>

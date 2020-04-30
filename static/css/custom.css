@@ -1,3 +1,7 @@
+body {
+  background-color: #ddd;
+}
+
 del {
   color: #808080;
 }
@@ -5,145 +9,6 @@ del {
 a {
   letter-spacing: 2px;
   font-weight: bolder;
-}
-
-.menu {
-  transition: all 0.5s ease;
-}
-
-#darkmodeTag {
-  cursor: pointer;
-}
-
-@media screen and (min-width: 1220px) {
-
-  .masthead {
-    position: sticky;
-    top: 0;
-  }
-}
-
-.menu li:not([class]) a,
-a:hover,
-.copyright a {
-  border-bottom: none;
-}
-
-.menu a {
-  -webkit-touch-callout: none;
-  /* iOS Safari */
-  -webkit-user-select: none;
-  /* Chrome/Safari/Opera */
-  -khtml-user-select: none;
-  /* Konqueror */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer/Edge */
-  user-select: none;
-}
-
-.main {
-  hyphens: manual;
-}
-
-.main,
-.masthead {
-  padding: 1em 40px;
-}
-/* 
-.masthead {
-  background-color: #fff;
-} */
-
-.en .main header~p:first-of-type::first-line {
-  font-variant: small-caps;
-  letter-spacing: .05em;
-  font-size: 1.1em;
-}
-
-.en .main header~p:first-of-type::first-letter {
-  font-size: 3em;
-  padding: .1em .1em 0 0;
-  float: left;
-  line-height: 1em;
-}
-
-iframe,
-video {
-  max-width: 100%;
-  display: block;
-  margin: auto;
-}
-
-#TableOfContents {
-  background-color: #f8f8f8;
-  padding: .5em;
-}
-
-table {
-  min-width: 50%;
-  max-width: 100%;
-  margin: auto;
-}
-
-pre .nohighlight {
-  background-color: transparent;
-}
-
-.hljs-comment {
-  font-style: inherit;
-}
-
-.hljs {
-  padding: 1em;
-}
-
-.home hr {
-  margin: 2em auto 1em;
-}
-
-.masthead img {
-  max-width: 166px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-img[src$="#border"] {
-  border: 1px solid #ddd;
-  box-shadow: 5px 5px 5px #eee;
-}
-
-.home blockquote,
-.cn blockquote:not(:hover) {
-  border-left-color: transparent;
-}
-
-#icp {
-  font-size: 100%;
-  cursor: alias;
-}
-
-#slogan {
-  display: block;
-  font-size: 100%;
-  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, STKaiti, KaiTi, '楷体', SimKai, DFKai-SB, NSimSun, serif;
-}
-
-ins {
-  color: #777;
-  text-decoration: none;
-}
-
-#svg-404 {
-  width: 300px;
-}
-
-.blog blockquote,
-.home blockquote {
-  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, STKaiti, KaiTi, '楷体', SimKai, DFKai-SB, NSimSun, serif
 }
 
 code {
@@ -168,11 +33,269 @@ pre code {
   border-radius: 0px;
 }
 
+iframe,
+video {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+table {
+  min-width: 50%;
+  max-width: 100%;
+  margin: auto;
+}
+
+pre .nohighlight {
+  background-color: transparent;
+}
+
+ins {
+  color: #777;
+  text-decoration: none;
+}
+
+img[src$="#border"] {
+  border: 1px solid #ddd;
+  box-shadow: 5px 5px 5px #eee;
+}
+
+/* index start */
+main.index {
+  max-width: 600px;
+  margin: 5em auto;
+  overflow: hidden;
+  padding: 2em;
+  transition: 1s;
+  background-color: #fff;
+}
+
+main.index:hover aside {
+  background: #eee;
+}
+
+aside.index {
+  line-height: 1.6em;
+  width: 28%;
+  float: left;
+  padding: 1em;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+aside.index #logo {
+  text-align: center;
+}
+
+aside.index img {
+  width: 100%;
+  display: block;
+}
+
+aside.index #name {
+  font-weight: bolder;
+  font-size: 18px;
+  margin: 0.8em 0 1em;
+  margin-left: 3px;
+  letter-spacing: 3px;
+}
+
+aside.index i {
+  text-align: center;
+}
+
+aside.index #info {
+  margin: 0;
+  padding: 0;
+}
+
+aside.index #info li {
+  font-size: 13px;
+  list-style: none;
+}
+
+aside.index #info i {
+  width: 13px;
+  height: 13px;
+  margin-right: 3px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+aside.index #info .i-user {
+  background: url(/images/i-user.svg) no-repeat;
+}
+
+aside.index #info .i-email {
+  background: url(/images/i-email.svg) no-repeat;
+}
+
+aside.index #info .i-local {
+  background: url(/images/i-local.svg) no-repeat;
+}
+
+aside.index #info .i-home {
+  background: url(/images/i-home.svg) no-repeat;
+
+}
+
+article.index {
+  width: 70%;
+  float: right;
+  letter-spacing: 0.2px;
+  border-top: 2px solid #989898;
+  border-bottom: 2px solid #989898;
+}
+
+footer.index {
+  position: fixed;
+  bottom: 1em;
+  width: 600px;
+}
+
+::selection {
+  background: #fefecc;
+}
+
+@media only screen and (max-width: 668px) {
+
+  main.index {
+    margin: 1em;
+    padding: 0 1em;
+    max-width: 100%;
+  }
+
+  aside.index {
+    float: none;
+    width: 100%;
+    background: #eee;
+    overflow: hidden;
+    margin: 2em auto 1em;
+  }
+
+  aside.index #logo {
+    float: left;
+    width: 28%;
+    margin-right: 1em;
+  }
+
+  article.index {
+    float: none;
+    width: 100%;
+  }
+
+  footer.index {
+    position: static;
+    width: auto;
+    margin: 1em auto 2em;
+  }
+}
+
+/* index end */
+
 #utterancesMsg {
   width: 100%;
   border: 1px dashed;
   padding: 0.5em;
   background: lightyellow;
+}
+
+#darkmodeTag {
+  cursor: pointer;
+}
+
+#TableOfContents {
+  background-color: #f8f8f8;
+  padding: .5em;
+}
+
+#svg-404 {
+  width: 300px;
+}
+
+.menu {
+  transition: all 0.5s ease;
+}
+
+.menu li:not([class]) a,
+a:hover,
+.copyright a {
+  border-bottom: none;
+}
+
+.menu a {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.main {
+  hyphens: manual;
+}
+
+.main,
+.masthead {
+  padding: 1em 40px;
+}
+
+.en .main header~p:first-of-type::first-line {
+  font-variant: small-caps;
+  letter-spacing: .05em;
+  font-size: 1.1em;
+}
+
+.en .main header~p:first-of-type::first-letter {
+  font-size: 3em;
+  padding: .1em .1em 0 0;
+  float: left;
+  line-height: 1em;
+}
+
+.hljs-comment {
+  font-style: inherit;
+}
+
+.hljs {
+  padding: 1em;
+}
+
+.home hr {
+  margin: 2em auto 1em;
+}
+
+.masthead img {
+  max-width: 166px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.home blockquote,
+.cn blockquote:not(:hover) {
+  border-left-color: transparent;
+}
+
+.slogan {
+  display: block;
+  font-size: 100%;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, STKaiti, KaiTi, '楷体', SimKai, DFKai-SB, NSimSun, serif;
+}
+
+.blog blockquote,
+.home blockquote {
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, STKaiti, KaiTi, '楷体', SimKai, DFKai-SB, NSimSun, serif
+}
+
+@media screen and (min-width: 1220px) {
+
+  .masthead {
+    position: sticky;
+    top: 0;
+  }
 }
 
 @media screen and (max-width: 1220px) {

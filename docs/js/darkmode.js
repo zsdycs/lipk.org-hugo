@@ -15,11 +15,11 @@ addDarkmodeCSS = (mode) => {
   var darkmodeCSS = document.querySelector("#darkmodeCSS");
   var masthead = document.querySelector(".masthead");
   if (mode === "night") {
-    masthead.style.background = "#212121";
+    if (masthead) masthead.style.background = "#212121";
     darkmodeCSS.disabled = false;
     darkmodeTag.innerHTML = "黑夜";
   } else {
-    masthead.style.background = "#ffffff";
+    if (masthead) masthead.style.background = "#ffffff";
     darkmodeCSS.disabled = true;
     darkmodeTag.innerHTML = "白天";
   }

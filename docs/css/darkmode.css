@@ -16,6 +16,29 @@ img {
     filter: brightness(80%);
 }
 
+main.index {
+    background-color: #292929;
+}
+
+main.index:hover aside {
+    background: #252525;
+}
+
+article.index {
+    border-top: 2px solid #4c4c4c;
+    border-bottom: 2px solid #4c4c4c;
+}
+
+::selection {
+    background: #27673d;
+}
+
+@media only screen and (max-width: 668px) {
+    aside.index {
+        background: #252525;
+    }
+}
+
 .masthead .menu .active a {
     color: #a0a0a0;
 }

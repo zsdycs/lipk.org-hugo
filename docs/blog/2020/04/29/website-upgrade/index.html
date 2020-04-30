@@ -21,7 +21,7 @@
   <meta name="keywords" content="个人网站,博客">
   <meta name="baidu-site-verification" content="DjOoDNzsC0">
   <script>
-      console.info("\n%c 🎉 Hi~ 想看源代码？ %c by lipk %c \nGitHub仓库: https://github.com/zsdycs/lipk.org \n%c自主%c、%c跨界%c、%c终身学习%c。",
+      console.info("\n%c 🎉 Hi~ 想看源代码？ %c by zsdycs %c \nGitHub仓库: https://github.com/zsdycs/lipk.org \n%c自主%c、%c跨界%c、%c终身学习%c。",
       "color: #fff; padding: 5px 0; background: #29c75f; margin: 1em 0;",
       "padding: 5px 0; background: #666666; margin: 1em 0;",
       "display: block;margin-left: 0.5em; margin: 1em 0;",
@@ -63,20 +63,23 @@
 
 
 <body class="blog">
-  <div class="paramount">
-  <header class="masthead">
-    <nav class="menu">
+
+  <main class="paramount">
+    
+    <header class="masthead">
+      <nav class="menu">
   <ul>
     
     
     <li><a href="/">返回</a></li>
-    
+      
     <li><a href="/blog/">博客</a></li>
-    
+      
     <li><a href="/food/">美食</a></li>
-    
-    <li><a id="darkmodeTag"></a></li>
-    
+      
+      <li><a id="darkmodeTag"></a></li>
+      
+
 
 
 
@@ -97,12 +100,12 @@
 
   </ul>
 </nav>
-
-  </header>
-
-  <article class="main">
-    <header class="title">
+    </header>
+    <article class="main">
       
+      <header class="title">
+        
+
 <h1>网站升级</h1>
 
 <h3>
@@ -112,7 +115,8 @@
 <hr>
 
 
-    </header>
+      </header>
+
     
 
 
@@ -123,8 +127,8 @@
 菜单区域的手绘图片被我去掉了。首页后续有个非常大的改动，黑夜白天模式切换放到了菜单里，而且实现方式从 <a href="http://github.com/sandoche/Darkmode.js">Darkmode.js</a> （是使用 mixColor 实现的），现在改为了 disabled CSS link 的方式，这样更加可控，浏览器兼容性也更好。</p>
 <h4 id="版权声明httpszsdycssirvcomlipkorgcreativecommons-ccsvghttpscreativecommonsorglicensesby-nc-nd40"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img src="https://zsdycs.sirv.com/lipk.org/creativecommons-cc.svg" alt="版权声明"></a></h4>
 
-<footer>
-  
+      <footer>
+      
 <nav class="post-nav">
   <span class="nav-prev">&larr; <a href="/blog/2020/04/23/why-reading/" title="你可以使用方向键">为什么要读书</a></span>
   <span class="nav-next"></span>
@@ -181,20 +185,21 @@ document.addEventListener('keyup', function(e) {
 
 
 
+      
+      <hr>
+      <div class="copyright">
+        <span class="slogan">执手相看，对影成双</span>
+        © <a href="/">执手对影成双</a> 2018 - 2020
+        <br/>
+        <a href="https://travellings.now.sh/" target="blank" title="开往-友链接力">
+          <img src="/images/travellings.svg" alt="开往-友链接力" height="23" style="vertical-align: text-top;">
+        </a>
+      </div>
+      
+      </footer>
   
-  <hr>
-  <div class="copyright" id="add-icp">
-    <span id="slogan">执手相看，对影成双</span>
-    © <a href="/">执手对影成双</a> 2018 - 2020
-    <br/>
-    <a href="https://travellings.now.sh/" target="blank" title="开往-友链接力">
-      <img src="/images/travellings.svg" alt="开往-友链接力" height="23" style="vertical-align: text-top;">
-    </a>
-  </div>
+    </article>
+  </main>
   
-</footer>
-</article>
-</div>
 </body>
-
 </html>

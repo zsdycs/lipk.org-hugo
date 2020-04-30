@@ -12,7 +12,7 @@ disable_highlight: true
 ## 基本信息
 
 籍贯：广东 · 中山。  
-所在地：江苏 · 苏州。  
+位置：江苏 · 苏州。  
 邮箱：mail@lipk.org。
 
 ## 教育背景

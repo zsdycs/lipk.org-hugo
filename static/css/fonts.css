@@ -3,11 +3,6 @@ body {
   letter-spacing: 1.5px;
 }
 
-.home blockquote,
-.cn blockquote {
-  font-family: 'Palatino Linotype', 'Book Antiqua', 'Palatino', 'STKaiti', 'KaiTi', '楷体', 'SimKai', 'DFKai-SB', 'NSimSun', serif;
-}
-
 code {
   font-family: Consolas, Courier, "Courier New", 'STKaiti', 'KaiTi', 'SimKai', monospace;
 }
@@ -15,4 +10,9 @@ code {
 pre,
 code {
   font-size: .95em;
+}
+
+.home blockquote,
+.cn blockquote {
+  font-family: 'Palatino Linotype', 'Book Antiqua', 'Palatino', 'STKaiti', 'KaiTi', '楷体', 'SimKai', 'DFKai-SB', 'NSimSun', serif;
 }
