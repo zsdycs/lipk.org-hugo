@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://lipk.org/blog/2020/05/01/java-on-spring/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://lipk.org/blog/2020/04/29/website-upgrade/</loc>
     <lastmod>2020-04-29T00:00:00+00:00</lastmod>
   </url>
