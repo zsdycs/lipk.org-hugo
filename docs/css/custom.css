@@ -61,13 +61,14 @@ img[src$="#border"] {
   position: absolute;
   height: 100%;
   width: 100%;
+  overflow: auto;
   background: #ddd;
 }
 
 main.index {
   max-width: 610px;
   margin: 5em auto;
-  overflow: hidden;
+  overflow: auto;
   padding: 2em;
   transition: 1s;
   background-color: #fff;
