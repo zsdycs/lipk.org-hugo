@@ -1,6 +1,6 @@
 baseurl = "https://lipk.org"
 languageCode = "zh-cn"
-title = "Lipk • 李鹏坤"
+title = "lipk • 李鹏坤"
 preserveTaxonomyNames = true
 enableEmoji = true
 disableRSS = false

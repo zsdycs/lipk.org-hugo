@@ -19,7 +19,11 @@
     gtag('config', 'UA-154705931-1');
   </script>
 
+  {{ if .IsHome }}
   <meta property="og:title" content="{{ .Site.Title }}">
+  {{ else }}
+  <meta property="og:title" content="执手对影成双 - {{ .Title }}">
+  {{ end }}
   <meta property="og:type" content="website">
   <meta name="keywords" content="个人网站,博客">
   <meta name="baidu-site-verification" content="DjOoDNzsC0">
