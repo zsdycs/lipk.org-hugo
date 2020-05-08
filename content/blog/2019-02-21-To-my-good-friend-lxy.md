@@ -51,5 +51,3 @@ slug: 'to-my-good-friend-dxy'
 
 就写这么多啦，要忙。😋  
 由衷祝福你，要幸福鸭，到时候回来中山，要介绍你老公给我认识，告诉一些你的黑历史给他。
-
-#### [![版权声明](https://zsdycs.sirv.com/lipk.org/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)

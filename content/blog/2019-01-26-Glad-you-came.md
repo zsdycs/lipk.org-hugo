@@ -15,5 +15,3 @@ slug: 'glad-you-came'
 而我现在，是有这样的期待的。
 
 大三上学期结束已有近十天，偌大的校园空空荡荡，留在这里的只剩十来人了，很冷清。
-
-#### [![版权声明](https://zsdycs.sirv.com/lipk.org/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)

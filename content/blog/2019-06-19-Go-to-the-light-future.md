@@ -21,5 +21,3 @@ slug: 'go-to-the-light-future'
 祝 2016 级， 2019 届，全体 SVU 毕业生，毕业快乐，前程锦绣！
 
 愿今夜有个美梦，梦回懵懂少年时。
-
-#### [![版权声明](https://zsdycs.sirv.com/lipk.org/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)

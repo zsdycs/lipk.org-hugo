@@ -22,5 +22,3 @@ Java 是出现在上个世纪 90 年代的编程语言，与其同期诞生，�
 读到这里，想必你已经基本理解，我一个不懂 Spring 的前端，居然胆敢来回答这个问题。Java 技术本身也没有巅峰，巅峰在计算机技术，Spring 只是让 Java 开发的过程更加简单，是 Java 开发更高一层的抽象，就如同编程语言之于计算机语言。
 
 最后，Java 未来将会如何发展。软件与硬件密不可分，软件是编程产生的。目前，我觉得“云”是未来。
-
-#### [![版权声明](https://zsdycs.sirv.com/lipk.org/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)

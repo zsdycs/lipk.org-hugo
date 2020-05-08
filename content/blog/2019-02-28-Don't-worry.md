@@ -70,5 +70,3 @@ slug: 'do-not-worry'
 我终于到了“不再长大，只会变老”的年纪了。
 
 真的没有着急，我其实也在好好感受这个过程呢~😉
-
-#### [![版权声明](https://zsdycs.sirv.com/lipk.org/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)

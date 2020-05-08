@@ -37,5 +37,3 @@ slug: 'why-reading'
 
 越阅读，越感渺小。书籍丰富你的内心，抵御世间的浮华与虚荣。  
 就如，防止乱花钱的有效方式，是心中默念我是穷比。
-
-#### [![版权声明](https://zsdycs.sirv.com/lipk.org/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)

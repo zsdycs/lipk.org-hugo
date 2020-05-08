@@ -21,5 +21,3 @@ slug: 'the-11th-year-of-the-marvel-universe'
 最后一个镜头呈现的那一刻，我下定决心要将它死死的记在脑海里。那个吻仿佛在告诉我，这十一年漫威给世界带来了多么美好的东西，多少欢乐的时光啊。
 
 一定还会有这样的电影世界，而漫威是第一个成功的。每代人都有他们 ❤️ 目中的英雄，有一代人，他们的英雄，在漫威的宇宙里。
-
-#### [![版权声明](https://zsdycs.sirv.com/lipk.org/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)

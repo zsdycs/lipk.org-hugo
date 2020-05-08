@@ -67,5 +67,3 @@ slug: 'a-friend-of-mine'
 “谢谢你”
 
 “没有，也谢谢你”
-
-#### [![版权声明](https://zsdycs.sirv.com/lipk.org/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)

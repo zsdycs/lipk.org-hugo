@@ -91,5 +91,3 @@ slug: 'who-moved-my-bread'
 ## 后记
 
 这个剧本是改编自[这里](https://v.youku.com/v_show/id_XMTU1OTMwMjYyNA==.html?spm=a2h0k.11417342.soresults.dtitle)，高三时学校艺术节学弟学妹的一个节目，印象深刻。主要是为了切合“防诈骗”主题的表演所以才改成这样的。
-
-#### [![版权声明](https://zsdycs.sirv.com/lipk.org/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)

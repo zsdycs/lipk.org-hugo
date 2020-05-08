@@ -13,5 +13,3 @@ slug: 'the-one-I-used-to-like'
 > **慧远老和尚**：但人这一生，只有一次会奋不顾身，把一个人喜欢到极致，年少的满腔孤勇，以后再也不会重来了。所以没有谁辜负谁，爱对了是一生，爱错了，是青春。
 
 我也觉得很亏，但确实没有办法重来。
-
-#### [![版权声明](https://zsdycs.sirv.com/lipk.org/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)

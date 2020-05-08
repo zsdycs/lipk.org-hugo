@@ -5,5 +5,3 @@ slug: 'back-to-home'
 ---
 
 今天上午 11 点左右，经过近 22 个小时的“长途跋涉”，我终于进入了中山市区域范围内。在到家前最后的一段路上，我查看了“ [TP-LINK](https://www.tp-link.com.cn/) ”的设置，确保我到家后，手机可以顺滑地连接上家里的 WiFi 。在已连接设备的一栏我看到了老妈的手机在线，甚是喜悦，这两天下来还未下肚一粒米，看来这米饭是有着落了。  
-
-#### [![版权声明](https://zsdycs.sirv.com/lipk.org/creativecommons-cc.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
