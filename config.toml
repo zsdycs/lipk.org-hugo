@@ -94,7 +94,8 @@ publishDir = "docs"
     highlightjsVersion = "10.0.0"
     highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
     highlightjsLang = ["JavaScript", "HTML", "Markdown", "SCSS", "CSS", "TypeScript", "Ruby", "Bash"]
-    highlightjsTheme = "vs2015"
+    highlightjsThemeNight = "vs2015"
+    highlightjsThemeDay = "github"
  [author]
     blog = '李鹏坤'
 
@@ -133,7 +134,7 @@ publishDir = "docs"
       unsafe = true
       xhtml = false
   [markup.highlight]
-    codeFences = true
+    codeFences = false
     guessSyntax = false
     hl_Lines = ""
     lineNoStart = 1

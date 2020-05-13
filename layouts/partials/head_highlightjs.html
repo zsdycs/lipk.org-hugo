@@ -1,9 +1,14 @@
 {{ if and (not .Params.disable_highlight) (in (string .Content) "</pre>") }}
-{{ $highTheme := .Site.Params.highlightjsTheme }}
+{{ $highlightjsThemeDay := .Site.Params.highlightjsThemeDay }}
+{{ $highlightjsThemeNight := .Site.Params.highlightjsThemeNight }}
 {{ with .Site.Params.highlightjsVersion }}
-<link
-    href='{{ $.Site.Params.highlightjsCDN | default "//cdn.bootcss.com" }}/highlight.js/{{ . }}/styles/{{ $highTheme }}.min.css'
+<link id="highlightjsThemeDay"
+    href='{{ $.Site.Params.highlightjsCDN | default "//cdn.bootcss.com" }}/highlight.js/{{ . }}/styles/{{ $highlightjsThemeDay }}.min.css'
     rel='stylesheet' type='text/css' />
-<script src='{{ $.Site.Params.highlightjsCDN | default "//cdn.bootcss.com" }}/highlight.js/{{ . }}/highlight.min.js'></script>
+<link id="highlightjsThemeNight"
+    href='{{ $.Site.Params.highlightjsCDN | default "//cdn.bootcss.com" }}/highlight.js/{{ . }}/styles/{{ $highlightjsThemeNight }}.min.css'
+    rel='stylesheet' type='text/css' />
+<script src='{{ $.Site.Params.highlightjsCDN | default "//cdn.bootcss.com" }}/highlight.js/{{ . }}/highlight.min.js'>
+</script>
 {{ end }}
 {{ end }}

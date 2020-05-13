@@ -13,14 +13,17 @@ var darkmodeLS = window.localStorage.getItem('darkmode');
 addDarkmodeCSS = (mode) => {
   var darkmodeTag = document.querySelector("#darkmodeTag");
   var darkmodeCSS = document.querySelector("#darkmodeCSS");
+  var highlightjsNightCSS = document.querySelector("#highlightjsThemeNight");
   var masthead = document.querySelector(".masthead");
   if (mode === "night") {
     if (masthead) masthead.style.background = "#212121";
     darkmodeCSS.disabled = false;
+    highlightjsNightCSS.disabled = false;
     darkmodeTag.innerHTML = "黑夜";
   } else {
     if (masthead) masthead.style.background = "#ffffff";
     darkmodeCSS.disabled = true;
+    highlightjsNightCSS.disabled = true;
     darkmodeTag.innerHTML = "白天";
   }
 }
