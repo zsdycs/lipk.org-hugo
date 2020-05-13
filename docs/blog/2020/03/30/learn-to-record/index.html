@@ -63,11 +63,15 @@
   
 
 
-<link
+
+<link id="highlightjsThemeDay"
+    href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/github.min.css'
+    rel='stylesheet' type='text/css' />
+<link id="highlightjsThemeNight"
     href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/vs2015.min.css'
     rel='stylesheet' type='text/css' />
-<script src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js'></script>
-
+<script src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js'>
+</script>
 
 
   <link rel="icon" type="image/x-icon" href="/zsdycs_favicon.ico">
@@ -164,10 +168,11 @@
 <li>
 <p><strong>标题</strong><br>
 标题是这样写的：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Markdown" data-lang="Markdown"># 一级标题
-<span style="color:#75715e">## 二级标题
-</span><span style="color:#75715e">### 三级标题
-</span></code></pre></div><p>效果是这样的：</p>
+<pre><code class="language-Markdown"># 一级标题
+## 二级标题
+### 三级标题
+</code></pre>
+<p>效果是这样的：</p>
 </li>
 </ol>
 <h1 id="一级标题">一级标题</h1>
@@ -181,19 +186,20 @@ MD 编辑器我会在文章结尾给出。</p>
 <li>
 <p><strong>列表</strong><br>
 列表有两种，有序和无序，分别是这样写的：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Markdown" data-lang="Markdown">&lt;!-- 有序列表 --&gt;
- <span style="color:#66d9ef">1.</span> 有序，第一项
- <span style="color:#66d9ef">2.</span> 有序，第二项
-    <span style="color:#66d9ef">1.</span> 有序，第二项的子项一
-    <span style="color:#66d9ef">2.</span> 有序，第二项的子项二
- <span style="color:#66d9ef">3.</span> 有序，第三项
+<pre><code class="language-Markdown">&lt;!-- 有序列表 --&gt;
+ 1. 有序，第一项
+ 2. 有序，第二项
+    1. 有序，第二项的子项一
+    2. 有序，第二项的子项二
+ 3. 有序，第三项
 &lt;!-- 无序列表 --&gt;
-<span style="color:#66d9ef">-</span> 无序，第一项
-<span style="color:#66d9ef">-</span> 无序，第二项
-  <span style="color:#66d9ef">-</span> 无序，第二项的子项一
-  <span style="color:#66d9ef">-</span> 无序，第二项的子项二
-<span style="color:#66d9ef">-</span> 无序，第三项
-</code></pre></div><p>它们的效果分别是这样的：</p>
+- 无序，第一项
+- 无序，第二项
+  - 无序，第二项的子项一
+  - 无序，第二项的子项二
+- 无序，第三项
+</code></pre>
+<p>它们的效果分别是这样的：</p>
 <!-- 有序列表 -->
 <ol>
 <li>有序，第一项</li>
@@ -220,9 +226,10 @@ MD 编辑器我会在文章结尾给出。</p>
 <li>
 <p><strong>加粗</strong><br>
 加粗非常简单，是这样写的：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Markdown" data-lang="Markdown">**这个是加粗的**  
-<span style="font-weight:bold">__这个也是加粗的__</span>
-</code></pre></div><p>效果：<br>
+<pre><code class="language-Markdown">**这个是加粗的**  
+__这个也是加粗的__
+</code></pre>
+<p>效果：<br>
 <strong>这个是加粗的</strong><br>
 <strong>这个也是加粗的</strong></p>
 </li>
@@ -230,34 +237,38 @@ MD 编辑器我会在文章结尾给出。</p>
 <p><strong>斜体</strong><br>
 斜体我自己用得比较少，语法和加粗类似。<br>
 如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Markdown" data-lang="Markdown">*这是倾斜的*  
-<span style="font-style:italic">_这也是倾斜的_</span>
-</code></pre></div><p>效果：<br>
+<pre><code class="language-Markdown">*这是倾斜的*  
+_这也是倾斜的_
+</code></pre>
+<p>效果：<br>
 <em>这是倾斜的</em><br>
 <em>这也是倾斜的</em></p>
 </li>
 <li>
 <p><strong>删除样式</strong><br>
 直接上代码：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Markdown" data-lang="Markdown">~~这个就是删除~~
-</code></pre></div><p>效果：<br>
+<pre><code class="language-Markdown">~~这个就是删除~~
+</code></pre>
+<p>效果：<br>
 <del>这个就是删除</del></p>
 </li>
 <li>
 <p><strong>块</strong><br>
 块有两种，一种是行内的块，一种是跨多行的。<br>
 这里仅介绍行内块，是这样写的：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Markdown" data-lang="Markdown">&lt;!-- 行内的块 --&gt;
-文字文字 <span style="color:#e6db74">`这就是块`</span> 文字文字
-</code></pre></div><p>效果：</p>
+<pre><code class="language-Markdown">&lt;!-- 行内的块 --&gt;
+文字文字 `这就是块` 文字文字
+</code></pre>
+<p>效果：</p>
 <!-- 行内的块 -->
 <p>文字文字 <code>这就是块</code> 文字文字</p>
 </li>
 <li>
 <p><strong>引用</strong><br>
 这个符号很好记：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Markdown" data-lang="Markdown"><span style="color:#66d9ef">&gt; </span><span style="font-style:italic">这是被引用的句子
-</span></code></pre></div><p>效果：</p>
+<pre><code class="language-Markdown">&gt; 这是被引用的句子
+</code></pre>
+<p>效果：</p>
 <blockquote>
 <p>这是被引用的句子</p>
 </blockquote>
@@ -266,8 +277,9 @@ MD 编辑器我会在文章结尾给出。</p>
 <p><strong>超链接</strong><br>
 这个可以记录你笔记的来源。<br>
 如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Markdown" data-lang="Markdown">[<span style="color:#f92672">哔哩哔哩传送门</span>](<span style="color:#a6e22e">http://bilibili.com</span>)
-</code></pre></div><p>效果：<br>
+<pre><code class="language-Markdown">[哔哩哔哩传送门](http://bilibili.com)
+</code></pre>
+<p>效果：<br>
 <a href="http://bilibili.com">哔哩哔哩传送门</a></p>
 </li>
 </ol>
@@ -335,6 +347,18 @@ document.addEventListener('keyup', function(e) {
 <script async src="/js/external-link.js"></script>
 
 <script async src="/js/alt-title.js"></script>
+
+
+
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js"></script>
+
+
+
+<script>hljs.configure({ languages: [] }); hljs.initHighlightingOnLoad();</script>
+
 
 
 

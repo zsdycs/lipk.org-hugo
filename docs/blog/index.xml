@@ -114,8 +114,8 @@ Java 是出现在上个世纪 90 年代的编程语言，与其同期诞生，�
 由于本站默认是夜间模式，夜间模式是通过 CSS 的 mix-blend-mode: difference 实现的，模式切换通过异步载入的 js 控制。
 这就导致背景图片（白色）加载完成后切换到夜间模式会发生闪烁，这违背了黑夜模式的初衷。
 过程 对于背景图片的淡入，网上有很多种解决方法。 有说用 animation + opacity 的。像这样写:
-#background-div {/* 加载自定义的 bgFadeIn 动画 */animation: bgFadeIn 3s ease-in;}@-webkit-keyframes fadeIn {0% {/* opacity 属性初始值 */opacity: 0;}100% {/* 动画完成后 opacity 的值 */opacity: 1;}}也有说用使用 transition + opacity 实现的。也就是这样写:
-#background-div {/* opacity 属性初始值 */opacity: 0;/* transition 控制 opacity 属性 */transition: opacity 3s ease-in;}#background-div:hover {opacity: 1;}我用了都没有用。为什么呢？我发现这些都是在控制元素本身，并不能控制元素的 background，也就是元素的属性。 这种情况下，唯有 JS。 于是，我决定放弃搜索。思考了一下，只要在页面加载时，黑夜白天模式切换加载完成后，对背景进行设置其实就可以解决问题。</description>
+#background-div {/* 加载自定义的 bgFadeIn 动画 */animation: bgFadeIn 3s ease-in;}@-webkit-keyframes fadeIn {0% {/* opacity 属性初始值 */opacity: 0;}100% {/* 动画完成后 opacity 的值 */opacity: 1;}} 也有说用使用 transition + opacity 实现的。也就是这样写:
+#background-div {/* opacity 属性初始值 */opacity: 0;/* transition 控制 opacity 属性 */transition: opacity 3s ease-in;}#background-div:hover {opacity: 1;} 我用了都没有用。为什么呢？我发现这些都是在控制元素本身，并不能控制元素的 background，也就是元素的属性。 这种情况下，唯有 JS。 于是，我决定放弃搜索。思考了一下，只要在页面加载时，黑夜白天模式切换加载完成后，对背景进行设置其实就可以解决问题。</description>
     </item>
     
     <item>
@@ -130,7 +130,7 @@ Java 是出现在上个世纪 90 年代的编程语言，与其同期诞生，�
 现在服务器到期已经释放了，域名备案也要到期了。 而这个网站已经托管到 GitHub，DNS 都转到 Cloudflare 了。
 这个过程令人唏嘘哇~
 仅以此篇感谢阿里云曾带给我骄傲！
-// 域名首页添加 ICP 备案信息function GetUrlRelativePath() {var url = document.location.toString();var arrUrl = url.split(&amp;#34;//&amp;#34;);var start = arrUrl[1].indexOf(&amp;#34;/&amp;#34;);var relUrl = arrUrl[1].substring(start);if (relUrl.indexOf(&amp;#34;?&amp;#34;) != -1) {relUrl = relUrl.split(&amp;#34;?&amp;#34;)[0];}return relUrl;}window.onload = function () {var url = GetUrlRelativePath();if (url == &amp;#34;/&amp;#34;) {var pObj = document.</description>
+// 域名首页添加 ICP 备案信息function GetUrlRelativePath() {var url = document.location.toString();var arrUrl = url.split(&amp;quot;//&amp;quot;);var start = arrUrl[1].indexOf(&amp;quot;/&amp;quot;);var relUrl = arrUrl[1].substring(start);if (relUrl.indexOf(&amp;quot;?&amp;quot;) != -1) {relUrl = relUrl.split(&amp;quot;?&amp;quot;)[0];}return relUrl;}window.onload = function () {var url = GetUrlRelativePath();if (url == &amp;quot;/&amp;quot;) {var pObj = document.</description>
     </item>
     
     <item>
@@ -152,7 +152,7 @@ Java 是出现在上个世纪 90 年代的编程语言，与其同期诞生，�
 - MD 难吗？ 下面我介绍以上 8 种语法。
   标题
 标题是这样写的：
-# 一级标题## 二级标题### 三级标题效果是这样的：
+# 一级标题## 二级标题### 三级标题 效果是这样的：
   一级标题 二级标题 三级标题 简单吧~ 你可以根据需要，增加标题级别。
 要注意的是，因为 Markdown 是没有唯一的查看软件的。
 所以渲染出来的效果也是不唯一的。

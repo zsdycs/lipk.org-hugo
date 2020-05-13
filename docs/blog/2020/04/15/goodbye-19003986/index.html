@@ -53,11 +53,15 @@
   
 
 
-<link
+
+<link id="highlightjsThemeDay"
+    href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/github.min.css'
+    rel='stylesheet' type='text/css' />
+<link id="highlightjsThemeNight"
     href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/vs2015.min.css'
     rel='stylesheet' type='text/css' />
-<script src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js'></script>
-
+<script src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js'>
+</script>
 
 
   <link rel="icon" type="image/x-icon" href="/zsdycs_favicon.ico">
@@ -141,35 +145,36 @@
 而这个网站已经托管到 GitHub，DNS 都转到 <a href="https://www.cloudflare.com/">Cloudflare</a> 了。</p>
 <p>这个过程令人唏嘘哇~</p>
 <p>仅以此篇感谢阿里云曾带给我骄傲！</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// 域名首页添加 ICP 备案信息
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">GetUrlRelativePath</span>() {
-  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">toString</span>();
-  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">arrUrl</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">url</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;//&#34;</span>);
+<pre><code class="language-javascript">// 域名首页添加 ICP 备案信息
+function GetUrlRelativePath() {
+  var url = document.location.toString();
+  var arrUrl = url.split(&quot;//&quot;);
 
-  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">start</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arrUrl</span>[<span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">indexOf</span>(<span style="color:#e6db74">&#34;/&#34;</span>);
-  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">relUrl</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arrUrl</span>[<span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">substring</span>(<span style="color:#a6e22e">start</span>);
+  var start = arrUrl[1].indexOf(&quot;/&quot;);
+  var relUrl = arrUrl[1].substring(start);
 
-  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">relUrl</span>.<span style="color:#a6e22e">indexOf</span>(<span style="color:#e6db74">&#34;?&#34;</span>) <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) {
-    <span style="color:#a6e22e">relUrl</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">relUrl</span>.<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;?&#34;</span>)[<span style="color:#ae81ff">0</span>];
+  if (relUrl.indexOf(&quot;?&quot;) != -1) {
+    relUrl = relUrl.split(&quot;?&quot;)[0];
   }
-  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">relUrl</span>;
+  return relUrl;
 }
-window.<span style="color:#a6e22e">onload</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> () {
-  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">GetUrlRelativePath</span>();
-  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">url</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;/&#34;</span>) {
-    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">pObj</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;add-icp&#34;</span>);
-    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">spanObj</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;span&#34;</span>);
-    <span style="color:#a6e22e">spanObj</span>.<span style="color:#a6e22e">id</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;icp&#34;</span>
-    <span style="color:#a6e22e">spanObj</span>.<span style="color:#a6e22e">onclick</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> () {
-      window.<span style="color:#a6e22e">open</span>(<span style="color:#e6db74">&#34;http:/www.beian.miit.gov.cn/&#34;</span>)
+window.onload = function () {
+  var url = GetUrlRelativePath();
+  if (url == &quot;/&quot;) {
+    var pObj = document.getElementById(&quot;add-icp&quot;);
+    var spanObj = document.createElement(&quot;span&quot;);
+    spanObj.id = &quot;icp&quot;
+    spanObj.onclick = function () {
+      window.open(&quot;http:/www.beian.miit.gov.cn/&quot;)
     }
-    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;粤ICP备19003986号&#34;</span>
-    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">textObj</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createTextNode</span>(<span style="color:#a6e22e">str</span>);
-    <span style="color:#a6e22e">spanObj</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">textObj</span>)
-    <span style="color:#a6e22e">pObj</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">spanObj</span>);
+    var str = &quot;粤ICP备19003986号&quot;
+    var textObj = document.createTextNode(str);
+    spanObj.appendChild(textObj)
+    pObj.appendChild(spanObj);
   }
 }
-</code></pre></div>
+</code></pre>
+
       <footer>
       
 <nav class="post-nav">
@@ -226,6 +231,18 @@ document.addEventListener('keyup', function(e) {
 <script async src="/js/external-link.js"></script>
 
 <script async src="/js/alt-title.js"></script>
+
+
+
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js"></script>
+
+
+
+<script>hljs.configure({ languages: [] }); hljs.initHighlightingOnLoad();</script>
+
 
 
 
