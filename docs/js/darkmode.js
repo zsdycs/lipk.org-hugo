@@ -18,12 +18,12 @@ addDarkmodeCSS = (mode) => {
   if (mode === "night") {
     if (masthead) masthead.style.background = "#212121";
     darkmodeCSS.disabled = false;
-    highlightjsNightCSS.disabled = false;
+    if (highlightjsNightCSS) highlightjsNightCSS.disabled = false;
     darkmodeTag.innerHTML = "黑夜";
   } else {
     if (masthead) masthead.style.background = "#ffffff";
     darkmodeCSS.disabled = true;
-    highlightjsNightCSS.disabled = true;
+    if (highlightjsNightCSS) highlightjsNightCSS.disabled = true;
     darkmodeTag.innerHTML = "白天";
   }
 }
