@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;"/>
+  
+  <title>执手对影成双 - Ruby-rubocop 使用方法</title>
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154705931-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-154705931-1');
+  </script>
+
+  
+  <meta property="og:title" content="执手对影成双 - Ruby-rubocop 使用方法">
+  
+  <meta property="og:type" content="website">
+  <meta name="keywords" content="个人网站,博客">
+  <meta name="baidu-site-verification" content="DjOoDNzsC0">
+  <script>
+      console.info("\n%c 🎉 Hi~ 想看源代码？ %c by zsdycs %c \nGitHub仓库: https://github.com/zsdycs/lipk.org \n%c自主%c、%c跨界%c、%c终身学习%c。",
+      "color: #fff; padding: 5px 0; background: #29c75f; margin: 1em 0;",
+      "padding: 5px 0; background: #666666; margin: 1em 0;",
+      "display: block;margin-left: 0.5em; margin: 1em 0;",
+      "color:#E24432; font-size: 16px; margin: 1em 0;",
+      "color:#666666; font-size: 16px; margin: 1em 0;",
+      "color:#0E70ED; font-size: 16px; margin: 1em 0;",
+      "color:#666666; font-size: 16px; margin: 1em 0;",
+      "color:#009E5E; font-size: 16px; margin: 1em 0;",
+      "color:#666666; font-size: 16px; margin: 1em 0;");
+  </script>
+  
+  
+  
+
+  
+  
+  <meta property="description" content="前段时间有个日本项目使用 Ruby on rails，因为习惯我 IDE 用的 VS Code，代码检查插件自然是要选择 ruby-rubocop 了。 可是该插件的 about 写得比较笼统，在网上看了一圈没找到这个插件是怎么使用的。摸索了一番，记之以文。
+[&amp;hellip;] ruby-rubocop 是使用 rubocop（ruby 环境自带的代码检查）输出的消息，转换到你在 VS Code &amp;hellip;">
+  <meta property="og:description" content="前段时间有个日本项目使用 Ruby on rails，因为习惯我 IDE 用的 VS Code，代码检查插件自然是要选择 ruby-rubocop 了。 可是该插件的 about 写得比较笼统，在网上看了一圈没找到这个插件是怎么使用的。摸索了一番，记之以文。
+[&amp;hellip;] ruby-rubocop 是使用 rubocop（ruby 环境自带的代码检查）输出的消息，转换到你在 VS Code &amp;hellip;">
+  
+  
+
+  
+  
+  <link rel="icon" type="image/x-icon" href="/zsdycs_favicon.ico">
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/fonts.css" />
+  <script async src="/js/load-typekit.js"></script>
+<script src="/js/get-url-relative-path.js"></script>
+<link rel="stylesheet" href="/css/custom.css" />
+<link rel="stylesheet" href="/css/loading.css" />
+<link rel="stylesheet" id="darkmodeCSS" href="/css/darkmode.css" />
+
+</head>
+
+
+
+<body class="blog">
+
+  <main class="paramount">
+    
+    <header class="masthead">
+      <nav class="menu">
+  <ul>
+    
+    
+    <li><a href="/">返回</a></li>
+      
+    <li><a href="/blog/">博客</a></li>
+      
+    <li><a href="/food/">美食</a></li>
+      
+      <li><a id="darkmodeTag"></a></li>
+      
+
+
+
+
+
+<li>
+  <a href="http://github.com/zsdycs/lipk.org/edit/master/content/blog/2020-05-15-How-to-use-ruby-rubocop.md" title="编辑本页"
+    target="_blank">
+    编辑
+  </a>
+</li>
+<li>
+  <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" title="版权声明" target="_blank">
+    版权
+  </a>
+</li>
+
+
+
+  </ul>
+</nav>
+    </header>
+    <article class="main">
+      
+      <header class="title">
+        
+
+<h1>Ruby-rubocop 使用方法</h1>
+
+<h3>
+     
+    李鹏坤 / 2020-05-15
+</h3>
+<hr>
+
+
+      </header>
+
+    
+
+
+<blockquote>
+<p>前段时间有个日本项目使用 Ruby on rails，因为习惯我 IDE 用的 VS Code，代码检查插件自然是要选择 ruby-rubocop 了。
+可是该插件的 <a href="https://marketplace.visualstudio.com/items?itemName=misogi.ruby-rubocop">about</a> 写得比较笼统，在网上看了一圈没找到这个插件是怎么使用的。摸索了一番，记之以文。</p>
+</blockquote>
+<h2 id="写在前面">写在前面</h2>
+<p>ruby-rubocop 是使用 rubocop（ruby 环境自带的代码检查）输出的消息，转换到你在 VS Code 中编辑的每行代码上。</p>
+<p>其官方介绍原话是“This extension provides interfaces to rubocop for vscode”（这个扩展程序为 rubocop 提供了 VS Code 的接口）</p>
+<p>所以，我们要做的第一件事是让你的代码可以使用 rubocop 进行检查，这需要安装 ruby 环境。然后要将 rubocop 与 ruby-rubocop 关联起来。</p>
+<h2 id="前提---软件安装">前提 - 软件安装</h2>
+<ol>
+<li>
+<p>安装 VS Code 插件</p>
+<ul>
+<li><code>Ruby</code></li>
+<li><code>ruby-rubocop</code></li>
+</ul>
+</li>
+<li>
+<p>Windows 安装 ruby 运行环境</p>
+<ul>
+<li>ruby 运行环境，<a href="https://jingyan.baidu.com/article/5553fa827b5d7d65a23934ba.html">windows 安装 Ruby 教程</a>。</li>
+<li><strong>安装时cmd选择<code>3</code>！</strong></li>
+</ul>
+</li>
+<li>
+<p>rubocop 及其依赖安装</p>
+<ul>
+<li>cmd 命令行执行
+<ul>
+<li>gem install rubocop</li>
+<li>gem install rubocop-rails</li>
+<li>gem install rubocop-performance</li>
+<li>gem install rubocop-thread_safety</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="vs-code-插件设置">VS Code 插件设置</h2>
+<p>在VS Code 左下角，点击小齿轮，选择“设置”，左边的列表找到“扩展”。</p>
+<ul>
+<li>“Ruby” - “format” - 选择 “rubocop”。</li>
+<li>“Ruby-Rubocop” - 填写 “Config File Path” 和 “Execute Path” <strong>填写内容，见下文</strong>。</li>
+</ul>
+<h2 id="config-file-path-填写">Config File Path 填写</h2>
+<ol>
+<li>cmd 执行 <code>where ruby</code>，得到 ruby 安装路径。</li>
+<li>将 ruby 项目根目录下的 “.rubocop.yml” 放到 ruby 安装路径下。</li>
+<li>填写 “.rubocop.yml” 的路径。</li>
+</ol>
+<h2 id="execute-path-填写">Execute Path 填写</h2>
+<ul>
+<li>填写 ruby 安装路径。（确保 ruby 安装路径中有 “rubocop.bat” 文件）</li>
+</ul>
+<h2 id="修改项目-rubocopyml-文件">修改项目 “.rubocop.yml” 文件</h2>
+<p>确保项目 “.rubocop.yml” 文件没有 Lint 条件过时等问题，不然 ruby-rubocop 将不能正常工作。
+我着手的项目就要做以下操作。</p>
+<ul>
+<li>73行。<code>Metrics/LineLength</code> -&gt; <code>Layout/LineLength</code></li>
+<li>211行和212行。注释掉。（注释掉 <code>Style/BracesAroundHashParameters</code> ）</li>
+</ul>
+<h2 id="结尾">结尾</h2>
+<p>做完以上这些，就可以在 VS Code 中使用 Ruby 自带的代码检查 rubocop 了，虽然比较麻烦，但是代码过 Lint 是最基本要求哇。</p>
+
+      <footer>
+      
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/blog/2020/05/11/anti-quarrel-tactics/" title="你可以使用方向键">反祖安策略</a></span>
+  <span class="nav-next"></span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/blog\/2020\/05\/11\/anti-quarrel-tactics\/';
+    
+  } else if (e.which == 39) {  
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+<section id="utterances" class="comments">
+  <div id="loading">
+    <div class="container animation-2">
+      <div class="shape shape1"></div>
+      <div class="shape shape2"></div>
+      <div class="shape shape3"></div>
+      <div class="shape shape4"></div>
+    </div>
+  </div>
+</section>
+
+
+<script async src="/js/darkmode.js"></script>
+
+<script async src="/js/utteranc.js"></script>
+
+<script async src="/js/fix-toc.js"></script>
+
+<script async src="/js/math-code.js"></script>
+
+<script async src="/js/center-img.js"></script>
+
+<script async src="/js/right-quote.js"></script>
+
+<script async src="/js/no-highlight.js"></script>
+
+<script async src="/js/fix-footnote.js"></script>
+
+<script async src="/js/external-link.js"></script>
+
+<script async src="/js/alt-title.js"></script>
+
+
+
+
+
+
+      
+      <hr>
+      <div class="copyright">
+        <span class="slogan">执手相看，对影成双</span>
+        © 2018 - 2020 <a href="/">执手对影成双</a>
+        <a href="https://travellings.now.sh/" target="blank" title="开往-友链接力">
+          <img src="/images/travellings.svg" alt="开往-友链接力" height="23" style="vertical-align: text-top;">
+        </a>
+      </div>
+      
+      </footer>
+  
+    </article>
+  </main>
+  
+</body>
+</html>

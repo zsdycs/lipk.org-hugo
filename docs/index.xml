@@ -12,6 +12,21 @@
     
     
     <item>
+      <title>Ruby-rubocop 使用方法</title>
+      <link>https://lipk.org/blog/2020/05/15/how-to-use-ruby-rubocop/</link>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://lipk.org/blog/2020/05/15/how-to-use-ruby-rubocop/</guid>
+      <description>前段时间有个日本项目使用 Ruby on rails，因为习惯我 IDE 用的 VS Code，代码检查插件自然是要选择 ruby-rubocop 了。 可是该插件的 about 写得比较笼统，在网上看了一圈没找到这个插件是怎么使用的。摸索了一番，记之以文。
+ 写在前面 ruby-rubocop 是使用 rubocop（ruby 环境自带的代码检查）输出的消息，转换到你在 VS Code 中编辑的每行代码上。
+其官方介绍原话是“This extension provides interfaces to rubocop for vscode”（这个扩展程序为 rubocop 提供了 VS Code 的接口）
+所以，我们要做的第一件事是让你的代码可以使用 rubocop 进行检查，这需要安装 ruby 环境。然后要将 rubocop 与 ruby-rubocop 关联起来。
+前提 - 软件安装   安装 VS Code 插件
+ Ruby ruby-rubocop    Windows 安装 ruby 运行环境
+ ruby 运行环境，windows 安装 Ruby 教程。 安装时cmd选择3！    rubocop 及其依赖安装</description>
+    </item>
+    
+    <item>
       <title>反祖安策略</title>
       <link>https://lipk.org/blog/2020/05/11/anti-quarrel-tactics/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>

@@ -72,7 +72,7 @@ publishDir = "docs"
 
 [params]
     description = "zsdycs; 执手对影成双; Personal website of Pengkun Lee; 李鹏坤的个人网站; lipk"
-    footer = "&copy; [执手对影成双](/) 2018 - 2020"
+    footer = "&copy; 2018 - 2020 [执手对影成双](/)"
     slogan = "执手相看，对影成双"
     customJS = [
                 "js/darkmode.js",
