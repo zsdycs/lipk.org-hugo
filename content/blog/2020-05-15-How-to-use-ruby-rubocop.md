@@ -9,7 +9,7 @@ slug: 'how-to-use-ruby-rubocop'
 
 ## 写在前面
 
-ruby-rubocop 是使用 rubocop（ruby 环境自带的代码检查）输出的消息，转换到你在 VS Code 中编辑的每行代码上。
+ruby-rubocop 是使用 rubocop（ruby 的代码风格检查器）输出的消息，转换到你在 VS Code 中编辑的每行代码上。
 
 其官方介绍原话是“This extension provides interfaces to rubocop for vscode”（这个扩展程序为 rubocop 提供了 VS Code 的接口）
 
@@ -25,7 +25,7 @@ ruby-rubocop 是使用 rubocop（ruby 环境自带的代码检查）输出的消
 2. Windows 安装 ruby 运行环境
 
    - ruby 运行环境，[windows 安装 Ruby 教程](https://jingyan.baidu.com/article/5553fa827b5d7d65a23934ba.html)。
-   - **安装时cmd选择`3`！**
+   - **安装时 cmd 选择 `3`**
 
 3. rubocop 及其依赖安装
 
@@ -34,6 +34,8 @@ ruby-rubocop 是使用 rubocop（ruby 环境自带的代码检查）输出的消
      - gem install rubocop-rails
      - gem install rubocop-performance
      - gem install rubocop-thread_safety
+
+安装好 rubocop 后，你就可以在命令行定位到项目目录下，输入 `rubocop` 来运行 rubocop 进行代码检查了。
 
 ## VS Code 插件设置
 
@@ -57,9 +59,9 @@ ruby-rubocop 是使用 rubocop（ruby 环境自带的代码检查）输出的消
 确保项目 “.rubocop.yml” 文件没有 Lint 条件过时等问题，不然 ruby-rubocop 将不能正常工作。
 我着手的项目就要做以下操作。
 
-- 73行。`Metrics/LineLength` -> `Layout/LineLength`
-- 211行和212行。注释掉。（注释掉 `Style/BracesAroundHashParameters` ）
+- 73 行。`Metrics/LineLength` -> `Layout/LineLength`
+- 211 行和 212 行。注释掉。（注释掉 `Style/BracesAroundHashParameters` ）
 
 ## 结尾
 
-做完以上这些，就可以在 VS Code 中使用 Ruby 自带的代码检查 rubocop 了，虽然比较麻烦，但是代码过 Lint 是最基本要求哇。
+做完以上这些，就可以在 VS Code 中使用 Ruby 的代码检查 rubocop 了，虽然比较麻烦，但是代码过 Lint 是最基本要求哇。
