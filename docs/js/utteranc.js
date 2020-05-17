@@ -3,15 +3,16 @@ window.localStorage.setItem('utterances', 'false');
 /**
  * 通过MutationObserver来监听#utterances
  */
-utterancesEnd = () => {
+function utterancesEnd() {
   var targetNode = document.getElementById('utterances');
   var options = {
     attributes: true,
     childList: true,
     subtree: true
   };
-  callback = (mutationsList) => {
-    mutationsList.forEach(element => {
+
+  function callback(mutationsList) {
+    mutationsList.forEach(function (element) {
       if (element.type === 'attributes' && element.target.className === 'utterances') {
         // 加载结束！
         utterancesLoadingEnd = true
@@ -36,7 +37,7 @@ utterancesEnd = () => {
       }
     });
   }
-  var utterancesTimeout = setTimeout(() => {
+  var utterancesTimeout = setTimeout(function() {
     if (!utterancesLoadingEnd) {
       // 隐藏加载
       var loading = document.getElementById('loading');
@@ -59,7 +60,7 @@ utterancesEnd = () => {
 /**
  * 在#utterances处，append评论的script
  */
-addUtteranc = () => {
+function addUtteranc() {
   // 显示加载状态
   var loading = document.getElementById('loading');
   loading.style.display = 'flex';

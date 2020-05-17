@@ -10,7 +10,7 @@ if (window.localStorage.getItem('darkmode') == null) {
 var darkmodeLS = window.localStorage.getItem('darkmode');
 
 // 判断是否加载darkmode.css
-addDarkmodeCSS = (mode) => {
+function addDarkmodeCSS(mode) {
   var darkmodeTag = document.querySelector("#darkmodeTag");
   var darkmodeCSS = document.querySelector("#darkmodeCSS");
   var highlightjsNightCSS = document.querySelector("#highlightjsThemeNight");
@@ -33,7 +33,7 @@ addDarkmodeCSS(darkmodeLS);
 
 // 切换模式时，评论头出现提示
 var darkmodeTag = document.querySelector("#darkmodeTag");
-darkmodeTag.addEventListener("click", () => {
+darkmodeTag.addEventListener("click", function () {
   var newDarkmode = window.localStorage.getItem('darkmode');
   if (newDarkmode === "night") {
     darkmodeTag.innerHTML = "黑夜";
