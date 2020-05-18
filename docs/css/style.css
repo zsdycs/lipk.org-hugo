@@ -74,12 +74,12 @@ h6 {
 }
 
 h1 {
-  font-size: 26px;
+  font-size: 22px;
   font-weight: bolder;
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -87,7 +87,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 19px;
+  font-size: 17px;
   font-weight: bold;
   text-align: left;
 }
