@@ -2,6 +2,7 @@
 title: '网站升级'
 date: '2020-04-29'
 slug: 'website-upgrade'
+disable_highlight: true
 ---
 
 最近几天网站我做了很多修改。  

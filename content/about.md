@@ -1,7 +1,6 @@
 ---
 title: 关于
 slug: /about
-disable_highlight: true
 ---
 
 ## 我
@@ -22,10 +21,19 @@ disable_highlight: true
 
 ## 本站
 
-[CMS](https://baike.baidu.com/item/CMS/315935?fr=aladdin) 用的是 [Hugo](https://gohugo.io/) ，服务源于 [Github Pages](https://pages.github.com/) ，源代码托管 [GitHub](https://github.com/zsdycs/lipk.org) 。  
-评论来自 [utteranc.es](https://utteranc.es/) ，基于 GitHub issues ，甚是方便。  
+[CMS](https://baike.baidu.com/item/CMS/315935) 用的是 [Hugo](https://gohugo.io/)，服务源于 [Github Pages](https://pages.github.com/)，源代码托管 [GitHub](https://github.com/zsdycs/lipk.org)。  
+评论来自 [utteranc.es](https://utteranc.es/) ，基于 GitHub issues，甚是方便。  
 曾经使用过 [Wildfire](https://wildfire.js.org) 🔥，UI很不错，但是要用 [Firebase](https://firebase.google.com) ，在国内很不稳定。  
-CDN 来自 [Cloudflare](https://www.cloudflare.com/) 。
+DNS、CDN 和 SSL 来自 [Cloudflare](https://www.cloudflare.com/) 。
+
+```markdown
+lipk.org 站点地图
+└─ "/" 首页
+    ├─ "/blog" 博客
+    │     └─ "/food" 美食
+    └─ "/about" 关于
+        └─ "/vitae" 简历
+```
 
 ## 软件
 

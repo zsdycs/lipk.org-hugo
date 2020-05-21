@@ -2,6 +2,7 @@
 title: '反祖安策略'
 date: '2020-05-11'
 slug: 'anti-quarrel-tactics'
+disable_highlight: true
 ---
 
 在看趣闻时瞧见一个标题“反杠图”（指专治杠精的表情包），在评论区看到有人发 B 站视频 BV1bE41197JF ，去观摩了一下，果真获益匪浅。

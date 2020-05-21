@@ -2,6 +2,7 @@
 title: '前程锦绣'
 date: '2019-06-19'
 slug: 'go-to-the-light-future'
+disable_highlight: true
 ---
 
 > 高考结束的第 12 天，高考过后的第 1107 天，我在苏州市职业大学参加了毕业典礼，领取了属于我的毕业证书。
