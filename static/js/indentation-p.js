@@ -3,10 +3,8 @@
         var tags = document.getElementsByTagName(tagName);
         for (var i = 0; i < tags.length; i++) {
             var tag = tags[i];
-            console.log(tag.innerHTML)
             var parent = tag.parentElement;
             if (parent.nodeName == 'ARTICLE' || parent.nodeName == 'BLOCKQUOTE') {
-                console.log(tag.childNodes)
                 tag.innerHTML = '&emsp;&emsp;' + tag.innerHTML;
                 var childNodes = tag.childNodes;
                 for (var j = 0; j < childNodes.length; j++) {

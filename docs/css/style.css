@@ -167,6 +167,7 @@ hr {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
+  margin-top: 25px;
 }
 
 .nav-next {

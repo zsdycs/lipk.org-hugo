@@ -47,6 +47,10 @@ article.index ruby.link:hover {
   border-bottom: 1px solid #a0a0a0;
 }
 
+#eof {
+    color: #434343;
+}
+
 @media only screen and (max-width: 668px) {
     aside.index {
         background: #252525;
