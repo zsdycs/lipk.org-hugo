@@ -40,7 +40,7 @@ ruby-rubocop 是使用 rubocop（ruby 的代码风格检查器）输出的消息
 
 ## VS Code 插件设置
 
-在VS Code 左下角，点击小齿轮，选择“设置”，左边的列表找到“扩展”。
+在 VS Code 左下角，点击小齿轮，选择“设置”，左边的列表找到“扩展”。
 
 - “Ruby” - “format” - 选择 “rubocop”。  
 - “Ruby-Rubocop” - 填写 “Config File Path” 和 “Execute Path” **填写内容，见下文**。

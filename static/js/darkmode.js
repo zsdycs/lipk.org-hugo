@@ -1,15 +1,21 @@
-// 设置darkmode默认值
+// 设置 darkmode 默认值
 if (window.localStorage.getItem('darkmode') == null) {
-  window.localStorage.setItem('darkmode', 'night');
+  var hours = new Date();
+  // 如果时间是晚上 18 点到早上 6 点，自动黑夜
+  if (hours.getHours() >= 18 || hours.getHours() <= 6) {
+    window.localStorage.setItem('darkmode', 'night');
+  } else {
+    window.localStorage.setItem('darkmode', 'day');
+  }
 }
 
-// body背景 延迟载入
+// body 背景 延迟载入
 // document.body.style.background = 'url(https://zsdycs.sirv.com/lipk.org/geometry.png)';
 // document.body.style.backgroundRepeat = 'repeat';
 
 var darkmodeLS = window.localStorage.getItem('darkmode');
 
-// 判断是否加载darkmode.css
+// 判断是否加载 darkmode.css
 function addDarkmodeCSS(mode) {
   var darkmodeTag = document.querySelector("#darkmodeTag");
   var darkmodeCSS = document.querySelector("#darkmodeCSS");
@@ -28,7 +34,7 @@ function addDarkmodeCSS(mode) {
   }
 }
 
-// 画面加载时，判断是否加载darkmode.css
+// 画面加载时，判断是否加载 darkmode.css
 addDarkmodeCSS(darkmodeLS);
 
 // 切换模式时，评论头出现提示

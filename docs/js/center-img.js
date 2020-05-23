@@ -5,9 +5,9 @@
     for (i = 0; i < tags.length; i++) {
       tag = tags[i];
       var parent = tag.parentElement;
-      // center an image if it is the only element of its parent
+      // 如果图像是其父元素的唯一元素，则将其居中
       if (parent.childNodes.length === 1) {
-        // if there is a link on image, check grandparent
+        // 如果图像上有链接，请检查 grandparent
         if (parent.nodeName === 'A') {
           parent = parent.parentElement;
           if (parent.childNodes.length != 1) continue;
