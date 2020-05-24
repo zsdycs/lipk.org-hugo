@@ -75,6 +75,7 @@ publishDir = "docs"
     footer = "&copy; 2018 - 2020 [执手对影成双](/)"
     slogan = "执手相看，对影成双"
     customJS = [
+                "js/indentation-p.js",
                 "js/darkmode.js",
                 "js/utteranc.js",
                 "js/fix-toc.js",
@@ -85,7 +86,6 @@ publishDir = "docs"
                 "js/fix-footnote.js",
                 "js/external-link.js",
                 "js/alt-title.js",
-                "js/indentation-p.js",
                 ]
     author = '李鹏坤'
     githubContentURL = "http://github.com/zsdycs/lipk.org/edit/master/content/"

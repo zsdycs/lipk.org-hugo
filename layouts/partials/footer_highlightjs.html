@@ -2,7 +2,7 @@
 {{ $highVer := .Site.Params.highlightjsVersion }}
 {{ $highCDN := (.Site.Params.highlightjsCDN | default "//cdn.bootcss.com") }}
 {{ if (not (eq $highVer "")) }}
-<script src="{{ $highCDN }}/highlight.js/{{ $highVer }}/highlight.min.js"></script>
+<script async src="{{ $highCDN }}/highlight.js/{{ $highVer }}/highlight.min.js"></script>
 <!-- {{ $.Scratch.Set "highLangs" .Site.Params.highlightjsLang }} -->
 <!-- {{ range .Params.highlightjsLang }}{{ $.Scratch.Add "highLangs" . }}{{ end }} -->
 <!-- {{ range ($.Scratch.Get "highLangs") }}
