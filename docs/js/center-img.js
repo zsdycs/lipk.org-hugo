@@ -6,11 +6,11 @@
       tag = tags[i];
       var parent = tag.parentElement;
       // 如果图像是其父元素的唯一元素，则将其居中
-      if (parent.childNodes.length === 1) {
+      if (parent.children.length === 1) {
         // 如果图像上有链接，请检查 grandparent
         if (parent.nodeName === 'A') {
           parent = parent.parentElement;
-          if (parent.childNodes.length != 1) continue;
+          if (parent.children.length != 1) continue;
           parent.firstChild.style.border = 'none';
         }
         if (parent.nodeName === 'P') parent.style.textAlign = 'center';
