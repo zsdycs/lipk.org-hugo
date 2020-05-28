@@ -50,25 +50,25 @@ darkmodeTag.addEventListener("click", function () {
     window.localStorage.setItem('darkmode', 'night');
     addDarkmodeCSS("night");
   }
-  var utterances = document.getElementById("utterances");
+  var beaudar = document.getElementById("beaudar");
   var newDarkmode = window.localStorage.getItem('darkmode');
-  if (window.localStorage.getItem('utterances') === "true") {
-    var isMsg = document.getElementById("utterancesMsg");
+  if (window.localStorage.getItem('beaudar') === "true") {
+    var isMsg = document.getElementById("beaudarMsg");
     if (isMsg) {
       isMsg.remove();
     }
-    var utterancesMsg = document.createElement('div')
-    utterancesMsg.setAttribute("id", "utterancesMsg");
+    var beaudarMsg = document.createElement('div')
+    beaudarMsg.setAttribute("id", "beaudarMsg");
     if (darkmodeLS === "night" && newDarkmode === "day") {
-      utterancesMsg.innerText =
+      beaudarMsg.innerText =
         "如果你需要在白天模式下阅读，" +
         "刷新页面后，评论将会切换为白天模式。";
-      utterances.insertBefore(utterancesMsg, utterances.firstChild);
+      beaudar.insertBefore(beaudarMsg, beaudar.firstChild);
     } else if (darkmodeLS === "day" && newDarkmode === "night") {
-      utterancesMsg.innerText =
+      beaudarMsg.innerText =
         "如果你需要在黑夜模式下阅读，" +
         "刷新页面后，评论将会切换为黑夜模式。";
-      utterances.insertBefore(utterancesMsg, utterances.firstChild);
+      beaudar.insertBefore(beaudarMsg, beaudar.firstChild);
     }
   }
 });

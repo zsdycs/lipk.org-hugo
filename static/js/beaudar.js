@@ -13,7 +13,7 @@ function beaudarEnd() {
 
   function callback(mutationsList) {
     mutationsList.forEach(function (element) {
-      if (element.type === 'attributes' && element.target.className === 'beaudar') {
+      if (element.type === 'attributes' && element.target.className === 'utterances') {
         // 加载结束！
         beaudarLoadingEnd = true
         var loading = document.getElementById('loading');

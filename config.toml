@@ -77,7 +77,7 @@ publishDir = "docs"
     customJS = [
                 "js/indentation-p.js",
                 "js/darkmode.js",
-                "js/utteranc.js",
+                "js/beaudar.js",
                 "js/fix-toc.js",
                 "js/math-code.js",
                 "js/center-img.js",
