@@ -66,7 +66,7 @@ function addBeaudar() {
   loading.style.display = 'flex';
   var script = document.createElement('script');
   var beaudar = document.getElementById('beaudar');
-  script.src = 'https://zsdycs.cn/client.js';
+  script.src = 'https://beaudar.lipk.org/client.js';
   script.setAttribute('repo', 'zsdycs/lipk.org');
   script.setAttribute('issue-term', 'title');
   script.setAttribute('crossorigin', 'anonymous');
