@@ -76,8 +76,6 @@ publishDir = "docs"
     slogan = "执手相看，对影成双"
     customJS = [
                 "js/indentation-p.js",
-                "js/darkmode.js",
-                "js/beaudar.js",
                 "js/fix-toc.js",
                 "js/math-code.js",
                 "js/center-img.js",
@@ -86,6 +84,8 @@ publishDir = "docs"
                 "js/fix-footnote.js",
                 "js/external-link.js",
                 "js/alt-title.js",
+                "js/darkmode.js",
+                "js/beaudar.js",
                 ]
     author = '李鹏坤'
     githubContentURL = "http://github.com/zsdycs/lipk.org/edit/master/content/"
