@@ -3,6 +3,7 @@ title: 'Java on Spring'
 date: '2020-05-01'
 slug: 'java-on-spring'
 disable_highlight: true
+disable_mathjax: true
 ---
 
 > **问**：Spring 是否代表着目前 Java 技术的顶峰，未来的 Java 将如何发展？

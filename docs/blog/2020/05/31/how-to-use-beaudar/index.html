@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+  
+  <title>执手对影成双 - 使用评论插件 Beaudar</title>
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154705931-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-154705931-1');
+  </script>
+
+  
+  <meta property="og:title" content="执手对影成双 - 使用评论插件 Beaudar">
+  
+  <meta property="og:type" content="website">
+  <meta name="keywords" content="个人网站,博客">
+  <meta name="baidu-site-verification" content="DjOoDNzsC0">
+  <script>
+      console.info("\n%c 🎉 Hi~ 想看源代码？ %c by zsdycs %c \nGitHub仓库: https://github.com/zsdycs/lipk.org \n%c自主%c、%c跨界%c、%c终身学习%c。",
+      "color: #fff; padding: 5px 0; background: #29c75f; margin: 1em 0;",
+      "padding: 5px 0; background: #666666; margin: 1em 0;",
+      "display: block;margin-left: 0.5em; margin: 1em 0;",
+      "color:#E24432; font-size: 16px; margin: 1em 0;",
+      "color:#666666; font-size: 16px; margin: 1em 0;",
+      "color:#0E70ED; font-size: 16px; margin: 1em 0;",
+      "color:#666666; font-size: 16px; margin: 1em 0;",
+      "color:#009E5E; font-size: 16px; margin: 1em 0;",
+      "color:#666666; font-size: 16px; margin: 1em 0;");
+  </script>
+  
+  
+  
+
+  
+  
+  <meta property="description" content="很多人的博客都会有评论功能。对于大多数静态博客来说，评论是读者与博主建立联系的唯一桥梁。
+被广泛使用的评论插件是 Disqus，遗憾国外 UCG (用户自产内容)基本上都被墙了，国内还没看到有与其同样优秀的。
+我使用过 Wildfire 🔥，UI很不错，但是要用 Firebase ，在国内很不稳定，用了一段时间后发现使用 Github issue 的 Utterances 非常轻便快速，然后开始使 &amp;hellip;">
+  <meta property="og:description" content="很多人的博客都会有评论功能。对于大多数静态博客来说，评论是读者与博主建立联系的唯一桥梁。
+被广泛使用的评论插件是 Disqus，遗憾国外 UCG (用户自产内容)基本上都被墙了，国内还没看到有与其同样优秀的。
+我使用过 Wildfire 🔥，UI很不错，但是要用 Firebase ，在国内很不稳定，用了一段时间后发现使用 Github issue 的 Utterances 非常轻便快速，然后开始使 &amp;hellip;">
+  
+  
+
+  
+  
+
+
+
+<link id="highlightjsThemeDay"
+    href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/github.min.css'
+    rel='stylesheet' type='text/css' />
+<link id="highlightjsThemeNight"
+    href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/vs2015.min.css'
+    rel='stylesheet' type='text/css' />
+<script src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js'>
+</script>
+
+
+  <link rel="icon" type="image/x-icon" href="/zsdycs_favicon.ico">
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/fonts.css" />
+  <script async src="/js/load-typekit.js"></script>
+<script src="/js/get-url-relative-path.js"></script>
+<link rel="stylesheet" href="/css/custom.css" />
+<link rel="stylesheet" href="/css/loading.css" />
+<link rel="stylesheet" id="darkmodeCSS" href="/css/darkmode.css" />
+
+</head>
+
+
+
+<body class="blog">
+
+  <main class="paramount">
+    
+    <header class="masthead">
+      <nav class="menu">
+  <ul>
+    
+    
+    <li><a href="/">返回</a></li>
+      
+    <li><a href="/blog/">博客</a></li>
+      
+    <li><a href="/food/">美食</a></li>
+      
+      <li><a id="darkmodeTag"></a></li>
+      
+
+
+
+
+
+<li>
+  <a href="http://github.com/zsdycs/lipk.org/edit/master/content/blog/2020-05-31-How-to-use-beaudar.md" title="编辑本页"
+    target="_blank">
+    编辑
+  </a>
+</li>
+<li>
+  <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" title="版权声明" target="_blank">
+    版权
+  </a>
+</li>
+
+
+
+  </ul>
+</nav>
+    </header>
+    <article class="main">
+      
+      <header class="title">
+        
+
+<h1>使用评论插件 Beaudar</h1>
+
+<h3>
+     
+    李鹏坤 / 2020-05-31
+</h3>
+<hr>
+
+
+      </header>
+
+    
+
+
+<p>很多人的博客都会有评论功能。对于大多数静态博客来说，评论是读者与博主建立联系的唯一桥梁。</p>
+<p>被广泛使用的评论插件是 <a href="https://disqus.com/">Disqus</a>，遗憾国外 UCG (用户自产内容)基本上都被墙了，国内还没看到有与其同样优秀的。</p>
+<p>我使用过 <a href="https://wildfire.js.org">Wildfire</a> 🔥，UI很不错，但是要用 <a href="https://firebase.google.com">Firebase</a> ，在国内很不稳定，用了一段时间后发现使用 Github issue 的 <a href="https://github.com/utterance/utterances">Utterances</a> 非常轻便快速，然后开始使用 Utterances。当然同样原理的，国内有 <a href="https://github.com/imsun/gitment">Gitment</a>，有兴趣的朋友可以看看 <a href="https://imsun.github.io/gitment/">Gitment Demo</a>。</p>
+<p>但是还是觉得 utterances 的实现比较好，但是没有多语言是个缺陷。索性把它的源码拿来自己改成中文的了。于是就有了 <a href="https://beaudar.lipk.org">Beaudar(表达)</a>🌿。</p>
+<p>我使用的是“Issue 标题包含页面标题”的版本，另外还有五个模式任君选择。引用代码可以在 <a href="https://beaudar.lipk.org">Beaudar(表达)</a>🌿在线生成。也可以参考我的代码片段，在引用时，我增加了模式切换提示，及加载的状态。</p>
+<p>完整代码在 <a href="https://github.com/zsdycs/lipk.org/blob/master/static/js/beaudar.js">这里查看</a>。</p>
+<pre><code class="language-javascript">/**
+ * 在 #beaudar 处，append 评论的 script
+ */
+function addBeaudar() {
+  // 显示加载状态
+  var loading = document.getElementById('loading');
+  loading.style.display = 'flex';
+  var script = document.createElement('script');
+  var beaudar = document.getElementById('beaudar');
+  script.src = 'https://beaudar.lipk.org/client.js';
+  script.setAttribute('repo', 'zsdycs/lipk.org');
+  script.setAttribute('issue-term', 'title');
+  script.setAttribute('crossorigin', 'anonymous');
+  if (window.localStorage.getItem('darkmode') === 'day') {
+    script.setAttribute('theme', 'github-light');
+    window.localStorage.setItem('beaudar-theme', 'github-light');
+  } else {
+    script.setAttribute('theme', 'github-dark');
+    window.localStorage.setItem('beaudar-theme', 'github-dark');
+  }
+  script.async = true;
+  beaudar.appendChild(script);
+  // 处理评论是否加载完成
+  beaudarEnd();
+}
+</code></pre>
+
+      <footer>
+      
+  
+  <div id="eof">
+    <span>EOF</span>
+  </div>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/blog/2020/05/23/arena-of-valor-experience-sharing/" title="你可以使用方向键">牛魔、宫本怎么玩？</a></span>
+  <span class="nav-next"></span>
+</nav>
+<script type="text/javascript">
+document.addEventListener('keyup', function(e) {
+  if (e.target.nodeName.toUpperCase() != 'BODY') return;
+  var url = false;
+  if (e.which == 37) {  
+    
+    url = '\/blog\/2020\/05\/23\/arena-of-valor-experience-sharing\/';
+    
+  } else if (e.which == 39) {  
+    
+  }
+  if (url) window.location = url;
+});
+</script>
+
+
+
+<section id="beaudar" class="comments">
+  <div id="loading">
+    <div class="container animation-2">
+      <div class="shape shape1"></div>
+      <div class="shape shape2"></div>
+      <div class="shape shape3"></div>
+      <div class="shape shape4"></div>
+    </div>
+  </div>
+</section>
+
+
+<script async src="/js/indentation-p.js"></script>
+
+<script async src="/js/darkmode.js"></script>
+
+<script async src="/js/beaudar.js"></script>
+
+<script async src="/js/fix-toc.js"></script>
+
+<script async src="/js/math-code.js"></script>
+
+<script async src="/js/center-img.js"></script>
+
+<script async src="/js/right-quote.js"></script>
+
+<script async src="/js/no-highlight.js"></script>
+
+<script async src="/js/fix-footnote.js"></script>
+
+<script async src="/js/external-link.js"></script>
+
+<script async src="/js/alt-title.js"></script>
+
+
+
+
+
+
+<script async src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js"></script>
+
+
+
+<script>hljs.configure({ languages: [] }); hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+      
+      <hr>
+      <div class="copyright">
+        <span class="slogan">执手相看，对影成双</span>
+        © 2018 - 2020 <a href="/">执手对影成双</a>
+        <a href="https://travellings.now.sh/" target="blank" title="开往-友链接力">
+          <img src="/images/travellings.svg" alt="开往-友链接力" height="23" style="vertical-align: text-top;">
+        </a>
+      </div>
+      
+      </footer>
+  
+    </article>
+  </main>
+  
+</body>
+</html>

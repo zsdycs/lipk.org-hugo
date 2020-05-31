@@ -3,6 +3,7 @@ title: '漫威宇宙的第十一年'
 date: '2019-05-01'
 slug: 'the-11th-year-of-the-marvel-universe'
 disable_highlight: true
+disable_mathjax: true
 ---
 
 > 漫威宇宙的第十一年。复仇者联盟打败了灭霸，完成了最后的集结，用 182 分钟向全球观众作最后的告别。
