@@ -3,7 +3,6 @@ title: '一篇高中的作文'
 date: '2019-01-27'
 slug: 'high-school-essay'
 disable_highlight: true
-disable_mathjax: true
 ---
 
 当时市里有个创新作文大赛，召集了两个班写了一个主题为“最美的句子”的作文，那时不知道是不是因为看了[余秋雨](https://baike.baidu.com/item/%E4%BD%99%E7%A7%8B%E9%9B%A8/183732?fr=aladdin)的[文化苦旅](https://baike.baidu.com/item/%E6%96%87%E5%8C%96%E8%8B%A6%E6%97%85/1474202?fr=aladdin)，文风深得语文老师（帅巍巍）喜爱，她挑选出了包括我在内的 6 个同学。  

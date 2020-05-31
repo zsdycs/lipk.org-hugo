@@ -3,7 +3,6 @@ title: '我的一个朋友'
 date: '2019-02-08'
 slug: 'a-friend-of-mine'
 disable_highlight: true
-disable_mathjax: true
 ---
 
 “一下子就过去了七天”

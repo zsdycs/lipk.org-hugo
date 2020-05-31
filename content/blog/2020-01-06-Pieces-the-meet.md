@@ -3,7 +3,6 @@ title: '碎片の遇见'
 date: '2020-01-06'
 slug: 'pieces-the-meet'
 disable_highlight: true
-disable_mathjax: true
 ---
 
 ## 引子

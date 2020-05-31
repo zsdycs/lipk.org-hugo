@@ -2,7 +2,6 @@
 title: '学会记录'
 date: '2020-03-30'
 slug: 'learn-to-record'
-disable_mathjax: true
 ---
 
 老师总是会提醒我们，要做笔记。  
