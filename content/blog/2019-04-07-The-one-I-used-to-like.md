@@ -3,6 +3,7 @@ title: '那个年少时喜欢的人'
 date: '2019-04-07'
 slug: 'the-one-I-used-to-like'
 disable_highlight: true
+disable_mathjax: true
 ---
 
 今天刷抖音，刷到很喜欢的“[一禅小和尚](https://weibo.com/yichanxiaoheshang)”。  

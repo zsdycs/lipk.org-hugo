@@ -3,6 +3,7 @@ title: '敬启'
 date: '2019-01-26'
 slug: 'glad-you-came'
 disable_highlight: true
+disable_mathjax: true
 ---
 
 这是第一篇“博客”，我很高兴你能找到这里。前天在建站的时候，一直在想第一篇文章要起个什么标题。

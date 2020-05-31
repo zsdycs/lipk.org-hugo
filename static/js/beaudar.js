@@ -58,7 +58,7 @@ function beaudarEnd() {
 }
 
 /**
- * 在#beaudar处，append评论的script
+ * 在 #beaudar处，append 评论的 script
  */
 function addBeaudar() {
   // 显示加载状态
