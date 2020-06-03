@@ -137,10 +137,18 @@
 
 <p>很多人的博客都会有评论功能。对于大多数静态博客来说，评论是读者与博主建立联系的唯一桥梁。</p>
 <p>被广泛使用的评论插件是 <a href="https://disqus.com/">Disqus</a>，遗憾国外 UCG (用户自产内容)基本上都被墙了，国内还没看到有与其同样优秀的。</p>
-<p>我使用过 <a href="https://wildfire.js.org">Wildfire</a> 🔥，UI很不错，但是要用 <a href="https://firebase.google.com">Firebase</a> ，在国内很不稳定，用了一段时间后发现使用 Github issue 的 <a href="https://github.com/utterance/utterances">Utterances</a> 非常轻便快速，然后开始使用 Utterances。当然同样原理的，国内有 <a href="https://github.com/imsun/gitment">Gitment</a>，有兴趣的朋友可以看看 <a href="https://imsun.github.io/gitment/">Gitment Demo</a>。</p>
-<p>但是还是觉得 utterances 的实现比较好，但是没有多语言是个缺陷。索性把它的源码拿来自己改成中文的了。于是就有了 <a href="https://beaudar.lipk.org">Beaudar(表达)</a>🌿。</p>
-<p>我使用的是“Issue 标题包含页面标题”的版本，另外还有五个模式任君选择。引用代码可以在 <a href="https://beaudar.lipk.org">Beaudar(表达)</a>🌿在线生成。也可以参考我的代码片段，在引用时，我增加了模式切换提示，及加载的状态。</p>
-<p>完整代码在 <a href="https://github.com/zsdycs/lipk.org/blob/master/static/js/beaudar.js">这里查看</a>。</p>
+<p>我使用过 <a href="https://wildfire.js.org">Wildfire</a> 🔥，UI很不错，但是要用 <a href="https://firebase.google.com">Firebase</a> ，在国内很不稳定，用了一段时间后发现使用 Github issue 的 <a href="https://github.com/utterance/utterances">Utterances</a> 非常轻便快速，然后开始使用 Utterances。<br>
+当然类似的项目，国内有：</p>
+<ul>
+<li><a href="https://github.com/gitalk/gitalk">Gitalk</a></li>
+<li><a href="https://github.com/meteorlxy/vssue">Vssue</a></li>
+<li><a href="https://github.com/imsun/gitment">Gitment</a>（貌似已经不再维护）</li>
+</ul>
+<p>除了以上提到的，国内被广泛使用的，还有 <a href="https://valine.js.org/">Valine</a>，使用了 <a href="http://cn.gravatar.com/">Gravatar</a> 作为用户图像，评论只需要提供 Gravatar 账号设置的邮箱，非常方便。</p>
+<p>但是还是觉得 utterances 的实现比较好，但是没有多语言是个缺陷。索性把它的源码拿来自己改成中文的了。</p>
+<p>于是，就有了 <a href="https://beaudar.lipk.org">Beaudar(表达)</a>。</p>
+<p>我使用的是“Issue 标题包含页面标题”的版本，另外还有五个模式任君选择。引用代码可以在线生成。也可以参考我下方给出的代码片段，在引用时，我增加了模式切换提示，及加载的状态。</p>
+<p>完整的代码片段在 <a href="https://github.com/zsdycs/lipk.org/blob/master/static/js/beaudar.js">这里查看</a>。</p>
 <pre><code class="language-javascript">/**
  * 在 #beaudar 处，append 评论的 script
  */

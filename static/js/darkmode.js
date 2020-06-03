@@ -10,7 +10,7 @@ if (window.localStorage.getItem('darkmode') == null) {
 }
 
 // body 背景 延迟载入
-// document.body.style.background = 'url(https://zsdycs.sirv.com/lipk.org/geometry.png)';
+// document.body.style.background = 'url(https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/docs/images/geometry.png)';
 // document.body.style.backgroundRepeat = 'repeat';
 
 var darkmodeLS = window.localStorage.getItem('darkmode');

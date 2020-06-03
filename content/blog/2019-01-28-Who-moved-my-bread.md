@@ -22,7 +22,7 @@ disable_mathjax: true
 
 ## 场地布局
 
-![场地布局](https://zsdycs.sirv.com/lipk.org/2019-01-28-who-moved-my-bread.png)  
+![场地布局](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/docs/images/2019-01-28-who-moved-my-bread.png)  
 
 **郝纯**：（面对观众）观众朋友们，大家好！先自我介绍一下，（摸胸）我叫郝纯，单名一个纯
 字，所以也有人叫我单纯。今天带着我的面包第一天上大学，讲真，心里真的是满满
@@ -86,7 +86,7 @@ disable_mathjax: true
 ## ~ ~鞠躬·谢幕~ ~
 
 ----
-![成员合照](https://zsdycs.sirv.com/lipk.org/2019-01-28-who-moved-my-bread-2.png)  
+![成员合照](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/docs/images/2019-01-28-who-moved-my-bread-2.png)  
 
 ----
 
