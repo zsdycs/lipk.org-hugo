@@ -8,15 +8,13 @@ a {
 }
 
 code {
+  padding: .2em .4em;
+  margin: 0;
+  font-size: 85%;
+  border-radius: 3px;
   hyphens: none;
   color: black;
-  margin: 0 3px;
-  background: #b0b0b0;
-  font-size: 13px;
-  border-radius: 100px;
-  padding: 0px 5px;
-  display: inline-block;
-  font-family: Consolas, Courier, "Courier New", STKaiti, KaiTi, SimKai, monospace
+  background: #e8e8e8;
 }
 
 pre {
