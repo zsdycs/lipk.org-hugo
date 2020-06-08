@@ -27,10 +27,10 @@
       <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://lipk.org/blog/2020/06/08/run-utterances/</guid>
-      <description>本文将从 Utterances 是如何工作的；如何在本地及生产环境运行；身份授权 oauth 代码配置及运行。 这 3 个方面进行讲解。同理，本文适用于 Beaudar(表达)
+      <description>应 @aixiu 需要本教程，本文将从 Utterances 是如何工作的；如何在本地及生产环境运行；身份授权 oauth 代码配置及运行。 这 3 个方面进行讲解。同理，本文适用于 Beaudar(表达)
  Utterances 是如何工作的 Utterances（下面简称“UT”）有两份代码，一份是提供 client.js 的前端代码，一份是用于身份授权的“后端”代码。
-我们知道使用 UT 是这样的：
-&amp;lt;script src=&amp;quot;https://utteranc.es/client.js&amp;quot;repo=&amp;quot;[ENTER REPO HERE]&amp;quot;issue-term=&amp;quot;pathname&amp;quot;theme=&amp;quot;github-light&amp;quot;crossorigin=&amp;quot;anonymous&amp;quot;async&amp;gt;&amp;lt;/script&amp;gt; 这里就是去请求前端代码的 client.js，然后我们可以通过浏览器控制台或源代码可以看出，client.js 会去请求 api.github.com 和 api.utteranc.es。 请求 api.github.com 是获得 issue 的内容，这个是公开的，无需授权。而 api.utteranc.es 是第二份代码实现的，用于授权登录和评论，是前端代码与 GitHub 身份认证的桥梁。
+我们知道 UT 是这样使用的：
+&amp;lt;script src=&amp;quot;https://utteranc.es/client.js&amp;quot;repo=&amp;quot;[ENTER REPO HERE]&amp;quot;issue-term=&amp;quot;pathname&amp;quot;theme=&amp;quot;github-light&amp;quot;crossorigin=&amp;quot;anonymous&amp;quot;async&amp;gt;&amp;lt;/script&amp;gt; 这里是在请求 client.js，然后我们可以通过浏览器控制台或源代码可以看出，client.js 会去请求 api.github.com 和 api.utteranc.es。 请求 api.github.com 是获得 issue 的内容，这个是公开的，无需授权。而 api.utteranc.es 是第二份代码实现的，用于授权登录和评论，是前端代码与 GitHub 身份认证的桥梁。
 登录和评论的实现。在登录时，会通过请求 api.utteranc.es 然后跳转到 UT 的 GitHub App 进行授权，登录后“后端”代码会返回一个 token。当用户进行评论时，前端会拿着这个 token 去请求 api.github.com，这时，UT 会通过指定的用户 utterances-bot 创建 issue。
 这样下来，我们知道，除了要有 utterance/utterances 和 utterance/utterances-oauth 这两份代码，还要有一个 GitHub app 和一个用于创建 issue 的用户。</description>
     </item>
