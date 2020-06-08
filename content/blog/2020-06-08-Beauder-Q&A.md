@@ -5,7 +5,7 @@ slug: 'beauder-qa'
 disable_mathjax: true
 ---
 
-### Q：为何不能正常显示评论？
+### Q：api.github.com 请求失败。
 
 api.github.com 部分 CDN 服务器被墙，导致请求失败。
 解决思路，PC 端 host 重定向，移动端搭梯子。这里只提供 host 重定向的解决步骤。
