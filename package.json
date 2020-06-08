@@ -1,0 +1,16 @@
+{
+  "name": "lipk.org",
+  "version": "1.0.0",
+  "description": "基于hugo的博客网站，包括源代码及站点文件。",
+  "scripts": {
+    "predeploy": "hugo && echo lipk.org > docs/CNAME",
+    "deploy": "gh-pages -d docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zsdycs/lipk.org.git"
+  },
+  "devDependencies": {
+    "gh-pages": "3.0.0"
+  }
+}
