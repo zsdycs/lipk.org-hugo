@@ -4,7 +4,7 @@
 - 主题：[hugo-ivy](https://github.com/yihui/hugo-ivy)。  
 - 目录结构：
 
-```markdown
+```
 lipk.org
 │
 ├─ LICENSE.MD // 版权声明
