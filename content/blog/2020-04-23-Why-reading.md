@@ -13,7 +13,7 @@ disable_mathjax: true
 
 如今我还记得 3 年前世界读书日，我在路过教学楼时，被教学楼前的银杏树惊艳。
 
-![这就是我当时看到的银杏树](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/docs/images/2020-04-23-why-reading.jpg)
+![这就是我当时看到的银杏树](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/2020-04-23-why-reading.jpg)
 
 生机盎然，静静的，看着令人对生活充满希望。
 

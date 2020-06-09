@@ -45,7 +45,7 @@ disable_mathjax: true
 
 ---
 
-![新婚快乐](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/docs/images/2019-02-21-To-my-good-friend-dxy.jpg)
+![新婚快乐](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/2019-02-21-To-my-good-friend-dxy.jpg)
 
 ---
 

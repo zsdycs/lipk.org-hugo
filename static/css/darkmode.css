@@ -16,6 +16,11 @@ img {
     filter: brightness(80%);
 }
 
+code {
+    color: #737373;
+    background: #303030;
+}
+
 main.index {
     background-color: #292929;
 }
