@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "基于hugo的博客网站，包括源代码及站点文件。",
   "scripts": {
+    "start": "hugo serve",
     "predeploy": "hugo && echo lipk.org > docs/CNAME",
     "deploy": "gh-pages -d docs"
   },
