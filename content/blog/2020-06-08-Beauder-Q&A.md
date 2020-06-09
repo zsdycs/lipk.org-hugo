@@ -3,6 +3,7 @@ title: '关于 Beaudar 的 Q&A'
 date: '2020-06-08'
 slug: 'beauder-qa'
 disable_mathjax: true
+disable_highlight: true
 ---
 
 ### Q：api.github.com 请求失败。
@@ -22,3 +23,13 @@ api.github.com 部分 CDN 服务器被墙，导致请求失败。
   - 建议首尾两行添加 `# github start` 和 `# github end` 增加可读性。
 - **更新 DNS，确保万无一失**
   - 命令 `ipconfig /flushdns` 于 `cmd` 或 `powershell` 使用，参照第二条。
+
+### Q：token 请求失败。
+
+这个问题一般来说，刷新一下页面就可解决，因为 Beaudar 使用的是 [Cloudflare](https://www.cloudflare.com/) 的网络。
+在中国境内，部分地区会有网络不稳定的情况。
+
+### Q：缺少 "beaudar.json" 配置 或 不允许 xxx 发布到 xxx/xxx
+
+这是因为 Beaudar 在评论输入到发表评论期间，会异步查询评论仓库的根目录是否存在 beaudar.json，并校验评论来源站点是否在文件中存在。
+如果不存在，Beaudar 将不会在目标仓库建立评论 issue。可参考 [Beaudar 代码仓库](https://github.com/beaudar/beaudar)中 [beaudar.json](https://github.com/beaudar/beaudar/blob/master/beaudar.json) 的配置。多个 origins 来源，在数组 `[]` 中填写，以 `,` 分隔。
