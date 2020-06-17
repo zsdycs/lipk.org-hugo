@@ -1,5 +1,3 @@
-var beaudarLoadingEnd = false;
-window.localStorage.setItem('beaudar', 'false');
 /**
  * 通过 MutationObserver 来监听 #beaudar
  */
@@ -14,45 +12,22 @@ function beaudarEnd() {
   function callback(mutationsList) {
     mutationsList.forEach(function (element) {
       if (element.type === 'attributes' && element.target.className === 'beaudar') {
-        // 加载结束！
-        beaudarLoadingEnd = true
         var loading = document.getElementById('loading');
+        var message = {
+          type: 'set-theme',
+          theme: 'github-light'
+        };
+        var nowDarkmode = window.localStorage.getItem('darkmode');
+        var beaudar = document.querySelector('iframe');
         loading.style.display = 'none';
-        window.localStorage.setItem('beaudar', 'true');
-        var beaudarMsg = document.createElement('div')
-        beaudarMsg.setAttribute("id", "beaudarMsg");
-        var darkmodeNow = window.localStorage.getItem('darkmode')
-        var beaudarTheme = window.localStorage.getItem('beaudar-theme')
-        if (beaudarTheme === "github-dark" && darkmodeNow === "day") {
-          beaudarMsg.innerText =
-            "如果你需要在白天模式下阅读，" +
-            "刷新页面后，评论将会切换为白天模式。";
-          beaudar.insertBefore(beaudarMsg, beaudar.firstChild);
-        } else if (beaudarTheme === "github-light" && darkmodeNow === "night") {
-          beaudarMsg.innerText =
-            "如果你需要在黑夜模式下阅读，" +
-            "刷新页面后，评论将会切换为黑夜模式。";
-          beaudar.insertBefore(beaudarMsg, beaudar.firstChild);
+        if (nowDarkmode === "night") {
+          message.theme = 'github-dark';
         }
+        // 与 beaudar 通信
+        beaudar.contentWindow.postMessage(message, 'https://beaudar.lipk.org');
       }
     });
   }
-  var beaudarTimeout = setTimeout(function() {
-    if (!beaudarLoadingEnd) {
-      // 隐藏加载
-      var loading = document.getElementById('loading');
-      loading.style.display = "none";
-
-      // 显示提示
-      var beaudar = document.getElementById('beaudar');
-      var beaudarMsg = document.createElement('div')
-      beaudarMsg.setAttribute('id', 'beaudarMsg');
-      beaudarMsg.innerText =
-        '噢！评论加载失败了。\n稍等片刻后刷新页面，就可解决此问题。\n详情可在 Console 中查看，应该是 beaudar 在加载评论过程中出现了某些故障。';
-      beaudar.insertBefore(beaudarMsg, beaudar.children[0]);
-    }
-    window.clearTimeout(beaudarTimeout);
-  }, 60000);
   var mutationObserver = new MutationObserver(callback);
   mutationObserver.observe(targetNode, options);
 }
@@ -72,10 +47,8 @@ function addBeaudar() {
   script.setAttribute('crossorigin', 'anonymous');
   if (window.localStorage.getItem('darkmode') === 'day') {
     script.setAttribute('theme', 'github-light');
-    window.localStorage.setItem('beaudar-theme', 'github-light');
   } else {
     script.setAttribute('theme', 'github-dark');
-    window.localStorage.setItem('beaudar-theme', 'github-dark');
   }
   script.async = true;
   beaudar.appendChild(script);

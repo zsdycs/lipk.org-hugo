@@ -37,38 +37,27 @@ function addDarkmodeCSS(mode) {
 // 画面加载时，判断是否加载 darkmode.css
 addDarkmodeCSS(darkmodeLS);
 
-// 切换模式时，评论头出现提示
+// 切换黑夜白天模式
 var darkmodeTag = document.querySelector("#darkmodeTag");
 darkmodeTag.addEventListener("click", function () {
-  var newDarkmode = window.localStorage.getItem('darkmode');
-  if (newDarkmode === "night") {
-    darkmodeTag.innerHTML = "黑夜";
+  var nowDarkmode = window.localStorage.getItem('darkmode');
+  var beaudar = document.querySelector('iframe');
+  var message = {
+    type: 'set-theme',
+    theme: 'github-light'
+  };
+  if (nowDarkmode === "night") {
+    // 修改 localStorage
     window.localStorage.setItem('darkmode', 'day');
+    // 加载样式
     addDarkmodeCSS("day");
   } else {
-    darkmodeTag.innerHTML = "白天";
+    message.theme = 'github-dark';
+    // 修改 localStorage
     window.localStorage.setItem('darkmode', 'night');
+    // 加载样式
     addDarkmodeCSS("night");
   }
-  var beaudar = document.getElementById("beaudar");
-  var newDarkmode = window.localStorage.getItem('darkmode');
-  if (window.localStorage.getItem('beaudar') === "true") {
-    var isMsg = document.getElementById("beaudarMsg");
-    if (isMsg) {
-      isMsg.remove();
-    }
-    var beaudarMsg = document.createElement('div')
-    beaudarMsg.setAttribute("id", "beaudarMsg");
-    if (darkmodeLS === "night" && newDarkmode === "day") {
-      beaudarMsg.innerText =
-        "如果你需要在白天模式下阅读，" +
-        "刷新页面后，评论将会切换为白天模式。";
-      beaudar.insertBefore(beaudarMsg, beaudar.firstChild);
-    } else if (darkmodeLS === "day" && newDarkmode === "night") {
-      beaudarMsg.innerText =
-        "如果你需要在黑夜模式下阅读，" +
-        "刷新页面后，评论将会切换为黑夜模式。";
-      beaudar.insertBefore(beaudarMsg, beaudar.firstChild);
-    }
-  }
+  // 与 beaudar 通信a
+  beaudar.contentWindow.postMessage(message, 'https://beaudar.lipk.org');
 });
