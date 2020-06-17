@@ -7,13 +7,16 @@
       var parent = tag.parentElement;
       // 如果图像是其父元素的唯一元素，则将其居中
       if (parent.children.length === 1) {
-        // 如果图像上有链接，请检查 grandparent
+        // 如果图像上有链接，检查父元素的父元素的子元素
         if (parent.nodeName === 'A') {
-          parent = parent.parentElement;
-          if (parent.children.length != 1) continue;
-          parent.firstChild.style.border = 'none';
+          var grandparent = parent.parentElement;
+          if (grandparent.children.length != 1) continue;
+          grandparent.firstChild.style.border = 'none';
         }
-        if (parent.nodeName === 'P') parent.style.textAlign = 'center';
+        if (parent.nodeName === 'P') {
+          tag.style.display = 'block';
+          tag.style.margin = 'auto';
+        };
       }
     }
   }
