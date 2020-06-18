@@ -8,6 +8,6 @@
     var el = quote.children[n - 1];
     if (!el || el.nodeName !== 'P') continue;
     // right-align a quote footer if it starts with ---
-    if (/^—/.test(el.textContent)) el.style.textAlign = 'right';
+    if (/^(  —|  ——)/.test(el.textContent)) el.style.textAlign = 'right';
   }
 })();

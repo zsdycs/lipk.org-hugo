@@ -6,7 +6,7 @@
             var parent = tag.parentElement;
             if (parent.nodeName == 'ARTICLE' || parent.nodeName == 'BLOCKQUOTE') {
                 var childNodes = tag.childNodes;
-                if (childNodes[0].nodeName == 'IMG') continue;
+                if (childNodes.length > 2 && childNodes[1].nodeName === 'IMG') continue;
                 tag.innerHTML = '&emsp;&emsp;' + tag.innerHTML;
                 for (var j = 0; j < childNodes.length; j++) {
                     var child = childNodes[j];

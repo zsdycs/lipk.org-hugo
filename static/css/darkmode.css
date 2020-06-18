@@ -21,6 +21,10 @@ code {
     background: #303030;
 }
 
+blockquote {
+    border-left: 3px solid rgb(55, 55, 55);
+}
+
 main.index {
     background-color: #292929;
 }
