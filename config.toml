@@ -92,8 +92,7 @@ publishDir = "docs"
     edit = "编辑"
     license = "版权"
     # options for highlight.js (version, additional languages, and theme)
-    highlightjsVersion = "10.0.0"
-    highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    highlightjsCDN = "//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.1"
     highlightjsLang = ["JavaScript", "HTML", "Markdown", "SCSS", "CSS", "TypeScript", "Ruby", "Bash"]
     highlightjsThemeNight = "vs2015"
     highlightjsThemeDay = "github"
