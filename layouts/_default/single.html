@@ -2,4 +2,7 @@
 
 {{ if .Params.show_toc }} {{ .TableOfContents }} {{ end }}
 {{ .Content }}
+<div id="eof">
+  <span>EOF</span>
+</div>
 {{ partial "footer.html" . }}
