@@ -1,8 +1,5 @@
 {{ if .Section }}
   {{ if or .PrevInSection .NextInSection }}
-  <div id="eof">
-    <span>EOF</span>
-  </div>
   {{ end }}
 <nav class="post-nav">
   <span class="nav-prev">{{ with .PrevInSection }}&larr; <a href="{{ .RelPermalink }}" title="你可以使用方向键">{{ .Title }}</a>{{ end }}</span>
