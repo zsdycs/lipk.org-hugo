@@ -13,10 +13,7 @@
           if (grandparent.children.length != 1) continue;
           grandparent.firstChild.style.border = 'none';
         }
-        if (parent.nodeName === 'P') {
-          tag.style.display = 'block';
-          tag.style.margin = 'auto';
-        };
+        if (parent.nodeName === 'P') parent.style.textAlign = 'center';
       }
     }
   }

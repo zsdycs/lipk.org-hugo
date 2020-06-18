@@ -75,7 +75,7 @@ publishDir = "docs"
     footer = "&copy; 2018 - 2020 [执手对影成双](/)"
     slogan = "执手相看，对影成双"
     customJS = [
-                "js/indentation-p.js",
+                "js/indentation-el.js",
                 "js/darkmode.js",
                 "js/beaudar.js",
                 "js/fix-toc.js",
