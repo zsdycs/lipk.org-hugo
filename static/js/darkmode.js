@@ -59,5 +59,7 @@ darkmodeTag.addEventListener("click", function () {
     addDarkmodeCSS("night");
   }
   // 与 beaudar 通信
-  beaudar.contentWindow.postMessage(message, 'https://beaudar.lipk.org');
+  if (window.localStorage.getItem('beaudar') === 'true') {
+    beaudar.contentWindow.postMessage(message, 'https://beaudar.lipk.org');
+  }
 });

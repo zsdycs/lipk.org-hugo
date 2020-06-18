@@ -1,3 +1,5 @@
+// 默认为没有加载 beaudar
+window.localStorage.setItem('beaudar', 'false');
 /**
  * 通过 MutationObserver 来监听 #beaudar
  */
@@ -33,9 +35,11 @@ function beaudarEnd() {
 }
 
 /**
- * 在 #beaudar处，append 评论的 script
+ * 在 #beaudar 处，append 评论的 script
  */
 function addBeaudar() {
+  // 加载了 beaudar  
+  window.localStorage.setItem('beaudar', 'true');
   // 显示加载状态
   var loading = document.getElementById('loading');
   loading.style.display = 'flex';
