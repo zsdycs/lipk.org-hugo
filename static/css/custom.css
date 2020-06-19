@@ -302,12 +302,12 @@ a:hover,
 }
 
 #eof:before {
-  content: '——';
+  content: '—';
   margin-right: 20px;
 }
 
 #eof:after {
-  content: '——';
+  content: '—';
   margin-left: 10px;
 }
 

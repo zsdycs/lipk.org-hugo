@@ -4,14 +4,14 @@
         for (var i = 0; i < tags.length; i++) {
             var tag = tags[i];
             var parent = tag.parentElement;
-            if (parent.nodeName == 'ARTICLE' || parent.nodeName == 'BLOCKQUOTE') {
-                var childNodes = tag.childNodes;
-                if (childNodes.length > 2 && childNodes[1].nodeName === 'IMG') continue;
+            if (parent.nodeName === 'ARTICLE' || parent.nodeName === 'BLOCKQUOTE') {
+                var children = tag.children;
+                if (children.length === 0 || children[0].nodeName === 'IMG') continue;
                 tag.innerHTML = '&emsp;&emsp;' + tag.innerHTML;
-                for (var j = 0; j < childNodes.length; j++) {
-                    var child = childNodes[j];
+                for (var j = 0; j < children.length; j++) {
+                    var child = children[j];
                     if (child.nodeName === 'BR') {
-                        childNodes[j+1].textContent = '  ' + childNodes[j+1].textContent.substring(1, childNodes[j+1].textContent.length);
+                        children[j+1].textContent = '  ' + children[j+1].textContent.substring(1, children[j+1].textContent.length);
                     }
                 }
             }
