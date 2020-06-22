@@ -18,17 +18,14 @@ var darkmodeLS = window.localStorage.getItem('darkmode');
 // 判断是否加载 darkmode.css
 function addDarkmodeCSS(mode) {
   var darkmodeTag = document.querySelector("#darkmodeTag");
-  var darkmodeCSS = document.querySelector("#darkmodeCSS");
+  var githubDarkCSS = document.querySelector("#github-dark");
   var highlightjsNightCSS = document.querySelector("#highlightjsThemeNight");
-  var masthead = document.querySelector(".masthead");
   if (mode === "night") {
-    if (masthead) masthead.style.background = "#212121";
-    darkmodeCSS.disabled = false;
+    githubDarkCSS.disabled = false;
     if (highlightjsNightCSS) highlightjsNightCSS.disabled = false;
     darkmodeTag.innerHTML = "黑夜";
   } else {
-    if (masthead) masthead.style.background = "#ffffff";
-    darkmodeCSS.disabled = true;
+    githubDarkCSS.disabled = true;
     if (highlightjsNightCSS) highlightjsNightCSS.disabled = true;
     darkmodeTag.innerHTML = "白天";
   }

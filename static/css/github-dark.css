@@ -1,0 +1,104 @@
+html {
+    background-color: #181818;
+}
+
+body {
+    background-color: #181818;
+    color: #777777;
+}
+
+/* 链接 */
+a {
+    color: #4183c4;
+}
+
+a:hover {
+    border-bottom: 1px solid #4183c4;
+}
+
+/* ~~del~~ 删除 */
+del {
+    color: #636363;
+}
+
+/* 图片 */
+img {
+    filter: brightness(80%);
+}
+
+/* `` 块 */
+code {
+    color: #737373;
+    background: #303030;
+}
+
+/* ```code``` 代码 */
+code.hljs {
+    color: #b1b1b1;
+    background: #202020;
+}
+
+.hljs span {
+    filter: brightness(90%);
+}
+
+/* > 引用 */
+blockquote {
+    color: #636363;
+    border-left: 3px solid #414141;
+}
+
+
+/* 选择背景 */
+::selection {
+    background: #27673d;
+}
+
+/* 菜单 */
+.masthead {
+    background-color: #181818;
+}
+
+/* 菜单选中项高亮 */
+.masthead .menu .active a {
+    color: #a0a0a0;
+    border-bottom: 1px solid #a0a0a0;
+}
+
+/* 结尾 */
+#eof {
+    color: #434343;
+}
+
+/* 移动端 */
+@media screen and (max-width: 1220px) {
+    .masthead .menu .active a {
+        background: none;
+        border: 1px solid #a0a0a0;
+    }
+}
+
+/* 首页 start */
+.home .wrapper {
+    background: #181818;
+}
+
+main.index {
+    background-color: #202020;
+}
+
+main.index:hover aside {
+    background: #181818;
+}
+
+article.index {
+    border-top: 2px solid #4c4c4c;
+    border-bottom: 2px solid #4c4c4c;
+}
+
+@media only screen and (max-width: 668px) {
+    aside.index {
+        background: #181818;
+    }
+}
+/* 首页 end */
