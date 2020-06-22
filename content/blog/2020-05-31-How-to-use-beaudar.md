@@ -40,7 +40,7 @@ function addBeaudar() {
   script.setAttribute('repo', 'zsdycs/lipk.org');
   script.setAttribute('issue-term', 'title');
   script.setAttribute('crossorigin', 'anonymous');
-  if (window.localStorage.getItem('darkmode') === 'day') {
+  if (window.localStorage.getItem('mode') === 'day') {
     script.setAttribute('theme', 'github-light');
     window.localStorage.setItem('beaudar-theme', 'github-light');
   } else {

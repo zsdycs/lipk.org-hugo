@@ -76,7 +76,7 @@ publishDir = "docs"
     slogan = "执手相看，对影成双"
     customJS = [
                 "js/indentation-el.js",
-                "js/darkmode.js",
+                "js/mode.js",
                 "js/beaudar.js",
                 "js/fix-toc.js",
                 "js/math-code.js",

@@ -61,8 +61,8 @@ disable_mathjax: true
 
 ```javascript
 // 黑夜白天模式载入
-const darkmode = new Darkmode(options);
-darkmode.showWidget();
+const mode = new Darkmode(options);
+mode.showWidget();
 
 // body 背景 延迟载入
 document.body.style.background = 'url(/images/your-background-image.png)';

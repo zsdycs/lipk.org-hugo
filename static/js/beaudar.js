@@ -15,14 +15,15 @@ function beaudarEnd() {
     mutationsList.forEach(function (element) {
       if (element.type === 'attributes' && element.target.className === 'beaudar') {
         var loading = document.getElementById('loading');
+        // 默认 github-light
         var message = {
           type: 'set-theme',
           theme: 'github-light'
         };
-        var nowDarkmode = window.localStorage.getItem('darkmode');
+        var nowDarkmode = window.localStorage.getItem('mode');
         var beaudar = document.querySelector('iframe');
         loading.style.display = 'none';
-        if (nowDarkmode === "night") {
+        if (nowDarkmode === "github-dark") {
           message.theme = 'github-dark';
         }
         // 与 beaudar 通信
@@ -49,11 +50,6 @@ function addBeaudar() {
   script.setAttribute('repo', 'zsdycs/lipk.org');
   script.setAttribute('issue-term', 'title');
   script.setAttribute('crossorigin', 'anonymous');
-  if (window.localStorage.getItem('darkmode') === 'day') {
-    script.setAttribute('theme', 'github-light');
-  } else {
-    script.setAttribute('theme', 'github-dark');
-  }
   script.async = true;
   beaudar.appendChild(script);
   // 处理评论是否加载完成
