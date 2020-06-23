@@ -17,6 +17,20 @@ a:hover {
   border-bottom: 1px solid #000000;
 }
 
+.masthead .menu a,
+a.list,
+.post-nav a,
+.copyright a {
+  color: #000000;
+}
+
+.masthead .menu a:hover,
+a.list:hover,
+.post-nav a:hover,
+.copyright a:hover {
+  border-bottom: 1px solid #000000;
+}
+
 blockquote {
   color: #5d5d5d;
   border-left: 3px solid #c8c8c8;
@@ -248,7 +262,8 @@ code {
   transition: all 0.5s ease;
 }
 
-.menu a, img {
+.menu a,
+img {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -380,6 +395,10 @@ code {
     display: inline-block;
     padding: 5px 10px;
     border-radius: 5px;
+  }
+
+  .masthead .menu a:hover {
+    border-bottom: 0px;
   }
 
   .masthead .menu button {

@@ -16,6 +16,10 @@ a:hover {
     border-bottom: 1px solid #4183c4;
 }
 
+.copyright a {
+    color: #777777;
+}
+
 /* ~~del~~ 删除 */
 del {
     color: #636363;
@@ -59,6 +63,20 @@ blockquote {
     background-color: #181818;
 }
 
+.masthead .menu a,
+a.list,
+.post-nav a,
+.copyright a {
+    color: #777777;
+}
+
+.masthead .menu a:hover,
+a.list:hover,
+.post-nav a:hover,
+.copyright a:hover {
+    border-bottom: 1px solid #777777;
+}
+
 /* 菜单选中项高亮 */
 .masthead .menu .active a {
     color: #a0a0a0;
@@ -75,6 +93,10 @@ blockquote {
     .masthead .menu .active a {
         background: none;
         border: 1px solid #a0a0a0;
+    }
+
+    .masthead .menu a:hover {
+        border-bottom: 0px;
     }
 }
 
@@ -101,4 +123,5 @@ article.index {
         background: #181818;
     }
 }
+
 /* 首页 end */

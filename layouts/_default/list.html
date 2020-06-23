@@ -9,7 +9,7 @@
   {{ range .Pages.GroupByDate "2006-01-02" }}
   {{ range .Pages }}
   <p>
-    <strong>{{ .Date.Format "01-02" }}</strong>&emsp;<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <strong>{{ .Date.Format "01-02" }}</strong>&emsp;<a class="list" href="{{ .RelPermalink }}">{{ .Title }}</a>
   </p>
   {{ end }}
   {{ end }}
