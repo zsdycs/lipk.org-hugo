@@ -39,7 +39,7 @@ blockquote {
 code {
   padding: .2em .4em;
   margin: 0;
-  font-size: 85%;
+  /* font-size: 85%; */
   border-radius: 3px;
   hyphens: none;
   color: black;
@@ -48,7 +48,7 @@ code {
 
 pre {
   color: rgb(188, 188, 188);
-  font-size: .95em;
+  /* font-size: .95em; */
 }
 
 pre code {
@@ -129,7 +129,7 @@ aside.index img {
 
 aside.index #name {
   font-weight: bolder;
-  font-size: 18px;
+  /* font-size: 18px; */
   margin: 0.8em 0 1em;
   margin-left: 3px;
   letter-spacing: 3px;
@@ -145,7 +145,7 @@ aside.index #info {
 }
 
 aside.index #info li {
-  font-size: 12px;
+  /* font-size: 12px; */
   list-style: none;
 }
 
@@ -195,7 +195,7 @@ footer.index {
 
 pre,
 code {
-  font-size: .95em;
+  /* font-size: .95em; */
 }
 
 ::selection {
@@ -281,19 +281,6 @@ img {
   padding: 1em 40px;
 }
 
-.en .main header~p:first-of-type::first-line {
-  font-variant: small-caps;
-  letter-spacing: .05em;
-  font-size: 1.1em;
-}
-
-.en .main header~p:first-of-type::first-letter {
-  font-size: 3em;
-  padding: .1em .1em 0 0;
-  float: left;
-  line-height: 1em;
-}
-
 .hljs-comment {
   font-style: inherit;
 }
@@ -325,7 +312,7 @@ img {
 
 .slogan {
   display: block;
-  font-size: 100%;
+  /* font-size: 100%; */
 }
 
 #eof:before {
@@ -383,10 +370,6 @@ img {
     max-width: inherit;
   }
 
-  .masthead h1 {
-    margin-bottom: 10px;
-  }
-
   .masthead .menu ul {
     text-align: center;
   }
@@ -424,10 +407,6 @@ img {
     display: none;
   }
 
-  #icp {
-    display: block;
-    font-size: 15px;
-  }
 }
 
 @media print {
