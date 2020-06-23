@@ -1,62 +1,33 @@
-/* Micro Reset */
-
 html {
+  box-sizing: border-box;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  box-sizing: border-box;
-}
-
-/* -webkit-scrollbar style */
-html::-webkit-scrollbar-track {
-  border-radius: 5px;
-  background-color: rgb(212, 212, 212);
-}
-
-html::-webkit-scrollbar {
-  width: 8px;
-  background-color: rgb(212, 212, 212);
-}
-
-html::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background-color: rgb(131, 131, 131)
-}
-
-html::-webkit-scrollbar-thumb:hover {
-  background-color: #494949;
 }
 
 *,
-*:before,
-*:after {
+:after,
+:before {
   box-sizing: inherit;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
+body,
 button,
 input,
+label,
 select,
-textarea,
-label {
+textarea {
   margin: 0;
   padding: 0;
 }
 
 img {
   max-width: 100%;
-  border-radius: 0px;
-
+  border-radius: 0;
 }
 
-/* Typography */
-
 body {
-  line-height: 1.75;
   letter-spacing: 1.5px;
+  line-height: 1.75;
 }
 
 h1,
@@ -65,25 +36,28 @@ h3,
 h4,
 h5,
 h6 {
-  padding: 0;
   margin: 60px 0 30px;
-  line-height: 1.25;
+  padding: 0;
   text-align: center;
+  line-height: 1.25;
 }
 
 h1 {
   font-weight: bolder;
 }
 
-h2 {
-  font-weight: bold;
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
 }
 
 h3,
 h4,
 h5,
 h6 {
-  font-weight: bold;
   text-align: left;
 }
 
@@ -92,23 +66,24 @@ blockquote {
   padding: 0 2em;
 }
 
-/* Code */
-
 pre code {
   display: block;
-  padding: 1em;
   overflow-x: auto;
+  margin: 0;
+  padding: 1em;
+  border-radius: 0;
   line-height: 1.75;
 }
 
 code {
-  background-color: #1d1e22;
+  margin: 0;
+  padding: .2em .4em;
+  border-radius: 3px;
+  hyphens: none;
 }
 
-/* Lists */
-
-ul,
-ol {
+ol,
+ul {
   padding: 0 0 0 20px;
 }
 
@@ -117,29 +92,27 @@ li {
   padding: 0;
 }
 
-/* Links */
-
 a {
-  text-decoration: none;
   padding-bottom: 2px;
+  text-decoration: none;
 }
 
 sup a {
-  padding: 0;
   letter-spacing: initial;
 }
 
-/* Miscellanea */
+hr,
+sup a {
+  padding: 0;
+}
 
 hr {
   display: block;
-  color: #989898;
+  margin: 50px auto;
   height: 1px;
+  max-width: 300px;
   border: 0;
   border-top: 1px solid;
-  margin: 50px auto;
-  padding: 0;
-  max-width: 300px;
 }
 
 .copyright {
@@ -147,14 +120,14 @@ hr {
 }
 
 .copyright a {
-  padding: 0px;
+  padding: 0;
 }
 
 .post-nav {
   display: flex;
-  justify-content: space-between;
-  font-weight: bold;
   margin-top: 25px;
+  font-weight: 700;
+  justify-content: space-between;
 }
 
 .nav-next {
@@ -170,29 +143,24 @@ hr {
   margin-top: 20px;
 }
 
-/* Layout */
-
 .paramount {
-  width: 1220px;
   margin: 0 auto;
   padding: 30px 0;
+  width: 1220px;
 }
 
 .masthead {
-  width: 260px;
-  padding: 20px 50px 20px 10px;
   float: left;
+  padding: 20px 50px 20px 10px;
+  width: 260px;
 }
 
 .main {
-  width: 700px;
-  padding: 32px 10px 20px 50px;
   margin-left: 260px;
-  border-left: 1px solid #989898;
+  padding: 32px 10px 20px 50px;
+  width: 700px;
   min-height: calc(100vh - 60px);
 }
-
-/* Masthead */
 
 .masthead .menu {
   margin-right: 20px;
@@ -204,24 +172,19 @@ hr {
 }
 
 .masthead .menu ul ul {
-  list-style: none;
-  margin-left: 10px;
   margin-right: 10px;
+  margin-left: 10px;
+  list-style: none;
 }
 
-.masthead .menu li li::before {
-  content: "•\00a\000a0\00a0"
+.masthead .menu li li:before {
+  content: "•\00a\000a0\00a0";
 }
 
-#menu-check {
-  display: none;
-}
-
+#menu-check,
 #menu-label {
   display: none;
 }
-
-/* Main */
 
 .main .title h1 {
   margin-top: 0;
@@ -229,40 +192,18 @@ hr {
 }
 
 .title h3 {
-  font-weight: normal;
   text-align: center;
+  font-weight: 400;
 }
-
-.subtitle {
-  color: #666;
-}
-
-/* Tables */
 
 table {
   margin: auto;
-  border-top: 1px solid #666;
-  border-bottom: 1px solid #666;
 }
 
-table thead th {
-  border-bottom: 1px solid #666;
-}
-
-th,
-td {
+td,
+th {
   padding: 5px;
 }
-
-thead,
-tfoot,
-tr:nth-child(even) {
-  background: #f8f8f8;
-}
-
-/**
- * Utility Styles
- */
 
 .unselectable {
   -webkit-user-select: none;
@@ -271,19 +212,115 @@ tr:nth-child(even) {
   user-select: none;
 }
 
-/**
- * -------------------------------------------------------------------------
- *  Media Queries
- * -------------------------------------------------------------------------
- *
- * The @viewport tag does the same thing as
- *
- *   <meta name="viewport" content="width=device-width">
- *
- * but in the future W3C standard way. The -ms- prefix is required for
- * IE10+ to render responsive styling in Windows 8 "snapped" views;
- * IE10+ does not honour the meta tag.
- */
+#svg-404 {
+  width: 300px;
+}
+
+.menu {
+  transition: all .5s ease;
+}
+
+.menu a,
+img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.main {
+  hyphens: manual;
+}
+
+.main,
+.masthead {
+  padding: 1em 40px;
+}
+
+.home .wrapper {
+  position: absolute;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+
+main.index {
+  overflow: auto;
+  margin: 5em auto;
+  padding: 2em;
+  max-width: 610px;
+  transition: 1s;
+}
+
+aside.index {
+  float: left;
+  box-sizing: border-box;
+  padding: 1em;
+  width: 28%;
+  line-height: 1.6em;
+  transition: .5s;
+}
+
+aside.index #logo {
+  text-align: center;
+}
+
+aside.index img {
+  display: block;
+  width: 100%;
+}
+
+aside.index #name {
+  margin: .8em 0 1em;
+  margin-left: 3px;
+  letter-spacing: 3px;
+  font-weight: bolder;
+}
+
+aside.index i {
+  text-align: center;
+}
+
+aside.index #info {
+  margin: 0;
+  padding: 0;
+}
+
+aside.index #info li {
+  list-style: none;
+}
+
+aside.index #info i {
+  margin-right: 3px;
+}
+
+article.index {
+  float: right;
+  padding-bottom: 18px;
+  width: 70%;
+  letter-spacing: .2px;
+}
+
+article.index a {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+article.index rt {
+  font-weight: bolder;
+}
+
+article.index ruby.link:hover {
+  padding-bottom: 2px;
+}
+
+footer.index {
+  position: fixed;
+  bottom: .5em;
+  width: 600px;
+}
 
 @-ms-viewport {
   width: device-width;
@@ -293,13 +330,138 @@ tr:nth-child(even) {
   width: device-width;
 }
 
-/* Tablet screens and smaller */
+iframe,
+video {
+  display: block;
+}
 
-@media screen and (max-width: 1220px) {
+iframe,
+table,
+video {
+  margin: auto;
+  max-width: 100%;
+}
 
+table {
+  min-width: 50%;
+}
+
+pre .nohighlight {
+  background-color: transparent;
+}
+
+ins {
+  text-decoration: none;
+}
+
+main {
+  display: block;
+}
+
+#Msg {
+  padding: .5em;
+  width: 100%;
+  border: 1px dashed;
+}
+
+#modeTag {
+  cursor: pointer;
+}
+
+#TableOfContents {
+  padding: .5em;
+}
+
+.hljs-comment {
+  font-style: inherit;
+}
+
+.hljs {
+  padding: 1em;
+}
+
+.home hr {
+  margin: 2em auto 1em;
+}
+
+.masthead img {
+  max-width: 166px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.cn blockquote:not(:hover),
+.home blockquote {
+  border-left-color: transparent;
+}
+
+.slogan {
+  display: block;
+}
+
+#eof:before {
+  margin-right: 20px;
+  content: '—';
+}
+
+#eof:after {
+  margin-left: 10px;
+  content: '—';
+}
+
+#eof {
+  margin: 2em auto;
+  text-align: center;
+  font-weight: 100;
+  line-height: 1em;
+}
+
+@media only screen and (max-width:668px) {
+  main.index {
+    margin: 1em;
+    padding: 0 1em;
+    max-width: 100%;
+  }
+
+  aside.index {
+    float: none;
+    overflow: hidden;
+    margin: 2em auto 1em;
+    width: 100%;
+    background: #eee;
+  }
+
+  aside.index #logo {
+    float: left;
+    margin-right: 1em;
+    width: 28%;
+  }
+
+  article.index {
+    float: none;
+    width: 100%;
+  }
+
+  footer.index {
+    position: static;
+    margin: 1em auto 2em;
+    width: auto;
+  }
+}
+
+@media screen and (min-width:1220px) {
+  .masthead {
+    position: sticky;
+    top: 0;
+  }
+}
+
+@media screen and (max-width:1220px) {
   .paramount {
-    padding-top: 78px;
-    padding-bottom: 0px;
+    padding-top: 60px;
+    padding-bottom: 0;
     width: auto;
     max-width: 700px;
   }
@@ -308,34 +470,32 @@ tr:nth-child(even) {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    /* background => day: #dedede, night: #1E1E1E */
-    padding: 5px 0px 10px 0px !important;
     z-index: 1000;
-    margin: 0;
     float: none;
+    margin: 0;
+    padding: 5px 0 10px !important;
+    width: 100%;
     text-align: center;
-    border-bottom: 1px solid #989898;
-    transition: all 0.5s ease;
+    transition: all .5s ease;
   }
 
   .main {
-    width: auto;
-    padding: 40px 10px;
     margin-left: 0;
-    border-left: none;
+    padding: 40px 25px;
+    width: auto;
     min-height: auto;
+    border-left: none !important;
   }
 
   .masthead .menu {
-    direction: ltr;
     margin: auto;
+    direction: ltr;
   }
 
   .masthead .menu ul {
-    text-align: left;
     margin: 0;
     padding: 0;
+    text-align: left;
   }
 
   .masthead .menu ul ul {
@@ -343,16 +503,17 @@ tr:nth-child(even) {
   }
 
   .masthead .menu li {
-    border-bottom: 1px solid;
-    list-style: none;
     margin: 0;
     padding: 0;
+    border-bottom: 1px solid;
+    list-style: none;
   }
 
   .masthead .menu li:first-child {
     border-top: 1px solid;
   }
 
+  .masthead .menu a,
   .masthead .menu li li:last-child {
     border-bottom: none;
   }
@@ -360,35 +521,28 @@ tr:nth-child(even) {
   .masthead .menu a {
     display: block;
     padding: 15px 20px;
-    border-bottom: none;
   }
 
   .masthead .menu li li a {
     padding-left: 30px;
   }
 
-  .masthead .menu li li::before {
+  .masthead .menu li li:before {
     content: none;
   }
 
-  .masthead .menu li li a::before {
+  .masthead .menu li li a:before {
     content: "•\00a0\00a0\00a0";
   }
 
   #menu-label {
     display: inline-block;
+    margin-top: 10px;
     padding: 0 20px;
     height: 50px;
     border: 1px solid;
-    cursor: pointer;
     line-height: 50px;
-    color: #333;
-    margin-top: 10px;
-  }
-
-  #menu-label:hover,
-  #menu-label:focus {
-    border: 1px solid #888;
+    cursor: pointer;
   }
 
   #menu-label .icon {
@@ -400,18 +554,12 @@ tr:nth-child(even) {
     display: none;
   }
 
+  #menu-check:checked~label .close-icon,
   #menu-check~label .open-icon {
     display: inline-block;
   }
 
-  #menu-check:checked~label .close-icon {
-    display: inline-block;
-  }
-
-  #menu-check:checked~label .open-icon {
-    display: none;
-  }
-
+  #menu-check:checked~label .open-icon,
   #menu-check~ul {
     display: none;
   }
@@ -420,5 +568,81 @@ tr:nth-child(even) {
     display: block;
     margin-top: 50px;
     margin-bottom: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 2em auto 1.5em;
+  }
+
+  .title h2,
+  .title h3 {
+    margin: 1.5em auto;
+  }
+
+  .main .title h1 {
+    margin: 1em auto 0;
+  }
+
+  .title hr {
+    margin: 2em auto;
+  }
+
+  .masthead .menu {
+    max-width: inherit;
+  }
+
+  .masthead .menu ul {
+    text-align: center;
+  }
+
+  .masthead .menu a {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .masthead .menu a:hover {
+    border-bottom: none !important;
+  }
+
+  .masthead .menu button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    line-height: 28.5px;
+  }
+
+  .masthead .menu li,
+  .masthead .menu li:first-child {
+    display: inline-block;
+    margin-top: 5px;
+    border: none;
+  }
+
+  .masthead .menu .menu-extra {
+    display: none;
+  }
+}
+
+@media print {
+
+  .masthead,
+  del,
+  footer {
+    display: none;
+  }
+
+  .paramount {
+    max-width: 700px;
+  }
+
+  .main {
+    margin-left: 0;
+    padding-left: 10px;
+    border-left: none;
   }
 }

@@ -10,6 +10,10 @@ code {
   font-family: '楷体';
 }
 
+#eof {
+  font-family: Microsoft Yahei, sans-serif;
+}
+
 /* font-size */
 html {
   font-size: 100%;

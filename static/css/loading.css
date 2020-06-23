@@ -1,190 +1,141 @@
 #loading {
-    height: 75px;
-    width: 75px;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+  display: none;
+  margin: auto;
+  width: 75px;
+  height: 75px;
+  justify-content: center;
+  align-items: center;
 }
+
 .container {
-    width: 30px;
-    height: 30px;
-    position: relative;
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.container.animation-2,
+.container.animation-4 {
+  transform: rotate(10deg);
+}
+
+.container.animation-2 .shape {
+  border-radius: 5px;
+}
+
+.container.animation-2 {
+  animation: rotation 1s infinite;
+}
+
+.container .shape {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 1px;
+}
+
+.container .shape.shape1 {
+  left: 0;
+  background-color: #5c6bc0;
+}
+
+.container .shape.shape2 {
+  right: 0;
+  background-color: #8bc34a;
+}
+
+.container .shape.shape3 {
+  bottom: 0;
+  background-color: #ffb74d;
+}
+
+.container .shape.shape4 {
+  right: 0;
+  bottom: 0;
+  background-color: #f44336;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
   }
-  .container.animation-2, .container.animation-4 {
-    -webkit-transform: rotate(10deg);
-    transform: rotate(10deg);
+
+  to {
+    transform: rotate(360deg);
   }
-  .container.animation-2 .shape {
-    border-radius: 5px;
+}
+
+.animation-2 .shape1 {
+  animation: animation2shape1 .5s ease 0s infinite alternate;
+}
+
+@keyframes animation2shape1 {
+  0% {
+    transform: translate(0, 0);
   }
-  .container.animation-2 {
-    -webkit-animation: rotation 1s infinite;
-    animation: rotation 1s infinite;
+
+  to {
+    transform: translate(20px, 20px);
   }
-  .container .shape {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 1px;
+}
+
+.animation-2 .shape2 {
+  animation: animation2shape2 .5s ease 0s infinite alternate;
+}
+
+@keyframes animation2shape2 {
+  0% {
+    transform: translate(0, 0);
   }
-  .container .shape.shape1 {
-    left: 0;
-    background-color: #5C6BC0;
+
+  to {
+    transform: translate(-20px, 20px);
   }
-  .container .shape.shape2 {
-    right: 0;
-    background-color: #8BC34A;
+}
+
+.animation-2 .shape3 {
+  animation: animation2shape3 .5s ease 0s infinite alternate;
+}
+
+@keyframes animation2shape3 {
+  0% {
+    transform: translate(0, 0);
   }
-  .container .shape.shape3 {
-    bottom: 0;
-    background-color: #FFB74D;
+
+  to {
+    transform: translate(20px, -20px);
   }
-  .container .shape.shape4 {
-    bottom: 0;
-    right: 0;
-    background-color: #F44336;
+}
+
+.animation-2 .shape4 {
+  animation: animation2shape4 .5s ease 0s infinite alternate;
+}
+
+@keyframes animation2shape4 {
+  0% {
+    transform: translate(0, 0);
   }
-  
-  @-webkit-keyframes rotation {
-    from {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
-    }
-    to {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
-    }
+
+  to {
+    transform: translate(-20px, -20px);
   }
-  
-  @keyframes rotation {
-    from {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
-    }
-    to {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
-    }
+}
+
+@media screen and (max-width:600px) {
+  .content {
+    align-content: flex-start;
   }
-  
-  .animation-2 .shape1 {
-    -webkit-animation: animation2shape1 0.5s ease 0s infinite alternate;
-            animation: animation2shape1 0.5s ease 0s infinite alternate;
+
+  .content .column {
+    width: calc(50% - 30px);
   }
-  
-  @-webkit-keyframes animation2shape1 {
-    from {
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0);
-    }
-    to {
-      -webkit-transform: translate(20px, 20px);
-              transform: translate(20px, 20px);
-    }
+}
+
+@media screen and (max-width:400px) {
+  .content {
+    align-content: flex-start;
   }
-  
-  @keyframes animation2shape1 {
-    from {
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0);
-    }
-    to {
-      -webkit-transform: translate(20px, 20px);
-              transform: translate(20px, 20px);
-    }
+
+  .content .column {
+    width: calc(100% - 30px);
   }
-  .animation-2 .shape2 {
-    -webkit-animation: animation2shape2 0.5s ease 0s infinite alternate;
-            animation: animation2shape2 0.5s ease 0s infinite alternate;
-  }
-  
-  @-webkit-keyframes animation2shape2 {
-    from {
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0);
-    }
-    to {
-      -webkit-transform: translate(-20px, 20px);
-              transform: translate(-20px, 20px);
-    }
-  }
-  
-  @keyframes animation2shape2 {
-    from {
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0);
-    }
-    to {
-      -webkit-transform: translate(-20px, 20px);
-              transform: translate(-20px, 20px);
-    }
-  }
-  .animation-2 .shape3 {
-    -webkit-animation: animation2shape3 0.5s ease 0s infinite alternate;
-            animation: animation2shape3 0.5s ease 0s infinite alternate;
-  }
-  
-  @-webkit-keyframes animation2shape3 {
-    from {
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0);
-    }
-    to {
-      -webkit-transform: translate(20px, -20px);
-              transform: translate(20px, -20px);
-    }
-  }
-  
-  @keyframes animation2shape3 {
-    from {
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0);
-    }
-    to {
-      -webkit-transform: translate(20px, -20px);
-              transform: translate(20px, -20px);
-    }
-  }
-  .animation-2 .shape4 {
-    -webkit-animation: animation2shape4 0.5s ease 0s infinite alternate;
-            animation: animation2shape4 0.5s ease 0s infinite alternate;
-  }
-  
-  @-webkit-keyframes animation2shape4 {
-    from {
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0);
-    }
-    to {
-      -webkit-transform: translate(-20px, -20px);
-              transform: translate(-20px, -20px);
-    }
-  }
-  
-  @keyframes animation2shape4 {
-    from {
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0);
-    }
-    to {
-      -webkit-transform: translate(-20px, -20px);
-              transform: translate(-20px, -20px);
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .content {
-      align-content: flex-start;
-    }
-    .content .column {
-      width: calc(50% - 30px);
-    }
-  }
-  @media screen and (max-width: 400px) {
-    .content {
-      align-content: flex-start;
-    }
-    .content .column {
-      width: calc(100% - 30px);
-    }
-  }
+}
