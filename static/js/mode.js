@@ -18,11 +18,13 @@ var modeLS = window.localStorage.getItem('mode');
 // 判断加载相应模式 CSS
 function addDarkmodeCSS(mode) {
   var githubDarkCSS = document.querySelector("#github-dark");
+  var githubLightCSS = document.querySelector("#github-light");
   var modeTag = document.querySelector("#modeTag");
   var highlightjsNightCSS = document.querySelector("#highlightjsThemeNight");
+  [githubDarkCSS.disabled, githubLightCSS.disabled] = [true, true];
   if (mode === "github-light") {
-    githubDarkCSS.disabled = true;
     if (highlightjsNightCSS) highlightjsNightCSS.disabled = true;
+    githubLightCSS.disabled = false;
     modeTag.innerHTML = "白天";
   } else {
     if (highlightjsNightCSS) highlightjsNightCSS.disabled = false;

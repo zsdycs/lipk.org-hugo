@@ -85,18 +85,6 @@ a.list:hover {
     color: #434343;
 }
 
-@media screen and (max-width:1220px) {
-    .masthead {
-        border-bottom: 1px solid #343434;
-        background-color: #202020;
-    }
-
-    .masthead .menu .active a,
-    .masthead .menu .active a:hover {
-        border: 1px solid #a0a0a0 !important;
-    }
-}
-
 .home .wrapper {
     background: #181818;
 }
@@ -110,12 +98,35 @@ main.index:hover aside {
 }
 
 article.index {
-    border-top: 2px solid #4c4c4c;
-    border-bottom: 2px solid #4c4c4c;
+    border-top: 2px solid #343434;
+    border-bottom: 2px solid #343434;
+}
+
+article.index a,
+article.index ruby.link,
+article.index ruby.link:hover a,
+article.index ruby.link:hover rt {
+  color: #d59500;
+}
+
+article.index ruby.link:hover {
+  border-bottom: 1px solid #d59500;
 }
 
 @media only screen and (max-width:668px) {
     aside.index {
         background: #181818;
+    }
+}
+
+@media screen and (max-width:1220px) {
+    .masthead {
+        border-bottom: 1px solid #343434;
+        background-color: #202020;
+    }
+
+    .masthead .menu .active a,
+    .masthead .menu .active a:hover {
+        border: 1px solid #a0a0a0 !important;
     }
 }

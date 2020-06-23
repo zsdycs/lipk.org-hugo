@@ -95,6 +95,7 @@ li {
 a {
   padding-bottom: 2px;
   text-decoration: none;
+  font-weight: bolder;
 }
 
 sup a {
@@ -322,14 +323,6 @@ footer.index {
   width: 600px;
 }
 
-@-ms-viewport {
-  width: device-width;
-}
-
-@viewport {
-  width: device-width;
-}
-
 iframe,
 video {
   display: block;
@@ -392,7 +385,6 @@ main {
   user-select: none;
 }
 
-.cn blockquote:not(:hover),
 .home blockquote {
   border-left-color: transparent;
 }
@@ -420,7 +412,7 @@ main {
 
 @media only screen and (max-width:668px) {
   main.index {
-    margin: 1em;
+    margin: 25px;
     padding: 0 1em;
     max-width: 100%;
   }
@@ -430,7 +422,6 @@ main {
     overflow: hidden;
     margin: 2em auto 1em;
     width: 100%;
-    background: #eee;
   }
 
   aside.index #logo {
@@ -481,7 +472,7 @@ main {
 
   .main {
     margin-left: 0;
-    padding: 40px 25px;
+    padding: 40px 25px 5px;
     width: auto;
     min-height: auto;
     border-left: none !important;
@@ -645,4 +636,12 @@ main {
     padding-left: 10px;
     border-left: none;
   }
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
 }
