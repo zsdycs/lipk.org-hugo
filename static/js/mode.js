@@ -15,31 +15,30 @@ if (window.localStorage.getItem('mode') == null) {
 
 var modeLS = window.localStorage.getItem('mode');
 
-// 判断是否加载 CSS
+// 判断加载相应模式 CSS
 function addDarkmodeCSS(mode) {
   var githubDarkCSS = document.querySelector("#github-dark");
-  var darkmodeTag = document.querySelector("#darkmodeTag");
+  var modeTag = document.querySelector("#modeTag");
   var highlightjsNightCSS = document.querySelector("#highlightjsThemeNight");
   if (mode === "github-light") {
     githubDarkCSS.disabled = true;
     if (highlightjsNightCSS) highlightjsNightCSS.disabled = true;
-    darkmodeTag.innerHTML = "白天";
+    modeTag.innerHTML = "白天";
   } else {
-  var githubDarkCSS = document.querySelector("#github-dark");
-    githubDarkCSS.disabled = false;
     if (highlightjsNightCSS) highlightjsNightCSS.disabled = false;
     if (mode === "github-dark") {
-      darkmodeTag.innerHTML = "黑夜";
+      githubDarkCSS.disabled = false;
+      modeTag.innerHTML = "黑夜";
     }
   }
 }
 
-// 画面加载时，判断是否加载 CSS
+// 画面加载时，加载相应模式 CSS
 addDarkmodeCSS(modeLS);
 
 // 切换黑夜白天模式
-var darkmodeTag = document.querySelector("#darkmodeTag");
-darkmodeTag.addEventListener("click", function () {
+var modeTag = document.querySelector("#modeTag");
+modeTag.addEventListener("click", function () {
   var nowDarkmode = window.localStorage.getItem('mode');
   var beaudar = document.querySelector('iframe');
   var message = {
