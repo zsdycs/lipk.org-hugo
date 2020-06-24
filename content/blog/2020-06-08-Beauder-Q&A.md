@@ -3,7 +3,6 @@ title: '关于 Beaudar 的 Q&A'
 date: '2020-06-08'
 slug: 'beauder-qa'
 disable_mathjax: true
-disable_highlight: true
 ---
 
 ### Q：api.github.com 请求失败。
@@ -50,3 +49,33 @@ api.github.com 部分 CDN 服务器被墙，导致请求失败。
 - 点击图片，打开新标签页图片源链接。
 - 错误信息，使用对话框形式友好呈现。
 - 评论头像，增加可使用 Tab 键选中。
+
+---
+
+### Q：如何在引用的页面修改 Beaudar 的主题
+
+因为 Beaudar 出于安全考虑使用了 iframe 来进行隔离，通过 JS 是无法跨域修改的。可以使用 postMessage 来进行跨域通信。
+
+例子如下：
+
+```javascript
+/**
+ * @theme 可选：
+ * [
+ *   'icy-dark',
+ *   'dark-blue',
+ *   'photon-dark',
+ *   'github-dark',
+ *   'github-light',
+ *   'github-dark-orange'
+ * ]
+ */
+var message = {
+  type: 'set-theme',
+  theme: 'github-light'
+};
+var nowDarkmode = window.localStorage.getItem('mode');
+var beaudar = document.querySelector('iframe');
+// 与 beaudar 通信
+beaudar.contentWindow.postMessage(message, 'https://beaudar.lipk.org');
+```
