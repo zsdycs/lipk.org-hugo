@@ -1,3 +1,4 @@
+(function () {
 // 设置 mode 默认值
 if (window.localStorage.getItem('mode') == null) {
   var hours = new Date();
@@ -19,9 +20,16 @@ var modeLS = window.localStorage.getItem('mode');
 function addDarkmodeCSS(mode) {
   var githubDarkCSS = document.querySelector('#github-dark');
   var githubLightCSS = document.querySelector('#github-light');
+
   var modeTag = document.querySelector('#modeTag');
   var highlightjsNightCSS = document.querySelector('#highlightjsThemeNight');
-  [githubDarkCSS.disabled, githubLightCSS.disabled] = [true, true];
+
+  // 初始化
+  [
+    githubDarkCSS.disabled,
+    githubLightCSS.disabled
+  ] = [true, true];
+
   if (mode === 'github-light') {
     if (highlightjsNightCSS) highlightjsNightCSS.disabled = true;
     githubLightCSS.disabled = false;
@@ -47,20 +55,29 @@ modeTag.addEventListener('click', function () {
     type: 'set-theme',
     theme: 'github-light'
   };
-  if (nowDarkmode !== 'github-light') {
-    // 修改 localStorage
-    window.localStorage.setItem('mode', 'github-light');
-    // 加载样式
-    addDarkmodeCSS('github-light');
-  } else if (nowDarkmode !== 'github-dark') {
+  /**
+   * 顺序：
+   *       -> 'github-light'        // 白天
+   *       -> 'github-dark'         // 黑夜
+   *       -> 'github-dark-orange'  // 橘暮
+   *       -> 'dark-blue'           // 幽瞑
+   *       -> 'icy-dark'            // 雨晨
+   *       -> 'photon-dark'         // 紫夜
+   */
+  if (nowDarkmode === 'github-light') {
+    // github-light -> github-dark
     message.theme = 'github-dark';
-    // 修改 localStorage
     window.localStorage.setItem('mode', 'github-dark');
-    // 加载样式
     addDarkmodeCSS('github-dark');
+  } else if (nowDarkmode === 'github-dark') {
+    // github-dark -> github-light
+    message.theme = 'github-light';
+    window.localStorage.setItem('mode', 'github-light');
+    addDarkmodeCSS('github-light');
   }
   // 与 beaudar 通信
   if (window.localStorage.getItem('beaudar') === 'true') {
     beaudar.contentWindow.postMessage(message, 'https://beaudar.lipk.org');
   }
 });
+})();

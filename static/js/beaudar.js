@@ -1,3 +1,22 @@
+(function () {
+/**
+ * 获取页面的相对路径
+ * 例如：http://localhost:1313/food/ 
+ * return '/food/'
+ */
+function getUrlRelativePath() {
+  var url = document.location.toString();
+  var arrUrl = url.split('//');
+
+  var start = arrUrl[1].indexOf('/');
+  var relUrl = arrUrl[1].substring(start);
+
+  if (relUrl.indexOf('?') != -1) {
+    relUrl = relUrl.split('?')[0];
+  }
+  return relUrl;
+}
+
 // 默认为没有加载 beaudar
 window.localStorage.setItem('beaudar', 'false');
 /**
@@ -74,3 +93,4 @@ if (getUrlRelativePath().length = '/about/'.length &&
 if (document.title === '执手对影成双 - 404 Page not found') {
   addBeaudar()
 }
+})();
