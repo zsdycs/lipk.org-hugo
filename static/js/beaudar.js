@@ -15,17 +15,13 @@ function beaudarEnd() {
     mutationsList.forEach(function (element) {
       if (element.type === 'attributes' && element.target.className === 'beaudar') {
         var loading = document.getElementById('loading');
+        loading.style.display = 'none';
         // 默认 github-light
         var message = {
           type: 'set-theme',
-          theme: 'github-light'
+          theme: window.localStorage.getItem('mode')
         };
-        var nowDarkmode = window.localStorage.getItem('mode');
         var beaudar = document.querySelector('iframe');
-        loading.style.display = 'none';
-        if (nowDarkmode === 'github-dark') {
-          message.theme = 'github-dark';
-        }
         // 与 beaudar 通信
         beaudar.contentWindow.postMessage(message, 'https://beaudar.lipk.org');
       }
