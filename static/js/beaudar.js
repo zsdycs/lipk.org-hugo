@@ -23,7 +23,7 @@ function beaudarEnd() {
         var nowDarkmode = window.localStorage.getItem('mode');
         var beaudar = document.querySelector('iframe');
         loading.style.display = 'none';
-        if (nowDarkmode === "github-dark") {
+        if (nowDarkmode === 'github-dark') {
           message.theme = 'github-dark';
         }
         // 与 beaudar 通信

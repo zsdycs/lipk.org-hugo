@@ -17,20 +17,20 @@ var modeLS = window.localStorage.getItem('mode');
 
 // 判断加载相应模式 CSS
 function addDarkmodeCSS(mode) {
-  var githubDarkCSS = document.querySelector("#github-dark");
-  var githubLightCSS = document.querySelector("#github-light");
-  var modeTag = document.querySelector("#modeTag");
-  var highlightjsNightCSS = document.querySelector("#highlightjsThemeNight");
+  var githubDarkCSS = document.querySelector('#github-dark');
+  var githubLightCSS = document.querySelector('#github-light');
+  var modeTag = document.querySelector('#modeTag');
+  var highlightjsNightCSS = document.querySelector('#highlightjsThemeNight');
   [githubDarkCSS.disabled, githubLightCSS.disabled] = [true, true];
-  if (mode === "github-light") {
+  if (mode === 'github-light') {
     if (highlightjsNightCSS) highlightjsNightCSS.disabled = true;
     githubLightCSS.disabled = false;
-    modeTag.innerHTML = "白天";
+    modeTag.innerHTML = '白天';
   } else {
     if (highlightjsNightCSS) highlightjsNightCSS.disabled = false;
-    if (mode === "github-dark") {
+    if (mode === 'github-dark') {
       githubDarkCSS.disabled = false;
-      modeTag.innerHTML = "黑夜";
+      modeTag.innerHTML = '黑夜';
     }
   }
 }
@@ -39,25 +39,25 @@ function addDarkmodeCSS(mode) {
 addDarkmodeCSS(modeLS);
 
 // 切换黑夜白天模式
-var modeTag = document.querySelector("#modeTag");
-modeTag.addEventListener("click", function () {
+var modeTag = document.querySelector('#modeTag');
+modeTag.addEventListener('click', function () {
   var nowDarkmode = window.localStorage.getItem('mode');
   var beaudar = document.querySelector('iframe');
   var message = {
     type: 'set-theme',
     theme: 'github-light'
   };
-  if (nowDarkmode !== "github-light") {
+  if (nowDarkmode !== 'github-light') {
     // 修改 localStorage
     window.localStorage.setItem('mode', 'github-light');
     // 加载样式
-    addDarkmodeCSS("github-light");
-  } else if (nowDarkmode !== "github-dark") {
+    addDarkmodeCSS('github-light');
+  } else if (nowDarkmode !== 'github-dark') {
     message.theme = 'github-dark';
     // 修改 localStorage
     window.localStorage.setItem('mode', 'github-dark');
     // 加载样式
-    addDarkmodeCSS("github-dark");
+    addDarkmodeCSS('github-dark');
   }
   // 与 beaudar 通信
   if (window.localStorage.getItem('beaudar') === 'true') {
