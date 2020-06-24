@@ -100,7 +100,7 @@ hr {
 }
 
 .home .wrapper {
-  background: #f6f8fa;
+  background: #efefef;
 }
 
 main.index {
@@ -108,7 +108,7 @@ main.index {
 }
 
 main.index:hover aside {
-  background: #f6f8fa;
+  background: #efefef;
 }
 
 article.index {
