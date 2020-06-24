@@ -10,7 +10,7 @@ disable_mathjax: true
 
 # C
 
-## [彩虹戚风](http://www.xiachufang.com/recipe/102756535/)
+## [彩虹戚风](http://www.xiachufang.com/recipe/102756535/) { #rainbow-qifeng }
 
 **蛋黄糊部分：** 蛋黄 75 ，糖粉 30 ，玉米油 65 ，牛奶 65 ，低筋面粉 14（各），颜色：红曲粉（红），胡萝卜粉（黄），南瓜粉（绿），抹茶粉（蓝），蝶豆花粉（紫）；  
 **蛋白霜：** 蛋白 200 ，柠檬汁 几滴，糖粉 60 。  
@@ -18,12 +18,12 @@ disable_mathjax: true
 
 # N
 
-## [奶油](http://www.xiachufang.com/recipe/1048159/)
+## [奶油](http://www.xiachufang.com/recipe/1048159/) { #cream }
 
 打发奶油的首要条件是：淡奶油 **不能选择雀巢** 的。欧登堡打发率好于安佳。在打发前放糖，打到不能流动，刮后表面细滑结束。
 
 # Q
 
-## [戚风](http://www.xiachufang.com/recipe/101776918/)
+## [戚风](http://www.xiachufang.com/recipe/101776918/) { #qifeng }
 
 鸡蛋 5 ，牛奶 80 ，糖 60 ，低筋粉 110 ，油 若干，柠檬汁 几滴。蛋清分离，蛋清盘无水无油无蛋黄，低筋粉和糖过筛后，混合牛奶蛋黄。蛋清加柠檬汁和 1/3 糖，起泡放剩余 1/2 白糖，泡沫细腻放剩余的。蛋清蛋黄混合先放 1/3 蛋清，均匀后放剩下的。

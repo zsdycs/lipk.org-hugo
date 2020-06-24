@@ -6,7 +6,7 @@ disable_highlight: true
 disable_mathjax: true
 ---
 
-## 引子
+## 引子 { #primer }
 
 过去一年，仅写了十来篇，虽然觉得很少，但也是个好的开始。
 

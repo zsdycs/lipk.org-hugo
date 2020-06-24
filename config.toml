@@ -86,6 +86,7 @@ publishDir = "docs"
                 "js/fix-footnote.js",
                 "js/external-link.js",
                 "js/alt-title.js",
+                "js/header-link.js",
                 "js/reset-scrollTop.js",
                 ]
     author = '李鹏坤'

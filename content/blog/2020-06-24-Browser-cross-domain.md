@@ -5,7 +5,7 @@ slug: 'browser-cross-domain'
 disable_mathjax: true
 ---
 
-## Chrome
+## Chrome { #chrome }
 
 右键快捷方式「目标」添加 `--user-data-dir="C:/Chrome dev session" --disable-web-security`，要注意“--”前有空格。
 
@@ -15,11 +15,11 @@ disable_mathjax: true
 "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --user-data-dir="C:/Chrome dev session" --disable-web-security
 ```
 
-## Firefox
+## Firefox { #firefox }
 
 目前实测网络上流传的，通过修改设置跨域的方法都失效了，使用 [CORS Everywhere](https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/) 这个插件吧。
 
-## Internet Explorer
+## Internet Explorer { #internet-explorer }
 
 1. 设置，打开「Internet选项」*インターネットオプション*。
 2. 选择页签「安全」*セキュリティ*。

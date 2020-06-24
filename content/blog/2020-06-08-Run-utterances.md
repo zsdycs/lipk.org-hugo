@@ -8,7 +8,7 @@ disable_mathjax: true
 > 应 [@aixiu](https://github.com/aixiu) 需要本教程，本文将从 Utterances 是如何工作的；如何在本地及生产环境运行；身份授权 oauth 代码配置及运行。
 > 这 3 个方面进行讲解。同理，本文适用于 [Beaudar(表达)](http://beaudar.lipk.org)
 
-## Utterances 是如何工作的
+## Utterances 是如何工作的 { #how-utterances-work }
 
 Utterances（下面简称“UT”）有两份代码，一份是提供 client.js 的前端代码，一份是用于身份授权的“后端”代码。
 
@@ -31,9 +31,9 @@ Utterances（下面简称“UT”）有两份代码，一份是提供 client.js 
 
 这样下来，我们知道，除了要有 [utterance/utterances](https://github.com/utterance/utterances) 和 [utterance/utterances-oauth](https://github.com/utterance/utterances-oauth) 这两份代码，还要有一个 GitHub app 和一个用于创建 issue 的用户。
 
-## 如何在本地及生产环境运行
+## 如何在本地及生产环境运行 { #how-to-run-in-local-and-production-environment }
 
-### 本地运行调试
+### 本地运行调试 { #run-and-debug-locally }
 
 基本的操作可以参考 [UT 的贡献文档](https://github.com/utterance/utterances/blob/master/CONTRIBUTING.md) 或翻译后的 [Beaudar 的贡献文档](https://github.com/beaudar/beaudar/blob/master/CONTRIBUTING.MD)。
 
@@ -41,18 +41,18 @@ Utterances（下面简称“UT”）有两份代码，一份是提供 client.js 
 
 在本地运行的时候，如果你在本地运行引用 UT 的站点，也是可以通过请求 `http://localhost:4000/client.js` 使用的。因为 UT 的后端，“ORIGINS” 来源设置了允许来自本地的请求。
 
-### 生产环境部署
+### 生产环境部署 { #production-environment-deployment }
 
 UT 是基于 node 的，在 package.json 中，有关于部署的命令，predeploy（预部署）与 deploy（部署），可以看出，生产环境使用的是 `/dist` 文件夹下的文件。
 在预部署时是在 build（构建/编译）代码，并生成 `/dist/CNAME` 文件，CNAME 是将站点托管到 GitHub 绑定自定义域名的必须文件，详情可到 [github 自定义域](https://help.github.com/cn/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site)。
 
 部署时是在使用 [gh-pages](https://www.npmjs.com/package/gh-pages) 这个插件，将 `/dist` 的内容 push 到 gh-pages 分支，为什么要放到这个奇怪的分支下？可以在 [github 配置发布源](https://help.github.com/cn/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)，得到解答，你完全可以配置 [parcel](https://parceljs.org/) 将默认的打包输出文件夹 `/dist` 改为 `/docs`，使用 `/docs` 下的文件作为发布源。
 
-## 身份授权代码的配置及运行
+## 身份授权代码的配置及运行 { #identity-authorization-code-configuration-and-operation }
 
 [utterance/utterances-oauth](https://github.com/utterance/utterances-oauth) 这份代码使用的是该作者维护的 [cfworker](https://github.com/cfworker/cfworker)，在查看该库的资料时看到了[一个有趣的 issue](https://github.com/cfworker/cfworker/issues/31)，让我对 [Deno](https://deno.land/) 的未来增加期待了。
 
-### 配置与运行
+### 配置与运行 { #configuration-and-operation }
 
 我们需要在根目录建立一个 `.env` 文件，具体说明可以在 [beaudar-oauth 的说明文档](https://github.com/beaudar/beaudar-oauth) 查看。
 在本地运行可能会出错，需要在 sh 下运行。可以用 git 自带的 sh。如果你已经安装了 git，只要将 `C:\Program Files\Git\bin` 添加到环境变量，命令行执行 `sh`，就可进入 sh，这时可以直接执行 `cfworker run --watch --inspect src/index.ts` 来启动程序。

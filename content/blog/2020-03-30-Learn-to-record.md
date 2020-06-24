@@ -12,9 +12,9 @@ disable_mathjax: true
 
 在实习时，我在总结会上感慨的说到。
 
-## 一定要学会 Markdown！
+## 一定要学会 Markdown！ { #must-learn-markdown }
 
-### - 为何我会去做笔记？
+### - 为何我会去做笔记？ { #why-do-i-take-notes }
 
 Markdown(MD) 是 **非常简单的** 文本标记语言。  
 可以让我们很容易，就写出具有排版格式的文本。
@@ -28,7 +28,7 @@ Markdown(MD) 是 **非常简单的** 文本标记语言。
 标题、列表、加粗、斜体、删除样式、块、引用、超链接。  
 共 8 项。
 
-### - MD 难吗？
+### - MD 难吗？ { #is-md-difficult }
 
 下面我介绍以上 8 种语法。
 
@@ -43,11 +43,11 @@ Markdown(MD) 是 **非常简单的** 文本标记语言。
 
    效果是这样的：
 
-# 一级标题
+# 一级标题 { #first-level-heading }
 
-## 二级标题
+## 二级标题 { #second-level-heading }
 
-### 三级标题
+### 三级标题 { #third-level-heading }
 
    简单吧~ 你可以根据需要，增加标题级别。  
    要注意的是，因为 Markdown 是没有唯一的查看软件的。  
@@ -156,12 +156,12 @@ Markdown(MD) 是 **非常简单的** 文本标记语言。
    效果：  
    [哔哩哔哩传送门](http://bilibili.com)
 
-### - 可以用什么来写 MD 呢？
+### - 可以用什么来写 MD 呢？ { #what-can-be-used-to-write-md }
 
   我使用的是 [VS Code](https://code.visualstudio.com/)，做笔记的话可以用 [有道云笔记](http://note.youdao.com/)。  
   也可用 [Mark Text](https://www.electronjs.org/apps/marktext)，是一个 GitHub 开源的软件。
 
-### 最后两句
+### 最后两句 { #last-two-sentences }
 
 其实这里介绍的语法只是最常用的几个，还有很多特殊的语法需要自己去看文档。
 

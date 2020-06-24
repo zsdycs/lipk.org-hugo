@@ -5,7 +5,7 @@ slug: 'beauder-qa'
 disable_mathjax: true
 ---
 
-### Q：api.github.com 请求失败。
+### Q：api.github.com 请求失败。 { #request-failed }
 
 api.github.com 部分 CDN 服务器被墙，导致请求失败。
 解决思路，PC 端 host 重定向，移动端搭梯子。这里只提供 host 重定向的解决步骤。
@@ -25,21 +25,21 @@ api.github.com 部分 CDN 服务器被墙，导致请求失败。
 
 ---
 
-### Q：token 请求失败。
+### Q：token 请求失败。 { #token-request-failed }
 
 这个问题一般来说，刷新一下页面就可解决，因为 Beaudar 使用的是 [Cloudflare](https://www.cloudflare.com/) 的网络。
 在中国境内，部分地区会有网络不稳定的情况。
 
 ---
 
-### Q：缺少 "beaudar.json" 配置 或 不允许 xxx 发布到 xxx/xxx
+### Q：缺少 "beaudar.json" 配置 或 不允许 xxx 发布到 xxx/xxx { #missing-beaudar-configuration }
 
 这是因为 Beaudar 在评论输入到发表评论期间，会异步查询评论仓库的根目录是否存在 beaudar.json，并校验评论来源站点是否在文件中存在。
 如果不存在，Beaudar 将不会在目标仓库建立评论 issue。可参考 [Beaudar 代码仓库](https://github.com/beaudar/beaudar)中 [beaudar.json](https://github.com/beaudar/beaudar/blob/master/beaudar.json) 的配置。多个 origins 来源，在数组 `[]` 中填写，以 `,` 分隔。
 
 ---
 
-### Q：与 Utterances 比较，[Beaudar](http://beaudar.lipk.org) 增加了什么。
+### Q：与 Utterances 比较，[Beaudar](http://beaudar.lipk.org) 增加了什么。 { #what-does-beaudar-add-compared-to-utterances }
 
 - 中文界面，翻译符合日常使用习惯。
 - 完整头像，移动端与桌面端一致显示。
@@ -52,7 +52,7 @@ api.github.com 部分 CDN 服务器被墙，导致请求失败。
 
 ---
 
-### Q：如何在引用的页面修改 Beaudar 的主题
+### Q：如何在引用的页面修改 Beaudar 的主题 { #how-to-modify-beaudar-theme-on-the-referenced-page }
 
 因为 Beaudar 出于安全考虑使用了 iframe 来进行隔离，通过 JS 是无法跨域修改的。可以使用 postMessage 来进行跨域通信。
 
