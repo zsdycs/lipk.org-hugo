@@ -16,7 +16,6 @@ function beaudarEnd() {
       if (element.type === 'attributes' && element.target.className === 'beaudar') {
         var loading = document.getElementById('loading');
         loading.style.display = 'none';
-        // 默认 github-light
         var message = {
           type: 'set-theme',
           theme: window.localStorage.getItem('mode')
