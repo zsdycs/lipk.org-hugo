@@ -50,6 +50,7 @@ function addBeaudar() {
   script.setAttribute('repo', 'zsdycs/lipk.org');
   script.setAttribute('issue-term', 'title');
   script.setAttribute('crossorigin', 'anonymous');
+  script.setAttribute('theme', window.localStorage.getItem('mode'));
   script.async = true;
   beaudar.appendChild(script);
   // 处理评论是否加载完成
