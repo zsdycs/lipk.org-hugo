@@ -177,12 +177,4 @@
      background-color: #f6f8fa;
    }
 
-   #menu-label:focus,
-   #menu-label:hover {
-     border: 1px solid #888;
-   }
-
-   #menu-label {
-     color: #333;
-   }
  }
