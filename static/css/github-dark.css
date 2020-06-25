@@ -78,6 +78,10 @@
  /* 编辑
   <ins> <del>
  */
+ ins {
+     color: #666666;
+ }
+
  del {
      color: #777;
  }
