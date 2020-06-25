@@ -18,8 +18,9 @@ var modeLS = window.localStorage.getItem('mode');
 
 // 判断加载相应模式 CSS
 function addDarkmodeCSS(mode) {
-  var githubDarkCSS = document.querySelector('#github-dark');
   var githubLightCSS = document.querySelector('#github-light');
+  var githubDarkCSS = document.querySelector('#github-dark');
+  var githubDarkOrangeCSS = document.querySelector('#github-dark-orange');
 
   var modeTag = document.querySelector('#modeTag');
   var highlightjsNightCSS = document.querySelector('#highlightjsThemeNight');
@@ -27,8 +28,9 @@ function addDarkmodeCSS(mode) {
   // 初始化
   [
     githubDarkCSS.disabled,
-    githubLightCSS.disabled
-  ] = [true, true];
+    githubLightCSS.disabled,
+    githubDarkOrangeCSS.disabled
+  ] = [true, true, true];
 
   if (mode === 'github-light') {
     if (highlightjsNightCSS) highlightjsNightCSS.disabled = true;
@@ -40,6 +42,10 @@ function addDarkmodeCSS(mode) {
       githubDarkCSS.disabled = false;
       modeTag.innerHTML = '黑夜';
     }
+    if (mode === 'github-dark-orange') {
+      githubDarkOrangeCSS.disabled = false;
+      modeTag.innerHTML = '橘暮';
+    }
   }
 }
 
@@ -47,7 +53,7 @@ function addDarkmodeCSS(mode) {
 addDarkmodeCSS(modeLS);
 
 // 切换黑夜白天模式
-var modeTag = document.querySelector('#modeTag');
+var modeTag = document.getElementById('modeTag');
 modeTag.addEventListener('click', function () {
   var nowDarkmode = window.localStorage.getItem('mode');
   var beaudar = document.querySelector('iframe');
@@ -70,7 +76,12 @@ modeTag.addEventListener('click', function () {
     window.localStorage.setItem('mode', 'github-dark');
     addDarkmodeCSS('github-dark');
   } else if (nowDarkmode === 'github-dark') {
-    // github-dark -> github-light
+    // github-dark -> github-dark-orange
+    message.theme = 'github-dark-orange';
+    window.localStorage.setItem('mode', 'github-dark-orange');
+    addDarkmodeCSS('github-dark-orange');
+  } else if (nowDarkmode === 'github-dark-orange') {
+    // github-dark-orange -> github-light
     message.theme = 'github-light';
     window.localStorage.setItem('mode', 'github-light');
     addDarkmodeCSS('github-light');

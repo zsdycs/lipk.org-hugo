@@ -170,6 +170,7 @@
    border-top: 1px solid;
  }
 
+ ruby,
  .menu a {
    -webkit-touch-callout: none;
    -webkit-user-select: none;
@@ -396,6 +397,12 @@
    font-weight: bolder;
  }
 
+ article.index h1:hover .anchor,
+ article.index h2:hover .anchor,
+ article.index h3:hover .anchor {
+   visibility: hidden;
+ }
+
  aside.index i {
    text-align: center;
  }
@@ -451,6 +458,8 @@
      overflow: hidden;
      margin: 2em auto 1em;
      width: 100%;
+     display: flex;
+     align-items: center;
    }
 
    aside.index #logo {
@@ -481,7 +490,7 @@
 
  @media screen and (max-width:1220px) {
    .paramount {
-     padding-top: 60px;
+     padding-top: 58px;
      padding-bottom: 0;
      width: auto;
      max-width: 700px;
@@ -505,7 +514,6 @@
      padding: 40px 25px 5px;
      width: auto;
      min-height: auto;
-     border-left: none !important;
    }
 
    .masthead .menu {
