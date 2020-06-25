@@ -5,6 +5,7 @@ preserveTaxonomyNames = true
 enableEmoji = true
 disableRSS = false
 publishDir = "docs"
+ignoreFiles = [ "2020-06-24-test.md" ]
 
 [permalinks]
   blog = "/blog/:year/:month/:day/:slug/"
@@ -87,6 +88,7 @@ publishDir = "docs"
                 "js/alt-title.js",
                 "js/header-link.js",
                 "js/reset-scrollTop.js",
+                "js/checkbox-list.js"
                 ]
     author = '李鹏坤'
     githubContentURL = "http://github.com/zsdycs/lipk.org/edit/master/content/"
