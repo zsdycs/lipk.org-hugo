@@ -7,7 +7,7 @@
     if (n === 0) continue;
     var el = quote.children[n - 1];
     if (!el || el.nodeName !== 'P') continue;
-    // right-align a quote footer if it starts with ---
+    // 右对齐 p 如果开头为: '  —' 或 '  ——'
     if (/^(  —|  ——)/.test(el.textContent)) el.style.textAlign = 'right';
   }
 })();

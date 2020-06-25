@@ -78,7 +78,6 @@ publishDir = "docs"
                 "js/indentation-el.js",
                 "js/mode.js",
                 "js/beaudar.js",
-                "js/fix-toc.js",
                 "js/math-code.js",
                 "js/center-img.js",
                 "js/right-quote.js",
