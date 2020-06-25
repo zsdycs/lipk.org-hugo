@@ -1,156 +1,188 @@
-del {
-  color: gray;
-}
+ /* 根元素
+  <html>
+ */
 
-a {
-  color: #0366d6;
-}
+ /* 章节
+  <body> <section> <nav> <article> <aside> <h1*6> <header> <footer> <address> <main>
+ */
 
-a:hover {
-  border-bottom: 1px solid #0366d6;
-}
+ /* 组织内容
+  <p> <hr> <pre> <blockquote> <ol> <ul> <li> <dl> <dt> <dd> <figure> <figcaption> <div>
+ */
+ hr {
+   color: #e1e4e8;
+ }
 
-.active a {
-  border-bottom: 1px solid #000;
-  color: #000;
-}
+ pre {
+   color: #bcbcbc;
+ }
 
-.main {
-  border-left: 1px solid #e1e4e8;
-}
+ blockquote {
+   border-left: 3px solid #c8c8c8;
+   color: #5d5d5d;
+ }
 
-.masthead {
-  background-color: #fff;
-}
+ /* 文字形式
+  <a> <em> <strong> <small> <s> <cite> <q> <dfn> <abbr> <time> <code> <var> <samp> <kbd>
+  <sub> <sup> <i> <b> <u> <mark> <ruby> <rt> <rp> <bdi> <bdo> <span> <br> <wbr> 
+ */
+ a {
+   color: #0366d6;
+ }
 
-.copyright a,
-.masthead .menu a,
-.post-nav a,
-a.list {
-  color: #000;
-}
+ a:hover {
+   border-bottom: 1px solid #0366d6;
+ }
 
-.copyright a:hover,
-.masthead .menu a:hover,
-.post-nav a:hover,
-a.list:hover {
-  border-bottom: 1px solid #000;
-}
+ .active a {
+   border-bottom: 1px solid #000;
+   color: #000;
+ }
 
-.subtitle {
-  color: #666;
-}
+ .copyright a,
+ .masthead .menu a,
+ .post-nav a,
+ a.list {
+   color: #000;
+ }
 
-table {
-  border-top: 1px solid #666;
-}
+ .copyright a:hover,
+ .masthead .menu a:hover,
+ .post-nav a:hover,
+ a.list:hover {
+   border-bottom: 1px solid #000;
+ }
 
-table,
-table thead th {
-  border-bottom: 1px solid #666;
-}
+ code {
+   background: #e8e8e8;
+   color: #000;
+ }
 
-tfoot,
-thead,
-tr:nth-child(even) {
-  background: #f8f8f8;
-}
+ /* 编辑
+  <ins> <del>
+ */
+ ins {
+   color: #777;
+ }
 
-blockquote {
-  border-left: 3px solid #c8c8c8;
-  color: #5d5d5d;
-}
+ del {
+   color: gray;
+ }
 
-code {
-  background: #e8e8e8;
-  color: #000;
-}
+ /* 嵌入内容
+  <img> <iframe> <embed> <object> <param> <video> <audio> <source> <track> <canvas> <map>
+  <area> <area> <map> <svg> <math>
+ */
+ img[src$="#border"] {
+   border: 1px solid #e1e4e8;
+   box-shadow: 5px 5px 5px #f6f8fa;
+ }
 
-pre {
-  color: #bcbcbc;
-}
+ /* 表格
+  <table> <caption> <colgroup> <col> <tbody> <thead> <tfoot> <tr> <td> <th>
+ */
+ thead {
+   background-color: #f6f8fa;
+ }
 
-ins {
-  color: #777;
-}
+ table tr:nth-child(2n) {
+   background-color: #f6f8fa;
+ }
 
-img[src$="#border"] {
-  border: 1px solid #e1e4e8;
-  box-shadow: 5px 5px 5px #f6f8fa;
-}
+ td,
+ th {
+   border: 1px solid #e1e4e8;
+ }
 
-hr {
-  color: #e1e4e8;
-}
+ /* 表单
+  <form> <fieldset> <legend> <label> <input> <button> <select> <datalist> <optgroup> <option>
+  <select> <textarea> <keygen> <output> <progress> <meter>
+ */
 
-#Msg {
-  background: #ffffe0;
-}
+ /* 交互元素
+  <details> <summary> <menuitem> <menu>
+ */
 
-#TableOfContents {
-  background-color: #f8f8f8;
-}
+ /* 选择器 class id  */
+ .main {
+   border-left: 1px solid #e1e4e8;
+ }
 
-#eof {
-  color: #c3c3c3;
-}
+ .masthead {
+   background-color: #fff;
+ }
 
-::selection {
-  background: #fefecc;
-}
+ .subtitle {
+   color: #666;
+ }
 
-.home .wrapper {
-  background: #efefef;
-}
+ #Msg {
+   background: #ffffe0;
+ }
 
-main.index {
-  background-color: #fff;
-}
+ #eof {
+   color: #c3c3c3;
+ }
 
-main.index:hover aside {
-  background: #efefef;
-}
+ .home .wrapper {
+   background: #efefef;
+ }
 
-article.index {
-  border-top: 2px solid #e1e4e8;
-  border-bottom: 2px solid #e1e4e8;
-}
+ /* 伪类 */
+ ::selection {
+   background: #fefecc;
+ }
 
-article.index a,
-article.index ruby.link,
-article.index ruby.link:hover a,
-article.index ruby.link:hover rt {
-  color: #d59500;
-}
+ /* 首页 */
+ main.index {
+   background-color: #fff;
+ }
 
-article.index ruby.link:hover {
-  border-bottom: 1px solid #d59500;
-}
+ main.index:hover aside {
+   background: #efefef;
+ }
 
-@media only screen and (max-width:668px) {
-  aside.index {
-    background: #f6f8fa;
-  }
-}
+ article.index {
+   border-top: 2px solid #e1e4e8;
+   border-bottom: 2px solid #e1e4e8;
+ }
 
-@media screen and (max-width:1220px) {
+ article.index a,
+ article.index ruby.link,
+ article.index ruby.link:hover a,
+ article.index ruby.link:hover rt {
+   color: #d59500;
+ }
 
-  .masthead .menu .active a,
-  .masthead .menu .active a:hover {
-    border: 1px solid #000 !important;
-  }
+ article.index ruby.link:hover {
+   border-bottom: 1px solid #d59500;
+ }
 
-  .masthead {
-    border-bottom: 1px solid #e1e4e8;
-    background-color: #f6f8fa;
-  }
+ @media only screen and (max-width:668px) {
+   aside.index {
+     background: #f6f8fa;
+   }
+ }
 
-  #menu-label:focus,
-  #menu-label:hover {
-    border: 1px solid #888;
-  }
+ /* 移动端与 PC 端适配 */
+ @media screen and (max-width:1220px) {
 
-  #menu-label {
-    color: #333;
-  }
-}
+   .masthead .menu .active a,
+   .masthead .menu .active a:hover {
+     border: 1px solid #000 !important;
+   }
+
+   .masthead {
+     border-bottom: 1px solid #e1e4e8;
+     background-color: #f6f8fa;
+   }
+
+   #menu-label:focus,
+   #menu-label:hover {
+     border: 1px solid #888;
+   }
+
+   #menu-label {
+     color: #333;
+   }
+ }

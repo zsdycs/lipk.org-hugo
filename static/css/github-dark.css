@@ -1,132 +1,182 @@
-body,
-html {
-    background-color: #181818;
-}
+ /* 根元素
+  <html>
+ */
+ html {
+     color: #979797;
+     background-color: #181818;
+ }
 
-body {
-    color: #979797;
-}
+ /* 章节
+  <body> <section> <nav> <article> <aside> <h1*6> <header> <footer> <address> <main>
+ */
+ body {
+     color: #979797;
+     background-color: #181818;
+ }
 
-hr {
-    color: #343434;
-}
+ /* 组织内容
+  <p> <hr> <pre> <blockquote> <ol> <ul> <li> <dl> <dt> <dd> <figure> <figcaption> <div>
+ */
+ hr {
+     color: #343434;
+ }
 
-.main {
-    border-left: 1px solid #343434;
-}
+ blockquote {
+     border-left: 3px solid #414141;
+     color: #777;
+ }
 
-a {
-    color: #4183c4;
-}
+ /* 文字形式
+  <a> <em> <strong> <small> <s> <cite> <q> <dfn> <abbr> <time> <code> <var> <samp> <kbd>
+  <sub> <sup> <i> <b> <u> <mark> <ruby> <rt> <rp> <bdi> <bdo> <span> <br> <wbr> 
+ */
+ a {
+     color: #4183c4;
+ }
 
-a:hover {
-    border-bottom: 1px solid #4183c4;
-}
+ a:hover {
+     border-bottom: 1px solid #4183c4;
+ }
 
-.copyright a {
-    color: #979797;
-}
+ .copyright a {
+     color: #979797;
+ }
 
-del {
-    color: #777;
-}
+ .copyright a,
+ .masthead .menu a,
+ .post-nav a,
+ a.list {
+     color: #979797;
+ }
 
-img {
-    filter: brightness(80%);
-}
+ .copyright a:hover,
+ .masthead .menu a:hover,
+ .post-nav a:hover,
+ a.list:hover {
+     border-bottom: 1px solid #979797;
+ }
 
-code {
-    background: #303030;
-    color: #737373;
-}
+ .masthead .menu .active a {
+     border-bottom: 1px solid #a0a0a0;
+     color: #a0a0a0;
+ }
 
-code.hljs {
-    background: #202020;
-    color: #b1b1b1;
-}
+ code {
+     background: #303030;
+     color: #737373;
+ }
 
-.hljs span {
-    filter: brightness(90%);
-}
+ code.hljs {
+     background: #202020;
+     color: #b1b1b1;
+ }
 
-blockquote {
-    border-left: 3px solid #414141;
-    color: #777;
-}
+ .hljs span {
+     filter: brightness(90%);
+ }
 
-::selection {
-    background: #27673d;
-}
+ /* 编辑
+  <ins> <del>
+ */
+ del {
+     color: #777;
+ }
 
-.masthead {
-    background-color: #181818;
-}
+ /* 嵌入内容
+  <img> <iframe> <embed> <object> <param> <video> <audio> <source> <track> <canvas> <map>
+  <area> <area> <map> <svg> <math>
+ */
+ img {
+     filter: brightness(80%);
+ }
 
-.copyright a,
-.masthead .menu a,
-.post-nav a,
-a.list {
-    color: #979797;
-}
+ /* 表格
+  <table> <caption> <colgroup> <col> <tbody> <thead> <tfoot> <tr> <td> <th>
+ */
+ thead {
+     background-color: #202020;
+ }
 
-.copyright a:hover,
-.masthead .menu a:hover,
-.post-nav a:hover,
-a.list:hover {
-    border-bottom: 1px solid #979797;
-}
+ table tr:nth-child(2n) {
+     background-color: #202020;
+ }
 
-.masthead .menu .active a {
-    border-bottom: 1px solid #a0a0a0;
-    color: #a0a0a0;
-}
+ td,
+ th {
+     border: 1px solid #343434;
+ }
 
-#eof {
-    color: #434343;
-}
+ /* 表单
+  <form> <fieldset> <legend> <label> <input> <button> <select> <datalist> <optgroup> <option>
+  <select> <textarea> <keygen> <output> <progress> <meter>
+ */
 
-.home .wrapper {
-    background: #181818;
-}
+ /* 交互元素
+  <details> <summary> <menuitem> <menu>
+ */
 
-main.index {
-    background-color: #202020;
-}
+ /* 选择器 class id  */
+ .main {
+     border-left: 1px solid #343434;
+ }
 
-main.index:hover aside {
-    background: #181818;
-}
+ .masthead {
+     background-color: #181818;
+ }
 
-article.index {
-    border-top: 2px solid #343434;
-    border-bottom: 2px solid #343434;
-}
+ #eof {
+     color: #434343;
+ }
 
-article.index a,
-article.index ruby.link,
-article.index ruby.link:hover a,
-article.index ruby.link:hover rt {
-  color: #d59500;
-}
+ .home .wrapper {
+     background: #181818;
+ }
 
-article.index ruby.link:hover {
-  border-bottom: 1px solid #d59500;
-}
+ /* 伪类 */
+ ::selection {
+     background: #27673d;
+ }
 
-@media only screen and (max-width:668px) {
-    aside.index {
-        background: #181818;
-    }
-}
+ /* 首页 */
+ main.index {
+     background-color: #202020;
+ }
 
-@media screen and (max-width:1220px) {
-    .masthead {
-        border-bottom: 1px solid #343434;
-        background-color: #202020;
-    }
+ main.index:hover aside {
+     background: #181818;
+ }
 
-    .masthead .menu .active a,
-    .masthead .menu .active a:hover {
-        border: 1px solid #a0a0a0 !important;
-    }
-}
+ article.index {
+     border-top: 2px solid #343434;
+     border-bottom: 2px solid #343434;
+ }
+
+ article.index a,
+ article.index ruby.link,
+ article.index ruby.link:hover a,
+ article.index ruby.link:hover rt {
+     color: #d59500;
+ }
+
+ article.index ruby.link:hover {
+     border-bottom: 1px solid #d59500;
+ }
+
+ @media only screen and (max-width:668px) {
+     aside.index {
+         background: #181818;
+     }
+ }
+
+ /* 移动端与 PC 端适配 */
+ @media screen and (max-width:1220px) {
+     .masthead {
+         border-bottom: 1px solid #343434;
+         background-color: #202020;
+     }
+
+     .masthead .menu .active a,
+     .masthead .menu .active a:hover {
+         border: 1px solid #a0a0a0 !important;
+     }
+ }
