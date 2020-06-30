@@ -21,7 +21,7 @@
                 var tagMainPaddingTop = window.getComputedStyle(tagMain, null).getPropertyValue("padding-top");
                 document.documentElement.scrollTop = idTag.offsetTop - tagMainPaddingTop.slice(0, -2);
             } else {
-                document.documentElement.scrollTop = idTag.offsetTop - (10 + tagHeader.offsetHeight);
+                document.documentElement.scrollTop = idTag.offsetTop - (20 + tagHeader.offsetHeight);
             }
         }
     }
