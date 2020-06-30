@@ -1,4 +1,4 @@
-{{ if and (not .Params.disable_highlight) (in (string .Content) "</pre>") }}
+{{ if and (.Params._highlight) (in (string .Content) "</pre>") }}
 {{ $highlightjsThemeDay := .Site.Params.highlightjsThemeDay }}
 {{ $highlightjsThemeNight := .Site.Params.highlightjsThemeNight }}
 {{ $highCDN := (.Site.Params.highlightjsCDN) }}

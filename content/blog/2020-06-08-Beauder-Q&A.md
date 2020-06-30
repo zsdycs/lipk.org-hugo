@@ -2,7 +2,7 @@
 title: '关于 Beaudar 的 Q&A'
 date: '2020-06-08'
 slug: 'beauder-qa'
-disable_mathjax: true
+_highlight: true
 ---
 
 ### Q：api.github.com 请求失败。 { #request-failed }

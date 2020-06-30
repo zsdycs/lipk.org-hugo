@@ -2,7 +2,7 @@
 title: '常用浏览器跨域设置'
 date: '2020-06-24'
 slug: 'browser-cross-domain'
-disable_mathjax: true
+_highlight: true
 ---
 
 ## Chrome { #chrome }

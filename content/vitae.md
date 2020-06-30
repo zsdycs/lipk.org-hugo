@@ -2,7 +2,6 @@
 title: 简历
 date: '2019-12-31'
 slug: /vitae
-disable_highlight: true
 ---
 
 # 李鹏坤 { #pengkun-li }

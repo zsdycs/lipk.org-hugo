@@ -2,7 +2,7 @@
 title: 'Body，你背景图咋淡入哇？'
 date: '2020-04-16'
 slug: 'body-background-image-fade-in'
-disable_mathjax: true
+_highlight: true
 ---
 
 ## 缘由 { #reason }

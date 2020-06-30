@@ -2,8 +2,6 @@
 title: 'Ruby-rubocop 使用方法'
 date: '2020-05-15'
 slug: 'how-to-use-ruby-rubocop'
-disable_highlight: true
-disable_mathjax: true
 ---
 
 > 前段时间有个日本项目使用 Ruby on rails，因为习惯我 IDE 用的 VS Code，代码检查插件自然是要选择 ruby-rubocop 了。

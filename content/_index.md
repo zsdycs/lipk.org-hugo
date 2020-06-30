@@ -1,8 +1,6 @@
 ---
 title: cover
 date: '2019-01-26'
-disable_mathjax: true
-disable_highlight: true
 ---
 
 ### 你好，我是李鹏坤。 { #hello-my-name-is-li-pengkun }

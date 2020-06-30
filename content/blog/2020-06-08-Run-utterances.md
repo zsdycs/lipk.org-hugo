@@ -2,7 +2,7 @@
 title: '运行 Utterances 的详细教程'
 date: '2020-06-08'
 slug: 'run-utterances'
-disable_mathjax: true
+_highlight: true
 ---
 
 > 应 [@aixiu](https://github.com/aixiu) 需要本教程，本文将从 Utterances 是如何工作的；如何在本地及生产环境运行；身份授权 oauth 代码配置及运行。

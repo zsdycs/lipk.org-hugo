@@ -2,8 +2,6 @@
 title: '一篇高中的作文'
 date: '2019-01-27'
 slug: 'high-school-essay'
-disable_highlight: true
-disable_mathjax: true
 ---
 
 ## 前言 { #foreword }
