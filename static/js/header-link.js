@@ -3,6 +3,6 @@
     for (var i = 0; i < hs.length; i++) {
       h = hs[i];
       if (h.id === '') continue;
-      h.innerHTML += ' <span class="anchor"><a href="#' + h.id + '">#</a></span>';
+      h.innerHTML += ' <span class="anchor"><a href="#' + h.id + '" style="border: 0px;"><i class="fa-fw fa fa-link"></i></a></span>';
     }
   })();
