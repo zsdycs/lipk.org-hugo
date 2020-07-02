@@ -77,6 +77,7 @@ ignoreFiles = [ "2018-12-20-test.md" ]
     slogan = "执手相看，对影成双"
     customJS = [
                 "js/indentation-el.js",
+                "js/fix-toc.js",
                 "js/mode.js",
                 "js/beaudar.js",
                 "js/math-code.js",
