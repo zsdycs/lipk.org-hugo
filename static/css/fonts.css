@@ -69,6 +69,10 @@ code {
   font-weight: normal;
 }
 
+#TableOfContents .topUlChild {
+  font-size: 20px;
+}
+
 /* 首页 */
 aside.index #name {
   font-size: 18px;

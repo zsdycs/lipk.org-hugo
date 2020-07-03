@@ -377,13 +377,23 @@
  }
 
  #TableOfContents ul {
-   padding: 0 0 0 13px;
+   padding: 0px;
    list-style: none;
  }
 
  #TableOfContents a {
    transition: opacity .5s;
    opacity: 0;
+ }
+
+ #TableOfContents li a.show {
+   opacity: 1;
+ }
+
+ #TableOfContents .topUlChild,
+ #TableOfContents .secondaryUlChild {
+   margin-right: 5px;
+   vertical-align: middle;
  }
 
  /* 伪类 */

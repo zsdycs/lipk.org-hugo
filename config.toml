@@ -5,7 +5,7 @@ preserveTaxonomyNames = true
 enableEmoji = true
 disableRSS = false
 publishDir = "docs"
-ignoreFiles = [ "2018-12-20-test.md" ]
+# ignoreFiles = [ "2018-12-20-test.md" ]
 
 [permalinks]
   blog = "/blog/:year/:month/:day/:slug/"
@@ -76,20 +76,20 @@ ignoreFiles = [ "2018-12-20-test.md" ]
     footer = "&copy; 2018 - 2020 [执手对影成双](/)"
     slogan = "执手相看，对影成双"
     customJS = [
-                "js/indentation-el.js",
-                "js/fix-toc.js",
-                "js/mode.js",
-                "js/beaudar.js",
-                "js/math-code.js",
-                "js/center-img.js",
-                "js/right-quote.js",
-                "js/no-highlight.js",
-                "js/fix-footnote.js",
-                "js/external-link.js",
-                "js/alt-title.js",
-                "js/header-link.js",
-                "js/reset-scrollTop.js",
-                "js/checkbox-list.js"
+                "js/indentation-el.js",  # 缩进
+                "js/mode.js",            # 模式
+                "js/beaudar.js",         # 评论
+                "js/math-code.js",       # code 
+                "js/center-img.js",      # img
+                "js/right-quote.js",     # 引用
+                "js/no-highlight.js",    # 移除高亮
+                "js/fix-footnote.js",    # 修改
+                "js/external-link.js",   # <a> 添加 _blank
+                "js/alt-title.js",       # <img> alt -> title
+                "js/header-link.js",     # h1 h2 h3 添加锚点
+                "js/reset-scrollTop.js", # 滚动到对应锚点
+                "js/checkbox-list.js",    # 无序 checkbox list，listStyle = 'none'
+                "js/toc-powerful.js",    # 目录
                 ]
     author = '李鹏坤'
     githubContentURL = "http://github.com/zsdycs/lipk.org/edit/master/content/"
