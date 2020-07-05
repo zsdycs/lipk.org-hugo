@@ -202,6 +202,31 @@
    user-select: none;
  }
 
+ /* img::before {
+   content: "";
+   position: absolute;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #f0f3f9;
+ }
+
+ img::after {
+   content: "图片信息："attr(alt);
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   line-height: 30px;
+   background-color: rgba(0, 0, 0, .5);
+   color: white;
+   font-size: 14px;
+   text-align: center;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+ } */
+
  .masthead img {
    max-width: 166px;
  }
@@ -372,7 +397,7 @@
    margin-top: -10px;
  }
 
- #TableOfContents:hover a {
+ #TableOfContents:hover span {
    opacity: 1;
  }
 
@@ -381,12 +406,13 @@
    list-style: none;
  }
 
- #TableOfContents a {
+ #TableOfContents span {
    transition: opacity .5s;
    opacity: 0;
+   cursor: pointer;
  }
 
- #TableOfContents li a.show {
+ #TableOfContents li span.show {
    opacity: 1;
  }
 
@@ -517,6 +543,11 @@
 
  /* 移动端与 PC 端适配 */
  @media screen and (min-width:1220px) {
+   :target {
+     padding-top: 60px;
+     margin-top: 0;
+   }
+
    .masthead {
      position: sticky;
      top: 0;
@@ -524,6 +555,11 @@
  }
 
  @media screen and (max-width:1220px) {
+   :target {
+     margin-top: 0;
+     padding-top: 79px;
+   }
+
    .paramount {
      padding-top: 58px;
      padding-bottom: 0;
