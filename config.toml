@@ -87,9 +87,8 @@ ignoreFiles = [ "2018-12-20-test.md" ]
                 "js/external-link.js",   # <a> 添加 _blank
                 "js/alt-title.js",       # <img> alt -> title
                 "js/header-link.js",     # h1 h2 h3 添加锚点
-                "js/checkbox-list.js",    # 无序 checkbox list，listStyle = 'none'
+                "js/checkbox-list.js",   # 无序复选列表
                 "js/toc-powerful.js",    # 目录
-                # "js/reset-scrollTop.js", # 滚动到对应锚点
                 ]
     author = '李鹏坤'
     githubContentURL = "http://github.com/zsdycs/lipk.org/edit/master/content/"
