@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 
-{{ if .Params.show_toc }} {{ .TableOfContents }} {{ end }}
+{{ if .Params._toc }} {{ .TableOfContents }} {{ end }}
 {{ .Content }}
 <div id="eof">
   <span>EOF</span>
