@@ -38,26 +38,20 @@
  .post-nav a,
  .copyright a,
  .masthead .menu a,
- #TableOfContents a {
-   color: #000;
- }
-
  #TableOfContents li {
-  color: #000;
+   color: #000;
  }
 
  a.list:hover,
  .post-nav a:hover,
  .copyright a:hover,
  .masthead .menu a:hover,
- .masthead .menu .active a:hover,
- #TableOfContents a:hover {
+ .masthead .menu .active a:hover {
    color: #d59500;
    border-bottom: 1px solid #d59500;
  }
 
- #TableOfContents>ul li:hover,
- #TableOfContents li:hover>a {
+ #TableOfContents>ul li:hover {
   color: #d59500;
  }
 

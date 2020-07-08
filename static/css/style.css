@@ -397,7 +397,7 @@
    margin-top: -10px;
  }
 
- #TableOfContents:hover span {
+ #TableOfContents:hover p {
    opacity: 1;
  }
 
@@ -406,13 +406,20 @@
    list-style: none;
  }
 
- #TableOfContents span {
+ #TableOfContents p {
+   width: 145px;
    transition: opacity .5s;
    opacity: 0;
    cursor: pointer;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   display: inline-block;
+   vertical-align: middle;
+   margin: 0px;
  }
 
- #TableOfContents li span.show {
+ #TableOfContents li p.show {
    opacity: 1;
  }
 
@@ -551,6 +558,13 @@
    .masthead {
      position: sticky;
      top: 0;
+   }
+ }
+
+ /* 侧边目录 */
+ @media screen and (max-width:1250px) {
+   #TableOfContents {
+     display: none;
    }
  }
 
@@ -696,6 +710,7 @@
  /* 媒体 */
  @media print {
 
+   #TableOfContents,
    .masthead,
    del,
    footer {
@@ -709,7 +724,7 @@
    .main {
      margin-left: 0;
      padding-left: 10px;
-     border-left: none;
+     border: none;
    }
  }
 

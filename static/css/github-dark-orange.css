@@ -46,10 +46,11 @@
      color: #f7f7f7;
  }
 
+ a.list,
+ .post-nav a,
  .copyright a,
  .masthead .menu a,
- .post-nav a,
- a.list {
+ #TableOfContents li {
      color: #f7f7f7;
  }
 
@@ -60,6 +61,10 @@
  .masthead .menu .active a:hover {
      color: #f27052;
      border-bottom: 1px solid #f27052;
+ }
+
+ #TableOfContents>ul li:hover {
+  color: #f27052;
  }
 
  .masthead .menu .active a {

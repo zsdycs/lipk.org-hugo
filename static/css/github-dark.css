@@ -45,7 +45,8 @@
  a.list,
  .post-nav a,
  .copyright a,
- .masthead .menu a {
+ .masthead .menu a,
+ #TableOfContents li {
      color: #979797;
  }
 
@@ -56,6 +57,10 @@
  .masthead .menu .active a:hover {
      color: #4183c4;
      border-bottom: 1px solid #4183c4;
+ }
+
+ #TableOfContents>ul li:hover {
+  color: #4183c4;
  }
 
  .masthead .menu .active a {

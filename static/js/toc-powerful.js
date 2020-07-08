@@ -32,13 +32,41 @@
   }
 
   /**
+   * 文字内容是否超过元素宽度
+   * @param {String} content 内容
+   * @param {Number} width 
+   * @param {Number} fontSize 
+   */
+  function getStrWidthFlg(content, width, fontSize) {
+    var resultWidth, div = document.createElement('div');
+    div.style.fontSize = `${fontSize}px`;
+    div.style.visibility = 'hidden';
+    div.style.display = 'inline-block';
+    if (typeof div.textContent !== undefined) {
+      div.textContent = content;
+    } else {
+      div.innerText = content;
+    }
+    document.body.appendChild(div);
+    resultWidth = parseFloat(window.getComputedStyle(div).width);
+    document.body.removeChild(div);
+    if (resultWidth > width) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  /**
    * 设置替换元素
    */
   function setElement(linkId, innerText) {
-    var el = createElement(`
-    <span class="top tocTitle" data-linkId="${linkId}">
-      ${innerText}
-    </span>`);
+    var el;
+    if (getStrWidthFlg(innerText, 145, 15)) {
+      el = createElement(`<p class="top tocTitle small" data-linkId="${linkId}">${innerText}</p>`);
+    } else {
+      el = createElement(`<p class="top tocTitle" data-linkId="${linkId}">${innerText}</p>`);
+    }
     el.addEventListener('click', function () {
       var targetElement = document.getElementById(linkId),
         target;
@@ -73,6 +101,7 @@
     topUlChild.insertAdjacentHTML('afterbegin', `<i class="fa fa-minus topUlChild"></i>`);
     secondaryUl = topUl.children[i].querySelector('ul');
     if (secondaryUl) {
+      secondaryUl.style.marginLeft = '5px';
       for (let j = 0; j < secondaryUl.children.length; j++) {
         // ### 文章二级标题 li
         var secondaryUlChild = secondaryUl.children[j];
@@ -116,8 +145,7 @@
       var headerHrFromTop = $('header hr').offsetTop - document.documentElement.scrollTop;
       // 如果在文章开始处
       if (headerHrFromTop > distance) {
-        console.log(headerHrFromTop)
-        var allTopA = $$('#TableOfContents span');
+        var allTopA = $$('#TableOfContents p');
         for (let j = 0; j < allTopA.length; j++) {
           var topA = allTopA[j];
           topA.classList.remove('show');
@@ -151,7 +179,7 @@
           }
         }
       } else {
-        var allTopA = $$('#TableOfContents span');
+        var allTopA = $$('#TableOfContents p');
         for (let j = 0; j < allTopA.length; j++) {
           var topA = allTopA[j];
           topA.classList.remove('show');
@@ -192,9 +220,8 @@
       distance = parseInt(tagMainPaddingTop.slice(0, -2));
       tocAddClass(distance);
     } else {
-      // 移动端不使用目录
-      // distance = 20 + $('header').offsetHeight
-      // tocAddClass(distance);
+      distance = 20 + $('header').offsetHeight
+      tocAddClass(distance);
     }
   }
 

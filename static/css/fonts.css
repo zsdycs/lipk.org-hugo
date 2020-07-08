@@ -10,9 +10,12 @@ code {
   font-family: '楷体';
 }
 
-#eof,
-#TableOfContents a {
+#eof {
   font-family: Microsoft Yahei, sans-serif;
+}
+
+#TableOfContents {
+  font-family: auto;
 }
 
 /* font-size */
@@ -64,9 +67,13 @@ code {
   font-size: 100%;
 }
 
-#TableOfContents a {
-  font-size: 80%;
+#TableOfContents {
+  font-size: 15px;
   font-weight: normal;
+}
+
+#TableOfContents .small {
+  font-size: 12px;
 }
 
 #TableOfContents .topUlChild {

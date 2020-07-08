@@ -18,7 +18,7 @@
             idTag = document.getElementById(hash.substring(1));
             // 1220 页面变换的页面宽度：@media screen and (max-width:1220px)
             if (document.body.offsetWidth >= 1220) {
-                var tagMainPaddingTop = window.getComputedStyle(tagMain, null).getPropertyValue("padding-top");
+                var tagMainPaddingTop = window.getComputedStyle(tagMain).getPropertyValue("padding-top");
                 document.documentElement.scrollTop = idTag.offsetTop - tagMainPaddingTop.slice(0, -2);
             } else {
                 document.documentElement.scrollTop = idTag.offsetTop - (20 + tagHeader.offsetHeight);
