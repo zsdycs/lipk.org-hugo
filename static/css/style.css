@@ -395,6 +395,10 @@
    max-height: 400px;
    overflow: hidden;
    margin-top: -10px;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
  }
 
  #TableOfContents:hover p {
