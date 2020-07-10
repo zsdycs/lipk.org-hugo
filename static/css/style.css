@@ -7,6 +7,35 @@
    -ms-text-size-adjust: 100%;
  }
 
+ .beaudaring {
+   background-color: #cccccc;
+   border-radius: 50px;
+   width: 100px;
+   height: 100px;
+   position: relative;
+ }
+
+ .beaudaring img {
+   width: 50px;
+   position: absolute;
+   top: 25px;
+   left: 25px;
+ }
+
+ .beaudaring:before {
+   content: "";
+   position: absolute;
+   right: 46px;
+   width: 0px;
+   top: 62px;
+   height: 0;
+   border-top: 49px solid #cccccc;
+   border-right: 33px solid #ffffff00;
+   border-left: 22px solid #00000000;
+   transform: rotate(47deg);
+ }
+
+
  *,
  :after,
  :before {
@@ -431,6 +460,11 @@
  #TableOfContents .secondaryUlChild {
    margin-right: 5px;
    vertical-align: middle;
+ }
+
+ #loading {
+   width: 100px;
+   margin: auto;
  }
 
  /* 伪类 */
