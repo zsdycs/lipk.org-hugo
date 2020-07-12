@@ -33,8 +33,6 @@ function beaudarEnd() {
   function callback(mutationsList) {
     mutationsList.forEach(function (element) {
       if (element.type === 'attributes' && element.target.className === 'beaudar') {
-        var loading = document.getElementById('loading');
-        loading.style.display = 'none';
         var message = {
           type: 'set-theme',
           theme: window.localStorage.getItem('mode')
@@ -55,9 +53,6 @@ function beaudarEnd() {
 function addBeaudar() {
   // 加载了 beaudar  
   window.localStorage.setItem('beaudar', 'true');
-  // 显示加载状态
-  var loading = document.getElementById('loading');
-  loading.style.display = 'flex';
   var script = document.createElement('script');
   var beaudar = document.getElementById('beaudar');
   script.src = 'https://beaudar.lipk.org/client.js';
