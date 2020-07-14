@@ -27,7 +27,7 @@ api.github.com 部分 CDN 服务器被墙，导致请求失败。
 
 ### Q：token 请求失败。 { #token-request-failed }
 
-这个问题一般来说，刷新一下页面就可解决，因为 Beaudar 使用的是 [Cloudflare](https://www.cloudflare.com/) 的网络。
+这个问题一般来说，如果网络连接没有问题，点击一下“刷新”按钮就可解决，因为 Beaudar 使用的是 [Cloudflare](https://www.cloudflare.com/) 的网络。
 在中国境内，部分地区会有网络不稳定的情况。
 
 ---
@@ -41,7 +41,7 @@ api.github.com 部分 CDN 服务器被墙，导致请求失败。
 
 ### Q：与 Utterances 比较，[Beaudar](http://beaudar.lipk.org) 增加了什么。 { #what-does-beaudar-add-compared-to-utterances }
 
-- 中文界面，翻译符合日常使用习惯。
+- 中文界面，拉近距离增加评论友好性。
 - 完整头像，移动端与桌面端一致显示。
 - 身份标识，在任何情况下都不会换行。
 - 评论时间，缩小至与身份标识相同大。
@@ -49,6 +49,9 @@ api.github.com 部分 CDN 服务器被墙，导致请求失败。
 - 点击图片，打开新标签页图片源链接。
 - 错误信息，使用对话框形式友好呈现。
 - 评论头像，增加可使用 Tab 键选中。
+- 加载状态，默认加载状态可配置去除。
+- 移除来源，点击加载图标跳转至主页。
+- 保持主题，跨域改变主题时保持主题。
 
 ---
 
