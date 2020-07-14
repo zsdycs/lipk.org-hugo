@@ -1,12 +1,12 @@
 (function () {
 // 设置 mode 默认值
-if (window.localStorage.getItem('mode') == null) {
+if (sessionStorage.getItem('mode') == null) {
   var hours = new Date();
   // 如果时间是晚上 18 点到早上 6 点，自动黑夜
   if (hours.getHours() >= 18 || hours.getHours() <= 6) {
-    window.localStorage.setItem('mode', 'github-dark');
+    sessionStorage.setItem('mode', 'github-dark');
   } else {
-    window.localStorage.setItem('mode', 'github-light');
+    sessionStorage.setItem('mode', 'github-light');
   }
 }
 
@@ -14,7 +14,7 @@ if (window.localStorage.getItem('mode') == null) {
 // document.body.style.background = 'url(https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/geometry.png)';
 // document.body.style.backgroundRepeat = 'repeat';
 
-var modeLS = window.localStorage.getItem('mode');
+var modeLS = sessionStorage.getItem('mode');
 
 // 判断加载相应模式 CSS
 function addDarkmodeCSS(mode) {
@@ -55,7 +55,7 @@ addDarkmodeCSS(modeLS);
 // 切换黑夜白天模式
 var modeTag = document.getElementById('modeTag');
 modeTag.addEventListener('click', function () {
-  var nowDarkmode = window.localStorage.getItem('mode');
+  var nowDarkmode = sessionStorage.getItem('mode');
   var beaudar = document.querySelector('iframe');
   var message = {
     type: 'set-theme',
@@ -73,21 +73,21 @@ modeTag.addEventListener('click', function () {
   if (nowDarkmode === 'github-light') {
     // github-light -> github-dark
     message.theme = 'github-dark';
-    window.localStorage.setItem('mode', 'github-dark');
+    sessionStorage.setItem('mode', 'github-dark');
     addDarkmodeCSS('github-dark');
   } else if (nowDarkmode === 'github-dark') {
     // github-dark -> github-dark-orange
     message.theme = 'github-dark-orange';
-    window.localStorage.setItem('mode', 'github-dark-orange');
+    sessionStorage.setItem('mode', 'github-dark-orange');
     addDarkmodeCSS('github-dark-orange');
   } else if (nowDarkmode === 'github-dark-orange') {
     // github-dark-orange -> github-light
     message.theme = 'github-light';
-    window.localStorage.setItem('mode', 'github-light');
+    sessionStorage.setItem('mode', 'github-light');
     addDarkmodeCSS('github-light');
   }
   // 与 beaudar 通信
-  if (window.localStorage.getItem('beaudar') === 'true') {
+  if (sessionStorage.getItem('beaudar') === 'true') {
     beaudar.contentWindow.postMessage(message, 'https://beaudar.lipk.org');
   }
 });

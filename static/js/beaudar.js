@@ -18,7 +18,7 @@ function getUrlRelativePath() {
 }
 
 // 默认为没有加载 beaudar
-window.localStorage.setItem('beaudar', 'false');
+sessionStorage.setItem('beaudar', 'false');
 /**
  * 通过 MutationObserver 来监听 #beaudar
  */
@@ -35,7 +35,7 @@ function beaudarEnd() {
       if (element.type === 'attributes' && element.target.className === 'beaudar') {
         var message = {
           type: 'set-theme',
-          theme: window.localStorage.getItem('mode')
+          theme: sessionStorage.getItem('mode')
         };
         var beaudar = document.querySelector('iframe');
         // 与 beaudar 通信
@@ -52,14 +52,14 @@ function beaudarEnd() {
  */
 function addBeaudar() {
   // 加载了 beaudar  
-  window.localStorage.setItem('beaudar', 'true');
+  sessionStorage.setItem('beaudar', 'true');
   var script = document.createElement('script');
   var beaudar = document.getElementById('beaudar');
   script.src = 'https://beaudar.lipk.org/client.js';
   script.setAttribute('repo', 'zsdycs/lipk.org');
   script.setAttribute('issue-term', 'title');
   script.setAttribute('crossorigin', 'anonymous');
-  script.setAttribute('theme', window.localStorage.getItem('mode'));
+  script.setAttribute('theme', sessionStorage.getItem('mode'));
   script.async = true;
   beaudar.appendChild(script);
   // 处理评论是否加载完成
