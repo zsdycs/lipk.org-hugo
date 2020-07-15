@@ -23,14 +23,11 @@ function addDarkmodeCSS(mode) {
   var githubDarkOrangeCSS = document.querySelector('#github-dark-orange');
 
   var modeTag = document.querySelector('#modeTag');
+  if (!modeTag) return;
   var highlightjsNightCSS = document.querySelector('#highlightjsThemeNight');
 
   // 初始化
-  [
-    githubDarkCSS.disabled,
-    githubLightCSS.disabled,
-    githubDarkOrangeCSS.disabled
-  ] = [true, true, true];
+  [githubDarkCSS.disabled, githubLightCSS.disabled, githubDarkOrangeCSS.disabled] = [true, true, true];
 
   if (mode === 'github-light') {
     if (highlightjsNightCSS) highlightjsNightCSS.disabled = true;
@@ -54,6 +51,7 @@ addDarkmodeCSS(modeLS);
 
 // 切换黑夜白天模式
 var modeTag = document.getElementById('modeTag');
+if (!modeTag) return;
 modeTag.addEventListener('click', function () {
   var nowDarkmode = sessionStorage.getItem('mode');
   var beaudar = document.querySelector('iframe');

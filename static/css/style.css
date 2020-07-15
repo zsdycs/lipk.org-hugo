@@ -297,6 +297,12 @@
    visibility: hidden;
  }
 
+ .ie.copyright {
+   position: fixed;
+   bottom: .5em;
+   width: 245px;
+ }
+
  .copyright {
    text-align: center;
  }
@@ -320,6 +326,10 @@
  .comments {
    margin-top: 20px;
  }
+
+ .ie.paramount {
+  width: 300px !important;
+}
 
  .paramount {
    margin: 0 auto;

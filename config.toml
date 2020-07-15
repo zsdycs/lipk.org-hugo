@@ -76,6 +76,7 @@ ignoreFiles = [ "2018-12-20-test.md" ]
     footer = "&copy; 2018 - 2020 [执手对影成双](/)"
     slogan = "执手相看，对影成双"
     customJS = [
+                "js/give-up-IE.js",      # 放弃兼容 IE
                 "js/indentation-el.js",  # 缩进
                 "js/mode.js",            # 模式
                 "js/beaudar.js",         # 评论
