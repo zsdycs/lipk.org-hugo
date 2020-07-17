@@ -1,6 +1,9 @@
 {{ partial "header.html" . }}
 
-{{ if .Params._toc }} {{ .TableOfContents }} {{ end }}
+{{ if .Params._toc }} 
+{{ .TableOfContents }}
+<script async src="/js/toc-powerful.js"></script>
+{{ end }}
 {{ .Content }}
 <div id="eof">
   <span>EOF</span>
