@@ -422,7 +422,7 @@
 
  #TableOfContents p {
    width: 145px;
-   transition: opacity .5s;
+   transition: opacity .5s ease-in;
    opacity: 0;
    cursor: pointer;
    overflow: hidden;
@@ -456,7 +456,7 @@
    margin: 5em auto;
    padding: 2em;
    max-width: 610px;
-   transition: 1s;
+   transition: 1s ease;
  }
 
  aside.index {
@@ -465,7 +465,7 @@
    padding: 1em;
    width: 28%;
    line-height: 1.6em;
-   transition: .5s;
+   transition: .5s ease;
  }
 
  aside.index #logo {
