@@ -63,8 +63,7 @@
   {{ partial "head_custom.html" . }}
 </head>
 
-{{ $.Scratch.Set "section" (replaceRE "^/([^/]+)/.*" "$1" .URL) }}
-
+{{ $.Scratch.Set "section" (replaceRE "^/([^/]+)/.*" "$1" .RelPermalink) }}
 <body class="{{ if .IsHome }}home{{ else }}{{ $.Scratch.Get "section" }}{{ end }}">
 {{ if not .IsHome }}
   <main class="paramount">
