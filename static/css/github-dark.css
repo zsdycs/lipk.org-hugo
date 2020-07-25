@@ -46,7 +46,8 @@
  .post-nav a,
  .copyright a,
  .masthead .menu a,
- #TableOfContents li {
+ #TableOfContents li,
+ .menu button {
      color: #979797;
  }
 
@@ -59,8 +60,12 @@
      border-bottom: 1px solid #4183c4;
  }
 
+ .menu button:hover {
+     color: #4183c4;
+ }
+
  #TableOfContents>ul li:hover {
-  color: #4183c4;
+     color: #4183c4;
  }
 
  .masthead .menu .active a {
@@ -131,8 +136,9 @@
      border-left: 1px solid #343434;
  }
 
- .masthead {
-     background-color: #181818;
+ .masthead,
+ .menu button {
+     background-color: #18181800;
  }
 
  #eof {
@@ -153,6 +159,10 @@
      background-color: #202020;
  }
 
+ article.index button {
+     background-color: #20202000;
+ }
+
  main.index:hover aside {
      background: #181818;
  }
@@ -163,6 +173,7 @@
  }
 
  article.index a,
+ article.index button,
  article.index ruby.link,
  article.index ruby.link:hover a,
  article.index ruby.link:hover rt {
@@ -184,6 +195,10 @@
      .masthead {
          border-bottom: 1px solid #343434;
          background-color: #202020;
+     }
+
+     .menu button {
+         background-color: #20202000;
      }
 
      .masthead .menu .active a,

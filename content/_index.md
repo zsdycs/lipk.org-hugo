@@ -7,7 +7,7 @@ date: '2019-01-26'
 
 可以叫我 <ruby>“执手对影成双”<rt>Used since 2014, until now</rt></ruby>，这是我在互联网广泛使用的名称，可以通过键入它，在搜索引擎找到所有关于我的踪迹。
 
-迎接谒见，希望你可以在喜欢的 <ruby class="link"><a id="modeTag" href="#"></a><rt>mode</rt></ruby> 模式下阅读我的 <ruby class="link"><a href="/blog/">博客</a><rt>to /blog</rt></ruby>，<ruby class="link"><a href="/about/">关于</a><rt>to /about</rt></ruby> 本页和我的详细介绍。
+迎接谒见，希望你可以在喜欢的 <ruby class="link"><button id="modeTag"></button><rt>mode</rt></ruby> 模式下阅读我的 <ruby class="link"><a href="/blog/">博客</a><rt>to /blog</rt></ruby>，<ruby class="link"><a href="/about/">关于</a><rt>to /about</rt></ruby> 本页和我的详细介绍。
 
 我喜欢好看的东西，有时候甚至会花上一整天的时间绘一张画。
 高中选了理科，大学志愿填了“软件技术”，现在成了个写前端的。

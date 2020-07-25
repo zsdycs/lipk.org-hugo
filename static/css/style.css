@@ -26,7 +26,8 @@
  /* 章节
   <body> <section> <nav> <article> <aside> <h1*6> <header> <footer> <address> <main>
  */
- body {
+ body,
+ button {
    letter-spacing: 1.5px;
    line-height: 1.75;
  }
@@ -171,12 +172,8 @@
  }
 
  ruby,
- .menu a {
-   -webkit-touch-callout: none;
-   -webkit-user-select: none;
-   -khtml-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
+ .menu a,
+ .menu button {
    user-select: none;
  }
 
@@ -259,6 +256,13 @@
   <select> <textarea> <keygen> <output> <progress> <meter>
  */
 
+ button {
+   border: none;
+   cursor: pointer;
+   font-weight: bolder;
+   text-decoration: none;
+ }
+
  /* 交互元素
   <details> <summary> <menuitem> <menu>
  */
@@ -299,8 +303,8 @@
  }
 
  .ie.paramount {
-  width: 300px !important;
-}
+   width: 300px !important;
+ }
 
  .paramount {
    margin: 0 auto;
@@ -361,10 +365,6 @@
    padding: .5em;
    width: 100%;
    border: 1px dashed;
- }
-
- #modeTag {
-   cursor: pointer;
  }
 
  .hljs-comment {
@@ -441,11 +441,6 @@
  #TableOfContents .secondaryUlChild {
    margin-right: 5px;
    vertical-align: middle;
- }
-
- #loading {
-   width: 100px;
-   margin: auto;
  }
 
  /* 伪类 */
