@@ -177,7 +177,7 @@
    color: #d59500;
  }
 
- article.index ruby.link:hover {
+ article.index ruby.link a:hover {
    border-bottom: 1px solid #d59500;
  }
 
