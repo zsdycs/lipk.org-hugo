@@ -1,7 +1,7 @@
 ### 源代码说明
 
-- 构建：[hugo](http://gohugo.io)。  
-- 主题：[hugo-ivy](https://github.com/yihui/hugo-ivy)。  
+- 构建程序：[hugo](http://gohugo.io) 版本 [v0.68.3](https://github.com/gohugoio/hugo/releases)。
+- 主题源自：[hugo-ivy](https://github.com/yihui/hugo-ivy)。
 - 目录结构：
 
 ```markdown
@@ -40,7 +40,7 @@ lipk.org
 └─ README 源代码说明
 ```
 
-目录结构生成来自 [Dir Tree Noter](http://dir.yardtea.cc/)📁。
+以上目录结构生成来自 [Dir Tree Noter](http://dir.yardtea.cc/)📁。
 
 ### 鸣谢
 
