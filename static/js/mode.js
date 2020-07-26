@@ -21,13 +21,29 @@
     var githubLightCSS = document.querySelector('#github-light');
     var githubDarkCSS = document.querySelector('#github-dark');
     var githubDarkOrangeCSS = document.querySelector('#github-dark-orange');
+    var darkBlueCSS = document.querySelector('#dark-blue');
+    var icyDarkCSS = document.querySelector('#icy-dark');
+    var photonDarkCSS = document.querySelector('#photon-dark');
 
     var modeTag = document.querySelector('#modeTag');
     if (!modeTag) return;
     var highlightjsNightCSS = document.querySelector('#highlightjsThemeNight');
 
     // 初始化
-    [githubDarkCSS.disabled, githubLightCSS.disabled, githubDarkOrangeCSS.disabled] = [true, true, true];
+    [ githubDarkCSS.disabled,
+      githubLightCSS.disabled,
+      githubDarkOrangeCSS.disabled,
+      darkBlueCSS.disabled,
+      icyDarkCSS.disabled,
+      photonDarkCSS.disabled
+    ] = [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ];
 
     if (mode === 'github-light') {
       if (highlightjsNightCSS) highlightjsNightCSS.disabled = true;
@@ -42,6 +58,18 @@
       if (mode === 'github-dark-orange') {
         githubDarkOrangeCSS.disabled = false;
         modeTag.innerHTML = '橘暮';
+      }
+      if (mode === 'dark-blue') {
+        darkBlueCSS.disabled = false;
+        modeTag.innerHTML = '幽瞑';
+      }
+      if (mode === 'icy-dark') {
+        icyDarkCSS.disabled = false;
+        modeTag.innerHTML = '雨晨';
+      }
+      if (mode === 'photon-dark') {
+        photonDarkCSS.disabled = false;
+        modeTag.innerHTML = '紫夜';
       }
     }
   }
@@ -63,9 +91,9 @@ function mode() {
    *       -> 'github-light'        // 白天
    *       -> 'github-dark'         // 黑夜
    *       -> 'github-dark-orange'  // 橘暮
-   *       -> 'dark-blue'           // 幽瞑 TODO
-   *       -> 'icy-dark'            // 雨晨 TODO
-   *       -> 'photon-dark'         // 紫夜 TODO
+   *       -> 'dark-blue'           // 幽瞑
+   *       -> 'icy-dark'            // 雨晨
+   *       -> 'photon-dark'         // 紫夜
    */
   if (nowDarkmode === 'github-light') {
     // github-light -> github-dark
@@ -78,7 +106,22 @@ function mode() {
     sessionStorage.setItem('mode', 'github-dark-orange');
     this.addDarkmodeCSS('github-dark-orange');
   } else if (nowDarkmode === 'github-dark-orange') {
-    // github-dark-orange -> github-light
+    // github-dark-orange -> dark-blue
+    message.theme = 'dark-blue';
+    sessionStorage.setItem('mode', 'dark-blue');
+    this.addDarkmodeCSS('dark-blue');
+  } else if (nowDarkmode === 'dark-blue') {
+    // dark-blue -> icy-dark
+    message.theme = 'icy-dark';
+    sessionStorage.setItem('mode', 'icy-dark');
+    this.addDarkmodeCSS('icy-dark');
+  } else if (nowDarkmode === 'icy-dark') {
+    // icy-dark -> photon-dark
+    message.theme = 'photon-dark';
+    sessionStorage.setItem('mode', 'photon-dark');
+    this.addDarkmodeCSS('photon-dark');
+  } else if (nowDarkmode === 'photon-dark') {
+    // photon-dark -> github-light
     message.theme = 'github-light';
     sessionStorage.setItem('mode', 'github-light');
     this.addDarkmodeCSS('github-light');
