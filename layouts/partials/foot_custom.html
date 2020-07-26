@@ -24,9 +24,7 @@ document.addEventListener('keyup', function(e) {
 {{ end }}
 
 <!-- beaudar 评论 -->
-<section id="beaudar" class="comments">
-
-</section>
+<section id="beaudar" class="comments"></section>
 
 {{ range .Site.Params.customJS }}
 <script async src="{{ . | relURL }}"></script>
