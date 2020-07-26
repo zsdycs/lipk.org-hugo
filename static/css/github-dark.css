@@ -154,6 +154,12 @@
      background: #27673d;
  }
 
+ :focus {
+     outline: none;
+     box-shadow: 0 0 0em 0.1em #4183c4;
+     border-radius: 1px;
+ }
+
  /* 首页 */
  main.index {
      background-color: #202020;

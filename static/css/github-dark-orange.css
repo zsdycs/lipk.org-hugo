@@ -159,6 +159,12 @@
      color: #f7f7f7;
  }
 
+ :focus {
+     outline: none;
+     box-shadow: 0 0 0em 0.1em #f27052;
+     border-radius: 1px;
+ }
+
  /* 首页 */
  main.index {
      background-color: #2d2833;
