@@ -18,7 +18,7 @@
  <p> <hr> <pre> <blockquote> <ol> <ul> <li> <dl> <dt> <dd> <figure> <figcaption> <div>
 */
  hr {
-     color: #1D1F21;
+     color: #2b3137;
  }
 
  blockquote {
@@ -78,7 +78,7 @@
  }
 
  code.hljs {
-     background: #06272c;
+     background: #14171c;
      color: #fff;
  }
 
@@ -109,16 +109,16 @@
  <table> <caption> <colgroup> <col> <tbody> <thead> <tfoot> <tr> <td> <th>
 */
  thead {
-     background-color: #222;
+     background-color: #14171c00;
  }
 
  table tr:nth-child(2n) {
-     background-color: #222;
+     background-color: #14171c00;
  }
 
  td,
  th {
-     border: 1px solid #5b5958;
+     border: 1px solid #292c2f;
  }
 
  /* 表单
@@ -137,15 +137,15 @@
 
  .masthead,
  .menu button {
-     background-color: #463d4e00;
+     background-color: #18203000;
  }
 
  #eof {
-     color: #6f6e6e;
+     color: #2b3137;
  }
 
  .home .wrapper {
-     background: #021012;
+     background: #14171c;
  }
 
  /* 伪类 */
@@ -162,20 +162,20 @@
 
  /* 首页 */
  main.index {
-     background-color: #10444d;
+     background-color: #182030;
  }
 
  article.index button {
-     background-color: #2d283300;
+     background-color: #18203000;
  }
 
  main.index:hover aside {
-     background: #145762;
+     background: #14171c;
  }
 
  article.index {
-     border-top: 2px solid #6f6e6e;
-     border-bottom: 2px solid #6f6e6e;
+     border-top: 2px solid #2b3137;
+     border-bottom: 2px solid #2b3137;
  }
 
  article.index a,
@@ -192,24 +192,24 @@
 
  @media only screen and (max-width:668px) {
      aside.index {
-         background: #145762;
+         background: #14171c;
      }
  }
 
  /* 移动端与 PC 端适配 */
  @media screen and (max-width:1220px) {
      .masthead {
-         border-bottom: 1px solid #4e4c4b;
-         background-color: #222;
+         border-bottom: 1px solid #1d1f21;
+         background-color: #182030;
      }
 
      .menu button {
-         background-color: #2220;
+         background-color: #18203000;
      }
 
      .masthead .menu .active a,
      .masthead .menu .active a:hover {
-         border: 1px solid #4e4c4b !important;
+         border: 1px solid #272a2c !important;
      }
 
      .main {

@@ -3,7 +3,7 @@
  */
  html {
      color: #fff;
-     background-color: #021012;
+     background-color: #232326;
  }
 
  /* 章节
@@ -11,19 +11,19 @@
 */
  body {
      color: #fff;
-     background-color: #021012;
+     background-color: #232326;
  }
 
  /* 组织内容
  <p> <hr> <pre> <blockquote> <ol> <ul> <li> <dl> <dt> <dd> <figure> <figcaption> <div>
 */
  hr {
-     color: #10444d;
+     color: #313136;
  }
 
  blockquote {
      color: #6a737d;
-     border-left: .25em solid #145762;
+     border-left: 0.25em solid #44444a;
  }
 
  /* 文字形式
@@ -31,11 +31,11 @@
  <sub> <sup> <i> <b> <u> <mark> <ruby> <rt> <rp> <bdi> <bdo> <span> <br> <wbr> 
 */
  a {
-     color: #26d0e7;
+     color: #45a1ff;
  }
 
  a:hover {
-     border-bottom: 1px solid #26d0e7;
+     border-bottom: 1px solid #45a1ff;
  }
 
  .copyright a {
@@ -56,16 +56,16 @@
  .copyright a:hover,
  .masthead .menu a:hover,
  .masthead .menu .active a:hover {
-     color: #26d0e7;
-     border-bottom: 1px solid #26d0e7;
+     color: #45a1ff;
+     border-bottom: 1px solid #45a1ff;
  }
 
  .menu button:hover {
-     color: #26d0e7;
+     color: #45a1ff;
  }
 
  #TableOfContents>ul li:hover {
-     color: #26d0e7;
+     color: #45a1ff;
  }
 
  .masthead .menu .active a {
@@ -78,7 +78,7 @@
  }
 
  code.hljs {
-     background: #06272c;
+     background: #2a2a2e;
      color: #fff;
  }
 
@@ -109,16 +109,16 @@
  <table> <caption> <colgroup> <col> <tbody> <thead> <tfoot> <tr> <td> <th>
 */
  thead {
-     background-color: #222;
+     background-color: #2a2a2e;
  }
 
  table tr:nth-child(2n) {
-     background-color: #222;
+     background-color: #2a2a2e;
  }
 
  td,
  th {
-     border: 1px solid #5b5958;
+     border: 1px solid #44444a;
  }
 
  /* 表单
@@ -132,7 +132,7 @@
 
  /* 选择器 class id  */
  .main {
-     border-left: 1px solid #10444d;
+     border-left: 1px solid #313136;
  }
 
  .masthead,
@@ -141,28 +141,28 @@
  }
 
  #eof {
-     color: #6f6e6e;
+     color: #313136;
  }
 
  .home .wrapper {
-     background: #021012;
+     background: #232326;
  }
 
  /* 伪类 */
  ::selection {
-     background: #26d0e7fc;
+     background: #45a1ff;
      color: #f7f7f7;
  }
 
  :focus {
      outline: none;
-     box-shadow: 0 0 0em 0.1em #26d0e7;
+     box-shadow: 0 0 0em 0.1em #45a1ff;
      border-radius: 1px;
  }
 
  /* 首页 */
  main.index {
-     background-color: #10444d;
+     background-color: #2a2a2e;
  }
 
  article.index button {
@@ -170,12 +170,12 @@
  }
 
  main.index:hover aside {
-     background: #145762;
+     background: #232326;
  }
 
  article.index {
-     border-top: 2px solid #6f6e6e;
-     border-bottom: 2px solid #6f6e6e;
+     border-top: 2px solid #38383d;
+     border-bottom: 2px solid #38383d;
  }
 
  article.index a,
@@ -183,33 +183,33 @@
  article.index ruby.link,
  article.index ruby.link:hover a,
  article.index ruby.link:hover rt {
-     color: #26d0e7;
+     color: #45a1ff;
  }
 
  article.index ruby.link a:hover {
-     border-bottom: 1px solid #26d0e7;
+     border-bottom: 1px solid #45a1ff;
  }
 
  @media only screen and (max-width:668px) {
      aside.index {
-         background: #145762;
+         background: #232326;
      }
  }
 
  /* 移动端与 PC 端适配 */
  @media screen and (max-width:1220px) {
      .masthead {
-         border-bottom: 1px solid #4e4c4b;
-         background-color: #222;
+         border-bottom: 1px solid #38383d;
+         background-color: #182030;
      }
 
      .menu button {
-         background-color: #2220;
+         background-color: #18203000;
      }
 
      .masthead .menu .active a,
      .masthead .menu .active a:hover {
-         border: 1px solid #4e4c4b !important;
+         border: 1px solid #38383d !important;
      }
 
      .main {

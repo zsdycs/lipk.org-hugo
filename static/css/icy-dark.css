@@ -150,7 +150,7 @@
 
  /* 伪类 */
  ::selection {
-     background: #1c7382;
+     background: #26d0e7cf;
      color: #f7f7f7;
  }
 
@@ -162,7 +162,7 @@
 
  /* 首页 */
  main.index {
-     background-color: #10444d;
+     background-color: #06272c;
  }
 
  article.index button {
@@ -170,12 +170,12 @@
  }
 
  main.index:hover aside {
-     background: #06272c;
+     background: #021012;
  }
 
  article.index {
-     border-top: 2px solid #6f6e6e;
-     border-bottom: 2px solid #6f6e6e;
+     border-top: 2px solid #10444d;
+     border-bottom: 2px solid #10444d;
  }
 
  article.index a,
@@ -192,7 +192,7 @@
 
  @media only screen and (max-width:668px) {
      aside.index {
-         background: #06272c;
+         background: #021012;
      }
  }
 
