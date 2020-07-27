@@ -141,7 +141,7 @@
  }
 
  #eof {
-     color: #6f6e6e;
+     color: #10444d;
  }
 
  .home .wrapper {
@@ -162,7 +162,7 @@
 
  /* 首页 */
  main.index {
-     background-color: #06272c;
+     background-color: #10444d;
  }
 
  article.index button {
@@ -170,7 +170,7 @@
  }
 
  main.index:hover aside {
-     background: #145762;
+     background: #06272c;
  }
 
  article.index {
@@ -192,7 +192,7 @@
 
  @media only screen and (max-width:668px) {
      aside.index {
-         background: #145762;
+         background: #06272c;
      }
  }
 

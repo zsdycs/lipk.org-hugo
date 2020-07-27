@@ -2,28 +2,28 @@
   <html>
  */
  html {
-     color: #fff;
-     background-color: #021012;
+     color: #c0c0c0;
+     background-color: #14171c;
  }
 
  /* 章节
  <body> <section> <nav> <article> <aside> <h1*6> <header> <footer> <address> <main>
 */
  body {
-     color: #fff;
-     background-color: #021012;
+     color: #c0c0c0;
+     background-color: #14171c;
  }
 
  /* 组织内容
  <p> <hr> <pre> <blockquote> <ol> <ul> <li> <dl> <dt> <dd> <figure> <figcaption> <div>
 */
  hr {
-     color: #10444d;
+     color: #1D1F21;
  }
 
  blockquote {
      color: #6a737d;
-     border-left: .25em solid #145762;
+     border-left: .25em solid #292c2f;
  }
 
  /* 文字形式
@@ -31,11 +31,11 @@
  <sub> <sup> <i> <b> <u> <mark> <ruby> <rt> <rp> <bdi> <bdo> <span> <br> <wbr> 
 */
  a {
-     color: #26d0e7;
+     color: #4183c4;
  }
 
  a:hover {
-     border-bottom: 1px solid #26d0e7;
+     border-bottom: 1px solid #4183c4;
  }
 
  .copyright a {
@@ -56,16 +56,16 @@
  .copyright a:hover,
  .masthead .menu a:hover,
  .masthead .menu .active a:hover {
-     color: #26d0e7;
-     border-bottom: 1px solid #26d0e7;
+     color: #4183c4;
+     border-bottom: 1px solid #4183c4;
  }
 
  .menu button:hover {
-     color: #26d0e7;
+     color: #4183c4;
  }
 
  #TableOfContents>ul li:hover {
-     color: #26d0e7;
+     color: #4183c4;
  }
 
  .masthead .menu .active a {
@@ -132,7 +132,7 @@
 
  /* 选择器 class id  */
  .main {
-     border-left: 1px solid #10444d;
+     border-left: 1px solid #1D1F21;
  }
 
  .masthead,
@@ -150,13 +150,13 @@
 
  /* 伪类 */
  ::selection {
-     background: #26d0e7fc;
+     background: #4183c4fc;
      color: #f7f7f7;
  }
 
  :focus {
      outline: none;
-     box-shadow: 0 0 0em 0.1em #26d0e7;
+     box-shadow: 0 0 0em 0.1em #4183c4;
      border-radius: 1px;
  }
 
@@ -183,11 +183,11 @@
  article.index ruby.link,
  article.index ruby.link:hover a,
  article.index ruby.link:hover rt {
-     color: #26d0e7;
+     color: #4183c4;
  }
 
  article.index ruby.link a:hover {
-     border-bottom: 1px solid #26d0e7;
+     border-bottom: 1px solid #4183c4;
  }
 
  @media only screen and (max-width:668px) {
