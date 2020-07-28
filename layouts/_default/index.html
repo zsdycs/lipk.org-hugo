@@ -31,9 +31,18 @@
         {{ with .Site.Params.footer }}
         <div class="copyright">
             {{ . | markdownify }}
-            <a href="https://travellings.now.sh/" target="blank" title="开往-友链接力" style="border: none;">
-                <img src="/images/travellings.svg" alt="开往-友链接力" height="17" style="vertical-align: middle;display: inline-block;">
+            <a class="travellings" href="https://travellings.now.sh/" target="_blank" rel="noopener noreferrer"
+                title="开往-友链接力">
+                <img src="/images/travellings.svg" alt="开往-友链接力" height="17">
             </a>
+            <br />
+            <div class="beian">
+                <img src="/images/beian.png" />
+                <a target="_blank" rel="noopener noreferrer"
+                    href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44200002444254">
+                    粤公网安备 44200002444254号
+                </a>
+            </div>
         </div>
         {{ end }}
     </footer>

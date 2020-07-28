@@ -282,6 +282,31 @@
    text-align: center;
  }
 
+ .copyright .travellings {
+   border: none !important;
+ }
+
+ .copyright .travellings img {
+   vertical-align: middle;
+   display: inline-block;
+ }
+
+ .copyright .beian {
+   display: inline-block;
+   height: 20px;
+   line-height: 20px;
+   font-weight: 100;
+
+ }
+
+ .copyright .beian img {
+   float: left;
+ }
+
+ .copyright .beian a {
+   margin-left: 5px;
+ }
+
  .post-nav {
    display: flex;
    margin-top: 25px;
