@@ -300,11 +300,12 @@
  }
 
  .copyright .beian img {
-   float: left;
+   height: 17px;
+   vertical-align: middle;
  }
 
  .copyright .beian a {
-   margin-left: 5px;
+   vertical-align: middle;
  }
 
  .post-nav {
