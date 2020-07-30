@@ -119,7 +119,10 @@
    border-left: 1px solid #e1e4e8;
  }
 
- .masthead,
+ .masthead {
+   background: #fff;
+ }
+
  .menu button {
    background: linear-gradient(#fff, #fff);
    transition: all .5s ease;
@@ -199,7 +202,7 @@
 
    .masthead {
      border-bottom: 1px solid #e1e4e8;
-     background-color: #f6f8fa;
+     background: #f6f8fa;
    }
 
    .menu button {
