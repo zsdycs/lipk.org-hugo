@@ -10,15 +10,15 @@ _highlight: true
 现在，可以看到，这六种色彩模式：
 
 ```javascript
-  /**
-   * 顺序：
-   *       -> 'github-light'        // 白天
-   *       -> 'github-dark'         // 黑夜
-   *       -> 'github-dark-orange'  // 橘暮
-   *       -> 'dark-blue'           // 幽瞑
-   *       -> 'icy-dark'            // 雨晨
-   *       -> 'photon-dark'         // 紫夜
-   */
+/**
+  * 顺序：
+  *       -> 'github-light'        // 白天
+  *       -> 'github-dark'         // 黑夜
+  *       -> 'github-dark-orange'  // 橘暮
+  *       -> 'dark-blue'           // 幽瞑
+  *       -> 'icy-dark'            // 雨晨
+  *       -> 'photon-dark'         // 紫夜
+  */
 ```
 
 中文名称我自己也感觉起得一般，但也基本是符合色彩营造的意境了，如果对主题的中文名称有任何建议，非常欢迎留言。
