@@ -136,9 +136,13 @@
      border-left: 1px solid #343434;
  }
 
- .masthead,
+ .masthead {
+     background: #181818;
+ }
+
  .menu button {
-     background-color: #18181800;
+     background: linear-gradient(#181818, #181818);
+     transition: all .5s ease;
  }
 
  #eof {
@@ -166,7 +170,8 @@
  }
 
  article.index button {
-     background-color: #20202000;
+     background: linear-gradient(#202020, #202020);
+     transition: all .5s ease;
  }
 
  main.index:hover aside {
@@ -204,7 +209,8 @@
      }
 
      .menu button {
-         background-color: #20202000;
+         background: linear-gradient(#202020, #202020);
+         transition: all .5s ease;
      }
 
      .masthead .menu .active a,

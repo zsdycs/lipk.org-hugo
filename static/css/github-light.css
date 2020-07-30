@@ -121,7 +121,8 @@
 
  .masthead,
  .menu button {
-   background-color: #fff0;
+   background: linear-gradient(#fff, #fff);
+   transition: all .5s ease;
  }
 
  .subtitle {
@@ -157,7 +158,8 @@
  }
 
  article.index button {
-   background-color: #fff0;
+   background: linear-gradient(#fff, #fff);
+   transition: all .5s ease;
  }
 
  main.index:hover aside {
@@ -201,7 +203,8 @@
    }
 
    .menu button {
-     background-color: #f6f8fa00;
+     background: linear-gradient(#f6f8fa, #f6f8fa);
+     transition: all .5s ease;
    }
 
    .main {

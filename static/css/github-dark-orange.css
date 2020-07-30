@@ -140,9 +140,13 @@
      border: 1px solid #4e4c4b;
  }
 
- .masthead,
+ .masthead {
+     background: #463d4e;
+ }
+
  .menu button {
-     background-color: #463d4e00;
+     background: linear-gradient(#463d4e, #463d4e);
+     transition: all .5s ease;
  }
 
  #eof {
@@ -171,7 +175,8 @@
  }
 
  article.index button {
-     background-color: #2d283300;
+     background: linear-gradient(#2d2833, #2d2833);
+     transition: all .5s ease;
  }
 
  main.index:hover aside {
@@ -205,11 +210,12 @@
  @media screen and (max-width:1220px) {
      .masthead {
          border-bottom: 1px solid #4e4c4b;
-         background-color: #222;
+         background: #222;
      }
 
      .menu button {
-         background-color: #2220;
+         background: linear-gradient(#222, #222);
+         transition: all .5s ease;
      }
 
      .masthead .menu .active a,
