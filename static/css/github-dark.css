@@ -142,7 +142,6 @@
 
  .menu button {
      background: linear-gradient(#181818, #181818);
-     transition: all .5s ease;
  }
 
  #eof {
@@ -171,7 +170,6 @@
 
  article.index button {
      background: linear-gradient(#202020, #202020);
-     transition: all .5s ease;
  }
 
  main.index:hover aside {
@@ -210,7 +208,6 @@
 
      .menu button {
          background: linear-gradient(#202020, #202020);
-         transition: all .5s ease;
      }
 
      .masthead .menu .active a,
