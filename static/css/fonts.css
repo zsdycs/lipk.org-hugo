@@ -68,17 +68,23 @@ code {
   font-size: 100%;
 }
 
-#TableOfContents {
+#TableOfContents .topUlChild {
+  font-size: 20px;
+}
+
+#TableOfContents .secondaryUlChild {
   font-size: 15px;
+  font-weight: normal;
+}
+
+#TableOfContents .thirdUlChild {
+  font-size: 10px;
   font-weight: normal;
 }
 
 #TableOfContents .small {
   font-size: 12px;
-}
-
-#TableOfContents .topUlChild {
-  font-size: 20px;
+  font-weight: normal;
 }
 
 /* 首页 */

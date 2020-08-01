@@ -455,7 +455,7 @@
    white-space: nowrap;
    text-overflow: ellipsis;
    display: inline-block;
-   vertical-align: middle;
+   vertical-align: bottom;
    margin: 0px;
  }
 
@@ -464,7 +464,8 @@
  }
 
  #TableOfContents .topUlChild,
- #TableOfContents .secondaryUlChild {
+ #TableOfContents .secondaryUlChild,
+ #TableOfContents .thirdUlChild {
    margin-right: 5px;
    vertical-align: middle;
  }

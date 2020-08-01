@@ -147,6 +147,6 @@ ignoreFiles = [ "2018-12-20-test.md" ]
     style = "monokai"
     tabWidth = 4
   [markup.tableOfContents]
+    startLevel = 1
     endLevel = 3
     ordered = false
-    startLevel = 2

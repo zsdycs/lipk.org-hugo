@@ -88,7 +88,7 @@
     $$ = document.querySelectorAll.bind(document),
     toc = $('#TableOfContents'),
     topUl = $('#TableOfContents ul'),
-    secondaryUl;
+    secondaryUl, thirdUl;
   if (!toc) return;
 
   // 处理 toc
@@ -99,9 +99,9 @@
     topUlChild.replaceChild(setElement(topUlChild.children[0].hash.substring(1), topUlChild.children[0].innerText), topUlChild.children[0]);
     // 添加图标
     topUlChild.insertAdjacentHTML('afterbegin', `<i class="fa fa-minus topUlChild"></i>`);
-    secondaryUl = topUl.children[i].querySelector('ul');
+    secondaryUl = topUlChild.querySelector('ul');
     if (secondaryUl) {
-      secondaryUl.style.marginLeft = '5px';
+      secondaryUl.style.marginLeft = '12px';
       for (let j = 0; j < secondaryUl.children.length; j++) {
         // ### 文章二级标题 li
         var secondaryUlChild = secondaryUl.children[j];
@@ -109,6 +109,18 @@
         secondaryUlChild.replaceChild(setElement(secondaryUlChild.children[0].hash.substring(1), secondaryUlChild.children[0].innerText), secondaryUlChild.children[0]);
         // 添加图标
         secondaryUlChild.insertAdjacentHTML('afterbegin', `<i class="fa fa-minus secondaryUlChild"></i>`);
+        thirdUl = secondaryUlChild.querySelector('ul');
+        if (thirdUl) {
+          thirdUl.style.marginLeft = '12px';
+          for (let j = 0; j < thirdUl.children.length; j++) {
+            // ### 文章三级标题 li
+            var thirdUlChild = thirdUl.children[j];
+            // 替换 a 标签
+            thirdUlChild.replaceChild(setElement(thirdUlChild.children[0].hash.substring(1), thirdUlChild.children[0].innerText), thirdUlChild.children[0]);
+            // 添加图标
+            thirdUlChild.insertAdjacentHTML('afterbegin', `<i class="fa fa-minus thirdUlChild"></i>`);
+          }
+        }
       }
     }
   }
@@ -129,7 +141,7 @@
    * 距离底端的距离 = 网页工作区域的高度 - (元素距离文档顶端偏移值 - 网页被卷起来的高度))
    */
   function tocAddClass(distance) {
-    var chapter, chapters = $$('article h2, article h3');
+    var chapter, chapters = $$('article h1, article h2, article h3');
     for (var i = 0; i < chapters.length; i++) {
       chapter = chapters[i];
       if (chapter.id === '') continue;
@@ -160,20 +172,33 @@
           for (let j = 0; j < topUl.children.length; j++) {
             topUlChild = topUl.children[j];
             topUlChild.children[1].classList.remove('show');
-            // ## 标题
+            // # 标题
             if (chapters[i].id.toString() === topUlChild.children[1].getAttribute('data-linkId').toString()) {
               topUlChild.children[1].classList.add('show');
             };
-            secondaryUl = topUl.children[j].querySelector('ul');
+            secondaryUl = topUlChild.querySelector('ul');
             if (secondaryUl) {
               for (let k = 0; k < secondaryUl.children.length; k++) {
                 var secondaryUlChild = secondaryUl.children[k];
                 secondaryUlChild.children[1].classList.remove('show');
-                // ### 标题
+                // ## 标题
                 if (chapters[i].id.toString() === secondaryUlChild.children[1].getAttribute('data-linkId').toString()) {
                   topUl.children[j].children[1].classList.add('show');
                   secondaryUlChild.children[1].classList.add('show');
                 };
+                thirdUl = secondaryUlChild.querySelector('ul');
+                if (thirdUl) {
+                  for (let l = 0; l < thirdUl.children.length; l++) {
+                    var thirdUlChild = thirdUl.children[l];
+                    thirdUlChild.children[1].classList.remove('show');
+                    // ### 标题
+                    if (chapters[i].id.toString() === thirdUlChild.children[1].getAttribute('data-linkId').toString()) {
+                      topUl.children[j].children[1].classList.add('show');
+                      secondaryUlChild.children[1].classList.add('show');
+                      thirdUlChild.children[1].classList.add('show');
+                    };
+                  }
+                }
               }
             }
           }
