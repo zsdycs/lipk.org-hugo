@@ -96,9 +96,11 @@
     // ## 文章一级标题 li
     var topUlChild = topUl.children[i];
     // 替换 a 标签
-    topUlChild.replaceChild(setElement(topUlChild.children[0].hash.substring(1), topUlChild.children[0].innerText), topUlChild.children[0]);
-    // 添加图标
-    topUlChild.insertAdjacentHTML('afterbegin', `<i class="fa fa-minus topUlChild"></i>`);
+    if (topUlChild.children[0] && topUlChild.children[0].nodeName === 'A') {
+      topUlChild.replaceChild(setElement(topUlChild.children[0].hash.substring(1), topUlChild.children[0].innerText), topUlChild.children[0]);
+      // 添加图标
+      topUlChild.insertAdjacentHTML('afterbegin', `<i class="fa fa-minus topUlChild"></i>`);
+    }
     secondaryUl = topUlChild.querySelector('ul');
     if (secondaryUl) {
       secondaryUl.style.marginLeft = '12px';
@@ -106,9 +108,11 @@
         // ### 文章二级标题 li
         var secondaryUlChild = secondaryUl.children[j];
         // 替换 a 标签
-        secondaryUlChild.replaceChild(setElement(secondaryUlChild.children[0].hash.substring(1), secondaryUlChild.children[0].innerText), secondaryUlChild.children[0]);
-        // 添加图标
-        secondaryUlChild.insertAdjacentHTML('afterbegin', `<i class="fa fa-minus secondaryUlChild"></i>`);
+        if (secondaryUlChild.children[0] && secondaryUlChild.children[0].nodeName === 'A') {
+          secondaryUlChild.replaceChild(setElement(secondaryUlChild.children[0].hash.substring(1), secondaryUlChild.children[0].innerText), secondaryUlChild.children[0]);
+          // 添加图标
+          secondaryUlChild.insertAdjacentHTML('afterbegin', `<i class="fa fa-minus secondaryUlChild"></i>`);
+        }
         thirdUl = secondaryUlChild.querySelector('ul');
         if (thirdUl) {
           thirdUl.style.marginLeft = '12px';
@@ -116,9 +120,11 @@
             // ### 文章三级标题 li
             var thirdUlChild = thirdUl.children[j];
             // 替换 a 标签
-            thirdUlChild.replaceChild(setElement(thirdUlChild.children[0].hash.substring(1), thirdUlChild.children[0].innerText), thirdUlChild.children[0]);
-            // 添加图标
-            thirdUlChild.insertAdjacentHTML('afterbegin', `<i class="fa fa-minus thirdUlChild"></i>`);
+            if (thirdUlChild.children[0] && thirdUlChild.children[0].nodeName === 'A') {
+              thirdUlChild.replaceChild(setElement(thirdUlChild.children[0].hash.substring(1), thirdUlChild.children[0].innerText), thirdUlChild.children[0]);
+              // 添加图标
+              thirdUlChild.insertAdjacentHTML('afterbegin', `<i class="fa fa-minus thirdUlChild"></i>`);
+            }
           }
         }
       }
@@ -171,32 +177,38 @@
           var secondaryUl, topUlChild;
           for (let j = 0; j < topUl.children.length; j++) {
             topUlChild = topUl.children[j];
-            topUlChild.children[1].classList.remove('show');
-            // # 标题
-            if (chapters[i].id.toString() === topUlChild.children[1].getAttribute('data-linkId').toString()) {
-              topUlChild.children[1].classList.add('show');
-            };
+            if (topUlChild.children[1] && topUlChild.children[1].nodeName === 'P') {
+              topUlChild.children[1].classList.remove('show');
+              // # 标题
+              if (chapters[i].id.toString() === topUlChild.children[1].getAttribute('data-linkId').toString()) {
+                topUlChild.children[1].classList.add('show');
+              };
+            }
             secondaryUl = topUlChild.querySelector('ul');
             if (secondaryUl) {
               for (let k = 0; k < secondaryUl.children.length; k++) {
                 var secondaryUlChild = secondaryUl.children[k];
-                secondaryUlChild.children[1].classList.remove('show');
-                // ## 标题
-                if (chapters[i].id.toString() === secondaryUlChild.children[1].getAttribute('data-linkId').toString()) {
-                  topUl.children[j].children[1].classList.add('show');
-                  secondaryUlChild.children[1].classList.add('show');
-                };
+                if (secondaryUlChild.children[1] && secondaryUlChild.children[1].nodeName === 'P') {
+                  secondaryUlChild.children[1].classList.remove('show');
+                  // ## 标题
+                  if (chapters[i].id.toString() === secondaryUlChild.children[1].getAttribute('data-linkId').toString()) {
+                    if (topUl.children[j].children[1]) topUl.children[j].children[1].classList.add('show');
+                    secondaryUlChild.children[1].classList.add('show');
+                  };
+                }
                 thirdUl = secondaryUlChild.querySelector('ul');
                 if (thirdUl) {
                   for (let l = 0; l < thirdUl.children.length; l++) {
                     var thirdUlChild = thirdUl.children[l];
-                    thirdUlChild.children[1].classList.remove('show');
-                    // ### 标题
-                    if (chapters[i].id.toString() === thirdUlChild.children[1].getAttribute('data-linkId').toString()) {
-                      topUl.children[j].children[1].classList.add('show');
-                      secondaryUlChild.children[1].classList.add('show');
-                      thirdUlChild.children[1].classList.add('show');
-                    };
+                    if(thirdUlChild.children[1] && thirdUlChild.children[1].nodeName === 'P') {
+                      thirdUlChild.children[1].classList.remove('show');
+                      // ### 标题
+                      if (chapters[i].id.toString() === thirdUlChild.children[1].getAttribute('data-linkId').toString()) {
+                        if (topUl.children[j].children[1]) topUl.children[j].children[1].classList.add('show');
+                        if (secondaryUlChild.children[1]) secondaryUlChild.children[1].classList.add('show');
+                        thirdUlChild.children[1].classList.add('show');
+                      };
+                    }
                   }
                 }
               }
