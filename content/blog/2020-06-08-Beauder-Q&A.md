@@ -15,7 +15,7 @@ api.github.com 部分 CDN 服务器被墙，导致请求失败。
 - **确认 IP 可用**
   - 快捷键 `win + R` 打开启动工具，输入 `cmd` 或 `powershell`。
   - 输入命令 `ping IP地址` 然后按 `Enter` 执行。例： `ping 140.82.114.6`
-  - 如果没有出现 `请求超时` 或 `time out` 则当前测试的 IP 可用。s
+  - 如果没有出现 `请求超时` 或 `time out` 则当前测试的 IP 可用。
 - **将 IP 地址填入 hosts 文件中**
   - 打开路径 `C:\Windows\System32\drivers\etc` 下的 hosts 文件。该文件是纯文本文件，可以使用记事本或你所安装的任何文本编辑器打开。
   - 该文件有详细的填写说明，英文不畅者，可用[谷歌翻译](https://translate.google.cn/)。

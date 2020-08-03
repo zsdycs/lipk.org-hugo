@@ -7,6 +7,8 @@ _highlight: true
 
 ## Chrome { #chrome }
 
+> 版本 84.0.4147.105
+
 右键快捷方式「目标」添加 `--user-data-dir="C:/Chrome dev session" --disable-web-security`，要注意“--”前有空格。
 
 例如：
@@ -17,9 +19,13 @@ _highlight: true
 
 ## Firefox { #firefox }
 
-目前实测网络上流传的，通过修改设置跨域的方法都失效了，使用 [CORS Everywhere](https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/) 这个插件吧。
+> 版本 75.0，[历史版本下载](http://ftp.mozilla.org/pub/firefox/releases/)
+
+使用 [CORS Everywhere](https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/) 这个插件吧。
 
 ## Internet Explorer { #internet-explorer }
+
+> 版本 IE 11
 
 1. 设置，打开「Internet选项」*インターネットオプション*。
 2. 选择页签「安全」*セキュリティ*。
