@@ -12,12 +12,12 @@ _highlight: true
 ```javascript
 /**
   * 顺序：
-  *       -> 'github-light'        // 白天
-  *       -> 'github-dark'         // 黑夜
-  *       -> 'github-dark-orange'  // 橘暮
-  *       -> 'dark-blue'           // 幽瞑
-  *       -> 'icy-dark'            // 雨晨
-  *       -> 'photon-dark'         // 紫夜
+  *    -> 'github-light'        // 白天
+  *    -> 'github-dark'         // 黑夜
+  *    -> 'github-dark-orange'  // 橘暮
+  *    -> 'dark-blue'           // 幽瞑
+  *    -> 'icy-dark'            // 雨晨
+  *    -> 'photon-dark'         // 紫夜
   */
 ```
 
