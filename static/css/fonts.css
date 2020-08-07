@@ -68,6 +68,7 @@ code {
   font-size: 100%;
 }
 
+/* 文章目录 */
 #TableOfContents .topUlChild {
   font-size: 20px;
 }
@@ -98,5 +99,52 @@ aside.index #info li {
 
 /* 移动端 font-size */
 @media screen and (max-width: 600px) {
-  /* TODO 定义 font-size */
+  html {
+    font-size: 80%;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 13px;
+  }
+
+  blockquote {
+    font-size: 60%;
+  }
+
+  .copyright {
+    font-size: 10px;
+  }
+
+  .subtitle {
+    font-size: .7em;
+  }
+
+  pre,
+  code {
+    font-size: 10px;
+  }
+
+  .slogan {
+    font-size: 80%;
+  }
+
+  /* 首页 */
+  aside.index #name {
+    font-size: 14px;
+  }
+
+  aside.index #info li {
+    font-size: 10px;
+  }
 }
