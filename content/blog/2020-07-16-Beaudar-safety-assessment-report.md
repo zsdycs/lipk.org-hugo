@@ -4,7 +4,7 @@ date: '2020-07-16'
 slug: 'beaudar-safety-assessment-report'
 ---
 
-> 本文为 [Beaudar(表达)](https://beaudar.lipk.org) 于[全国互联网安全管理服务平台](http://www.beian.gov.cn/)提交的安全评估报告。
+> 本文为 [Beaudar - 表达](https://beaudar.lipk.org) 于[全国互联网安全管理服务平台](http://www.beian.gov.cn/)提交的安全评估报告。
 > 如网站使用“Beaudar(表达) 评论插件”，且其为网站的唯一交互功能，则可以参照本文作为网站的「安全评估报告」提交到“全国互联网安全管理服务平台”进行「网安备案」申请。
 
 ### 1、安全管理负责人、信息审核人员及安全管理机构设立情况。 { #question1 }

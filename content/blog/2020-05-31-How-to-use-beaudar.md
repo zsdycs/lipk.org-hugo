@@ -20,7 +20,7 @@ _highlight: true
 
 但是还是觉得 utterances 的实现比较好，但是没有多语言是个缺陷。索性把它的源码拿来自己改成中文的了。
 
-于是，就有了 [Beaudar(表达)](https://beaudar.lipk.org)。
+于是，就有了 [Beaudar - 表达](https://beaudar.lipk.org)。
 
 我使用的是“Issue 标题包含页面标题”的版本，另外还有五个模式任君选择。引用代码可以在线生成。也可以参考我下方给出的代码片段，在引用时，我增加了模式切换提示，及加载的状态。
 

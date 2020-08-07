@@ -6,7 +6,7 @@ _highlight: true
 ---
 
 > 应 [@aixiu](https://github.com/aixiu) 需要本教程，本文将从 Utterances 是如何工作的；如何在本地及生产环境运行；身份授权 oauth 代码配置及运行。
-> 这 3 个方面进行讲解。同理，本文适用于 [Beaudar(表达)](http://beaudar.lipk.org)
+> 这 3 个方面进行讲解。同理，本文适用于 [Beaudar - 表达](https://beaudar.lipk.org)
 
 ## Utterances 是如何工作的 { #how-utterances-work }
 
