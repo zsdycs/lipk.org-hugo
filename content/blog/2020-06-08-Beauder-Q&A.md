@@ -71,7 +71,8 @@ api.github.com 部分 CDN 服务器被墙，导致请求失败。
  *   'photon-dark',
  *   'github-dark',
  *   'github-light',
- *   'github-dark-orange'
+ *   'github-dark-orange',
+ *   'preferred-color-scheme'
  * ]
  */
 var message = {
