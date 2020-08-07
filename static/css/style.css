@@ -171,12 +171,6 @@
    border-top: 1px solid;
  }
 
- ruby,
- .menu a,
- .menu button {
-   user-select: none;
- }
-
  /* 编辑
   <ins> <del>
  */
@@ -191,12 +185,6 @@
  img {
    max-width: 100%;
    border-radius: 0;
-   -webkit-touch-callout: none;
-   -webkit-user-select: none;
-   -khtml-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
  }
 
  /* img::before {
@@ -356,13 +344,6 @@
    direction: rtl;
  }
 
- .unselectable {
-   -webkit-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
- }
-
  .menu {
    transition: all .5s ease;
  }
@@ -431,10 +412,6 @@
    max-height: 400px;
    overflow: hidden;
    margin-top: -10px;
-   -webkit-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
  }
 
  #TableOfContents:hover p {
