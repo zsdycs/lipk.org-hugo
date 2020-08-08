@@ -37,7 +37,7 @@ function beaudarEnd() {
           type: 'set-theme',
           theme: sessionStorage.getItem('mode')
         };
-        var beaudar = document.querySelector('iframe');
+        var beaudar = document.querySelector('#beaudar iframe');
         // 与 beaudar 通信
         beaudar.contentWindow.postMessage(message, 'https://beaudar.lipk.org');
       }

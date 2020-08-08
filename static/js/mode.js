@@ -81,7 +81,7 @@
 // 切换黑夜白天模式
 function mode() {
   var nowDarkmode = sessionStorage.getItem('mode');
-  var beaudar = document.querySelector('iframe');
+  var beaudar = document.querySelector('#beaudar iframe');
   var message = {
     type: 'set-theme',
     theme: 'github-light'
