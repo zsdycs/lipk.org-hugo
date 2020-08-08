@@ -502,6 +502,11 @@
    font-weight: bolder;
  }
 
+ article.index h3 {
+  margin-top: 34px;
+  margin-bottom: auto;
+ }
+
  article.index h1:hover .anchor,
  article.index h2:hover .anchor,
  article.index h3:hover .anchor {
