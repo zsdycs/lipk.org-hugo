@@ -447,6 +447,25 @@
    vertical-align: middle;
  }
 
+ p.billibili {
+   overflow: hidden;
+ }
+
+ iframe.billibili {
+   width: 100%;
+   height: 480px;
+   margin-top: -75px;
+   margin-bottom: -38px;
+ }
+
+ @media only screen and (max-width:545px) {
+   iframe.billibili {
+     --width: calc(100vw - 50px);
+     height: calc(var(--width)/1.75);
+     margin: 0;
+   }
+ }
+
  /* 伪类 */
 
  /* 首页 */
