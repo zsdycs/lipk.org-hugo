@@ -1,7 +1,7 @@
 {
   "name": "lipk.org",
   "scripts": {
-    "start": "opener http://localhost:1313 && hugo server --disableFastRender",
+    "start": "opener http://localhost:1313 && hugo server --disableFastRender --ignoreCache --bind 0.0.0.0",
     "predeploy": "hugo && echo lipk.org > docs/CNAME",
     "deploy": "gh-pages -d docs"
   },
