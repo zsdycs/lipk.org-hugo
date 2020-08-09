@@ -47,7 +47,10 @@
  h1:hover .anchor,
  h2:hover .anchor,
  h3:hover .anchor {
-   visibility: visible;
+   display: inline-block;
+   margin-right: -23px;
+   transform: initial;
+   width: 23px;
  }
 
  h1 {
@@ -257,7 +260,7 @@
 
  /* 选择器 class id  */
  .anchor {
-   visibility: hidden;
+   display: none;
  }
 
  .ie.copyright {
@@ -503,14 +506,14 @@
  }
 
  article.index h3 {
-  margin-top: 34px;
-  margin-bottom: auto;
+   margin-top: 34px;
+   margin-bottom: auto;
  }
 
  article.index h1:hover .anchor,
  article.index h2:hover .anchor,
  article.index h3:hover .anchor {
-   visibility: hidden;
+   display: none;
  }
 
  aside.index i {
