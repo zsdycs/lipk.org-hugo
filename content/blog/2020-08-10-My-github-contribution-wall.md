@@ -32,7 +32,7 @@ Github 贡献墙是这样的：
 
 ![git log 命令行截图](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/my-github-contribution-wall(3).jpg)
 
-显然这样看的效率太低了，我是用 sourcetree 查看的，在 sourcetree 中查看提交者信息很方便：
+显然这样看的效率太低了，我是用 [sourcetree](https://www.sourcetreeapp.com/) 查看的，在 sourcetree 中查看提交者信息很方便：
 
 ![sourcetree 的截图](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/my-github-contribution-wall(4).jpg)
 
