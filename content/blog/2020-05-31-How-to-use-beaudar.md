@@ -14,7 +14,7 @@ _highlight: true
 
 - [Gitalk](https://github.com/gitalk/gitalk)
 - [Vssue](https://github.com/meteorlxy/vssue)
-- [Gitment](https://github.com/imsun/gitment)（貌似已经不再维护）
+- [Gitment](https://github.com/imsun/gitment)（无人维护）
 
 除了以上提到的，国内被广泛使用的，还有 [Valine](https://valine.js.org/)，使用了 [Gravatar](http://cn.gravatar.com/) 作为用户图像，评论只需要提供 Gravatar 账号设置的邮箱，非常方便。
 
