@@ -6,7 +6,7 @@ slug: /vitae
 
 # 李鹏坤 { #pengkun-li }
 
-![我的照片](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/vitae.jpg)
+<p><img src="https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/vitae.jpg" alt="我的照片" height="150px"></p>
 
 ## 基本信息 { #basic-information }
 
