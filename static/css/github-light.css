@@ -8,6 +8,9 @@
  /* 章节
   <body> <section> <nav> <article> <aside> <h1*6> <header> <footer> <address> <main>
  */
+ body {
+   background: #fff;
+ }
 
  /* 组织内容
   <p> <hr> <pre> <blockquote> <ol> <ul> <li> <dl> <dt> <dd> <figure> <figcaption> <div>
