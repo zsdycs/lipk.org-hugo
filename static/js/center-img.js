@@ -13,7 +13,10 @@
           if (grandparent.children.length != 1) continue;
           grandparent.firstChild.style.border = 'none';
         }
-        if (parent.nodeName === 'P') parent.style.textAlign = 'center';
+        if (parent.nodeName === 'P') {
+          parent.style.textAlign = 'center';
+          parent.insertAdjacentHTML('beforeend', `<p class="image-description">${tag.alt}</p>`)
+        };
       }
     }
   }

@@ -461,6 +461,12 @@
    margin-bottom: -38px;
  }
 
+ .image-description {
+   margin: 0px 15px 32px;
+   line-height: 17px;
+   text-align: center;
+ }
+
  @media only screen and (max-width:545px) {
    iframe.billibili {
      --width: calc(100vw - 50px);
