@@ -788,7 +788,7 @@
    width: device-width;
  }
 
-/* ********************* */
+/* ********** 仿微信聊天 *********** */
 
 .mobile-page .admin-img,
 .mobile-page .user-img {
@@ -873,7 +873,7 @@ i.triangle-user {
     text-align: right;
 }
 
-/* ********************* */
+/* ********** 纸张布局 *********** */
 .invitation-body {
   background-color: #d2bf9e;
   color: #41403e;
