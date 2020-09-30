@@ -127,7 +127,7 @@ function mode() {
     this.addDarkmodeCSS('github-light');
   }
   // 与 beaudar 通信
-  if (sessionStorage.getItem('beaudar') === 'true') {
+  if (sessionStorage.getItem('beaudar') === 'true' && beaudar) {
     beaudar.contentWindow.postMessage(message, 'https://beaudar.lipk.org');
   }
 }
