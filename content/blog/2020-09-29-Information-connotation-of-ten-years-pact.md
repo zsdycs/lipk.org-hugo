@@ -39,7 +39,7 @@ if (articleEle[0]) {
                     <img class="admin-img" src="https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/2020-09-30-Information-connotation-of-ten-years-pact-dyq.jpg" />
                     <div class="admin-msg">
                         <div class="user-name">
-                              <span>邓莹秋同学</span>
+                              <span>邓滢秋同学（筹备组）</span>
                         </div>
                         <div class="admin-div">
                               <!--<i class="triangle-admin"></i>-->
@@ -58,7 +58,7 @@ if (articleEle[0]) {
                     <img class="admin-img" src="https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/2020-09-30-Information-connotation-of-ten-years-pact-ljy.jpg" />
                     <div class="admin-msg">
                         <div class="user-name">
-                              <span>李俊同学</span>
+                              <span>李俊毅同学（筹备组）</span>
                         </div>
                         <div class="admin-div">
                               <!--<i class="triangle-admin"></i>-->
@@ -70,7 +70,7 @@ if (articleEle[0]) {
                     <img class="admin-img" src="https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/2020-09-30-Information-connotation-of-ten-years-pact-lqf.jpg" />
                     <div class="admin-msg">
                         <div class="user-name">
-                              <span>罗棋锋同学</span>
+                              <span>罗棋锋同学（筹备组）</span>
                         </div>
                         <div class="admin-div">
                               <!--<i class="triangle-admin"></i>-->
@@ -82,7 +82,7 @@ if (articleEle[0]) {
                     <img class="admin-img" src="https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/2020-09-30-Information-connotation-of-ten-years-pact-ylp.jpg" />
                     <div class="admin-msg">
                         <div class="user-name">
-                              <span>余柳平同学</span>
+                              <span>余柳平同学（筹备组）</span>
                         </div>
                         <div class="admin-div">
                               <!--<i class="triangle-admin"></i>-->
@@ -94,7 +94,7 @@ if (articleEle[0]) {
                     <img class="admin-img" src="https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/2020-09-30-Information-connotation-of-ten-years-pact-ljr.jpg" />
                     <div class="admin-msg">
                         <div class="user-name">
-                              <span>梁洁茹同学</span>
+                              <span>梁洁茹同学（筹备组）</span>
                         </div>
                         <div class="admin-div">
                               <!--<i class="triangle-admin"></i>-->
@@ -106,7 +106,7 @@ if (articleEle[0]) {
                     <img class="admin-img" src="https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/2020-09-30-Information-connotation-of-ten-years-pact-dyq.jpg" />
                     <div class="admin-msg">
                         <div class="user-name">
-                              <span>邓莹秋同学</span>
+                              <span>邓滢秋同学（筹备组）</span>
                         </div>
                         <div class="admin-div">
                               <!--<i class="triangle-admin"></i>-->
