@@ -14,15 +14,18 @@ i.triangle-user {
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
 }
+
 .admin-group .user-name {
-  font-size: 12px;
-  line-height: 12px;
-  padding-left: 15px;
-  color: #999999;
+    font-size: 12px;
+    line-height: 12px;
+    padding-left: 15px;
+    color: #6c6c6c;
 }
+
 .admin-group .admin-div {
-  margin-top: 5px;
+    margin-top: 5px;
 }
+
 .mobile-page i.triangle-admin {
     left: 4px;
     border-right: 12px solid rgb(248, 248, 248);
@@ -82,27 +85,31 @@ i.triangle-user {
 }
 
 .invitation-body {
-  background-color: #d2bf9e;
-  color: #41403e;
-  padding: 20px 30px 95px;
-  border: 2px solid #41403e;
-  border-bottom-left-radius: 15px 255px;
-  border-bottom-right-radius: 225px 15px;
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
+    background-color: #d2bf9e;
+    color: #41403e;
+    padding: 20px 30px 95px;
+    border: 2px solid #41403e;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
 }
+
 .invitation-body img {
-  filter: none;
+    filter: none;
 }
+
 .invitation-body blockquote {
-  border: none;
-  color: #5d5d5d;
+    border: none;
+    color: #292929;
+    ;
 }
 
 .invitation-body ::selection {
-  background: #45a1ff;
-  color: #fff;
+    background: #45a1ff;
+    color: #fff;
 }
+
 .border-primary {
     border-color: #41403e;
 }
@@ -131,4 +138,15 @@ i.triangle-user {
     width: 80vw;
     max-width: 40em; */
     /* transform: rotate(-3deg); */
+}
+
+p.map {
+    overflow: hidden;
+}
+
+iframe.map {
+    width: 100%;
+    height: 400px;
+    margin-bottom: -90px;
+    margin-top: -110px;
 }
