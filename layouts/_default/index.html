@@ -1,53 +1,54 @@
 {{ partial "header.html" . }}
 <div class="index wrapper">
-<main class="index">
-    <aside class="index">
-      <div id="logo">
-        <!-- <img src="//cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/logo.png" alt="我的头像"> -->
-        <img src="//cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/holiday.jpg" alt="假日快乐">
-        <div id="name">李鹏坤</div>
-      </div>
-      <ul id="info">
-        <li>
-            <i class="fa-fw fa fa-user"></i>执手对影成双
-        </li>
-        <li>
-            <i class="fa-fw fa fa-envelope"></i>mail@lipk.org
-        </li>
-        <li>
-            <i class="fa-fw fa fa-map-marker"></i>江苏 · 苏州
-        </li>
-        <li>
-            <i class="fa-fw fa fa-home"></i>广东 · 中山
-        </li>
-      </ul>
-    </aside>
-    <article class="index">
-        {{ .Content }}
-    </article>
-    <footer class="index">
-        {{ range .Site.Params.customJS }}
-        <script async src="{{ . | relURL }}"></script>
-        {{ end }}
-        {{ with .Site.Params.footer }}
-        <div class="copyright">
-            {{ . | markdownify }}
-            <a class="travellings" href="https://travellings.now.sh/" target="_blank" rel="noopener noreferrer"
-                title="开往-友链接力">
-                <img src="/images/travellings.svg" alt="开往-友链接力" height="17">
-            </a>
-            <br />
-            <div class="beian">
-                <img src="/images/beian.png" />
-                <a target="_blank" rel="noopener noreferrer"
-                    href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44200002444254">
-                    粤公网安备 44200002444254号
-                </a>
+    <main class="index">
+        <aside class="index">
+            <div id="logo">
+                <img src="//cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/logo.png" alt="我的头像">
+                <!-- <img src="//cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/holiday.jpg" alt="假日快乐"> -->
+                <div id="name">李鹏坤</div>
             </div>
-        </div>
-        {{ end }}
-    </footer>
-</main>
+            <ul id="info">
+                <li>
+                    <i class="fa-fw fa fa-user"></i>执手对影成双
+                </li>
+                <li>
+                    <i class="fa-fw fa fa-envelope"></i>mail@lipk.org
+                </li>
+                <li>
+                    <i class="fa-fw fa fa-map-marker"></i>江苏 · 苏州
+                </li>
+                <li>
+                    <i class="fa-fw fa fa-home"></i>广东 · 中山
+                </li>
+            </ul>
+        </aside>
+        <article class="index">
+            {{ .Content }}
+        </article>
+        <footer class="index">
+            {{ range .Site.Params.customJS }}
+            <script async src="{{ . | relURL }}"></script>
+            {{ end }}
+            {{ with .Site.Params.footer }}
+            <div class="copyright">
+                {{ . | markdownify }}
+                <a class="travellings" href="https://travellings.now.sh/" target="_blank" rel="noopener noreferrer"
+                    title="开往-友链接力">
+                    <img src="/images/travellings.svg" alt="开往-友链接力" height="17">
+                </a>
+                <br />
+                <div class="beian">
+                    <img src="/images/beian.png" />
+                    <a target="_blank" rel="noopener noreferrer"
+                        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44200002444254">
+                        粤公网安备 44200002444254号
+                    </a>
+                </div>
+            </div>
+            {{ end }}
+        </footer>
+    </main>
 </div>
 </body>
+
 </html>
