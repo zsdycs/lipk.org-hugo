@@ -544,12 +544,13 @@
    float: right;
    padding-bottom: 18px;
    width: 70%;
-   letter-spacing: .2px;
  }
 
  article.index a {
-   border-bottom: none;
    text-decoration: none;
+   display: block;
+   text-align: center;
+   border-bottom: 1px solid transparent;
  }
 
  article.index rt {
