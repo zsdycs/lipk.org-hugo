@@ -82,7 +82,7 @@
   }
 
   // 在“关于”加载评论
-  if (getUrlRelativePath().length = '/about/'.length &&
+  if (getUrlRelativePath().length === '/about/'.length &&
     getUrlRelativePath().substring(0, '/about/'.length) === '/about/') {
     addBeaudar()
   }
