@@ -553,6 +553,11 @@
    border-bottom: 1px solid transparent;
  }
 
+ article.index button {
+  display: block;
+  width: 100%;
+}
+
  article.index rt {
    font-weight: bolder;
  }
