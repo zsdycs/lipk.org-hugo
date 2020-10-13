@@ -414,7 +414,7 @@
    padding: 10px 0;
    padding-left: 40px;
    max-height: 400px;
-   overflow: hidden;
+   overflow: auto;
    margin-top: -10px;
  }
 
