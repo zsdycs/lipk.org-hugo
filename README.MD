@@ -7,12 +7,12 @@
 ```markdown
 lipk.org
 │
-├─ content MD # 资源文件夹
+├─ content # Markdown 资源文件夹
 │  ├─ _index.md # 首页
 │  ├─ about.md # 关于
 │  ├─ vitae.md # 关于 - 简历
 │  ├─ food.md # 博客 - 美食
-│  └─ blog # 博客 MD 文件夹
+│  └─ blog # 博客 Markdown 文件夹
 │     ├─ _index.md # 博客入口
 │     └─ ......
 ├─ layouts # 页面模板文件夹
@@ -22,7 +22,7 @@ lipk.org
 │  │  └─ ......
 │  └─404.html 404 # 页面
 ├─ static # 站点资源文件夹
-│  ├─ CNAME github-pages # 域别名声明
+│  ├─ CNAME # github-pages 域别名声明
 │  ├─ favicon.ico # 站点图标
 │  ├─ font-awesome-4.7.0 # 图标库
 │  │  └─ ......
@@ -36,7 +36,7 @@ lipk.org
 ├─ beaudar.json # Beaudar 配置
 ├─ config.toml # 网站配置
 ├─ LICENSE # 版权声明
-├─ package.json node # 配置
+├─ package.json # node 配置
 ├─ gulpfile.js # gulp 打包配置
 └─ README # 源代码说明
 ```
