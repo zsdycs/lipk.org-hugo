@@ -30,7 +30,7 @@
     var highlightjsNightCSS = document.querySelector('#highlightjsThemeNight');
 
     // 初始化
-    [ githubDarkCSS.disabled,
+    [githubDarkCSS.disabled,
       githubLightCSS.disabled,
       githubDarkOrangeCSS.disabled,
       darkBlueCSS.disabled,
@@ -75,59 +75,59 @@
   }
 
   // 画面加载时，加载相应模式 CSS
-  addDarkmodeCSS(modeLS);
-})();
+  window.addDarkmodeCSS(modeLS);
 
-// 切换黑夜白天模式
-function mode() {
-  var nowDarkmode = sessionStorage.getItem('mode');
-  var beaudar = document.querySelector('#beaudar iframe');
-  var message = {
-    type: 'set-theme',
-    theme: 'github-light'
-  };
-  /**
-   * 顺序：
-   *       -> 'github-light'        // 白天
-   *       -> 'github-dark'         // 黑夜
-   *       -> 'github-dark-orange'  // 橘暮
-   *       -> 'dark-blue'           // 幽瞑
-   *       -> 'icy-dark'            // 雨晨
-   *       -> 'photon-dark'         // 紫夜
-   */
-  if (nowDarkmode === 'github-light') {
-    // github-light -> github-dark
-    message.theme = 'github-dark';
-    sessionStorage.setItem('mode', 'github-dark');
-    this.addDarkmodeCSS('github-dark');
-  } else if (nowDarkmode === 'github-dark') {
-    // github-dark -> github-dark-orange
-    message.theme = 'github-dark-orange';
-    sessionStorage.setItem('mode', 'github-dark-orange');
-    this.addDarkmodeCSS('github-dark-orange');
-  } else if (nowDarkmode === 'github-dark-orange') {
-    // github-dark-orange -> dark-blue
-    message.theme = 'dark-blue';
-    sessionStorage.setItem('mode', 'dark-blue');
-    this.addDarkmodeCSS('dark-blue');
-  } else if (nowDarkmode === 'dark-blue') {
-    // dark-blue -> icy-dark
-    message.theme = 'icy-dark';
-    sessionStorage.setItem('mode', 'icy-dark');
-    this.addDarkmodeCSS('icy-dark');
-  } else if (nowDarkmode === 'icy-dark') {
-    // icy-dark -> photon-dark
-    message.theme = 'photon-dark';
-    sessionStorage.setItem('mode', 'photon-dark');
-    this.addDarkmodeCSS('photon-dark');
-  } else if (nowDarkmode === 'photon-dark') {
-    // photon-dark -> github-light
-    message.theme = 'github-light';
-    sessionStorage.setItem('mode', 'github-light');
-    this.addDarkmodeCSS('github-light');
+  // 切换黑夜白天模式
+  window.mode = function mode() {
+    var nowDarkmode = sessionStorage.getItem('mode');
+    var beaudar = document.querySelector('#beaudar iframe');
+    var message = {
+      type: 'set-theme',
+      theme: 'github-light'
+    };
+    /**
+     * 顺序：
+     *       -> 'github-light'        // 白天
+     *       -> 'github-dark'         // 黑夜
+     *       -> 'github-dark-orange'  // 橘暮
+     *       -> 'dark-blue'           // 幽瞑
+     *       -> 'icy-dark'            // 雨晨
+     *       -> 'photon-dark'         // 紫夜
+     */
+    if (nowDarkmode === 'github-light') {
+      // github-light -> github-dark
+      message.theme = 'github-dark';
+      sessionStorage.setItem('mode', 'github-dark');
+      window.addDarkmodeCSS('github-dark');
+    } else if (nowDarkmode === 'github-dark') {
+      // github-dark -> github-dark-orange
+      message.theme = 'github-dark-orange';
+      sessionStorage.setItem('mode', 'github-dark-orange');
+      window.addDarkmodeCSS('github-dark-orange');
+    } else if (nowDarkmode === 'github-dark-orange') {
+      // github-dark-orange -> dark-blue
+      message.theme = 'dark-blue';
+      sessionStorage.setItem('mode', 'dark-blue');
+      window.addDarkmodeCSS('dark-blue');
+    } else if (nowDarkmode === 'dark-blue') {
+      // dark-blue -> icy-dark
+      message.theme = 'icy-dark';
+      sessionStorage.setItem('mode', 'icy-dark');
+      window.addDarkmodeCSS('icy-dark');
+    } else if (nowDarkmode === 'icy-dark') {
+      // icy-dark -> photon-dark
+      message.theme = 'photon-dark';
+      sessionStorage.setItem('mode', 'photon-dark');
+      window.addDarkmodeCSS('photon-dark');
+    } else if (nowDarkmode === 'photon-dark') {
+      // photon-dark -> github-light
+      message.theme = 'github-light';
+      sessionStorage.setItem('mode', 'github-light');
+      window.addDarkmodeCSS('github-light');
+    }
+    // 与 beaudar 通信
+    if (sessionStorage.getItem('beaudar') === 'true' && beaudar) {
+      beaudar.contentWindow.postMessage(message, 'https://beaudar.lipk.org');
+    }
   }
-  // 与 beaudar 通信
-  if (sessionStorage.getItem('beaudar') === 'true' && beaudar) {
-    beaudar.contentWindow.postMessage(message, 'https://beaudar.lipk.org');
-  }
-}
+})();
