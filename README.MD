@@ -35,9 +35,9 @@ lipk.org
 ├─ .gitignore git # 提交忽略配置
 ├─ beaudar.json # Beaudar 配置
 ├─ config.toml # 网站配置
+├─ gulpfile.js # gulp 打包配置
 ├─ LICENSE # 版权声明
 ├─ package.json # node 配置
-├─ gulpfile.js # gulp 打包配置
 └─ README # 源代码说明
 ```
 
