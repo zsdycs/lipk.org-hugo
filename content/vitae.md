@@ -80,4 +80,4 @@ JAVA程序设计、软件系统分析与设计、软件项目管理、计算机�
 
 - [B 站](https://space.bilibili.com/11407562)。
 - [Github](https://github.com/zsdycs)。
-- [下载 PDF 简历](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/Penkun-Lee-graduates-vitae.pdf)。
+- [PDF 简历](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/Penkun-Lee-vitae-20201016(update).pdf)。
