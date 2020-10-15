@@ -14,6 +14,13 @@ slug: /vitae
 位置：江苏 · 苏州。  
 邮箱：mail@lipk.org。
 
+## 工作经历 { #work-experience }
+
+- 2018 . 09 ~ 2019 . 04 **用友网络科技股份(苏州)有限公司**，Web 前端开发实习生。
+  - 接触到的开发模式有： React + 钉耙的前端开发、Express + MongoDB + UI 框架 Semantic UI + Vue.js 搭建动态站点的全栈开发，使用 Git 进行协同办公。
+- 2019 . 06 ~ 至今 **方舟信息技术(苏州)有限公司**，Web 前端开发工程师。
+  - 项目编程（PG）和项目测试（PT）担当。参与开发项目的开发模式有： Angular + Ant Design、Ruby + Rails 以及 Vue + Ant Design，使用 Git 进行协同办公。
+
 ## 教育背景 { #education-background }
 
 - 2017 . 09 ~ 2019 . 07 **苏州大学**，软件工程学士。  
@@ -21,7 +28,7 @@ slug: /vitae
 JAVA程序设计、软件系统分析与设计、软件项目管理、计算机网络、软件质量保证、计算机安全技术、信息系统与企业管理、Linux 系统及应用、CASE 等。
 - 2016 . 09 ~ 2019 . 07 **苏州市职业大学**，软件技术专科生。  
   - 必修课：
-程序逻辑设计与编程规范 (C)、C# 应用程序设计 (winfrom)、 SQL Server 数据库应用、数据结构、 APP 产品交互设计、 ASP.net 商务网站设计、 Web 系统 UI 设计、iOS 开发技术、计算机网络基础、面向对象程序设计 (JAVA)、实用软件工程与 UML、Web 前端开发等。  
+程序逻辑设计与编程规范 (C)、C# 应用程序设计 (Winfrom)、 SQL Server 数据库应用、数据结构、 APP 产品交互设计、 ASP.net 商务网站设计、 Web 系统 UI 设计、iOS 开发技术、计算机网络基础、面向对象程序设计 (JAVA)、实用软件工程与 UML、Web 前端开发等。  
 
 ## 校内活动 { #school-activities }
 
@@ -47,9 +54,9 @@ JAVA程序设计、软件系统分析与设计、软件项目管理、计算机�
 ## 计算机水平 { #computer-skill }
 
 - 开发工具：VS Code、VS、DW、VS、Axure、Eclipse。
-- 框架：Express、Vue、Semantic UI、React、ant、钉耙等。
-- 编程语言：HTML、 JavaScript、TypeScript、JQ、CSS、~~C#、JAVA、 PHP、 C~~ 。
-- 应用程序：常见数据库如：MySQL、SQL Server、Oracle、MongoDB 等，NodeJs、Git、微软三件套、PS、AE、AU、PR。
+- 框架：Angular、Vue、React、Express、Semantic UI、Ant Design、钉耙等。
+- 编程语言：HTML、JavaScript、TypeScript、JQ、CSS、~~C#、JAVA、 PHP、 C~~ 。
+- 应用程序：MySQL、SQL Server、Oracle、MongoDB 等，NodeJs、Git、微软三件套、PS、AE、AU、PR。
 - 操作系统：Windows、MacOS、CenterOS。
 
 ## 荣誉奖励 { #honor-award }
