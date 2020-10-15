@@ -68,6 +68,14 @@
      color: #4183c4;
  }
 
+ #TableOfContents li p.show {
+    color: #4183c4;
+  }
+
+  #TableOfContents>ul {
+    border-left: 4px solid #2b3137;
+  }
+
  .masthead .menu .active a {
      border-bottom: 1px solid #f7f7f7;
  }

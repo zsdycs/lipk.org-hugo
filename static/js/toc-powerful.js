@@ -10,22 +10,22 @@
   }
 
   /**
+   * @param current 当前位置
    * @param target 目标位置
    * @param rate 缓动率
+   * @function fun 执行函数
    */
-  function animation(target, rate) {
-    var current = parseInt(document.documentElement.scrollTop);
+  function animation(current, target, rate, fun) {
     if (current === target) {
       return;
     }
-
     function step() {
       current += (target - current) / rate;
       if (Math.abs(target - current) < 1) {
-        window.scrollTo(0, target);
+        fun(target);
         return;
       }
-      window.scrollTo(0, current);
+      fun(current);
       window.requestAnimationFrame(step);
     };
     step();
@@ -79,7 +79,10 @@
       }
       // 修改浏览器地址
       history.pushState(history.state, document.title, `#${linkId}`);
-      animation(target + 1, 5);
+      var fun = function (e) {
+        window.scrollTo(0, e);
+      };
+      animation(parseInt(document.documentElement.scrollTop), target + 1, 5, fun);
     });
     return el;
   }
@@ -200,7 +203,7 @@
                 if (thirdUl) {
                   for (let l = 0; l < thirdUl.children.length; l++) {
                     var thirdUlChild = thirdUl.children[l];
-                    if(thirdUlChild.children[1] && thirdUlChild.children[1].nodeName === 'P') {
+                    if (thirdUlChild.children[1] && thirdUlChild.children[1].nodeName === 'P') {
                       thirdUlChild.children[1].classList.remove('show');
                       // ### 标题
                       if (chapters[i].id.toString() === thirdUlChild.children[1].getAttribute('data-linkId').toString()) {
@@ -249,6 +252,51 @@
     };
   };
 
+  /**
+   * toc 的位置和高度
+   */
+  function tocTopWithHeight() {
+
+    // 距离顶端的距离 = 元素距离文档顶端偏移值 - 网页被卷起来的高度
+    var beginningFromTop = $('#beginning').offsetTop - document.documentElement.scrollTop;
+    var tocTopString = toc.style.top.substring(0, toc.style.top.indexOf('px'));
+    tocTopString = tocTopString ? tocTopString : 0;
+    var fun = function (e) {
+      toc.style.top = e + 'px';
+    }
+    if (beginningFromTop > 0) {
+      animation(parseInt(tocTopString), beginningFromTop, 5, fun);
+      console.log(document.documentElement.clientHeight - 48 - beginningFromTop)
+    } else {
+      animation(parseInt(tocTopString), 0, 5, fun);
+    }
+
+    // 距离底端的距离 = 网页工作区域的高度 - (元素距离文档顶端偏移值 - 网页被卷起来的高度))
+    var eofFromEnd = document.documentElement.clientHeight - ($('#eof').offsetTop - document.documentElement.scrollTop);
+    var eofFromTop = $('#eof').offsetTop - document.documentElement.scrollTop;
+    var tocHeightString = toc.style.height.substring(0, toc.style.height.indexOf('px'));
+    // 完整tocHeight = 网页工作区域的高度 - 24 margin * 2
+    tocHeightString = tocHeightString ? tocHeightString : 0;
+    var fun = function (e) {
+      toc.style.height = e + 'px';
+    }
+    // eof 距 底边 距离 > 0
+    if (eofFromEnd > 0) {
+      // eof 距 上边 距离 > 0
+      if (eofFromTop > 0) {
+        animation(parseInt(tocHeightString), eofFromTop, 5, fun);
+      } else {
+        animation(parseInt(tocHeightString), 0, 5, fun);
+      }
+    } else {
+      if (beginningFromTop > 0) {
+        animation(parseInt(tocHeightString), document.documentElement.clientHeight - 48 - beginningFromTop, 5, fun);
+      } else {
+        animation(parseInt(tocHeightString), document.documentElement.clientHeight - 48, 5, fun);
+      }
+    }
+  }
+
   function scrolling() {
     var distance;
     // 1220 页面变换的页面宽度：media screen and (max-width:1220px)
@@ -260,9 +308,9 @@
       distance = 20 + $('header').offsetHeight
       tocAddClass(distance);
     }
+    tocTopWithHeight();
   }
 
-  // Chapter, highlight 章节高亮
   scrolling();
   document.addEventListener('scroll', throttle(scrolling, 80, 120));
 

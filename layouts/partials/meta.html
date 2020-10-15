@@ -8,5 +8,5 @@
     {{ if .Params.date }} {{ if and (.Section) (or (.PrevInSection) (.NextInSection)) }}
     {{ with .Site.Params.author }}{{ . }}{{ end }} / {{ .Date.Format "2006-01-02" }}{{ end }}{{ end }}
 </h3>
-<hr>
+<hr id="beginning">
 {{ end }}

@@ -410,12 +410,18 @@
  #TableOfContents {
    position: fixed;
    right: 40px;
-   top: 30%;
-   padding: 10px 0;
-   padding-left: 40px;
-   max-height: 400px;
+   top: 0px;
+   margin: 24px 0px;
    overflow: auto;
-   margin-top: -10px;
+ }
+
+ #TableOfContents i {
+   display: none;
+ }
+
+ #TableOfContents>ul {
+   padding: 0 18px !important;
+   margin: 0;
  }
 
  #TableOfContents:hover p {
@@ -423,14 +429,18 @@
  }
 
  #TableOfContents ul {
-   padding: 0px;
+   padding-left: 10px;
    list-style: none;
+ }
+
+ #TableOfContents li {
+   margin: 0;
  }
 
  #TableOfContents p {
    width: 145px;
    transition: opacity .5s ease-in;
-   opacity: 0;
+   /* opacity: 0; */
    cursor: pointer;
    overflow: hidden;
    white-space: nowrap;
@@ -441,7 +451,21 @@
  }
 
  #TableOfContents li p.show {
-   opacity: 1;
+   /* opacity: 1; */
+ }
+
+ #TableOfContents::-webkit-scrollbar {
+   height: 8px;
+   width: 8px;
+ }
+
+ #TableOfContents::-webkit-scrollbar-corner {
+   background: 0;
+ }
+
+ #TableOfContents::-webkit-scrollbar-thumb {
+   background: rgba(128, 134, 139, .26);
+   border-radius: 8px;
  }
 
  #TableOfContents .topUlChild,
@@ -555,9 +579,9 @@
  }
 
  article.index button {
-  display: block;
-  width: 100%;
-}
+   display: block;
+   width: 100%;
+ }
 
  article.index rt {
    font-weight: bolder;
