@@ -266,7 +266,6 @@
     }
     if (beginningFromTop > 0) {
       animation(parseInt(tocTopString), beginningFromTop, 5, fun);
-      console.log(document.documentElement.clientHeight - 48 - beginningFromTop)
     } else {
       animation(parseInt(tocTopString), 0, 5, fun);
     }
