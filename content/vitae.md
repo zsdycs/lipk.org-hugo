@@ -53,7 +53,7 @@ JAVA程序设计、软件系统分析与设计、软件项目管理、计算机�
 
 ## 计算机水平 { #computer-skill }
 
-- 开发工具：VS Code、VS、DW、VS、Axure、Eclipse。
+- 开发工具：VS Code、VS、DW、Axure、Eclipse。
 - 框架：Angular、Vue、React、Express、Semantic UI、Ant Design、钉耙等。
 - 编程语言：HTML、JavaScript、TypeScript、JQ、CSS、~~C#、JAVA、 PHP、 C~~ 。
 - 应用程序：MySQL、SQL Server、Oracle、MongoDB 等，NodeJs、Git、微软三件套、PS、AE、AU、PR。
