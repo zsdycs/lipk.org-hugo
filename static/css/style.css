@@ -420,7 +420,7 @@
  }
 
  #TableOfContents>ul {
-   padding: 0 18px !important;
+   padding-left: 18px !important;
    margin: 0;
  }
 
@@ -429,7 +429,7 @@
  }
 
  #TableOfContents ul {
-   padding-left: 10px;
+   padding: 0px;
    list-style: none;
  }
 
@@ -438,7 +438,7 @@
  }
 
  #TableOfContents p {
-   width: 145px;
+   width: 100%;
    transition: opacity .5s ease-in;
    /* opacity: 0; */
    cursor: pointer;

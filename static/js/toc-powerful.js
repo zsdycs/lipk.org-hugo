@@ -1,5 +1,16 @@
 (function () {
   "use strict";
+
+  var $ = document.querySelector.bind(document);
+  var $$ = document.querySelectorAll.bind(document);
+  var toc = $('#TableOfContents');
+  if (!toc) return;
+
+  var topUl = $('#TableOfContents ul');
+  var secondaryUl, thirdUl;
+  var articleMain = $('article.main');
+  var articleMainOffsetRight = document.documentElement.clientWidth - articleMain.clientWidth - articleMain.offsetLeft;
+
   /**
    * 字符串转 Element
    * @param {String} str html 字符串
@@ -19,6 +30,7 @@
     if (current === target) {
       return;
     }
+
     function step() {
       current += (target - current) / rate;
       if (Math.abs(target - current) < 1) {
@@ -37,7 +49,8 @@
    * @param {Number} width 
    * @param {Number} fontSize 
    */
-  function getStrWidthFlg(content, width, fontSize) {
+  function getStrWidthFlg(content, width, fontSize, marginLeft) {
+    marginLeft = marginLeft ? marginLeft : 0;
     var resultWidth, div = document.createElement('div');
     div.style.fontSize = `${fontSize}px`;
     div.style.visibility = 'hidden';
@@ -50,7 +63,7 @@
     document.body.appendChild(div);
     resultWidth = parseFloat(window.getComputedStyle(div).width);
     document.body.removeChild(div);
-    if (resultWidth > width) {
+    if (resultWidth > width - marginLeft) {
       return true;
     } else {
       return false;
@@ -60,9 +73,10 @@
   /**
    * 设置替换元素
    */
-  function setElement(linkId, innerText) {
+  function setElement(linkId, innerText, marginLeft) {
     var el;
-    if (getStrWidthFlg(innerText, 145, 15)) {
+    toc.style.width = Math.round(articleMainOffsetRight / 2) + 'px';
+    if (getStrWidthFlg(innerText, Math.round(articleMainOffsetRight / 2) - 18, 15, marginLeft)) {
       el = createElement(`<p class="top tocTitle small" data-linkId="${linkId}">${innerText}</p>`);
     } else {
       el = createElement(`<p class="top tocTitle" data-linkId="${linkId}">${innerText}</p>`);
@@ -87,44 +101,57 @@
     return el;
   }
 
-  var $ = document.querySelector.bind(document),
-    $$ = document.querySelectorAll.bind(document),
-    toc = $('#TableOfContents'),
-    topUl = $('#TableOfContents ul'),
-    secondaryUl, thirdUl;
-  if (!toc) return;
-
   // 处理 toc
   for (let i = 0; i < topUl.children.length; i++) {
     // ## 文章一级标题 li
     var topUlChild = topUl.children[i];
     // 替换 a 标签
     if (topUlChild.children[0] && topUlChild.children[0].nodeName === 'A') {
-      topUlChild.replaceChild(setElement(topUlChild.children[0].hash.substring(1), topUlChild.children[0].innerText), topUlChild.children[0]);
+      topUlChild.replaceChild(
+        setElement(
+          decodeURI(topUlChild.children[0].hash).substring(1),
+          topUlChild.children[0].innerText
+        ),
+        topUlChild.children[0]
+      );
       // 添加图标
       topUlChild.insertAdjacentHTML('afterbegin', `<i class="fa fa-minus topUlChild"></i>`);
     }
     secondaryUl = topUlChild.querySelector('ul');
     if (secondaryUl) {
-      secondaryUl.style.marginLeft = '12px';
+      secondaryUl.style.marginLeft = '15px';
       for (let j = 0; j < secondaryUl.children.length; j++) {
         // ### 文章二级标题 li
         var secondaryUlChild = secondaryUl.children[j];
         // 替换 a 标签
         if (secondaryUlChild.children[0] && secondaryUlChild.children[0].nodeName === 'A') {
-          secondaryUlChild.replaceChild(setElement(secondaryUlChild.children[0].hash.substring(1), secondaryUlChild.children[0].innerText), secondaryUlChild.children[0]);
+          secondaryUlChild.replaceChild(
+            setElement(
+              decodeURI(secondaryUlChild.children[0].hash).substring(1),
+              secondaryUlChild.children[0].innerText,
+              15
+            ),
+            secondaryUlChild.children[0]
+          );
           // 添加图标
           secondaryUlChild.insertAdjacentHTML('afterbegin', `<i class="fa fa-minus secondaryUlChild"></i>`);
         }
         thirdUl = secondaryUlChild.querySelector('ul');
         if (thirdUl) {
-          thirdUl.style.marginLeft = '12px';
+          thirdUl.style.marginLeft = '15px';
           for (let j = 0; j < thirdUl.children.length; j++) {
             // ### 文章三级标题 li
             var thirdUlChild = thirdUl.children[j];
             // 替换 a 标签
             if (thirdUlChild.children[0] && thirdUlChild.children[0].nodeName === 'A') {
-              thirdUlChild.replaceChild(setElement(thirdUlChild.children[0].hash.substring(1), thirdUlChild.children[0].innerText), thirdUlChild.children[0]);
+              thirdUlChild.replaceChild(
+                setElement(
+                  decodeURI(thirdUlChild.children[0].hash).substring(1),
+                  thirdUlChild.children[0].innerText,
+                  30
+                ),
+                thirdUlChild.children[0]
+              );
               // 添加图标
               thirdUlChild.insertAdjacentHTML('afterbegin', `<i class="fa fa-minus thirdUlChild"></i>`);
             }
@@ -310,7 +337,20 @@
     tocTopWithHeight();
   }
 
-  scrolling();
+  setTimeout(() => {
+    scrolling();
+  }, 200);
+
   document.addEventListener('scroll', throttle(scrolling, 80, 120));
+
+  function setTocLeft() {
+    var articleMain = $('article.main');
+    var articleMainOffsetRight = document.documentElement.clientWidth - articleMain.clientWidth - articleMain.offsetLeft;
+    toc.style.left = document.documentElement.clientWidth - articleMainOffsetRight + 'px';
+  }
+
+  setTocLeft();
+
+  window.addEventListener('resize', throttle(setTocLeft, 80, 120));
 
 })();
