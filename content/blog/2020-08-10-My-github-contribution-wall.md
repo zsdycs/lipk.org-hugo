@@ -65,6 +65,10 @@ fi
 
 ## 面壁感概 { #sigh-contribution-wall }
 
+![@zsdycs 在 GitHub 上的活动汇总](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/my-github-contribution-wall(6).jpg)
+
+ 图片来自[Github 活动汇总在线生成器](https://github-contributions.now.sh)。
+
 面对整理好的绿墙，她详细记录了我与她之间的点点滴滴。
 
 第一个绿点出现。是 2018 年的 10 月 30 号，我如今仍然记得那时是实习，被外派到现场客开，没多久苏州到了冬天，我骑着电动车在学校与清源华衍水务之间，雨冰冰凉，风吹过头盔呜呜叫。
