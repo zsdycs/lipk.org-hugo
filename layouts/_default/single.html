@@ -8,15 +8,14 @@
 {{ if .Params._zooming }}
 <script src="/js/zooming.min.js"></script>
 <script>
-  var zooming = new Zooming()
-  zooming.listen('img');
-  zooming.config({
+  var zooming = new Zooming({
     bgColor: 'black',
     scaleBase: 0.95,
     transitionDuration: 0.2,
     enableGrab: false,
     zIndex: 1001
   })
+  zooming.listen('img');
 </script>
 {{ end }}
 <div id="eof">
