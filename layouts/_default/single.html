@@ -1,10 +1,23 @@
 {{ partial "header.html" . }}
 
-{{ if .Params._toc }} 
+{{ if .Params._tableOfContents }} 
 {{ .TableOfContents }}
 <script async src="/js/toc-powerful.js"></script>
 {{ end }}
 {{ .Content }}
+{{ if .Params._zooming }}
+<script src="/js/zooming.min.js"></script>
+<script>
+  var zooming = new Zooming()
+  zooming.listen('img');
+  zooming.config({
+    bgColor: 'black',
+    scaleBase: 0.95,
+    transitionDuration: 0.2,
+    enableGrab: false
+  })
+</script>
+{{ end }}
 <div id="eof">
   <span>EOF</span>
 </div>

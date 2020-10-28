@@ -2,6 +2,7 @@
 title: '为什么要读书'
 date: '2020-04-23'
 slug: 'why-reading'
+_zooming: true
 ---
 
 今天是世界读书日，你今天阅读了吗？
@@ -11,7 +12,9 @@ slug: 'why-reading'
 
 如今我还记得 3 年前世界读书日，我在路过教学楼时，被教学楼前的银杏树惊艳。
 
-![这就是我当时看到的银杏树](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/2020-04-23-why-reading.jpg)
+<p>
+<img src="https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/2020-04-23-why-reading.jpg" alt="这就是我当时看到的银杏树" style="width: 50%;">
+</p>
 
 生机盎然，静静的，看着令人对生活充满希望。
 

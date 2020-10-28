@@ -3,6 +3,7 @@ title: '我的 Github 绿墙'
 date: '2020-08-10'
 slug: 'my-github-contribution-wall'
 _highlight: true
+_zooming: true
 ---
 
 ## 我绿自己 { #make-the-contribution-wall-green }

@@ -2,6 +2,7 @@
 title: 'Java on Spring'
 date: '2020-05-01'
 slug: 'java-on-spring'
+_zooming: true
 ---
 
 > **问**：[Spring 是否代表着目前 Java 技术的顶峰，未来的 Java 将如何发展？](https://www.zhihu.com/question/387902282/answer/1193954645)

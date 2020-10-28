@@ -3,6 +3,7 @@ title: 'Angular mouseleave 一直在执行'
 date: '2020-10-22'
 slug: 'angular-mouseleave-always-runs'
 _highlight: true
+_zooming: true
 ---
 
 项目有个需求，鼠标悬停在表格上时，显示一个悬浮框，实现后如图所示：
