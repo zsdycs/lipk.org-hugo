@@ -27,11 +27,9 @@ _highlight: true
 lipk.org 站点地图
 └─ "/" 首页
     ├─ "/blog" 博客
-    │     ├─ "/food" 美食
-    │     └─ "beaudar.lipk.org" 表达
-    └─ "/about" 关于
-          ├─ "/vitae" 简历
-          └─ "beaudar.lipk.org" 表达
+    ├─ "/food" 美食
+    ├─ "/about" 关于
+    └─ "/vitae" 简历
 ```
 
 ## 软件 { #software }
