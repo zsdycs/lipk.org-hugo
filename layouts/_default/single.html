@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 
-{{ if .Params._tableOfContents }} 
+{{ if .Params._tableOfContents }}
 {{ .TableOfContents }}
 <script async src="/js/toc-powerful.js"></script>
 {{ end }}
@@ -10,7 +10,7 @@
 <script>
   var zooming = new Zooming({
     bgColor: 'black',
-    scaleBase: 0.95,
+    customSize: "100%",
     transitionDuration: 0.2,
     enableGrab: false,
     zIndex: 1001
