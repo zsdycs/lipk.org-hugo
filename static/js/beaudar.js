@@ -1,7 +1,7 @@
 (function () {
   /**
    * 获取页面的相对路径
-   * 例如：http://localhost:1313/food/ 
+   * 例如：http://localhost:1313/food/
    * return '/food/'
    */
   function getUrlRelativePath() {

@@ -46,8 +46,8 @@
   /**
    * 文字内容是否超过元素宽度
    * @param {String} content 内容
-   * @param {Number} width 
-   * @param {Number} fontSize 
+   * @param {Number} width
+   * @param {Number} fontSize
    */
   function getStrWidthFlg(content, width, fontSize, marginLeft) {
     marginLeft = marginLeft ? marginLeft : 0;
@@ -163,16 +163,16 @@
 
   /**
    * @param distance 菜单或距离顶部的间距
-   * 
+   *
    * 处理逻辑:
    * A: #eof 距离底端的距离 大于零，所有不高亮
    * B: 如果 章节头 距离顶端的距离 在 负章节距离 到 ( 0 + 菜单栏高度 ) 之间
-   * 
+   *
    * 章节距离 = Math.abs(Math.abs( 距离顶端的距离一 ) - Math.abs( 距离顶端的距离二 ))
    * 网页工作区域的高度 = document.documentElement.clientHeight
    * 元素距离文档顶端偏移值 = DOM元素对象.offsetTop
    * 网页被卷起来的高度 = document.documentElement.scrollTop
-   * 
+   *
    * 距离顶端的距离 = 元素距离文档顶端偏移值 - 网页被卷起来的高度
    * 距离底端的距离 = 网页工作区域的高度 - (元素距离文档顶端偏移值 - 网页被卷起来的高度))
    */
@@ -326,7 +326,7 @@
   function scrolling() {
     var distance;
     // 1220 页面变换的页面宽度：media screen and (max-width:1220px)
-    if (document.body.offsetWidth >= 1220) {
+    if (window.innerWidth >= 1220) {
       var tagMainPaddingTop = window.getComputedStyle($('main'), null).getPropertyValue("padding-top");
       distance = parseInt(tagMainPaddingTop.slice(0, -2));
       tocAddClass(distance);
