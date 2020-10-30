@@ -103,7 +103,7 @@ ignoreFiles = [ "2018-12-20-test.md" ]
                 "js/indentation-el.js",  # 缩进
                 "js/mode.js",            # 模式
                 "js/beaudar.js",         # 评论
-                "js/math-code.js",       # code 
+                "js/math-code.js",       # code
                 "js/center-img.js",      # img
                 "js/right-quote.js",     # 引用文言
                 "js/no-highlight.js",    # 移除高亮
@@ -112,6 +112,7 @@ ignoreFiles = [ "2018-12-20-test.md" ]
                 "js/alt-title.js",       # <img> alt -> title
                 "js/header-link.js",     # h1 h2 h3 添加锚点
                 "js/checkbox-list.js",   # 无序复选列表
+                "js/hide-menu.js",       # 菜单栏自动隐藏
                 ]
     author = '李鹏坤'
     githubContentURL = "http://github.com/zsdycs/lipk.org/edit/master/content/"
