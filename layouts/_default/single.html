@@ -5,21 +5,6 @@
 <script async src="/js/toc-powerful.js"></script>
 {{ end }}
 {{ .Content }}
-{{ if .Params._zooming }}
-<script src="/js/zooming.js"></script>
-<script>
-  var zooming = new Zooming({
-    bgColor: 'black',
-    customSize: "100%",
-    transitionDuration: 0.2,
-    bgOpacity: 0.8,
-    enableGrab: true,
-    scaleExtra: 0,
-    zIndex: 1001
-  })
-  zooming.listen('img');
-</script>
-{{ end }}
 <div id="eof">
   <span>终</span>
 </div>

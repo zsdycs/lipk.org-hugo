@@ -2,7 +2,6 @@
 title: '为什么要读书'
 date: '2020-04-23'
 slug: 'why-reading'
-_zooming: true
 ---
 
 今天是世界读书日，你今天阅读了吗？
