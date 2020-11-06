@@ -125,7 +125,7 @@
 
  /* 文字形式
   <a> <em> <strong> <small> <s> <cite> <q> <dfn> <abbr> <time> <code> <var> <samp> <kbd>
-  <sub> <sup> <i> <b> <u> <mark> <ruby> <rt> <rp> <bdi> <bdo> <span> <br> <wbr> 
+  <sub> <sup> <i> <b> <u> <mark> <ruby> <rt> <rp> <bdi> <bdo> <span> <br> <wbr>
  */
  pre code {
    display: block;
@@ -391,7 +391,7 @@
  }
 
  #eof:before {
-   margin-right: 20px;
+   margin-right: 10px;
    content: '—';
  }
 
