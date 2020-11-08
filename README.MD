@@ -47,8 +47,6 @@ lipk.org
 
 1. [Github](http://github.com)🏆。
 2. [Yihui Xie](http://github.com/yihui)❤。
-3. [Darkmode.js](http://github.com/sandoche/Darkmode.js)🌗。
-4. [Utterances](http://github.com/utterance/utterances)🔮。
-5. [Wildfire](http://wildfire.js.org)🔥。
+3. [Utterances](http://github.com/utterance/utterances)🔮。
 
-以上项目的组织及所有者，为本项目的实现提供了支持。
+以上项目的组织及所有者，为本项目的实现提供的支持。
