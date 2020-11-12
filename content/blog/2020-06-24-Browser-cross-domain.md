@@ -5,8 +5,7 @@ slug: 'browser-cross-domain'
 _highlight: true
 ---
 
-## Chrome { #chrome }
-
+## Chrome
 > 版本 84.0.4147.105
 
 右键快捷方式「目标」添加 `--user-data-dir="C:/Chrome dev session" --disable-web-security`，要注意“--”前有空格。
@@ -17,13 +16,13 @@ _highlight: true
 "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --user-data-dir="C:/Chrome dev session" --disable-web-security
 ```
 
-## Firefox { #firefox }
+## Firefox
 
 > 版本 75.0，[历史版本下载](http://ftp.mozilla.org/pub/firefox/releases/)
 
 使用 [CORS Everywhere](https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/) 这个插件吧。
 
-## Internet Explorer { #internet-explorer }
+## Internet Explorer
 
 > 版本 IE 11
 

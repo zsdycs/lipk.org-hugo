@@ -5,7 +5,7 @@ slug: 'my-github-contribution-wall'
 _highlight: true
 ---
 
-## 我绿自己 { #make-the-contribution-wall-green }
+## 我绿自己
 
 很多人都以为，是男人的话，都不喜欢被绿。其实不然，我就很喜欢绿我自己的 Github 贡献墙。
 
@@ -19,7 +19,7 @@ Github 贡献墙是这样的：
 记得我第一次提交的是我实习时写的一个 express demo，那时特别懵懂，连 lint 都没用，虽然现在也觉得自己的东西很低级。
 现在看那时写的代码，总是会发出“啊，这里当时怎么会这样想呢”，“这个地方居然连缩进都没有”，“这里写的什么啊，居然没写注释”……
 
-## 整理绿墙 { #organize-contribution-log }
+## 整理绿墙
 
 写这篇博客的契机是昨天我把的绿墙整理了一遍，很多之前没有显示出来的“砖块”都探出了小脑袋瓜子。我是怎么整理的呢？
 简单说就是将提交记录中，提交者的邮箱，改成和 GitHub 中设置的邮箱一致，也就是：邮箱地址是 Github 提交归属者的依据。
@@ -63,7 +63,7 @@ fi
 
 要注意的是，这段代码在使用后会有一个提示信息，然后几秒过后才会执行。执行花费时间，与代码库的提交次数成正比，执行完后，使用 `git push --force --tags origin 'refs/heads/*'` 来提交更改。提交后，要用 `git pull --tags --rebase origin master` 来以 rebase 的方式拉一下远程库的代码。
 
-## 面壁感概 { #sigh-contribution-wall }
+## 面壁感概
 
 ![@zsdycs 在 GitHub 上的活动汇总](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/my-github-contribution-wall(6).jpg)
 
