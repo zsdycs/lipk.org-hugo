@@ -3,7 +3,8 @@
   "scripts": {
     "start": "opener http://localhost:1313 && hugo server --disableFastRender --ignoreCache --bind 0.0.0.0",
     "predeploy": "hugo && echo lipk.org > docs/CNAME && gulp",
-    "deploy": "gh-pages -d docs"
+    "deploy": "gh-pages -d docs",
+    "build": "hugo && gulp"
   },
   "repository": {
     "type": "git",
