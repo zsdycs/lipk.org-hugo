@@ -2,8 +2,8 @@
   {{ if or .PrevInSection .NextInSection }}
   {{ end }}
 <nav class="post-nav">
-  <span class="nav-prev">{{ with .PrevInSection }}&larr; <a href="{{ .RelPermalink }}" title="你可以使用方向键">{{ .Title }}</a>{{ end }}</span>
-  <span class="nav-next">{{ with .NextInSection }}<a href="{{ .RelPermalink }}" title="你可以使用方向键">{{ .Title }}</a> &rarr;{{ end }}</span>
+  <span class="nav-prev">{{ with .PrevInSection }}&larr; <a href="{{ .RelPermalink }}" title="单击可后退(键盘左箭头)">{{ .Title }}</a>{{ end }}</span>
+  <span class="nav-next">{{ with .NextInSection }}<a href="{{ .RelPermalink }}" title="单击可前进(键盘右箭头)">{{ .Title }}</a> &rarr;{{ end }}</span>
 </nav>
 <script type="text/javascript">
 document.addEventListener('keyup', function(e) {
