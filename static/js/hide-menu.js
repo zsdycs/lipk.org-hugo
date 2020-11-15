@@ -25,19 +25,31 @@
 
   var lastPageYOffset = window.pageYOffset;
   var $ = document.querySelector.bind(document);
+  var menu = $('header.masthead');
+  var pageYOffset = window.pageYOffset;
+  var documentElementClientHeight = document.documentElement.clientHeight;
+
   function getScrollDirection() {
     if (window.innerWidth < 1220) {
-      var pageYOffset = window.pageYOffset;
-      var menu = $('header.masthead');
-      if (window.pageYOffset < 50) return;
+      if (window.pageYOffset < 50) {
+        menu.style.display = 'block';
+        return;
+      };
+      if (document.documentElement.scrollHeight - document.documentElement.scrollTop - 50 <= documentElementClientHeight) {
+        menu.style.display = 'block';
+        return;
+      }
       if (pageYOffset < lastPageYOffset) {
         menu.style.display = 'block';
       } else {
         menu.style.display = 'none';
       }
       lastPageYOffset = pageYOffset;
+    } else {
+      menu.style.display = 'block';
     }
   }
-  document.addEventListener('scroll', throttle(getScrollDirection, 80, 120));
+  document.addEventListener('scroll', throttle(getScrollDirection, 500, 200));
+  window.addEventListener('resize', throttle(getScrollDirection, 500, 200));
 
 })()
