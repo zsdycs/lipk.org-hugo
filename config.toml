@@ -4,7 +4,7 @@ title = "lipk • 李鹏坤"
 preserveTaxonomyNames = true
 enableEmoji = true
 disableRSS = false
-publishDir = "docs"
+# publishDir = "docs"
 ignoreFiles = [ "2018-12-20-test.md" ]
 
 [permalinks]

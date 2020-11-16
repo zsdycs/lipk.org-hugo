@@ -9,16 +9,16 @@ var connect = require('gulp-connect');
 
 // 压缩 css 文件
 gulp.task('css', function css(done) {
-  gulp.src('./docs/css/*.css')
+  gulp.src('./public/css/*.css')
     .pipe(minifycss())
-    .pipe(gulp.dest('./docs/css'))
+    .pipe(gulp.dest('./public/css'))
     .pipe(connect.reload());
     done();
 });
 
 // 压缩 html 文件
 gulp.task('html', function html(done) {
-  gulp.src('./docs/**/*.html')
+  gulp.src('./public/**/*.html')
     .pipe(htmlclean())
     .pipe(htmlmin({
       removeComments: true,
@@ -26,14 +26,14 @@ gulp.task('html', function html(done) {
       minifyCSS: true,
       minifyURLs: true,
     }))
-    .pipe(gulp.dest('./docs'))
+    .pipe(gulp.dest('./public'))
     .pipe(connect.reload());
     done();
 });
 
 // 压缩 js 文件
 gulp.task('js', function js(done) {
-  gulp.src('./docs/js/*.js')
+  gulp.src('./public/js/*.js')
     .pipe(babel({
       presets: ['@babel/preset-env']
     }))
@@ -41,7 +41,7 @@ gulp.task('js', function js(done) {
     .on('error', function (err) {
       gutil.log(gutil.colors.red('[Error]'), err.toString());
     })
-    .pipe(gulp.dest('./docs/js'))
+    .pipe(gulp.dest('./public/js'))
     .pipe(connect.reload());
     done();
 });
