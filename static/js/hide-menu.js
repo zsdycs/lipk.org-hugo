@@ -23,10 +23,10 @@
     };
   };
 
-  var lastPageYOffset = window.pageYOffset;
   var $ = document.querySelector.bind(document);
   var menu = $('header.masthead');
-  var pageYOffset = window.pageYOffset;
+  if (!menu) return;
+  var lastPageYOffset = window.pageYOffset;
   var documentElementClientHeight = document.documentElement.clientHeight;
 
   function getScrollDirection() {
@@ -39,6 +39,7 @@
         menu.style.display = 'block';
         return;
       }
+      var pageYOffset = window.pageYOffset;
       if (pageYOffset < lastPageYOffset) {
         menu.style.display = 'block';
       } else {
