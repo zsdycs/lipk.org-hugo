@@ -35,7 +35,7 @@
         menu.style.display = 'block';
         return;
       };
-      if (document.documentElement.scrollHeight - document.documentElement.scrollTop - 50 <= documentElementClientHeight) {
+      if (document.documentElement.scrollHeight - document.documentElement.scrollTop - 300 <= documentElementClientHeight) {
         menu.style.display = 'block';
         return;
       }
