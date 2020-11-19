@@ -4,7 +4,31 @@
 {{ .TableOfContents }}
 <script async src="/js/toc-powerful.js"></script>
 {{ end }}
+
 {{ .Content }}
+
+<!-- 当不是首页，且有MD资源时，在菜单栏增加 "编辑本页" 及 版权声明 -->
+{{ if and (not .IsHome) .Content }}
+{{ with $.Site.Params.githubContentURL }}
+{{ $.Scratch.Set "filePath" $.File.Path }}
+{{ $.Scratch.Set "filePath" (replace ($.Scratch.Get "filePath") "\\" "/") }}
+<div id="fixed-button">
+  <div class="btn-box writeFixed">
+    <a href="{{ or $.Params.githubEditURL  (print .  ($.Scratch.Get "filePath")) }}" title="编辑本页" target="_blank">
+      <button type="button">
+        <i class="fa-fw fa fa-pencil"></i>
+      </button>
+    </a>
+  </div>
+  <div class="btn-box topFixed">
+    <button type="button" title="返回顶部" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+      <i class="fa-fw fa fa-arrow-up"></i>
+    </button>
+  </div>
+</div>
+{{ end }}
+{{ end }}
+
 <div id="eof">
   <span>终</span>
 </div>

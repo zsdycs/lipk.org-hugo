@@ -28,7 +28,7 @@
 
  /* 文字形式
   <a> <em> <strong> <small> <s> <cite> <q> <dfn> <abbr> <time> <code> <var> <samp> <kbd>
-  <sub> <sup> <i> <b> <u> <mark> <ruby> <rt> <rp> <bdi> <bdo> <span> <br> <wbr> 
+  <sub> <sup> <i> <b> <u> <mark> <ruby> <rt> <rp> <bdi> <bdo> <span> <br> <wbr>
  */
  a {
      color: #4183c4;
@@ -47,7 +47,8 @@
  .copyright a,
  .masthead .menu a,
  #TableOfContents li,
- .menu button {
+ .menu button,
+ #fixed-button button {
      color: #979797;
  }
 
@@ -60,7 +61,8 @@
      border-bottom: 1px solid #4183c4;
  }
 
- .menu button:hover {
+ .menu button:hover,
+ #fixed-button button:hover {
      color: #4183c4;
  }
 
@@ -151,6 +153,11 @@
  .menu button {
      background: linear-gradient(#181818, #181818);
  }
+
+  #fixed-button button {
+    background: linear-gradient(#202020, #202020);
+    border: 1px solid #343434;
+  }
 
  #eof {
      color: #434343;
