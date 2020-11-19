@@ -121,8 +121,8 @@ ignoreFiles = [ "2018-12-20-test.md" ]
     slogan = "执手相看，对影成双"
     customJS = [
                 "js/give-up-IE.js",      # 放弃兼容 IE
-                "js/indentation-el.js",  # 缩进
                 "js/mode.js",            # 模式
+                "js/indentation-el.js",  # 缩进
                 "js/beaudar.js",         # 评论
                 "js/math-code.js",       # code
                 "js/center-img.js",      # img
