@@ -506,8 +506,10 @@
  }
 
  #fixed-button button {
+   letter-spacing: normal;
    border-radius: 50%;
-   padding: 5px 10px;
+   width: 34px;
+   height: 34px;
  }
 
  #fixed-button .writeFixed a {
@@ -517,8 +519,13 @@
 
  #fixed-button .writeFixed button {
    /* 不随主题改变 */
-   color: #fd281a;
+  color: #bd0d00;
  }
+
+ #fixed-button .writeFixed button:hover {
+  /* 不随主题改变 */
+   color: #fd392b;
+}
 
 
 
