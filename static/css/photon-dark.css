@@ -192,8 +192,8 @@
  }
 
  article.index {
-     border-top: 2px solid #38383d;
-     border-bottom: 2px solid #38383d;
+     border-top: 1px solid #38383d;
+     border-bottom: 1px solid #38383d;
  }
 
  article.index a,
