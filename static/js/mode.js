@@ -18,57 +18,34 @@
 
   // 判断加载相应模式 CSS
   window.addDarkmodeCSS = function addDarkmodeCSS(mode) {
-    var githubLightCSS = document.querySelector('#github-light');
-    var githubDarkCSS = document.querySelector('#github-dark');
-    var githubDarkOrangeCSS = document.querySelector('#github-dark-orange');
-    var darkBlueCSS = document.querySelector('#dark-blue');
-    var icyDarkCSS = document.querySelector('#icy-dark');
-    var photonDarkCSS = document.querySelector('#photon-dark');
-
     var modeTag = document.querySelector('#modeTag');
     if (!modeTag) return;
     var highlightjsNightCSS = document.querySelector('#highlightjsThemeNight');
 
-    // 初始化
-    [githubDarkCSS.disabled,
-      githubLightCSS.disabled,
-      githubDarkOrangeCSS.disabled,
-      darkBlueCSS.disabled,
-      icyDarkCSS.disabled,
-      photonDarkCSS.disabled
-    ] = [
-      true,
-      true,
-      true,
-      true,
-      true,
-      true
-    ];
-
     if (mode === 'github-light') {
       if (highlightjsNightCSS) highlightjsNightCSS.disabled = true;
-      githubLightCSS.disabled = false;
+      document.body.setAttribute('theme', 'github-light')
       modeTag.innerHTML = '白天';
     } else {
       if (highlightjsNightCSS) highlightjsNightCSS.disabled = false;
       if (mode === 'github-dark') {
-        githubDarkCSS.disabled = false;
+        document.body.setAttribute('theme', 'github-dark')
         modeTag.innerHTML = '黑夜';
       }
       if (mode === 'github-dark-orange') {
-        githubDarkOrangeCSS.disabled = false;
+        document.body.setAttribute('theme', 'github-dark-orange')
         modeTag.innerHTML = '橘暮';
       }
       if (mode === 'dark-blue') {
-        darkBlueCSS.disabled = false;
+        document.body.setAttribute('theme', 'dark-blue')
         modeTag.innerHTML = '幽瞑';
       }
       if (mode === 'icy-dark') {
-        icyDarkCSS.disabled = false;
+        document.body.setAttribute('theme', 'icy-dark')
         modeTag.innerHTML = '雨晨';
       }
       if (mode === 'photon-dark') {
-        photonDarkCSS.disabled = false;
+        document.body.setAttribute('theme', 'photon-dark')
         modeTag.innerHTML = '紫夜';
       }
     }
