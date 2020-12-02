@@ -629,9 +629,10 @@
  }
 
  footer.index {
-   position: fixed;
-   bottom: .5em;
-   width: 600px;
+   position: absolute;
+   bottom: 10px;
+   width: 100%;
+   left: 0px;
  }
 
  @media only screen and (max-width:668px) {
