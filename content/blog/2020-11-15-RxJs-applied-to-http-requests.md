@@ -40,7 +40,7 @@ _highlight: true
 
 ### 1. 单个请求
 
-```javascript
+```typescript
 getListRequest().pipe(
   finalize(() => {
     // api 调用，最终执行
@@ -60,7 +60,7 @@ getListRequest().pipe(
 
 ### 2. 多个 api 并发
 
-```javascript
+```typescript
 // forkJoin 将等待所有传递的可观测值完成，然后它将发出一个数组或对象，具有来自相应可观测值的最后一个值
 forkJoin(
   [
@@ -87,7 +87,7 @@ forkJoin(
 
 ### 3. 嵌套调用 api
 
-```javascript
+```typescript
 updateListRequest().pipe(
   finalize(() => {
     // api 调用，最终执行
