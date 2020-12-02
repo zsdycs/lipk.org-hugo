@@ -26,7 +26,7 @@
   var $ = document.querySelector.bind(document);
   var menu = $('header.masthead');
   if (!menu) return;
-  var lastPageYOffset = window.pageYOffset;
+  var oldPageYOffset = window.pageYOffset;
   var documentElementClientHeight = document.documentElement.clientHeight;
 
   function getScrollDirection() {
@@ -39,13 +39,13 @@
         menu.style.display = 'block';
         return;
       }
-      var pageYOffset = window.pageYOffset;
-      if (pageYOffset < lastPageYOffset) {
+      var newPageYOffset = window.pageYOffset;
+      if (newPageYOffset < oldPageYOffset) {
         menu.style.display = 'block';
-      } else {
+      } else if ((newPageYOffset - oldPageYOffset) > 20) {
         menu.style.display = 'none';
       }
-      lastPageYOffset = pageYOffset;
+      oldPageYOffset = newPageYOffset;
     } else {
       menu.style.display = 'block';
     }
