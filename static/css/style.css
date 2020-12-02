@@ -450,9 +450,9 @@
    margin: 0px;
  }
 
- #TableOfContents li p.show {
-   /* opacity: 1; */
- }
+ /* #TableOfContents li p.show {
+   opacity: 1;
+ } */
 
  #TableOfContents::-webkit-scrollbar {
    height: 8px;
@@ -929,9 +929,9 @@
 
 [theme=github-dark-orange] {
   --html-color: #f7f7f7;
-  --html-background-color: #463d4e;
+  --html-background-color: #2d2833;
   --body-color: #f7f7f7;
-  --body-background-color: #463d4e;
+  --body-background-color: #2d2833;
   --article-background-color: #2d2833;
   --hr-color: #6f6e6e;
   --blockquote-color: #6a737d;
@@ -946,12 +946,12 @@
   --thead-background-color: #222;
   --table-border-color: #5b5958;
   --main-border-color: #4e4c4b;
-  --masthead-background-color: #463d4e;
-  --menu-button-background-color: #463d4e;
+  --masthead-background-color: #2d2833;
+  --menu-button-background-color: #2d2833;
   --fixed-button-background-color: #222;
   --fixed-button-border-color: #4e4c4b;
   --eof-color: #6f6e6e;
-  --wrapper-background-color: #463d4e;
+  --wrapper-background-color: #222;
   --selection-background-color: #f27052fc;
   --aside-hover-background-color: #212021;
   --main-index-background-color: #2d2833;
@@ -1222,11 +1222,6 @@
 */
 
  /* 选择器 class id  */
- [theme=github-dark-orange] .main {
-   padding-top: 40px;
-   border: 1px solid var(--main-border-color);
- }
-
  .main {
    border-left: 1px solid var(--main-border-color);
  }
