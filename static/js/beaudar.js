@@ -69,7 +69,7 @@
     beaudarEnd();
   }
 
-  // 在“美食”加载评论
+  // 在“菜谱”加载评论
   if (getUrlRelativePath().length === '/food/'.length &&
     getUrlRelativePath().substring(0, '/food/'.length) === '/food/') {
     addBeaudar()

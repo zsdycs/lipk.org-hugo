@@ -23,7 +23,7 @@ _highlight: true
 lipk.org 站点地图
 └─ "/" 首页
     ├─ "/blog" 博客
-    ├─ "/food" 美食
+    ├─ "/food" 菜谱
     ├─ "/about" 关于
     └─ "/vitae" 简历
 ```

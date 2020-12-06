@@ -19,7 +19,7 @@ ignoreFiles = [ "2018-12-20-test.md" ]
     url = "/blog/"
     weight = 2
 [[menu.main]]
-    name = "美食"
+    name = "菜谱"
     url = "/food/"
     weight = 3
 [[menu.main]]
@@ -40,7 +40,7 @@ ignoreFiles = [ "2018-12-20-test.md" ]
     url = "/blog/"
     weight = 2
 [[menu.about]]
-    name = "美食"
+    name = "菜谱"
     url = "/food/"
     weight = 3
 [[menu.about]]
@@ -61,7 +61,7 @@ ignoreFiles = [ "2018-12-20-test.md" ]
     url = "/blog/"
     weight = 2
 [[menu.vitae]]
-    name = "美食"
+    name = "菜谱"
     url = "/food/"
     weight = 3
 [[menu.vitae]]
@@ -82,7 +82,7 @@ ignoreFiles = [ "2018-12-20-test.md" ]
     url = "/blog/"
     weight = 2
 [[menu.blog]]
-    name = "美食"
+    name = "菜谱"
     url = "/food/"
     weight = 3
 [[menu.blog]]
@@ -103,7 +103,7 @@ ignoreFiles = [ "2018-12-20-test.md" ]
     url = "/blog/"
     weight = 2
 [[menu.food]]
-    name = "美食"
+    name = "菜谱"
     url = "/food/"
     weight = 3
 [[menu.food]]

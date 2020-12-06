@@ -11,7 +11,7 @@ lipk.org
 │  ├─ _index.md # 首页
 │  ├─ about.md # 关于
 │  ├─ vitae.md # 关于 - 简历
-│  ├─ food.md # 博客 - 美食
+│  ├─ food.md # 博客 - 菜谱
 │  └─ blog # 博客 Markdown 文件夹
 │     ├─ _index.md # 博客入口
 │     └─ ......

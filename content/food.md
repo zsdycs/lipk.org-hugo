@@ -1,5 +1,5 @@
 ---
-title: 美食
+title: 菜谱
 date: '2019-01-24'
 slug: /food
 ---
