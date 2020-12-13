@@ -60,7 +60,6 @@
     script.src = 'https://beaudar.lipk.org/client.js';
     script.setAttribute('repo', 'zsdycs/lipk.org');
     script.setAttribute('issue-term', 'title');
-    script.setAttribute('crossorigin', 'anonymous');
     script.setAttribute('label', '💬 评论');
     script.setAttribute('theme', sessionStorage.getItem('mode'));
     script.async = true;
