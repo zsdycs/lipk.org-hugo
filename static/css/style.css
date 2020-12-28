@@ -390,6 +390,10 @@
    display: block;
  }
 
+ .print {
+  visibility: hidden;
+}
+
  #eof:before {
    margin-right: 10px;
    content: '—';
@@ -828,10 +832,17 @@
  @media print {
 
    #TableOfContents,
+   #fixed-button,
+   #eof,
    .masthead,
    del,
-   footer {
-     display: none;
+   footer,
+   .notPrint {
+     display: none !important;
+   }
+
+   .print {
+     visibility: visible;
    }
 
    .paramount {
@@ -839,18 +850,19 @@
    }
 
    .main {
-     margin-left: 0;
-     padding-left: 10px;
-     border: none;
+     margin: auto;
+     border: none !important;
    }
- }
 
- @-ms-viewport {
-   width: device-width;
- }
+   :focus {
+     outline: none !important;
+     box-shadow: none !important;
+   }
 
- @viewport {
-   width: device-width;
+   a {
+     color: initial !important;
+     text-decoration: none;
+   }
  }
 
  /* 主题 */
