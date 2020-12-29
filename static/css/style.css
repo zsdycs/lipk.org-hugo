@@ -396,12 +396,12 @@
 
  #eof:before {
    margin-right: 10px;
-   content: '—';
+   content: '/*';
  }
 
  #eof:after {
    margin-left: 10px;
-   content: '—';
+   content: '*/';
  }
 
  #eof {
