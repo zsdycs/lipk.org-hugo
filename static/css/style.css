@@ -443,7 +443,7 @@
 
  #TableOfContents p {
    width: 100%;
-   /* transition: opacity .5s ease-in; */
+   transition: opacity .5s ease-in;
    /* opacity: 0; */
    cursor: pointer;
    overflow: hidden;
