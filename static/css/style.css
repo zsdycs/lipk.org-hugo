@@ -348,9 +348,9 @@
    direction: rtl;
  }
 
- .menu {
+ /* .menu {
    transition: all .5s ease;
- }
+ } */
 
  .main {
    hyphens: manual;
@@ -443,7 +443,7 @@
 
  #TableOfContents p {
    width: 100%;
-   transition: opacity .5s ease-in;
+   /* transition: opacity .5s ease-in; */
    /* opacity: 0; */
    cursor: pointer;
    overflow: hidden;
@@ -549,7 +549,7 @@
    margin: 5em auto;
    padding: 2em;
    max-width: 610px;
-   transition: 1s ease;
+   /* transition: 1s ease; */
  }
 
  aside.index {
@@ -558,7 +558,7 @@
    padding: 1em;
    width: 28%;
    line-height: 1.6em;
-   transition: .5s ease;
+   /* transition: .5s ease; */
  }
 
  aside.index #logo {
@@ -712,7 +712,7 @@
      padding: 5px 0 10px !important;
      width: 100%;
      text-align: center;
-     transition: all .5s ease;
+     /* transition: all .5s ease; */
    }
 
    .main {
