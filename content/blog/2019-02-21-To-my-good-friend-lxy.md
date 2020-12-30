@@ -43,7 +43,7 @@ slug: 'to-my-good-friend-dxy'
 
 ---
 
-![新婚快乐](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/2019-02-21-To-my-good-friend-dxy.jpg)
+![新婚快乐](/images/2019-02-21-To-my-good-friend-dxy.jpg)
 
 ---
 

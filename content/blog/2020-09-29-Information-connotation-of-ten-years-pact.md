@@ -195,11 +195,11 @@ slug: 'information-connotation-of-ten-years-pact'
                     <span class="user-reply">“十年之约”聚会活动内容以烧烤为主，筹备组注意到部分同学怕上火忌口，所以也将会准备粥、甜品和水果等食物。</span>
                     <!--<i class="triangle-user"></i>-->
                     </div>
-                    <img class="user-img" src="https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/lipk.jpg" />
+                    <img class="user-img" src="/images/lipk.jpg" />
                 </div>
                 <div class="admin-group">
                     <img class="admin-img"
-                    src="https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/2020-09-30-Information-connotation-of-ten-years-pact-dyq.jpg" />
+                    src="/images/2020-09-30-Information-connotation-of-ten-years-pact-dyq.jpg" />
                     <div class="admin-msg">
                     <div class="user-name">
                         <span>邓滢秋同学（筹备组）</span>
@@ -212,7 +212,7 @@ slug: 'information-connotation-of-ten-years-pact'
                 </div>
                 <div class="admin-group">
                     <img class="admin-img"
-                    src="https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/2020-09-30-Information-connotation-of-ten-years-pact-dyq.jpg" />
+                    src="/images/2020-09-30-Information-connotation-of-ten-years-pact-dyq.jpg" />
                     <div class="admin-msg">
                     <div class="user-name">
                         <span>邓滢秋同学（筹备组）</span>
@@ -233,11 +233,11 @@ slug: 'information-connotation-of-ten-years-pact'
                     <span class="user-reply">同学们要安排好行程，尽量不要迟到。</span>
                     <!--<i class="triangle-user"></i>-->
                     </div>
-                    <img class="user-img" src="https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/lipk.jpg" />
+                    <img class="user-img" src="/images/lipk.jpg" />
                 </div>
                 <div class="admin-group">
                     <img class="admin-img"
-                    src="https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/2020-09-30-Information-connotation-of-ten-years-pact-ljy.jpg" />
+                    src="/images/2020-09-30-Information-connotation-of-ten-years-pact-ljy.jpg" />
                     <div class="admin-msg">
                     <div class="user-name">
                         <span>李俊毅同学（筹备组）</span>
@@ -250,7 +250,7 @@ slug: 'information-connotation-of-ten-years-pact'
                 </div>
                 <div class="admin-group">
                     <img class="admin-img"
-                    src="https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/2020-09-30-Information-connotation-of-ten-years-pact-lqf.jpg" />
+                    src="/images/2020-09-30-Information-connotation-of-ten-years-pact-lqf.jpg" />
                     <div class="admin-msg">
                     <div class="user-name">
                         <span>罗棋锋同学（筹备组）</span>
@@ -263,7 +263,7 @@ slug: 'information-connotation-of-ten-years-pact'
                 </div>
                 <div class="admin-group">
                     <img class="admin-img"
-                    src="https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/2020-09-30-Information-connotation-of-ten-years-pact-ylp.jpg" />
+                    src="/images/2020-09-30-Information-connotation-of-ten-years-pact-ylp.jpg" />
                     <div class="admin-msg">
                     <div class="user-name">
                         <span>余柳平同学（筹备组）</span>
@@ -276,7 +276,7 @@ slug: 'information-connotation-of-ten-years-pact'
                 </div>
                 <div class="admin-group">
                     <img class="admin-img"
-                    src="https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/2020-09-30-Information-connotation-of-ten-years-pact-ljr.jpg" />
+                    src="/images/2020-09-30-Information-connotation-of-ten-years-pact-ljr.jpg" />
                     <div class="admin-msg">
                     <div class="user-name">
                         <span>梁洁茹同学（筹备组）</span>
@@ -289,7 +289,7 @@ slug: 'information-connotation-of-ten-years-pact'
                 </div>
                 <div class="admin-group">
                     <img class="admin-img"
-                    src="https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/2020-09-30-Information-connotation-of-ten-years-pact-dyq.jpg" />
+                    src="/images/2020-09-30-Information-connotation-of-ten-years-pact-dyq.jpg" />
                     <div class="admin-msg">
                     <div class="user-name">
                         <span>邓滢秋同学（筹备组）</span>
@@ -305,7 +305,7 @@ slug: 'information-connotation-of-ten-years-pact'
                     <span class="user-reply">若每次相遇都待如初见，想记住都会记住。</span>
                     <!--<i class="triangle-user"></i>-->
                     </div>
-                    <img class="user-img" src="https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/lipk.jpg" />
+                    <img class="user-img" src="/images/lipk.jpg" />
                 </div>
                 </div>
             </div>

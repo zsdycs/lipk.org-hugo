@@ -6,7 +6,7 @@ slug: /vitae
 
 # 李鹏坤
 
-<p><img src="https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/vitae.jpg" alt="我的照片" height="150px"></p>
+<p><img src="/images/vitae.jpg" alt="我的照片" height="150px"></p>
 
 ## 基本信息
 
