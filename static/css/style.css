@@ -1257,9 +1257,6 @@
  }
 
  /* 伪类 */
- body::-webkit-scrollbar {
-   display: none;
- }
 
  ::selection {
    background: var(--selection-background-color);
