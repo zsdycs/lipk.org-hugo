@@ -264,6 +264,13 @@
    display: none;
  }
 
+ .anchor .fa-svg {
+   vertical-align: middle;
+   fill: currentColor;
+   width: 24px;
+   height: 24px;
+ }
+
  .ie.copyright {
    position: fixed;
    bottom: .5em;
@@ -391,8 +398,8 @@
  }
 
  .print {
-  visibility: hidden;
-}
+   visibility: hidden;
+ }
 
  #eof:before {
    margin-right: 10px;
@@ -417,10 +424,6 @@
    top: 0px;
    margin: 24px 0px;
    overflow: auto;
- }
-
- #TableOfContents i {
-   display: none;
  }
 
  #TableOfContents>ul {
@@ -531,7 +534,12 @@
    color: #fd392b;
  }
 
-
+ button .fa-svg {
+   display: inline-block;
+   fill: currentColor;
+   width: 13px;
+   height: 13px;
+ }
 
  @media only screen and (max-width:545px) {
    iframe.billibili {
