@@ -65,7 +65,7 @@ const mode = new Darkmode(options);
 mode.showWidget();
 
 // body 背景 延迟载入
-document.body.style.background = 'url(/images/your-background-image.png)';
+document.body.style.background = 'url(https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/your-background-image.png)';
 document.body.style.backgroundRepeat = 'repeat';
 ```
 

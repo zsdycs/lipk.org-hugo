@@ -11,7 +11,7 @@
   }
 
   // body 背景 延迟载入
-  // document.body.style.background = 'url(/images/geometry.png)';
+  // document.body.style.background = 'url(https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/geometry.png)';
   // document.body.style.backgroundRepeat = 'repeat';
 
   var modeLS = sessionStorage.getItem('mode');

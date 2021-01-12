@@ -7,7 +7,7 @@ _highlight: true
 
 项目有个需求，鼠标悬停在表格上时，显示一个悬浮框，实现后如图所示：
 
-![鼠标悬停显示悬浮框](/images/angular-mouseleave-always-runs.jpg)
+![鼠标悬停显示悬浮框](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/angular-mouseleave-always-runs.jpg)
 
 出现问题的代码大概是这样的：
 

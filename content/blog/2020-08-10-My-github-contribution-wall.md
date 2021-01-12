@@ -11,7 +11,7 @@ _highlight: true
 
 Github 贡献墙是这样的：
 
-![别人的 Github 贡献墙照片](/images/my-github-contribution-wall(1).jpg)
+![别人的 Github 贡献墙照片](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/my-github-contribution-wall(1).jpg)
 
 一面墙的时间跨度是一年，一块砖就是 1 天，墙高 7 天，也就是 1 周为以列。
 砖块的颜色越深，代表当天的贡献越多。贡献分为：issue、Code review、Commits 和 Pull requests 4 种。
@@ -26,20 +26,20 @@ Github 贡献墙是这样的：
 
 所以我的任务就是把我 git 提交的邮箱，改为我 GitHub 设置的邮箱。
 
-![我 Github 设置的邮箱](/images/my-github-contribution-wall(2).jpg)
+![我 Github 设置的邮箱](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/my-github-contribution-wall(2).jpg)
 
 要改邮箱的话，得看之前提交的记录里，邮箱都写得是什么。可以在 git 命令行用 `git log` 查看提交记录中的提交者邮箱信息。
 
-![git log 命令行截图](/images/my-github-contribution-wall(3).jpg)
+![git log 命令行截图](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/my-github-contribution-wall(3).jpg)
 
 显然这样看的效率太低了，我是用 [sourcetree](https://www.sourcetreeapp.com/) 查看的，在 sourcetree 中查看提交者信息很方便：
 
-![sourcetree 的截图](/images/my-github-contribution-wall(4).jpg)
+![sourcetree 的截图](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/my-github-contribution-wall(4).jpg)
 
 接下来，就是修改历史的提交记录了，我找到了一篇 [为什么 Github 没有记录你的 Contributions](https://segmentfault.com/a/1190000004318632) 的文章。
 这里面的脚本可以一用。但是他的这个步骤太繁琐，其实可以直接在 git 的命令行来执行的，无需再另外 clone。如果要重复使用这段代码，需要加一个 `--force`，即：
 
-![git 命令行的截图](/images/my-github-contribution-wall(5).jpg)
+![git 命令行的截图](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/my-github-contribution-wall(5).jpg)
 
 图中代码如下：
 
@@ -65,7 +65,7 @@ fi
 
 ## 面壁感概
 
-![@zsdycs 在 GitHub 上的活动汇总](/images/my-github-contribution-wall(6).jpg)
+![@zsdycs 在 GitHub 上的活动汇总](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/my-github-contribution-wall(6).jpg)
 
  图片来自[Github 活动汇总在线生成器](https://github-contributions.now.sh)。
 

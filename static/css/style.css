@@ -603,8 +603,17 @@
    list-style: none;
  }
 
- aside.index #info i {
-   margin-right: 3px;
+ aside.index #info .fa-svg {
+   display: inline-block;
+   fill: currentColor;
+   vertical-align: middle;
+   width: 12px;
+   height: 12px;
+   margin-right: 5px;
+ }
+
+ aside.index #info .info-text {
+   vertical-align: middle;
  }
 
  article.index {
