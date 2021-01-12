@@ -70,6 +70,14 @@
     }
   }
 
+  // 除去目录标题的链接
+  function convertToText(element) {
+    if (element.children[1] && element.children[1].nodeName === 'A') {
+      element.children[0].innerText = element.children[1].innerText;
+      element.removeChild(element.children[1])
+    }
+  }
+
   /**
    * 设置替换元素
    */
@@ -107,6 +115,7 @@
     var topUlChild = topUl.children[i];
     // 替换 a 标签
     if (topUlChild.children[0] && topUlChild.children[0].nodeName === 'A') {
+      convertToText(topUlChild);
       topUlChild.replaceChild(
         setElement(
           decodeURI(topUlChild.children[0].hash).substring(1),
@@ -114,8 +123,6 @@
         ),
         topUlChild.children[0]
       );
-      // 添加图标
-      topUlChild.insertAdjacentHTML('afterbegin', `<i class="fa fa-minus topUlChild"></i>`);
     }
     secondaryUl = topUlChild.querySelector('ul');
     if (secondaryUl) {
@@ -125,6 +132,7 @@
         var secondaryUlChild = secondaryUl.children[j];
         // 替换 a 标签
         if (secondaryUlChild.children[0] && secondaryUlChild.children[0].nodeName === 'A') {
+          convertToText(secondaryUlChild);
           secondaryUlChild.replaceChild(
             setElement(
               decodeURI(secondaryUlChild.children[0].hash).substring(1),
@@ -133,8 +141,6 @@
             ),
             secondaryUlChild.children[0]
           );
-          // 添加图标
-          secondaryUlChild.insertAdjacentHTML('afterbegin', `<i class="fa fa-minus secondaryUlChild"></i>`);
         }
         thirdUl = secondaryUlChild.querySelector('ul');
         if (thirdUl) {
@@ -144,6 +150,7 @@
             var thirdUlChild = thirdUl.children[j];
             // 替换 a 标签
             if (thirdUlChild.children[0] && thirdUlChild.children[0].nodeName === 'A') {
+              convertToText(thirdUlChild);
               thirdUlChild.replaceChild(
                 setElement(
                   decodeURI(thirdUlChild.children[0].hash).substring(1),
@@ -152,8 +159,6 @@
                 ),
                 thirdUlChild.children[0]
               );
-              // 添加图标
-              thirdUlChild.insertAdjacentHTML('afterbegin', `<i class="fa fa-minus thirdUlChild"></i>`);
             }
           }
         }
@@ -207,36 +212,36 @@
           var secondaryUl, topUlChild;
           for (let j = 0; j < topUl.children.length; j++) {
             topUlChild = topUl.children[j];
-            if (topUlChild.children[1] && topUlChild.children[1].nodeName === 'P') {
-              topUlChild.children[1].classList.remove('show');
+            if (topUlChild.children[0] && topUlChild.children[0].nodeName === 'P') {
+              topUlChild.children[0].classList.remove('show');
               // # 标题
-              if (chapters[i].id.toString() === topUlChild.children[1].getAttribute('data-linkId').toString()) {
-                topUlChild.children[1].classList.add('show');
+              if (chapters[i].id.toString() === topUlChild.children[0].getAttribute('data-linkId').toString()) {
+                topUlChild.children[0].classList.add('show');
               };
             }
             secondaryUl = topUlChild.querySelector('ul');
             if (secondaryUl) {
               for (let k = 0; k < secondaryUl.children.length; k++) {
                 var secondaryUlChild = secondaryUl.children[k];
-                if (secondaryUlChild.children[1] && secondaryUlChild.children[1].nodeName === 'P') {
-                  secondaryUlChild.children[1].classList.remove('show');
+                if (secondaryUlChild.children[0] && secondaryUlChild.children[0].nodeName === 'P') {
+                  secondaryUlChild.children[0].classList.remove('show');
                   // ## 标题
-                  if (chapters[i].id.toString() === secondaryUlChild.children[1].getAttribute('data-linkId').toString()) {
-                    if (topUl.children[j].children[1]) topUl.children[j].children[1].classList.add('show');
-                    secondaryUlChild.children[1].classList.add('show');
+                  if (chapters[i].id.toString() === secondaryUlChild.children[0].getAttribute('data-linkId').toString()) {
+                    if (topUl.children[j].children[0]) topUl.children[j].children[0].classList.add('show');
+                    secondaryUlChild.children[0].classList.add('show');
                   };
                 }
                 thirdUl = secondaryUlChild.querySelector('ul');
                 if (thirdUl) {
                   for (let l = 0; l < thirdUl.children.length; l++) {
                     var thirdUlChild = thirdUl.children[l];
-                    if (thirdUlChild.children[1] && thirdUlChild.children[1].nodeName === 'P') {
-                      thirdUlChild.children[1].classList.remove('show');
+                    if (thirdUlChild.children[0] && thirdUlChild.children[0].nodeName === 'P') {
+                      thirdUlChild.children[0].classList.remove('show');
                       // ### 标题
-                      if (chapters[i].id.toString() === thirdUlChild.children[1].getAttribute('data-linkId').toString()) {
-                        if (topUl.children[j].children[1]) topUl.children[j].children[1].classList.add('show');
-                        if (secondaryUlChild.children[1]) secondaryUlChild.children[1].classList.add('show');
-                        thirdUlChild.children[1].classList.add('show');
+                      if (chapters[i].id.toString() === thirdUlChild.children[0].getAttribute('data-linkId').toString()) {
+                        if (topUl.children[j].children[0]) topUl.children[j].children[0].classList.add('show');
+                        if (secondaryUlChild.children[0]) secondaryUlChild.children[0].classList.add('show');
+                        thirdUlChild.children[0].classList.add('show');
                       };
                     }
                   }
