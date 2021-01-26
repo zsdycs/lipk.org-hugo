@@ -9,9 +9,9 @@ _highlight: true
 
 原来是 B 站提供了使用 iframe 代码片段分享视频的功能。于是我兴高采烈地，打算把我上学时为了装 X 而做的两个视频放上来。可是一测试，蒙了，怎么和[人家](https://www.yunyoujun.cn/diary/life-is-not-a-marathon/)的不一样！
 
-![人家的效果截图](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/2020-08-08-Add-bilibili-video-to-your-blog(1).jpg)
+![人家的效果截图](https://lipk.oss-ap-southeast-1.aliyuncs.com/images/2020-08-08-Add-bilibili-video-to-your-blog(1).jpg)
 
-![我的测试截图](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/2020-08-08-Add-bilibili-video-to-your-blog(2).jpg)
+![我的测试截图](https://lipk.oss-ap-southeast-1.aliyuncs.com/images/2020-08-08-Add-bilibili-video-to-your-blog(2).jpg)
 
 直接使用代码片段，视频非常小而且除了播放按钮，连全屏功能都没有。查阅了 [iframe 的文档](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/iframe) ，iframe 的高度默认是 150，宽度默认 300，然后我看了一下那篇博客的 iframe 是添加了一个 `height="520"` 的。我加了之后效果是一致了，可是我觉得还可以更好看。
 

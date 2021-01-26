@@ -3,8 +3,8 @@
     <main class="index">
         <aside class="index">
             <div id="logo">
-                <img src="https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/logo.png" alt="我的头像">
-                <!-- <img src="https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/holiday.jpg" alt="假日快乐"> -->
+                <img src="https://lipk.oss-ap-southeast-1.aliyuncs.com/images/logo.png" alt="我的头像">
+                <!-- <img src="https://lipk.oss-ap-southeast-1.aliyuncs.com/images/holiday.jpg" alt="假日快乐"> -->
                 <div id="name">李鹏坤</div>
             </div>
             <ul id="info">
@@ -35,7 +35,7 @@
         </article>
         <footer class="index">
             {{ range .Site.Params.customJS }}
-            <script async src="{{ . | relURL }}"></script>
+            <script async src="{{ . | absURL }}"></script>
             {{ end }}
             {{ with .Site.Params.footer }}
             <div class="copyright">
@@ -66,7 +66,7 @@
                         }
                       </style>
                     </defs>
-                    <title>logo</title>
+                    <title>开往-友链接力</title>
                     <path d="M5.07,2V8.88H7.19a3,3,0,1,1,0,2.25H5.07V18l13.86-8Z" transform="translate(1 1)" />
                     <text class="cls-1" transform="translate(21.62 14.6)">
                       <tspan class="cls-2">T</tspan>

@@ -12,13 +12,13 @@ slug: 'the-way-to-school'
 
 芒果黄灿灿的高挂在树上时，隔岸看到的会比从树下看到的清楚很多。经常会有这样的情况，芒果都被采摘过了，树上仍留着熟得很好看的芒果。上学放学路过觊觎了好几天，又突然会消失掉。龙眼就不一样了，因为龙眼没有那么诱人，是内在美水果。
 
-![放学回家时的景色(百度街景 2014-09 摄)](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/the-way-to-school(1).jpg)
+![放学回家时的景色(百度街景 2014-09 摄)](https://lipk.oss-ap-southeast-1.aliyuncs.com/images/the-way-to-school(1).jpg)
 
 这条路虽然不宽，但是平时车不少，因为这条路通往 105 国道。不管到什么时候，走得最多得应该都是这条路了。
 
 初中时期，上学放学都是骑自行车，所以这路上的风景，最怀念的就是这路另外一边傍晚时刻的鱼塘。
 
-![鱼塘的景色(百度街景 2014-09 摄)](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/the-way-to-school(2).jpg)
+![鱼塘的景色(百度街景 2014-09 摄)](https://lipk.oss-ap-southeast-1.aliyuncs.com/images/the-way-to-school(2).jpg)
 
 当然，初中最印象深刻的还是教学楼下的架空层，架空层可以到饭堂也可以到[文亭](https://www.lipk.org/blog/2020/11/08/delonix-regia/)、操场、停车棚，学校的任何地方，只要想去。之所以这么说，因为你可以在这里静下来思考你要去哪里，有许多巨木做成的桌椅，有很好的绿化，绿油油的爬山虎爬满了崭新的教学楼，灰白的瓷砖与绿的叶呼应。修剪俊丽的罗汉松、香樟、玉兰，以及各种各样的花草灌木。
 
@@ -26,4 +26,4 @@ slug: 'the-way-to-school'
 
 高中是封闭式的，一周回一次家的那种。所以龙安街周六这天早上，会有很多学生，在狭窄且破旧的路两边浩浩荡荡，为了避免事学校还实行各年级分时放学的措施。
 
-![学校门口的龙安街(百度街景 2014-09 摄)](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/the-way-to-school(3).jpg)
+![学校门口的龙安街(百度街景 2014-09 摄)](https://lipk.oss-ap-southeast-1.aliyuncs.com/images/the-way-to-school(3).jpg)

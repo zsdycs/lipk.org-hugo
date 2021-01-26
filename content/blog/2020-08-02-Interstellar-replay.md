@@ -8,4 +8,4 @@ slug: 'interstellar-replay'
 
 终于补上了电影票，实在是太开心了。
 
-![片场入口](https://cdn.jsdelivr.net/gh/zsdycs/lipk.org/static/images/2020-08-02-Movie-replay.jpeg)
+![片场入口](https://lipk.oss-ap-southeast-1.aliyuncs.com/images/2020-08-02-Movie-replay.jpeg)
