@@ -281,13 +281,15 @@
    text-align: center;
  }
 
- .copyright .travellings {
+ .copyright .travelling-link {
    border: none !important;
  }
 
- .copyright .travellings img {
+ .copyright .travelling {
    vertical-align: middle;
    display: inline-block;
+   fill: currentColor;
+   height: 17px;
  }
 
  .copyright .beian {
