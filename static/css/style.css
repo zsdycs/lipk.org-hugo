@@ -525,22 +525,31 @@
    height: 34px;
  }
 
- #fixed-button .writeFixed a {
+ #fixed-button a {
+   text-align: center;
+   display: block;
+   letter-spacing: normal;
    padding: 0;
-   border: 0;
+   border-radius: 50%;
+   width: 34px;
+   height: 34px;
  }
 
- #fixed-button .writeFixed button {
+ #fixed-button .writeFixed a {
    /* 不随主题改变 */
    color: #bd0d00;
  }
 
- #fixed-button .writeFixed button:hover {
+ #fixed-button .writeFixed a:hover {
    /* 不随主题改变 */
-   color: #fd392b;
+   color: #ff655b;
  }
 
- button .fa-svg {
+ .writeFixed .fa-svg {
+   vertical-align: middle;
+ }
+
+ button .fa-svg, a .fa-svg {
    display: inline-block;
    fill: currentColor;
    width: 13px;
@@ -1267,7 +1276,7 @@
    background: linear-gradient(var(--menu-button-background-color), var(--menu-button-background-color));
  }
 
- #fixed-button button {
+ #fixed-button button, .writeFixed a {
    background: linear-gradient(var(--fixed-button-background-color), var(--fixed-button-background-color));
    border: 1px solid var(--fixed-button-border-color);
  }
@@ -1289,8 +1298,8 @@
 
  :focus {
    outline: none;
-   box-shadow: 0 0 0em 0.1em var(--a-color);
-   border-radius: 1px;
+   color: var(--a-color) !important;
+   text-shadow: 1.5px 0px 0px var(--html-color);
  }
 
  /* 首页 */
@@ -1312,12 +1321,20 @@
    background-color: var(--article-index-background-color);
  }
 
- article.index a,
+ /* article.index a,
  article.index button,
- article.index ruby.link,
+ article.index ruby.link, */
+ article.index button:hover,
  article.index ruby.link:hover a,
  article.index ruby.link:hover rt {
    color: var(--a-color);
+ }
+
+
+ article.index a,
+ article.index button,
+ article.index ruby.link {
+  color: var(--html-color);
  }
 
  article.index ruby.link a:hover {
