@@ -24,8 +24,10 @@
         </script>
       {{ end }}
 
-      <!-- beaudar 评论 -->
+      {{ if not .Params.comment }}
       <section id="beaudar" class="comments"></section>
+      <script async src="{{ .Site.BaseURL }}js/beaudar.js"></script>
+      {{ end }}
 
       {{ range .Site.Params.customJS }}
       <script async src="{{ . | absURL }}"></script>

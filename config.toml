@@ -123,7 +123,6 @@ ignoreFiles = [ "2018-12-20-test.md" ]
                 "js/give-up-IE.js",      # 放弃兼容 IE
                 "js/mode.js",            # 模式
                 "js/indentation-el.js",  # 缩进
-                "js/beaudar.js",         # 评论
                 "js/math-code.js",       # code
                 "js/center-img.js",      # img
                 "js/right-quote.js",     # 引用文言

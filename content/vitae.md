@@ -2,6 +2,7 @@
 title: 简历
 date: '2019-12-31'
 slug: /vitae
+comment: false
 ---
 
 # 李鹏坤

@@ -1,21 +1,4 @@
 (function () {
-  /**
-   * 获取页面的相对路径
-   * 例如：http://localhost:1313/food/
-   * return '/food/'
-   */
-  function getUrlRelativePath() {
-    var url = document.location.toString();
-    var arrUrl = url.split('//');
-
-    var start = arrUrl[1].indexOf('/');
-    var relUrl = arrUrl[1].substring(start);
-
-    if (relUrl.indexOf('?') != -1) {
-      relUrl = relUrl.split('?')[0];
-    }
-    return relUrl;
-  }
 
   // 默认为不加载 beaudar
   sessionStorage.setItem('beaudar', 'false');
@@ -68,26 +51,5 @@
     beaudarEnd();
   }
 
-  // 在“菜谱”加载评论
-  if (getUrlRelativePath().length === '/food/'.length &&
-    getUrlRelativePath().substring(0, '/food/'.length) === '/food/') {
-    addBeaudar()
-  }
-
-  // 在“博客”加载评论
-  if (getUrlRelativePath().length > '/blog/'.length &&
-    getUrlRelativePath().substring(0, '/blog/'.length) === '/blog/') {
-    addBeaudar()
-  }
-
-  // 在“关于”加载评论
-  if (getUrlRelativePath().length === '/about/'.length &&
-    getUrlRelativePath().substring(0, '/about/'.length) === '/about/') {
-    addBeaudar()
-  }
-
-  // 在“404”加载评论
-  if (document.title === '执手对影成双 - 404 Page not found') {
-    addBeaudar()
-  }
+  addBeaudar();
 })();
