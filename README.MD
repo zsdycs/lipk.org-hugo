@@ -22,10 +22,7 @@ lipk.org
 │  │  └─ ......
 │  └─404.html 404 # 页面
 ├─ static # 站点资源文件夹
-│  ├─ CNAME # github-pages 域别名声明
 │  ├─ favicon.ico # 站点图标
-│  ├─ font-awesome-4.7.0 # 图标库
-│  │  └─ ......
 │  ├─ css
 │  │  └─ ......
 │  ├─ images
