@@ -1,9 +1,9 @@
 baseurl = "https://lipk.org"
 languageCode = "zh-cn"
 title = "lipk • 李鹏坤"
-preserveTaxonomyNames = true
 enableEmoji = true
 disableRSS = false
+disableKinds = ["taxonomy", "term"]
 # publishDir = "docs"
 ignoreFiles = [ "2018-12-20-test.md" ]
 
