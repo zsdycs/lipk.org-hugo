@@ -20,14 +20,11 @@
   window.addDarkmodeCSS = function addDarkmodeCSS(mode) {
     var modeTag = document.querySelector('#modeTag');
     if (!modeTag) return;
-    var highlightjsNightCSS = document.querySelector('#highlightjsThemeNight');
 
     if (mode === 'github-light') {
-      if (highlightjsNightCSS) highlightjsNightCSS.disabled = true;
       document.body.setAttribute('theme', 'github-light')
       modeTag.innerHTML = '白天';
     } else {
-      if (highlightjsNightCSS) highlightjsNightCSS.disabled = false;
       if (mode === 'github-dark') {
         document.body.setAttribute('theme', 'github-dark')
         modeTag.innerHTML = '黑夜';

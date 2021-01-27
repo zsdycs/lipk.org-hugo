@@ -2,7 +2,6 @@
 title: '关于 Beaudar 的 Q&A'
 date: '2020-06-08'
 slug: 'beauder-qa'
-_highlight: true
 ---
 
 ### Q：api.github.com 请求失败

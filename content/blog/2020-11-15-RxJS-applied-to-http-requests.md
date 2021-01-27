@@ -2,7 +2,6 @@
 title: 'RxJS 应用于 http 请求'
 date: '2020-11-15'
 slug: 'RxJS-applied-to-http-requests'
-_highlight: true
 ---
 
 ## 一、RxJS 概述

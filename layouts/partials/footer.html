@@ -31,7 +31,6 @@
       <script async src="{{ . | absURL }}"></script>
       {{ end }}
 
-      {{ partial "footer_highlightjs" . }}
       {{ if and (.Params._mathjax) (or (in (string .Content) "\\") (in (string .Content) "$")) }}
       <script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       {{ end }}

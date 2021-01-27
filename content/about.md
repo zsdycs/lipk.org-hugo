@@ -1,7 +1,6 @@
 ---
 title: 关于
 slug: /about
-_highlight: true
 ---
 
 ## 我

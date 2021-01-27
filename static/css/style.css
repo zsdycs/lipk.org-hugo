@@ -377,9 +377,13 @@
    height: 100%;
  }
 
- pre .nohighlight {
-   background-color: transparent;
+ .highlight div {
+  background-color: initial !important;
  }
+
+ /* pre .nohighlight {
+   background-color: transparent;
+ } */
 
  /* #Msg {
    padding: .5em;
@@ -1185,6 +1189,7 @@
 
  code {
    color: var(--code-color);
+   text-shadow: 1px 0px 0px var(--code-color);
    background-color: var(--code-background-color);
  }
 

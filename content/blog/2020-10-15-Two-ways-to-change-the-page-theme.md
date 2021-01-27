@@ -2,7 +2,6 @@
 title: '改变页面主题的两种方式'
 date: '2020-10-15'
 slug: 'two-ways-to-change-the-page-theme'
-_highlight: true
 ---
 
 ## 第一种设置 theme 属性

@@ -2,7 +2,6 @@
 title: 'JS 异步流程控制'
 date: '2020-12-28'
 slug: 'JS-asynchronous'
-_highlight: true
 ---
 
 ## 异步事件

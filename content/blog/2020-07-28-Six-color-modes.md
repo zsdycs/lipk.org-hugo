@@ -2,7 +2,6 @@
 title: '六种色彩模式'
 date: '2020-07-28'
 slug: 'six-color-modes'
-_highlight: true
 ---
 
 就在昨夜，我终于完成了本站对 [Beaudar](https://beaudar.lipk.org) 现有的，六个主题的兼容。

@@ -2,7 +2,6 @@
 title: '在博客中添加 B 站视频'
 date: '2020-08-08'
 slug: 'add-bilibili-video-to-your-blog'
-_highlight: true
 ---
 
 今天在逛博客时看到有篇博客把 B 站的视频添加到了文章里，非常新奇。

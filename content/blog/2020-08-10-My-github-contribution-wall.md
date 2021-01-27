@@ -2,7 +2,6 @@
 title: '我的 Github 绿墙'
 date: '2020-08-10'
 slug: 'my-github-contribution-wall'
-_highlight: true
 ---
 
 ## 我绿自己

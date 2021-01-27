@@ -127,7 +127,6 @@ ignoreFiles = [ "2018-12-20-test.md" ]
                 "js/math-code.js",       # code
                 "js/center-img.js",      # img
                 "js/right-quote.js",     # 引用文言
-                "js/no-highlight.js",    # 移除高亮
                 "js/fix-footnote.js",    # 引用参考资料
                 "js/external-link.js",   # <a> 添加 _blank
                 "js/alt-title.js",       # <img> alt -> title
@@ -139,11 +138,6 @@ ignoreFiles = [ "2018-12-20-test.md" ]
     githubContentURL = "http://github.com/zsdycs/lipk.org/edit/master/content/"
     edit = "编辑"
     license = "版权"
-    # options for highlight.js (version, additional languages, and theme)
-    highlightjsCDN = "//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.1"
-    highlightjsLang = ["JavaScript", "HTML", "Markdown", "SCSS", "CSS", "TypeScript", "Ruby", "Bash"]
-    highlightjsThemeNight = "vs2015"
-    highlightjsThemeDay = "github"
  [author]
     blog = '李鹏坤'
 
@@ -182,11 +176,11 @@ ignoreFiles = [ "2018-12-20-test.md" ]
       unsafe = true
       xhtml = false
   [markup.highlight]
-    codeFences = false
+    codeFences = true
     guessSyntax = false
     hl_Lines = ""
     lineNoStart = 1
-    lineNos = false
+    lineNos = true
     lineNumbersInTable = true
     noClasses = true
     style = "monokai"
