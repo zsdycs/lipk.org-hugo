@@ -33,7 +33,7 @@
       <script async src="{{ . | absURL }}"></script>
       {{ end }}
 
-      {{ if and (.Params._mathjax) (or (in (string .Content) "\\") (in (string .Content) "$")) }}
+      {{ if and (.Params.mathjax) (or (in (string .Content) "\\") (in (string .Content) "$")) }}
       <script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       {{ end }}
 
