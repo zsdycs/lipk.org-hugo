@@ -1,7 +1,0 @@
-<!-- 当不是首页，且有MD资源时，在菜单栏增加 "编辑本页" 及 版权声明 -->
-{{ if and (not .IsHome) .Content }}
-{{ with $.Site.Params.githubContentURL }}
-{{ $.Scratch.Set "filePath" $.File.Path }}
-{{ $.Scratch.Set "filePath" (replace ($.Scratch.Get "filePath") "\\" "/") }}
-{{ end }}
-{{ end }}
