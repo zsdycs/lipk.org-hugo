@@ -1,8 +1,8 @@
 {{ partial "header.html" . }}
 
 {{ if .Params.tableOfContents }}
-{{ .TableOfContents }}
-<script async src="/js/tableOfContents.js"></script>
+<div id="tableOfContents-bar"></div>
+<script async src="/js/tableOfContents2.js"></script>
 {{ end }}
 
 {{ .Content }}
