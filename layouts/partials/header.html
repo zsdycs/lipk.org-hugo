@@ -73,6 +73,11 @@
     <header class="masthead">
       {{ partial "menu.html" . }}
     </header>
+
+    {{ if .Params.tableOfContents }}
+    <div id="tableOfContents-bar"></div>
+    <script async src="/js/tableOfContents.v2.js"></script>
+    {{ end }}
     <article class="main">
       <!-- 文章标题 -->
       <header class="title">

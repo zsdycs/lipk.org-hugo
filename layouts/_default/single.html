@@ -1,10 +1,5 @@
 {{ partial "header.html" . }}
 
-{{ if .Params.tableOfContents }}
-<div id="tableOfContents-bar"></div>
-<script async src="/js/tableOfContents2.js"></script>
-{{ end }}
-
 {{ .Content }}
 
 <div id="eof"><span>完</span></div>

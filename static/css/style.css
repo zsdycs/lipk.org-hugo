@@ -378,7 +378,7 @@
  }
 
  .highlight div {
-  background-color: initial !important;
+   background-color: initial !important;
  }
 
  /* pre .nohighlight {
@@ -549,7 +549,8 @@
    vertical-align: middle;
  }
 
- button .fa-svg, a .fa-svg {
+ button .fa-svg,
+ a .fa-svg {
    display: inline-block;
    fill: currentColor;
    width: 13px;
@@ -1276,7 +1277,8 @@
    background: linear-gradient(var(--menu-button-background-color), var(--menu-button-background-color));
  }
 
- #fixed-button button, .writeFixed a {
+ #fixed-button button,
+ .writeFixed a {
    background: linear-gradient(var(--fixed-button-background-color), var(--fixed-button-background-color));
    border: 1px solid var(--fixed-button-border-color);
  }
@@ -1321,9 +1323,9 @@
    background-color: var(--article-index-background-color);
  }
 
- /* article.index a,
+ article.index a,
  article.index button,
- article.index ruby.link, */
+ article.index ruby.link,
  article.index button:hover,
  article.index ruby.link:hover a,
  article.index ruby.link:hover rt {
@@ -1331,11 +1333,11 @@
  }
 
 
- article.index a,
+ /* article.index a,
  article.index button,
  article.index ruby.link {
-  color: var(--html-color);
- }
+   color: var(--html-color);
+ } */
 
  article.index ruby.link a:hover {
    border-bottom: 1px solid var(--a-color);
@@ -1367,163 +1369,3 @@
      border: none;
    }
  }
-
-
- /* 文章目录 */
-
- #tableOfContents-bar {
-    position: fixed;
-    z-index: 10;
-    width: 230px;
-    top: 90px;
-    left: 50%;
-    margin-left: 310px;
- }
-
-.right-container {
-  position: fixed;
-  z-index: 10;
-  width: 230px;
-  top: 90px;
-  left: 50%;
-  margin-left: 310px;
-}
-
-.tableOfContents {
-  position: relative;
-  margin: 20px 0 0 0;
-}
-
-.tableOfContents button {
-  /* todo */
-}
-
-.tableOfContents .tableOfContents-line {
-  position: absolute;
-  left: 7px;
-  top: -5px;
-  width: 0;
-  border: 1px solid #eaeaea;
-  border-top: 0;
-  border-bottom: 0;
-  background-color: #eaeaea;
-}
-
-.tableOfContents .tableOfContents-line:before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -5px;
-  display: block;
-  width: 8px;
-  height: 8px;
-  border: 1px solid #d2d2d2;
-  border-radius: 10px;
-}
-
-.tableOfContents .tableOfContents-line:after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: -5px;
-  display: block;
-  width: 8px;
-  height: 8px;
-  border: 1px solid #d2d2d2;
-  border-radius: 10px;
-}
-
-.tableOfContents .tableOfContents-body {
-  margin-left: -2px;
-  padding-left: 27px;
-  overflow: hidden;
-}
-
-.tableOfContents .tableOfContents-body dl {
-margin: 0;
-transition: 0.3s all;
-}
-
-.tableOfContents-body::-webkit-scrollbar { display: none; }
-
-.tableOfContents .tableOfContents-body dd {
-  position: relative;
-  margin: 0;
-  font-size: 15px;
-  line-height: 28px;
-}
-
-.tableOfContents-body .grade1 button {
-  display: block;
-  max-width: 170px;
-  padding-left: 28px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.tableOfContents-body dd.on button { color: #41b883; }
-
-.tableOfContents-body .grade1 .tableOfContents-index {
-  position: absolute;
-  left: 2px;
-  top: 0;
-  color: #bbb;
-}
-
-.tableOfContents-body .grade1 .tableOfContents-dot {
-position: absolute;
-  left: -22px;
-  top: 11px;
-  width: 8px;
-  height: 8px;
-  background-color: #eaeaea;
-  border: 1px solid #fff;
-  border-radius: 2em;
-}
-
-.tableOfContents-body dd.on .tableOfContents-dot {
-position: absolute;
-  left: -23px;
-  top: 8px;
-  width: 12px;
-  height: 12px;
-  background-color: #40b985;
-  box-shadow: 0px 0px 2px 2px rgba(64,185,133,0.5);
-  border-radius: 2em;
-  border-width: 0;
-}
-
-.tableOfContents-body .grade2 { padding-left: 17px; }
-
-.tableOfContents-body .grade2 button {
-  display: block;
-  padding-left: 48px;
-  max-width: 150px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.tableOfContents-body .grade2 .tableOfContents-index {
-  position: absolute;
-  left: 27px;
-  top: 0;
-  color: #bbb;
-}
-
-.tableOfContents-body .grade3 { padding-left: 37px; }
-
-.article-box .tag {
-  margin: 15px 0 10px;
-  font-size: 12px;
-  color: #999;
-}
-
-.article-box .tag span {
-  margin: 0px 8px 0 2px;
-  padding: 3px 8px;
-  border-radius: 3px;
-  color: #666;
-  background-color: #e7e7e7;
-}
