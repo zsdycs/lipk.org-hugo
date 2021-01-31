@@ -404,7 +404,7 @@
  }
 
  .print {
-   visibility: hidden;
+   display: none;
  }
 
  #eof:before {
@@ -875,7 +875,7 @@
    }
 
    .print {
-     visibility: visible;
+     display: initial;
    }
 
    .paramount {
