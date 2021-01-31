@@ -5,7 +5,7 @@ enableEmoji = true
 disableRSS = false
 disableKinds = ["taxonomy", "term"]
 # publishDir = "docs"
-ignoreFiles = [ "2018-12-20-test.md" ]
+ignoreFiles = [ "2018-12-20-Test.md" ]
 
 [permalinks]
   blog = "/blog/:year/:month/:day/:slug/"
