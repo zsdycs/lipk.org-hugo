@@ -909,8 +909,8 @@
    --blockquote-color: #5d5d5d;
    --blockquote-border-color: #c8c8c8;
    --a-color: #d59500;
-   --code-color: #000;
-   --code-background-color: #e8e8e8;
+   --code-color: #f8f8f2;
+   --code-background-color: #272822;
    --code-hljs-background-color: #f8f8f8;
    --code-hljs-color: #333;
    --ins-color: #777;
@@ -1199,7 +1199,6 @@
 
  code {
    color: var(--code-color);
-   text-shadow: 1px 0px 0px var(--code-color);
    background-color: var(--code-background-color);
  }
 
