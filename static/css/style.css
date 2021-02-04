@@ -1299,8 +1299,8 @@
 
  :focus {
    outline: none;
-   color: var(--a-color) !important;
-   text-shadow: 1.5px 0px 0px var(--html-color);
+   background: var(--selection-background-color) !important;
+   color: var(--html-color) !important;
  }
 
  /* 首页 */
