@@ -6,7 +6,7 @@ slug: 'java-on-spring'
 
 > **问**：[Spring 是否代表着目前 Java 技术的顶峰，未来的 Java 将如何发展？](https://www.zhihu.com/question/387902282/answer/1193954645)
 
-![来自 2018 Snyk 的调查报告，反映了 Spring 在 Java 生态中的统治地位](https://lipk.oss-ap-southeast-1.aliyuncs.com/images/2020-05-01-Java-on-spring.jpg)
+![来自 2018 Snyk 的调查报告，反映了 Spring 在 Java 生态中的统治地位](https://lipk.oss-accelerate.aliyuncs.com/images/2020-05-01-Java-on-spring.jpg)
 
 我是一名前端开发，从未接触过 Spring 开发。所以我在写这篇文章前特地去秤了一下我几斤几两，165.5 斤。
 

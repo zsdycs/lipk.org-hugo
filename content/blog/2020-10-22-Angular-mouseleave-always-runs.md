@@ -6,7 +6,7 @@ slug: 'angular-mouseleave-always-runs'
 
 项目有个需求，鼠标悬停在表格上时，显示一个悬浮框，实现后如图所示：
 
-![鼠标悬停显示悬浮框](https://lipk.oss-ap-southeast-1.aliyuncs.com/images/angular-mouseleave-always-runs.jpg)
+![鼠标悬停显示悬浮框](https://lipk.oss-accelerate.aliyuncs.com/images/angular-mouseleave-always-runs.jpg)
 
 出现问题的代码大概是这样的：
 
