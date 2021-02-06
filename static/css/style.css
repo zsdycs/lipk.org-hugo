@@ -545,16 +545,12 @@
    color: #ff655b;
  }
 
- .writeFixed .fa-svg {
-   vertical-align: middle;
- }
-
  button .fa-svg,
  a .fa-svg {
    display: inline-block;
    fill: currentColor;
    width: 13px;
-   height: 13px;
+   height: 32px;
  }
 
  @media only screen and (max-width:545px) {
