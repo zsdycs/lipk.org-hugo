@@ -857,6 +857,10 @@
    }
  }
 
+ .print-page-break {
+   display: none;
+ }
+
  /* 媒体 */
  @media print {
 
@@ -892,6 +896,19 @@
      color: initial !important;
      text-decoration: none;
    }
+
+   .title>h1 {
+     font-size: 35px;
+   }
+
+   .print-page-break {
+     display: block;
+     visibility: hidden;
+     page-break-after: always;
+   }
+   h1, h2, h3, h4, h5, h6 {
+    margin: 1em auto 1em;
+}
  }
 
  /* 主题 */
