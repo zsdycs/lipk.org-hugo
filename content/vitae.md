@@ -23,7 +23,7 @@ notComment: true
 - 2019 . 06 ~ 至今 **方舟信息技术(苏州)有限公司**，Web 前端开发工程师。
   - 编码（PG）和测试（PT）担当。参与开发项目的开发模式有： Angular + Ant Design、Angular + 公司内部框架、Ruby + Rails + JQ + PostgreSQL 以及 Vue + Ant Design 等，使用 Git 进行协同办公。
 
-<!-- # print-page-break1 { .print-page-break }
+# print-page-break1 { .print-page-break }
 
 ## 项目经历（部分）
 
@@ -38,7 +38,7 @@ notComment: true
 - 日本环境省“次期省エネ法・温対法電子報告システム”。
   - 负责开发“事業者利用申請～ユーザ情報の管理”模块的页面，由于 API interface 的数据太多（大约 80 个项目/tab，一个页面若干个 tab），仍然清晰记得在 class 定义大段属性，并在构造函数（constructor）将属性 new 出来的枯燥工作。
 - 日本[“建設キャリアアップシステム”](https://www.ccus.jp/p/info)。
-  - 是个庞大的 angular 系统，有很多页面可复用的 API，但 [stubby](https://www.npmjs.com/package/stubby) route.json 中的 request 仍有 1053 个。参与了“2020 下期開発”的工作，案件 396 个，参与了约 30% 的案件编码工作。 -->
+  - 是个庞大的 angular 系统，有很多页面可复用的 API，但 [stubby](https://www.npmjs.com/package/stubby) route.json 中的 request 仍有 1053 个。参与了“2020 下期開発”的工作，案件 396 个，参与了约 30% 的案件编码工作。
 
 # print-page-break2 { .print-page-break }
 
