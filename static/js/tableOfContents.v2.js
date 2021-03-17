@@ -1,4 +1,4 @@
-(function () {
+window.onload = function () {
   "use strict";
   // ************************************************** 变量 **************************************************
   const $ = document.querySelector.bind(document);
@@ -483,4 +483,4 @@
       return 'normal';
     }
   }
-})()
+}
