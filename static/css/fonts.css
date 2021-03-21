@@ -20,7 +20,8 @@ code {
 }
 
 /* font-size */
-html {
+html,
+body {
   font-size: 100%;
 }
 

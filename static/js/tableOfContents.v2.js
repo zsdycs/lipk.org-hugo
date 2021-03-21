@@ -360,6 +360,10 @@ window.onload = function () {
 
     .tableOfContents-body dd.on button {
       color: var(--a-color);
+    }
+
+    .tableOfContents-body dd button:hover {
+      color: var(--a-color);
     }`);
     importStyle.appendChild(cssText);
     const heads = document.getElementsByTagName("head");

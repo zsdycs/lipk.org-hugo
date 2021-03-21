@@ -599,7 +599,6 @@
 
  article.index h3 {
    margin-top: 34px;
-   margin-bottom: auto;
  }
 
  article.index h1:hover .anchor,
@@ -906,9 +905,15 @@
      visibility: hidden;
      page-break-after: always;
    }
-   h1, h2, h3, h4, h5, h6 {
-    margin: 1em auto 1em;
-}
+
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+     margin: 1em auto 1em;
+   }
  }
 
  /* 主题 */
@@ -1145,6 +1150,10 @@
  /* 组织内容
 <p> <hr> <pre> <blockquote> <ol> <ul> <li> <dl> <dt> <dd> <figure> <figcaption> <div>
 */
+ p {
+   margin-bottom: 4px;
+ }
+
  hr {
    color: var(--hr-color);
  }
