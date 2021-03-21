@@ -1,5 +1,5 @@
 
 <figure class="image">
-  <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" title="{{ .Text }}" />
+  <img loading="lazy" src="{{ .Destination | safeURL }}" alt="{{ .Text }}" title="{{ .Text }}" />
   <figcaption class="image-description">{{ .Text }}</figcaption>
 </figure>
