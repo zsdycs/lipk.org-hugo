@@ -16,7 +16,7 @@ slug: /about
 
 ## 本站
 
-基于 [Hugo](https://gohugo.io/)，服务源于 [阿里云 OSS](https://www.aliyun.com/product/oss/)，源代码托管 [GitHub](https://github.com/zsdycs/lipk.org)。评论使用 [Beaudar - 表达](https://beaudar.lipk.org/)，基于 GitHub Issues，甚是方便。曾经使用过 [Wildfire](https://wildfire.js.org)，UI 很不错，但是要用 [Firebase](https://firebase.google.com) 数据库，在国内很不稳定，所以放弃使用。域名来自[谷歌域](https://domains.google/)，DNS 来自 [Cloudflare](https://www.cloudflare.com/)，CDN 来自阿里云。
+基于 [Hugo](https://gohugo.io/)，服务源于[阿里云 ECS](https://www.aliyun.com/product/ecs/)，部分静态资源服务来自[阿里云 OSS](https://www.aliyun.com/product/oss/)，源代码托管 [GitHub](https://github.com/zsdycs/lipk.org)。评论使用 [Beaudar - 表达](https://beaudar.lipk.org/)，基于 GitHub Issues，甚是方便。曾经使用过 [Wildfire](https://wildfire.js.org)，UI 很不错，但是要用 [Firebase](https://firebase.google.com) 数据库，在国内很不稳定，所以放弃使用。域名来自[谷歌域](https://domains.google/)，DNS 来自 [Cloudflare](https://www.cloudflare.com/)。
 
 ```markdown
 lipk.org 站点地图
