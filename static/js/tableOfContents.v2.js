@@ -130,7 +130,10 @@ window.onload = function () {
         third = 0;
       }
       if (tableOfContentsList[i].nodeName === DEFAULT.titleType[2]) {
-        if (first == 0) {
+        if (first == 0 && second == 0) {
+          indexList[i] = `${++third}`;
+          grade = --tableOfContentsList[i].grade;
+        } else if (first == 0 && second !== 0) {
           indexList[i] = `${second}.${++third}`;
           grade = --tableOfContentsList[i].grade;
         } else {

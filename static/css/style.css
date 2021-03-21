@@ -123,6 +123,10 @@
    margin: 2em auto 1em;
  }
 
+ figure.image {
+   text-align: center;
+ }
+
  /* 文字形式
   <a> <em> <strong> <small> <s> <cite> <q> <dfn> <abbr> <time> <code> <var> <samp> <kbd>
   <sub> <sup> <i> <b> <u> <mark> <ruby> <rt> <rp> <bdi> <bdo> <span> <br> <wbr>

@@ -124,11 +124,8 @@ ignoreFiles = [ "2018-12-20-Test.md" ]
                 "js/mode.js",            # 模式
                 "js/indentation-el.js",  # 缩进
                 "js/math-code.js",       # code
-                "js/center-img.js",      # img
                 "js/right-quote.js",     # 引用文言
                 "js/fix-footnote.js",    # 引用参考资料
-                "js/external-link.js",   # <a> 添加 _blank
-                "js/alt-title.js",       # <img> alt -> title
                 "js/header-link.js",     # h1 h2 h3 添加锚点
                 "js/checkbox-list.js",   # 无序复选列表
                 "js/hide-menu.js",       # 菜单栏自动隐藏
