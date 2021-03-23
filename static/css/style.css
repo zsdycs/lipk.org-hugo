@@ -952,7 +952,7 @@
    --menu-button-background-color: #fff;
    --fixed-button-background-color: #f6f8fa;
    --fixed-button-border-color: #e1e4e8;
-   --eof-color: #c3c3c3;
+   --eof-color: #777;
    --wrapper-background-color: #efefef;
    --selection-background-color: #fefecc;
    --aside-hover-background-color: #efefef;
@@ -987,7 +987,7 @@
    --menu-button-background-color: #181818;
    --fixed-button-background-color: #181818;
    --fixed-button-border-color: #343434;
-   --eof-color: #434343;
+   --eof-color: #666666;
    --wrapper-background-color: #181818;
    --selection-background-color: #27673d;
    --aside-hover-background-color: #181818;
@@ -1057,7 +1057,7 @@
    --menu-button-background-color: #14171c;
    --fixed-button-background-color: #182030;
    --fixed-button-border-color: #1d1f21;
-   --eof-color: #2b3137;
+   --eof-color: #6f6e6e;
    --wrapper-background-color: #14171c;
    --selection-background-color: #4183c4fc;
    --aside-hover-background-color: #14171c;
@@ -1092,7 +1092,7 @@
    --menu-button-background-color: #021012;
    --fixed-button-background-color: #06272c;
    --fixed-button-border-color: #10444d;
-   --eof-color: #10444d;
+   --eof-color: #6f6e6e;
    --wrapper-background-color: #021012;
    --selection-background-color: #26d0e7cf;
    --aside-hover-background-color: #021012;
@@ -1127,7 +1127,7 @@
    --menu-button-background-color: #232326;
    --fixed-button-background-color: #182030;
    --fixed-button-border-color: #38383d;
-   --eof-color: #313136;
+   --eof-color: #6f6e6e;
    --wrapper-background-color: #232326;
    --selection-background-color: #45a1ff;
    --aside-hover-background-color: #232326;
