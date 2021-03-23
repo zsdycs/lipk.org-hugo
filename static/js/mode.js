@@ -1,7 +1,25 @@
 (function () {
+
+  const MODE_TEXT = {
+    'github-light': '浅色',
+    'github-dark': '深色',
+    'github-dark-orange': '深橙',
+    'dark-blue': '深蓝',
+    'icy-dark': '冷黑',
+    'photon-dark': '暗黑',
+  }
+  const MODE_ORDER = {
+    'github-light': 'github-dark',
+    'github-dark': 'github-dark-orange',
+    'github-dark-orange': 'dark-blue',
+    'dark-blue': 'icy-dark',
+    'icy-dark': 'photon-dark',
+    'photon-dark': 'github-light',
+  }
+
   // 设置 mode 默认值
   if (sessionStorage.getItem('mode') == null) {
-    var hours = new Date();
+    const hours = new Date();
     // 如果时间是晚上 18 点到早上 6 点，自动黑夜
     if (hours.getHours() >= 18 || hours.getHours() <= 6) {
       sessionStorage.setItem('mode', 'github-dark');
@@ -14,38 +32,15 @@
   // document.body.style.background = 'url(https://lipk.oss-accelerate.aliyuncs.com/images/geometry.png)';
   // document.body.style.backgroundRepeat = 'repeat';
 
-  var modeLS = sessionStorage.getItem('mode');
+  const modeLS = sessionStorage.getItem('mode');
 
   // 判断加载相应模式 CSS
   window.addDarkmodeCSS = function addDarkmodeCSS(mode) {
-    var modeTag = document.querySelector('#modeTag');
+    const modeTag = document.querySelector('#modeTag');
     if (!modeTag) return;
 
-    if (mode === 'github-light') {
-      document.body.setAttribute('theme', 'github-light')
-      modeTag.innerHTML = '白天';
-    } else {
-      if (mode === 'github-dark') {
-        document.body.setAttribute('theme', 'github-dark')
-        modeTag.innerHTML = '黑夜';
-      }
-      if (mode === 'github-dark-orange') {
-        document.body.setAttribute('theme', 'github-dark-orange')
-        modeTag.innerHTML = '橘暮';
-      }
-      if (mode === 'dark-blue') {
-        document.body.setAttribute('theme', 'dark-blue')
-        modeTag.innerHTML = '幽瞑';
-      }
-      if (mode === 'icy-dark') {
-        document.body.setAttribute('theme', 'icy-dark')
-        modeTag.innerHTML = '雨晨';
-      }
-      if (mode === 'photon-dark') {
-        document.body.setAttribute('theme', 'photon-dark')
-        modeTag.innerHTML = '紫夜';
-      }
-    }
+    document.body.setAttribute('theme', mode);
+    modeTag.innerHTML = MODE_TEXT[mode];
   }
 
   // 画面加载时，加载相应模式 CSS
@@ -53,52 +48,24 @@
 
   // 切换黑夜白天模式
   window.mode = function mode() {
-    var nowDarkmode = sessionStorage.getItem('mode');
-    var beaudar = document.querySelector('#beaudar iframe');
-    var message = {
+    const nowDarkmode = sessionStorage.getItem('mode');
+    const beaudar = document.querySelector('#beaudar iframe');
+    const message = {
       type: 'set-theme',
       theme: 'github-light'
     };
     /**
      * 顺序：
-     *       -> 'github-light'        // 白天
-     *       -> 'github-dark'         // 黑夜
-     *       -> 'github-dark-orange'  // 橘暮
-     *       -> 'dark-blue'           // 幽瞑
-     *       -> 'icy-dark'            // 雨晨
-     *       -> 'photon-dark'         // 紫夜
+     *       -> 'github-light'        // 浅色
+     *       -> 'github-dark'         // 深色
+     *       -> 'github-dark-orange'  // 深橙
+     *       -> 'dark-blue'           // 深蓝
+     *       -> 'icy-dark'            // 冷黑
+     *       -> 'photon-dark'         // 暗黑
      */
-    if (nowDarkmode === 'github-light') {
-      // github-light -> github-dark
-      message.theme = 'github-dark';
-      sessionStorage.setItem('mode', 'github-dark');
-      window.addDarkmodeCSS('github-dark');
-    } else if (nowDarkmode === 'github-dark') {
-      // github-dark -> github-dark-orange
-      message.theme = 'github-dark-orange';
-      sessionStorage.setItem('mode', 'github-dark-orange');
-      window.addDarkmodeCSS('github-dark-orange');
-    } else if (nowDarkmode === 'github-dark-orange') {
-      // github-dark-orange -> dark-blue
-      message.theme = 'dark-blue';
-      sessionStorage.setItem('mode', 'dark-blue');
-      window.addDarkmodeCSS('dark-blue');
-    } else if (nowDarkmode === 'dark-blue') {
-      // dark-blue -> icy-dark
-      message.theme = 'icy-dark';
-      sessionStorage.setItem('mode', 'icy-dark');
-      window.addDarkmodeCSS('icy-dark');
-    } else if (nowDarkmode === 'icy-dark') {
-      // icy-dark -> photon-dark
-      message.theme = 'photon-dark';
-      sessionStorage.setItem('mode', 'photon-dark');
-      window.addDarkmodeCSS('photon-dark');
-    } else if (nowDarkmode === 'photon-dark') {
-      // photon-dark -> github-light
-      message.theme = 'github-light';
-      sessionStorage.setItem('mode', 'github-light');
-      window.addDarkmodeCSS('github-light');
-    }
+     message.theme = MODE_ORDER[nowDarkmode];
+     sessionStorage.setItem('mode', MODE_ORDER[nowDarkmode]);
+     window.addDarkmodeCSS(MODE_ORDER[nowDarkmode]);
     // 与 beaudar 通信
     if (sessionStorage.getItem('beaudar') === 'true' && beaudar) {
       beaudar.contentWindow.postMessage(message, 'https://beaudar.lipk.org');
