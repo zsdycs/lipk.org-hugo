@@ -117,7 +117,7 @@ ignoreFiles = [ "2018-12-20-Test.md" ]
 
 [params]
     description = "zsdycs; 执手对影成双; Personal website of Pengkun Lee; 李鹏坤的个人网站; lipk"
-    footer = "&copy; 2018 - 2021 李鹏坤"
+    since = "2018"
     slogan = "执手相看，对影成双"
     customJS = [
                 "js/give-up-IE.js",      # 放弃兼容 IE
@@ -164,9 +164,11 @@ ignoreFiles = [ "2018-12-20-Test.md" ]
       taskList = true
       typographer = true
     [markup.goldmark.parser]
-      attribute = true
       autoHeadingID = true
       autoHeadingIDType = "github"
+      [markup.goldmark.parser.attribute]
+        block = false
+        title = true
     [markup.goldmark.renderer]
       hardWraps = false
       unsafe = true

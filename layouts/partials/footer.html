@@ -37,11 +37,10 @@
       <script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       {{ end }}
 
-      {{ with .Site.Params.footer }}
       <hr>
       <div class="copyright">
-        <span class="slogan">{{ $.Site.Params.slogan }}</span>
-        {{ . | markdownify }}
+        <span class="slogan">{{ .Site.Params.slogan }}</span>
+        <span>&copy;{{ .Site.Params.since }}-{{ now.Format "2006"}} {{ .Site.Params.author }}。</span>
         <a class="svg-link" href="https://github.com/zsdycs" target="_blank" rel="noopener noreferrer"
           title="zsdycs | Github">
           <svg class="fa-svg github" width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
@@ -91,7 +90,6 @@
             </a>
         </div>
       </div>
-      {{ end }}
       </footer>
   {{ if not .IsHome }}
     </article>

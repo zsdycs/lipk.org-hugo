@@ -11,9 +11,10 @@ slug: 'why-reading'
 
 如今我还记得 3 年前世界读书日，我在路过教学楼时，被教学楼前的银杏树惊艳。
 
-<p>
-<img src="https://lipk.oss-accelerate.aliyuncs.com/images/2020-04-23-why-reading.jpg" alt="这就是我当时看到的银杏树" style="width: 50%;">
-</p>
+<figure class="image">
+  <img src="https://lipk.oss-accelerate.aliyuncs.com/images/2020-04-23-why-reading.jpg" alt="这就是我当时看到的银杏树" title="这就是我当时看到的银杏树" style="width: 50%;">
+  <figcaption class="image-description">这就是我当时看到的银杏树</figcaption>
+</figure>
 
 生机盎然，静静的，看着令人对生活充满希望。
 

@@ -1,4 +1,4 @@
-<h{{ .Level }} id="{{ .Anchor | safeURL }}">{{ .Text | safeHTML }}
+<h{{ .Level }} id="{{ .Anchor | safeURL }}" class="{{ .Attributes.class }}">{{ .Text | safeHTML }}
   <span class="anchor">
     <a href="#{{ .Anchor | safeURL }}" style="border: 0px;">
       <svg class="fa-svg" width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">

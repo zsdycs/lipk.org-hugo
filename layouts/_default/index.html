@@ -37,60 +37,58 @@
             {{ range .Site.Params.customJS }}
             <script async src="{{ . | absURL }}"></script>
             {{ end }}
-            {{ with .Site.Params.footer }}
             <div class="copyright">
-                {{ . | markdownify }}
-                <a class="svg-link" href="https://github.com/zsdycs" target="_blank" rel="noopener noreferrer"
-                  title="zsdycs | Github">
-                  <svg class="fa-svg github" width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                    <path id="fa-github" d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z"/>
-                  </svg>
-                </a>
-                <a class="svg-link" href="https://travellings.now.sh/" target="_blank" rel="noopener noreferrer"
-                  title="开往-友链接力">
-                  <svg class="travelling" viewBox="0 0 92 22">
-                    <defs>
-                      <style>
-                        .cls-1 {
-                          font-size: 12px;
-                          font-family: Oxanium-Medium, Oxanium;
-                          font-weight: 500;
-                        }
+              <span>&copy;{{ .Site.Params.since }}-{{ now.Format "2006"}} {{ .Site.Params.author }}。</span>
+              <a class="svg-link" href="https://github.com/zsdycs" target="_blank" rel="noopener noreferrer"
+                title="zsdycs | Github">
+                <svg class="fa-svg github" width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                  <path id="fa-github" d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z"/>
+                </svg>
+              </a>
+              <a class="svg-link" href="https://travellings.now.sh/" target="_blank" rel="noopener noreferrer"
+                title="开往-友链接力">
+                <svg class="travelling" viewBox="0 0 92 22">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        font-size: 12px;
+                        font-family: Oxanium-Medium, Oxanium;
+                        font-weight: 500;
+                      }
 
-                        .cls-2 {
-                          letter-spacing: -0.03em;
-                        }
+                      .cls-2 {
+                        letter-spacing: -0.03em;
+                      }
 
-                        .cls-3 {
-                          letter-spacing: -0.01em;
-                        }
+                      .cls-3 {
+                        letter-spacing: -0.01em;
+                      }
 
-                        .cls-4 {
-                          fill: none;
-                          stroke-miterlimit: 0;
-                          stroke-width: 1px;
-                        }
-                      </style>
-                    </defs>
-                    <title>开往-友链接力</title>
-                    <path d="M5.07,2V8.88H7.19a3,3,0,1,1,0,2.25H5.07V18l13.86-8Z" transform="translate(1 1)" />
-                    <text class="cls-1" transform="translate(21.62 14.6)">
-                      <tspan class="cls-2">T</tspan>
-                      <tspan class="cls-3" x="6.82" y="0">r</tspan>
-                      <tspan x="11.28" y="0">avelling</tspan>
-                    </text>
-                  </svg>
-                </a>
-                <br />
-                <div class="beian">
-                    <img src="https://lipk.oss-accelerate.aliyuncs.com/images/beian.png" />
-                    <a target="_blank" rel="noopener noreferrer"
-                        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44200002444254">
-                        粤公网安备 44200002444254 号
-                    </a>
-                </div>
+                      .cls-4 {
+                        fill: none;
+                        stroke-miterlimit: 0;
+                        stroke-width: 1px;
+                      }
+                    </style>
+                  </defs>
+                  <title>开往-友链接力</title>
+                  <path d="M5.07,2V8.88H7.19a3,3,0,1,1,0,2.25H5.07V18l13.86-8Z" transform="translate(1 1)" />
+                  <text class="cls-1" transform="translate(21.62 14.6)">
+                    <tspan class="cls-2">T</tspan>
+                    <tspan class="cls-3" x="6.82" y="0">r</tspan>
+                    <tspan x="11.28" y="0">avelling</tspan>
+                  </text>
+                </svg>
+              </a>
+              <br />
+              <div class="beian">
+                  <img src="https://lipk.oss-accelerate.aliyuncs.com/images/beian.png" />
+                  <a target="_blank" rel="noopener noreferrer"
+                      href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44200002444254">
+                      粤公网安备 44200002444254 号
+                  </a>
+              </div>
             </div>
-            {{ end }}
         </footer>
     </main>
 </div>

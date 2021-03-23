@@ -7,7 +7,10 @@ notComment: true
 
 # 李鹏坤
 
-<p><img src="https://lipk.oss-accelerate.aliyuncs.com/images/vitae.jpg" alt="我的照片" height="150px"></p>
+<figure class="image">
+  <img loading="lazy" src="https://lipk.oss-accelerate.aliyuncs.com/images/vitae.jpg" alt="我的照片" title="我的照片" height="150px">
+  <figcaption class="image-description">我的照片</figcaption>
+</figure>
 
 ## 基本信息
 
