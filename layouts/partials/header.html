@@ -8,7 +8,7 @@
   <title>{{ .Site.Title }}</title>
 
   {{ else }}
-  <title>执手对影成双 - {{ .Title }}</title>
+  <title>{{ .Site.Params.title }} - {{ .Title }}</title>
   {{ end }}
   <meta name="baidu-site-verification" content="SQ5Gg5sRhQ" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -21,9 +21,9 @@
   </script>
 
   {{ if .IsHome }}
-  <meta property="og:title" content="{{ .Site.Title }}">
+  <meta property="og:title" content="{{ .Site.Title }} | 首页">
   {{ else }}
-  <meta property="og:title" content="执手对影成双 - {{ .Title }}">
+  <meta property="og:title" content="{{ .Site.Params.author }} | {{ .Site.Params.title }} - {{ .Title }}">
   {{ end }}
   <meta property="og:type" content="website">
   <script>

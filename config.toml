@@ -117,7 +117,7 @@ ignoreFiles = [ "2018-12-20-Test.md" ]
 
 [params]
     description = "zsdycs; 执手对影成双; Personal website of Pengkun Lee; 李鹏坤的个人网站; lipk"
-    footer = "&copy; 2018 - 2020 [执手对影成双](/)"
+    footer = "&copy; 2018 - 2021 李鹏坤"
     slogan = "执手相看，对影成双"
     customJS = [
                 "js/give-up-IE.js",      # 放弃兼容 IE
@@ -129,6 +129,7 @@ ignoreFiles = [ "2018-12-20-Test.md" ]
                 "js/checkbox-list.js",   # 无序复选列表
                 "js/hide-menu.js",       # 菜单栏自动隐藏
                 ]
+    title = '执手对影成双'
     author = '李鹏坤'
     githubContentURL = "http://github.com/zsdycs/lipk.org/edit/master/content/"
     edit = "编辑"
