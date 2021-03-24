@@ -1,6 +1,6 @@
 ### 源代码说明
 
-- 构建程序：[hugo](http://gohugo.io) 版本 [v0.80.0](https://github.com/gohugoio/hugo/releases)。
+- 构建程序：[hugo](http://gohugo.io) 版本 [v0.82.0](https://github.com/gohugoio/hugo/releases)。
 - 主题源自：[hugo-ivy](https://github.com/yihui/hugo-ivy)。
 - 目录结构：
 
