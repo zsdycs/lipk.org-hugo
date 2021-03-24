@@ -12,12 +12,12 @@ notComment: true
   <figcaption class="image-description">我的照片</figcaption>
 </figure>
 
-## 基本信息
+## 基本信息 { .basicInfo }
 
 籍贯：广东 · 中山。  
 位置：江苏 · 苏州。  
 出生：1997/12/20。  
-邮箱：mail@lipk.org。
+邮箱：[mail@lipk.org](mailto:mail@lipk.org)。
 
 ## 工作经历
 

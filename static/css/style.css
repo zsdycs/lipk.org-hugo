@@ -153,6 +153,10 @@
    font-weight: bolder;
  }
 
+ .basicInfo+p>a {
+   font-weight: initial;
+ }
+
  sup a {
    letter-spacing: initial;
  }
@@ -297,12 +301,12 @@
  }
 
  .copyright .github {
-  vertical-align: middle;
-  display: inline-block;
-  fill: currentColor;
-  width: 17px;
-  height: 17px;
-}
+   vertical-align: middle;
+   display: inline-block;
+   fill: currentColor;
+   width: 17px;
+   height: 17px;
+ }
 
  .copyright .beian {
    display: inline-block;
@@ -632,6 +636,10 @@
 
  aside.index #info li {
    list-style: none;
+ }
+
+ aside.index #info .info-text a {
+   font-weight: initial;
  }
 
  aside.index #info .fa-svg {
@@ -1191,6 +1199,14 @@
    color: var(--html-color);
  }
 
+ .basicInfo+p>a {
+   color: var(--body-color);
+ }
+
+ .basicInfo+p>a:hover {
+   color: var(--a-color);
+ }
+
  a.list,
  .post-nav a,
  .copyright a,
@@ -1348,6 +1364,14 @@
 
  main.index:hover aside {
    background: var(--aside-hover-background-color);
+ }
+
+ aside.index #info .info-text a {
+   color: var(--body-color);
+ }
+
+ aside.index #info .info-text a:hover {
+   color: var(--a-color);
  }
 
  article.index {
