@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v2
       - name: uses hugo-build-action@v0.82.0
         uses: jakejarvis/hugo-build-action@v0.82.0
-        width:
+        with:
           args: --minify
       - name: uses upload-artifact
         uses: actions/upload-artifact@master
