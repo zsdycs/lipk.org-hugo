@@ -1,8 +1,7 @@
 name: deploy to aliyun
 
 on:
-  push:
-    branches: [ master ]
+  [push, workflow_dispatch]
 
 jobs:
   build:
