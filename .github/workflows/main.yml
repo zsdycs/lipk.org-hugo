@@ -24,9 +24,9 @@ jobs:
           name: website
           path: './dist'
       - name: setup node
-      uses: actions/setup-node@v1
-      with:
-        node-version: '14.3.0'
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.3.0'
       - name: run npm install && gulp
         run: |
           npm install
