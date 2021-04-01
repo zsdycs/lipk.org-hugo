@@ -18,11 +18,15 @@ jobs:
         uses: jakejarvis/hugo-build-action@v0.82.0
         with:
           args: --minify
-      # - name: uses upload-artifact
-      #   uses: actions/upload-artifact@master
-      #   with:
-      #     name: website
-      #     path: './dist'
+      - name: uses upload-artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: website
+          path: './dist'
+      - name: setup node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '14.3.0'
       - name: run npm install && gulp
         run: |
           npm install
