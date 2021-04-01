@@ -4,8 +4,8 @@ title = "lipk • 李鹏坤"
 enableEmoji = true
 disableRSS = false
 disableKinds = ["taxonomy", "term"]
-# publishDir = "docs"
-ignoreFiles = [ "2018-12-20-Test.md" ]
+publishDir = "dist"
+ignoreFiles = [ "2018-12-20-Test.md", "package.json" ]
 
 [permalinks]
   blog = "/blog/:year/:month/:day/:slug/"

@@ -1,50 +1,46 @@
-var gulp = require('gulp');
-var gutil = require('gulp-util');
-var minifycss = require('gulp-minify-css');
-var uglify = require('gulp-uglify');
-var htmlmin = require('gulp-htmlmin');
-var htmlclean = require('gulp-htmlclean');
-var babel = require('gulp-babel');
-var connect = require('gulp-connect');
+const gulp = require('gulp');
+const gulpBabel = require('gulp-babel');
+const gulpConnect = require('gulp-connect');
+const gulpHtmlclean = require('gulp-htmlclean');
+const gulpHtmlmin = require('gulp-htmlmin');
+const gulpMinifycss = require('gulp-minify-css');
+const gulpUglify = require('gulp-uglify')
+const gulpUtil = require('gulp-util');
 
-// 压缩 css 文件
-gulp.task('css', function css(done) {
-  gulp.src('./public/css/*.css')
-    .pipe(minifycss())
-    .pipe(gulp.dest('./public/css'))
-    .pipe(connect.reload());
-    done();
-});
+function minify_css(done) {
+  gulp.src('./dist/css/*.css')
+    .pipe(gulpMinifycss())
+    .pipe(gulp.dest('./dist/css'))
+    .pipe(gulpConnect.reload());
+  done();
+}
 
-// 压缩 html 文件
-gulp.task('html', function html(done) {
-  gulp.src('./public/**/*.html')
-    .pipe(htmlclean())
-    .pipe(htmlmin({
+function minify_html(done) {
+  gulp.src('./dist/**/*.html')
+    .pipe(gulpHtmlclean())
+    .pipe(gulpHtmlmin({
       removeComments: true,
       minifyJS: true,
       minifyCSS: true,
       minifyURLs: true,
     }))
-    .pipe(gulp.dest('./public'))
-    .pipe(connect.reload());
-    done();
-});
+    .pipe(gulp.dest('./dist'))
+    .pipe(gulpConnect.reload());
+  done();
+}
 
-// 压缩 js 文件
-gulp.task('js', function js(done) {
-  gulp.src('./public/js/*.js')
-    .pipe(babel({
+function minify_js(done) {
+  gulp.src('./dist/js/*.js')
+    .pipe(gulpBabel({
       presets: ['@babel/preset-env']
     }))
-    .pipe(uglify())
+    .pipe(gulpUglify())
     .on('error', function (err) {
-      gutil.log(gutil.colors.red('[Error]'), err.toString());
+      gulpUtil.log(gulpUtil.colors.red('[Error]'), err.toString());
     })
-    .pipe(gulp.dest('./public/js'))
-    .pipe(connect.reload());
-    done();
-});
+    .pipe(gulp.dest('./dist/js'))
+    .pipe(gulpConnect.reload());
+  done();
+}
 
-// 默认任务
-gulp.task('default', gulp.series(gulp.parallel('html', 'css', 'js')));
+exports.default = gulp.series(minify_css, minify_html, minify_js);
