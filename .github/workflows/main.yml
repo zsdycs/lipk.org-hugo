@@ -23,12 +23,7 @@ jobs:
         with:
           name: website
           path: './dist'
-      - name: Cache node modules
-        uses: actions/cache@v1
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-      - name: run npm install && gulp
+      - name: run npm install && sudo gulp
         run: |
           npm install
           sudo gulp
