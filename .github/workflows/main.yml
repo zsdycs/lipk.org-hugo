@@ -18,6 +18,7 @@ jobs:
         uses: jakejarvis/hugo-build-action@v0.82.0
         width:
           args: --minify
+      - name: uses upload-artifact
         uses: actions/upload-artifact@master
         with:
           name: website
