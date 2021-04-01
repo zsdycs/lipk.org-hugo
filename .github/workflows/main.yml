@@ -23,12 +23,10 @@ jobs:
         with:
           name: website
           path: './dist'
-      - name: run npm install
-        run: npm install
-      - name: run npm install -g gulp
-        run: npm install -g gulp
-      - name: run gulp
-        run: gulp
+      - name: run npm install && gulp
+        run: |
+          npm install
+          gulp
       - name: ssh-deploy
         uses: easingthemes/ssh-deploy@v2.0.7
         env:
