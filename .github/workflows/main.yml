@@ -15,9 +15,13 @@ jobs:
       - name: checkout code
         uses: actions/checkout@v2
       - name: uses hugo-build-action@v0.82.0
-        uses: jakejarvis/hugo-build-action@v0.82.0
-          width:
-            args: --minify
+      - uses: jakejarvis/hugo-build-action@v0.82.0
+        width:
+          args: --minify
+      - uses: actions/upload-artifact@master
+        with:
+          name: website
+          path: './dist'
       - name: run npm install
         run: npm install
       - name: run gulp
