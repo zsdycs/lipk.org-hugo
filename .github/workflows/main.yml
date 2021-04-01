@@ -1,5 +1,4 @@
 name: deploy to aliyun
-
 on:
   workflow_dispatch:
     inputs:
@@ -9,21 +8,16 @@ on:
         default: 'Owner'
   push:
     branches: [ master ]
-
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: checkout code
       - uses: actions/checkout@v2
-
       - name: uses hugo-build-action@v0.82.0
       - uses: jakejarvis/hugo-build-action@v0.82.0
-
       - name: run npm install
         run: npm install
-
       - name: run build
         run: npm run build
       - name: ssh-deploy
