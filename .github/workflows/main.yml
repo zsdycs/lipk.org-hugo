@@ -23,14 +23,15 @@ jobs:
         with:
           name: website
           path: './dist'
-      - name: setup node
-        uses: actions/setup-node@v1
+      - name: Cache node modules
+        uses: actions/cache@v1
         with:
-          node-version: '14.3.0'
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
       - name: run npm install && gulp
         run: |
           npm install
-          gulp
+          sudo gulp
       - name: ssh-deploy
         uses: easingthemes/ssh-deploy@v2.0.7
         env:
