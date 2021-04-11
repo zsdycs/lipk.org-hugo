@@ -1,0 +1,22 @@
+{
+  "name": "lipk.org",
+  "short_name": "lipk.org",
+  "description": "lipk.org PWA 应用",
+  "start_url": ".",
+  "orientation": "any",
+  "homepage_url": "https://www.lipk.org",
+  "display": "standalone",
+  "background_color": "#2a2e35",
+  "theme_color": "#454e56",
+  "icons": [{
+    "src": "/img/logo-64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/logo-320.png",
+      "sizes": "320x320",
+      "type": "image/png"
+    }
+  ]
+}

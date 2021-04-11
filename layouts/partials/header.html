@@ -63,6 +63,14 @@
   {{ end }}
   <link rel="preload" href="https://use.typekit.net/kwz5xar.js" as="script" crossorigin />
   <script defer="defer" src="/js/load-typekit.js"></script>
+  <link rel="manifest" href="/manifest.json">
+  <script>
+      if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+              navigator.serviceWorker.register('/sw.js');
+          });
+      }
+  </script>
 </head>
 
 {{ $.Scratch.Set "section" (replaceRE "^/([^/]+)/.*" "$1" .RelPermalink) }}
