@@ -604,6 +604,7 @@
  aside.index img {
    display: block;
    width: 100%;
+   height: auto;
  }
 
  aside.index #name {
