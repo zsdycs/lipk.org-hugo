@@ -8,12 +8,7 @@
   "display": "standalone",
   "background_color": "#fff",
   "theme_color": "#fff",
-  "icons": [{
-    "src": "/img/android-chrome-64x64.png",
-      "sizes": "64x64",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
+  "icons": [
     {
       "src": "/img/android-chrome-128x128.png",
       "sizes": "128x128",
