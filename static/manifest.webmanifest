@@ -6,28 +6,31 @@
   "orientation": "any",
   "homepage_url": "https://www.lipk.org",
   "display": "standalone",
-  "background_color": "#fff0",
-  "theme_color": "#fff0",
-  "purpose": "any maskable",
+  "background_color": "#fff",
+  "theme_color": "#fff",
   "icons": [{
     "src": "/img/android-chrome-64x64.png",
       "sizes": "64x64",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable"
     },
     {
       "src": "/img/android-chrome-128x128.png",
       "sizes": "128x128",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable"
     },
     {
       "src": "/img/android-chrome-320x320.png",
       "sizes": "320x320",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable"
     },
     {
       "src": "/img/android-chrome-512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
