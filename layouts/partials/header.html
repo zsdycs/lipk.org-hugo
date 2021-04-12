@@ -21,8 +21,10 @@
   </script>
 
   {{ if .IsHome }}
+  <meta name="og:title" content="{{ .Site.Title }} | 首页">
   <meta property="og:title" content="{{ .Site.Title }} | 首页">
   {{ else }}
+  <meta name="og:title" content="{{ .Site.Params.author }} | {{ .Site.Params.title }} - {{ .Title }}">
   <meta property="og:title" content="{{ .Site.Params.author }} | {{ .Site.Params.title }} - {{ .Title }}">
   {{ end }}
   <meta property="og:type" content="website">
@@ -44,17 +46,18 @@
   {{ end }}
 
   {{ if eq .RelPermalink "/" }}
-  <meta property="description" content="{{ .Site.Params.description }}">
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <meta property="og:description" content="{{ .Site.Params.description }}">
   {{ else }}
   {{ with ($.Scratch.Get "summary") }}
-  <meta property="description" content="{{ . }}">
+  <meta name="description" content="{{ . }}">
   <meta property="og:description" content="{{ . }}">
   {{ end }}
   {{ end }}
   {{ if .Keywords }}
+  <meta name="keywords" content="{{ delimit .Keywords ", " }}">
   <meta property="keywords" content="{{ delimit .Keywords ", " }}">
   {{ end }}
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="/css/fonts.css" />
   <link rel="dns-prefetch" href="//lipk.oss-accelerate.aliyuncs.com">
@@ -63,7 +66,13 @@
   {{ end }}
   <link rel="preload" href="https://use.typekit.net/kwz5xar.js" as="script" crossorigin />
   <script defer="defer" src="/js/load-typekit.js"></script>
-  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#666666"/>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="mask-icon" href="/img/safari-pinned-tab.svg">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
   <script>
       if ('serviceWorker' in navigator) {
           window.addEventListener('load', () => {

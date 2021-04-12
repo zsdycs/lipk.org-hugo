@@ -28,7 +28,7 @@ workbox.routing.setDefaultHandler(
 );
 
   workbox.routing.registerRoute(
-    new RegExp(/.*\.(?:js|css)/g),
+    new RegExp(/.*\.(?:js|css|html)/g),
     workbox.strategies.networkFirst()
   );
 
