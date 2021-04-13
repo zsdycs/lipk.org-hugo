@@ -30,7 +30,7 @@ function minify_html(done) {
 }
 
 function minify_js(done) {
-  gulp.src('./dist/js/*.js')
+  gulp.src('./dist/**/*.js')
     .pipe(gulpBabel({
       presets: ['@babel/preset-env']
     }))
@@ -38,7 +38,7 @@ function minify_js(done) {
     .on('error', function (err) {
       gulpUtil.log(gulpUtil.colors.red('[Error]'), err.toString());
     })
-    .pipe(gulp.dest('./dist/js'))
+    .pipe(gulp.dest('./dist'))
     .pipe(gulpConnect.reload());
   done();
 }
