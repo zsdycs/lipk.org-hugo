@@ -73,6 +73,11 @@ code {
   font-size: 12px;
 }
 
+.list .summary {
+  font-weight: lighter;
+  font-size: 80%;
+}
+
 /* 文章目录 */
 #TableOfContents .topUlChild {
   font-size: 20px;

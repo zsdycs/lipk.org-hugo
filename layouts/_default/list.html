@@ -8,9 +8,10 @@
   <h2 class="archive-title">{{ .Key }}</h2>
   {{ range .Pages.GroupByDate "2006-01-02" }}
   {{ range .Pages }}
-  <p>
-    <strong>{{ .Date.Format "01-02" }}</strong>&emsp;<a class="list" href="{{ .RelPermalink }}">{{ .Title }}</a>
-  </p>
+  <a class="list" href="{{ .RelPermalink }}">
+    <span class="title">{{ .Title }}</span><time class="date">{{ .Date.Format "01-02" }}</time>
+    <p class="summary">{{ .Description | default .Summary | truncate 36 }}</p>
+  </a>
   {{ end }}
   {{ end }}
   {{ end }}

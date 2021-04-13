@@ -716,6 +716,10 @@
      margin: 1em auto 2em;
      width: auto;
    }
+
+   a.list {
+     background-color: var(--list-bg-color);
+   }
  }
 
  /* 移动端与 PC 端适配 */
@@ -971,6 +975,7 @@
    --article-index-border-color: #e1e4e8;
    --min-masthead-background-color: #f6f8fa;
    --min-menu-a-border-color: #e1e4e8;
+   --list-bg-color: #ececec;
  }
 
  [theme=github-dark] {
@@ -1006,6 +1011,7 @@
    --article-index-border-color: #343434;
    --min-masthead-background-color: #202020;
    --min-menu-a-border-color: #343434;
+   --list-bg-color: #2b2b2b;
  }
 
  [theme=github-dark-orange] {
@@ -1041,6 +1047,7 @@
    --article-index-border-color: #6f6e6e;
    --min-masthead-background-color: #222;
    --min-menu-a-border-color: #4e4c4b;
+   --list-bg-color: #1d1a21;
  }
 
  [theme=dark-blue] {
@@ -1076,6 +1083,7 @@
    --article-index-border-color: #2b3137;
    --min-masthead-background-color: #182030;
    --min-menu-a-border-color: #272a2c;
+   --list-bg-color: #21262f;
  }
 
  [theme=icy-dark] {
@@ -1111,6 +1119,7 @@
    --article-index-border-color: #10444d;
    --min-masthead-background-color: #06272c;
    --min-menu-a-border-color: #10444d;
+   --list-bg-color: #042025;
  }
 
  [theme=photon-dark] {
@@ -1146,6 +1155,7 @@
    --article-index-border-color: #38383d;
    --min-masthead-background-color: #182030;
    --min-menu-a-border-color: #38383d;
+   --list-bg-color: #121214;
  }
 
  /* 根元素
@@ -1218,7 +1228,30 @@
    color: var(--html-color);
  }
 
- a.list:hover,
+ a.list {
+   display: block;
+   margin-bottom: 16px;
+   padding: 16px;
+ }
+
+ a.list .date {
+   float: right;
+ }
+
+ a.list .summary {
+   color: var(--blockquote-color);
+ }
+
+ a.list:hover {
+   background-color: var(--list-bg-color);
+   border-bottom: 0px;
+ }
+
+ a.list:focus {
+   background: var(--list-bg-color) !important;
+ }
+
+ a.list:hover .title,
  .post-nav a:hover,
  .copyright a:hover,
  .masthead .menu a:hover,
