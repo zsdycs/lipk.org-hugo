@@ -4,7 +4,6 @@
   "description": "lipk.org PWA 应用",
   "start_url": ".",
   "orientation": "any",
-  "homepage_url": "https://www.lipk.org",
   "display": "standalone",
   "background_color": "#fff",
   "theme_color": "#fff",
