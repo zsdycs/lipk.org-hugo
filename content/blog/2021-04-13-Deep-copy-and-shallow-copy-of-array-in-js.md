@@ -55,39 +55,39 @@ importJS.setAttribute("src", 'https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash
 document.getElementsByTagName("head")[0].appendChild(importJS);
 
 // 等待 lodash 加载。要在浏览器使用，有什么好的办法吗？
-setTimeout(()=>{
+setTimeout(() => {
   if (typeof _ === 'function') {
-  // 现在有个数组 list，它里面有“a、b、c”，3 个变量，如下：
-  const a = {
-    name: 'a',
-    value: 'a'
-  };
+    // 现在有个数组 list，它里面有“a、b、c”，3 个变量，如下：
+    const a = {
+      name: 'a',
+      value: 'a'
+    };
 
-  const b = 'str';
-  let c = 256;
+    const b = 'str';
+    let c = 256;
 
-  const list = [a, b, c];
-  const listCopy = list; // 引用赋值
-  const listDeep = _.cloneDeep(list); // 深拷贝
-  const listClone = _.clone(list); // 浅拷贝
-  list.push('d'); // list、 listCopy（赋值） 受影响
-  a.name = 'new a'; // list、listClone（浅） 和 listCopy（赋值） 受影响
-  listClone.push('e'); // listClone（浅）受影响
-  c = 480; // 都不受影响
-  listDeep.push('f'); // listDeep（深）受影响
-  list[0].value = 'new a'; // list、listClone（浅） 和 listCopy（赋值） 受影响
-  list[1] = 'new str'; // list、listCopy（赋值） 受影响
+    const list = [a, b, c];
+    const listCopy = list; // 引用赋值
+    const listDeep = _.cloneDeep(list); // 深拷贝
+    const listClone = _.clone(list); // 浅拷贝
+    list.push('d'); // list、 listCopy（赋值） 受影响
+    a.name = 'new a'; // list、listClone（浅） 和 listCopy（赋值） 受影响
+    listClone.push('e'); // listClone（浅）受影响
+    c = 480; // 都不受影响
+    listDeep.push('f'); // listDeep（深）受影响
+    list[0].value = 'new a'; // list、listClone（浅） 和 listCopy（赋值） 受影响
+    list[1] = 'new str'; // list、listCopy（赋值） 受影响
 
-  console.log('list', list); // [{name: "new a", value: "new a"}, "new str", 256, "d"]
-  console.log('listCopy', listCopy); // [{name: "new a", value: "new a"}, "new str", 256, "d"]
-  console.log('listDeep', listDeep); // [{name: "a", value: "a"}, "str", 256, "f"]
-  console.log('listClone', listClone); // [{name: "new a", value: "new a"}, "str", 256, "e"]
-}
+    console.log('list', list); // [{name: "new a", value: "new a"}, "new str", 256, "d"]
+    console.log('listCopy', listCopy); // [{name: "new a", value: "new a"}, "new str", 256, "d"]
+    console.log('listDeep', listDeep); // [{name: "a", value: "a"}, "str", 256, "f"]
+    console.log('listClone', listClone); // [{name: "new a", value: "new a"}, "str", 256, "e"]
+  }
 }, 1000);
 ```
 
 ### 总结
 
-1. 浅拷贝得到的数组，引用类型的地址为原来的地址，基本类型没有引用地址，等同于深拷贝。即：浅拷贝后数组中的引用类型跟随原数组变化。
-2. 深拷贝得到的数组，引用类型的地址不为原来的地址，即：其引用类型是新的，不与原来个关联。
-3. 引用赋值得到的数组，与原来的数组一致，即：list 和 listCopy 指向同一个地址。
+1. 浅拷贝得到的数组，其内引用类型的地址为原来的地址，基本类型没有引用地址，等同于深拷贝。即：浅拷贝后数组中的引用类型跟随原数组变化。
+2. 深拷贝得到的数组，引用类型的地址不为原来的地址，即：其每层引用类型的地址都是新的地址，所有数据变化不与原来的关联。
+3. 引用赋值得到的数组，与原来的数组一致，即：list 和 listCopy 指向同一个地址，可以得到原数组的引用地址内的数据变化。
