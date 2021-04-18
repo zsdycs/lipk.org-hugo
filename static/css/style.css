@@ -678,8 +678,9 @@
  }
 
  footer.index {
-   position: absolute;
-   bottom: 10px;
+   position: fixed;
+   bottom: 0;
+   padding-bottom: 10px;
    width: 100%;
    left: 0px;
  }
@@ -1432,6 +1433,10 @@
 
  article.index ruby.link a:hover {
    border-bottom: 1px solid var(--a-color);
+ }
+
+ footer.index {
+   background: var(--wrapper-background-color);
  }
 
  @media only screen and (max-width:668px) {
