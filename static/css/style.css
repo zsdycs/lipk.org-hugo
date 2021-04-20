@@ -953,10 +953,10 @@
    --blockquote-color: #5d5d5d;
    --blockquote-border-color: #c8c8c8;
    --a-color: #d59500;
-   --code-color: #f8f8f2;
-   --code-background-color: #272822;
-   --code-hljs-background-color: #f8f8f8;
-   --code-hljs-color: #333;
+   --code-color: #000;
+   --code-background-color: #ebedf0;
+   --code-highlight-background-color: #272827;
+   --code-highlight-color: #f8f8f2;
    --ins-color: #777;
    --del-color: gray;
    --thead-background-color: #f6f8fa;
@@ -991,8 +991,8 @@
    --a-color: #4183c4;
    --code-color: #737373;
    --code-background-color: #303030;
-   --code-hljs-background-color: #202020;
-   --code-hljs-color: #b1b1b1;
+   --code-highlight-background-color: #202020;
+   --code-highlight-color: #b1b1b1;
    --ins-color: #666666;
    --del-color: #777;
    --thead-background-color: #202020;
@@ -1027,8 +1027,8 @@
    --a-color: #f27052;
    --code-color: #dddddd;
    --code-background-color: #212121;
-   --code-hljs-background-color: #222;
-   --code-hljs-color: #b1b1b1;
+   --code-highlight-background-color: #222;
+   --code-highlight-color: #b1b1b1;
    --ins-color: #6f6e6e;
    --del-color: #7a7a7a;
    --thead-background-color: #222;
@@ -1063,8 +1063,8 @@
    --a-color: #4183c4;
    --code-color: #dddddd;
    --code-background-color: #212121;
-   --code-hljs-background-color: #14171c;
-   --code-hljs-color: #fff;
+   --code-highlight-background-color: #14171c;
+   --code-highlight-color: #fff;
    --ins-color: #6f6e6e;
    --del-color: #7a7a7a;
    --thead-background-color: #14171c00;
@@ -1099,8 +1099,8 @@
    --a-color: #26d0e7;
    --code-color: #dddddd;
    --code-background-color: #212121;
-   --code-hljs-background-color: #06272c;
-   --code-hljs-color: #fff;
+   --code-highlight-background-color: #06272c;
+   --code-highlight-color: #fff;
    --ins-color: #6f6e6e;
    --del-color: #7a7a7a;
    --thead-background-color: #182c30;
@@ -1135,8 +1135,8 @@
    --a-color: #45a1ff;
    --code-color: #dddddd;
    --code-background-color: #212121;
-   --code-hljs-background-color: #2a2a2e;
-   --code-hljs-color: #fff;
+   --code-highlight-background-color: #2a2a2e;
+   --code-highlight-color: #fff;
    --ins-color: #6f6e6e;
    --del-color: #7a7a7a;
    --thead-background-color: #2a2a2e;
@@ -1287,9 +1287,9 @@
    background-color: var(--code-background-color);
  }
 
- code.hljs {
-   background: var(--code-hljs-background-color);
-   color: var(--code-hljs-color);
+ .highlight code {
+   background: var(--code-highlight-background-color);
+   color: var(--code-highlight-color);
  }
 
  .hljs span {
