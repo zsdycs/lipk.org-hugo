@@ -523,8 +523,8 @@
 
  #fixed-button {
    position: fixed;
-   bottom: 40px;
-   right: 40px;
+   bottom: 50px;
+   right: 5px;
    z-index: 1000;
    padding: 0px 3px;
  }
@@ -746,24 +746,25 @@
  @media screen and (max-width:1220px) {
    :target {
      margin-top: 0;
-     padding-top: 79px;
+     padding-top: 2em;
    }
 
    .paramount {
-     padding-top: 58px;
-     padding-bottom: 0;
+     padding-bottom: 54px;
+     padding-top: 0;
      width: auto;
      max-width: 700px;
    }
 
    .masthead {
      position: fixed;
-     top: 0;
+     bottom: 0;
      left: 0;
      z-index: 1000;
      float: none;
      margin: 0;
-     padding: 5px 0 10px !important;
+     padding: 0;
+     padding-bottom: env(safe-area-inset-bottom);
      width: 100%;
      text-align: center;
      /* transition: all .5s ease; */
@@ -771,7 +772,7 @@
 
    .main {
      margin-left: 0;
-     padding: 40px 25px;
+     padding: 40px 45px 10px;
      width: auto;
      min-height: auto;
    }
@@ -784,16 +785,13 @@
    .masthead .menu ul {
      margin: 0;
      padding: 0;
-     text-align: left;
-   }
-
-   .masthead .menu ul ul {
-     margin: 0;
+     display: flex;
+     justify-content: space-evenly;
    }
 
    .masthead .menu li {
      margin: 0;
-     padding: 0;
+     padding: 5px 0px;
      border-bottom: 1px solid;
      list-style: none;
    }
@@ -848,10 +846,6 @@
 
    .masthead .menu {
      max-width: inherit;
-   }
-
-   .masthead .menu ul {
-     text-align: center;
    }
 
    .masthead .menu a {
@@ -1452,7 +1446,7 @@
  /* 移动端与 PC 端适配 */
  @media screen and (max-width:1220px) {
    .masthead {
-     border-bottom: 1px solid var(--main-border-color);
+     border-top: 1px solid var(--main-border-color);
      background: var(--min-masthead-background-color);
    }
 
