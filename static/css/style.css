@@ -751,7 +751,7 @@
    }
 
    .paramount {
-     padding-bottom: max(54px, env(safe-area-inset-bottom));
+     padding-bottom: calc(54px + env(safe-area-inset-bottom));
      padding-top: 0;
      width: auto;
      max-width: 700px;
