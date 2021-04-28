@@ -39,7 +39,7 @@
     const modeTag = document.querySelector('#modeTag');
     if (!modeTag) return;
 
-    document.body.setAttribute('theme', mode);
+    document.documentElement.setAttribute('theme', mode);
     modeTag.innerHTML = MODE_TEXT[mode];
   }
 
@@ -63,9 +63,9 @@
      *       -> 'icy-dark'            // 冷黑
      *       -> 'photon-dark'         // 暗黑
      */
-     message.theme = MODE_ORDER[nowDarkmode];
-     sessionStorage.setItem('mode', MODE_ORDER[nowDarkmode]);
-     window.addDarkmodeCSS(MODE_ORDER[nowDarkmode]);
+    message.theme = MODE_ORDER[nowDarkmode];
+    sessionStorage.setItem('mode', MODE_ORDER[nowDarkmode]);
+    window.addDarkmodeCSS(MODE_ORDER[nowDarkmode]);
     // 与 beaudar 通信
     if (sessionStorage.getItem('beaudar') === 'true' && beaudar) {
       beaudar.contentWindow.postMessage(message, 'https://beaudar.lipk.org');

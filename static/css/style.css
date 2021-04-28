@@ -979,8 +979,10 @@
  [theme=github-dark] {
    --html-color: #979797;
    --html-background-color: #181818;
+   --html-index-background-color: #181818;
    --body-color: #979797;
    --body-background-color: #181818;
+   --body-index-background-color: #181818;
    --article-background-color: #181818;
    --hr-color: #343434;
    --blockquote-color: #777;
@@ -1053,8 +1055,10 @@
  [theme=dark-blue] {
    --html-color: #c0c0c0;
    --html-background-color: #14171c;
+   --html-index-background-color: #14171c;
    --body-color: #c0c0c0;
    --body-background-color: #14171c;
+   --body-index-background-color: #14171c;
    --article-background-color: #14171c;
    --hr-color: #2b3137;
    --blockquote-color: #6a737d;
@@ -1089,8 +1093,10 @@
  [theme=icy-dark] {
    --html-color: #fff;
    --html-background-color: #021012;
+   --html-index-background-color: #021012;
    --body-color: #fff;
    --body-background-color: #021012;
+   --body-index-background-color: #021012;
    --article-background-color: #021012;
    --hr-color: #10444d;
    --blockquote-color: #6a737d;
@@ -1125,8 +1131,10 @@
  [theme=photon-dark] {
    --html-color: #fff;
    --html-background-color: #232326;
+   --html-index-background-color: #232326;
    --body-color: #fff;
    --body-background-color: #232326;
+   --body-index-background-color: #232326;
    --article-background-color: #232326;
    --hr-color: #313136;
    --blockquote-color: #6a737d;
