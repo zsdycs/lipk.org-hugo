@@ -391,8 +391,6 @@
    overflow: auto;
    width: 100%;
    height: 100%;
-   padding-top: env(safe-area-inset-top);
-   padding-bottom: env(safe-area-inset-bottom);
  }
 
  .highlight div {
@@ -689,7 +687,7 @@
 
  @media only screen and (max-width:668px) {
    main.index {
-     margin: 25px;
+     margin: max(25px, env(safe-area-inset-top)) 25px max(25px, env(safe-area-inset-bottom));
      padding: 0 1em;
      max-width: 100%;
    }
@@ -943,8 +941,10 @@
  [theme=github-light] {
    --html-color: #000;
    --html-background-color: #fff;
+   --html-index-background-color: #efefef;
    --body-color: #000;
    --body-background-color: #fff;
+   --body-index-background-color: #efefef;
    --article-background-color: #fff;
    --hr-color: #e1e4e8;
    --blockquote-color: #5d5d5d;
@@ -1015,8 +1015,10 @@
  [theme=github-dark-orange] {
    --html-color: #f7f7f7;
    --html-background-color: #2d2833;
+   --html-index-background-color: #222;
    --body-color: #f7f7f7;
    --body-background-color: #2d2833;
+   --body-index-background-color: #222;
    --article-background-color: #2d2833;
    --hr-color: #6f6e6e;
    --blockquote-color: #6a737d;
@@ -1164,12 +1166,20 @@
    background-color: var(--html-background-color);
  }
 
+ html.home {
+   background-color: var(--html-index-background-color);
+ }
+
  /* 章节
 <body> <section> <nav> <article> <aside> <h1*6> <header> <footer> <address> <main>
 */
  body {
    color: var(--body-color);
    background-color: var(--body-background-color);
+ }
+
+ .home body {
+   background-color: var(--body-index-background-color);
  }
 
  article {

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="{{ .Site.LanguageCode }}" class="{{ if .IsHome }}home{{ else }}{{ $.Scratch.Get "section" }}{{ end }}"
+  theme="github-dark">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   {{ if eq .RelPermalink "/" }}
   <title>{{ .Site.Title }}</title>
 
@@ -15,9 +16,13 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154705931-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
     gtag('config', 'UA-154705931-1');
+
   </script>
 
   {{ if .IsHome }}
@@ -29,7 +34,7 @@
   {{ end }}
   <meta property="og:type" content="website">
   <script>
-      console.info("\n%c 🎉 嗨~ 想看源代码？ %c \nGitHub仓库: https://github.com/zsdycs/lipk.org \n%c自主%c、%c跨界%c、%c终身学习%c。",
+    console.info("\n%c 🎉 嗨~ 想看源代码？ %c \nGitHub仓库: https://github.com/zsdycs/lipk.org \n%c自主%c、%c跨界%c、%c终身学习%c。",
       "color: #fff; padding: 5px 0; background: #29c75f; margin: 1em 0;",
       "display: block;margin-left: 0.5em; margin: 1em 0;",
       "color:#E24432; font-size: 16px; margin: 1em 0;",
@@ -38,6 +43,7 @@
       "color:#666666; font-size: 16px; margin: 1em 0;",
       "color:#009E5E; font-size: 16px; margin: 1em 0;",
       "color:#666666; font-size: 16px; margin: 1em 0;");
+
   </script>
   {{ with .Description }}
   {{ $.Scratch.Set "summary" (markdownify .) }}
@@ -58,7 +64,7 @@
   <meta name="keywords" content="{{ delimit .Keywords ", " }}">
   <meta property="keywords" content="{{ delimit .Keywords ", " }}">
   {{ end }}
-  <link rel="stylesheet" href="/css/style.css?202104271142" />
+  <link rel="stylesheet" href="/css/style.css?202104281639" />
   <link rel="stylesheet" href="/css/fonts.css" />
   <link rel="dns-prefetch" href="//lipk.oss-accelerate.aliyuncs.com">
   {{ if not .Params.notComment }}
@@ -66,7 +72,7 @@
   {{ end }}
   <link rel="preload" href="https://use.typekit.net/kwz5xar.js" as="script" crossorigin />
   <script defer="defer" src="/js/load-typekit.js"></script>
-  <meta name="theme-color" content="#fff"/>
+  <meta name="theme-color" content="#fff" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="manifest" href="/manifest.webmanifest">
@@ -76,17 +82,19 @@
   <link rel="mask-icon" href="/img/safari-pinned-tab.svg">
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
   <script>
-      if ('serviceWorker' in navigator) {
-          window.addEventListener('load', () => {
-              navigator.serviceWorker.register('/sw.js');
-          });
-      }
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js');
+      });
+    }
+
   </script>
 </head>
 
 {{ $.Scratch.Set "section" (replaceRE "^/([^/]+)/.*" "$1" .RelPermalink) }}
-<body class="{{ if .IsHome }}home{{ else }}{{ $.Scratch.Get "section" }}{{ end }}" theme="github-dark">
-{{ if not .IsHome }}
+
+<body>
+  {{ if not .IsHome }}
   <main class="paramount">
     <!-- 菜单栏 -->
     <header class="masthead">
@@ -102,4 +110,4 @@
       <header class="title">
         {{ partial "meta.html" . }}
       </header>
-{{ end }}
+      {{ end }}
