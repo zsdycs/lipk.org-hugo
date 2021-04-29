@@ -99,7 +99,7 @@ slug: 'information-connotation-of-ten-years-pact'
     .invitation-body {
         background-color: #d2bf9e;
         color: #41403e;
-        padding: 20px 30px 95px;
+        padding: 20px 30px 20px;
         border: 2px solid #41403e;
         border-bottom-left-radius: 15px 255px;
         border-bottom-right-radius: 225px 15px;
