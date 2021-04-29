@@ -1,6 +1,6 @@
 ---
 title: 简历
-date: '2019-12-31'
+date: "2019-12-31"
 slug: /vitae
 notComment: true
 ---
@@ -12,11 +12,11 @@ notComment: true
   <figcaption class="image-description">我的照片</figcaption>
 </figure>
 
-## 基本信息 { .basicInfo }
+## 基本信息
 
-籍贯：广东 · 中山。  
-位置：江苏 · 苏州。  
-出生：1997/12/20。  
+籍贯：广东 · 中山。<br />
+位置：江苏 · 苏州。<br />
+出生：1997/12/20。<br />
 邮箱：[mail@lipk.org](mailto:mail@lipk.org)。
 
 ## 工作经历
@@ -24,7 +24,7 @@ notComment: true
 - 2018 . 09 ~ 2019 . 04 **用友网络科技股份(苏州)有限公司**，Web 前端开发实习生。
   - 接触到的开发模式有： React + 钉耙的前端开发、Express + MongoDB + UI 框架 Semantic UI + Vue.js 搭建动态站点的全栈开发，使用 Git 进行协同办公。
 - 2019 . 06 ~ 至今 **方舟信息技术(苏州)有限公司**，Web 前端开发工程师。
-  - 编码（PG）和测试（PT）担当。参与开发项目的开发模式有： Angular + Ant Design、Angular + 公司内部框架、Ruby + Rails + JQ + PostgreSQL 以及 Vue + Ant Design 等，使用 Git 进行协同办公。
+  - 参与开发项目的开发模式有： Angular + Ant Design、Angular + 公司内部框架、Ruby + Rails + JQ + PostgreSQL 以及 Vue + Ant Design 等，使用 Git 进行协同办公。
 
 # print-page-break1 { .print-page-break }
 
@@ -47,20 +47,20 @@ notComment: true
 
 ## 教育背景
 
-- 2017 . 09 ~ 2019 . 07 **苏州大学**，软件工程学士。  
+- 2017 . 09 ~ 2019 . 07 **苏州大学**，软件工程学士。
   - 必修课：
-JAVA程序设计、软件系统分析与设计、软件项目管理、计算机网络、软件质量保证、计算机安全技术、信息系统与企业管理、Linux 系统及应用、CASE 等。
-- 2016 . 09 ~ 2019 . 07 **苏州市职业大学**，软件技术专科生。  
+    JAVA 程序设计、软件系统分析与设计、软件项目管理、计算机网络、软件质量保证、计算机安全技术、信息系统与企业管理、Linux 系统及应用、CASE 等。
+- 2016 . 09 ~ 2019 . 07 **苏州市职业大学**，软件技术专科生。
   - 必修课：
-程序逻辑设计与编程规范 (C)、C# 应用程序设计 (WinFrom)、 SQL Server 数据库应用、数据结构、 APP 产品交互设计、 ASP.net 商务网站设计、 Web 系统 UI 设计、iOS 开发技术、计算机网络基础、面向对象程序设计 (JAVA)、实用软件工程与 UML、Web 前端开发等。  
+    程序逻辑设计与编程规范 (C)、C# 应用程序设计 (WinFrom)、 SQL Server 数据库应用、数据结构、 APP 产品交互设计、 ASP.net 商务网站设计、 Web 系统 UI 设计、iOS 开发技术、计算机网络基础、面向对象程序设计 (JAVA)、实用软件工程与 UML、Web 前端开发等。
 
 ## 校内活动
 
-- 计算机工程学院团委宣传部，干事。  
+- 计算机工程学院团委宣传部，干事。
   - 拍摄学院及学校活动的新闻照片。
   - 新闻稿、微信推文的撰写工作。
-  - 在任职期获“优秀工作者”称号。  
-- 计算机工程学院攻玉工作室，负责人。  
+  - 在任职期获“优秀工作者”称号。
+- 计算机工程学院攻玉工作室，负责人。
   - 大一下学期加入工作室。
   - 大二工作室换届当选为负责人。
   - “纽斯杯”大学生创业设计大赛。
@@ -80,7 +80,7 @@ JAVA程序设计、软件系统分析与设计、软件项目管理、计算机�
 ## 计算机水平
 
 - 开发工具：VS Code、VS、DW、Axure、~~Eclipse~~。
-- 框架：Angular、Vue、React、Ant Design、Express、Semantic UI等。
+- 框架：Angular、Vue、React、Ant Design、Express、Semantic UI 等。
 - 编程语言：JavaScript、TypeScript、HTML、CSS、Sass、~~C#、JAVA、 PHP、 C~~ 。
 - 应用程序：MySQL、SQL Server、Oracle、MongoDB 等，NodeJs、Git、微软三件套、PS、AE、AU、PR。
 - 操作系统：Windows、MacOS、CentOS。
@@ -105,7 +105,6 @@ JAVA程序设计、软件系统分析与设计、软件项目管理、计算机�
 ## 附加项
 
 <ul>
-  <li><a href="https://space.bilibili.com/11407562" target="_blank">B 站</a><span class="print"> https://space.bilibili.com/11407562</span></li>
   <li><a href="https://github.com/zsdycs" target="_blank">Github</a><span class="print"> https://github.com/zsdycs</span></li>
   <li><a href="/" target="_blank">个人网站</a><span class="print"> https://lipk.org</span></li>
   <li class="notPrint"><a href="javascript:void(0);" onclick="window.print()" title="推荐使用基于 Chromium 的浏览器">打印简历</a></li>
