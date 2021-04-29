@@ -577,7 +577,11 @@
    }
  }
 
- /* 伪类 */
+ /* 伪类，伪元素 */
+ :target {
+   padding-top: max(0, env(safe-area-inset-top));
+   margin-top: 0;
+ }
 
  /* 首页 */
  main.index {
@@ -725,10 +729,6 @@
 
  /* 移动端与 PC 端适配 */
  @media screen and (min-width:1220px) {
-   :target {
-     padding-top: 60px;
-     margin-top: 0;
-   }
 
    .masthead {
      position: sticky;
@@ -744,10 +744,6 @@
  }
 
  @media screen and (max-width:1220px) {
-   :target {
-     margin-top: 0;
-     padding-top: 2em;
-   }
 
    .paramount {
      padding-bottom: calc(54px + env(safe-area-inset-bottom));
@@ -1390,7 +1386,7 @@
    background: var(--wrapper-background-color);
  }
 
- /* 伪类 */
+ /* 伪类，伪元素 */
 
  ::selection {
    background: var(--selection-background-color);
