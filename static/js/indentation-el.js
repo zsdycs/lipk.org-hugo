@@ -5,8 +5,8 @@
       var tag = tags[i];
       var parent = tag.parentElement;
       if (parent.nodeName === 'ARTICLE' || parent.nodeName === 'BLOCKQUOTE') {
-        if (tag.children.length !== 0) {
-          if (tag.children[0].nodeName === 'IMG') continue;
+        if (tag.innerHTML === '') {
+          tag.remove();
         };
         tag.innerHTML = '&emsp;&emsp;' + tag.innerHTML;
         for (var j = 0; j < tag.childNodes.length; j++) {
