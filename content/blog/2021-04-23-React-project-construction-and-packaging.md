@@ -1,7 +1,7 @@
 ---
 title: 'React 项目构建和打包'
 date: '2021-04-23'
-slug: 'React-project-construction-and-packaging'
+slug: 'react-project-construction-and-packaging'
 tableOfContents: true
 ---
 
