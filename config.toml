@@ -119,7 +119,6 @@ ignoreFiles = [ "2018-12-20-Test.md", "package.json" ]
     description = "zsdycs; 执手对影成双; Personal website of Pengkun Lee; 李鹏坤的个人网站; lipk"
     since = "2018"
     slogan = "执手相看，对影成双"
-    customJS = "js/main.js"
     title = '执手对影成双'
     author = '李鹏坤'
     githubContentURL = "http://github.com/zsdycs/lipk.org/edit/master/content/"
