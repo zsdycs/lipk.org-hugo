@@ -27,6 +27,9 @@ window.onload = function () {
 
   // ************************************************** 逻辑 **************************************************
 
+  if (!$('#tableOfContents-bar')) {
+    return;
+  }
   // 添加目录
   const tableOfContentsList = createTableOfContentsList();
   const tableOfContentsElement = createTableOfContents(tableOfContentsList);

@@ -1,13 +1,17 @@
 (function () {
 
+  const targetNode = document.getElementById('beaudar');
+  if (!targetNode) {
+    return;
+  }
   // 默认为不加载 beaudar
   sessionStorage.setItem('beaudar', 'false');
   /**
    * 通过 MutationObserver 来监听 #beaudar
    */
   function beaudarEnd() {
-    var targetNode = document.getElementById('beaudar');
-    var options = {
+    const targetNode = document.getElementById('beaudar');
+    const options = {
       attributes: true,
       childList: true,
       subtree: true
@@ -16,17 +20,17 @@
     function callback(mutationsList) {
       mutationsList.forEach(function (element) {
         if (element.type === 'attributes' && element.target.className === 'beaudar') {
-          var message = {
+          const message = {
             type: 'set-theme',
             theme: sessionStorage.getItem('mode')
           };
-          var beaudar = document.querySelector('#beaudar iframe');
+          const beaudar = document.querySelector('#beaudar iframe');
           // 与 beaudar 通信
           beaudar.contentWindow.postMessage(message, 'https://beaudar.lipk.org');
         }
       });
     }
-    var mutationObserver = new MutationObserver(callback);
+    const mutationObserver = new MutationObserver(callback);
     mutationObserver.observe(targetNode, options);
   }
 
@@ -38,8 +42,8 @@
     if (sessionStorage.getItem('beaudar') === 'true') return;
     // 加载了 beaudar
     sessionStorage.setItem('beaudar', 'true');
-    var script = document.createElement('script');
-    var beaudar = document.getElementById('beaudar');
+    const script = document.createElement('script');
+    const beaudar = document.getElementById('beaudar');
     script.src = 'https://beaudar.lipk.org/client.js';
     script.setAttribute('repo', 'zsdycs/lipk.org');
     script.setAttribute('issue-term', 'title');

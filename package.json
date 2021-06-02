@@ -16,6 +16,7 @@
     "gh-pages": "3.0.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.7.0",
     "gulp-htmlclean": "^2.7.22",
     "gulp-htmlmin": "^5.0.1",

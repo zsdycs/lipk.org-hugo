@@ -26,12 +26,9 @@
 
       {{ if not .Params.notComment }}
       <section id="beaudar" class="comments"></section>
-      <script async src="{{ "js/beaudar.js" | absURL }}"></script>
       {{ end }}
 
-      {{ range .Site.Params.customJS }}
-      <script async src="{{ . | absURL }}"></script>
-      {{ end }}
+      <script async type="module" src="{{ .Site.Params.customJS | absURL }}"></script>
 
       {{ if and (.Params.mathjax) (or (in (string .Content) "\\") (in (string .Content) "$")) }}
       <script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>

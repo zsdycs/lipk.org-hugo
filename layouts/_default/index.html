@@ -26,9 +26,7 @@
             {{ .Content }}
         </article>
         <footer class="index">
-            {{ range .Site.Params.customJS }}
-            <script async src="{{ . | absURL }}"></script>
-            {{ end }}
+            <script async type="module" src="{{ .Site.Params.customJS | absURL }}"></script>
             <div class="copyright">
               <span>&copy;{{ .Site.Params.since }}-{{ now.Format "2006"}} {{ .Site.Params.author }}。</span>
               <a class="svg-link" href="https://github.com/zsdycs" target="_blank" rel="noopener noreferrer"
