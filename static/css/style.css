@@ -304,17 +304,22 @@
    border: none !important;
  }
 
- .copyright .travelling {
+ .copyright svg {
    vertical-align: middle;
    display: inline-block;
    fill: currentColor;
+ }
+
+ .copyright .version {
+   height: 17px;
+   width: 80px;
+ }
+
+ .copyright .travelling {
    height: 17px;
  }
 
  .copyright .github {
-   vertical-align: middle;
-   display: inline-block;
-   fill: currentColor;
    width: 17px;
    height: 17px;
  }
@@ -324,7 +329,6 @@
    height: 20px;
    line-height: 20px;
    font-weight: 100;
-
  }
 
  .copyright .beian img {
