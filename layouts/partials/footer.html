@@ -6,22 +6,30 @@
           <span class="nav-prev">{{ with .PrevInSection }}&larr; <a href="{{ .RelPermalink }}" title="单击可后退(键盘左箭头)">{{ .Title }}</a>{{ end }}</span>
           <span class="nav-next">{{ with .NextInSection }}<a href="{{ .RelPermalink }}" title="单击可前进(键盘右箭头)">{{ .Title }}</a> &rarr;{{ end }}</span>
         </nav>
+        {{ if .PrevInSection }}
         <script type="text/javascript">
           document.addEventListener('keyup', function(e) {
             if (e.target.nodeName.toUpperCase() != 'BODY') return;
             var url = false;
             if (e.which === 37) {  // Left arrow
-              {{ if .PrevInSection }}
               url = '{{ .PrevInSection.RelPermalink }}';
-              {{ end }}
-            } else if (e.which === 39) {  // Right arrow
-              {{ if .NextInSection }}
-              url = '{{ .NextInSection.RelPermalink }}';
-              {{ end }}
             }
             if (url) window.location = url;
           });
         </script>
+        {{ end }}
+        {{ if .NextInSection }}
+        <script type="text/javascript">
+          document.addEventListener('keyup', function(e) {
+            if (e.target.nodeName.toUpperCase() != 'BODY') return;
+            var url = false;
+            if (e.which === 39) {  // Right arrow
+              url = '{{ .NextInSection.RelPermalink }}';
+            }
+            if (url) window.location = url;
+          });
+        </script>
+        {{ end }}
       {{ end }}
 
       {{ if not .Params.notComment }}
