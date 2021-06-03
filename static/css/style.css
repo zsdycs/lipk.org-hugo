@@ -915,7 +915,7 @@
      border: none !important;
    }
 
-   :focus {
+   :focus-visible {
      outline: none !important;
      box-shadow: none !important;
    }

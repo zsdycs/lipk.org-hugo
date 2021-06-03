@@ -314,7 +314,7 @@ a.list:hover {
   border-bottom: 0px;
 }
 
-a.list:focus {
+a.list:focus-visible {
   background: var(--list-bg-color) !important;
 }
 
@@ -448,7 +448,7 @@ th {
   color: var(--html-color);
 }
 
-:focus {
+:focus-visible {
   outline: none;
   background: var(--selection-background-color) !important;
   color: var(--html-color) !important;
