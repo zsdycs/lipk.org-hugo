@@ -26,10 +26,6 @@ ignoreFiles = [ "2018-12-20-Test.md", "package.json" ]
     name = "关于"
     url = "/about/"
     weight = 4
-# [[menu.main]]
-#     name = "简历"
-#     url = "/vitae/"
-#     weight = 5
 
 [[menu.about]]
     name = "返回"
@@ -47,10 +43,6 @@ ignoreFiles = [ "2018-12-20-Test.md", "package.json" ]
     name = "关于"
     url = "/about/"
     weight = 4
-# [[menu.about]]
-#     name = "简历"
-#     url = "/vitae/"
-#     weight = 5
 
 [[menu.vitae]]
     name = "返回"
@@ -68,10 +60,6 @@ ignoreFiles = [ "2018-12-20-Test.md", "package.json" ]
     name = "关于"
     url = "/about/"
     weight = 4
-# [[menu.vitae]]
-#     name = "简历"
-#     url = "/vitae/"
-#     weight = 5
 
 [[menu.blog]]
     name = "返回"
@@ -89,10 +77,6 @@ ignoreFiles = [ "2018-12-20-Test.md", "package.json" ]
     name = "关于"
     url = "/about/"
     weight = 4
-# [[menu.blog]]
-#     name = "简历"
-#     url = "/vitae/"
-#     weight = 5
 
 [[menu.food]]
     name = "返回"
@@ -110,10 +94,6 @@ ignoreFiles = [ "2018-12-20-Test.md", "package.json" ]
     name = "关于"
     url = "/about/"
     weight = 4
-# [[menu.food]]
-#     name = "简历"
-#     url = "/vitae/"
-#     weight = 5
 
 [params]
     description = "zsdycs; 执手对影成双; Personal website of Pengkun Lee; 李鹏坤的个人网站; lipk"
