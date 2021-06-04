@@ -15,7 +15,7 @@ const monthList = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '
 const month = monthList[new Date().getUTCMonth()];
 const day = date.getUTCDate() >= 10 ? date.getUTCDate() : `0${date.getUTCDate().toString()}`;
 const hours = date.getUTCHours() >= 10 ? date.getUTCHours() : `0${date.getUTCHours().toString()}`;
-const minutes = date.getUTCMinutes();
+const minutes = date.getUTCMinutes() >= 10 ? date.getUTCMinutes() : `0${date.getUTCMinutes().toString()}`;
 versionStr = `<svg class="version" width="120" height="22" viewBox="0 0 120 22" xmlns="http://www.w3.org/2000/svg">
   <title>Last update time of this project</title>
   <desc>

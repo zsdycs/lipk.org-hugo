@@ -1,11 +1,11 @@
 <svg class="version" width="120" height="22" viewBox="0 0 120 22" xmlns="http://www.w3.org/2000/svg">
   <title>Last update time of this project</title>
   <desc>
-    Time: 2021-06-03 10:12 GMT
+    Time: 2021-06-04 01:06 GMT
     Email: mail@lipk.org
     Author: zsdycs
-    Message: 更新 CSS
-    Version: 3eb47f3720d289d08315f0371941d66fb286b1a0
+    Message: 优化 footer 部分的布局
+    Version: 33eb3d526074d8d839bc38be19e45bb6aa927410
   </desc>
-  <text x="0" y="16" textLength="120" font-size="16">06-03 10:12 GMT</text>
+  <text x="0" y="16" textLength="120" font-size="16">06-04 01:06 GMT</text>
 </svg>
