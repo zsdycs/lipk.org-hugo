@@ -51,13 +51,16 @@
   {{ $.Scratch.Set "summary" ((delimit (findRE "(<p.*?>(.|\n)*?</p>\\s*)+" .Content) "[&hellip;] ") | plainify | truncate (default 200 .Site.Params.summary_length) (default " &hellip;" .Site.Params.text.truncated)) }}
   {{ end }}
 
-  {{ if eq .RelPermalink "/" }}
+  <meta property="og:image" content="https://lipk.oss-accelerate.aliyuncs.com/images/logo.png">
+  {{ if or (eq .RelPermalink "/") (eq .RelPermalink "/blog/")}}
   <meta name="description" content="{{ .Site.Params.description }}">
   <meta property="og:description" content="{{ .Site.Params.description }}">
+  <meta property="og:image:alt" content="{{ .Site.Params.description }}">
   {{ else }}
   {{ with ($.Scratch.Get "summary") }}
   <meta name="description" content="{{ . }}">
   <meta property="og:description" content="{{ . }}">
+  <meta property="og:image:alt" content="{{ . }}">
   {{ end }}
   {{ end }}
   {{ if .Keywords }}
