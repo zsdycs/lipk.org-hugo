@@ -13,6 +13,7 @@ function minify_css(done) {
     './dist/css/theme.css',
     './dist/css/style.css',
     './dist/css/fonts.css',
+    './dist/css/photoswipe.css',
     './dist/css/loading.css',
   ])
     .pipe(gulpMinifycss())
