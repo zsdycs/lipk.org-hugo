@@ -13,11 +13,18 @@ function minify_css(done) {
     './dist/css/theme.css',
     './dist/css/style.css',
     './dist/css/fonts.css',
-    './dist/css/photoswipe.css',
     './dist/css/loading.css',
   ])
     .pipe(gulpMinifycss())
     .pipe(gulpConcat('main.css'))
+    .pipe(gulp.dest('./dist/css'))
+    .pipe(gulpConnect.reload());
+  done();
+}
+
+function minify_photoswipe_css(done) {
+  gulp.src('./dist/css/photoswipe.css')
+    .pipe(gulpMinifycss())
     .pipe(gulp.dest('./dist/css'))
     .pipe(gulpConnect.reload());
   done();
@@ -77,4 +84,4 @@ function minify_sw_js(done) {
   done();
 }
 
-exports.default = gulp.series(minify_css, minify_html, minify_js, minify_sw_js);
+exports.default = gulp.series(minify_css, minify_photoswipe_css, minify_html, minify_js, minify_sw_js);
