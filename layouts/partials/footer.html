@@ -37,6 +37,24 @@
       {{ end }}
 
       <script async type="module" src="/js/main.js"></script>
+      {{ if .Params.pictureView }}
+        <script async type="module">
+          import PhotoSwipeLightbox from '/js/photoswipe-lightbox.esm.min.js';
+          const options = {
+            dataSource: {{ .Params.pictureData }},
+            showHideAnimationType: 'none',
+            pswpModule: '/js/photoswipe.esm.min.js',
+          }
+          const lightbox = new PhotoSwipeLightbox(options);
+          lightbox.init();
+          const imgElList = document.querySelectorAll('figure img');
+          imgElList.forEach((value, key) => {
+            value.onclick = () => {
+              lightbox.loadAndOpen(key);
+            }
+          })
+        </script>
+      {{ end }}
 
       {{ if and (.Params.mathjax) (or (in (string .Content) "\\") (in (string .Content) "$")) }}
       <script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>

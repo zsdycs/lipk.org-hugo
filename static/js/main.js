@@ -8,4 +8,3 @@ import './hide-menu.js';                            // 菜单栏自动隐藏
 import './tableOfContents.v2.js';                   // 目录
 import './beaudar.js';                              // 评论
 import './load-typekit.js';                         // 字体
-import './picture-view.js'                          // 图片查看
