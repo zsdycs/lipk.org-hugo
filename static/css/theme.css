@@ -448,7 +448,8 @@ th {
   color: var(--html-color);
 }
 
-:focus-visible {
+a:focus-visible,
+button:focus-visible {
   outline: none;
   background: var(--selection-background-color) !important;
   color: var(--html-color) !important;

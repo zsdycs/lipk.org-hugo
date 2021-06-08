@@ -1,11 +1,11 @@
 <svg class="version" width="120" height="22" viewBox="0 0 120 22" xmlns="http://www.w3.org/2000/svg">
   <title>Last update time of this project</title>
   <desc>
-    Time: 2021-06-07 10:09 GMT
+    Time: 2021-06-07 10:16 GMT
     Email: mail@lipk.org
     Author: zsdycs
-    Message: 添加 photoswipe.css
-    Version: c27ad3ee7eec0942261a334c7dd9436dcdc11234
+    Message: 修改引入 photoswipe.css 的方式
+    Version: 4e5b4331163f9d3dba934328b61f6967e20f7b93
   </desc>
-  <text x="0" y="16" textLength="120" font-size="16">06-07 10:09 GMT</text>
+  <text x="0" y="16" textLength="120" font-size="16">06-07 10:16 GMT</text>
 </svg>
