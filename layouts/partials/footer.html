@@ -44,7 +44,7 @@
           lightbox.on('itemData', (item) => {
             const { itemData, index } = item;
             const { element } = itemData;
-            const dataSource = {{ .Params.pictureData }};
+            const dataSource = {{ .Params.pictureView }};
 
             itemData.src = dataSource[index].src;
             itemData.w = dataSource[index].w || element.naturalWidth;

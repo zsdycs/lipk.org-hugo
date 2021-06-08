@@ -51,16 +51,24 @@
   {{ $.Scratch.Set "summary" ((delimit (findRE "(<p.*?>(.|\n)*?</p>\\s*)+" .Content) "[&hellip;] ") | plainify | truncate (default 200 .Site.Params.summary_length) (default " &hellip;" .Site.Params.text.truncated)) }}
   {{ end }}
 
-  <meta property="og:image" content="https://lipk.oss-accelerate.aliyuncs.com/images/logo.png">
+  {{ if .Params.coverPicture }}
+    <meta property="og:image" content="{{ .Params.coverPicture.src }}">
+    <meta property="og:image:width" content="{{ .Params.coverPicture.width }}">
+    <meta property="og:image:height" content="{{ .Params.coverPicture.height }}">
+    <meta property="og:image:alt" content="{{ .Params.description }}">
+  {{ else }}
+    <meta property="og:image" content="/img/android-chrome-320x320.png">
+    <meta property="og:image:width" content="320">
+    <meta property="og:image:height" content="320">
+    <meta property="og:image:alt" content="{{ .Site.Params.description }}">
+  {{ end }}
   {{ if or (eq .RelPermalink "/") (eq .RelPermalink "/blog/")}}
-  <meta name="description" content="{{ .Site.Params.description }}">
-  <meta property="og:description" content="{{ .Site.Params.description }}">
-  <meta property="og:image:alt" content="{{ .Site.Params.description }}">
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <meta property="og:description" content="{{ .Site.Params.description }}">
   {{ else }}
   {{ with ($.Scratch.Get "summary") }}
-  <meta name="description" content="{{ . }}">
-  <meta property="og:description" content="{{ . }}">
-  <meta property="og:image:alt" content="{{ . }}">
+    <meta name="description" content="{{ . }}">
+    <meta property="og:description" content="{{ . }}">
   {{ end }}
   {{ end }}
   {{ if .Keywords }}
