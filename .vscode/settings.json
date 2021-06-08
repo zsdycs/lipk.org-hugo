@@ -10,6 +10,7 @@
     "kaiti",
     "markdownify",
     "minifycss",
+    "msrc",
     "openseadragon",
     "photoswipe",
     "plainify",
@@ -24,6 +25,7 @@
   // When opening a file, `editor.tabSize` and `editor.insertSpaces` will be detected based on the file contents.
   "editor.detectIndentation": false,
   // Columns at which to show vertical rulers
+  "editor.lineNumbers": "on",
   "editor.rulers": [
     80
   ],
@@ -33,5 +35,25 @@
   "files.eol": "\n",
   // When enabled, will trim trailing whitespace when you save a file.
   "files.trimTrailingWhitespace": true,
+  "files.associations": {
+    "*.html": "go-template"
+  },
   "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "xlthu.Pangu-Markdown",
+  },
+  "css.validate": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true
+  },
+  "[css]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint",
+    "editor.formatOnSave": true,
+  },
 }

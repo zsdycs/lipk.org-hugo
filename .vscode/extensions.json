@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "jinliming2.vscode-go-template",
+    "streetsidesoftware.code-spell-checker",
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint",
+    "xlthu.pangu-markdown",
+    "esbenp.prettier-vscode",
+    "stylelint.vscode-stylelint"
+  ]
+}
