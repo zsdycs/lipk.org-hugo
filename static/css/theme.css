@@ -1,228 +1,193 @@
 /* 主题 */
-[theme=github-light] {
+
+[theme='github-light'] {
   --html-color: #000;
-  --html-background-color: #fff;
-  --html-index-background-color: #efefef;
+  --html-bg-color: #fff;
   --body-color: #000;
-  --body-background-color: #fff;
-  --body-index-background-color: #efefef;
-  --article-background-color: #fff;
+  --body-bg-color: #fff;
+  --article-bg-color: #fff;
   --hr-color: #e1e4e8;
   --blockquote-color: #5d5d5d;
   --blockquote-border-color: #c8c8c8;
   --a-color: #d59500;
   --code-color: #000;
-  --code-background-color: #ebedf0;
-  --code-highlight-background-color: #272827;
+  --code-bg-color: #ebedf0;
+  --code-highlight-bg-color: #272827;
   --code-highlight-color: #f8f8f2;
   --ins-color: #777;
   --del-color: gray;
-  --thead-background-color: #f6f8fa;
+  --thead-bg-color: #f6f8fa;
   --table-border-color: #e1e4e8;
   --main-border-color: #e1e4e8;
-  --masthead-background-color: #fff;
-  --menu-button-background-color: #fff;
-  --fixed-button-background-color: #f6f8fa;
-  --fixed-button-border-color: #e1e4e8;
+  --masthead-bg-color: #fff;
+  --menu-button-bg-color: #fff;
+  --fixed-btn-bg-color: #f6f8fa;
+  --fixed-btn-border-color: #e1e4e8;
   --eof-color: #777;
-  --wrapper-background-color: #efefef;
-  --selection-background-color: #fefecc;
-  --aside-hover-background-color: #efefef;
-  --main-index-background-color: #fff;
-  --article-index-background-color: #fff;
-  --article-index-button-background-color: #fff;
-  --article-index-border-color: #e1e4e8;
-  --min-masthead-background-color: #f6f8fa;
+  --wrapper-bg-color: #efefef;
+  --selection-bg-color: #fefecc;
+  --aside-hover-bg-color: #efefef;
+  --min-masthead-bg-color: #f6f8fa;
   --min-menu-a-border-color: #e1e4e8;
   --list-bg-color: #ececec;
 }
 
-[theme=github-dark] {
+[theme='github-dark'] {
   --html-color: #979797;
-  --html-background-color: #181818;
-  --html-index-background-color: #181818;
+  --html-bg-color: #181818;
   --body-color: #979797;
-  --body-background-color: #181818;
-  --body-index-background-color: #181818;
-  --article-background-color: #181818;
+  --body-bg-color: #181818;
+  --article-bg-color: #181818;
   --hr-color: #343434;
   --blockquote-color: #777;
   --blockquote-border-color: #414141;
   --a-color: #4183c4;
   --code-color: #737373;
-  --code-background-color: #303030;
-  --code-highlight-background-color: #202020;
+  --code-bg-color: #303030;
+  --code-highlight-bg-color: #202020;
   --code-highlight-color: #b1b1b1;
-  --ins-color: #666666;
+  --ins-color: #666;
   --del-color: #777;
-  --thead-background-color: #202020;
+  --thead-bg-color: #202020;
   --table-border-color: #343434;
   --main-border-color: #343434;
-  --masthead-background-color: #181818;
-  --menu-button-background-color: #181818;
-  --fixed-button-background-color: #181818;
-  --fixed-button-border-color: #343434;
-  --eof-color: #666666;
-  --wrapper-background-color: #181818;
-  --selection-background-color: #27673d;
-  --aside-hover-background-color: #181818;
-  --main-index-background-color: #202020;
-  --article-index-background-color: #202020;
-  --article-index-button-background-color: #202020;
-  --article-index-border-color: #343434;
-  --min-masthead-background-color: #202020;
+  --masthead-bg-color: #181818;
+  --menu-button-bg-color: #181818;
+  --fixed-btn-bg-color: #181818;
+  --fixed-btn-border-color: #343434;
+  --eof-color: #666;
+  --wrapper-bg-color: #181818;
+  --selection-bg-color: #27673d;
+  --aside-hover-bg-color: #181818;
+  --min-masthead-bg-color: #202020;
   --min-menu-a-border-color: #343434;
   --list-bg-color: #2b2b2b;
 }
 
-[theme=github-dark-orange] {
+[theme='github-dark-orange'] {
   --html-color: #f7f7f7;
-  --html-background-color: #2d2833;
-  --html-index-background-color: #222;
+  --html-bg-color: #2d2833;
   --body-color: #f7f7f7;
-  --body-background-color: #2d2833;
-  --body-index-background-color: #222;
-  --article-background-color: #2d2833;
+  --body-bg-color: #2d2833;
+  --article-bg-color: #2d2833;
   --hr-color: #6f6e6e;
   --blockquote-color: #6a737d;
   --blockquote-border-color: #5b5958;
   --a-color: #f27052;
-  --code-color: #dddddd;
-  --code-background-color: #212121;
-  --code-highlight-background-color: #222;
+  --code-color: #ddd;
+  --code-bg-color: #212121;
+  --code-highlight-bg-color: #222;
   --code-highlight-color: #b1b1b1;
   --ins-color: #6f6e6e;
   --del-color: #7a7a7a;
-  --thead-background-color: #222;
+  --thead-bg-color: #222;
   --table-border-color: #5b5958;
   --main-border-color: #4e4c4b;
-  --masthead-background-color: #2d2833;
-  --menu-button-background-color: #2d2833;
-  --fixed-button-background-color: #222;
-  --fixed-button-border-color: #4e4c4b;
+  --masthead-bg-color: #2d2833;
+  --menu-button-bg-color: #2d2833;
+  --fixed-btn-bg-color: #222;
+  --fixed-btn-border-color: #4e4c4b;
   --eof-color: #6f6e6e;
-  --wrapper-background-color: #222;
-  --selection-background-color: #f27052fc;
-  --aside-hover-background-color: #212021;
-  --main-index-background-color: #2d2833;
-  --article-index-background-color: #2d2833;
-  --article-index-button-background-color: #2d2833;
-  --article-index-border-color: #6f6e6e;
-  --min-masthead-background-color: #222;
+  --wrapper-bg-color: #222;
+  --selection-bg-color: #f27052fc;
+  --aside-hover-bg-color: #212021;
+  --min-masthead-bg-color: #222;
   --min-menu-a-border-color: #4e4c4b;
   --list-bg-color: #1d1a21;
 }
 
-[theme=dark-blue] {
+[theme='dark-blue'] {
   --html-color: #c0c0c0;
-  --html-background-color: #14171c;
-  --html-index-background-color: #14171c;
+  --html-bg-color: #14171c;
   --body-color: #c0c0c0;
-  --body-background-color: #14171c;
-  --body-index-background-color: #14171c;
-  --article-background-color: #14171c;
+  --body-bg-color: #14171c;
+  --article-bg-color: #14171c;
   --hr-color: #2b3137;
   --blockquote-color: #6a737d;
   --blockquote-border-color: #292c2f;
   --a-color: #4183c4;
-  --code-color: #dddddd;
-  --code-background-color: #212121;
-  --code-highlight-background-color: #14171c;
+  --code-color: #ddd;
+  --code-bg-color: #212121;
+  --code-highlight-bg-color: #14171c;
   --code-highlight-color: #fff;
   --ins-color: #6f6e6e;
   --del-color: #7a7a7a;
-  --thead-background-color: #14171c00;
+  --thead-bg-color: #14171c00;
   --table-border-color: #292c2f;
-  --main-border-color: #1D1F21;
-  --masthead-background-color: #14171c;
-  --menu-button-background-color: #14171c;
-  --fixed-button-background-color: #182030;
-  --fixed-button-border-color: #1d1f21;
+  --main-border-color: #1d1f21;
+  --masthead-bg-color: #14171c;
+  --menu-button-bg-color: #14171c;
+  --fixed-btn-bg-color: #182030;
+  --fixed-btn-border-color: #1d1f21;
   --eof-color: #6f6e6e;
-  --wrapper-background-color: #14171c;
-  --selection-background-color: #4183c4fc;
-  --aside-hover-background-color: #14171c;
-  --main-index-background-color: #182030;
-  --article-index-background-color: #182030;
-  --article-index-button-background-color: #182030;
-  --article-index-border-color: #2b3137;
-  --min-masthead-background-color: #182030;
+  --wrapper-bg-color: #14171c;
+  --selection-bg-color: #4183c4fc;
+  --aside-hover-bg-color: #14171c;
+  --min-masthead-bg-color: #182030;
   --min-menu-a-border-color: #272a2c;
   --list-bg-color: #21262f;
 }
 
-[theme=icy-dark] {
+[theme='icy-dark'] {
   --html-color: #fff;
-  --html-background-color: #021012;
-  --html-index-background-color: #021012;
+  --html-bg-color: #021012;
   --body-color: #fff;
-  --body-background-color: #021012;
-  --body-index-background-color: #021012;
-  --article-background-color: #021012;
+  --body-bg-color: #021012;
+  --article-bg-color: #021012;
   --hr-color: #10444d;
   --blockquote-color: #6a737d;
   --blockquote-border-color: #145762;
   --a-color: #26d0e7;
-  --code-color: #dddddd;
-  --code-background-color: #212121;
-  --code-highlight-background-color: #06272c;
+  --code-color: #ddd;
+  --code-bg-color: #212121;
+  --code-highlight-bg-color: #06272c;
   --code-highlight-color: #fff;
   --ins-color: #6f6e6e;
   --del-color: #7a7a7a;
-  --thead-background-color: #182c30;
+  --thead-bg-color: #182c30;
   --table-border-color: #145762;
   --main-border-color: #10444d;
-  --masthead-background-color: #021012;
-  --menu-button-background-color: #021012;
-  --fixed-button-background-color: #06272c;
-  --fixed-button-border-color: #10444d;
+  --masthead-bg-color: #021012;
+  --menu-button-bg-color: #021012;
+  --fixed-btn-bg-color: #06272c;
+  --fixed-btn-border-color: #10444d;
   --eof-color: #6f6e6e;
-  --wrapper-background-color: #021012;
-  --selection-background-color: #26d0e7cf;
-  --aside-hover-background-color: #021012;
-  --main-index-background-color: #06272c;
-  --article-index-background-color: #06272c;
-  --article-index-button-background-color: #06272c;
-  --article-index-border-color: #10444d;
-  --min-masthead-background-color: #06272c;
+  --wrapper-bg-color: #021012;
+  --selection-bg-color: #26d0e7cf;
+  --aside-hover-bg-color: #021012;
+  --min-masthead-bg-color: #06272c;
   --min-menu-a-border-color: #10444d;
   --list-bg-color: #042025;
 }
 
-[theme=photon-dark] {
+[theme='photon-dark'] {
   --html-color: #fff;
-  --html-background-color: #232326;
-  --html-index-background-color: #232326;
+  --html-bg-color: #232326;
   --body-color: #fff;
-  --body-background-color: #232326;
-  --body-index-background-color: #232326;
-  --article-background-color: #232326;
+  --body-bg-color: #232326;
+  --article-bg-color: #232326;
   --hr-color: #313136;
   --blockquote-color: #6a737d;
   --blockquote-border-color: #44444a;
   --a-color: #45a1ff;
-  --code-color: #dddddd;
-  --code-background-color: #212121;
-  --code-highlight-background-color: #2a2a2e;
+  --code-color: #ddd;
+  --code-bg-color: #212121;
+  --code-highlight-bg-color: #2a2a2e;
   --code-highlight-color: #fff;
   --ins-color: #6f6e6e;
   --del-color: #7a7a7a;
-  --thead-background-color: #2a2a2e;
+  --thead-bg-color: #2a2a2e;
   --table-border-color: #44444a;
   --main-border-color: #313136;
-  --masthead-background-color: #232326;
-  --menu-button-background-color: #232326;
-  --fixed-button-background-color: #182030;
-  --fixed-button-border-color: #38383d;
+  --masthead-bg-color: #232326;
+  --menu-button-bg-color: #232326;
+  --fixed-btn-bg-color: #182030;
+  --fixed-btn-border-color: #38383d;
   --eof-color: #6f6e6e;
-  --wrapper-background-color: #232326;
-  --selection-background-color: #45a1ff;
-  --aside-hover-background-color: #232326;
-  --main-index-background-color: #2a2a2e;
-  --article-index-background-color: #2a2a2e;
-  --article-index-button-background-color: #2a2a2e;
-  --article-index-border-color: #38383d;
-  --min-masthead-background-color: #182030;
+  --wrapper-bg-color: #232326;
+  --selection-bg-color: #45a1ff;
+  --aside-hover-bg-color: #232326;
+  --min-masthead-bg-color: #182030;
   --min-menu-a-border-color: #38383d;
   --list-bg-color: #121214;
 }
@@ -232,11 +197,7 @@
 */
 html {
   color: var(--html-color);
-  background-color: var(--html-background-color);
-}
-
-html.home {
-  background-color: var(--html-index-background-color);
+  background-color: var(--html-bg-color);
 }
 
 /* 章节
@@ -244,15 +205,11 @@ html.home {
 */
 body {
   color: var(--body-color);
-  background-color: var(--body-background-color);
-}
-
-.home body {
-  background-color: var(--body-index-background-color);
+  background-color: var(--body-bg-color);
 }
 
 article {
-  background-color: var(--article-background-color);
+  background-color: var(--article-bg-color);
 }
 
 /* 组织内容
@@ -268,7 +225,7 @@ hr {
 
 blockquote {
   color: var(--blockquote-color);
-  border-left: .25em solid var(--blockquote-border-color);
+  border-left: 0.25em solid var(--blockquote-border-color);
 }
 
 /* 文字形式
@@ -279,6 +236,12 @@ a {
   color: var(--a-color);
 }
 
+a:focus-visible {
+  color: var(--html-color) !important;
+  background: var(--selection-bg-color) !important;
+  outline: none;
+}
+
 a:hover {
   border-bottom: 1px solid var(--a-color);
 }
@@ -287,22 +250,58 @@ a:hover {
   color: var(--html-color);
 }
 
-.basicInfo+p>a {
-  color: var(--body-color);
-}
-
-.basicInfo+p>a:hover {
-  color: var(--a-color);
-}
-
 a.list,
 .post-nav a,
 .copyright a,
 .menu button,
-#fixed-button button,
-.masthead .menu a,
 #TableOfContents li {
   color: var(--html-color);
+}
+
+button:focus-visible {
+  color: var(--html-color) !important;
+  background: var(--selection-bg-color) !important;
+  outline: none;
+}
+
+.menu button {
+  background: linear-gradient(var(--menu-button-bg-color), var(--menu-button-bg-color));
+}
+
+.menu button:hover {
+  color: var(--a-color);
+}
+
+#fixed-button button {
+  color: var(--html-color);
+}
+
+#fixed-button button,
+.writeFixed a {
+  background: linear-gradient(var(--fixed-btn-bg-color), var(--fixed-btn-bg-color));
+  border: 1px solid var(--fixed-btn-border-color);
+}
+
+#fixed-button button:hover {
+  color: var(--a-color);
+}
+
+.basicInfo + p > a {
+  color: var(--body-color);
+}
+
+.masthead .menu a {
+  color: var(--html-color);
+}
+
+.post-nav a:hover,
+.copyright a:hover {
+  color: var(--a-color);
+  border-bottom: 1px solid var(--a-color);
+}
+
+.basicInfo + p > a:hover {
+  color: var(--a-color);
 }
 
 a.list .summary {
@@ -311,28 +310,25 @@ a.list .summary {
 
 a.list:hover {
   background-color: var(--list-bg-color);
-  border-bottom: 0px;
+  border-bottom: 0;
 }
 
 a.list:focus-visible {
   background: var(--list-bg-color) !important;
 }
 
+.masthead .menu .active a {
+  border-bottom: 1px solid var(--html-color);
+}
+
 a.list:hover .title,
-.post-nav a:hover,
-.copyright a:hover,
 .masthead .menu a:hover,
 .masthead .menu .active a:hover {
   color: var(--a-color);
   border-bottom: 1px solid var(--a-color);
 }
 
-.menu button:hover,
-#fixed-button button:hover {
-  color: var(--a-color);
-}
-
-#TableOfContents>ul li:hover {
+#TableOfContents > ul li:hover {
   color: var(--a-color);
 }
 
@@ -340,29 +336,25 @@ a.list:hover .title,
   color: var(--a-color);
 }
 
-#TableOfContents>ul {
+#TableOfContents > ul {
   border-left: 1px solid var(--hr-color);
-}
-
-.masthead .menu .active a {
-  border-bottom: 1px solid var(--html-color);
 }
 
 code {
   color: var(--code-color);
-  background-color: var(--code-background-color);
+  background-color: var(--code-bg-color);
 }
 
 .highlight code {
-  background: var(--code-highlight-background-color);
   color: var(--code-highlight-color);
+  background: var(--code-highlight-bg-color);
 }
 
 .hljs span {
   filter: brightness(90%);
 }
 
-[theme=github-light] .hljs span {
+[theme='github-light'] .hljs span {
   filter: brightness(100%);
 }
 
@@ -385,7 +377,7 @@ img {
   filter: brightness(80%);
 }
 
-[theme=github-light] img {
+[theme='github-light'] img {
   filter: brightness(100%);
 }
 
@@ -393,11 +385,11 @@ img {
 <table> <caption> <colgroup> <col> <tbody> <thead> <tfoot> <tr> <td> <th>
 */
 thead {
-  background-color: var(--thead-background-color);
+  background-color: var(--thead-bg-color);
 }
 
 table tr:nth-child(2n) {
-  background-color: var(--thead-background-color);
+  background-color: var(--thead-bg-color);
 }
 
 td,
@@ -420,17 +412,7 @@ th {
 }
 
 .masthead {
-  background: var(--masthead-background-color);
-}
-
-.menu button {
-  background: linear-gradient(var(--menu-button-background-color), var(--menu-button-background-color));
-}
-
-#fixed-button button,
-.writeFixed a {
-  background: linear-gradient(var(--fixed-button-background-color), var(--fixed-button-background-color));
-  border: 1px solid var(--fixed-button-border-color);
+  background: var(--masthead-bg-color);
 }
 
 #eof {
@@ -438,76 +420,19 @@ th {
 }
 
 .home .wrapper {
-  background: var(--wrapper-background-color);
+  background: var(--wrapper-bg-color);
 }
 
 /* 伪类，伪元素 */
 
 ::selection {
-  background: var(--selection-background-color);
   color: var(--html-color);
+  background: var(--selection-bg-color);
 }
 
-a:focus-visible,
-button:focus-visible {
-  outline: none;
-  background: var(--selection-background-color) !important;
-  color: var(--html-color) !important;
-}
-
-/* 首页 */
-main.index {
-  background-color: var(--main-index-background-color);
-}
-
-article.index button {
-  background: linear-gradient(var(--article-index-button-background-color), var(--article-index-button-background-color));
-}
-
-main.index:hover aside {
-  background: var(--aside-hover-background-color);
-}
-
-aside.index #info .info-text a {
-  color: var(--body-color);
-}
-
-aside.index #info .info-text a:hover {
-  color: var(--a-color);
-}
-
-article.index {
-  border-top: 1px solid var(--article-index-border-color);
-  border-bottom: 1px solid var(--article-index-border-color);
-  background-color: var(--article-index-background-color);
-}
-
-article.index a,
-article.index button,
-article.index ruby.link,
-article.index button:hover,
-article.index ruby.link:hover a,
-article.index ruby.link:hover rt {
-  color: var(--a-color);
-}
-
-/* article.index a,
-article.index button,
-article.index ruby.link {
-  color: var(--html-color);
-} */
-
-article.index ruby.link a:hover {
-  border-bottom: 1px solid var(--a-color);
-}
-
-footer.index {
-  background: var(--wrapper-background-color);
-}
-
-@media only screen and (max-width:668px) {
+@media only screen and (max-width: 668px) {
   aside.index {
-    background: var(--aside-hover-background-color);
+    background: var(--aside-hover-bg-color);
   }
 
   a.list {
@@ -516,14 +441,14 @@ footer.index {
 }
 
 /* 移动端与 PC 端适配 */
-@media screen and (max-width:1220px) {
+@media screen and (max-width: 1220px) {
   .masthead {
+    background: var(--min-masthead-bg-color);
     border-top: 1px solid var(--main-border-color);
-    background: var(--min-masthead-background-color);
   }
 
   .menu button {
-    background: linear-gradient(var(--min-masthead-background-color), var(--min-masthead-background-color));
+    background: linear-gradient(var(--min-masthead-bg-color), var(--min-masthead-bg-color));
   }
 
   .masthead .menu .active a,

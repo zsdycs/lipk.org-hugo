@@ -1,11 +1,11 @@
 <svg class="version" width="120" height="22" viewBox="0 0 120 22" xmlns="http://www.w3.org/2000/svg">
   <title>Last update time of this project</title>
   <desc>
-    Time: 2021-06-07 10:16 GMT
+    Time: 2021-06-08 01:33 GMT
     Email: mail@lipk.org
     Author: zsdycs
-    Message: 修改引入 photoswipe.css 的方式
-    Version: 4e5b4331163f9d3dba934328b61f6967e20f7b93
+    Message: 限制 :focus-visible 的范围
+    Version: 1cbad44e08053ebec1c859a596050f22c4e0f053
   </desc>
-  <text x="0" y="16" textLength="120" font-size="16">06-07 10:16 GMT</text>
+  <text x="0" y="16" textLength="120" font-size="16">06-08 01:33 GMT</text>
 </svg>

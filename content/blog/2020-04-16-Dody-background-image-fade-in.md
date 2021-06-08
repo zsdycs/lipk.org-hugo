@@ -15,38 +15,40 @@ slug: 'body-background-image-fade-in'
 ## 过程
 
 对于背景图片的淡入，网上有很多种解决方法。
-有说用 `animation` + `opacity` 的。像这样写:
+有说用 `animation` + `opacity` 的。像这样写：
 
 ```CSS
 #background-div {
-    /* 加载自定义的 bgFadeIn 动画 */
-    animation: bgFadeIn 3s ease-in;
+  /* 加载自定义的 bgFadeIn 动画 */
+  animation: bgFadeIn 3s ease-in;
 }
 
 @-webkit-keyframes fadeIn {
-    0% {
+  0% {
     /* opacity 属性初始值 */
-        opacity: 0;
-    }
-    100% {
+    opacity: 0;
+  }
+
+  100% {
     /* 动画完成后 opacity 的值 */
-        opacity: 1;
-    }
+    opacity: 1;
+  }
 }
 ```
 
-也有说用使用 `transition` + `opacity` 实现的。也就是这样写:
+也有说用使用 `transition` + `opacity` 实现的。也就是这样写：
 
 ```CSS
 #background-div {
-    /* opacity 属性初始值 */
-    opacity: 0;
-    /* transition 控制 opacity 属性 */
-    transition: opacity 3s ease-in;
+  /* opacity 属性初始值 */
+  opacity: 0;
+
+  /* transition 控制 opacity 属性 */
+  transition: opacity 3s ease-in;
 }
 
 #background-div:hover {
-    opacity: 1;
+  opacity: 1;
 }
 ```
 
@@ -56,7 +58,7 @@ slug: 'body-background-image-fade-in'
 
 ## 解决
 
-也就是这样:
+也就是这样：
 
 ```javascript
 // 黑夜白天模式载入

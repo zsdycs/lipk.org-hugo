@@ -66,7 +66,7 @@ fi
 
 ![@zsdycs 在 GitHub 上的活动汇总](https://lipk.oss-accelerate.aliyuncs.com/images/my-github-contribution-wall(6).jpg)
 
- 图片来自[Github 活动汇总在线生成器](https://github-contributions.now.sh)。
+ 图片来自 [Github 活动汇总在线生成器](https://github-contributions.now.sh)。
 
 面对整理好的绿墙，她详细记录了我与她之间的点点滴滴。
 

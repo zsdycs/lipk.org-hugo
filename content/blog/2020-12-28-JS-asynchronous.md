@@ -6,7 +6,7 @@ slug: 'JS-asynchronous'
 
 ## 异步事件
 
-之前有简单介绍过[使用 RxJS 处理 http 请求](https://www.lipk.org/blog/2020/11/15/rxjs-applied-to-http-requests/)，除了使用强大的 RxJS，原生处理异步事件的方式是怎么样的呢？
+之前有简单介绍过 [使用 RxJS 处理 http 请求](https://www.lipk.org/blog/2020/11/15/rxjs-applied-to-http-requests/)，除了使用强大的 RxJS，原生处理异步事件的方式是怎么样的呢？
 
 下面是一个由 setTimeout 产生的异步加法情景：
 
@@ -61,8 +61,8 @@ test(); // result: 3
 ```javascript
 /**
  * Promise 中的两个回调函数说明：
- *  1. resolve 回调: 成功时使用，对应 then
- *  2. reject 回调: 失败时使用，对应 catch
+ *  1. resolve 回调：成功时使用，对应 then
+ *  2. reject 回调：失败时使用，对应 catch
  */
 delayedAdd = (num1, num2, delayTime) => {
   return new Promise((resolve, reject) => {
@@ -130,11 +130,11 @@ test = () => {
     // reduce: 数组压缩方法，此处定义的规则为：累计乘
     const endDate = new Date();
     const answer = resultList.reduce((total, current) => { return total * current });
-    console.log(`answer: ${answer}，耗时: ${endDate - startDate} 毫秒`); // answer: 21，耗时: 3002 毫秒
+    console.log(`answer: ${answer}，耗时：${endDate - startDate} 毫秒`); // answer: 21，耗时：3002 毫秒
   })
 }
 
-test(); // answer: 21，耗时: 3002 毫秒
+test(); // answer: 21，耗时：3002 毫秒
 ```
 
 ### 二、await
@@ -156,8 +156,8 @@ test = async () => {
   const addResult1 = await delayedAdd(1, 2, 1000);
   const addResult2 = await delayedAdd(3, 4, 3000);
   const endDate = new Date();
-  console.log(`answer: ${addResult1 * addResult2}，耗时: ${endDate - startDate} 毫秒`); // answer: 21，耗时: 4002 毫秒
+  console.log(`answer: ${addResult1 * addResult2}，耗时：${endDate - startDate} 毫秒`); // answer: 21，耗时：4002 毫秒
 }
 
-test(); // answer: 21，耗时: 4002 毫秒
+test(); // answer: 21，耗时：4002 毫秒
 ```

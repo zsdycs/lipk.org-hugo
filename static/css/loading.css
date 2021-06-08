@@ -11,11 +11,11 @@
 
 #loading {
   display: none;
-  margin: auto;
+  align-items: center;
+  justify-content: center;
   width: 75px;
   height: 75px;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
 }
 
 .container {
@@ -29,19 +29,19 @@
   transform: rotate(10deg);
 }
 
+.container .shape {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 1px;
+}
+
 .container.animation-2 .shape {
   border-radius: 5px;
 }
 
 .container.animation-2 {
   animation: rotation 1s infinite;
-}
-
-.container .shape {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 1px;
 }
 
 .container .shape.shape1 {
@@ -76,7 +76,7 @@
 }
 
 .animation-2 .shape1 {
-  animation: animation2shape1 .5s ease 0s infinite alternate;
+  animation: animation2shape1 0.5s ease 0s infinite alternate;
 }
 
 @keyframes animation2shape1 {
@@ -90,7 +90,7 @@
 }
 
 .animation-2 .shape2 {
-  animation: animation2shape2 .5s ease 0s infinite alternate;
+  animation: animation2shape2 0.5s ease 0s infinite alternate;
 }
 
 @keyframes animation2shape2 {
@@ -104,7 +104,7 @@
 }
 
 .animation-2 .shape3 {
-  animation: animation2shape3 .5s ease 0s infinite alternate;
+  animation: animation2shape3 0.5s ease 0s infinite alternate;
 }
 
 @keyframes animation2shape3 {
@@ -118,7 +118,7 @@
 }
 
 .animation-2 .shape4 {
-  animation: animation2shape4 .5s ease 0s infinite alternate;
+  animation: animation2shape4 0.5s ease 0s infinite alternate;
 }
 
 @keyframes animation2shape4 {
@@ -131,7 +131,7 @@
   }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .content {
     align-content: flex-start;
   }
@@ -141,7 +141,7 @@
   }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width: 400px) {
   .content {
     align-content: flex-start;
   }

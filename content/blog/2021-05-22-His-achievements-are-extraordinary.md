@@ -3,12 +3,13 @@ title: '他成就非凡'
 date: '2021-05-22'
 slug: 'his-achievements-are-extraordinary'
 pictureView: true
-pictureData: [{
-                src: 'https://lipk.oss-accelerate.aliyuncs.com/images/2021-05-22-his-achievements-are-extraordinary.jpg',
-                w: 622,
-                h: 760,
-                alt: '袁隆平（1930-2021）'
-              }]
+pictureData: [
+  {
+    title: '袁隆平（1930-2021）',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/2021-05-22-his-achievements-are-extraordinary.jpg',
+    msrc: 'https://lipk.oss-accelerate.aliyuncs.com/images/2021-05-22-his-achievements-are-extraordinary.jpg',
+  }
+]
 ---
 
 <figure class="image">

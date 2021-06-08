@@ -68,7 +68,7 @@ module.exports = {
 }
 ```
 
-2. 新建 index.html 文件，在根目录新建 index.html 文件，并引入 webpack 设置中的出口文件:
+2. 新建 index.html 文件，在根目录新建 index.html 文件，并引入 webpack 设置中的出口文件：
 
 ```html
 <!DOCTYPE html>
@@ -195,7 +195,7 @@ create-react-app 创建的项目 packeage.json 的命令：
 
 > 注意：这是单向操作。弹出后，将无法返回！
 
-执行完这个命令后会将封装在 react-scripts 中的配置（webpack，Babel，ESLint等）全部反编译到当前项目，这样用户就可以完全取得 webpack 文件的控制权。
+执行完这个命令后会将封装在 react-scripts 中的配置（webpack，Babel，ESLint 等）全部反编译到当前项目，这样用户就可以完全取得 webpack 文件的控制权。
 
 package.json 会添加对应的依赖（基于 **react-scripts V4.0.3**）：
 
@@ -370,7 +370,7 @@ module.exports = function override(config, env) {
 
 ## 参考资料
 
-- [创建react项目的几种方法 - 博客园](https://www.cnblogs.com/cina33blogs/p/9115294.html)
+- [创建 react 项目的几种方法 - 博客园](https://www.cnblogs.com/cina33blogs/p/9115294.html)
 - [如何扩展 Create React App 的 Webpack 配置 - 博客园](https://www.cnblogs.com/qianxiaox/p/14133689.html)
 - [create-react-app README - facebook github](https://github.com/facebook/create-react-app/blob/master/README.md)
 - [Available Scripts - create-react-app.dev](https://create-react-app.dev/docs/available-scripts/#npm-run-eject)

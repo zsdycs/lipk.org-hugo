@@ -6,30 +6,24 @@
           <span class="nav-prev">{{ with .PrevInSection }}&larr; <a href="{{ .RelPermalink }}" title="单击可后退(键盘左箭头)">{{ .Title }}</a>{{ end }}</span>
           <span class="nav-next">{{ with .NextInSection }}<a href="{{ .RelPermalink }}" title="单击可前进(键盘右箭头)">{{ .Title }}</a> &rarr;{{ end }}</span>
         </nav>
-        {{ if .PrevInSection }}
         <script type="text/javascript">
           document.addEventListener('keyup', function(e) {
             if (e.target.nodeName.toUpperCase() != 'BODY') return;
             var url = false;
-            if (e.which === 37) {  // Left arrow
-              url = '{{ .PrevInSection.RelPermalink }}';
-            }
+            {{ if .PrevInSection }}
+              if (e.which === 37) {  // Left arrow
+                url = '{{ .PrevInSection.RelPermalink }}';
+              }
+            {{ end }}
+            {{ if .NextInSection }}
+              if (e.which === 39) {  // Right arrow
+                url = '{{ .NextInSection.RelPermalink }}';
+              }
+            {{ end }}
             if (url) window.location = url;
           });
         </script>
-        {{ end }}
-        {{ if .NextInSection }}
-        <script type="text/javascript">
-          document.addEventListener('keyup', function(e) {
-            if (e.target.nodeName.toUpperCase() != 'BODY') return;
-            var url = false;
-            if (e.which === 39) {  // Right arrow
-              url = '{{ .NextInSection.RelPermalink }}';
-            }
-            if (url) window.location = url;
-          });
-        </script>
-        {{ end }}
+
       {{ end }}
 
       {{ if not .Params.notComment }}
@@ -41,19 +35,24 @@
         <script async type="module">
           import PhotoSwipeLightbox from '/js/photoswipe-lightbox.esm.min.js';
           const options = {
-            dataSource: {{ .Params.pictureData }},
-            showHideAnimationType: 'none',
+            gallerySelector: 'article.main',
+            childSelector: 'figure.image img',
             pswpModule: '/js/photoswipe.esm.min.js',
             pswpCSS: '/css/photoswipe.css'
           }
           const lightbox = new PhotoSwipeLightbox(options);
+          lightbox.on('itemData', (item) => {
+            const { itemData, index } = item;
+            const { element } = itemData;
+            const dataSource = {{ .Params.pictureData }};
+
+            itemData.src = dataSource[index].src;
+            itemData.w = dataSource[index].w || element.naturalWidth;
+            itemData.h = dataSource[index].h || element.naturalHeight;
+            itemData.msrc = dataSource[index].msrc || dataSource[index].src;
+            itemData.thumbCropped = true;
+          });
           lightbox.init();
-          const imgElList = document.querySelectorAll('figure img');
-          imgElList.forEach((value, key) => {
-            value.onclick = () => {
-              lightbox.loadAndOpen(key);
-            }
-          })
         </script>
       {{ end }}
 

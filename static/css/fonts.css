@@ -1,14 +1,24 @@
 body,
 button {
-  font-family: 'source-han-serif-sc', 'Source Han Serif SC', 'Source Han Serif CN', 'Source Han Serif TC', 'Source Han Serif TW', 'Source Han Serif', 'Songti SC', 'Microsoft YaHei', serif;
+  font-family:
+    'source-han-serif-sc',
+    'Source Han Serif SC',
+    'Source Han Serif CN',
+    'Source Han Serif TC',
+    'Source Han Serif TW',
+    'Source Han Serif',
+    'Songti SC',
+    'Microsoft YaHei',
+    serif;
 }
 
 code {
-  font-family: Consolas, Courier, "Courier New", 'STKaiti', 'KaiTi', 'SimKai', monospace;
+  font-family: Consolas, Courier, 'Courier New', 'STKaiti', 'KaiTi', 'SimKai', monospace;
 }
 
 .slogan {
-  font-family: '楷体';
+  font-family: '楷体', cursive;
+  font-size: 100%;
 }
 
 #eof {
@@ -16,7 +26,7 @@ code {
 }
 
 #TableOfContents {
-  font-family: auto;
+  font-family: inherit;
 }
 
 /* font-size */
@@ -57,7 +67,7 @@ blockquote {
 }
 
 .subtitle {
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
 pre,
@@ -65,17 +75,13 @@ code {
   font-size: 13px;
 }
 
-.slogan {
-  font-size: 100%;
-}
-
 .image-description {
   font-size: 12px;
 }
 
 .list .summary {
-  font-weight: lighter;
   font-size: 80%;
+  font-weight: lighter;
 }
 
 /* 文章目录 */
@@ -137,7 +143,7 @@ aside.index #info li {
   }
 
   .subtitle {
-    font-size: .7em;
+    font-size: 0.7em;
   }
 
   pre,

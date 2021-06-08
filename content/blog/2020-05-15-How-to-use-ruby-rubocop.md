@@ -41,19 +41,19 @@ ruby-rubocop 是使用 rubocop（ruby 的代码风格检查器）输出的消息
 
 在 VS Code 左下角，点击小齿轮，选择“设置”，左边的列表找到“扩展”。
 
-- “Ruby” - “format” - 选择 “rubocop”。  
+- “Ruby” - “format” - 选择 “rubocop”。
 - “Ruby-Rubocop” - 填写 “Config File Path” 和 “Execute Path” **填写内容，见下文**。
 
 ## Config File Path 填写
 
-1. cmd 执行 `where ruby`，得到 ruby 安装路径。  
+1. cmd 执行 `where ruby`，得到 ruby 安装路径。
 2. 将 ruby 项目根目录下的 “.rubocop.yml” 放到 ruby 安装路径下。
 3. 填写 “.rubocop.yml” 的路径。
 
 ## Execute Path 填写
 
 - 填写 ruby 安装路径。（确保 ruby 安装路径中有 “rubocop.bat” 文件）
-  
+
 ## 修改项目 “.rubocop.yml” 文件
 
 确保项目 “.rubocop.yml” 文件没有 Lint 条件过时等问题，不然 ruby-rubocop 将不能正常工作。

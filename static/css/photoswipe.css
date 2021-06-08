@@ -1,12 +1,11 @@
+/* stylelint-disable */
 /*! PhotoSwipe main CSS by Dmytro Semenov | photoswipe.com */
 
 .pswp {
   --pswp-bg: #000;
   --pswp-placeholder-bg: #222;
   --pswp-error-text-color: #f7f7f7;
-
   --pswp-root-z-index: 100000;
-
   --pswp-preloader-color: rgba(79, 79, 79, 0.4);
   --pswp-preloader-color-secondary: rgba(255, 255, 255, 0.9);
 
@@ -18,7 +17,6 @@
   --pswp-icon-stroke-color: #4f4f4f;
   --pswp-icon-stroke-width: 2px;
 }
-
 
 /*
 	Styles for basic PhotoSwipe (pswp) functionality (sliding area, open/close transitions)
@@ -60,8 +58,8 @@
 }
 
 .pswp__bg {
-  opacity: 0.005;
   background: var(--pswp-bg);
+  opacity: 0.005;
 }
 
 .pswp,
@@ -121,7 +119,6 @@
   cursor: zoom-out;
 }
 
-
 /* Prevent selection and tap highlights */
 .pswp__container,
 .pswp__img,
@@ -141,7 +138,6 @@
 .pswp__hidden {
   display: none !important;
 }
-
 
 /*
 
@@ -177,19 +173,21 @@ should hide (for example fade out) when PhotoSwipe is closed
 and show (for example fade in) when PhotoSwipe is opened
  */
 .pswp .pswp__hide-on-close {
-  opacity: 0.005;
-  will-change: opacity;
-  transition: opacity var(--pswp-transition-duration) cubic-bezier(0.4, 0, 0.22, 1);
   z-index: 10;
+
   /* always overlap slide content */
   pointer-events: none;
+  opacity: 0.005;
+  transition: opacity var(--pswp-transition-duration) cubic-bezier(0.4, 0, 0.22, 1);
+  will-change: opacity;
+
   /* hidden elements should not be clickable */
 }
 
 /* class pswp--ui-visible is added when opening or closing transition starts */
 .pswp--ui-visible .pswp__hide-on-close {
-  opacity: 1;
   pointer-events: auto;
+  opacity: 1;
 }
 
 /* <button> styles, including css reset */
@@ -213,12 +211,12 @@ and show (for example fade in) when PhotoSwipe is opened
 .pswp__button:hover,
 .pswp__button:active,
 .pswp__button:focus {
-  transition: none;
   padding: 0;
   background: none;
   border: 0;
   box-shadow: none;
   opacity: 1;
+  transition: none;
 }
 
 .pswp__icn {
@@ -228,16 +226,16 @@ and show (for example fade in) when PhotoSwipe is opened
   width: 32px;
   height: 32px;
   overflow: hidden;
-  pointer-events: none;
-  fill: var(--pswp-icon-color);
   color: var(--pswp-icon-color-secondary);
+  pointer-events: none;
   border-radius: 50%;
+  fill: var(--pswp-icon-color);
 }
 
 .pswp__icn-shadow {
+  fill: none;
   stroke: var(--pswp-icon-stroke-color);
   stroke-width: var(--pswp-icon-stroke-width);
-  fill: none;
 }
 
 .pswp__icn:focus {
@@ -256,26 +254,26 @@ div.pswp__img--placeholder,
 
 .pswp__top-bar {
   position: absolute;
-  left: 0;
   top: 0;
-  width: 100%;
-  height: 60px;
+  left: 0;
+  z-index: 10;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  z-index: 10;
+  width: 100%;
+  height: 60px;
 
   /* allow events to pass through top bar itself */
   pointer-events: none !important;
 }
 
-.pswp__top-bar>* {
+.pswp__top-bar > * {
   pointer-events: auto;
+
   /* this makes transition significantly more smooth,
      even though inner elements are not animated */
   will-change: opacity;
 }
-
 
 /*
 
@@ -313,12 +311,10 @@ div.pswp__img--placeholder,
 }
 
 .pswp__preloader--hiding {
-  animation: pswp-clockwise 600ms linear infinite;
-
   /* use of !important to override hide-on-close styles */
   opacity: 0 !important;
+  animation: pswp-clockwise 600ms linear infinite;
 }
-
 
 @keyframes pswp-clockwise {
   0% {
@@ -340,7 +336,6 @@ div.pswp__img--placeholder,
   }
 }
 
-
 /*
 
   "1 of 10" counter
@@ -349,11 +344,12 @@ div.pswp__img--placeholder,
 .pswp__counter {
   height: 30px;
   margin: 18px 0 0 20px;
+  margin-right: auto;
   font-size: 14px;
   line-height: 30px;
   color: var(--pswp-icon-color);
   opacity: 0.85;
-  margin-right: auto;
+
   /* align left */
 }
 

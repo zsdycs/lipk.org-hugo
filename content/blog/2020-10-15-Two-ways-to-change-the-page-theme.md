@@ -6,14 +6,14 @@ slug: 'two-ways-to-change-the-page-theme'
 
 ## 第一种设置 theme 属性
 
-今天在看[谷歌文档](https://developers.google.com/protocol-buffers/docs/proto#using_proto3_message_types)时觉得文档边上的目录很好看，于是打开了 `F12` 看 CSS 是怎么写的，发现了一个改变页面主题的新方法。
+今天在看 [谷歌文档](https://developers.google.com/protocol-buffers/docs/proto#using_proto3_message_types) 时觉得文档边上的目录很好看，于是打开了 `F12` 看 CSS 是怎么写的，发现了一个改变页面主题的新方法。
 
 这是实现目录左边颜色条的 CSS：
 
 ```css
-[dir=ltr] devsite-toc>.devsite-nav-list {
- border-left: 4px solid #5f6368;
- border-left-color: var(--devsite-toc-border,var(--devsite-primary-color,#5f6368));
+[dir=ltr] devsite-toc > .devsite-nav-list {
+  border-left: 4px solid #5f6368;
+  border-left-color: var(--devsite-toc-border, var(--devsite-primary-color, #5f6368));
 }
 ```
 
@@ -22,11 +22,11 @@ slug: 'two-ways-to-change-the-page-theme'
 于是继续往下看，看到了这个：
 
 ```css
-[theme=google-blue] {
- --devsite-primary-color: #1a73e8;
- --devsite-dark-color: #185abc;
- --devsite-light-color: #4285f4;
- --devsite-upper-tab-active: #185abc;
+[theme=google-blue] {
+  --devsite-primary-color: #1a73e8;
+  --devsite-dark-color: #185abc;
+  --devsite-light-color: #4285f4;
+  --devsite-upper-tab-active: #185abc;
 }
 ```
 

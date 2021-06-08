@@ -5,8 +5,8 @@ window.onload = function () {
   const $$ = document.querySelectorAll.bind(document);
 
   const DEFAULT = {
-    selector: 'article', // 文章内容中标题标签 selector
-    titleType: ['H1', 'H2', 'H3'], // 目录标题类型 三级目录
+    selector: "article", // 文章内容中标题标签 selector
+    titleType: ["H1", "H2", "H3"], // 目录标题类型 三级目录
     lineHeight: 36, // 每个菜单行高
     currentOnIndex: 0, // 当前高亮目录索引
     surplusHeight: 230, // 除了菜单高度 + 留白高度
@@ -15,33 +15,36 @@ window.onload = function () {
     wait: 500, // 防抖延迟时间
     intervals: 200, // 执行间隔
     fontSize: {
-      'normal': 16,
-      'small': 12,
+      normal: 16,
+      small: 12,
     },
     gradeMaxWidth: {
       1: 200, // 一级标题
       2: 175, // 二级标题
-      3: 150 // 三级标题
-    }
+      3: 150, // 三级标题
+    },
   };
 
   // ************************************************** 逻辑 **************************************************
 
-  if (!$('#tableOfContents-bar')) {
+  if (!$("#tableOfContents-bar")) {
     return;
   }
   // 添加目录
   const tableOfContentsList = createTableOfContentsList();
   const tableOfContentsElement = createTableOfContents(tableOfContentsList);
-  $('#tableOfContents-bar').insertAdjacentElement('afterbegin', tableOfContentsElement);
+  $("#tableOfContents-bar").insertAdjacentElement(
+    "afterbegin",
+    tableOfContentsElement
+  );
 
   const tableOfContentsData = {
-    tableOfContentsBar: $('#tableOfContents-bar'),
-    tableOfContentsBody: $('.tableOfContents-body'),
-    tableOfContentsDL: $('.tableOfContents dl'),
-    tableOfContentsDD: $$('.tableOfContents dd'),
+    tableOfContentsBar: $("#tableOfContents-bar"),
+    tableOfContentsBody: $(".tableOfContents-body"),
+    tableOfContentsDL: $(".tableOfContents dl"),
+    tableOfContentsDD: $$(".tableOfContents dd"),
     tableOfContentsList: tableOfContentsList,
-    tableOfContentsElement: tableOfContentsElement
+    tableOfContentsElement: tableOfContentsElement,
   };
 
   const status = {
@@ -54,21 +57,25 @@ window.onload = function () {
     firstDDTop: 0, // 第一个 dd top
     hasStopSetHighlight: false, // 在点击目录子项时候直接高亮当前目录，而不通过 scroll 事件触发 setHighlight 函数
     historyOnIndex: 0, // 高亮的目录索引
-    direction: 'bottom', // 滚动方向
+    direction: "bottom", // 滚动方向
     // marginTop: 0, // 菜单偏移距离
-  }
+  };
 
   // 初始化
   initTableOfContentsList();
   initStyle();
 
   // 滚动时高亮目录
-  window.addEventListener('scroll', function () {
-    throttle(setHighlight, DEFAULT.wait, DEFAULT.intervals)();
-    debounce(resetHighlightStatus, DEFAULT.wait, DEFAULT.intervals)();
-    // debounce(setHighlight, DEFAULT.wait)();
-    // debounce(resetHighlightStatus, DEFAULT.wait)();
-  }, false);
+  window.addEventListener(
+    "scroll",
+    function () {
+      throttle(setHighlight, DEFAULT.wait, DEFAULT.intervals)();
+      debounce(resetHighlightStatus, DEFAULT.wait, DEFAULT.intervals)();
+      // debounce(setHighlight, DEFAULT.wait)();
+      // debounce(resetHighlightStatus, DEFAULT.wait)();
+    },
+    false
+  );
 
   // 目录自动滚动
   // if (tableOfContentsData.tableOfContentsList.length > status.maxTableOfContentsCount) {
@@ -78,9 +85,13 @@ window.onload = function () {
   // }
 
   // 视图窗口大小改变
-  window.addEventListener('resize', function (e) {
-    throttle(initTableOfContentsList, DEFAULT.wait, DEFAULT.intervals)()
-  }, false)
+  window.addEventListener(
+    "resize",
+    function (e) {
+      throttle(initTableOfContentsList, DEFAULT.wait, DEFAULT.intervals)();
+    },
+    false
+  );
 
   // ************************************************** 函数 **************************************************
 
@@ -97,7 +108,7 @@ window.onload = function () {
           id: element.id,
           text: element.innerText,
           grade: Number(element.nodeName.substring(1)),
-          nodeName: element.nodeName
+          nodeName: element.nodeName,
         });
       }
     });
@@ -107,9 +118,12 @@ window.onload = function () {
   // 创建目录
   function createTableOfContents(tableOfContentsList) {
     let tableOfContentsHTML = `<div class="tableOfContents"><div class="tableOfContents-body"><dl>`;
-    const indexList = Array.from({
-      length: tableOfContentsList.length
-    }, item => item = 0); // 目录序号列表
+    const indexList = Array.from(
+      {
+        length: tableOfContentsList.length,
+      },
+      (item) => (item = 0)
+    ); // 目录序号列表
     let first = 0, // 一级目录初值
       second = 0, // 二级目录初值
       third = 0, // 三级目录初值
@@ -144,8 +158,22 @@ window.onload = function () {
           grade = tableOfContentsList[i].grade;
         }
       }
-      tableOfContentsHTML += `<dd class="grade${grade} ${ddIndex++ === DEFAULT.currentOnIndex ? 'on' : ''}"><span class="tableOfContents-dot"></span><span class="tableOfContents-index">${indexList[i]}</span><button style="max-width: ${DEFAULT.gradeMaxWidth[tableOfContentsList[i].grade]}px; font-size: ${DEFAULT.fontSize[getStrWidthSize(tableOfContentsList[i].text, DEFAULT.gradeMaxWidth[tableOfContentsList[i].grade], DEFAULT.fontSize['normal'])]}px;">${tableOfContentsList[i].text}</button></dd>`;
-    };
+      tableOfContentsHTML += `<dd class="grade${grade} ${
+        ddIndex++ === DEFAULT.currentOnIndex ? "on" : ""
+      }"><span class="tableOfContents-dot"></span><span class="tableOfContents-index">${
+        indexList[i]
+      }</span><button style="max-width: ${
+        DEFAULT.gradeMaxWidth[tableOfContentsList[i].grade]
+      }px; font-size: ${
+        DEFAULT.fontSize[
+          getStrWidthSize(
+            tableOfContentsList[i].text,
+            DEFAULT.gradeMaxWidth[tableOfContentsList[i].grade],
+            DEFAULT.fontSize["normal"]
+          )
+        ]
+      }px;">${tableOfContentsList[i].text}</button></dd>`;
+    }
     tableOfContentsHTML += `</dl></div></div>`;
     return createElement(tableOfContentsHTML);
   }
@@ -153,45 +181,72 @@ window.onload = function () {
   // 初始化
   function initTableOfContentsList() {
     if (window.innerWidth <= DEFAULT.displayWidth) {
-      tableOfContentsData.tableOfContentsBar.style.display = 'none';
-      $('.main').style.borderRight = '0px';
+      tableOfContentsData.tableOfContentsBar.style.display = "none";
+      $(".main").style.borderRight = "0px";
       return;
     }
-    $('.main').style.borderRight = '1px solid var(--main-border-color)';
-    tableOfContentsData.tableOfContentsBar.style.display = 'block';
+    $(".main").style.borderRight = "1px solid var(--main-border-color)";
+    tableOfContentsData.tableOfContentsBar.style.display = "block";
     const tempHeight = window.innerHeight;
 
     if (status.historyViewHeight !== tempHeight) {
       status.historyViewHeight = tempHeight;
-      status.maxTableOfContentsCount = Math.floor((status.historyViewHeight - DEFAULT.surplusHeight) / DEFAULT.lineHeight);
-      const maxTableOfContentsHeight = status.maxTableOfContentsCount * DEFAULT.lineHeight;
-      const currentTableOfContentsHeight = tableOfContentsData.tableOfContentsList.length * DEFAULT.lineHeight
+      status.maxTableOfContentsCount = Math.floor(
+        (status.historyViewHeight - DEFAULT.surplusHeight) / DEFAULT.lineHeight
+      );
+      const maxTableOfContentsHeight =
+        status.maxTableOfContentsCount * DEFAULT.lineHeight;
+      const currentTableOfContentsHeight =
+        tableOfContentsData.tableOfContentsList.length * DEFAULT.lineHeight;
       // 大于窗口内能容纳最大目录个数，则使用最大高度，否则使用当前生成目录的高度
-      const tableOfContentsHeight = tableOfContentsData.tableOfContentsList.length > status.maxTableOfContentsCount ? maxTableOfContentsHeight : currentTableOfContentsHeight;
+      const tableOfContentsHeight =
+        tableOfContentsData.tableOfContentsList.length >
+        status.maxTableOfContentsCount
+          ? maxTableOfContentsHeight
+          : currentTableOfContentsHeight;
 
       // 设置目录高度
       tableOfContentsData.tableOfContentsBody.style.height = `${tableOfContentsHeight}px`;
       tableOfContentsData.tableOfContentsBody.style.maxHeight = `${tableOfContentsHeight}px`;
 
       status.historyPageYOffset = window.pageYOffset;
-      status.bodyBCR = tableOfContentsData.tableOfContentsBody.getBoundingClientRect();
-      status.initDLBottom = status.initDLBottom || tableOfContentsData.tableOfContentsDL.getBoundingClientRect().bottom;
-      status.firstDDTop = status.firstDDTop || tableOfContentsData.tableOfContentsDD[0].getBoundingClientRect().top;
-      status.bodyMidBottom = status.bodyBCR.top + Math.ceil((status.maxTableOfContentsCount / 2)) * DEFAULT.lineHeight
+      status.bodyBCR =
+        tableOfContentsData.tableOfContentsBody.getBoundingClientRect();
+      status.initDLBottom =
+        status.initDLBottom ||
+        tableOfContentsData.tableOfContentsDL.getBoundingClientRect().bottom;
+      status.firstDDTop =
+        status.firstDDTop ||
+        tableOfContentsData.tableOfContentsDD[0].getBoundingClientRect().top;
+      status.bodyMidBottom =
+        status.bodyBCR.top +
+        Math.ceil(status.maxTableOfContentsCount / 2) * DEFAULT.lineHeight;
 
       // 给目录子项绑定事件
       tableOfContentsData.tableOfContentsDD.forEach((curr, index) => {
-        curr.addEventListener('click', function (e) {
-          status.hasStopSetHighlight = true;
-          $('.tableOfContents .on').classList.remove('on');
-          tableOfContentsData.tableOfContentsDD[index].classList.add('on');
-          status.historyOnIndex = index;
-          const currTop = tableOfContentsData.tableOfContentsList[index].element.getBoundingClientRect().top;
-          const fun = function (e) {
-            window.scrollTo(0, e);
-          };
-          animation(parseInt(document.documentElement.scrollTop), currTop + window.pageYOffset - DEFAULT.toTopDistance, 5, fun);
-        }, false)
+        curr.addEventListener(
+          "click",
+          function (e) {
+            status.hasStopSetHighlight = true;
+            $(".tableOfContents .on").classList.remove("on");
+            tableOfContentsData.tableOfContentsDD[index].classList.add("on");
+            status.historyOnIndex = index;
+            const currTop =
+              tableOfContentsData.tableOfContentsList[
+                index
+              ].element.getBoundingClientRect().top;
+            const fun = function (e) {
+              window.scrollTo(0, e);
+            };
+            animation(
+              parseInt(document.documentElement.scrollTop),
+              currTop + window.pageYOffset - DEFAULT.toTopDistance,
+              5,
+              fun
+            );
+          },
+          false
+        );
       });
     }
   }
@@ -204,27 +259,44 @@ window.onload = function () {
       return;
     }
 
-    const current = $('.tableOfContents .on');
-    const onIndex = [].indexOf.call(tableOfContentsData.tableOfContentsDD, current); // 当前高亮索引
-    const tableOfContentsLength = tableOfContentsData.tableOfContentsList.length;
-    const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+    const current = $(".tableOfContents .on");
+    const onIndex = [].indexOf.call(
+      tableOfContentsData.tableOfContentsDD,
+      current
+    ); // 当前高亮索引
+    const tableOfContentsLength =
+      tableOfContentsData.tableOfContentsList.length;
+    const scrollHeight =
+      document.documentElement.scrollHeight || document.body.scrollHeight;
 
     let nextOnIndex = onIndex; // 滚动后高亮索引
     if (current) {
-      current.classList.remove('on');
+      current.classList.remove("on");
     }
 
-    if (tableOfContentsData.tableOfContentsList[tableOfContentsLength - 1].element.getBoundingClientRect().top <= DEFAULT.toTopDistance ||
-      window.innerHeight + window.pageYOffset === scrollHeight) { // 尾部
+    if (
+      tableOfContentsData.tableOfContentsList[
+        tableOfContentsLength - 1
+      ].element.getBoundingClientRect().top <= DEFAULT.toTopDistance ||
+      window.innerHeight + window.pageYOffset === scrollHeight
+    ) {
+      // 尾部
       status.historyOnIndex = tableOfContentsLength - 1;
-      tableOfContentsData.tableOfContentsDD[status.historyOnIndex].classList.add('on');
-    } else if (document.scrollingElement.scrollTop <= status.firstDDTop) { // 顶部
-      tableOfContentsData.tableOfContentsDD[0].classList.add('on');
+      tableOfContentsData.tableOfContentsDD[
+        status.historyOnIndex
+      ].classList.add("on");
+    } else if (document.scrollingElement.scrollTop <= status.firstDDTop) {
+      // 顶部
+      tableOfContentsData.tableOfContentsDD[0].classList.add("on");
       status.historyOnIndex = 0;
-    } else { // 中间：使用缓存，直接从上一次索引(onIndex)位置开始查找
-      if (status.direction === 'bottom') {
+    } else {
+      // 中间：使用缓存，直接从上一次索引(onIndex)位置开始查找
+      if (status.direction === "bottom") {
         while (nextOnIndex < tableOfContentsLength) {
-          const currTop = tableOfContentsData.tableOfContentsList[nextOnIndex].element.getBoundingClientRect().top;
+          const currTop =
+            tableOfContentsData.tableOfContentsList[
+              nextOnIndex
+            ].element.getBoundingClientRect().top;
           if (currTop > DEFAULT.toTopDistance && nextOnIndex > 0) {
             nextOnIndex--;
             break;
@@ -233,16 +305,24 @@ window.onload = function () {
         }
       } else {
         while (nextOnIndex >= 0) {
-          const currTop = tableOfContentsData.tableOfContentsList[nextOnIndex].element.getBoundingClientRect().top;
+          const currTop =
+            tableOfContentsData.tableOfContentsList[
+              nextOnIndex
+            ].element.getBoundingClientRect().top;
           if (currTop <= DEFAULT.toTopDistance) {
             break;
           }
           nextOnIndex--;
         }
       }
-      nextOnIndex = nextOnIndex === tableOfContentsLength ? nextOnIndex - 1 : nextOnIndex < 0 ? 0 : nextOnIndex;
+      nextOnIndex =
+        nextOnIndex === tableOfContentsLength
+          ? nextOnIndex - 1
+          : nextOnIndex < 0
+          ? 0
+          : nextOnIndex;
       status.historyOnIndex = nextOnIndex;
-      tableOfContentsData.tableOfContentsDD[nextOnIndex].classList.add('on');
+      tableOfContentsData.tableOfContentsDD[nextOnIndex].classList.add("on");
     }
   }
 
@@ -277,7 +357,7 @@ window.onload = function () {
   // }
 
   function initStyle() {
-    const importStyle = document.createElement('style');
+    const importStyle = document.createElement("style");
     const cssText = document.createTextNode(`/* 文章目录 */
     #tableOfContents-bar {
       top: 0;
@@ -388,7 +468,7 @@ window.onload = function () {
    */
   function createElement(str) {
     var parser = new DOMParser();
-    return parser.parseFromString(str, 'text/html').body.firstChild;
+    return parser.parseFromString(str, "text/html").body.firstChild;
   }
 
   /**
@@ -410,17 +490,17 @@ window.onload = function () {
       }
       fun(current);
       window.requestAnimationFrame(step);
-    };
+    }
     step();
   }
   // 页面的滚动方向
   function currentScrollDirection() {
     const pageYOffset = window.pageYOffset;
-    let direction = 'bottom';
+    let direction = "bottom";
     if (pageYOffset < status.historyPageYOffset) {
-      direction = 'top';
+      direction = "top";
     } else {
-      direction = 'bottom';
+      direction = "bottom";
     }
     status.historyPageYOffset = pageYOffset;
     return direction;
@@ -429,12 +509,12 @@ window.onload = function () {
   // 防抖：触发高频事件 n 秒后只会执行一次，如果 n 秒内事件再次触发，则会重新计时。
   function debounce(func, wait = 200) {
     return function (args) {
-      const _this = this
-      clearTimeout(func.id)
+      const _this = this;
+      clearTimeout(func.id);
       func.id = setTimeout(function () {
-        func.apply(_this, args)
-      }, wait)
-    }
+        func.apply(_this, args);
+      }, wait);
+    };
   }
 
   /**
@@ -459,7 +539,7 @@ window.onload = function () {
         timeout = setTimeout(func, wait);
       }
     };
-  };
+  }
 
   // 重置是否立即高亮
   function resetHighlightStatus() {
@@ -475,10 +555,11 @@ window.onload = function () {
    * @param {Number} fontSize
    */
   function getStrWidthSize(content, width, fontSize) {
-    var resultWidth, div = document.createElement('div');
+    var resultWidth,
+      div = document.createElement("div");
     div.style.fontSize = `${fontSize}px`;
-    div.style.visibility = 'hidden';
-    div.style.display = 'inline-block';
+    div.style.visibility = "hidden";
+    div.style.display = "inline-block";
     if (typeof div.textContent !== undefined) {
       div.textContent = content;
     } else {
@@ -488,9 +569,9 @@ window.onload = function () {
     resultWidth = parseFloat(window.getComputedStyle(div).width);
     document.body.removeChild(div);
     if (resultWidth > width) {
-      return 'small';
+      return "small";
     } else {
-      return 'normal';
+      return "normal";
     }
   }
-}
+};

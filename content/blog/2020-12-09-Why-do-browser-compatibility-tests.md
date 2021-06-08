@@ -8,7 +8,7 @@ slug: 'why-do-browser-compatibility-tests'
 
 这是个很有名的故事，科学家为了方便共享工作文档，提出了一个 Internet 的新协议和一个使用该协议实现的文档系统的方案，后来这个协议改名为“Word Wide Web”，万维网诞生了，世界上的计算机都连接起来了。
 
-那传输文档的话，文档格式是怎么样的呢？我们知道，文件有特定的格式，jpg、text等。蒂姆·伯纳斯·李（Tim Berners-Lee）发明了三项关键技术：URL、HTML、HTTP，分别定义了，文档传输的来源地址、传输的文档格式、以及怎么传[^1]。
+那传输文档的话，文档格式是怎么样的呢？我们知道，文件有特定的格式，jpg、text 等。蒂姆·伯纳斯·李（Tim Berners-Lee）发明了三项关键技术：URL、HTML、HTTP，分别定义了，文档传输的来源地址、传输的文档格式、以及怎么传 [^1]。
 
 随着 Web 日益流行，对客户端脚本语言的需求也越来越强烈。像页面表单内容验证这样的处理，当时是提交到服务器后进行验证的，按照当时的网速，每次都要等很长的时间。而且，网页要变为动态的，就要有一个脚本语言，用来改变 HTML。于是当时引领技术革新的网景公司，开发了 JavaScript 1.0[^2]。
 
@@ -30,12 +30,10 @@ JavaScript 和 ECMAScript 基本上是同义词，但 JavaScript 远远不限于
 
 总结以上：
 
-- CSS 标准的实现情况不同
-- 各个浏览器 BOM 实现和提供的特性不同
-- 浏览器对 JavaScript 的支持不同，即实现 ECMAScript 和 DOM 的程度不同
-
-导致了需要进行“浏览器兼容性测试”。
+- CSS 标准的实现情况不同。
+- 各个浏览器 BOM 实现和提供的特性不同。
+- 浏览器对 JavaScript 的支持不同，即实现 ECMAScript 和 DOM 的程度不同导致了需要进行“浏览器兼容性测试”。
 
 [^1]: [维基百科 - 万维网](https://zh.wikipedia.org/wiki/%E4%B8%87%E7%BB%B4%E7%BD%91)
 [^2]: [维基百科 - JavaScript](https://zh.wikipedia.org/wiki/JavaScript)
-[^3]: [JavaScript 高级程序设计: 第 4 版](https://www.ituring.com.cn/book/2472)
+[^3]: [JavaScript 高级程序设计：第 4 版](https://www.ituring.com.cn/book/2472)

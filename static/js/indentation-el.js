@@ -4,19 +4,24 @@
     for (var i = 0; i < tags.length; i++) {
       var tag = tags[i];
       var parent = tag.parentElement;
-      if (parent.nodeName === 'ARTICLE' || parent.nodeName === 'BLOCKQUOTE') {
-        if (tag.innerHTML === '') {
+      if (parent.nodeName === "ARTICLE" || parent.nodeName === "BLOCKQUOTE") {
+        if (tag.innerHTML === "") {
           tag.remove();
-        };
-        tag.innerHTML = '&emsp;&emsp;' + tag.innerHTML;
+        }
+        tag.innerHTML = "&emsp;&emsp;" + tag.innerHTML;
         for (var j = 0; j < tag.childNodes.length; j++) {
           var child = tag.childNodes[j];
-          if (child.nodeName === 'BR') {
-            tag.childNodes[j + 1].textContent = '  ' + tag.childNodes[j + 1].textContent.substring(1, tag.childNodes[j + 1].textContent.length);
+          if (child.nodeName === "BR") {
+            tag.childNodes[j + 1].textContent =
+              "  " +
+              tag.childNodes[j + 1].textContent.substring(
+                1,
+                tag.childNodes[j + 1].textContent.length
+              );
           }
         }
       }
     }
   }
-  indentation_el('p');
+  indentation_el("p");
 })();

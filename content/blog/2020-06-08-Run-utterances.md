@@ -49,7 +49,7 @@ UT 是基于 node 的，在 package.json 中，有关于部署的命令，predep
 
 ## 身份授权代码的配置及运行
 
-[utterance/utterances-oauth](https://github.com/utterance/utterances-oauth) 这份代码使用的是该作者维护的 [cfworker](https://github.com/cfworker/cfworker)，在查看该库的资料时看到了[一个有趣的 issue](https://github.com/cfworker/cfworker/issues/31)，让我对 [Deno](https://deno.land/) 的未来增加期待了。
+[utterance/utterances-oauth](https://github.com/utterance/utterances-oauth) 这份代码使用的是该作者维护的 [cfworker](https://github.com/cfworker/cfworker)，在查看该库的资料时看到了 [一个有趣的 issue](https://github.com/cfworker/cfworker/issues/31)，让我对 [Deno](https://deno.land/) 的未来增加期待了。
 
 ### 配置与运行
 
