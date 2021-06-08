@@ -2,6 +2,12 @@
 title: 'Java on Spring'
 date: '2020-05-01'
 slug: 'java-on-spring'
+pictureView: [
+  {
+    title: '来自 2018 Snyk 的调查报告，反映了 Spring 在 Java 生态中的统治地位',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/2020-05-01-Java-on-spring.jpg',
+  }
+]
 ---
 
 > **问**：[Spring 是否代表着目前 Java 技术的顶峰，未来的 Java 将如何发展？](https://www.zhihu.com/question/387902282/answer/1193954645)

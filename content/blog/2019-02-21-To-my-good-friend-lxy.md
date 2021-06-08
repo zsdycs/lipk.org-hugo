@@ -2,6 +2,12 @@
 title: '给世界上最幸福的人'
 date: '2019-02-21'
 slug: 'to-my-good-friend-dxy'
+pictureView: [
+  {
+    title: '新婚快乐',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/2019-02-21-To-my-good-friend-dxy.jpg',
+  }
+]
 ---
 
 展信佳

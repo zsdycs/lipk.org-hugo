@@ -3,6 +3,204 @@ title: '时事趣闻，回顾 2020'
 date: '2021-01-02'
 slug: 'Current-Affairs-Review-2020'
 tableOfContents: true
+pictureView: [
+  {
+    title: '亚马逊广告业务在疫情中大涨',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/12-01.jpg',
+  },
+  {
+    title: '美国出版业 2020 年意外地迎来增长',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/12-02.jpg',
+  },
+  {
+    title: '波音 737 MAX 完成复飞后首次商业飞行',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/12-03.jpg',
+  },
+  {
+    title: '美国基因编辑猪获批上市',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/12-04.jpg',
+  },
+  {
+    title: '治疗新冠药品纳入国家医保目录',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/12-05.jpg',
+  },
+  {
+    title: '嫦娥五号搭载的水稻种子发芽',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/12-06.jpg',
+  },
+  {
+    title: '《鬼灭之刃》票房跃居日本影史第一',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/12-07.jpg',
+  },
+  {
+    title: '央行对蚂蚁集团提出整改要求',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/12-08.jpg',
+  },
+  {
+    title: '新加坡小贩文化被列入联合国非物质文化遗产',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/12-09.jpg',
+  },
+  {
+    title: '「奥特曼之父」去世',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/12-10.jpg',
+  },
+  {
+    title: '拜登正式赢得美国大选',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/12-11.jpg',
+  },
+  {
+    title: '日本亚洲航空宣布破产',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/12-12.jpg',
+  },
+  {
+    title: '2020 年 ATM 减少超 6 万台',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/12-13.jpg',
+  },
+  {
+    title: '全球首款柔性全彩电子纸问世',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/12-14.jpg',
+  },
+  {
+    title: 'Doug Roble 在 Zoom 会议中对话「Douglas」',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/11-01.gif',
+  },
+  {
+    title: '科学家构建了首个全球蜜蜂分布地图',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/11-02.jpg',
+  },
+  {
+    title: '百事重新设计了用了 30 年饮料瓶',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/11-03.jpg',
+  },
+  {
+    title: 'SpaceX 首次正式发射载人飞船',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/11-04.jpg',
+  },
+  {
+    title: '暴风集团正式退市',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/11-05.jpg',
+  },
+  {
+    title: '全球首次胶囊列车载人试验完成',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/11-06.jpg',
+  },
+  {
+    title: '我国数学家证明微分几何学两大核心猜想',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/11-07.jpg',
+  },
+  {
+    title: '名创优品巴黎首店开业',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/10-01.jpg',
+  },
+  {
+    title: '我国首家「芯片大学」正式成立',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/10-02.jpg',
+  },
+  {
+    title: '新浪同意以每股 43.30 美元被私有化',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/09-01.jpg',
+  },
+  {
+    title: '腾讯微博正式关闭',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/09-02.jpg',
+  },
+  {
+    title: '新冠肺炎死亡病例超 100 万',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/09-03.jpg',
+  },
+  {
+    title: '中国邮政推出世界首枚芯片邮票',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/09-04.jpg',
+  },
+  {
+    title: '阿里巴巴公布犀牛智造平台',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/09-05.jpg',
+  },
+  {
+    title: '美国研发新冠疫苗新瓶颈：猴子短缺',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/09-06.jpg',
+  },
+  {
+    title: '大英博物馆恢复对外开放，创馆人雕像被移除',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/08-01.jpg',
+  },
+  {
+    title: '拼多多被纳入纳斯达克 100 指数企业',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/08-02.jpg',
+  },
+  {
+    title: '我国高分七号卫星正式投入使用',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/08-03.jpg',
+  },
+  {
+    title: '苹果市值达到 2 万亿美元',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/08-04.jpg',
+  },
+  {
+    title: '美国死亡谷刷新世界最高温度纪录',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/08-05.jpg',
+  },
+  {
+    title: '水族馆停摆，挖出游客许愿投下的硬币来付账单',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/08-06.jpg',
+  },
+  {
+    title: '微信正式在印度停止服务',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/07-01.jpg',
+  },
+  {
+    title: '联通公用电话全面停止服务',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/07-02.jpg',
+  },
+  {
+    title: '新一代载人飞船试验船完成「千兆级局域网」试验',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/05-01.jpg',
+  },
+  {
+    title: '纳斯达克通知瑞幸必须摘牌',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/05-02.jpg',
+  },
+  {
+    title: '武汉解封',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/04-01.jpg',
+  },
+  {
+    title: '前迪士尼 CEO 重掌公司运营，带领公司度过难关',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/04-02.jpg',
+  },
+  {
+    title: '中国蝗灾防治工作组：沙漠蝗虫迁徙到中国的可能性很小',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/03-01.jpg',
+  },
+  {
+    title: '美股暴跌，触发史上第二次熔断',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/03-02.jpg',
+  },
+  {
+    title: '东京奥运会圣火采集仪式将在无观众情况下举行',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/03-03.jpg',
+  },
+  {
+    title: '被延后的奥运会名字保留「东京 2020 奥运会」',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/03-04.jpg',
+  },
+  {
+    title: '雷神山医院开展验收并逐步移交',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/02-01.jpg',
+  },
+  {
+    title: '世卫将由新冠病毒引起的疾病命名为「COVID-19」',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/02-02.jpg',
+  },
+  {
+    title: '中国除夕以来进口 7.3 亿只口罩',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/02-03.jpg',
+  },
+  {
+    title: '澳大利亚血色天空',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/01-01.jpg',
+  }
+]
 ---
 
 2020 成为过去了。
@@ -85,7 +283,7 @@ tableOfContents: true
 
 ### 「奥特曼之父」、日本漫画家一峰大二去世，享年 84 岁
 
-![奥特曼之父」去世](https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/12-10.jpg)
+![「奥特曼之父」去世](https://lipk.oss-accelerate.aliyuncs.com/images/Current-Affairs-Review-2020/12-10.jpg)
 
 日本漫画家协会 12 月 15 日发布讣告，称该协会的会员、日本漫画家一峰大二于 11 月 27 日因脑出血及大叶性肺炎去世，享年 84 岁。
 

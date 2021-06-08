@@ -2,6 +2,12 @@
 title: 'Angular mouseleave 一直在执行'
 date: '2020-10-22'
 slug: 'angular-mouseleave-always-runs'
+pictureView: [
+  {
+    title: '鼠标悬停显示悬浮框',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/angular-mouseleave-always-runs.jpg',
+  }
+]
 ---
 
 项目有个需求，鼠标悬停在表格上时，显示一个悬浮框，实现后如图所示：

@@ -53,6 +53,9 @@
             itemData.thumbCropped = true;
           });
           lightbox.init();
+          document.querySelectorAll('figure.image img').forEach((element) => {
+            element.style.cursor = 'pointer';
+          });
         </script>
       {{ end }}
 

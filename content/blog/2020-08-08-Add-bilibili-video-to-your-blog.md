@@ -2,6 +2,16 @@
 title: '在博客中添加 B 站视频'
 date: '2020-08-08'
 slug: 'add-bilibili-video-to-your-blog'
+pictureView: [
+  {
+    title: '人家的效果截图',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/2020-08-08-Add-bilibili-video-to-your-blog(1).jpg',
+  },
+  {
+    title: '我的测试截图',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/2020-08-08-Add-bilibili-video-to-your-blog(2).jpg',
+  }
+]
 ---
 
 今天在逛博客时看到有篇博客把 B 站的视频添加到了文章里，非常新奇。

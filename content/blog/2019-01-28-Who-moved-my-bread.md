@@ -2,6 +2,16 @@
 title: '谁动了我的面包'
 date: '2019-01-28'
 slug: 'who-moved-my-bread'
+pictureView: [
+  {
+    title: '场地布局',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/2019-01-28-who-moved-my-bread.png',
+  },
+  {
+    title: '成员合照',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/2019-01-28-who-moved-my-bread-2.png',
+  }
+]
 ---
 
 > 今天公司年会（去年 9 月 17 号入职用友苏分实习），一天都没碰电脑，回到宿舍都快 11 点了，填了昨天 img 样式的坑，增加了一些内容后也就凌晨了，主要是也没啥想写的。今明两天都放之前自己改编的小品剧本上来吧，让这有点好玩的。

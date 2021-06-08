@@ -2,6 +2,12 @@
 title: '凤凰木'
 date: '2020-11-08'
 slug: 'delonix-regia'
+pictureView: [
+  {
+    title: '文亭',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/2020-11-08-Delonix-regia.jpg',
+  }
+]
 ---
 
 凤凰木，取名于“叶如飞凰之羽，花若丹凤之冠”，别名金凤花、红花楹树、火树、洋楹等。这是百度百科“凤凰木”词条的第一句解释。原来“凤凰木”这名字是因为它的外形。

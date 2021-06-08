@@ -2,6 +2,20 @@
 title: '上学时期的路'
 date: '2020-12-03'
 slug: 'the-way-to-school'
+pictureView: [
+  {
+    title: '放学回家时的景色（百度街景 2014-09 摄）',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/the-way-to-school(1).jpg',
+  },
+  {
+    title: '鱼塘的景色（百度街景 2014-09 摄）',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/the-way-to-school(2).jpg',
+  },
+  {
+    title: '学校门口的龙安街（百度街景 2014-09 摄）',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/the-way-to-school(3).jpg',
+  }
+]
 ---
 
 在没有各种工具前，会有足够的时间，产生很多想法，有足够的耐心思考事情。

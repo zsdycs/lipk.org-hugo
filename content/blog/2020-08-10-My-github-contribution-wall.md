@@ -2,6 +2,32 @@
 title: '我的 Github 绿墙'
 date: '2020-08-10'
 slug: 'my-github-contribution-wall'
+pictureView: [
+  {
+    title: '别人的 Github 贡献墙照片',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/my-github-contribution-wall(1).jpg',
+  },
+  {
+    title: '我 Github 设置的邮箱',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/my-github-contribution-wall(2).jpg',
+  },
+  {
+    title: 'git log 命令行截图',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/my-github-contribution-wall(3).jpg',
+  },
+  {
+    title: 'sourcetree 的截图',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/my-github-contribution-wall(4).jpg',
+  },
+  {
+    title: 'git 命令行的截图',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/my-github-contribution-wall(5).jpg',
+  },
+  {
+    title: '@zsdycs 在 GitHub 上的活动汇总',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/my-github-contribution-wall(6).jpg',
+  }
+]
 ---
 
 ## 我绿自己

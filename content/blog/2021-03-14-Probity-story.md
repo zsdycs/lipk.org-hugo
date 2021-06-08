@@ -2,6 +2,12 @@
 title: '廉洁小故事'
 date: '2021-03-14'
 slug: 'probity-story'
+pictureView: [
+  {
+    title: '向日葵',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/2021-03-14-Probity-story.jpg',
+  }
+]
 ---
 
 新上任的村长是一个刚毕业的大学生，名字叫做小李。上任之前在村里很少见他，在外面读了 4 年大学，回来后大伙儿都快认不出他来了。恰巧村长换届，他参加了，竞选时他那铿锵有力的话语和刚正不阿的态度让大家都毫不犹豫的把票投给了他。大家事后想起来他只是个不谙世事的小伙子，都纷纷表示后悔。

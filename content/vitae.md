@@ -3,6 +3,12 @@ title: 简历
 date: "2019-12-31"
 slug: /vitae
 notComment: true
+pictureView: [
+  {
+    title: '我的照片',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/vitae.jpg',
+  }
+]
 ---
 
 # 李鹏坤
