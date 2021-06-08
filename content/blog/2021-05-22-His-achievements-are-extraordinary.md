@@ -13,8 +13,6 @@ description: '他成就非凡，牵动着我们。他永远活着，在课本里
 coverPicture: {
   title: '袁隆平（1930-2021）',
   src: 'https://lipk.oss-accelerate.aliyuncs.com/images/2021-05-22-his-achievements-are-extraordinary.jpg',
-  width: 622,
-  height: 760,
 }
 ---
 

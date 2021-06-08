@@ -26,11 +26,11 @@
   </script>
 
   {{ if .IsHome }}
-  <meta name="og:title" content="{{ .Site.Title }} | 首页">
   <meta property="og:title" content="{{ .Site.Title }} | 首页">
+  <meta property="twitter:title" content="{{ .Site.Title }} | 首页">
   {{ else }}
-  <meta name="og:title" content="{{ .Site.Params.author }} | {{ .Site.Params.title }} - {{ .Title }}">
   <meta property="og:title" content="{{ .Site.Params.author }} | {{ .Site.Params.title }} - {{ .Title }}">
+  <meta property="twitter:title" content="{{ .Site.Params.author }} | {{ .Site.Params.title }} - {{ .Title }}">
   {{ end }}
   <meta property="og:type" content="website">
   <script>
@@ -53,14 +53,16 @@
 
   {{ if .Params.coverPicture }}
     <meta property="og:image" content="{{ .Params.coverPicture.src }}">
-    <meta property="og:image:width" content="{{ .Params.coverPicture.width }}">
-    <meta property="og:image:height" content="{{ .Params.coverPicture.height }}">
     <meta property="og:image:alt" content="{{ .Params.description }}">
+    <meta property="twitter:image" content="{{ .Params.coverPicture.src }}">
+    <meta property="twitter:description" content="{{ .Params.description }}">
   {{ else }}
     <meta property="og:image" content="/img/android-chrome-320x320.png">
+    <meta property="og:image:alt" content="{{ .Site.Params.description }}">
     <meta property="og:image:width" content="320">
     <meta property="og:image:height" content="320">
-    <meta property="og:image:alt" content="{{ .Site.Params.description }}">
+    <meta property="twitter:image" content="/img/android-chrome-320x320.png">
+    <meta property="twitter:description" content="{{ .Site.Params.description }}">
   {{ end }}
   {{ if or (eq .RelPermalink "/") (eq .RelPermalink "/blog/")}}
     <meta name="description" content="{{ .Site.Params.description }}">
