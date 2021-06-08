@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recess-order",
+  ],
+  "plugins": [
+    "stylelint-order",
+  ],
+  "rules": {
+    "string-quotes": "single",
+    "declaration-colon-newline-after": "always-multi-line",
+  }
+}
