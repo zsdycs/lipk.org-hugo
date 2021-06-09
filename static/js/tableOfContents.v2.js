@@ -1,12 +1,12 @@
 window.onload = function () {
-  "use strict";
+  'use strict';
   // ************************************************** 变量 **************************************************
   const $ = document.querySelector.bind(document);
   const $$ = document.querySelectorAll.bind(document);
 
   const DEFAULT = {
-    selector: "article", // 文章内容中标题标签 selector
-    titleType: ["H1", "H2", "H3"], // 目录标题类型 三级目录
+    selector: 'article', // 文章内容中标题标签 selector
+    titleType: ['H1', 'H2', 'H3'], // 目录标题类型 三级目录
     lineHeight: 36, // 每个菜单行高
     currentOnIndex: 0, // 当前高亮目录索引
     surplusHeight: 230, // 除了菜单高度 + 留白高度
@@ -27,22 +27,22 @@ window.onload = function () {
 
   // ************************************************** 逻辑 **************************************************
 
-  if (!$("#tableOfContents-bar")) {
+  if (!$('#tableOfContents-bar')) {
     return;
   }
   // 添加目录
   const tableOfContentsList = createTableOfContentsList();
   const tableOfContentsElement = createTableOfContents(tableOfContentsList);
-  $("#tableOfContents-bar").insertAdjacentElement(
-    "afterbegin",
-    tableOfContentsElement
+  $('#tableOfContents-bar').insertAdjacentElement(
+    'afterbegin',
+    tableOfContentsElement,
   );
 
   const tableOfContentsData = {
-    tableOfContentsBar: $("#tableOfContents-bar"),
-    tableOfContentsBody: $(".tableOfContents-body"),
-    tableOfContentsDL: $(".tableOfContents dl"),
-    tableOfContentsDD: $$(".tableOfContents dd"),
+    tableOfContentsBar: $('#tableOfContents-bar'),
+    tableOfContentsBody: $('.tableOfContents-body'),
+    tableOfContentsDL: $('.tableOfContents dl'),
+    tableOfContentsDD: $$('.tableOfContents dd'),
     tableOfContentsList: tableOfContentsList,
     tableOfContentsElement: tableOfContentsElement,
   };
@@ -57,7 +57,7 @@ window.onload = function () {
     firstDDTop: 0, // 第一个 dd top
     hasStopSetHighlight: false, // 在点击目录子项时候直接高亮当前目录，而不通过 scroll 事件触发 setHighlight 函数
     historyOnIndex: 0, // 高亮的目录索引
-    direction: "bottom", // 滚动方向
+    direction: 'bottom', // 滚动方向
     // marginTop: 0, // 菜单偏移距离
   };
 
@@ -67,14 +67,14 @@ window.onload = function () {
 
   // 滚动时高亮目录
   window.addEventListener(
-    "scroll",
+    'scroll',
     function () {
       throttle(setHighlight, DEFAULT.wait, DEFAULT.intervals)();
       debounce(resetHighlightStatus, DEFAULT.wait, DEFAULT.intervals)();
       // debounce(setHighlight, DEFAULT.wait)();
       // debounce(resetHighlightStatus, DEFAULT.wait)();
     },
-    false
+    false,
   );
 
   // 目录自动滚动
@@ -86,11 +86,11 @@ window.onload = function () {
 
   // 视图窗口大小改变
   window.addEventListener(
-    "resize",
+    'resize',
     function (e) {
       throttle(initTableOfContentsList, DEFAULT.wait, DEFAULT.intervals)();
     },
-    false
+    false,
   );
 
   // ************************************************** 函数 **************************************************
@@ -122,7 +122,7 @@ window.onload = function () {
       {
         length: tableOfContentsList.length,
       },
-      (item) => (item = 0)
+      (item) => (item = 0),
     ); // 目录序号列表
     let first = 0, // 一级目录初值
       second = 0, // 二级目录初值
@@ -159,7 +159,7 @@ window.onload = function () {
         }
       }
       tableOfContentsHTML += `<dd class="grade${grade} ${
-        ddIndex++ === DEFAULT.currentOnIndex ? "on" : ""
+        ddIndex++ === DEFAULT.currentOnIndex ? 'on' : ''
       }"><span class="tableOfContents-dot"></span><span class="tableOfContents-index">${
         indexList[i]
       }</span><button style="max-width: ${
@@ -169,7 +169,7 @@ window.onload = function () {
           getStrWidthSize(
             tableOfContentsList[i].text,
             DEFAULT.gradeMaxWidth[tableOfContentsList[i].grade],
-            DEFAULT.fontSize["normal"]
+            DEFAULT.fontSize['normal'],
           )
         ]
       }px;">${tableOfContentsList[i].text}</button></dd>`;
@@ -181,18 +181,18 @@ window.onload = function () {
   // 初始化
   function initTableOfContentsList() {
     if (window.innerWidth <= DEFAULT.displayWidth) {
-      tableOfContentsData.tableOfContentsBar.style.display = "none";
-      $(".main").style.borderRight = "0px";
+      tableOfContentsData.tableOfContentsBar.style.display = 'none';
+      $('.main').style.borderRight = '0px';
       return;
     }
-    $(".main").style.borderRight = "1px solid var(--main-border-color)";
-    tableOfContentsData.tableOfContentsBar.style.display = "block";
+    $('.main').style.borderRight = '1px solid var(--main-border-color)';
+    tableOfContentsData.tableOfContentsBar.style.display = 'block';
     const tempHeight = window.innerHeight;
 
     if (status.historyViewHeight !== tempHeight) {
       status.historyViewHeight = tempHeight;
       status.maxTableOfContentsCount = Math.floor(
-        (status.historyViewHeight - DEFAULT.surplusHeight) / DEFAULT.lineHeight
+        (status.historyViewHeight - DEFAULT.surplusHeight) / DEFAULT.lineHeight,
       );
       const maxTableOfContentsHeight =
         status.maxTableOfContentsCount * DEFAULT.lineHeight;
@@ -225,11 +225,11 @@ window.onload = function () {
       // 给目录子项绑定事件
       tableOfContentsData.tableOfContentsDD.forEach((curr, index) => {
         curr.addEventListener(
-          "click",
+          'click',
           function (e) {
             status.hasStopSetHighlight = true;
-            $(".tableOfContents .on").classList.remove("on");
-            tableOfContentsData.tableOfContentsDD[index].classList.add("on");
+            $('.tableOfContents .on').classList.remove('on');
+            tableOfContentsData.tableOfContentsDD[index].classList.add('on');
             status.historyOnIndex = index;
             const currTop =
               tableOfContentsData.tableOfContentsList[
@@ -242,10 +242,10 @@ window.onload = function () {
               parseInt(document.documentElement.scrollTop),
               currTop + window.pageYOffset - DEFAULT.toTopDistance,
               5,
-              fun
+              fun,
             );
           },
-          false
+          false,
         );
       });
     }
@@ -259,10 +259,10 @@ window.onload = function () {
       return;
     }
 
-    const current = $(".tableOfContents .on");
+    const current = $('.tableOfContents .on');
     const onIndex = [].indexOf.call(
       tableOfContentsData.tableOfContentsDD,
-      current
+      current,
     ); // 当前高亮索引
     const tableOfContentsLength =
       tableOfContentsData.tableOfContentsList.length;
@@ -271,7 +271,7 @@ window.onload = function () {
 
     let nextOnIndex = onIndex; // 滚动后高亮索引
     if (current) {
-      current.classList.remove("on");
+      current.classList.remove('on');
     }
 
     if (
@@ -284,14 +284,14 @@ window.onload = function () {
       status.historyOnIndex = tableOfContentsLength - 1;
       tableOfContentsData.tableOfContentsDD[
         status.historyOnIndex
-      ].classList.add("on");
+      ].classList.add('on');
     } else if (document.scrollingElement.scrollTop <= status.firstDDTop) {
       // 顶部
-      tableOfContentsData.tableOfContentsDD[0].classList.add("on");
+      tableOfContentsData.tableOfContentsDD[0].classList.add('on');
       status.historyOnIndex = 0;
     } else {
       // 中间：使用缓存，直接从上一次索引(onIndex)位置开始查找
-      if (status.direction === "bottom") {
+      if (status.direction === 'bottom') {
         while (nextOnIndex < tableOfContentsLength) {
           const currTop =
             tableOfContentsData.tableOfContentsList[
@@ -322,7 +322,7 @@ window.onload = function () {
           ? 0
           : nextOnIndex;
       status.historyOnIndex = nextOnIndex;
-      tableOfContentsData.tableOfContentsDD[nextOnIndex].classList.add("on");
+      tableOfContentsData.tableOfContentsDD[nextOnIndex].classList.add('on');
     }
   }
 
@@ -357,7 +357,7 @@ window.onload = function () {
   // }
 
   function initStyle() {
-    const importStyle = document.createElement("style");
+    const importStyle = document.createElement('style');
     const cssText = document.createTextNode(`/* 文章目录 */
     #tableOfContents-bar {
       top: 0;
@@ -452,7 +452,7 @@ window.onload = function () {
       color: var(--a-color);
     }`);
     importStyle.appendChild(cssText);
-    const heads = document.getElementsByTagName("head");
+    const heads = document.getElementsByTagName('head');
     if (heads.length) {
       heads[0].appendChild(importStyle);
     } else {
@@ -468,7 +468,7 @@ window.onload = function () {
    */
   function createElement(str) {
     var parser = new DOMParser();
-    return parser.parseFromString(str, "text/html").body.firstChild;
+    return parser.parseFromString(str, 'text/html').body.firstChild;
   }
 
   /**
@@ -496,11 +496,11 @@ window.onload = function () {
   // 页面的滚动方向
   function currentScrollDirection() {
     const pageYOffset = window.pageYOffset;
-    let direction = "bottom";
+    let direction = 'bottom';
     if (pageYOffset < status.historyPageYOffset) {
-      direction = "top";
+      direction = 'top';
     } else {
-      direction = "bottom";
+      direction = 'bottom';
     }
     status.historyPageYOffset = pageYOffset;
     return direction;
@@ -556,10 +556,10 @@ window.onload = function () {
    */
   function getStrWidthSize(content, width, fontSize) {
     var resultWidth,
-      div = document.createElement("div");
+      div = document.createElement('div');
     div.style.fontSize = `${fontSize}px`;
-    div.style.visibility = "hidden";
-    div.style.display = "inline-block";
+    div.style.visibility = 'hidden';
+    div.style.display = 'inline-block';
     if (typeof div.textContent !== undefined) {
       div.textContent = content;
     } else {
@@ -569,9 +569,9 @@ window.onload = function () {
     resultWidth = parseFloat(window.getComputedStyle(div).width);
     document.body.removeChild(div);
     if (resultWidth > width) {
-      return "small";
+      return 'small';
     } else {
-      return "normal";
+      return 'normal';
     }
   }
 };

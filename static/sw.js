@@ -1,13 +1,13 @@
 const options = {
   workboxURL:
-    "https://storage.googleapis.com/workbox-cdn/releases/6.1.1/workbox-sw.js",
+    'https://storage.googleapis.com/workbox-cdn/releases/6.1.1/workbox-sw.js',
   config: {
     debug: false,
   },
   cacheOptions: {
-    cacheId: "lipk.org-cache",
-    directoryIndex: "/",
-    revision: "X2d1tbJf1olY",
+    cacheId: 'lipk.org-cache',
+    directoryIndex: '/',
+    revision: 'X2d1tbJf1olY',
   },
   clientsClaim: true,
   skipWaiting: true,
@@ -15,33 +15,33 @@ const options = {
   offlineAnalytics: false,
   preCaching: [
     {
-      revision: "X2d1tbJf1olY",
-      url: "/?standalone=true",
+      revision: 'X2d1tbJf1olY',
+      url: '/?standalone=true',
     },
   ],
   runtimeCaching: [
     {
-      urlPattern: "/_lipk.org/",
-      handler: "CacheFirst",
-      method: "GET",
+      urlPattern: '/_lipk.org/',
+      handler: 'CacheFirst',
+      method: 'GET',
       strategyPlugins: [],
     },
     {
-      urlPattern: "/",
-      handler: "NetworkFirst",
-      method: "GET",
+      urlPattern: '/',
+      handler: 'NetworkFirst',
+      method: 'GET',
       strategyPlugins: [],
     },
   ],
   offlinePage: null,
-  pagesURLPattern: "/",
-  offlineStrategy: "NetworkFirst",
+  pagesURLPattern: '/',
+  offlineStrategy: 'NetworkFirst',
 };
 
 importScripts(options.workboxURL);
 
 const getProp = (obj, prop) => {
-  return prop.split(".").reduce((p, c) => p[c], obj);
+  return prop.split('.').reduce((p, c) => p[c], obj);
 };
 
 const initWorkbox = (workbox, options) => {
@@ -74,53 +74,53 @@ const initWorkbox = (workbox, options) => {
   }
 };
 
-const workboxExtensions = (workbox, options) => { };
+const workboxExtensions = (workbox, options) => {};
 
 const precacheAssets = (workbox, options) => {
   if (options.preCaching.length) {
     workbox.precaching.precacheAndRoute(
       options.preCaching,
-      options.cacheOptions
+      options.cacheOptions,
     );
   }
 };
 
-const cachingExtensions = (workbox, options) => { };
+const cachingExtensions = (workbox, options) => {};
 
 const runtimeCaching = (workbox, options) => {
   const requestInterceptor = {
     requestWillFetch({ request }) {
-      if (request.cache === "only-if-cached" && request.mode === "no-cors") {
+      if (request.cache === 'only-if-cached' && request.mode === 'no-cors') {
         return new Request(request.url, {
           ...request,
-          cache: "default",
-          mode: "no-cors",
+          cache: 'default',
+          mode: 'no-cors',
         });
       }
       return request;
     },
     fetchDidFail(ctx) {
       ctx.error.message =
-        "[workbox] Network request for " +
+        '[workbox] Network request for ' +
         ctx.request.url +
-        " threw an error: " +
+        ' threw an error: ' +
         ctx.error.message;
-      console.error(ctx.error, "Details:", ctx);
+      console.error(ctx.error, 'Details:', ctx);
     },
     handlerDidError(ctx) {
       ctx.error.message =
         `[workbox] Network handler threw an error: ` + ctx.error.message;
-      console.error(ctx.error, "Details:", ctx);
+      console.error(ctx.error, 'Details:', ctx);
       return null;
     },
   };
 
   for (const entry of options.runtimeCaching) {
     const urlPattern = new RegExp(entry.urlPattern);
-    const method = entry.method || "GET";
+    const method = entry.method || 'GET';
 
     const plugins = (entry.strategyPlugins || []).map(
-      (p) => new (getProp(workbox, p.use))(...p.config)
+      (p) => new (getProp(workbox, p.use))(...p.config),
     );
 
     plugins.unshift(requestInterceptor);
@@ -149,12 +149,12 @@ const offlinePage = (workbox, options) => {
             event,
           })
           .catch(() => caches.match(options.offlinePage));
-      }
+      },
     );
   }
 };
 
-const routingExtensions = (workbox, options) => { };
+const routingExtensions = (workbox, options) => {};
 
 if (workbox) {
   initWorkbox(workbox, options);
