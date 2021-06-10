@@ -1,0 +1,56 @@
+{{ partial "header.html" . }}
+<div class="index wrapper">
+    <main class="index">
+        <aside class="index">
+            <div id="logo">
+                <img src="https://lipk.oss-accelerate.aliyuncs.com/images/logo.png" alt="我的头像" width="121" height="121">
+                <!-- <img src="https://lipk.oss-accelerate.aliyuncs.com/images/holiday.jpg" alt="假日快乐"> -->
+                <div id="name">李鹏坤</div>
+            </div>
+            <ul id="info">
+                <li>
+                  {{ partial "svg/fa-user.svg" . }}<span class="info-text">执手对影成双</span>
+                </li>
+                <li>
+                  {{ partial "svg/fa-envelope.svg" . }}<span class="info-text"><a href="mailto:mail@lipk.org">mail@lipk.org</a></span>
+                </li>
+                <li>
+                  {{ partial "svg/fa-map-marker.svg" . }}<span class="info-text">江苏 · 苏州</span>
+                </li>
+                <li>
+                  {{ partial "svg/fa-home.svg" . }}<span class="info-text">广东 · 中山</span>
+                </li>
+            </ul>
+        </aside>
+        <article class="index">
+            {{ .Content }}
+        </article>
+        <footer class="index">
+            <script async type="module" src="/js/main.js"></script>
+            <div class="copyright">
+              <span>&copy;{{ .Site.Params.since }}-{{ now.Format "2006"}} {{ .Site.Params.author }}。</span>
+              <br />
+              {{ partial "svg/version.svg" . }}
+              <a class="svg-link" href="https://github.com/zsdycs" target="_blank" rel="noopener noreferrer"
+                title="zsdycs | Github">
+                {{ partial "svg/fa-github.svg" . }}
+              </a>
+              <a class="svg-link" href="https://travellings.now.sh/" target="_blank" rel="noopener noreferrer"
+                title="开往-友链接力">
+                {{ partial "svg/travelling.svg" . }}
+              </a>
+              <br />
+              <div class="beian">
+                  <img src="https://lipk.oss-accelerate.aliyuncs.com/images/beian.png" alt="公网安备" width="17" height="17" />
+                  <a target="_blank" rel="noopener noreferrer"
+                      href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44200002444254">
+                      粤公网安备 44200002444254 号
+                  </a>
+              </div>
+            </div>
+        </footer>
+    </main>
+</div>
+</body>
+
+</html>

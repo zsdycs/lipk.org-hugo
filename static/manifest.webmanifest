@@ -1,0 +1,29 @@
+{
+  "name": "lipk.org",
+  "short_name": "lipk.org",
+  "description": "lipk.org PWA 应用",
+  "start_url": ".",
+  "orientation": "any",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "icons": [{
+      "src": "/img/android-chrome-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/img/android-chrome-320x320.png",
+      "sizes": "320x320",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/img/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

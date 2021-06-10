@@ -1,0 +1,152 @@
+/*
+  <div id="loading">
+    <div class="container animation-2">
+      <div class="shape shape1"></div>
+      <div class="shape shape2"></div>
+      <div class="shape shape3"></div>
+      <div class="shape shape4"></div>
+    </div>
+  </div>
+*/
+
+#loading {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 75px;
+  margin: auto;
+}
+
+.container {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.container.animation-2,
+.container.animation-4 {
+  transform: rotate(10deg);
+}
+
+.container .shape {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 1px;
+}
+
+.container.animation-2 .shape {
+  border-radius: 5px;
+}
+
+.container.animation-2 {
+  animation: rotation 1s infinite;
+}
+
+.container .shape.shape1 {
+  left: 0;
+  background-color: #5c6bc0;
+}
+
+.container .shape.shape2 {
+  right: 0;
+  background-color: #8bc34a;
+}
+
+.container .shape.shape3 {
+  bottom: 0;
+  background-color: #ffb74d;
+}
+
+.container .shape.shape4 {
+  right: 0;
+  bottom: 0;
+  background-color: #f44336;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animation-2 .shape1 {
+  animation: animation2shape1 0.5s ease 0s infinite alternate;
+}
+
+@keyframes animation2shape1 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(20px, 20px);
+  }
+}
+
+.animation-2 .shape2 {
+  animation: animation2shape2 0.5s ease 0s infinite alternate;
+}
+
+@keyframes animation2shape2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(-20px, 20px);
+  }
+}
+
+.animation-2 .shape3 {
+  animation: animation2shape3 0.5s ease 0s infinite alternate;
+}
+
+@keyframes animation2shape3 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(20px, -20px);
+  }
+}
+
+.animation-2 .shape4 {
+  animation: animation2shape4 0.5s ease 0s infinite alternate;
+}
+
+@keyframes animation2shape4 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(-20px, -20px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    align-content: flex-start;
+  }
+
+  .content .column {
+    width: calc(50% - 30px);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content {
+    align-content: flex-start;
+  }
+
+  .content .column {
+    width: calc(100% - 30px);
+  }
+}
