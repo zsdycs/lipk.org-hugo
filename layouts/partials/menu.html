@@ -1,9 +1,0 @@
-<nav class="menu">
-  <ul>
-    {{ $currentPage := . }}
-    {{ range (default .Site.Menus.main (index .Site.Menus ($.Scratch.Get "section"))) }}
-    <li{{ if eq .URL $currentPage.RelPermalink }} class="active" {{ end }}><a href="{{ .URL }}">{{ .Name }}</a></li>
-    {{ end }}
-    <li><button id="modeTag" onclick="mode()">深色</button></li>
-  </ul>
-</nav>
