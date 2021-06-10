@@ -38,7 +38,7 @@ api.github.com 部分 CDN 服务器被墙，导致请求失败。
 
 ---
 
-### Q：与 Utterances 比较，[Beaudar](http://beaudar.lipk.org) 增加了什么
+### Q：与 Utterances 比较，Beaudar 增加了什么
 
 - 中文界面，拉近距离增加评论友好性。
   - 是 Utterances 的中文版。
@@ -66,6 +66,7 @@ api.github.com 部分 CDN 服务器被墙，导致请求失败。
   - 状态保持在浏览器 `sessionStorage` 中关闭页面会重新加载。
 - 分支选项，增加仓库分支项用于校验。
   - 获取公开库指定分支代码，校验 beaudar.json 配置，默认 'master'。
+- ……
 
 ---
 
@@ -86,14 +87,15 @@ api.github.com 部分 CDN 服务器被墙，导致请求失败。
  *   'github-light',
  *   'github-dark-orange',
  *   'preferred-color-scheme'
+ *   ……
  * ]
  */
-var message = {
+const message = {
   type: 'set-theme',
   theme: 'github-light'
 };
-var nowDarkmode = window.localStorage.getItem('mode');
-var beaudar = document.querySelector('iframe');
+
+const beaudarIframe = document.querySelector('iframe');
 // 与 beaudar 通信
-beaudar.contentWindow.postMessage(message, 'https://beaudar.lipk.org');
+beaudarIframe.contentWindow.postMessage(message, 'https://beaudar.lipk.org');
 ```
