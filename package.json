@@ -1,10 +1,10 @@
 {
   "name": "lipk.org",
   "scripts": {
-    "start": "node version.js && opener http://localhost:1313 && hugo server --minify --disableFastRender --ignoreCache --noHTTPCache --bind 0.0.0.0",
-    "predeploy": "node version.js && hugo --minify && echo lipk.org > docs/CNAME && gulp",
+    "start": "npm run version && opener http://localhost:1313 && hugo server --minify --disableFastRender --ignoreCache --noHTTPCache --bind 0.0.0.0",
+    "predeploy": "npm run version && hugo --minify && echo lipk.org > docs/CNAME && gulp",
     "deploy": "gh-pages -d docs",
-    "build": "node version.js && hugo --minify && gulp",
+    "build": "npm run version && hugo --minify && gulp",
     "version": "node version.js"
   },
   "repository": {
