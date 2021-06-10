@@ -11,12 +11,12 @@
             if (e.target.nodeName.toUpperCase() != 'BODY') return;
             var url = false;
             {{ if .PrevInSection }}
-              if (e.which === 37) {  // Left arrow
+              if (e.key === 'ArrowLeft') {  // Left arrow
                 url = '{{ .PrevInSection.RelPermalink }}';
               }
             {{ end }}
             {{ if .NextInSection }}
-              if (e.which === 39) {  // Right arrow
+              if (e.key === 'ArrowRight') {  // Right arrow
                 url = '{{ .NextInSection.RelPermalink }}';
               }
             {{ end }}
