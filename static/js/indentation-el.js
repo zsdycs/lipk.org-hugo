@@ -15,7 +15,7 @@
             tag.childNodes[j + 1].textContent =
               '  ' +
               tag.childNodes[j + 1].textContent.substring(
-                1,
+                0,
                 tag.childNodes[j + 1].textContent.length,
               );
           }
