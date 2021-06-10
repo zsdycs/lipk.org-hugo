@@ -4,7 +4,7 @@ date: '2020-06-08'
 slug: 'beauder-qa'
 ---
 
-### Q：api.github.com 请求失败
+### Q：无法从 GitHub 获取数据
 
 api.github.com 部分 CDN 服务器被墙，导致请求失败。
 解决思路，PC 端 host 重定向，移动端搭梯子。这里只提供 host 重定向的解决步骤。
