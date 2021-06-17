@@ -4,6 +4,14 @@ date: '2021-06-11'
 slug: 'use-hooks-and-context-instead-of-redux-(typescript-version)'
 ---
 
+## 版本信息
+
+- node：14.17.0
+- react：17.0.2
+- typescript：4.3.2
+
+## 正文
+
 在上一篇文写道，我如何在严格的 **ESLint** 配置下夹缝生存。
 
 这一篇就是我在不使用 **Redux** 且在严格的 **ESLint** 配置下夹缝生存。
@@ -69,7 +77,7 @@ export { store, StateProvider };
 - [LogRocket | React Hooks vs. Redux: Do Hooks and Context replace Redux?](https://blog.logrocket.com/use-hooks-and-context-not-react-and-redux/)
 - [掘金 | 用 useContext + useReducer 替代 redux](https://juejin.cn/post/6844903854807482382)
 
-### 如何使用？
+## 如何使用？
 
 ```Typescript
 // index.tsx
