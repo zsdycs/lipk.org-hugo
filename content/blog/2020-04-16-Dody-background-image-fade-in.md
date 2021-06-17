@@ -66,7 +66,7 @@ const mode = new Darkmode(options);
 mode.showWidget();
 
 // body 背景 延迟载入
-document.body.style.background = 'url(https://lipk.oss-accelerate.aliyuncs.com/images/your-background-image.png)';
+document.body.style.background = 'url(http://xxx)';
 document.body.style.backgroundRepeat = 'repeat';
 ```
 

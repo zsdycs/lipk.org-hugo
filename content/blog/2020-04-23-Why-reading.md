@@ -5,7 +5,7 @@ slug: 'why-reading'
 pictureView: [
   {
     title: '这就是我当时看到的银杏树',
-    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/2020-04-23-why-reading.jpg',
+    src: 'https://lipk.oss-accelerate.aliyuncs.com/images/2020-04-23-Why-reading.jpg',
   }
 ]
 ---
@@ -18,7 +18,7 @@ pictureView: [
 如今我还记得 3 年前世界读书日，我在路过教学楼时，被教学楼前的银杏树惊艳。
 
 <figure class="image">
-  <img src="https://lipk.oss-accelerate.aliyuncs.com/images/2020-04-23-why-reading.jpg" alt="这就是我当时看到的银杏树" title="这就是我当时看到的银杏树" style="width: 50%;">
+  <img src="https://lipk.oss-accelerate.aliyuncs.com/images/2020-04-23-Why-reading.jpg" alt="这就是我当时看到的银杏树" title="这就是我当时看到的银杏树" style="width: 50%;">
   <figcaption class="image-description">这就是我当时看到的银杏树</figcaption>
 </figure>
 
