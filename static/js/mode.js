@@ -16,16 +16,19 @@
     'photon-dark': 'github-light',
   };
 
-  // 设置 mode 默认值
-  if (sessionStorage.getItem('mode') == null) {
-    const hours = new Date();
-    // 如果时间是晚上 18 点到早上 6 点，自动黑夜
-    if (hours.getHours() >= 18 || hours.getHours() <= 6) {
-      sessionStorage.setItem('mode', 'github-dark');
-    } else {
-      sessionStorage.setItem('mode', 'github-light');
+  // 设置 mode 初始值
+  const setInitialMode = () => {
+    if (sessionStorage.getItem('mode') == null) {
+      const hours = new Date();
+      // 如果时间是晚上 18 点到早上 6 点，自动黑夜
+      if (hours.getHours() >= 18 || hours.getHours() <= 6) {
+        sessionStorage.setItem('mode', 'github-dark');
+      } else {
+        sessionStorage.setItem('mode', 'github-light');
+      }
     }
-  }
+  };
+  setInitialMode();
 
   // body 背景 延迟载入
   // document.body.style.background = 'url(https://lipk.oss-accelerate.aliyuncs.com/images/geometry.png)';
