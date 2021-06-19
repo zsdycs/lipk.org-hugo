@@ -1,7 +1,7 @@
 ---
 title: '使用 Hooks 和 Context 替代 Redux（Typescript 版）'
 date: '2021-06-11'
-slug: 'use-hooks-and-context-instead-of-redux-(typescript-version)'
+slug: 'use-hooks-and-context-instead-of-redux-typescript-version'
 ---
 
 ## 版本信息
