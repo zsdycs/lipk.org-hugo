@@ -67,7 +67,6 @@
       <div class="copyright">
         <span class="slogan">{{ .Site.Params.slogan }}</span>
         <span>&copy;{{ .Site.Params.since }}-{{ now.Format "2006"}} {{ .Site.Params.author }}。</span>
-        <br />
         {{ partial "svg/version.svg" . }}
         <a class="svg-link" href="https://github.com/zsdycs" target="_blank" rel="noopener noreferrer"
           title="zsdycs | Github">
@@ -76,14 +75,13 @@
         <a class="svg-link" href="https://travellings.link/" target="blank" title="开往-友链接力">
           {{ partial "svg/travelling.svg" . }}
         </a>
-        <br />
-        <div class="beian">
+        <span class="beian">
             <img src="https://lipk.oss-accelerate.aliyuncs.com/images/beian.png" />
             <a target="_blank" rel="noopener noreferrer"
                 href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44200002444254">
                 粤公网安备 44200002444254 号
             </a>
-        </div>
+        </span>
       </div>
       </footer>
   {{ if not .IsHome }}
