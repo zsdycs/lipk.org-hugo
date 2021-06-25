@@ -1,5 +1,5 @@
 ---
-title: '碎片の遇见'
+title: '碎片之遇见'
 date: '2020-01-06'
 slug: 'pieces-the-meet'
 ---
