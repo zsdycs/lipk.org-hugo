@@ -112,6 +112,7 @@ main.index > * {
 .index article {
   display: flex;
   flex-direction: column;
+  padding-bottom: 50px;
   line-height: 1.5;
   text-align: left;
   background-color: var(--article-index-bg-color);
@@ -127,7 +128,6 @@ main.index > * {
   left: 0;
   width: 100%;
   padding-bottom: 10px;
-  background: var(--wrapper-bg-color);
 }
 
 @media only screen and (max-width: 668px) {
@@ -139,5 +139,11 @@ main.index > * {
     --safe-bottom: env(safe-area-inset-bottom);
 
     margin: max(25px, var(--safe-top)) 25px max(25px, var(--safe-bottom));
+  }
+}
+
+@media only screen and (max-height: 440px) {
+  .index footer {
+    background: var(--wrapper-bg-color);
   }
 }
