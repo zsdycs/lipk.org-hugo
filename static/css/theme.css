@@ -24,10 +24,10 @@
   --fixed-btn-bg-color: #f6f8fa;
   --fixed-btn-border-color: #e1e4e8;
   --eof-color: #777;
-  --wrapper-bg-color: #efefef;
+  --wrapper-bg-color: #efefef70;
   --selection-bg-color: #fefecc;
   --aside-hover-bg-color: #efefef;
-  --min-masthead-bg-color: #f6f8fa;
+  --min-masthead-bg-color: #f6f8fa70;
   --min-menu-a-border-color: #e1e4e8;
   --list-bg-color: #ececec;
 }
@@ -56,10 +56,10 @@
   --fixed-btn-bg-color: #181818;
   --fixed-btn-border-color: #343434;
   --eof-color: #666;
-  --wrapper-bg-color: #181818;
+  --wrapper-bg-color: #18181870;
   --selection-bg-color: #27673d;
   --aside-hover-bg-color: #181818;
-  --min-masthead-bg-color: #202020;
+  --min-masthead-bg-color: #20202070;
   --min-menu-a-border-color: #343434;
   --list-bg-color: #2b2b2b;
 }
@@ -88,10 +88,10 @@
   --fixed-btn-bg-color: #222;
   --fixed-btn-border-color: #4e4c4b;
   --eof-color: #6f6e6e;
-  --wrapper-bg-color: #222;
+  --wrapper-bg-color: rgba(34, 34, 34, 0.45);
   --selection-bg-color: #f27052fc;
   --aside-hover-bg-color: #212021;
-  --min-masthead-bg-color: #222;
+  --min-masthead-bg-color: rgba(34, 34, 34, 0.45);
   --min-menu-a-border-color: #4e4c4b;
   --list-bg-color: #1d1a21;
 }
@@ -120,10 +120,10 @@
   --fixed-btn-bg-color: #182030;
   --fixed-btn-border-color: #1d1f21;
   --eof-color: #6f6e6e;
-  --wrapper-bg-color: #14171c;
+  --wrapper-bg-color: #14171c70;
   --selection-bg-color: #4183c4fc;
   --aside-hover-bg-color: #14171c;
-  --min-masthead-bg-color: #182030;
+  --min-masthead-bg-color: #18203070;
   --min-menu-a-border-color: #272a2c;
   --list-bg-color: #21262f;
 }
@@ -152,10 +152,10 @@
   --fixed-btn-bg-color: #06272c;
   --fixed-btn-border-color: #10444d;
   --eof-color: #6f6e6e;
-  --wrapper-bg-color: #021012;
+  --wrapper-bg-color: #02101270;
   --selection-bg-color: #26d0e7cf;
   --aside-hover-bg-color: #021012;
-  --min-masthead-bg-color: #06272c;
+  --min-masthead-bg-color: #06272c70;
   --min-menu-a-border-color: #10444d;
   --list-bg-color: #042025;
 }
@@ -184,10 +184,10 @@
   --fixed-btn-bg-color: #182030;
   --fixed-btn-border-color: #38383d;
   --eof-color: #6f6e6e;
-  --wrapper-bg-color: #232326;
+  --wrapper-bg-color: #23232670;
   --selection-bg-color: #45a1ff;
   --aside-hover-bg-color: #232326;
-  --min-masthead-bg-color: #182030;
+  --min-masthead-bg-color: #18203070;
   --min-menu-a-border-color: #38383d;
   --list-bg-color: #121214;
 }

@@ -635,6 +635,7 @@ iframe.billibili {
     padding-bottom: env(safe-area-inset-bottom);
     margin: 0;
     text-align: center;
+    backdrop-filter: saturate(180%) blur(5px);
 
     /* transition: all .5s ease; */
   }
