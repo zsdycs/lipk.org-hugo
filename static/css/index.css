@@ -145,6 +145,7 @@ main.index > * {
 @media only screen and (max-height: 440px) {
   .index footer {
     background: var(--wrapper-bg-color);
+    -webkit-backdrop-filter: saturate(180%) blur(5px);
     backdrop-filter: saturate(180%) blur(5px);
   }
 }
