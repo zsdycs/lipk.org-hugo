@@ -447,7 +447,8 @@ th {
     border-top: 1px solid var(--main-border-color);
   }
 
-  .menu button {
+  .menu button,
+  .masthead .menu a {
     background: linear-gradient(var(--min-masthead-bg-color), var(--min-masthead-bg-color));
   }
 
