@@ -38,7 +38,7 @@ const minutes =
   date.getUTCMinutes() >= 10
     ? date.getUTCMinutes()
     : `0${date.getUTCMinutes().toString()}`;
-versionStr = `<svg class="version" width="150" height="22" viewBox="0 0 120 22" xmlns="http://www.w3.org/2000/svg">
+versionStr = `<svg class="version" width="150" height="22" viewBox="0 0 150 22" xmlns="http://www.w3.org/2000/svg">
   <title>Last update time of this project</title>
   <desc>
     Time: ${year}-${month}-${day} ${hours}:${minutes} GMT
