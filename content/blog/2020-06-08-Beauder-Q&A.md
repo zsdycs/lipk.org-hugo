@@ -98,3 +98,38 @@ const beaudarIframe = document.querySelector('iframe');
 // 与 beaudar 通信
 beaudarIframe.contentWindow.postMessage(message, 'https://beaudar.lipk.org');
 ```
+
+---
+
+### Q：评论显示的分页逻辑
+
+固定每页 10 条数据。
+
+```
+进入页面
+│
+└─ 加载第一页 + 加载最后一页
+                    └─ 最后一页少于 3 条数据，加载倒数第二页
+```
+
+由于 [issue 获取的 API](https://docs.github.com/cn/rest/reference/issues) 不能设置倒序和顺序（默认：顺序），所以“倒序显示”是由前端处理的。
+
+**顺序显示**:
+
+```
+<旧评论> 总数 : 10
+
+<加载更多……>
+
+<新评论> 总数 : 3 ~ 12
+```
+
+**倒序显示**:
+
+```
+<新评论> 总数 : 3 ~ 12
+
+<加载更多……>
+
+<旧评论> 总数 : 10
+```
