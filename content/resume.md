@@ -29,7 +29,7 @@ pictureView: [
 
 - 2018 . 09 ~ 2019 . 04 **用友网络科技股份（苏州）有限公司**，Web 前端开发实习生。
   - 接触到的开发模式有： React + 钉耙的前端开发、Express + MongoDB + UI 框架 Semantic UI + Vue.js 搭建动态站点的全栈开发，使用 Git 进行协同办公。
-- 2019 . 06 ~ 至今 **方舟信息技术（苏州）有限公司**，Web 前端开发工程师。
+- 2019 . 06 ~ 2021 . 10 **方舟信息技术（苏州）有限公司**，Web 前端开发工程师。
   - 参与开发项目的开发模式有： Angular + Ant Design、Angular + 公司内部框架、Ruby + Rails + JQ + PostgreSQL 以及 Vue + Ant Design 等，使用 Git 进行协同办公。
 
 # print-page-break1 { .print-page-break }
