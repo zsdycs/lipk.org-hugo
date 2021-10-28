@@ -79,7 +79,7 @@
   // When enabled, will trim trailing whitespace when you save a file.
   "files.trimTrailingWhitespace": true,
   "files.associations": {
-    "*.html": "go-template"
+    "*.html": "html"
   },
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",

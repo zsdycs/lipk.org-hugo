@@ -1,6 +1,6 @@
 baseurl: 'https://lipk.org'
 languageCode: zh-cn
-title: lipk • 李鹏坤
+title: 未命名的站点名称
 enableEmoji: true
 disableRSS: false
 disableKinds:
@@ -78,14 +78,14 @@ menu:
 params:
   description: lipk.org; Personal website of Pengkun Lee;
   since: '2018'
-  slogan: 执手相看，对影成双
-  title: 执手对影成双
-  author: 李鹏坤
+  slogan: 这里是一个口号
+  title: 标题名称
+  author: 作者名称
   githubContentURL: 'http://github.com/zsdycs/lipk.org/edit/master/content/'
   edit: 编辑
   license: 版权
 author:
-  blog: 李鹏坤
+  blog: 作者名称
 markup:
   defaultMarkdownHandler: goldmark
   blackFriday:
