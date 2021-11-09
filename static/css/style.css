@@ -441,16 +441,16 @@ h3:hover .anchor {
 
 #eof::before {
   margin-right: 10px;
-  content: '/*';
+  content: '';
 }
 
 #eof::after {
   margin-left: 10px;
-  content: '*/';
+  content: '';
 }
 
 #eof {
-  margin: 2em auto;
+  /* margin: 2em auto; */
   font-weight: 100;
   line-height: 1em;
   text-align: center;
