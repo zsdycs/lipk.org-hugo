@@ -2,7 +2,7 @@
   <html>
  */
 html {
-  filter: grayscale(1);
+  /* filter: grayscale(1); */
   box-sizing: border-box;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
