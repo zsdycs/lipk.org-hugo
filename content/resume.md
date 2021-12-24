@@ -85,11 +85,12 @@ pictureView: [
 
 ## 计算机水平
 
-- 开发工具：VS Code、VS、DW、Axure、~~Eclipse~~。
-- 框架：Angular、Vue、React、Ant Design、Express、Semantic UI 等。
-- 编程语言：JavaScript、TypeScript、HTML、CSS、Sass、~~C#、JAVA、 PHP、 C~~ 。
-- 应用程序：MySQL、SQL Server、Oracle、MongoDB 等，NodeJs、Git、微软三件套、PS、AE、AU、PR。
-- 操作系统：Windows、MacOS、CentOS。
+- 开发工具：VS Code ~~VS、DW、Axure、Eclipse~~。
+- 框架：Angular、Vue、React、Express、Koa、Ant Design、Semantic UI 等以下编程语言实现的框架。
+- 编程语言：JavaScript、TypeScript、NodeJs、HTML、CSS、Sass ~~C#、JAVA、 PHP、 C~~。
+- 数据库：MongoDB ~~MySQL、SQL Server、Oracle~~。
+- 应用软件：Git、SVN、微软三件套、PS、AE、AU、PR 等。
+- 操作系统：Windows、MacOS、Linux。
 
 ## 荣誉奖励
 
