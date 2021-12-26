@@ -1,7 +1,8 @@
 {
   "name": "lipk.org",
   "scripts": {
-    "start": "npm run version && opener http://localhost:1313 && npm run devServer",
+    "start": "npm run open-browser && npm run devServer",
+    "open-browser": "opener http://localhost:1313",
     "devServer": "hugo server --minify --disableFastRender --ignoreCache --noHTTPCache --bind 0.0.0.0 --config devConfig.yaml",
     "predeploy": "npm run version && hugo --minify && echo lipk.org > docs/CNAME && gulp",
     "deploy": "gh-pages -d docs",
