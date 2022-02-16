@@ -30,7 +30,8 @@
       <section id="beaudar" class="comments"></section>
       {{ end }}
 
-      <script async type="module" src="/js/main.js"></script>
+      <script async type="module" src="/js/main-async.js"></script>
+      <script type="module" src="/js/main.js"></script>
       {{ if .Params.pictureView }}
         <script async type="module">
           import PhotoSwipeLightbox from '/js/photoswipe-lightbox.esm.min.js';

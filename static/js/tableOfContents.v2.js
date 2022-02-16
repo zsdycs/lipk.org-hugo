@@ -1,5 +1,4 @@
-window.onload = function () {
-  'use strict';
+document.addEventListener('DOMContentLoaded', function () {
   // ************************************************** 变量 **************************************************
   const $ = document.querySelector.bind(document);
   const $$ = document.querySelectorAll.bind(document);
@@ -574,4 +573,4 @@ window.onload = function () {
       return 'normal';
     }
   }
-};
+});
