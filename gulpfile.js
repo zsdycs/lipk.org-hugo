@@ -51,6 +51,7 @@ function minify_html(done) {
 }
 
 function minify_js(done) {
+  // main-async.js
   gulp
     .src([
       './dist/js/mode.js',
@@ -60,10 +61,26 @@ function minify_js(done) {
       './dist/js/fix-footnote.js',
       './dist/js/checkbox-list.js',
       './dist/js/hide-menu.js',
-      './dist/js/tableOfContents.v2.js',
       './dist/js/beaudar.js',
       './dist/js/load-typekit.js',
     ])
+    .pipe(
+      gulpBabel({
+        presets: ['@babel/preset-env'],
+      }),
+    )
+    .pipe(gulpUglify())
+    .on('error', function (err) {
+      gulpUtil.log(gulpUtil.colors.red('[Error]'), err.toString());
+    })
+    .pipe(gulpConcat('main-async.js'))
+    .pipe(gulp.dest('./dist/js'))
+    .pipe(gulpConnect.reload());
+  done();
+
+  // main.js
+  gulp
+    .src(['./dist/js/tableOfContents.v2.js'])
     .pipe(
       gulpBabel({
         presets: ['@babel/preset-env'],
