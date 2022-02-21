@@ -9,7 +9,12 @@ button {
     'Source Han Serif',
     'Songti SC',
     'Microsoft YaHei',
-    serif;
+    'Times New Roman',
+    'times',
+    serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol';
 }
 
 code {

@@ -55,7 +55,6 @@ function minify_js(done) {
   gulp
     .src([
       './dist/js/mode.js',
-      './dist/js/indentation-el.js',
       './dist/js/math-code.js',
       './dist/js/right-quote.js',
       './dist/js/fix-footnote.js',
