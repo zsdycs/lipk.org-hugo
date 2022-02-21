@@ -81,6 +81,19 @@ main {
 /* 组织内容
   <p> <hr> <pre> <blockquote> <ol> <ul> <li> <dl> <dt> <dd> <figure> <figcaption> <div>
  */
+p {
+  hyphens: auto;
+  line-height: 1.5;
+  text-align: justify;
+  text-indent: 2em;
+  margin-block-start: 12px !important;
+  margin-block-end: 24px !important;
+}
+
+pre {
+  margin: 0;
+}
+
 blockquote {
   padding: 0 2em;
   margin: 1em 0;
@@ -271,18 +284,20 @@ button {
  */
 
 /* 选择器 class id  */
+.list .summary {
+  text-indent: 0;
+}
 
 .anchor {
-  display: none;
+  margin-right: -24px;
+  opacity: 0;
+  transition: opacity 0.2s linear;
 }
 
 h1:hover .anchor,
 h2:hover .anchor,
 h3:hover .anchor {
-  display: inline-block;
-  width: 23px;
-  margin-right: -23px;
-  transform: initial;
+  opacity: 1;
 }
 
 .anchor .fa-svg {

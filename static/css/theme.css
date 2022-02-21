@@ -215,9 +215,6 @@ article {
 /* 组织内容
 <p> <hr> <pre> <blockquote> <ol> <ul> <li> <dl> <dt> <dd> <figure> <figcaption> <div>
 */
-p {
-  margin-bottom: 4px;
-}
 
 hr {
   color: var(--hr-color);

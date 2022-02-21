@@ -110,8 +110,7 @@ main.index > * {
 }
 
 .index article {
-  display: flex;
-  flex-direction: column;
+  display: block;
   padding-bottom: 50px;
   line-height: 1.5;
   text-align: left;

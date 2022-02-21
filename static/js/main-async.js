@@ -1,5 +1,4 @@
 import './mode.js'; // 模式
-import './indentation-el.js'; // 缩进
 import './math-code.js'; // code
 import './right-quote.js'; // 引用文言
 import './fix-footnote.js'; // 引用参考资料
