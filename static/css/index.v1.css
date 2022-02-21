@@ -103,7 +103,7 @@ article.index h1 {
 article.index h1:hover .anchor,
 article.index h2:hover .anchor,
 article.index h3:hover .anchor {
-  display: none;
+  opacity: 0;
 }
 
 aside.index i {
@@ -138,7 +138,16 @@ article.index button {
 
 article.index a,
 article.index button,
-article.index ruby.link,
+article.index ruby.link {
+  color: var(--a-color);
+}
+
+article.index h1 .anchor > a,
+article.index h2 .anchor > a,
+article.index h3 .anchor > a, {
+  display: initial !important;
+}
+
 article.index button:hover,
 article.index ruby.link:hover a,
 article.index ruby.link:hover rt {

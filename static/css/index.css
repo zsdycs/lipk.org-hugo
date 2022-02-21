@@ -78,7 +78,7 @@ main.index > * {
 .index article h1:hover .anchor,
 .index article h2:hover .anchor,
 .index article h3:hover .anchor {
-  display: none;
+  opacity: 0;
 }
 
 .index article a {
@@ -98,7 +98,14 @@ main.index > * {
 
 .index article a,
 .index article button,
-.index article ruby.link,
+.index article ruby.link {
+  color: var(--a-color);
+}
+
+.index article .anchor > a {
+  display: inline;
+}
+
 .index article button:hover,
 .index article ruby.link:hover a,
 .index article ruby.link:hover rt {
