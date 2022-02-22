@@ -20,10 +20,10 @@ pictureView: [
 
 ## 基本信息
 
-籍贯：广东 · 中山。<br />
-位置：江苏 · 苏州。<br />
-出生：1997/12/20。<br />
-邮箱：[mail@lipk.org](mailto:mail@lipk.org)。
+- 籍贯：广东 · 中山。
+- 位置：江苏 · 苏州。
+- 出生：1997/12/20。
+- 邮箱：[mail@lipk.org](mailto:mail@lipk.org)。
 
 ## 工作经历
 
