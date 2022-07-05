@@ -11,19 +11,6 @@
   {{ else }}
   <title>{{ .Site.Params.title }} - {{ .Title }}</title>
   {{ end }}
-  <meta name="baidu-site-verification" content="SQ5Gg5sRhQ" />
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154705931-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-154705931-1');
-
-  </script>
 
   {{ if .IsHome }}
   <meta property="og:title" content="{{ .Site.Title }} | 首页">
