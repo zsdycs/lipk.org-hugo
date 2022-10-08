@@ -56,6 +56,7 @@
     script.setAttribute('theme', sessionStorage.getItem('mode'));
     script.setAttribute('comment-order', 'desc');
     script.setAttribute('input-position', 'top');
+    script.setAttribute('issue-label', 'pathname');
     script.async = true;
     beaudar.appendChild(script);
     // 处理评论是否加载完成
