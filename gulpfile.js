@@ -2,11 +2,13 @@ const gulp = require('gulp');
 const gulpBabel = require('gulp-babel');
 const gulpConnect = require('gulp-connect');
 const gulpHtmlclean = require('gulp-htmlclean');
-const gulpHtmlmin = require('gulp-htmlmin');
+const gulpHtmlMin = require('gulp-htmlmin');
 const gulpMinifycss = require('gulp-minify-css');
 const gulpUglify = require('gulp-uglify');
 const gulpUtil = require('gulp-util');
 const gulpConcat = require('gulp-concat');
+const gulpCpFile = require('./gulp-cp-file');
+const fontSpider = require('gulp-font-spider');
 
 function minify_css(done) {
   gulp
@@ -38,7 +40,20 @@ function minify_html(done) {
     .src('./dist/**/*.html')
     .pipe(gulpHtmlclean())
     .pipe(
-      gulpHtmlmin({
+      gulpCpFile({
+        src: './static/fontSource/',
+        dest: 'fontSource/',
+        fileName: 'SourceHanSerifSC-VF.ttf',
+      }),
+    )
+    .pipe(
+      fontSpider({
+        silent: false,
+        backup: false,
+      }),
+    )
+    .pipe(
+      gulpHtmlMin({
         removeComments: true,
         minifyJS: true,
         minifyCSS: true,
