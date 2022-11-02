@@ -48,6 +48,7 @@ function minify_html(done) {
     )
     .pipe(
       fontSpider({
+        ignore: ['main.css'],
         silent: false,
         backup: false,
       }),
