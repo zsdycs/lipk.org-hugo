@@ -8,7 +8,7 @@ const gulpUglify = require('gulp-uglify');
 const gulpUtil = require('gulp-util');
 const gulpConcat = require('gulp-concat');
 const gulpCpFile = require('./gulp-cp-file');
-const fontSpider = require('gulp-font-spider');
+const fontSpider = require('./gulp-font-spider');
 
 function minify_css(done) {
   gulp
@@ -43,7 +43,15 @@ function minify_html(done) {
       gulpCpFile({
         src: './static/fontSource/',
         dest: 'fontSource/',
-        fileName: 'SourceHanSerifSC-VF.ttf',
+        fileNameList: [
+          'SourceHanSerifSC-Bold.otf',
+          'SourceHanSerifSC-ExtraLight.otf',
+          'SourceHanSerifSC-Heavy.otf',
+          'SourceHanSerifSC-Light.otf',
+          'SourceHanSerifSC-Medium.otf',
+          'SourceHanSerifSC-Regular.otf',
+          'SourceHanSerifSC-SemiBold.otf',
+        ],
       }),
     )
     .pipe(
