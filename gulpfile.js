@@ -44,22 +44,14 @@ function minify_html(done) {
         src: './static/fontSource/',
         dest: 'fontSource/',
         fileNameList: [
-          'SourceHanSerifSC-VF.ttf',
-          // 'SourceHanSerifSC-Bold.otf',
-          // 'SourceHanSerifSC-ExtraLight.otf',
-          // 'SourceHanSerifSC-Heavy.otf',
-          // 'SourceHanSerifSC-Light.otf',
-          // 'SourceHanSerifSC-Medium.otf',
-          // 'SourceHanSerifSC-Regular.otf',
-          // 'SourceHanSerifSC-SemiBold.otf',
+          'SourceHanSerifCN-Bold.ttf',
+          'SourceHanSerifCN-ExtraLight.ttf',
+          'SourceHanSerifCN-Heavy.ttf',
+          'SourceHanSerifCN-Light.ttf',
+          'SourceHanSerifCN-Medium.ttf',
+          'SourceHanSerifCN-Regular.ttf',
+          'SourceHanSerifCN-SemiBold.ttf',
         ],
-      }),
-    )
-    .pipe(
-      fontSpider({
-        ignore: ['main.css'],
-        silent: false,
-        backup: false,
       }),
     )
     .pipe(
@@ -68,6 +60,14 @@ function minify_html(done) {
         minifyJS: true,
         minifyCSS: true,
         minifyURLs: true,
+      }),
+    )
+    .pipe(
+      fontSpider({
+        ignore: ['main.css'],
+        silent: true,
+        backup: false,
+        debug: false,
       }),
     )
     .pipe(gulp.dest('./dist'))

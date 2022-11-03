@@ -16,13 +16,13 @@ const gulpCpFile = (args) => {
         const sourcePath = path.relative('./', src);
         const targetPath = path.relative('./', `${filePath}/${dest}`);
         fileNameList.forEach((itemFileName) => {
-          console.info(
-            '\x1B[0m%s \x1B[32m%s \x1B[0m%s \x1B[34m%s \x1B[0m',
-            `Copying`,
-            `${itemFileName}`,
-            'to',
-            `${targetPath}`,
-          );
+          // console.info(
+          //   '\x1B[0m%s \x1B[32m%s \x1B[0m%s \x1B[34m%s \x1B[0m',
+          //   `Copying`,
+          //   `${itemFileName}`,
+          //   'to',
+          //   `${targetPath}`,
+          // );
           if (fs.existsSync(targetPath)) {
             fs.writeFileSync(
               `${targetPath}/${itemFileName}`,

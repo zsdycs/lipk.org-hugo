@@ -6,7 +6,6 @@ var through = require('through2');
 var gutil = require('gutil');
 var fs = require('fs');
 var path = require('path');
-var htmlFiles = null;
 
 function createStream(options) {
   options = options || {};
@@ -36,7 +35,7 @@ function createStream(options) {
             );
             gutil.log('Include chars', webFont.chars);
             gutil.log('Font id', webFont.id);
-            gutil.log('CSS selectors', webFont.selectors.join(', '));
+            // gutil.log('CSS selectors', webFont.selectors.join(', '));
 
             webFont.files.forEach(function (file) {
               if (fs.existsSync(file.url)) {
