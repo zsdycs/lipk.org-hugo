@@ -44,13 +44,14 @@ function minify_html(done) {
         src: './static/fontSource/',
         dest: 'fontSource/',
         fileNameList: [
-          'SourceHanSerifSC-Bold.otf',
-          'SourceHanSerifSC-ExtraLight.otf',
-          'SourceHanSerifSC-Heavy.otf',
-          'SourceHanSerifSC-Light.otf',
-          'SourceHanSerifSC-Medium.otf',
-          'SourceHanSerifSC-Regular.otf',
-          'SourceHanSerifSC-SemiBold.otf',
+          'SourceHanSerifSC-VF.ttf',
+          // 'SourceHanSerifSC-Bold.otf',
+          // 'SourceHanSerifSC-ExtraLight.otf',
+          // 'SourceHanSerifSC-Heavy.otf',
+          // 'SourceHanSerifSC-Light.otf',
+          // 'SourceHanSerifSC-Medium.otf',
+          // 'SourceHanSerifSC-Regular.otf',
+          // 'SourceHanSerifSC-SemiBold.otf',
         ],
       }),
     )
@@ -85,7 +86,7 @@ function minify_js(done) {
       './dist/js/checkbox-list.js',
       './dist/js/hide-menu.js',
       './dist/js/beaudar.js',
-      './dist/js/load-typekit.js',
+      // './dist/js/load-typekit.js',
     ])
     .pipe(
       gulpBabel({

@@ -23,22 +23,20 @@ var util = require('../lib/util');
  * @return {Array}     glyfs array
  */
 function getSubsetGlyfs(ttf, subset) {
+  var glyphs = [];
 
-    var glyphs = [];
+  var indexList = ttf.findGlyf({
+    unicode: subset || [],
+  });
 
-    var indexList = ttf.findGlyf({
-        unicode: subset || []
-    });
+  if (indexList.length) {
+    glyphs = ttf.getGlyf(indexList);
+  }
 
-    if (indexList.length) {
-        glyphs = ttf.getGlyf(indexList);
-    }
+  glyphs.unshift(ttf.get().glyf[0]);
 
-    glyphs.unshift(ttf.get().glyf[0]);
-
-    return glyphs;
+  return glyphs;
 }
-
 
 /**
  * minifyFontObject
@@ -49,26 +47,24 @@ function getSubsetGlyfs(ttf, subset) {
  * @return {Object}              ttfObject
  */
 function minifyFontObject(ttfObject, subset, plugin) {
+  // check null
+  if (subset.length === 0) {
+    return ttfObject;
+  }
 
-    // check null
-    if (subset.length === 0) {
-        return ttfObject;
-    }
+  // new TTF Object
+  var ttf = new TTF(ttfObject);
 
-    // new TTF Object
-    var ttf = new TTF(ttfObject);
+  // get target glyfs then set
+  ttf.setGlyf(getSubsetGlyfs(ttf, subset));
 
-    // get target glyfs then set
-    ttf.setGlyf(getSubsetGlyfs(ttf, subset));
+  // use plugin
+  if (_.isFunction(plugin)) {
+    plugin(ttf);
+  }
 
-    // use plugin
-    if (_.isFunction(plugin)) {
-        plugin(ttf);
-    }
-
-    return ttf.get();
+  return ttf.get();
 }
-
 
 /**
  * minifyTtf
@@ -78,32 +74,23 @@ function minifyFontObject(ttfObject, subset, plugin) {
  * @return {Buffer}              buffer
  */
 function minifyTtf(contents, opts) {
+  opts = opts || {};
 
-    opts = opts || {};
+  var ttfobj = contents;
 
-    var ttfobj = contents;
+  if (Buffer.isBuffer(contents)) {
+    ttfobj = new TTFReader(opts).read(b2ab(contents));
+  }
 
-    if (Buffer.isBuffer(contents)) {
-        ttfobj = new TTFReader(opts).read(b2ab(contents));
-    }
+  var miniObj = minifyFontObject(ttfobj, opts.subset, opts.use);
 
-    var miniObj = minifyFontObject(
-        ttfobj,
-        opts.subset,
-        opts.use
-    );
+  var ttfBuffer = ab2b(new TTFWriter(opts).write(miniObj));
 
-    var ttfBuffer = ab2b(
-        new TTFWriter(opts).write(miniObj)
-    );
-
-    return {
-        object: miniObj,
-        buffer: ttfBuffer
-    };
-
+  return {
+    object: miniObj,
+    buffer: ttfBuffer,
+  };
 }
-
 
 /**
  * glyph fontmin plugin
@@ -117,54 +104,46 @@ function minifyTtf(contents, opts) {
  * @api public
  */
 module.exports = function (opts) {
+  opts = _.extend({ hinting: true, trim: true }, opts);
 
-    opts = _.extend({hinting: true, trim: true}, opts);
+  // prepare subset
+  var subsetText = util.getSubsetText(opts);
+  opts.subset = util.string2unicodes(subsetText);
 
-    // prepare subset
-    var subsetText = util.getSubsetText(opts);
-    opts.subset = util.string2unicodes(subsetText);
+  return through.ctor(
+    {
+      objectMode: true,
+    },
+    function (file, enc, cb) {
+      // check null
+      if (file.isNull()) {
+        cb(null, file);
+        return;
+      }
 
+      // check stream
+      if (file.isStream()) {
+        cb(new Error('Streaming is not supported'));
+        return;
+      }
 
-    return through.ctor({
-        objectMode: true
-    }, function (file, enc, cb) {
+      // check ttf
+      if (!isTtf(file.contents)) {
+        cb(null, file);
+        return;
+      }
 
-        // check null
-        if (file.isNull()) {
-            cb(null, file);
-            return;
-        }
+      try {
+        // write file buffer
+        var miniTtf = minifyTtf(file.ttfObject || file.contents, opts);
 
-        // check stream
-        if (file.isStream()) {
-            cb(new Error('Streaming is not supported'));
-            return;
-        }
+        file.contents = miniTtf.buffer;
+        file.ttfObject = miniTtf.object;
 
-        // check ttf
-        if (!isTtf(file.contents)) {
-            cb(null, file);
-            return;
-        }
-
-        try {
-
-            // write file buffer
-            var miniTtf = minifyTtf(
-                file.ttfObject || file.contents,
-                opts
-            );
-
-            file.contents = miniTtf.buffer;
-            file.ttfObject = miniTtf.object;
-
-            cb(null, file);
-
-        }
-        catch (err) {
-            cb(err);
-        }
-
-    });
-
+        cb(null, file);
+      } catch (err) {
+        cb(err);
+      }
+    },
+  );
 };

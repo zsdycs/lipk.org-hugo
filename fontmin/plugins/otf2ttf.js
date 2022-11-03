@@ -23,66 +23,61 @@ var util = require('../lib/util');
  * @api public
  */
 module.exports = function (opts) {
+  opts = _.extend({ clone: false, hinting: true }, opts);
 
-    opts = _.extend({clone: false, hinting: true}, opts);
+  // prepare subset
+  var subsetText = util.getSubsetText(opts);
+  opts.subset = util.string2unicodes(subsetText);
 
-    // prepare subset
-    var subsetText = util.getSubsetText(opts);
-    opts.subset = util.string2unicodes(subsetText);
+  return through.ctor(
+    {
+      objectMode: true,
+    },
+    function (file, enc, cb) {
+      // check null
+      if (file.isNull()) {
+        cb(null, file);
+        return;
+      }
 
-    return through.ctor({
-        objectMode: true
-    }, function (file, enc, cb) {
+      // check stream
+      if (file.isStream()) {
+        cb(new Error('Streaming is not supported'));
+        return;
+      }
 
-        // check null
-        if (file.isNull()) {
-            cb(null, file);
-            return;
-        }
+      // check otf
+      if (!isOtf(file.contents)) {
+        cb(null, file);
+        return;
+      }
 
-        // check stream
-        if (file.isStream()) {
-            cb(new Error('Streaming is not supported'));
-            return;
-        }
+      // clone
+      if (opts.clone) {
+        this.push(file.clone(false));
+      }
 
-        // check otf
-        if (!isOtf(file.contents)) {
-            cb(null, file);
-            return;
-        }
+      // replace ext
+      file.path = replaceExt(file.path, '.ttf');
 
-        // clone
-        if (opts.clone) {
-            this.push(file.clone(false));
-        }
+      // ttf info
+      var ttfBuffer;
+      var ttfObj;
 
-        // replace ext
-        file.path = replaceExt(file.path, '.ttf');
+      // try otf2ttf
+      try {
+        ttfObj = otf2ttfobject(b2ab(file.contents), opts);
 
-        // ttf info
-        var ttfBuffer;
-        var ttfObj;
+        ttfBuffer = ab2b(new TTFWriter(opts).write(ttfObj));
+      } catch (ex) {
+        cb(ex);
+      }
 
-        // try otf2ttf
-        try {
-
-            ttfObj = otf2ttfobject(b2ab(file.contents), opts);
-
-            ttfBuffer = ab2b(new TTFWriter(opts).write(ttfObj));
-
-        }
-        catch (ex) {
-            cb(ex);
-        }
-
-        if (ttfBuffer) {
-            file.contents = ttfBuffer;
-            file.ttfObject = ttfObj;
-            cb(null, file);
-        }
-
-    });
-
+      if (ttfBuffer) {
+        file.contents = ttfBuffer;
+        file.ttfObject = ttfObj;
+        cb(null, file);
+      }
+    },
+  );
 };
-

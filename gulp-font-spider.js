@@ -26,60 +26,45 @@ function createStream(options) {
     }
 
     if (file.isBuffer && file.isBuffer()) {
-      if (!htmlFiles) {
-        htmlFiles = [];
-      }
-      htmlFiles.push(file);
-      callback(null, file);
+      fontSpider(file, options)
+        .then(function (webFonts) {
+          webFonts.forEach(function (webFont) {
+            gutil.log('Font family', colors.green(webFont.family));
+            gutil.log(
+              'Original size',
+              colors.green(webFont.originalSize / 1000 + ' KB'),
+            );
+            gutil.log('Include chars', webFont.chars);
+            gutil.log('Font id', webFont.id);
+            gutil.log('CSS selectors', webFont.selectors.join(', '));
+
+            webFont.files.forEach(function (file) {
+              if (fs.existsSync(file.url)) {
+                gutil.log(
+                  'File',
+                  colors.cyan(path.relative('./', file.url)) +
+                    ' created: ' +
+                    colors.green(file.size / 1000 + ' KB'),
+                );
+              } else {
+                gutil.log(
+                  colors.red(
+                    'File ' + path.relative('./', file.url) + ' not created',
+                  ),
+                );
+              }
+            });
+          });
+
+          callback(null);
+        })
+        .catch(callback);
     } else {
       callback(null, file);
     }
   }
 
-  function endStream(callback) {
-    if (!htmlFiles || htmlFiles.length === 0) {
-      callback();
-      return;
-    }
-
-    fontSpider(htmlFiles, options)
-      .then(function (webFonts) {
-        webFonts.forEach(function (webFont) {
-          gutil.log('Font family', colors.green(webFont.family));
-          gutil.log(
-            'Original size',
-            colors.green(webFont.originalSize / 1000 + ' KB'),
-          );
-          gutil.log('Include chars', webFont.chars);
-          gutil.log('Font id', webFont.id);
-          gutil.log('CSS selectors', webFont.selectors.join(', '));
-
-          webFont.files.forEach(function (file) {
-            if (fs.existsSync(file.url)) {
-              gutil.log(
-                'File',
-                colors.cyan(path.relative('./', file.url)) +
-                  ' created: ' +
-                  colors.green(file.size / 1000 + ' KB'),
-              );
-            } else {
-              gutil.log(
-                colors.red(
-                  'File ' + path.relative('./', file.url) + ' not created',
-                ),
-              );
-            }
-          });
-        });
-
-        callback(null);
-      })
-      .catch(callback);
-
-    htmlFiles = null;
-  }
-
-  return through.obj(bufferContents, endStream);
+  return through.obj(bufferContents);
 }
 
 module.exports = createStream;

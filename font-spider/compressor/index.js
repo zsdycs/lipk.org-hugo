@@ -129,11 +129,10 @@ Compress.prototype = {
     fontmin.use(
       Fontmin.glyph({
         trim: false,
-        text: webFont.chars || '#', // 传入任意字符避免 fontmin@0.9.5 BUG
+        text: webFont.chars || '你好', // 传入任意字符避免 fontmin@0.9.5 BUG
       }),
     );
 
-    console.log('source.format======', source.format);
     if (source.format === 'opentype') {
       fontmin.use(Fontmin.otf2ttf());
     }
@@ -177,9 +176,11 @@ Compress.prototype = {
     fontmin.use(
       rename(function (path) {
         var newName = paths[path.extname];
-        path.dirname = newName.dirname;
-        path.basename = newName.basename;
-        path.extname = newName.extname;
+        if (newName) {
+          path.dirname = newName.dirname;
+          path.basename = newName.basename;
+          path.extname = newName.extname;
+        }
       }),
     );
 
@@ -189,7 +190,9 @@ Compress.prototype = {
         callback(errors);
       } else {
         buffer.forEach(function (buffer) {
-          paths[buffer.extname].file.size = buffer.contents.length;
+          if (paths[buffer.extname]) {
+            paths[buffer.extname].file.size = buffer.contents.length;
+          }
         });
 
         // 添加新字段：记录原始文件大小
