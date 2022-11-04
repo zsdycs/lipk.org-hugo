@@ -2,10 +2,13 @@
   "name": "lipk.org",
   "scripts": {
     "start": "npm run version && opener http://localhost:1313 && npm run devServer",
-    "devServer": "hugo server --minify --disableFastRender --ignoreCache --noHTTPCache --bind 0.0.0.0 --config devConfig.yaml",
+    "server:hugo": "hugo server --minify --disableFastRender --ignoreCache --noHTTPCache --bind 0.0.0.0 --config devConfig.yaml",
     "predeploy": "npm run version && hugo --minify && echo lipk.org > docs/CNAME && gulp",
     "deploy": "gh-pages -d docs",
     "build": "npm run version && hugo --minify && gulp",
+    "build:dev": "npm run version && hugo --minify --config devConfig.yaml && gulp",
+    "server:dev": "npm run build:dev && http-server --port 1313 ./dist",
+    "preview": "npm run build && http-server --port 1313 ./dist",
     "version": "node version.js",
     "gulp": "gulp"
   },
@@ -38,6 +41,7 @@
     "gulp-uglify": "^3.0.2",
     "gulp-util": "^3.0.8",
     "gutil": "^1.6.4",
+    "http-server": "^14.1.1",
     "is-otf": "^0.1.2",
     "is-svg": "^4.2.1",
     "is-ttf": "^0.2.2",
