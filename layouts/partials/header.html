@@ -64,12 +64,12 @@
   <meta name="keywords" content="{{ delimit .Keywords ", " }}">
   <meta property="keywords" content="{{ delimit .Keywords ", " }}">
   {{ end }}
-  <link rel="stylesheet" href="/css/main.css?202106291131">
+  <link rel="stylesheet" href="/css/main.css">
   <link rel="dns-prefetch" href="//lipk.oss-accelerate.aliyuncs.com">
   {{ if not .Params.notComment }}
   <link rel="preload" href="https://beaudar.lipk.org/client.js" as="script" crossorigin />
   {{ end }}
-  <link rel="preload" href="https://use.typekit.net/kwz5xar.js" as="script" crossorigin />
+  <!--<link rel="preload" href="https://use.typekit.net/kwz5xar.js" as="script" crossorigin />-->
   <meta name="theme-color" content="#fff" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -87,6 +87,7 @@
     }
 
   </script>
+  {{ partial "font-face.html" . }}
 </head>
 
 {{ $.Scratch.Set "section" (replaceRE "^/([^/]+)/.*" "$1" .RelPermalink) }}

@@ -2,11 +2,13 @@ const gulp = require('gulp');
 const gulpBabel = require('gulp-babel');
 const gulpConnect = require('gulp-connect');
 const gulpHtmlclean = require('gulp-htmlclean');
-const gulpHtmlmin = require('gulp-htmlmin');
+const gulpHtmlMin = require('gulp-htmlmin');
 const gulpMinifycss = require('gulp-minify-css');
 const gulpUglify = require('gulp-uglify');
 const gulpUtil = require('gulp-util');
 const gulpConcat = require('gulp-concat');
+const gulpCpFile = require('./gulp-cp-file');
+const fontSpider = require('./gulp-font-spider');
 
 function minify_css(done) {
   gulp
@@ -38,11 +40,34 @@ function minify_html(done) {
     .src('./dist/**/*.html')
     .pipe(gulpHtmlclean())
     .pipe(
-      gulpHtmlmin({
+      gulpCpFile({
+        src: './static/fontSource/',
+        dest: 'fontSource/',
+        fileNameList: [
+          'SourceHanSerifCN-Bold.ttf',
+          'SourceHanSerifCN-ExtraLight.ttf',
+          'SourceHanSerifCN-Heavy.ttf',
+          'SourceHanSerifCN-Light.ttf',
+          'SourceHanSerifCN-Medium.ttf',
+          'SourceHanSerifCN-Regular.ttf',
+          'SourceHanSerifCN-SemiBold.ttf',
+        ],
+      }),
+    )
+    .pipe(
+      gulpHtmlMin({
         removeComments: true,
         minifyJS: true,
         minifyCSS: true,
         minifyURLs: true,
+      }),
+    )
+    .pipe(
+      fontSpider({
+        ignore: ['main.css'],
+        silent: true,
+        backup: false,
+        debug: false,
       }),
     )
     .pipe(gulp.dest('./dist'))
@@ -61,7 +86,7 @@ function minify_js(done) {
       './dist/js/checkbox-list.js',
       './dist/js/hide-menu.js',
       './dist/js/beaudar.js',
-      './dist/js/load-typekit.js',
+      // './dist/js/load-typekit.js',
     ])
     .pipe(
       gulpBabel({
