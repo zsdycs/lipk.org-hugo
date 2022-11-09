@@ -33,13 +33,13 @@
 }
 
 [theme='github-dark'] {
-  --html-color: #979797;
+  --html-color: #c0c0c0;
   --html-bg-color: #181818;
-  --body-color: #979797;
+  --body-color: #c0c0c0;
   --body-bg-color: #181818;
   --article-bg-color: #181818;
   --hr-color: #343434;
-  --blockquote-color: #777;
+  --blockquote-color: #949494;
   --blockquote-border-color: #414141;
   --a-color: #4183c4;
   --code-color: #737373;
@@ -47,7 +47,7 @@
   --code-highlight-bg-color: #202020;
   --code-highlight-color: #b1b1b1;
   --ins-color: #666;
-  --del-color: #777;
+  --del-color: #949494;
   --thead-bg-color: #202020;
   --table-border-color: #343434;
   --main-border-color: #343434;
