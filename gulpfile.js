@@ -86,6 +86,7 @@ function minify_js(done) {
       './dist/js/checkbox-list.js',
       './dist/js/hide-menu.js',
       './dist/js/beaudar.js',
+      './dist/js/font-face.js',
       // './dist/js/load-typekit.js',
     ])
     .pipe(
