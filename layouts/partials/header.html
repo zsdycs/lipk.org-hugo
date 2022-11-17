@@ -87,7 +87,6 @@
     }
 
   </script>
-  {{ partial "font-face.html" . }}
 </head>
 
 {{ $.Scratch.Set "section" (replaceRE "^/([^/]+)/.*" "$1" .RelPermalink) }}
