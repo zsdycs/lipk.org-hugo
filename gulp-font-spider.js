@@ -95,7 +95,15 @@ function createStream(options) {
     }
   }
 
-  return through.obj(bufferContents);
+  function endStream(callback) {
+    // 结束时，处理 htmlFiles 中留存的页面，以免最后一个页面没有处理
+    const doHtmlFiles = _.cloneDeep(htmlFiles);
+    doFontSpider(doHtmlFiles, options).then(() => {
+      callback(null);
+    });
+  }
+
+  return through.obj(bufferContents, endStream);
 }
 
 module.exports = createStream;
