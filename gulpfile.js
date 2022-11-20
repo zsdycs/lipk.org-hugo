@@ -66,6 +66,20 @@ function minify_html(done) {
       fontSpider({
         ignore: ['main.css'],
         silent: true,
+        extraFontFaceRule: [
+          {
+            'font-family': 'source-han-serif-sc',
+            'font-weight': 'normal',
+            src: "url('./fontSource/SourceHanSerifCN-SemiBold.ttf')",
+            'font-display': 'swap',
+          },
+          {
+            'font-family': 'source-han-serif-sc',
+            'font-weight': 'normal',
+            src: "url('./fontSource/SourceHanSerifCN-Light.ttf')",
+            'font-display': '100',
+          },
+        ],
         backup: false,
         debug: false,
       }),

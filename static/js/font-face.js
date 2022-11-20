@@ -23,6 +23,20 @@ const ajaxFont = (args) => {
   });
 };
 
+ajaxFont({ url: './fontSource/SourceHanSerifCN-Light.ttf' }).then(
+  (response) => {
+    getBase64(response).then((base64) => {
+      const lightFont = new FontFace('source-han-serif-sc', `url(${base64})`, {
+        ['font-display']: 'swap',
+        weight: '100',
+      });
+      lightFont.load().then(() => {
+        document.fonts.add(lightFont);
+      });
+    });
+  },
+);
+
 ajaxFont({ url: './fontSource/SourceHanSerifCN-SemiBold.ttf' }).then(
   (response) => {
     getBase64(response).then((base64) => {
@@ -36,20 +50,6 @@ ajaxFont({ url: './fontSource/SourceHanSerifCN-SemiBold.ttf' }).then(
       );
       semiBoldFont.load().then(() => {
         document.fonts.add(semiBoldFont);
-      });
-    });
-  },
-);
-
-ajaxFont({ url: './fontSource/SourceHanSerifCN-Light.ttf' }).then(
-  (response) => {
-    getBase64(response).then((base64) => {
-      const lightFont = new FontFace('source-han-serif-sc', `url(${base64})`, {
-        ['font-display']: 'swap',
-        weight: '100',
-      });
-      lightFont.load().then(() => {
-        document.fonts.add(lightFont);
       });
     });
   },

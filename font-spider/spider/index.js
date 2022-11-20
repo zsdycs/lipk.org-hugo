@@ -11,15 +11,16 @@ const path = require('path');
 /**
  * 蜘蛛类
  * @param   {Window}            浏览器全局对象 @see browser-x
- * @param   {Boolean}           是否开启 debug 模式
+ * @param   {Object}            选项 options
  * @return  {Array<WebFont>}    WebFont 描述信息 @see ./web-font.js
  */
-function FontSpider(window, debug) {
+function FontSpider(window, options) {
   this.window = window;
   this.document = window.document;
-  this.debug = debug;
+  this.debug = options.debug;
+  this.options = options;
 
-  if (debug) {
+  if (this.debug) {
     this.debugInfo({
       url: window.document.URL,
     });
@@ -289,6 +290,29 @@ FontSpider.prototype = {
       }
     });
 
+    const extraFontFaceRule = this.options.extraFontFaceRule;
+    if (extraFontFaceRule && extraFontFaceRule.length > 0) {
+      extraFontFaceRule.forEach((itemRule) => {
+        const extraCssRule = {
+          style: {
+            ['font-family']: itemRule['font-family'],
+            stretch: itemRule['font-stretch'],
+            style: itemRule['font-style'],
+            ['font-weight']: itemRule['font-weight'],
+            src: itemRule.src,
+            ['font-display']: itemRule['font-display'],
+          },
+          parentStyleSheet: {
+            href: window.document.URL,
+          },
+        };
+        const webFont = WebFont.parse(extraCssRule);
+        if (webFont) {
+          webFonts.push(webFont);
+        }
+      });
+    }
+
     return webFonts;
   },
 
@@ -398,7 +422,7 @@ module.exports = function (htmlFiles, adapter, callback) {
       }
 
       return browser(options).then(function (window) {
-        return new FontSpider(window, adapter.debug);
+        return new FontSpider(window, options);
       });
     }),
   ).then(function (list) {
