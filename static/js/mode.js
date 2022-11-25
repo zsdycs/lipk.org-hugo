@@ -15,6 +15,13 @@
     'icy-dark': 'photon-dark',
     'photon-dark': 'github-light',
   };
+  const DARK_MODE = [
+    'github-dark',
+    'github-dark-orange',
+    'dark-blue',
+    'icy-dark',
+    'photon-dark',
+  ];
 
   // 设置 mode 初始值
   const setInitialMode = () => {
@@ -42,6 +49,11 @@
     if (!modeTag) return;
 
     document.documentElement.setAttribute('theme', mode);
+    document.documentElement.setAttribute(
+      'color-scheme',
+      DARK_MODE.includes(mode) ? 'dark' : 'light',
+    );
+
     modeTag.innerHTML = MODE_TEXT[mode];
   };
 

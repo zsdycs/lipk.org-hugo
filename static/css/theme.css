@@ -192,6 +192,14 @@
   --list-bg-color: #121214;
 }
 
+[color-scheme='dark'] {
+  color-scheme: dark;
+}
+
+[color-scheme='light'] {
+  color-scheme: light;
+}
+
 /* 根元素
  <html>
 */
