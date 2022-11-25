@@ -26,10 +26,3 @@ lipk.org 站点地图
     ├─ "/about" 关于
     └─ "/resume" 简历
 ```
-
-## 软件
-
-- [Xshell](https://www.netsarang.com/zh/xshell/) ：远程连接 linux 工具
-- [Git](https://git-scm.com/) ：文件分布式版本控制系统
-- [Hugo](http://gohugo.io) ：网站构建框架
-- [VS Code](https://code.visualstudio.com/) : 文本编辑器
