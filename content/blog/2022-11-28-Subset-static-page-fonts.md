@@ -5,9 +5,9 @@ slug: 'subset-static-page-fonts'
 ---
 
 > 觉得“思源宋体”很好看，所以本站之前都是通过请求“use.typekit.net/kwz5xar.js”加载“思源宋体”的，但是由于 typekit.net 是 Adobe 的服务，在网络稍差时会加载失败，而且也不是自托管的，难免有一些不信任。
-> 所以一直想找到一个稳定得分方式加载字体，现在找到了。
+> 所以一直想找到一个稳定的方式加载字体，现在找到了。
 
-使用 [fontmin](https://github.com/ecomfe/fontmin) 和 [font-spider](https://github.com/aui/font-spider) 主要使用这两个库。原以为借助库应该不难，但实际需要花上一些时间。
+使用 [fontmin](https://github.com/ecomfe/fontmin) 和 [font-spider](https://github.com/aui/font-spider) 这两个库实现“静态页面字体子集化”。原以为借助库应该不难，但实际需要花上一些时间。
 
 ### fontmin 和 font-spider 的关系
 
