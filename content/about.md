@@ -26,3 +26,13 @@ lipk.org 站点地图
     ├─ "/about" 关于
     └─ "/resume" 简历
 ```
+
+### lipk.org 下的服务
+
+- [gh-proxy.lipk.org](http://gh-proxy.lipk.org) 加速下载 GitHub 资源
+- [frps.lipk.org](http://frps.lipk.org) 内网穿透服务（私有）
+- [muyu.lipk.org](http://muyu.lipk.org) 电子木鱼
+- [beaudar.lipk.org](http://beaudar.lipk.org) 博客评论插件-表达
+- [beaudar-api.lipk.org](http://beaudar-api.lipk.org) 博客评论插件-表达-API
+- [react-demo-ts.lipk.org](http://react-demo-ts.lipk.org) 展示用 demo
+- [test.lipk.org](http://test.lipk.org) 测试使用
