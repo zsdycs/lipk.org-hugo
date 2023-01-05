@@ -38,7 +38,7 @@ function minify_photoswipe_css(done) {
 function minify_html(done) {
   gulp
     .src('./dist/**/*.html')
-    .pipe(gulpHtmlclean())
+    // .pipe(gulpHtmlclean())
     .pipe(
       gulpCpFile({
         src: './static/fontSource/',
@@ -54,14 +54,14 @@ function minify_html(done) {
         ],
       }),
     )
-    .pipe(
-      gulpHtmlMin({
-        removeComments: true,
-        minifyJS: true,
-        minifyCSS: true,
-        minifyURLs: true,
-      }),
-    )
+    // .pipe(
+    //   gulpHtmlMin({
+    //     removeComments: false,
+    //     minifyJS: true,
+    //     minifyCSS: true,
+    //     minifyURLs: true,
+    //   }),
+    // )
     .pipe(
       fontSpider({
         ignore: ['main.css'],
