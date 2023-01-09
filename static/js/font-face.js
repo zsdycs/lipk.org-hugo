@@ -28,7 +28,7 @@ ajaxFont({ url: './fontSource/SourceHanSerifCN-Light.ttf' }).then(
     getBase64(response).then((base64) => {
       const lightFont = new FontFace('source-han-serif-sc', `url(${base64})`, {
         ['font-display']: 'swap',
-        weight: '100',
+        // weight: '100',
       });
       lightFont.load().then(() => {
         document.fonts.add(lightFont);
@@ -45,7 +45,24 @@ ajaxFont({ url: './fontSource/SourceHanSerifCN-SemiBold.ttf' }).then(
         `url(${base64})`,
         {
           ['font-display']: 'swap',
-          weight: 'normal',
+          // weight: 'normal',
+        },
+      );
+      semiBoldFont.load().then(() => {
+        document.fonts.add(semiBoldFont);
+      });
+    });
+  },
+);
+ajaxFont({ url: './fontSource/SourceHanSerifCN-Medium.ttf' }).then(
+  (response) => {
+    getBase64(response).then((base64) => {
+      const semiBoldFont = new FontFace(
+        'source-han-serif-sc',
+        `url(${base64})`,
+        {
+          ['font-display']: 'swap',
+          // weight: 'bolder',
         },
       );
       semiBoldFont.load().then(() => {

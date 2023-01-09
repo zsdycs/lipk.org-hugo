@@ -38,6 +38,11 @@ code {
 html,
 body {
   font-size: 100%;
+  font-weight: normal;
+}
+
+strong {
+  font-weight: bolder;
 }
 
 button,
