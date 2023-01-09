@@ -18,15 +18,18 @@ pictureView: [
 
 ## 基本信息
 
-<!-- - 姓名：李鹏坤。
-- 籍贯：广东 · 中山。
-- 位置：江苏 · 苏州。
-- 出生：1997/12/20。
-- 邮箱：[mail@lipk.org](mailto:mail@lipk.org)。 -->
-
-| 姓名 | 籍贯 | 位置 | 出生 | 邮箱 |
-| :-----: | :----: | :-----: | :-----: | :-----: |
-| 李鹏坤 | 广东 · 中山 | 江苏 · 苏州 | 1997/12/20 | [mail@lipk.org](mailto:mail@lipk.org) |
+<div class="resume-basics-box">
+  <ul>
+    <li>姓名：李鹏坤。</li>
+    <li>籍贯：广东 · 中山。</li>
+    <li>位置：江苏 · 苏州。</li>
+  </ul>
+  <ul>
+    <li>出生：1997/12/20。</li>
+    <li>邮箱：<a href="mailto:mail@lipk.org">mail@lipk.org</a>。</li>
+    <li class="print-li">手机：17328166404。</li>
+  </ul>
+</div>
 
 ## 工作经历
 
