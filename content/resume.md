@@ -11,15 +11,14 @@ pictureView: [
 ]
 ---
 
-# 李鹏坤
-
 <figure class="image">
   <img loading="lazy" src="https://lipk.oss-accelerate.aliyuncs.com/images/resume.jpg" alt="我的照片" title="我的照片" height="150px">
-  <figcaption class="image-description">我的照片</figcaption>
+  <!-- <figcaption class="image-description notPrint">我的照片</figcaption> -->
 </figure>
 
 ## 基本信息
 
+- 姓名：李鹏坤。
 - 籍贯：广东 · 中山。
 - 位置：江苏 · 苏州。
 - 出生：1997/12/20。
@@ -39,7 +38,7 @@ pictureView: [
 ## 项目经历（部分）
 
 - 「[京东京采云](https://www.jdbusiness.com/jdsolution_cy.html)」
-  - 参与该系统前端全模块的开发和维护工作。参与动态表单、信息组织表格、主数据选择器等组件的问题修复工作，在业务侧编写的上传下载组件反哺于组件。
+  - 该 SRM 系统通过 13 个 [qiankun 微前端](https://qiankun.umijs.org/) 服务组成。独立负责多个微前端服务的开发，参与 JDSRM-UI 组件的问题修复工作。编写的上传下载组件成为系统标准，拆分、整理并优化了大量页面的代码逻辑和页面结构，使代码易于维护。
 - 「北人亦创国际会展中心展会系统」
   - 独立开发基于 uni-app 框架实现的微信小程序，基于 RuoYi-UI 开发的后台管理系统，功能包含资料上传下载、餐饮及酒店预订、列表无限滚动、订单信息二维码生成及小程序扫码核销等。
 - 「快递上门系统」
@@ -49,9 +48,9 @@ pictureView: [
 - 「[日本警察庁](https://www.npa.go.jp/)“サイバー攻撃分析センタ”」
   - 该项目编码要求极高，每周一次逐行 code review，使我对个人代码 style lint、非空处理和变量命名等有较高的要求。
 - 「日本“島根県健康管理システム”」
-  - 是一个 ruby 项目，开发环境使用 VirtualBox 和 Vagrant。为了我的 ruby 代码可以得到 lint 审查，于是就有了 [Ruby-rubocop 使用方法](https://www.lipk.org/blog/2020/05/15/how-to-use-ruby-rubocop/) 这篇教程。
+  - 是一个 ruby 项目，开发环境使用 VirtualBox 和 Vagrant。为了我的 ruby 代码可以得到 lint 审查，于是就有了 [Ruby-rubocop 使用方法](https://www.lipk.org/blog/2020/05/15/how-to-use-ruby-rubocop/) 。
 - 「[VRAINERS 動物病院](https://www.vrainers.jp/) 」
-  - V3.1 版本的开发，值得一提的是，该项目使用了：gRPC、angular10、[material](https://next.material.angular.io/components)、docker。用 [zeplin](https://zeplin.io/)（layout）、[backlog](https://backlog.com/)（设计书）及 github（代码及 issue）。
+  - V3.1 版本的开发，该项目使用了：gRPC、angular10、[material](https://next.material.angular.io/components)、docker。用 [zeplin](https://zeplin.io/)（layout）、[backlog](https://backlog.com/)（设计书）及 github（代码及 issue）。
 - 「日本 [“建設キャリアアップシステム”](https://www.ccus.jp/p/info)」
   - 是个庞大的 angular 系统， [stubby](https://www.npmjs.com/package/stubby) route.json 中的 request 仍有 1053 个。参与了“2020 下期開発”的工作，案件 396 个，参与了约 30% 的案件编码工作。
 
@@ -65,24 +64,6 @@ pictureView: [
 - 2016 . 09 ~ 2019 . 07 **苏州市职业大学**，软件技术专科生。
   - 必修课：
     程序逻辑设计与编程规范 (C)、C# 应用程序设计 (WinFrom)、 SQL Server 数据库应用、数据结构、 APP 产品交互设计、 ASP.net 商务网站设计、 Web 系统 UI 设计、iOS 开发技术、计算机网络基础、面向对象程序设计 (JAVA)、实用软件工程与 UML、Web 前端开发等。
-
-## 校内活动
-
-- 计算机工程学院团委宣传部，干事。
-  - 拍摄学院及学校活动的新闻照片。
-  - 新闻稿、微信推文的撰写工作。
-  - 在任职期获“优秀工作者”称号。
-- 计算机工程学院攻玉工作室，负责人。
-  - 大一下学期加入工作室。
-  - 大二工作室换届当选为负责人。
-  - “纽斯杯”大学生创业设计大赛。
-  - 苏州市职业大学创新创意作品大赛。
-  - 计算机工程学院“互联网+”创新创业大赛。
-  - 苏州市职业大学第二十届职业生涯节大学生创业设计大赛。
-  - 第三届“郑和杯”中德青年创新创业大赛。
-  - “赢在苏州”第十届苏州青年精英创业大赛。
-
-# print-page-break3 { .print-page-break }
 
 ## 技能证书
 
@@ -98,7 +79,25 @@ pictureView: [
 - 应用软件：Git、SVN、微软三件套、PS、AE、AU、PR 等。
 - 操作系统：Windows、MacOS、Linux。
 
-## 荣誉奖励
+<!-- # print-page-break3 { .print-page-break } -->
+
+<!-- ## 校内活动
+
+- 计算机工程学院团委宣传部，干事。
+  - 拍摄学院及学校活动的新闻照片。
+  - 新闻稿、微信推文的撰写工作。
+  - 在任职期获“优秀工作者”称号。
+- 计算机工程学院攻玉工作室，负责人。
+  - 大一下学期加入工作室。
+  - 大二工作室换届当选为负责人。
+  - “纽斯杯”大学生创业设计大赛。
+  - 苏州市职业大学创新创意作品大赛。
+  - 计算机工程学院“互联网+”创新创业大赛。
+  - 苏州市职业大学第二十届职业生涯节大学生创业设计大赛。
+  - 第三届“郑和杯”中德青年创新创业大赛。
+  - “赢在苏州”第十届苏州青年精英创业大赛。 -->
+
+<!-- ## 荣誉奖励
 
 - 2016-2017 连续两年获“院级优秀共青团员”。
 - 苏州市职业大学大学生创新创意作品大赛三等奖。
@@ -107,7 +106,7 @@ pictureView: [
 - 第三届“郑和杯”中德青年创新创业大赛优胜奖。
 - 计算机工程学院“互联网+创新创业大赛”最佳作品奖、优秀作品奖。
 - 苏州市职业大学 2016 级新生军训“优秀学员”。
-- 及其他院、校各类文娱体育活动比赛奖项不一一列出。
+- 及其他院、校各类文娱体育活动比赛奖项不一一列出。 -->
 
 <!-- ## 自我评价
 
