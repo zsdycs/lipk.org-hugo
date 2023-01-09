@@ -82,12 +82,12 @@ main {
   <p> <hr> <pre> <blockquote> <ol> <ul> <li> <dl> <dt> <dd> <figure> <figcaption> <div>
  */
 p {
+  margin-block-start: 12px !important;
+  margin-block-end: 24px !important;
   hyphens: auto;
   line-height: 1.5;
   text-align: justify;
   text-indent: 2em;
-  margin-block-start: 12px !important;
-  margin-block-end: 24px !important;
 }
 
 pre {
@@ -450,7 +450,8 @@ h3:hover .anchor {
   display: block;
 }
 
-.print {
+.print,
+.print-li {
   display: none;
 }
 
@@ -769,8 +770,16 @@ iframe.billibili {
     display: none !important;
   }
 
+  hr#beginning {
+    margin: 16px auto;
+  }
+
   .print {
     display: initial;
+  }
+
+  .print-li {
+    display: list-item;
   }
 
   .paramount {
@@ -798,15 +807,18 @@ iframe.billibili {
   h4,
   h5,
   h6 {
-    margin: 1em auto 1em;
+    margin: 16px auto;
   }
 
   .title > h1 {
-    font-size: 35px;
+    margin-bottom: 0 !important;
+    font-size: 24px;
   }
 
   .print-page-break {
     display: block;
+    height: 0;
+    margin: 0;
     visibility: hidden;
     page-break-after: always;
   }

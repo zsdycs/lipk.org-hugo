@@ -27,27 +27,33 @@ pictureView: [
 
 ## 工作经历
 
-- 2018 . 09 ~ 2019 . 04 **用友网络科技股份（苏州）有限公司**，Web 前端开发实习生。
-  - 接触到的开发模式有： React + 钉耙的前端开发、Express + MongoDB + UI 框架 Semantic UI + Vue.js 搭建动态站点的全栈开发，使用 Git 进行协同办公。
+- 2021 . 10 ~ 至今 **北京中软国际科技服务有限公司**（实际工作于苏州京东工业），Web 前端开发工程师。
+  - Vue + 公司内部 UI 框架，使用 Git 进行协同办公。
 - 2019 . 06 ~ 2021 . 10 **方舟信息技术（苏州）有限公司**，Web 前端开发工程师。
-  - 参与开发项目的开发模式有： Angular + Ant Design、Angular + 公司内部框架、Ruby + Rails + JQ + PostgreSQL 以及 Vue + Ant Design 等，使用 Git 进行协同办公。
+  - Angular + Ant Design、Angular + 公司内部 UI 框架、Ruby + Rails + JQ + PostgreSQL 以及 Vue + Ant Design 等，使用 Git 进行协同办公。
+- 2018 . 09 ~ 2019 . 04 **用友网络科技股份（苏州）有限公司**，Web 前端开发实习生。
+  - React + 钉耙的前端开发、Express + MongoDB + UI 框架 Semantic UI + Vue.js 搭建动态站点的全栈开发，使用 Git 进行协同办公。
 
 # print-page-break1 { .print-page-break }
 
 ## 项目经历（部分）
 
-- [日本環境省](https://www.env.go.jp/) 的“地方公共団体実行計画策定・管理等支援システム”。
-  - 主要参与该系统 2019 年度和 2020 年度“施行状況調査”的开发工作。该调查问卷有 5 个类别组成，调查对象团体分为 3 类，各个对象回答内容不同，设问形式包含“单选、多选、文本，日期以及表格内以上形式的组合”等，部分设问之间有相互关联（关联问题显示隐藏和关联回答矛盾验证），共计三百五十余个设问。
-- [日本警察庁](https://www.npa.go.jp/)“サイバー攻撃分析センタ”系统。
-  - 负责“マスタメンテナンス機能”的“利用者申請、检索、编辑”、“クローズド系検索機能”的"検索、検索詳細"等页面开发。
-- 日本“島根県健康管理システム”。
-  - 是一个 ruby 项目，正因如此，开发环境使用 VirtualBox 和 Vagrant。为了我的 ruby 代码可以得到 lint 审查，于是就有了 [Ruby-rubocop 使用方法](https://www.lipk.org/blog/2020/05/15/how-to-use-ruby-rubocop/) 这篇教程。
-- [VRAINERS 動物病院](https://www.vrainers.jp/) V3.1 版本的开发。
-  - 值得一提的是，该项目使用了：gRPC、angular10、[material](https://next.material.angular.io/components)、docker。用 [zeplin](https://zeplin.io/)（layout）、[backlog](https://backlog.com/)（设计书）及 github（代码及 issue）。
-- 日本环境省“次期省エネ法・温対法電子報告システム”。
-  - 负责开发“事業者利用申請～ユーザ情報の管理”模块的页面，由于 API interface 的数据太多（大约 80 个项目/tab，一个页面若干个 tab），仍然清晰记得在 class 定义大段属性，并在构造函数（constructor）将属性 new 出来的枯燥工作。
-- 日本 [“建設キャリアアップシステム”](https://www.ccus.jp/p/info)。
-  - 是个庞大的 angular 系统，有很多页面可复用的 API，但 [stubby](https://www.npmjs.com/package/stubby) route.json 中的 request 仍有 1053 个。参与了“2020 下期開発”的工作，案件 396 个，参与了约 30% 的案件编码工作。
+- 「[京东京采云](https://www.jdbusiness.com/jdsolution_cy.html)」
+  - 参与该系统前端全模块的开发和维护工作。参与动态表单、信息组织表格、主数据选择器等组件的问题修复工作，在业务侧编写的上传下载组件反哺于组件。
+- 「北人亦创国际会展中心展会系统」
+  - 独立开发基于 uni-app 框架实现的微信小程序，基于 RuoYi-UI 开发的后台管理系统，功能包含资料上传下载、餐饮及酒店预订、列表无限滚动、订单信息二维码生成及小程序扫码核销等。
+- 「快递上门系统」
+  - 独立开发微信原生小程序，实现类 Material Design 的表单组件。后台管理基于 Element 开发。
+- 「[日本環境省](https://www.env.go.jp/) 的“地方公共団体実行計画策定・管理等支援システム”」
+  - 参与该系统 2019、2020 年度“施行状況調査”的开发工作。该调查问卷有 5 个类别，3 类调查对象，各个对象内容不同，设问互有关联及矛盾验证。
+- 「[日本警察庁](https://www.npa.go.jp/)“サイバー攻撃分析センタ”」
+  - 该项目编码要求极高，每周一次逐行 code review，使我对个人代码 style lint、非空处理和变量命名等有较高的要求。
+- 「日本“島根県健康管理システム”」
+  - 是一个 ruby 项目，开发环境使用 VirtualBox 和 Vagrant。为了我的 ruby 代码可以得到 lint 审查，于是就有了 [Ruby-rubocop 使用方法](https://www.lipk.org/blog/2020/05/15/how-to-use-ruby-rubocop/) 这篇教程。
+- 「[VRAINERS 動物病院](https://www.vrainers.jp/) 」
+  - V3.1 版本的开发，值得一提的是，该项目使用了：gRPC、angular10、[material](https://next.material.angular.io/components)、docker。用 [zeplin](https://zeplin.io/)（layout）、[backlog](https://backlog.com/)（设计书）及 github（代码及 issue）。
+- 「日本 [“建設キャリアアップシステム”](https://www.ccus.jp/p/info)」
+  - 是个庞大的 angular 系统， [stubby](https://www.npmjs.com/package/stubby) route.json 中的 request 仍有 1053 个。参与了“2020 下期開発”的工作，案件 396 个，参与了约 30% 的案件编码工作。
 
 # print-page-break2 { .print-page-break }
 
@@ -112,7 +118,8 @@ pictureView: [
 ## 附加项
 
 <ul>
-  <li><a href="https://github.com/zsdycs" target="_blank">Github</a><span class="print"> https://github.com/zsdycs</span></li>
+  <li><a href="https://github.com/zsdycs" target="_blank">GitHub</a><span class="print"> https://github.com/zsdycs</span></li>
   <li><a href="/" target="_blank">个人网站</a><span class="print"> https://lipk.org</span></li>
+  <li class="print-li"><a href="/resume" target="_blank">在线简历</a><span> https://lipk.org/resume</span></li>
   <li class="notPrint"><a href="javascript:void(0);" onclick="window.print()" title="推荐使用基于 Chromium 的浏览器">打印简历</a></li>
 </ul>
