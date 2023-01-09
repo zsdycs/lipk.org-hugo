@@ -113,8 +113,12 @@ li {
   margin: 4px 0;
 }
 
+.resume-basics-box ul {
+  margin: 0;
+}
+
 .resume-basics-box ul:first-child {
-  margin-right: 24px;
+  margin: 0 24px 0 0;
 }
 
 .masthead .menu ul ul {
@@ -608,6 +612,7 @@ iframe.billibili {
 
 .resume-basics-box {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
