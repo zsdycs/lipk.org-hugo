@@ -40,7 +40,7 @@ pictureView: [
   - **用友网络科技股份（苏州）有限公司**，Web 前端开发实习生。
   <!-- - React + 钉耙的前端开发、Express + MongoDB + UI 框架 Semantic UI + Vue.js 搭建动态站点的全栈开发，使用 Git 进行协同办公。 -->
 
-## 开源项目经历（部分）
+## 开源项目（部分）
 
 - [zsdycs/lipk.org](https://github.com/zsdycs/lipk.org) 网站
   - hugo 框架生成静态站点，通过 gulp 处理打包过程，改造 font-spider 进行字体抓取。SEO 优化，Bing、Google 搜索关键字“李鹏坤”，结果排名第一。
@@ -51,7 +51,7 @@ pictureView: [
 
 # print-page-break1 { .print-page-break }
 
-## 工作项目经历（部分）
+## 工作项目（部分）
 
 - 「[京东京采云](https://www.jdbusiness.com/jdsolution_cy.html)」
   - 该 SRM 系统通过 13 个 [qiankun 微前端](https://qiankun.umijs.org/) 服务组成。独立负责多个微前端服务的开发，参与 JDSRM-UI 组件的问题修复工作。编写的上传下载组件成为系统标准，拆分、整理并优化了大量页面的代码逻辑和页面结构，使代码易于维护。
