@@ -771,6 +771,7 @@ iframe.billibili {
   }
 
   hr#beginning {
+    display: none !important;
     margin: 16px auto;
   }
 
@@ -811,6 +812,7 @@ iframe.billibili {
   }
 
   .title > h1 {
+    display: none !important;
     margin-bottom: 0 !important;
     font-size: 24px;
   }

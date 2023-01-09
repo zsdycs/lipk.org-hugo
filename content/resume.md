@@ -18,24 +18,40 @@ pictureView: [
 
 ## 基本信息
 
-- 姓名：李鹏坤。
+<!-- - 姓名：李鹏坤。
 - 籍贯：广东 · 中山。
 - 位置：江苏 · 苏州。
 - 出生：1997/12/20。
-- 邮箱：[mail@lipk.org](mailto:mail@lipk.org)。
+- 邮箱：[mail@lipk.org](mailto:mail@lipk.org)。 -->
+
+| 姓名 | 籍贯 | 位置 | 出生 | 邮箱 |
+| :-----: | :----: | :-----: | :-----: | :-----: |
+| 李鹏坤 | 广东 · 中山 | 江苏 · 苏州 | 1997/12/20 | [mail@lipk.org](mailto:mail@lipk.org) |
 
 ## 工作经历
 
-- 2021 . 10 ~ 至今 **北京中软国际科技服务有限公司**（实际工作于苏州京东工业），Web 前端开发工程师。
-  - Vue + 公司内部 UI 框架，使用 Git 进行协同办公。
-- 2019 . 06 ~ 2021 . 10 **方舟信息技术（苏州）有限公司**，Web 前端开发工程师。
-  - Angular + Ant Design、Angular + 公司内部 UI 框架、Ruby + Rails + JQ + PostgreSQL 以及 Vue + Ant Design 等，使用 Git 进行协同办公。
-- 2018 . 09 ~ 2019 . 04 **用友网络科技股份（苏州）有限公司**，Web 前端开发实习生。
-  - React + 钉耙的前端开发、Express + MongoDB + UI 框架 Semantic UI + Vue.js 搭建动态站点的全栈开发，使用 Git 进行协同办公。
+- 2021 . 10 ~ 至今
+  - **北京中软国际科技服务有限公司**-苏州京东工业，Web 前端开发工程师。
+  <!-- - Vue + 公司内部 UI 框架，使用 Git 进行协同办公。 -->
+- 2019 . 06 ~ 2021 . 10
+  - **方舟信息技术（苏州）有限公司**，Web 前端开发工程师。
+  <!-- - Angular + Ant Design、Angular + 公司内部 UI 框架、Ruby + Rails + JQ + PostgreSQL 以及 Vue + Ant Design 等，使用 Git 进行协同办公。 -->
+- 2018 . 09 ~ 2019 . 04
+  - **用友网络科技股份（苏州）有限公司**，Web 前端开发实习生。
+  <!-- - React + 钉耙的前端开发、Express + MongoDB + UI 框架 Semantic UI + Vue.js 搭建动态站点的全栈开发，使用 Git 进行协同办公。 -->
+
+## 开源项目经历（部分）
+
+- [zsdycs/lipk.org](https://github.com/zsdycs/lipk.org) 网站
+  - hugo 框架生成静态站点，通过 gulp 处理打包过程，改造 font-spider 进行字体抓取。SEO 优化，Bing、Google 搜索关键字“李鹏坤”，结果排名第一。
+- [beaudar/beaudar](https://github.com/beaudar/beaudar) 表达
+  - 基于 GitHub issue 的轻量评论插件，基于 [Utterances](https://utteranc.es/) 开发，增加了“异常处理”等若干功能，获得了不少中文独立博客站长的青睐。
+- [zsdycs/ginpun](https://github.com/zsdycs/ginpun) 开源键盘
+  - 固件基于 QMK 框架，单片机使用 ATmega32u4 作为主控的键盘。启发于 [system76/launch](https://github.com/system76/launch)，有 84 和 61 配列，61 配列拥有 gasket 结构，外壳专为 3D 打印而设计。
 
 # print-page-break1 { .print-page-break }
 
-## 项目经历（部分）
+## 工作项目经历（部分）
 
 - 「[京东京采云](https://www.jdbusiness.com/jdsolution_cy.html)」
   - 该 SRM 系统通过 13 个 [qiankun 微前端](https://qiankun.umijs.org/) 服务组成。独立负责多个微前端服务的开发，参与 JDSRM-UI 组件的问题修复工作。编写的上传下载组件成为系统标准，拆分、整理并优化了大量页面的代码逻辑和页面结构，使代码易于维护。
