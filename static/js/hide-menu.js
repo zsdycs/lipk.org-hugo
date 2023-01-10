@@ -3,25 +3,27 @@
    * 节流
    * @param {Function} func 执行函数
    * @param {Number} wait 延迟执行时间
-   * @param {Number} mustRun 执行间隔
+   * @param {Number} runTime 执行间隔
    */
-  function throttle(func, wait, mustRun) {
-    var timeout,
-      startTime = new Date();
+  const throttle = (func, wait, runTime) => {
+    let startTime = new Date();
+    let timeout = null;
 
     return function () {
-      var curTime = new Date();
+      const current = new Date();
 
-      clearTimeout(timeout);
+      if (timeout) {
+        clearTimeout(timeout);
+      }
       // 如果达到了规定的触发时间间隔，触发 func
-      if (curTime - startTime >= mustRun) {
-        func.apply(this);
-        startTime = curTime;
+      if (current - startTime >= runTime) {
+        func.apply(this, arguments);
+        startTime = current;
       } else {
         timeout = setTimeout(func, wait);
       }
     };
-  }
+  };
 
   var $ = document.querySelector.bind(document);
   var menu = $('header.masthead');

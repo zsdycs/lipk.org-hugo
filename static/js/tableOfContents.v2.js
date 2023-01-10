@@ -506,39 +506,45 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // 防抖：触发高频事件 n 秒后只会执行一次，如果 n 秒内事件再次触发，则会重新计时。
-  function debounce(func, wait = 200) {
-    return function (args) {
+  const debounce = (func, wait = 200) => {
+    let timer = null;
+    return function () {
       const _this = this;
-      clearTimeout(func.id);
-      func.id = setTimeout(function () {
-        func.apply(_this, args);
+      const _arguments = arguments;
+      if (timer) {
+        clearTimeout(timer);
+      }
+      timer = setTimeout(function () {
+        func.apply(_this, _arguments);
       }, wait);
     };
-  }
+  };
 
   /**
    * 节流
    * @param {Function} func 执行函数
    * @param {Number} wait 延迟执行时间
-   * @param {Number} intervals 执行间隔
+   * @param {Number} runTime 执行间隔
    */
-  function throttle(func, wait, intervals) {
-    let timeout,
-      startTime = new Date();
+  const throttle = (func, wait, runTime) => {
+    let startTime = new Date();
+    let timeout = null;
 
     return function () {
-      const curTime = new Date();
+      const current = new Date();
 
-      clearTimeout(timeout);
+      if (timeout) {
+        clearTimeout(timeout);
+      }
       // 如果达到了规定的触发时间间隔，触发 func
-      if (curTime - startTime >= intervals) {
-        func.apply(this);
-        startTime = curTime;
+      if (current - startTime >= runTime) {
+        func.apply(this, arguments);
+        startTime = current;
       } else {
         timeout = setTimeout(func, wait);
       }
     };
-  }
+  };
 
   // 重置是否立即高亮
   function resetHighlightStatus() {
