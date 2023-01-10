@@ -162,6 +162,6 @@ exports.default = gulp.series(
   minify_css,
   minify_photoswipe_css,
   minify_html,
-  minify_js,
+  // minify_js,
   minify_sw_js,
 );

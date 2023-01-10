@@ -1,0 +1,84 @@
+import { Watermark } from './watermark.esm.js';
+
+const watermarkConfig = {
+  mode: 'interval',
+  monitor: true,
+  text: '',
+  image: undefined,
+  opacity: 0.24,
+  width: 240,
+  height: 64,
+  offsetLeft: 0,
+  offsetTop: 0,
+  gapX: 340,
+  gapY: 340,
+  zIndex: 9999,
+  rotate: -22,
+  fontSize: 32,
+  textAlign: 'center',
+  fontStyle: 'normal',
+  fontColor: '#000',
+  fontFamily: 'Microsoft Yahei, sans-serif',
+  fontWeight: '300',
+  blindText: '',
+  blindOpacity: 0.01,
+};
+
+const getCurrentTime = () => {
+  const Month = [
+    '01',
+    '02',
+    '03',
+    '04',
+    '05',
+    '06',
+    '07',
+    '08',
+    '09',
+    '10',
+    '11',
+    '12',
+  ];
+  const MakeUpZero = {
+    0: '00',
+    1: '01',
+    2: '02',
+    3: '03',
+    4: '04',
+    5: '05',
+    6: '06',
+    7: '07',
+    8: '08',
+    9: '09',
+  };
+  // 获取当前时间
+  const nowTime = new Date();
+  const nowFullYear = nowTime.getFullYear();
+  const nowMonth = Month[nowTime.getMonth()];
+  const nowDate = MakeUpZero[nowTime.getDate()] || nowTime.getDate() || '00';
+  const nowHour = MakeUpZero[nowTime.getHours()] || nowTime.getHours() || '00';
+  const nowtMinute =
+    MakeUpZero[nowTime.getMinutes()] || nowTime.getMinutes() || '00';
+
+  return `${nowFullYear}-${nowMonth}-${nowDate}-${nowHour}:${nowtMinute}`;
+};
+
+const watermarkText = `${getCurrentTime()} https://lipk.org/resume/ 李鹏坤-个人简历`;
+const watermark = new Watermark({
+  ...watermarkConfig,
+  text: watermarkText,
+  blindText: watermarkText,
+});
+watermark.hide();
+
+// 打印：打印时加载水印，以保留打印信息
+window.onbeforeprint = () => {
+  watermark.show();
+};
+
+window.onafterprint = () => {
+  // 隐藏水印
+  watermark.hide();
+  // 销毁水印
+  // watermark.destroy();
+};
