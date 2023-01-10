@@ -50,7 +50,7 @@ pictureView: [
 - [beaudar/beaudar](https://github.com/beaudar/beaudar) 表达
   - 基于 GitHub issue 的轻量评论插件，基于 [Utterances](https://utteranc.es/) 开发，增加了“异常处理”等若干功能，获得了不少中文独立博客站长的青睐。
 - [zsdycs/ginpun](https://github.com/zsdycs/ginpun) 开源键盘
-  - 固件基于 QMK 框架，单片机使用 ATmega32u4 作为主控的键盘。启发于 [system76/launch](https://github.com/system76/launch)，有 84 和 61 配列，61 配列拥有 gasket 结构，外壳专为 3D 打印而设计。
+  - 固件基于 QMK 框架，单片机使用 ATmega32u4 作为主控的键盘。启发于 [system76/launch](https://github.com/system76/launch)，有 84 和 61 配列，61 配列拥有 Gasket 结构，外壳专为 3D 打印而设计。
 
 # print-page-break1 { .print-page-break }
 
