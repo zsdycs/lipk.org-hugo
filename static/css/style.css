@@ -818,8 +818,12 @@ iframe.billibili {
   }
 
   hr#beginning {
-    display: none !important;
+    /* display: none !important; */
     margin: 16px auto;
+  }
+
+  .anchor {
+    display: none !important;
   }
 
   .print {
@@ -832,9 +836,11 @@ iframe.billibili {
 
   .paramount {
     max-width: 700px;
+    padding-top: 0;
   }
 
   .main {
+    padding-top: 0;
     margin: auto;
     border: none !important;
   }
@@ -858,7 +864,7 @@ iframe.billibili {
   }
 
   .title > h1 {
-    display: none !important;
+    /* display: none !important; */
     margin-bottom: 0 !important;
     font-size: 24px;
   }

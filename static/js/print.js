@@ -81,6 +81,7 @@ const { nowFullYear, nowMonth, nowDate, nowHour, nowtMinute } =
   getCurrentTime();
 const currentTimeStr = `${nowFullYear}-${nowMonth}-${nowDate}-${nowHour}:${nowtMinute}`;
 const watermarkText = `${currentTimeStr} https://lipk.org/resume/ 李鹏坤-个人简历`;
+const locationPathname = window.location.pathname;
 
 const watermark = new Watermark({
   ...watermarkConfig,
@@ -91,14 +92,18 @@ watermark.hide();
 
 // 打印：打印时加载水印，以保留打印信息
 window.onbeforeprint = () => {
-  const currentTimeStr = `${nowFullYear}-${nowMonth}-${nowDate}-${nowHour}-${nowtMinute}`;
-  copyTextToClipboard(`【前端开发】李鹏坤-个人简历_${currentTimeStr}`);
-  watermark.show();
+  if (locationPathname.includes('/resume')) {
+    const currentTimeStr = `${nowFullYear}-${nowMonth}-${nowDate}-${nowHour}-${nowtMinute}`;
+    copyTextToClipboard(`【前端开发】李鹏坤-个人简历_${currentTimeStr}`);
+    watermark.show();
+  }
 };
 
 window.onafterprint = () => {
-  // 隐藏水印
-  watermark.hide();
-  // 销毁水印
-  // watermark.destroy();
+  if (locationPathname.includes('/resume')) {
+    // 隐藏水印
+    watermark.hide();
+    // 销毁水印
+    // watermark.destroy();
+  }
 };
