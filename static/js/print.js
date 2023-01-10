@@ -83,27 +83,25 @@ const currentTimeStr = `${nowFullYear}-${nowMonth}-${nowDate}-${nowHour}:${nowtM
 const watermarkText = `${currentTimeStr} https://lipk.org/resume/ 李鹏坤-个人简历`;
 const locationPathname = window.location.pathname;
 
-const watermark = new Watermark({
-  ...watermarkConfig,
-  text: watermarkText,
-  blindText: watermarkText,
-});
-watermark.hide();
+if (locationPathname.includes('/resume')) {
+  const watermark = new Watermark({
+    ...watermarkConfig,
+    text: watermarkText,
+    blindText: watermarkText,
+  });
+  watermark.hide();
 
-// 打印：打印时加载水印，以保留打印信息
-window.onbeforeprint = () => {
-  if (locationPathname.includes('/resume')) {
+  // 打印：打印时加载水印，以保留打印信息
+  window.onbeforeprint = () => {
     const currentTimeStr = `${nowFullYear}-${nowMonth}-${nowDate}-${nowHour}-${nowtMinute}`;
     copyTextToClipboard(`【前端开发】李鹏坤-个人简历_${currentTimeStr}`);
     watermark.show();
-  }
-};
+  };
 
-window.onafterprint = () => {
-  if (locationPathname.includes('/resume')) {
+  window.onafterprint = () => {
     // 隐藏水印
     watermark.hide();
     // 销毁水印
     // watermark.destroy();
-  }
-};
+  };
+}
