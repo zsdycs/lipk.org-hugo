@@ -60,10 +60,28 @@ const getCurrentTime = () => {
   const nowtMinute =
     MakeUpZero[nowTime.getMinutes()] || nowTime.getMinutes() || '00';
 
-  return `${nowFullYear}-${nowMonth}-${nowDate}-${nowHour}:${nowtMinute}`;
+  return { nowFullYear, nowMonth, nowDate, nowHour, nowtMinute };
 };
 
-const watermarkText = `${getCurrentTime()} https://lipk.org/resume/ 李鹏坤-个人简历`;
+const copyTextToClipboard = (text) => {
+  const textArea = document.createElement('textarea');
+  textArea.style.cssText = `position:fixed;top:0;left:0;width:2em;height:2em;padding:0;border:none;outline:none;box-shadow:none;background:transparent`;
+  textArea.value = text;
+  document.body.appendChild(textArea);
+  textArea.select();
+  try {
+    document.execCommand('copy');
+  } catch (err) {
+    console.error(err);
+  }
+  document.body.removeChild(textArea);
+};
+
+const { nowFullYear, nowMonth, nowDate, nowHour, nowtMinute } =
+  getCurrentTime();
+const currentTimeStr = `${nowFullYear}-${nowMonth}-${nowDate}-${nowHour}:${nowtMinute}`;
+const watermarkText = `${currentTimeStr} https://lipk.org/resume/ 李鹏坤-个人简历`;
+
 const watermark = new Watermark({
   ...watermarkConfig,
   text: watermarkText,
@@ -73,6 +91,8 @@ watermark.hide();
 
 // 打印：打印时加载水印，以保留打印信息
 window.onbeforeprint = () => {
+  const currentTimeStr = `${nowFullYear}-${nowMonth}-${nowDate}-${nowHour}-${nowtMinute}`;
+  copyTextToClipboard(`【前端开发】李鹏坤-个人简历_${currentTimeStr}`);
   watermark.show();
 };
 
