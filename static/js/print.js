@@ -80,7 +80,7 @@ const copyTextToClipboard = (text) => {
 const { nowFullYear, nowMonth, nowDate, nowHour, nowtMinute } =
   getCurrentTime();
 const currentTimeStr = `${nowFullYear}-${nowMonth}-${nowDate}-${nowHour}:${nowtMinute}`;
-const watermarkText = `${currentTimeStr} https://lipk.org/resume/ 李鹏坤-个人简历`;
+const watermarkText = `${currentTimeStr} https://lipk.org/resume/ 李鹏坤-简历`;
 const locationPathname = window.location.pathname;
 
 if (locationPathname.includes('/resume')) {
@@ -94,7 +94,7 @@ if (locationPathname.includes('/resume')) {
   // 打印：打印时加载水印，以保留打印信息
   window.onbeforeprint = () => {
     const currentTimeStr = `${nowFullYear}-${nowMonth}-${nowDate}-${nowHour}-${nowtMinute}`;
-    copyTextToClipboard(`【前端开发】李鹏坤-个人简历_${currentTimeStr}`);
+    copyTextToClipboard(`【前端开发】李鹏坤-简历_${currentTimeStr}`);
     watermark.show();
   };
 
