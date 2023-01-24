@@ -29,11 +29,15 @@ lipk.org 站点地图
 
 ### lipk.org 下的服务
 
-- [gh-proxy.lipk.org](http://gh-proxy.lipk.org) 加速下载 GitHub 资源
-- [sentence-to-variable.lipk.org](https://sentence-to-variable.lipk.org) 英文句子 → 变量
-- [frps.lipk.org](http://frps.lipk.org) 内网穿透服务（私有）
-- [muyu.lipk.org](http://muyu.lipk.org) 电子木鱼
-- [beaudar.lipk.org](http://beaudar.lipk.org) 博客评论插件-表达
-- [beaudar-api.lipk.org](http://beaudar-api.lipk.org) 博客评论插件-表达-API
-- [react-demo-ts.lipk.org](http://react-demo-ts.lipk.org) 展示用 demo
-- [test.lipk.org](http://test.lipk.org) 测试使用
+- 公共服务
+  - [gh-proxy.lipk.org](http://gh-proxy.lipk.org) 加速下载 GitHub 资源
+  - [sentence-to-variable.lipk.org](https://sentence-to-variable.lipk.org) 英文句子 → 变量
+  - [muyu.lipk.org](http://muyu.lipk.org) 电子木鱼
+  - [beaudar.lipk.org](http://beaudar.lipk.org) 博客评论插件-表达
+  - [beaudar-api.lipk.org](http://beaudar-api.lipk.org) 博客评论插件-表达-API
+- 实验服务
+  - [react-demo-ts.lipk.org](http://react-demo-ts.lipk.org) 展示用 demo
+  - [test.lipk.org](http://test.lipk.org) 测试使用
+- 私有服务
+  - [frps.lipk.org](http://frps.lipk.org) 内网穿透
+  - [code-server.lipk.org](http://code-server.lipk.org) 在线 code
